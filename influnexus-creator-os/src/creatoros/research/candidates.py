@@ -1,10 +1,14 @@
-"""Candidate story records and the 100-point trend score."""
+"""Candidate topic records, the 100-point viral potential score and ranking rules."""
 from __future__ import annotations
 
 WEIGHTS = {"traction": 25, "surprise": 20, "relevance": 20, "practical": 15, "visual": 10, "credibility": 10}
-REQUIRED = ["headline", "original_source", "published_at", "first_discussed_at", "primary_x_post", "independent_discussion",
-            "engagement", "geo_relevance", "audience_relevance", "visual_availability", "practical_value", "credibility_note",
-            "uncertainty", "already_covered", "scores"]
+REQUIRED = ["headline", "category", "topic_type", "announced_at", "original_source", "supporting_sources", "what_happened",
+            "why_it_matters", "target_audience", "discussion_signals", "competing_coverage", "uncertainty", "novelty",
+            "evidence_confidence", "already_covered", "scores", "secondary"]
+CATEGORIES = ["AI", "CONSUMER TECH", "FUTURE TECH", "AI BUSINESS & STARTUPS", "CREATOR TECH", "CONTROVERSY"]
+TOPIC_TYPES = ["BREAKING", "EMERGING", "EVERGREEN", "EXPERIMENTAL"]
+CONFIDENCE = ["HIGH", "MEDIUM", "LOW"]
+SECONDARY = ["shareability", "comment_potential", "follower_conversion", "saturation", "freshness", "brand_alignment"]
 UNKNOWN = "UNKNOWN"
 
 
@@ -22,6 +26,20 @@ def validate(c: dict) -> list[str]:
         for k, v in c["engagement"].items():
             if v != UNKNOWN and not isinstance(v, (int, float)):
                 problems.append(f"engagement.{k} must be a number that was observed, or UNKNOWN")
+    if c.get("category") not in CATEGORIES:
+        problems.append(f"category must be one of {CATEGORIES}")
+    if c.get("topic_type") not in TOPIC_TYPES:
+        problems.append(f"topic_type must be one of {TOPIC_TYPES}")
+    if c.get("evidence_confidence") not in CONFIDENCE:
+        problems.append(f"evidence_confidence must be one of {CONFIDENCE}")
+    sec = c.get("secondary", {})
+    if not isinstance(sec, dict):
+        sec = {}
+    for k in SECONDARY:
+        if sec.get(k) not in CONFIDENCE + [UNKNOWN]:
+            problems.append(f"secondary.{k} must be HIGH, MEDIUM, LOW or UNKNOWN")
+    if c.get("topic_type") == "BREAKING" and c.get("outside_window"):
+        problems.append("a story outside the 24-hour window cannot be labelled BREAKING")
     return problems
 
 
@@ -37,12 +55,29 @@ def trend_score(c: dict) -> dict:
     return {"total": round(total, 1), "unknown": unknown}
 
 
+def ineligible_reason(c: dict) -> str | None:
+    if c.get("rejected"):
+        return f"rejected: {c['rejected']}"
+    if c.get("already_covered"):
+        return "already covered"
+    if c.get("outside_window"):
+        return "outside the 24-hour window (72 hours for EMERGING stories) with no new development"
+    if c.get("hold_reason"):
+        return f"on hold: {c['hold_reason']}"
+    if c.get("evidence_confidence") == "LOW":
+        return "evidence confidence LOW"
+    cred = c["scores"].get("credibility")
+    if isinstance(cred, (int, float)) and cred < 5:
+        return "credibility below 5/10"
+    return None
+
+
 def rank(cands: list[dict]) -> list[dict]:
+    """Eligible stories first, by score. Low-confidence or low-credibility stories can never outrank a verified one."""
     out = []
     for c in cands:
         s = trend_score(c)
-        out.append({**c, "trend_score": s["total"], "unknown_criteria": s["unknown"], "problems": validate(c)})
-    eligible = [c for c in out if not c.get("already_covered") and not c.get("outside_window")]
-    for c in out:
-        c["eligible"] = c in eligible
+        reason = ineligible_reason(c)
+        out.append({**c, "trend_score": s["total"], "unknown_criteria": s["unknown"], "problems": validate(c),
+                    "eligible": reason is None, "ineligible_reason": reason})
     return sorted(out, key=lambda c: (c["eligible"], c["trend_score"]), reverse=True)

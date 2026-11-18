@@ -26,7 +26,13 @@ def main(argv=None) -> int:
     p = sub.add_parser("score", help="rank candidate stories"); p.add_argument("candidates_json")
     p = sub.add_parser("story-check", help="has this story been covered?"); p.add_argument("headline"); p.add_argument("--keys", nargs="*", default=[]); p.add_argument("--date", required=True)
     p = sub.add_parser("story-add"); p.add_argument("headline"); p.add_argument("--keys", nargs="*", default=[]); p.add_argument("--date", required=True); p.add_argument("--slug", required=True); p.add_argument("--update-of")
-    p = sub.add_parser("brief", help="validate and render daily/DATE/brief.json"); p.add_argument("--date", required=True)
+    p = sub.add_parser("brief", help="(legacy format) validate and render daily/DATE/brief.json"); p.add_argument("--date", required=True)
+    p = sub.add_parser("package", help="validate daily/DATE/package.json, render the recording package, log it"); p.add_argument("--date", required=True)
+    p = sub.add_parser("content-search", help="search the content database"); p.add_argument("query", nargs="?", default="")
+    p.add_argument("--status"); p.add_argument("--category")
+    p = sub.add_parser("content-update", help="update a content entry: key=value ..."); p.add_argument("--date", required=True)
+    p.add_argument("--slug", required=True); p.add_argument("pairs", nargs="+")
+    p = sub.add_parser("weekly", help="write reports/weekly/END.md"); p.add_argument("--end", required=True)
     p = sub.add_parser("calibrate", help="record the creator's measured pace from a finished edit"); p.add_argument("--date", required=True)
     p = sub.add_parser("metrics-add", help="store one analytics row: key=value ..."); p.add_argument("pairs", nargs="+")
     p = sub.add_parser("metrics-report"); p.add_argument("--dim", default="topic"); p.add_argument("--checkpoint", default="7d"); p.add_argument("--platform", default="instagram")
@@ -70,6 +76,25 @@ def main(argv=None) -> int:
         r = brief.save(read_json(config.path("daily", a.date, "brief.json")))
         _print(r)
         return 0 if r["ok"] else 2
+    elif a.cmd == "package":
+        from .scripts import package
+        r = package.save(read_json(config.path("daily", a.date, "package.json")))
+        _print(r)
+        return 0 if r["ok"] else 2
+    elif a.cmd == "content-search":
+        from .research import content_db
+        _print([{k: e.get(k) for k in ("date", "slug", "topic", "category", "status", "hook")}
+                for e in content_db.search(a.query, status=a.status, category=a.category)])
+    elif a.cmd == "content-update":
+        from .research import content_db
+        fields = {}
+        for pair in a.pairs:
+            k, v = pair.split("=", 1)
+            fields[k] = v.split(",") if k == "platforms" else v
+        _print(content_db.update(a.date, a.slug, **fields))
+    elif a.cmd == "weekly":
+        from .analytics import weekly
+        print(weekly.save(a.end))
     elif a.cmd == "calibrate":
         from .scripts.lint import word_count
         rep = read_json(config.path("renders", a.date, "edit_report.json"))

@@ -126,7 +126,8 @@ def test_caption_layout_flags_overflow():
 # ---------- research ----------
 def cand(**kw):
     base_ = {f: "x" for f in candidates.REQUIRED}
-    base_.update(already_covered=False, engagement={"likes": "UNKNOWN"},
+    base_.update(already_covered=False, engagement={"likes": "UNKNOWN"}, category="AI", topic_type="BREAKING",
+                 evidence_confidence="HIGH", secondary={k: "MEDIUM" for k in candidates.SECONDARY},
                  scores={"traction": 5, "surprise": 8, "relevance": 8, "practical": 8, "visual": 5, "credibility": 8})
     base_.update(kw)
     return base_
@@ -183,8 +184,8 @@ def test_script_passes_and_bad_scripts_fail():
 
 
 def test_hook_scoring_disqualifies_inaccurate_hooks():
-    h = lint.score_hooks([{"text": "a", "type": "x", "clarity": 10, "curiosity": 10, "accuracy": 4, "natural": 10, "visual": 10},
-                          {"text": "b", "type": "x", "clarity": 7, "curiosity": 7, "accuracy": 9, "natural": 7, "visual": 7}])
+    full = lambda t, acc, v: {"text": t, "mechanism": "unexpected fact", "accuracy": acc, **{k: v for k in lint.HOOK_CRITERIA if k != "accuracy"}}
+    h = lint.score_hooks([full("a", 4, 10), full("b", 9, 7)])
     assert h[0]["text"] == "b"
 
 

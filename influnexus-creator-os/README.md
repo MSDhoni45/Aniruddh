@@ -1,79 +1,61 @@
 # Influnexus Creator OS
 
-Research, script, edit, QC, publish and measure one short tech video a day.
-The 100,000-follower figure is a target, not a promise; nothing here manufactures engagement.
+Daily research → one viral-worthy topic → one recording-ready Hinglish script, with platform copy.
+Follower targets are stretch goals, not promises; nothing here manufactures engagement or guarantees reach.
+
+## Scope
+**In scope:** research, trend detection, verification, topic scoring, hooks, scripts, platform captions, content memory, analytics review.
+**Out of scope:** editing, rendering, footage processing and publishing. The modules under `src/creatoros/{editing,audio,graphics,rendering,subtitles,qc,publishing}`
+and `tools/make_test_footage.py` were built earlier and are not part of the daily workflow. They can be moved to their own repository.
 
 ## Daily loop
-1. **09:09 IST** a scheduled Claude session follows `RUNBOOK.md` and writes `daily/DATE/brief.md` (ready by 09:30).
-2. Record the script on the iPhone and save it to `footage/incoming/DATE.mov`.
-3. `creatoros edit footage/incoming/DATE.mov --date DATE` produces `final/DATE_{instagram,linkedin,x,youtube}.mp4` and a QC report in `renders/DATE/`. Files appear in `final/` only when QC passes.
-4. Post (manually for now), then log results with `creatoros metrics-add` at 24 h, 72 h and 7 days.
+1. **08:41 IST** the scheduled Claude session follows `RUNBOOK.md`. The package lands in `daily/DATE/package.md` by 09:30.
+2. Read section C once, record.
+3. When numbers exist, log them (`creatoros metrics-add`, `creatoros content-update`). Mondays: `creatoros weekly`.
 
 ## Setup
 ```
 pip install -e ".[dev]"
-tools/setup_models.sh                 # about 950 MB of speech models from GitHub releases; free
-python -m pytest                      # 28 unit tests + 1 end-to-end render (needs --with-test-voice models)
+python -m pytest tests/test_units.py tests/test_research.py   # 45 fast tests; no models needed
 ```
-Needs FFmpeg with libass, libx264 and zscale. On a Mac, `pip install -e ".[mac]"` adds faster-whisper for true word-level timestamps.
+The research workflow needs only Python. The out-of-scope editing tests additionally need FFmpeg and `tools/setup_models.sh`.
 
 ## Commands
 | Command | Does |
 |---|---|
-| `creatoros probe VIDEO` | resolution, frame rate, codec, rotation, HDR flag, audio level and noise floor |
-| `creatoros edit VIDEO --date DATE` | full edit and QC; resumes from cached steps |
-| `creatoros script-check FILE` | word count, estimated duration, banned openings and endings |
+| `creatoros package --date DATE` | validates `daily/DATE/package.json`, renders `package.md`, logs the topic |
+| `creatoros script-check FILE` | word count, estimated duration, banned openings, generic phrases |
 | `creatoros factcheck FILE --script FILE` | rejects unverified or unattributed claims |
-| `creatoros score FILE` | trend score for candidate stories |
-| `creatoros story-check` / `story-add` | repeat prevention (`research/story_log.jsonl`) |
-| `creatoros brief --date DATE` | validates `daily/DATE/brief.json` and renders the brief |
-| `creatoros calibrate --date DATE` | records the creator's measured speaking pace from a finished edit |
+| `creatoros score FILE` | viral potential score and eligibility for candidate topics |
+| `creatoros content-search [QUERY] [--status S] [--category C]` | search the content database |
+| `creatoros content-update --date D --slug S key=value ...` | status, platforms, audience response, lessons |
+| `creatoros weekly --end DATE` | weekly review data in `reports/weekly/` |
+| `creatoros calibrate --date DATE` | (needs an edit) measured speaking pace |
 | `creatoros metrics-add k=v ...` / `metrics-report` / `metrics-review` | analytics |
-| `creatoros publish --date DATE --platform P [--reviewed] [--dry-run]` | gated publishing |
 
-## How the edit works
-1. Voice-activity detection (Silero) splits the audio; Whisper small transcribes each piece as Hindi.
-2. Script (Roman Hinglish) and transcript (Devanagari) are reduced to phonetic keys and matched sentence by sentence.
-3. For each sentence the best complete take is kept, later takes winning near-ties. False starts, repeated takes, asides and long pauses are dropped and listed in `edit_report.json`.
-4. Cuts land on frame boundaries; framing changes slightly only across a real jump.
-5. Audio: high-pass, mild denoise, presence, gentle compression, two-pass loudness to -14 LUFS, limiter. Optional original music bed, ducked under the voice.
-6. Captions use the approved script's spelling, timed to the recorded audio, 2-5 words per group, inside Instagram's safe area. Sentences that matched weakly are flagged for a human check.
-7. Title cards and labels come from `scripts/DATE_edit_plan.json`. Each factual overlay must cite a fact-checked claim.
-8. One H.264 1080x1920 30 fps render, then QC (see `renders/DATE/qc_report.md`).
+## Rules the validator enforces
+- Topic must be the highest-scoring eligible candidate. LOW-confidence, low-credibility, on-hold, rejected or already-covered stories cannot win.
+- 15 credible candidates, or a written reason for fewer. Unknown metrics score zero; traction above 5 needs observed evidence.
+- At least 10 hooks over 5+ mechanisms; accuracy under 7 disqualifies; the script must open with the top hook.
+- Script: 30-40 s (40 hard), no banned openings or generic phrases, every attributed claim attributed in the spoken words, no UNVERIFIED or SPECULATION claims.
+- Script quality 90/100 or more, no check under 7; duration is measured, not self-scored.
+- Research summary 100-150 words; 3-5 Instagram hashtags; every source has a URL.
+- A topic already in `research/content_db.jsonl` needs `material_update_of`.
 
-## Verified state (18 November 2026)
+## Verified state (18 November 2026, 23:50 IST)
 | Component | State | Evidence |
 |---|---|---|
-| Daily research | WORKING, with limits | `daily/2026-11-18/brief.md`: 11 candidates from web search. X, Instagram and most news sites cannot be opened from the cloud environment, so engagement counts are UNKNOWN |
-| Source verification | PARTIALLY WORKING | Claims cross-checked across independent outlets via search; primary pages (Oracle, Calif) could not be opened here |
-| Script generation and checks | WORKING | `scripts/2026-11-18_script.txt`; duration is an estimate at an assumed 150 wpm until calibrated |
-| Footage ingestion | WORKING on synthetic footage | HEVC MOV 60 fps with rotation tag, and horizontal H.264 MP4. No real iPhone file has been processed yet |
-| Transcription | WORKING, approximate timing | Whisper small via sherpa-onnx; word times inside a phrase are interpolated |
-| Retake removal | WORKING on synthetic footage | false start, aside, bad take and 2.4 s pause removed in the end-to-end test |
-| Subtitles | WORKING | `subtitles/*.srt` and burned-in captions; layout check passes |
-| Graphics | WORKING | title, label, cards, split, credit, image. Video B-roll overlay is implemented but untested |
-| Audio processing | WORKING | measured -14.0 LUFS, true peak below -1.5 dBFS; music ducking rendered in the horizontal sample |
-| MP4 export | WORKING | 1080x1920 H.264/AAC 30 fps, four platform files |
-| Automated QC | WORKING | 28 checks on the sample; lip-sync is not measured, only stream alignment |
-| HDR tone-mapping | NOT TESTED | filter chain is in place; no HDR sample was available |
-| Daily scheduling | WORKING | scheduled task "Influnexus daily brief", 09:09 Asia/Kolkata; first run not yet observed |
-| Notification | PARTIALLY WORKING | push notification was requested by the app; delivery to a phone is not confirmed from here |
-| Analytics storage | WORKING, no real data | CSV store and derived metrics are unit-tested; nothing has been published |
-| Analytics from platform APIs | BLOCKED | no credentials; graph.facebook.com unreachable from this environment |
-| Publishing: Instagram, YouTube | BLOCKED | adapters written against the official APIs but never run against them; need credentials (and a public video URL for Instagram) |
-| Publishing: LinkedIn, X | NOT IMPLEMENTED | captions are prepared; post manually |
-| Competitor video analysis | BLOCKED | no creator video could be watched; `research/` separates cited facts from hypotheses |
-| Cloud video editing on real footage | NOT TESTED | renders complete in this cloud container (about 3 min per reel), but there is no upload path for raw iPhone footage yet |
-
-## Cloud and local
-- Cloud (no Mac needed): research, brief, scheduling, notification, story log.
-- Editing runs anywhere FFmpeg and the models are installed. Today the practical path is the Mac, because the raw file is there. To edit in the cloud the footage must reach the session (for example a shared folder through Remote Control).
-
-## Rules the code enforces
-- A brief will not render with a banned opening, a script over 40 s, an UNVERIFIED claim in the script, or an attributed claim whose attribution is not spoken.
-- High traction scores need recorded evidence; unknown metrics score zero.
-- Publishing refuses without a passing QC report, a clean fact-check, credentials, and `--reviewed` when QC raised warnings or a disputed claim is used. A file or date is never published twice.
-- Source footage is never moved or deleted. Tokens are read from the environment and redacted from logs.
+| Current-information retrieval | WORKING | web search returned items dated 16-18 Nov 2026 across all categories |
+| Social discovery | PARTIALLY WORKING | X posts are found through search results only; X, Instagram, YouTube, Reddit and LinkedIn cannot be opened; engagement is UNKNOWN |
+| Source verification | PARTIALLY WORKING | claims cross-checked across independent outlets; some primary pages blocked (e.g. oag.ca.gov returns 403) |
+| Topic ranking | WORKING | 22 candidates ranked in `daily/2026-11-18/package.md`; tests cover eligibility rules |
+| Script generation and QA | WORKING | 90-word script, quality 92/100; validator rejects 11 kinds of rule break in tests |
+| Duplicate prevention | WORKING | content database blocks repeats unless a new development is named (tested) |
+| Daily scheduling | WORKING, first run not yet observed | scheduled task "Influnexus daily brief", 08:41 Asia/Kolkata |
+| Notification | PARTIALLY WORKING | push notification is requested at the end of each run; phone delivery cannot be confirmed from here |
+| Competitor intelligence | PARTIALLY WORKING | `research/` has accounts and audience numbers with sources; no creator video could be watched, so delivery and editing analysis is absent |
+| Performance learning | WORKING, no data yet | analytics store, derived ratios and weekly review are tested; nothing has been published |
+| Speaking pace | ASSUMED | 150 words per minute until a recording is measured |
 
 ## Layout
-`config/` settings, style, platforms · `research/` benchmarks, style guide, story log · `daily/` briefs · `scripts/` script, sources, fact-check, edit plan · `footage/` raw in, processing records · `assets/` fonts, music, licence manifest · `src/creatoros/` code · `tests/` · `tools/` model setup and synthetic test footage.
+`config/` settings · `research/` benchmarks, style guide, hook patterns, content database · `daily/DATE/` package, script, fact-check, sources · `reports/weekly/` · `analytics/` · `src/creatoros/` code · `tests/`. Editing-related folders (`footage/`, `assets/`, `final/`, `renders/`, `subtitles/`) are out of scope.
