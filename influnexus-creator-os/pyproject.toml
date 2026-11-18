@@ -1,0 +1,24 @@
+[project]
+name = "creatoros"
+version = "1.0.0"
+description = "Influnexus Creator OS: research, script, edit, QC, publish and analytics pipeline for short-form tech video"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pillow", "pyyaml", "requests", "soundfile", "sherpa-onnx", "opencv-python-headless>=4.8,<5"]
+
+[project.optional-dependencies]
+dev = ["pytest", "piper-tts"]
+mac = ["faster-whisper"]
+
+[project.scripts]
+creatoros = "creatoros.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: needs ffmpeg and speech models"]

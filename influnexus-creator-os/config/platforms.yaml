@@ -1,0 +1,16 @@
+# Credentials are read from environment variables only. Never write tokens in this file.
+instagram:
+  enabled: true
+  env: [IG_USER_ID, IG_ACCESS_TOKEN]
+  api_base: https://graph.facebook.com/v21.0
+  # The Graph API needs a publicly reachable video URL. Set a public base URL where final/ files are hosted.
+  public_base_url_env: CREATOROS_PUBLIC_BASE_URL
+youtube:
+  enabled: true
+  env: [YT_ACCESS_TOKEN]
+  category_id: "28"
+linkedin:
+  enabled: false   # package-only: no API adapter implemented
+x:
+  enabled: false   # package-only: no API adapter implemented
+posting_time_ist: "19:30"   # starting hypothesis; revise from analytics

@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-18",
+  "music": false,
+  "emphasis": [
+    "ghante",
+    "dollar",
+    "java4shell",
+    "patch",
+    "panic",
+    "sasta",
+    "mehenga",
+    "update"
+  ],
+  "overlays": [
+    {
+      "id": "hook",
+      "type": "hook_title",
+      "text": "1 ghanta. $200.",
+      "from": 0,
+      "to": {
+        "sentence": 1,
+        "edge": "end"
+      },
+      "claim_ids": [
+        "c1"
+      ],
+      "attribution": "shown with the 'Claim: Calif' label",
+      "y": 320
+    },
+    {
+      "id": "claim_label",
+      "type": "label",
+      "text": "Claim: Calif",
+      "from": 0,
+      "to": {
+        "sentence": 2,
+        "edge": "end"
+      },
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "id": "name",
+      "type": "stat_card",
+      "title": "Java4Shell",
+      "text": "CVE-2026-114938 · OpenJDK Base64 decoder",
+      "from": {
+        "sentence": 3
+      },
+      "to": {
+        "sentence": 4,
+        "edge": "end"
+      },
+      "claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "id": "patch",
+      "type": "stat_card",
+      "title": "Oracle: patch released",
+      "text": "Critical Patch Update, 17 Nov 2026",
+      "from": {
+        "sentence": 5
+      },
+      "to": {
+        "sentence": 6,
+        "edge": "end"
+      },
+      "claim_ids": [
+        "c3"
+      ]
+    },
+    {
+      "id": "calm",
+      "type": "split",
+      "rows": [
+        {
+          "title": "Oracle: \"difficult to exploit\""
+        },
+        {
+          "title": "No confirmed attacks",
+          "text": "as of 18 Nov"
+        }
+      ],
+      "from": {
+        "sentence": 7
+      },
+      "to": {
+        "sentence": 7,
+        "edge": "end"
+      },
+      "claim_ids": [
+        "c4",
+        "c5"
+      ]
+    },
+    {
+      "id": "lesson",
+      "type": "split",
+      "factual": false,
+      "rows": [
+        {
+          "title": "Bug dhoondhna: sasta"
+        },
+        {
+          "title": "Patch late: mehenga",
+          "color": "#FF5A5F"
+        }
+      ],
+      "from": {
+        "sentence": 8
+      },
+      "to": {
+        "sentence": 9,
+        "edge": "end"
+      }
+    },
+    {
+      "id": "credit",
+      "type": "credit",
+      "text": "Sources: Oracle, Calif, Qualys, Tenable",
+      "from": {
+        "sentence": 10
+      },
+      "to": {
+        "sentence": 11,
+        "edge": "end"
+      }
+    }
+  ],
+  "sfx": []
+}

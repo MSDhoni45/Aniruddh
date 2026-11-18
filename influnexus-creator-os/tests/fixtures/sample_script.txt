@@ -1,0 +1,11 @@
+Ek AI ne Java mein ek critical bug sirf ek ghante mein dhoondh liya. Kharcha? Do sau dollar se kam.
+
+Yeh claim hai security startup Calif ka. Bug ka naam Java4Shell. Java par banks, airlines, aur shayad aapki company ka backend chalta hai.
+
+Oracle ka patch aa chuka hai.
+
+Lekin panic nahi. Oracle khud kehta hai exploit karna mushkil hai, aur abhi tak koi real attack confirm nahi.
+
+Asli sabak: bug dhoondhna ab sasta ho gaya hai. Patch late karna mehenga.
+
+Developer ho? Aaj hi Java update karo.

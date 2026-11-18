@@ -1,0 +1,24 @@
+{
+  "files": {
+    "assets/music/influnexus_pad_01.wav": {
+      "license": "Original work, synthesised by creatoros.audio.chain.generate_pad; owned by Influnexus",
+      "source": "generated in this repository"
+    },
+    "assets/fonts/Inter-ExtraBold.otf": {
+      "license": "SIL Open Font License 1.1 (see assets/licensed/Inter-LICENSE.txt)",
+      "source": "https://github.com/rsms/inter"
+    },
+    "assets/fonts/Inter-Bold.otf": {
+      "license": "SIL Open Font License 1.1",
+      "source": "https://github.com/rsms/inter"
+    },
+    "assets/fonts/Inter-SemiBold.otf": {
+      "license": "SIL Open Font License 1.1",
+      "source": "https://github.com/rsms/inter"
+    },
+    "assets/fonts/Inter-Medium.otf": {
+      "license": "SIL Open Font License 1.1",
+      "source": "https://github.com/rsms/inter"
+    }
+  }
+}
