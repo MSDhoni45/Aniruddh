@@ -16,9 +16,13 @@ FIELDS = ["id", "text", "status", "primary_source", "supporting_source", "source
 READY, HOLD = "RECORDING READY", "HOLD — NOT RECORDING READY"
 
 
-def check_claim(c: dict) -> list[str]:
+FIELDS_V2 = FIELDS + ["source_title", "supporting_evidence"]
+
+
+def check_claim(c: dict, v2: bool = False) -> list[str]:
     cid = c.get("id", "?")
-    p = [f"{cid}: missing {f}" for f in FIELDS if f not in c]
+    need = FIELDS_V2 if v2 and c.get("in_script") else FIELDS
+    p = [f"{cid}: missing {f}" for f in need if f not in c]
     if p:
         return p
     if c["status"] not in STATUSES:
@@ -44,12 +48,13 @@ def check_claim(c: dict) -> list[str]:
     return p
 
 
-def readiness(claims: list[dict], script: str, unresolved: list[str]) -> dict:
-    """Decide READY or HOLD. Problems are structural errors; reasons are what keeps the script from recording."""
+def readiness(claims: list[dict], script: str, unresolved: list[str], v2: bool = False) -> dict:
+    """Decide READY or HOLD. Problems are structural errors; reasons are what keeps the script from recording.
+    v2 packages also require, for every script claim, the source title and the exact supporting evidence text."""
     problems, reasons = [], []
     low = script.lower()
     for c in claims:
-        problems += check_claim(c)
+        problems += check_claim(c, v2)
     if problems:
         return {"status": HOLD, "problems": problems, "reasons": ["claim table incomplete"]}
     for c in claims:
@@ -91,4 +96,7 @@ def table(claims: list[dict]) -> str:
         rows.append(f"| {c['id']} | {c['text']} | {prim} | {link(c.get('supporting_source'))} | {c['status']} | "
                     f"{c.get('source_date') or 'UNKNOWN'} | {c['confidence']} | {'yes' if c['in_script'] else 'no'} |")
     notes = [f"- **{c['id']}:** {c['note']}" for c in claims if c.get("note")]
+    ev = [f"- **{c['id']}** — {c.get('source_title', '')}: \"{c['supporting_evidence']}\"" for c in claims if c.get("supporting_evidence")]
+    if ev:
+        notes = ["**Exact supporting evidence**", ""] + ev + ([""] + notes if notes else [])
     return "\n".join(rows) + ("\n\n" + "\n".join(notes) if notes else "") + "\n"

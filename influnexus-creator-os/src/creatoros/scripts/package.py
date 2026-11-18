@@ -16,6 +16,28 @@ REQUIRED = ["date", "language", "slug", "keys", "topic", "category", "topic_type
             "script", "hook", "hooks", "quality_scores", "recording", "instagram", "linkedin", "x", "youtube", "growth",
             "x_signals", "candidates", "factcheck", "access_limits"]
 MIN_CANDIDATES = 15
+REQUIRED_V2 = ["visuals"]          # v2 packages (scoring "v2", from 19 Nov 2026) also need visual suggestions for the editor
+
+
+def is_v2(p: dict) -> bool:
+    return p.get("scoring") == "v2"
+
+
+def _hook_tokens(t: str) -> set[str]:
+    import re
+    return {w for w in re.findall(r"[a-z0-9']+", t.lower()) if len(w) > 2}
+
+
+def reused_hook(hook: str, slug: str, path=None) -> dict | None:
+    """A hook is reused if it shares most of its words with a hook already used for another topic."""
+    a = _hook_tokens(hook)
+    for e in content_db.entries(path):
+        if e.get("slug") == slug or not e.get("hook"):
+            continue
+        b = _hook_tokens(e["hook"])
+        if a and b and len(a & b) / len(a | b) >= 0.6:
+            return e
+    return None
 
 
 def _words(text: str) -> int:
@@ -23,9 +45,17 @@ def _words(text: str) -> int:
 
 
 def validate(p: dict) -> tuple[list[str], dict]:
-    problems = [f"missing: {k}" for k in REQUIRED if k not in p]
+    problems = [f"missing: {k}" for k in REQUIRED + (REQUIRED_V2 if is_v2(p) else []) if k not in p]
     if problems:
         return problems, {}
+    if is_v2(p):
+        if not p["visuals"] or not all(isinstance(v, str) and v.strip() for v in p["visuals"]):
+            problems.append("visuals: list at least one B-roll or graphic suggestion for the editor")
+        if any(candmod.scheme(c) != "v2" for c in p["candidates"]):
+            problems.append("a v2 package must score every candidate with the v2 criteria")
+        old = reused_hook(p["hook"], p["slug"])
+        if old:
+            problems.append(f"hook too similar to the hook used on {old['date']} ('{old['hook']}')")
     language = config.settings().get("language", "english")
     if p["language"] != language:
         problems.append(f"package language is '{p['language']}' but the configured default is '{language}'")
@@ -45,7 +75,7 @@ def validate(p: dict) -> tuple[list[str], dict]:
     q = lint.quality(p["quality_scores"], p["script"])
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
-    ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []))
+    ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), v2=is_v2(p))
     problems += [f"claim table: {x}" for x in ready["problems"]]
     problems += ver.story_confidence_ok(p["evidence_confidence"], p["factcheck"]["claims"])
     ranked = candmod.rank(p["candidates"])
@@ -131,6 +161,43 @@ _WEAK_END = {"a", "an", "the", "its", "it's", "of", "to", "for", "and", "but", "
              "his", "her", "my", "your", "our", "is", "are", "was", "be", "it"}
 
 
+def render_today(p: dict, info: dict) -> str:
+    """The daily deliverable, in the order the creator asked for. Concise; full detail stays in package.md."""
+    chk, rd = info["lint"], info["ready"]
+    win = next((c for c in info["ranked"] if c["eligible"] and c["headline"] == p["topic"]), None)
+    score = f"{win['trend_score']}/100 (editorial score, not a view prediction)" if win else "n/a"
+    r, ig, li, xx, yt = p["recording"], p["instagram"], p["linkedin"], p["x"], p["youtube"]
+    claims = [c for c in p["factcheck"]["claims"] if c.get("in_script")]
+    L = [f"# Script for today: {p['date']}", "", f"**STATUS: {rd['status']}**", ""]
+    if rd["reasons"]:
+        L += ["Do not record. Unresolved:"] + [f"- {x}" for x in rd["reasons"]] + [""]
+    L += ["**DATE:** " + p["date"], "", "**SELECTED TOPIC:** " + p["topic"], "", "**WHY THIS TOPIC:** " + p.get("why_short", p["why_selected"]), "",
+          "**VIRAL POTENTIAL:** " + score, "", "**BEST HOOK:** " + p["hook"], "", "**FINAL SCRIPT:**", "", "```", p["script"].strip(), "```", "",
+          f"**ESTIMATED DURATION:** about {chk['seconds']} seconds ({chk['words']} words at {chk['words_per_minute']:.0f} wpm, {chk['pace_basis']})", "",
+          "**RECORDING DIRECTIONS:**", f"- Tone: {r['tone']}", f"- Pauses: {'; '.join(r['pauses'])}", f"- Emphasise: {', '.join(r['emphasis'])}",
+          f"- Pronunciation: {'; '.join(r['pronunciation'])}", "- Keep your natural accent.", ""]
+    if p.get("visuals"):
+        L += ["**VISUAL SUGGESTIONS (for your editor):**"] + [f"- {v}" for v in p["visuals"]] + [""]
+    L += ["**FACT-CHECK:**"]
+    for c in claims:
+        L.append(f"- {c['text']} — [{c.get('source_title') or 'primary source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, {c.get('source_date') or 'date unknown'})"
+                 if c.get("primary_source") else f"- {c['text']} — no primary source ({c['status']}, {c['confidence']})")
+    L += ["", "**ENGLISH CAPTIONS:**", "", "```"] + caption_lines(p["script"]) + ["```", "", "**PLATFORM CONTENT:**", "",
+          "*Instagram*", "", ig["caption"], "", " ".join(ig["hashtags"]), "", "*YouTube Shorts*", "", f"Title: {yt['title']}", "",
+          yt["description"], "", "*LinkedIn*", "", li["caption"], "", "*X*", "", xx["post"], "",
+          "Full research, all candidates, hooks and the claim table: `package.md`."]
+    return "\n".join(L) + "\n"
+
+
+def render_recording(p: dict, info: dict) -> str:
+    """'Prepare for recording': only the script and delivery notes."""
+    chk, r = info["lint"], p["recording"]
+    return "\n".join([f"# Recording: {p['date']} ({info['ready']['status']})", "", p["script"].strip(), "",
+                       f"About {chk['seconds']} seconds.", "", f"- Tone: {r['tone']}", f"- Opening: {r['opening_expression']}",
+                       f"- Pauses: {'; '.join(r['pauses'])}", f"- Emphasise: {', '.join(r['emphasis'])}",
+                       f"- Pronunciation: {'; '.join(r['pronunciation'])}", "- Keep your natural accent."]) + "\n"
+
+
 def caption_lines(script: str, max_words: int = 5) -> list[str]:
     """On-screen caption text: the script's exact words in groups of 2-5, never crossing a sentence, split at commas first,
     evenly sized, and never ending a line on a dangling word like 'the' or 'its'. Text only, no timing."""
@@ -167,6 +234,8 @@ def save(p: dict, out: Path | None = None) -> dict:
     (out / "package.md").write_text(render(p, info), encoding="utf-8")
     (out / "script.txt").write_text(p["script"].strip() + "\n", encoding="utf-8")
     (out / "captions.txt").write_text("\n".join(caption_lines(p["script"])) + "\n", encoding="utf-8")
+    (out / "today.md").write_text(render_today(p, info), encoding="utf-8")
+    (out / "recording.md").write_text(render_recording(p, info), encoding="utf-8")
     (out / "claims.md").write_text(ver.table(p["factcheck"]["claims"]), encoding="utf-8")
     (out / "factcheck.md").unlink(missing_ok=True)
     write_json(out / "sources.json", {"primary": p["primary_sources"], "supporting": p["supporting_sources"],
@@ -177,5 +246,7 @@ def save(p: dict, out: Path | None = None) -> dict:
     status = info["ready"]["status"]
     content_db.update(p["date"], p["slug"], status="scripted" if status == ver.READY else "held",
                       hold_reasons=info["ready"]["reasons"], language=p["language"], hook=p["hook"], script=p["script"].strip())
+    from ..research import memory
+    memory.record(p, info["ranked"])
     return {"ok": True, "status": status, "reasons": info["ready"]["reasons"], "package": str(out / "package.md"),
             "content_db": "added" if not rec.get("duplicate") else "already present"}

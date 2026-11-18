@@ -1,6 +1,7 @@
 # Daily runbook: research → viral topic → recording package (English)
 
-Run by the scheduled task "Influnexus daily brief" at 08:41 Asia/Kolkata so the package is ready by 09:30 IST.
+Run by the scheduled task "Influnexus daily brief" at 08:41 Asia/Kolkata so the package is ready by 09:30 IST, and whenever the
+creator types "Script for today" (see the command table in the repository's `CLAUDE.md`).
 `DATE` is today's date in IST. This project stops at a recording-ready script. It does not edit, render or publish video.
 
 ## 0. Setup (the container may be fresh)
@@ -8,7 +9,24 @@ Run by the scheduled task "Influnexus daily brief" at 08:41 Asia/Kolkata so the 
 cd influnexus-creator-os && git pull --ff-only && pip install -q -e .
 ```
 
+## 0.5 Log the run and check for an existing package
+- `creatoros runlog start --trigger scheduled` (or `--trigger manual`). At the end: `creatoros runlog end --status READY|HOLD|NONE`.
+  `logs/runs.jsonl` is committed; it is the evidence that a run actually happened.
+- If `daily/DATE/today.md` already says RECORDING READY, do not research again: re-check time-sensitive claims, re-run
+  `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
+
 ## 1. Research (aim to finish by 09:10 IST)
+- Cover everything in AI and technology, not only model launches: AI models, agents, generative AI, research, tools, AI coding;
+  NVIDIA, Microsoft, Google, OpenAI, Anthropic, Apple, Meta, Tesla, xAI, Amazon and emerging companies; founders and CEOs
+  (statements, interviews, podcasts, keynotes, predictions, decisions, demos); startups (launches, funding, unusual models, failures);
+  robotics, humanoids, space, semiconductors, autonomous and electric vehicles, quantum, biotech, AR/VR, transport, energy;
+  consumer tech (phones, computers, wearables, AI gadgets, useful apps, inventions).
+- Research breaking news from the last 24-72 hours AND fascinating evergreen stories. The most interesting verified story wins, not the newest.
+- Each candidate (scoring "v2") records: `headline`, `original_source` (URL), `announced_at`, `main_claim`, `verification_status`
+  (VERIFIED / PARTLY VERIFIED / UNVERIFIED / REJECTED), `why_it_matters`, `potential_hook`, `target_audience`, `uncertainty`,
+  `evidence_confidence`, `already_covered`, and editorial scores 0-10 for curiosity (20), storytelling (20), shareability (15),
+  global relevance (15), freshness or evergreen value (10), visual potential (10), originality (10). Scores are editorial, never view predictions.
+- Check `research/topics_db.jsonl` and `creatoros content-search` for repeats before scoring.
 - Search the last 24 hours across all six categories in `README.md`; include 24-72 hour stories only when interest is growing (label them EMERGING).
 - Send searches in parallel. Use social platforms to find discussion and authoritative sources to verify it.
 - Record the original announcement date, not the date of a repost.
@@ -18,7 +36,8 @@ cd influnexus-creator-os && git pull --ff-only && pip install -q -e .
 - Stories whose key facts will change before recording (e.g. an IPO not yet priced) get `hold_reason`.
 
 ## 2. Verify the leading story (permanent rule: claim verification table)
-- Every factual claim goes in `factcheck.claims` with: `text` (exact claim), `primary_source` (URL or null), `supporting_source`
+- Every factual claim goes in `factcheck.claims` with: `text` (exact claim), `primary_source` (URL or null), `source_title`,
+  `supporting_evidence` (the exact sentence from the source that supports it), `supporting_source`
   (an independent URL or null), `status`, `source_date`, `confidence` (HIGH/MEDIUM/LOW), `access`, `in_script`.
   - `access`: `opened` (page read), `search-index` (the primary site's own indexed text, read through search, page not opened),
     `secondary-only`, or `not found`. Say which, honestly.
@@ -48,11 +67,13 @@ cd influnexus-creator-os && git pull --ff-only && pip install -q -e .
 - Learn storytelling principles from Cleo Abram, MKBHD, Bilawal Sidhu, Rowan Cheung and Mrwhosetheboss (see `research/creator_style_guide.md`).
   Never copy their lines, formats or catchphrases.
 - Use only claims that are HIGH in the claim table. Leave out true-but-old facts presented as new.
-- Recording direction covers delivery only (tone, emphasis, pauses, pronunciation). No video editing instructions.
+- Recording direction covers delivery only (tone, emphasis, pauses, pronunciation of difficult names). Visual suggestions for the
+  separate editor go in `visuals`; nothing else about editing.
 - Score the ten quality checks honestly; below 90, or any check below 7, means rewrite. Duration is measured by the tool.
 
 ## 4. Build
-Write `daily/DATE/package.json` (same shape as `daily/2026-11-18/package.json`), then:
+Write `daily/DATE/package.json` with `"scoring": "v2"` (same shape as `daily/2026-11-19/package.json`), including `visuals`
+(B-roll and graphic suggestions for the creator's separate editor; never footage you can't license, never fake footage). Then:
 ```
 creatoros package --date DATE
 ```
@@ -65,12 +86,17 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 - Commit `daily/DATE/` and `research/content_db.jsonl`; push to the working branch.
 - Send one push notification with the topic and `daily/DATE/package.md`. Report delivery only as the tool reports it.
 - If no candidate passes the gate by 09:20 IST, deliver no script: say so plainly, list what blocked each top candidate.
-- Reply with the package so it can be recorded from the message.
+- Reply with the contents of `creatoros today` (DATE, SELECTED TOPIC, WHY, VIRAL POTENTIAL, BEST HOOK, FINAL SCRIPT, DURATION,
+  RECORDING DIRECTIONS, VISUAL SUGGESTIONS, FACT-CHECK, ENGLISH CAPTIONS, PLATFORM CONTENT), concise enough to record from.
 - Do not publish anything anywhere.
 
 ## 6. Learning (when the creator supplies numbers)
 - `creatoros metrics-add ...` at 24 h, 72 h and 7 days; `creatoros content-update --date D --slug S status=published platforms=instagram,x`.
 - Never invent numbers. One video is an anecdote.
+
+## Creator intelligence
+- `research/creators_db.csv` holds the verified creator database (target 100-200; started at 50+). Record metrics only when observed,
+  with source and date; anything not watched is NOT OBSERVED. Learn principles; never copy scripts or distinctive expression.
 
 ## Weekly (Mondays)
 - `creatoros weekly --end DATE`, then add a short "Recommendations" section to `reports/weekly/DATE.md`, citing the data above it.

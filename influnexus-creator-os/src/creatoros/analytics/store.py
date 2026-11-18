@@ -10,8 +10,10 @@ from .. import config
 
 FIELDS = ["date", "video_id", "platform", "checkpoint", "views", "reach", "watch_time_s", "avg_view_duration_s",
           "completion_rate", "shares", "saves", "comments", "likes", "profile_visits", "new_followers",
-          "business_inquiries", "topic", "hook_type", "language", "format", "duration_s", "source", "collected_at"]
-NUMERIC = FIELDS[4:16] + ["duration_s"]
+          "business_inquiries", "topic", "hook_type", "language", "format", "duration_s", "source", "collected_at",
+          "viewed_rate", "top_countries"]
+# viewed_rate: Instagram's "viewed vs swiped away" share (0-1). top_countries: as reported, e.g. "IN 41%; US 12%".
+NUMERIC = FIELDS[4:16] + ["duration_s", "viewed_rate"]
 CHECKPOINTS = ["24h", "72h", "7d"]
 CSV = "analytics/performance.csv"
 
@@ -73,7 +75,8 @@ def derive(r: dict) -> dict:
             "saves_per_1k_views": per_k("saves"), "comments_per_1k_views": per_k("comments"),
             "likes_per_1k_views": per_k("likes"),
             "avg_retention": round(avd / dur, 3) if avd is not None and dur else None,
-            "completion_rate": _f(r, "completion_rate")}
+            "completion_rate": _f(r, "completion_rate"), "viewed_rate": _f(r, "viewed_rate"),
+            "top_countries": r.get("top_countries") or None}
 
 
 def by_dimension(dim: str, checkpoint: str = "7d", platform: str = "instagram", p: Path | None = None, min_n: int = 3) -> list[dict]:

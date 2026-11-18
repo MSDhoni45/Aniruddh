@@ -10,7 +10,11 @@ Follower targets are stretch goals, not promises; nothing here manufactures enga
 and `tools/make_test_footage.py` were built earlier and are not part of the daily workflow. They can be moved to their own repository.
 
 ## Daily loop
-1. **08:41 IST** the scheduled Claude session follows `RUNBOOK.md`. The package lands in `daily/DATE/package.md` by 09:30.
+Type **"Script for today"** in a Claude Code session on this repository (the repository's `CLAUDE.md` defines it and the other
+commands: "Give me 5 topics", "Different topic", "Make it more viral", "Make it 30 seconds", "Make it more natural", "Prepare for recording").
+
+1. **08:41 IST** the scheduled Claude session follows `RUNBOOK.md`. The deliverable lands in `daily/DATE/today.md` by 09:30
+   (full research in `package.md`, script-only view in `recording.md`, caption text in `captions.txt`).
 2. Read section C once, record in your natural voice. `captions.txt` has the on-screen caption text.
 3. When numbers exist, log them (`creatoros metrics-add`, `creatoros content-update`). Mondays: `creatoros weekly`.
 
@@ -24,7 +28,11 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 ## Commands
 | Command | Does |
 |---|---|
-| `creatoros package --date DATE` | validates `daily/DATE/package.json`, renders `package.md`, logs the topic |
+| `creatoros package --date DATE` | validates `daily/DATE/package.json`, renders `package.md`, `today.md`, `recording.md`, `captions.txt`, logs topics and claims |
+| `creatoros today` / `recording` | today's deliverable / script and delivery notes only |
+| `creatoros topics -n 5` | strongest eligible topics, verified first, with verification status |
+| `creatoros switch` | archive today's package before writing a different topic |
+| `creatoros runlog start\|end` | append to `logs/runs.jsonl`, the proof that a run executed |
 | `creatoros script-check FILE` | word count, estimated duration, banned openings, generic phrases |
 | `creatoros factcheck FILE --script FILE` | rejects unverified or unattributed claims |
 | `creatoros score FILE` | viral potential score and eligibility for candidate topics |
@@ -40,6 +48,10 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 - Every package carries a claim verification table (exact claim, primary source, supporting source, status, source date, confidence, access).
 - RECORDING READY only when every central script claim is HIGH with a primary source, no quote has unverified wording and nothing is unresolved;
   otherwise HOLD — NOT RECORDING READY. Secondary repetition alone is never HIGH.
+- Scoring v2 (from 19 Nov 2026): curiosity 20, storytelling 20, shareability 15, global relevance 15, freshness or evergreen 10,
+  visual 10, originality 10. Editorial scores, not view predictions. Older packages keep the v1 weights.
+- v2 packages need visual suggestions for the editor, and every script claim needs its source title and the exact supporting evidence.
+- Hooks may not repeat a hook already used for another topic.
 - Topic must be the highest-scoring eligible candidate. LOW-confidence, low-credibility, on-hold, rejected or already-covered stories cannot win.
 - 15 credible candidates, or a written reason for fewer. Unknown metrics score zero; traction above 5 needs observed evidence.
 - At least 10 hooks over 5+ mechanisms; accuracy under 7 disqualifies; the script must open with the top hook.
@@ -48,19 +60,19 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 - Research summary 100-150 words; 3-5 Instagram hashtags; every source has a URL.
 - A topic already in `research/content_db.jsonl` needs `material_update_of`.
 
-## Verified state (19 November 2026, 01:00 IST)
+## Verified state (19 November 2026, 01:30 IST)
 | Component | State | Evidence |
 |---|---|---|
 | Current-information retrieval | WORKING | web search returned items dated 16-18 Nov 2026 across all categories |
 | Social discovery | PARTIALLY WORKING | X posts are found through search results only; X, Instagram, YouTube, Reddit and LinkedIn cannot be opened; engagement is UNKNOWN |
 | Source verification | PARTIALLY WORKING | primary sites cannot be opened from the cloud environment; their own indexed text is read through domain-restricted search and labelled `search-index`. 18 Nov California story held because its case number, exact allegation wording and OpenAI statement could not be verified |
-| Topic ranking | WORKING | 22 candidates ranked in `daily/2026-11-18/package.md`; tests cover eligibility rules |
-| Script generation and QA | WORKING | 84-word English GPT-6.2 script passes the readiness gate; 58 tests cover the validator, gate and English rules |
-| Duplicate prevention | WORKING | content database blocks repeats unless a new development is named (tested) |
-| Daily scheduling | WORKING, first run not yet observed | scheduled task "Influnexus daily brief", 08:41 Asia/Kolkata |
+| Topic ranking | WORKING | 21 candidates scored on the v2 criteria in `daily/2026-11-19/package.md`; tests cover eligibility rules |
+| Script generation and QA | WORKING | 19 Nov: 89-word English script on a Nature Medicine brain-implant study, RECORDING READY; 69 fast tests |
+| Duplicate prevention and memory | WORKING | content database blocks repeated topics and hooks; `research/topics_db.jsonl` and `claims_db.jsonl` keep every researched topic (incl. rejected) and claim |
+| Daily scheduling | CONFIGURED, NOT YET PROVEN | one task, "Influnexus daily brief", 08:41 IST; no run on record yet. Each run writes `logs/runs.jsonl`; a 09:40 IST check on 19 Nov will verify the first run |
 | Notification | PARTIALLY WORKING | push notification is requested at the end of each run; phone delivery cannot be confirmed from here |
-| Competitor intelligence | PARTIALLY WORKING | `research/` has accounts and audience numbers with sources; no creator video could be watched, so delivery and editing analysis is absent |
-| Performance learning | WORKING, no data yet | analytics store, derived ratios and weekly review are tested; nothing has been published |
+| Competitor intelligence | PARTIALLY WORKING | `research/creators_db.csv` (58 verified creators, 3 partial; every account URL seen in search results) and `research/creator_benchmarks.md`; no creator video can be watched from here, so delivery and editing analysis is NOT OBSERVED |
+| Performance learning | WORKING, no data yet | analytics store (now incl. viewed-vs-swiped rate and audience geography), ratios and weekly review are tested; nothing published |
 | Speaking pace | ASSUMED | 150 words per minute until a recording is measured |
 
 ## Layout

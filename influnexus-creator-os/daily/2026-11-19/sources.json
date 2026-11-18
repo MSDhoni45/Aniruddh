@@ -1,0 +1,41 @@
+{
+  "primary": [
+    {
+      "label": "Nature Medicine: Long-term independent use of an intracortical BCI for speech and cursor control (15 Jun 2026)",
+      "url": "https://www.nature.com/articles/s41591-026-04414-6"
+    },
+    {
+      "label": "bioRxiv preprint, same authors",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1"
+    },
+    {
+      "label": "UC Davis Health release (Jun 2026)",
+      "url": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06"
+    },
+    {
+      "label": "UC Davis Health release (Aug 2024)",
+      "url": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "Nature Asia press release",
+      "url": "https://www.natureasia.com/en/info/press-releases/detail/9358"
+    },
+    {
+      "label": "2024 paper on PMC: An accurate and rapidly calibrating speech neuroprosthesis",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/"
+    },
+    {
+      "label": "Martin Cid: 'a brain implant returned it for 3,800 hours'",
+      "url": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "nature.com, biorxiv.org, health.ucdavis.edu, x.com and all news sites cannot be opened from this cloud environment; primary sites' own indexed text was read through domain-restricted search.",
+    "No X post about this story was checked; engagement is UNKNOWN.",
+    "Anthropic's IPO price was not yet set at research time (00:30 IST).",
+    "Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured."
+  ]
+}

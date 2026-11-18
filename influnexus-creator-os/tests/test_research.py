@@ -165,3 +165,98 @@ def test_caption_lines_keep_exact_words_in_short_groups():
     assert " ".join(lines).split() == PKG["script"].split()
     assert all(1 <= len(l.split()) <= 5 for l in lines)
     assert not any(l.split()[-1].lower() in package._WEAK_END for l in lines)
+
+
+# ---------- v2 scoring, claim evidence, memory and commands (19 Nov 2026) ----------
+from creatoros import cli
+from creatoros.research import memory
+
+PKG19 = json.loads((ROOT / "daily" / "2026-11-19" / "package.json").read_text(encoding="utf-8"))
+
+
+def v2(**kw):
+    c = copy.deepcopy(PKG19["candidates"][0])
+    c.update(kw)
+    return c
+
+
+def test_v2_weights_sum_to_100_and_score_correctly():
+    assert sum(candidates.WEIGHTS_V2.values()) == 100
+    c = v2(scores={"curiosity": 10, "storytelling": 10, "shareability": 9, "global_relevance": 9, "freshness": 5, "visual": 8, "originality": 7})
+    assert candidates.trend_score(c)["total"] == 87.0
+    assert candidates.trend_score(v2(scores={**c["scores"], "curiosity": "UNKNOWN"}))["unknown"] == ["curiosity"]
+
+
+def test_v2_candidate_fields_and_verification_gate():
+    assert candidates.validate(v2()) == []
+    assert any("main_claim" in x for x in candidates.validate({k: v for k, v in v2().items() if k != "main_claim"}))
+    assert any("verification_status" in x for x in candidates.validate(v2(verification_status="maybe")))
+    assert candidates.ineligible_reason(v2(verification_status="UNVERIFIED"))
+    assert candidates.ineligible_reason(v2(verification_status="PARTLY VERIFIED")) is None
+
+
+def test_old_v1_packages_still_validate():
+    assert package.validate(PKG)[0] == []
+
+
+def test_todays_v2_package_is_recording_ready():
+    problems_, info = package.validate(PKG19)
+    assert problems_ == [] and info["ready"]["status"] == ver.READY
+
+
+def test_v2_package_needs_visuals_evidence_and_v2_scores():
+    def p19(mod):
+        p = copy.deepcopy(PKG19)
+        mod(p)
+        return package.validate(p)[0]
+    assert any("visuals" in x for x in p19(lambda p: p.__setitem__("visuals", [])))
+    assert any("supporting_evidence" in x for x in p19(lambda p: p["factcheck"]["claims"][0].pop("supporting_evidence")))
+    assert any("source_title" in x for x in p19(lambda p: p["factcheck"]["claims"][0].pop("source_title")))
+    assert any("v2 criteria" in x for x in p19(lambda p: p["candidates"].append(copy.deepcopy(PKG["candidates"][0]))))
+
+
+def test_new_claim_types_rumour_and_prediction():
+    from creatoros.factcheck import claims as fc
+    base = {"id": "z", "text": "t", "evidence": ["https://example.com"], "in_script": True}
+    assert any("RUMOR" in x for x in fc.validate({"claims": [{**base, "status": "RUMOR"}]}, "x"))
+    assert any("attribution" in x for x in fc.validate({"claims": [{**base, "status": "PREDICTION"}]}, "x"))
+
+
+def test_hook_reuse_is_detected():
+    assert package.reused_hook(PKG["hook"], "some-other-slug")
+    assert package.reused_hook("A completely different opening about rockets.", "x") is None
+
+
+def test_today_and_recording_views():
+    d = ROOT / "daily" / "2026-11-19"
+    today = (d / "today.md").read_text(encoding="utf-8")
+    for heading in ("DATE:", "SELECTED TOPIC:", "WHY THIS TOPIC:", "VIRAL POTENTIAL:", "BEST HOOK:", "FINAL SCRIPT:", "ESTIMATED DURATION:",
+                    "RECORDING DIRECTIONS:", "VISUAL SUGGESTIONS", "FACT-CHECK:", "ENGLISH CAPTIONS:", "PLATFORM CONTENT:"):
+        assert heading in today, heading
+    rec = (d / "recording.md").read_text(encoding="utf-8")
+    assert PKG19["script"].splitlines()[0] in rec and "PLATFORM" not in rec
+
+
+def test_memory_upserts_without_duplicates(tmp_path):
+    t, c = tmp_path / "t.jsonl", tmp_path / "c.jsonl"
+    ranked = candidates.rank(PKG19["candidates"])
+    memory.record(PKG19, ranked, t, c)
+    memory.record(PKG19, ranked, t, c)
+    rows = memory.topics(t)
+    assert len(rows) == len(PKG19["candidates"])
+    assert [r["state"] for r in rows if r["headline"] == PKG19["topic"]] == ["selected"]
+    assert {r["state"] for r in rows} >= {"selected", "rejected", "held", "covered"}
+    assert len(memory.claims(c)) == len(PKG19["factcheck"]["claims"])
+
+
+def test_analytics_new_fields(tmp_path):
+    d = store.upsert(dict(date="2026-11-20", video_id="v", platform="instagram", checkpoint="24h", views="1000", viewed_rate="0.62",
+                          top_countries="IN 40%; US 12%"), tmp_path / "p.csv")
+    assert d["viewed_rate"] == 0.62 and d["top_countries"] == "IN 40%; US 12%"
+
+
+def test_cli_runlog_and_ist_date(tmp_path, monkeypatch, capsys):
+    assert len(cli.ist_today()) == 10
+    assert cli.main(["recording", "--date", "2026-11-19"]) == 0
+    assert "Harrell" in capsys.readouterr().out
+    assert cli.main(["today", "--date", "1999-01-01"]) == 3

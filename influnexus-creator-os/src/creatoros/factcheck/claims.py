@@ -1,9 +1,11 @@
 """Claim classification rules. A script cannot be approved while it leans on an unverified or unattributed claim."""
 from __future__ import annotations
 
-STATUSES = ["CONFIRMED", "COMPANY CLAIM", "THIRD-PARTY CLAIM", "DISPUTED", "UNVERIFIED", "SPECULATION"]
-NEEDS_ATTRIBUTION = {"COMPANY CLAIM", "THIRD-PARTY CLAIM", "DISPUTED"}
-NOT_USABLE = {"UNVERIFIED", "SPECULATION"}
+STATUSES = ["CONFIRMED", "COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED", "UNVERIFIED", "RUMOR",
+            "SPECULATION"]
+# COMPANY CLAIM covers marketing claims; PREDICTION and OPINION must be attributed to the person who made them.
+NEEDS_ATTRIBUTION = {"COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED"}
+NOT_USABLE = {"UNVERIFIED", "RUMOR", "SPECULATION"}
 
 
 def validate(fc: dict, script_text: str | None = None) -> list[str]:
