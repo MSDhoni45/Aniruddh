@@ -5,7 +5,15 @@ ranks them and writes ONE recording-ready English short-form script a day. It do
 video, download video libraries, or touch the separate video-editing project. Never create a second scheduled task: the
 daily automation already exists ("Influnexus daily brief", 08:41 IST).
 
-Setup in a fresh container: `cd influnexus-creator-os && pip install -q -e . && git pull --ff-only`.
+Setup in a fresh container (also when the session started on `main`): all daily packages, research databases and run logs
+live on the production branch `claude/daily-ai-tech-research-script-taab6w`, so work there:
+```
+git fetch origin claude/daily-ai-tech-research-script-taab6w
+git checkout -B claude/daily-ai-tech-research-script-taab6w origin/claude/daily-ai-tech-research-script-taab6w
+cd influnexus-creator-os && pip install -q -e .
+```
+Push with `git push -u origin claude/daily-ai-tech-research-script-taab6w` (pull with `--rebase` first; another session may have pushed).
+`main` carries the code and these instructions; it is updated by pull request, never pushed to directly.
 Dates are Asia/Kolkata (IST). `creatoros` commands run from `influnexus-creator-os/`.
 
 ## Commands the creator types
@@ -20,7 +28,7 @@ Dates are Asia/Kolkata (IST). `creatoros` commands run from `influnexus-creator-
 | **Make it more natural** | Simpler conversational English, shorter sentences, no new claims. Re-run `creatoros package`. |
 | **Prepare for recording** | Return `creatoros recording` only: script and delivery notes. |
 
-After any change, commit `daily/DATE/` and the `research/*.jsonl` databases and push to the working branch.
+After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `logs/runs.jsonl` and push to the production branch.
 
 ## Non-negotiables
 - 100% natural conversational English for a global audience; the creator keeps their natural Indian accent.

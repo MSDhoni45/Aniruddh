@@ -70,6 +70,8 @@ Most tech news is about replacing people. This gave a man his words back.
 
 Access: *opened* = page read directly; *search-index* = the primary site's own text read through search, page not opened; *secondary-only* = only other outlets report it.
 
+Source access: 8 verified from search-index excerpts of the primary site; page NOT opened directly.
+
 | # | Exact claim | Primary source | Supporting source | Status | Source date | Confidence | In script |
 |---|---|---|---|---|---|---|---|
 | b1 | The participant has ALS with severe dysarthria: his natural speech is very hard to understand (script: 'ALS took his clear speech') | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2026-06-15 | HIGH | yes |

@@ -86,6 +86,24 @@ def story_confidence_ok(story_conf: str, claims: list[dict]) -> list[str]:
     return []
 
 
+ACCESS_LABEL = {"opened": "page opened and read directly",
+                "search-index": "verified from search-index excerpts of the primary site; page NOT opened directly",
+                "secondary-only": "secondary sources only; primary not reached",
+                "not found": "primary source not found"}
+
+
+def access_summary(claims: list[dict]) -> str:
+    """One plain line saying how the script's sources were actually reached."""
+    used = [c for c in claims if c.get("in_script")]
+    kinds = sorted({c.get("access") or "not found" for c in used})
+    if not used:
+        return ""
+    if kinds == ["opened"]:
+        return "Source access: every script claim's primary page was opened and read directly."
+    parts = [f"{sum(1 for c in used if (c.get('access') or 'not found') == k)} {ACCESS_LABEL.get(k, k)}" for k in kinds]
+    return "Source access: " + "; ".join(parts) + "."
+
+
 def table(claims: list[dict]) -> str:
     def link(u):
         return f"[link]({u})" if u else "NONE FOUND"
@@ -99,4 +117,6 @@ def table(claims: list[dict]) -> str:
     ev = [f"- **{c['id']}** — {c.get('source_title', '')}: \"{c['supporting_evidence']}\"" for c in claims if c.get("supporting_evidence")]
     if ev:
         notes = ["**Exact supporting evidence**", ""] + ev + ([""] + notes if notes else [])
+    head = access_summary(claims)
+    rows = ([head, ""] if head else []) + rows
     return "\n".join(rows) + ("\n\n" + "\n".join(notes) if notes else "") + "\n"

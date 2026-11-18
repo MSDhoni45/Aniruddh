@@ -178,9 +178,10 @@ def render_today(p: dict, info: dict) -> str:
           f"- Pronunciation: {'; '.join(r['pronunciation'])}", "- Keep your natural accent.", ""]
     if p.get("visuals"):
         L += ["**VISUAL SUGGESTIONS (for your editor):**"] + [f"- {v}" for v in p["visuals"]] + [""]
-    L += ["**FACT-CHECK:**"]
+    from ..factcheck.verification import access_summary
+    L += ["**FACT-CHECK:**"] + ([f"*{access_summary(claims)}*"] if access_summary(claims) else [])
     for c in claims:
-        L.append(f"- {c['text']} — [{c.get('source_title') or 'primary source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, {c.get('source_date') or 'date unknown'})"
+        L.append(f"- {c['text']} — [{c.get('source_title') or 'primary source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, {c.get('source_date') or 'date unknown'}, {c.get('access') or 'access unknown'})"
                  if c.get("primary_source") else f"- {c['text']} — no primary source ({c['status']}, {c['confidence']})")
     L += ["", "**ENGLISH CAPTIONS:**", "", "```"] + caption_lines(p["script"]) + ["```", "", "**PLATFORM CONTENT:**", "",
           "*Instagram*", "", ig["caption"], "", " ".join(ig["hashtags"]), "", "*YouTube Shorts*", "", f"Title: {yt['title']}", "",
