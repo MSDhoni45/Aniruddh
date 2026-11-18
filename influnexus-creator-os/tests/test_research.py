@@ -283,3 +283,11 @@ def test_runstatus_verdicts(tmp_path):
     assert r["verdict"] == "OK" and not r["problem"] and r["started_ist"] == "08:42"
     add("end", 4, 10, "READY")
     assert st(utc(4, 20)) == "LATE"
+
+
+def test_access_summary_labels_search_index():
+    from creatoros.factcheck.verification import access_summary
+    cl = [dict(in_script=True, access="search-index"), dict(in_script=True, access="opened"), dict(in_script=False, access="not found")]
+    s = access_summary(cl)
+    assert "1 verified from search-index excerpts" in s and "NOT opened" in s and "1 page opened" in s and "not found" not in s
+    assert "opened and read directly" in access_summary([dict(in_script=True, access="opened")])

@@ -70,6 +70,8 @@ Most tech headlines are about replacing people. This one gave a man his voice ba
 
 Access: *opened* = page read directly; *search-index* = the primary site's own text read through search, page not opened; *secondary-only* = only other outlets report it.
 
+Source access: 8 verified from search-index excerpts of the primary site; page NOT opened directly.
+
 | # | Exact claim | Primary source | Supporting source | Status | Source date | Confidence | In script |
 |---|---|---|---|---|---|---|---|
 | b1 | The participant has ALS and lost the ability to speak clearly (severe dysarthria) | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2026-06-15 | HIGH | yes |
