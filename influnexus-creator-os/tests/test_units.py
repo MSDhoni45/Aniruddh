@@ -176,11 +176,14 @@ def test_factcheck_rejects_unverified_and_unattributed_claims():
 
 # ---------- script lint ----------
 def test_script_passes_and_bad_scripts_fail():
-    r = lint.check(SCRIPT)
-    assert r["ok"] and r["words"] == 88 and 30 <= r["seconds"] <= 40
-    assert not lint.check("Breaking news! " + SCRIPT)["ok"]
-    assert not lint.check(SCRIPT + " " + SCRIPT)["ok"], "a script over 40 seconds must be rejected"
-    assert not lint.check(SCRIPT + " What do you think?")["ok"]
+    english = json.loads((Path(__file__).resolve().parents[1] / "daily" / "2026-11-18" / "package.json").read_text(encoding="utf-8"))["script"]
+    r = lint.check(english)
+    assert r["ok"] and 75 <= r["words"] <= 90 and 30 <= r["seconds"] <= 40
+    assert not lint.check("Breaking news! " + english)["ok"]
+    assert not lint.check(english + " " + english)["ok"], "a script over 40 seconds must be rejected"
+    assert not lint.check(english + " What do you think?")["ok"]
+    assert not lint.check(SCRIPT)["ok"], "a Hinglish script fails while English is the default"
+    assert lint.check(SCRIPT, language="hinglish")["ok"], "the language rule is configurable"
 
 
 def test_hook_scoring_disqualifies_inaccurate_hooks():

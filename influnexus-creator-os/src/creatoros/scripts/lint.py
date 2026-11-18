@@ -11,7 +11,32 @@ BANNED_OPENINGS = ["breaking news", "in a groundbreaking development", "the futu
                    "ai is taking over", "you won't believe", "you wont believe", "technology is evolving rapidly",
                    "hello", "hi guys", "hey guys", "guys", "namaste", "namaskar", "dosto", "welcome back", "aaj hum baat karenge",
                    "imagine a world where", "technology ki duniya mein"]
-BANNED_ANYWHERE = ["technology ki duniya mein", "ai is changing everything", "imagine a world where", "aaj hum baat karenge"]
+BANNED_OPENINGS += ["hey everyone", "hey guys", "what's up", "whats up", "in this video", "in today's video", "so today", "let's talk about",
+                    "let's dive", "did you know", "big news"]
+BANNED_ANYWHERE = ["technology ki duniya mein", "ai is changing everything", "imagine a world where", "aaj hum baat karenge",
+                   "you won't believe", "nobody is talking about", "no one is talking about", "shocking", "this changes everything",
+                   "in today's fast-paced world", "cutting-edge", "cutting edge", "synergy", "leverage", "revolutionize",
+                   "revolutionise", "seamless", "unlock the power", "delve", "smash that like", "don't forget to subscribe"]
+# Forced slang that does not fit a global audience or a natural Indian-English delivery.
+FORCED_SLANG = ["no cap", "bussin", "lowkey", "low-key", "highkey", "fr fr", "it's giving", "rizz", "y'all", "slaps", "sheesh",
+                "on god", "deadass", "bestie", "periodt", "big yikes"]
+# Common Hindi words written in Latin script. Two or more in English copy means it is not English.
+HINGLISH_MARKERS = {"hai", "hain", "nahi", "nahin", "kya", "yeh", "woh", "aur", "toh", "bhi", "karo", "raha", "rahi", "rahe", "tha",
+                    "thi", "matlab", "lekin", "mein", "ka", "ki", "ke", "ko", "se", "pe", "apna", "apni", "kaise", "kyun", "agar",
+                    "sirf", "abhi", "dekho", "yaar", "bhai", "accha", "achha", "haan", "kuch", "sab", "bahut", "zyada", "liye"}
+
+
+def language_problems(text: str, language: str | None = None) -> list[str]:
+    """The default language is English. Devanagari or repeated Hindi words in Latin script fail the check."""
+    language = language or config.settings().get("language", "english")
+    if language != "english" or not text:
+        return []
+    if re.search(r"[\u0900-\u097f]", text):
+        return ["contains Devanagari script; all copy must be in English"]
+    hits = [w for w in re.findall(r"[a-z]+", text.lower()) if w in HINGLISH_MARKERS]
+    if len(hits) >= 2:
+        return [f"reads as Hinglish, not English (Hindi words: {', '.join(sorted(set(hits)))})"]
+    return []
 BANNED_ENDINGS = ["what do you think", "aapko kya lagta hai", "like share subscribe", "follow for more"]
 HYPE = ["revolutionary", "game changer", "game-changer", "mind blowing", "mind-blowing", "insane", "guaranteed", "100% viral"]
 
@@ -38,7 +63,7 @@ def estimate_seconds(text: str) -> dict:
             "seconds": round(words / wpm * 60 + pauses, 1)}
 
 
-def check(text: str) -> dict:
+def check(text: str, language: str | None = None) -> dict:
     sc = config.settings()["script"]
     est = estimate_seconds(text)
     low = re.sub(r"\s+", " ", text.lower()).strip()
@@ -53,6 +78,10 @@ def check(text: str) -> dict:
     for b in BANNED_ANYWHERE:
         if b in low:
             problems.append(f"generic phrase: '{b}'")
+    for sl in FORCED_SLANG:
+        if re.search(rf"(?<![a-z]){re.escape(sl)}(?![a-z])", low):
+            problems.append(f"forced slang: '{sl}'")
+    problems += language_problems(text, language)
     for h in HYPE:
         if h in low:
             problems.append(f"unsupported hype word: '{h}'")

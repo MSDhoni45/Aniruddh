@@ -88,6 +88,6 @@
   "access_limits": [
     "openai.com, deploymentsafety.openai.com, cdn.openai.com, x.com, epoch.ai and vals.ai cannot be opened from this environment; their own indexed text was read through search.",
     "No likes, reposts, views or follower counts could be observed; all are UNKNOWN. X post times are decoded from status IDs.",
-    "Script duration is an estimate at an assumed 150 words per minute until your pace is measured."
+    "Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured."
   ]
 }

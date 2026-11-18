@@ -1,4 +1,4 @@
-# Daily runbook: research → viral topic → recording package
+# Daily runbook: research → viral topic → recording package (English)
 
 Run by the scheduled task "Influnexus daily brief" at 08:41 Asia/Kolkata so the package is ready by 09:30 IST.
 `DATE` is today's date in IST. This project stops at a recording-ready script. It does not edit, render or publish video.
@@ -39,9 +39,14 @@ cd influnexus-creator-os && git pull --ff-only && pip install -q -e .
   giving the held story a `hold_reason` in the new package's candidate list.
 
 ## 3. Write
-- Read `research/creator_style_guide.md` and `research/hook_patterns.md`.
+- Read `research/creator_style_guide.md` (v0.2, global English) and `research/hook_patterns.md`.
 - At least 10 hooks across at least 5 mechanisms, each scored 0-10 on accuracy, clarity, curiosity, natural delivery, relevance and immediate comprehension. Accuracy under 7 disqualifies. Open the script with the top hook.
-- One script, natural Hinglish, 75-90 words, 30-40 seconds (40 is a hard limit). The first two seconds must hook.
+- One script in 100% natural conversational English for a global audience (`"language": "english"` in the package): 75-90 words,
+  30-40 seconds (40 is a hard limit). The first two seconds must hook. Short sentences, plain international English, explain any
+  essential jargon once. No corporate language, fake excitement, clickbait or forced American slang; the validator rejects them.
+- The creator records in their natural Indian accent. Never coach an accent; delivery notes cover tone, emphasis, pauses and names only.
+- Learn storytelling principles from Cleo Abram, MKBHD, Bilawal Sidhu, Rowan Cheung and Mrwhosetheboss (see `research/creator_style_guide.md`).
+  Never copy their lines, formats or catchphrases.
 - Use only claims that are HIGH in the claim table. Leave out true-but-old facts presented as new.
 - Recording direction covers delivery only (tone, emphasis, pauses, pronunciation). No video editing instructions.
 - Score the ten quality checks honestly; below 90, or any check below 7, means rewrite. Duration is measured by the tool.
@@ -51,7 +56,9 @@ Write `daily/DATE/package.json` (same shape as `daily/2026-11-18/package.json`),
 ```
 creatoros package --date DATE
 ```
-It refuses to render if any rule fails, prints `RECORDING READY` or `HOLD — NOT RECORDING READY`, and logs the topic to
+All platform copy (Instagram caption and cover, LinkedIn, X within 280 characters, YouTube Shorts title, description and keywords)
+is in English; the validator checks it. `captions.txt` (on-screen caption text in 2-5 word lines, exact script words) is written
+automatically. It refuses to render if any rule fails, prints `RECORDING READY` or `HOLD — NOT RECORDING READY`, and logs the topic to
 `research/content_db.jsonl` (held stories as `held`). Fix problems; never bypass the validator. Only a RECORDING READY package is delivered.
 
 ## 5. Deliver

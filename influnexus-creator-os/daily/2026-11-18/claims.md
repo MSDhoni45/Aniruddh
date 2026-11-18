@@ -10,11 +10,11 @@
 | g8 | GPT-6.2 Astra and Sol meet OpenAI's Critical cybersecurity threshold | [link](https://deploymentsafety.openai.com/gpt-6-2-astra-sol) (search-index) | [link](https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/) | COMPANY CLAIM | 2026-11-17 | HIGH | no |
 | g9 | Epoch AI found no meaningful improvement over GPT-6 Astra | NONE FOUND | [link](https://www.therundown.ai/news/openai-gpt-6-2-astra-sol-reviews-anthropic-ipo) | DISPUTED | 2026-11-18 | LOW | no |
 
-- **g2:** The same sentence appeared in OpenAI's indexed card text in two separate searches. The script paraphrases it in Hinglish rather than quoting. The rating is OpenAI's own assessment.
-- **g3:** Wording from OpenAI's launch post as indexed. Matches the April 2025 Preparedness Framework definition. The card's 17 Nov change log mentions wording updates to the threat-modelling section; the launch-post definition is the current one.
+- **g2:** The same sentence appeared in OpenAI's indexed card text in two separate searches. The script paraphrases it ('the first model they've released to hit their High level') rather than quoting. The rating is OpenAI's own assessment.
+- **g3:** Wording from OpenAI's launch post as indexed. Matches the April 2025 Preparedness Framework definition. The card's 17 Nov change log mentions wording updates to the threat-modelling section; the launch-post definition is the current one. The script paraphrases with attribution ('OpenAI says that's like…'); it does not present the words as a direct quote.
 - **g4:** Vals' own post. It also calls Astra the highest-scoring OpenAI model it has tested and says full automation of AI research is unlikely. Vals' RSI leaderboard: https://www.vals.ai/benchmarks/rsi_index
-- **g5:** Supports the script's 'AI khud ko upgrade nahi kar raha'. Vals also judged full automation of AI research unlikely.
-- **g6:** Basis for the closing line 'agla AI banane mein uska haath badh raha hai', which is an editorial reading of OpenAI's rating, not a measured fact.
+- **g5:** Supports the script's 'AI isn't upgrading itself yet'. Vals also judged full automation of AI research unlikely.
+- **g6:** Basis for the closing line 'it's starting to help build the next one', which is an editorial reading of OpenAI's rating, not a measured fact.
 - **g7:** Not in the script. Rollout is gradual; not available in regular Chat.
 - **g8:** Not used: GPT-6 Astra was already rated Critical for cyber, so presenting it as new would mislead.
 - **g9:** Epoch's own write-up (https://epoch.ai/publications/how-good-are-fable-5-2-and-gpt-6-2-astra-at-real-work) reports gains on several tasks and weaknesses on open-ended research, so this summary overstates it. Not used.

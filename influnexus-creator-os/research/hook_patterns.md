@@ -1,4 +1,4 @@
-# Hook Patterns — v0.1
+# Hook Patterns — v0.2 (Global English)
 
 Observation date: 2026-11-18.
 
@@ -25,65 +25,63 @@ Observation date: 2026-11-18.
 
 ## The seven categories
 
-For each: definition, real example if one was found, and a Hinglish template. **Every Hinglish line is a HYPOTHESIS written by us**, not a quote from anyone. Bracketed parts must be replaced with a verified fact and a named source before use.
+For each: definition, real example if one was found, and an English template. **Every template is a HYPOTHESIS written by us**, not a quote from anyone. Bracketed parts must be replaced with a verified fact and a named source before use.
 
 ### 1. Unexpected result
 Something happened that a reasonable viewer would not predict.
 - Real example — WEAK (title/topic): Fireship, 2026-05-04, a video about a 732-byte Python snippet that broke Linux machines (exact title unknown; aggregator https://rosetta.to/u/fireship/2026). The small-cause, large-effect contrast is the hook. Category assignment is ours.
-- HYPOTHESIS, Hinglish: "Sirf [732 bytes] ka code, aur [hazaaron Linux machines] down."
-- HYPOTHESIS, Hinglish: "[Company] ne AI ko yeh kaam diya. Result ulta nikla."
+- HYPOTHESIS: "[732 bytes] of code took down [thousands of Linux machines]."
+- HYPOTHESIS: "[Company] gave an AI one job. It did the opposite."
 
 ### 2. Important consequence
 What this changes for the viewer's job, money, phone or privacy.
 - Real example — WEAK (title/topic): Fireship, 2026-04-01, a video about a remote-access trojan in the JavaScript supply chain, 3.2M views on the aggregator snapshot. Category assignment is ours.
 - THIRD-PARTY description of a competitor: Vaibhav Sisinty "turns fast-moving AI news into simple, high-stakes stories" (unverified PDF report; treat as low confidence).
-- HYPOTHESIS, Hinglish: "Agar aap [tool] use karte ho, toh aaj se [specific cheez] badal gayi hai."
-- HYPOTHESIS, Hinglish: "Is update ka seedha asar [kis par] padega. Kaise, 30 second mein."
+- HYPOTHESIS: "If you use [tool], [specific thing] changed today."
+- HYPOTHESIS: "This update hits [who] directly. Here's how."
 
 ### 3. Surprising comparison
 Two things side by side where the gap is the story.
 - Real example: none found in sources. (Mrwhosetheboss is widely known for comparison videos, but no title was surfaced by search, so no example is recorded.)
-- HYPOTHESIS, Hinglish: "[₹X] ka free tool, [₹Y] ke paid tool se behtar nikla. Yeh dekho."
-- HYPOTHESIS, Hinglish: "Same prompt, do AI. Ek ne [result A] diya, doosre ne [result B]."
+- HYPOTHESIS: "A free tool just beat a [$X] one. Watch."
+- HYPOTHESIS: "Same prompt, two AIs. One gave [A]. The other gave [B]."
 
 ### 4. Real-world demonstration
 Show it working before explaining it.
 - THIRD-PARTY support: showcase openers led the Opus sample; Karen X. Cheng's making-of pairing; Bilawal Sidhu's career built on VFX/AI demonstrations (positioning, not a measured hook).
 - Real example — WEAK (title/topic): Cleo Abram and Michelle Khare driving a truck that is going to the moon (undated, no metrics; aggregator listing).
-- HYPOTHESIS, Hinglish: "Yeh video maine nahi banaya. [Tool] ne banaya, [N] second mein. Dekho kaise."
-- HYPOTHESIS, Hinglish: (start mid-demo, no greeting) "Dekho, maine bas yeh likha…"
+- HYPOTHESIS: "I didn't make this. [Tool] did, in [N] seconds."
+- HYPOTHESIS: (start mid-demo, no greeting) "I typed one sentence…"
 
 ### 5. Common misconception
 Something most people believe that the evidence contradicts.
 - Real example: none found in sources.
-- HYPOTHESIS, Hinglish: "Sab keh rahe hain [claim]. [Source] ka data kuch aur kehta hai."
-- HYPOTHESIS, Hinglish: "[Tool] free nahi hai. Yeh line kisi ne padhi nahi."
+- HYPOTHESIS: "Everyone says [claim]. [Source]'s data says something else."
+- HYPOTHESIS: "[Tool] isn't free. It's in the fine print." (only if the fine print really says so)
 
 ### 6. Useful discovery
 A specific thing the viewer can use today.
 - THIRD-PARTY support: positioning of Ayushman Pandita ("practical AI tools") and Rishi Jain (AI tools in under 60 seconds). No hook wording observed.
 - Real example — WEAK (title): Nick Saraev, "CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)", 2.0M views (https://outlierkit.com/channel/nicksaraev). Long-form; the title promises a usable skill.
-- HYPOTHESIS, Hinglish: "[Tool] mein ek setting hai jo [specific kaam] [N] minute se [M] second kar deti hai."
-- HYPOTHESIS, Hinglish: "Yeh feature kal aaya hai. Zyadatar logon ne abhi tak on nahi kiya."
+- HYPOTHESIS: "One setting in [tool] turns [task] from [N] minutes into [M] seconds."
+- HYPOTHESIS: "This feature shipped yesterday. It's off by default."
 
 ### 7. Genuine controversy
 A real, sourced disagreement. Not manufactured outrage.
 - Real example — WEAK (title/topic): MKBHD, "My Take on The New Apple", 2026-04-29, 3.5M views (aggregator). An opinion frame. Also Fireship, April 2026, on Cursor moving away from VS Code.
 - MEASURED context: Varun Mayya said at TechSparks 2026 that backlash can free creators to speak plainly.
-- HYPOTHESIS, Hinglish: "[Company] ne yeh decision liya, aur developers do camps mein bant gaye. Dono side suno."
+- HYPOTHESIS: "[Company] made one decision, and developers split in two. Here are both sides."
 - Rule: name both sides and the source on screen. If the disagreement cannot be sourced, it is not this category.
 
-## Hinglish hook hypotheses (all untested)
+## English hook hypotheses for a global audience (all untested)
 
-Evidence on Hinglish itself is indirect. An IIT Delhi study of 260,000 posts on X found Hinglish use rising about 2% a year (2014–2022); press coverage linked it to broader reach. It did not study Reels. Source: https://doaj.org/article/dd04d2643250465bb49e5749ec007773 . An agency blog claims Hindi/code-switched audio with English captions performed best across 140 brand Reels; no method published, so low confidence: https://creative-7jc.pages.dev/instagram-reels-strategy-india-brands-2026.html
-
-- H1. Keep the tool name, company name and number in English; put the verb and connective tissue in Hindi. ("Claude ne … kar diya.")
-- H2. The number goes in the first five words.
-- H3. No greeting and no channel intro; first word is content.
-- H4. A hook that states a fact beats a hook that asks a question for news topics; the reverse may hold for how-to topics. Test in `editing_patterns.md`, experiment 3.
-- H5. Second-person address ("aap", "aapka phone") lifts sends more than third-person framing.
-- H6. On-screen hook text in Latin script reads faster for this audience than Devanagari. Untested; could be wrong outside metros.
-- H7. Hook length of 6–10 spoken words fits inside two seconds at a moderate pace. Derived from arithmetic, not measurement.
+- H1. The specific name and number go in the first five words ("OpenAI says its new AI…", "732 bytes of code…").
+- H2. No greeting, no channel intro, no "so today"; the first word is content.
+- H3. A factual statement beats a question for news; a question may work for how-to topics. Test it (experiment 3).
+- H4. Plain international English beats idioms and slang; a hook should survive being read by a non-native speaker.
+- H5. Second person ("your phone", "if you use…") lifts shares more than third person.
+- H6. Hooks of 6–10 spoken words fit inside two seconds at a moderate pace. Arithmetic, not measurement.
+- H7. Attribute surprising claims inside the hook ("OpenAI says…") so the surprise is honest.
 
 ## Banned generic openings
 
@@ -97,7 +95,7 @@ Never open with these or close variants, in English or translated:
 6. "You won't believe"
 7. "Technology is evolving rapidly"
 
-Also avoid (HYPOTHESIS, same failure mode — no information in the first two seconds): "Hello doston", "Aaj ki video mein", "Kya aap jaante hain" with no fact following, "Game changer", "Mind-blowing", "Yeh sunke aap hairaan ho jaoge".
+Also avoid (same failure mode — no information in the first two seconds): "Hey everyone", "In this video", "So today", "Let's talk about", "Did you know" with no fact following, "Big news", "Game changer", "Mind-blowing", "Nobody is talking about this". The validator rejects these.
 
 Test for any opening: delete it. If the video loses no information, the opening was filler.
 

@@ -1,6 +1,8 @@
-# Influnexus Creator Style v0.1
+# Influnexus Creator Style v0.2 (Global English)
 
-Date: 2026-11-18. Scope: Hinglish AI/technology reels, 30–40 seconds, Instagram first.
+Date: 2026-11-19. Scope: English AI/technology short videos for a global English-speaking audience, 30–40 seconds, Instagram first, then LinkedIn, X and YouTube Shorts.
+
+**Language change (19 Nov 2026):** the default is now 100% natural conversational English, recorded in the creator's own Indian accent. The Hinglish rules in v0.1 are retired.
 
 **Status: v0.1, pending real video measurement.** No competitor video was watched while writing this (platforms were inaccessible). The style below is an original synthesis: a few rules lean on cited sources; most are starting hypotheses. Nothing here is copied from another creator's wording, graphics or format.
 
@@ -14,21 +16,32 @@ Sources are abbreviated; full URLs are in the reference list at the end.
 
 ## 1. Voice
 
-1. Hinglish: Hindi sentence frame, English for tool names, company names, numbers and technical terms. **[H]** (indirect support only: Hinglish use is rising on Indian social media [S1]; no Reels study exists. Experiment 1.)
-2. Talk to one person. Use "aap". **[H]**
-3. Short sentences. One idea per sentence. **[H]**
-4. Say the number and the name. "OpenAI ne 3 cheezein launch ki" rather than "kuch bada hua hai". **[H]**
-5. Moderate pace with clean diction; do not race. **[H]** (Experiment 5. Target words per minute will be set after measuring our own first ten reels.)
-6. No filler openings and no hype words. Banned list is in `hook_patterns.md`. **[H]**
-7. Give a take, not just the news: what happened, then what we think it means. **[E]** (news snippet plus personal take is Varun Mayya's stated daily practice [S2]; the wording and opinions must be ours.)
+1. Natural, conversational English that a viewer in Lagos, London, Manila or Mumbai understands on first listen. **[H]**
+2. Your own voice and your own Indian accent. No borrowed American or British intonation, no forced slang ("no cap", "lowkey", "y'all"). The validator rejects a list of these. **[H]**
+3. Short sentences: one idea each, usually under 15 words. **[H]**
+4. Plain words over jargon. If a technical term is essential, say it once and explain it in the next sentence ("system card: the safety report that ships with a model"). **[H]**
+5. Say the name and the number: "OpenAI released two models" rather than "something big happened". **[H]**
+6. No corporate language ("leverage", "cutting-edge", "seamless", "revolutionise") and no fake excitement ("insane", "mind-blowing", "you won't believe"). The validator enforces a banned list. **[H]**
+7. Give a take, not just the news: what happened, then what it means, labelled as your reading. **[E]** (news plus a personal take is a stated daily practice of Varun Mayya [S2]; the wording and opinions must be ours.)
+8. Moderate pace with clean diction; don't race. Target words per minute will be set from your own recordings. **[H]**
+
+### Storytelling principles from the reference creators (general, not copied)
+
+None of these creators' videos could be watched from this environment, so each principle is a **[H]** drawn from their public positioning and interviews, not from measured delivery. Never reuse their lines, formats, graphics or catchphrases.
+
+- **Cleo Abram:** start from a question the viewer already has; optimism with honest limits; plan the visual before the words [S3, S6].
+- **MKBHD:** clarity and restraint; say what it is, who it's for, and the honest verdict; native short form rather than chopped long-form [S9].
+- **Bilawal Sidhu:** show the real thing working; let the demo carry the surprise.
+- **Rowan Cheung:** speed and density; the single most important development, stated plainly, then why it matters.
+- **Mrwhosetheboss:** curiosity-led comparisons; one surprising detail people didn't know.
 
 ## 2. Personality
 
 1. Curious, calm, a little sceptical. The friend who actually read the release notes. **[H]**
 2. Optimistic about what people can build, honest about limits. **[E]** (optimistic framing is central to Cleo Abram's show positioning [S3]; that it suits our audience is **[H]**.)
-3. Says "pata nahi" or "abhi confirm nahi hai" when that is the truth. **[H]**
+3. Says "we don't know yet" or "that isn't confirmed" when that is the truth. **[H]**
 4. Shows the work: our own screen, our own test, our own result. **[E]** (showing the process with the result is what Karen X. Cheng credits for her growth [S4]; showcase openers led one vendor's hook data [S5].)
-5. No fear-selling ("job chali jayegi") without a sourced, specific claim. **[H]**
+5. No fear-selling ("your job is gone") without a sourced, specific claim. **[H]**
 
 ## 3. Script structure (30–40s)
 
@@ -53,7 +66,7 @@ Further script rules
 1. Captions always on. **[E]** (most "viral" clips in a vendor sample used them [S5]; a US survey reports heavy sound-off viewing [S11]; Meta reports ~12% more view time [S12]. Effect size is uncertain; one small test found none.)
 2. 2–5 words per group. **[H]**
 3. Maximum two lines on screen at once. **[H]**
-4. Latin script for Hinglish; English terms spelled normally; numbers as digits. **[H]**
+4. English captions that match the spoken words exactly; numbers as digits; product names spelled as the company spells them. **[H]**
 5. Safe margins: until verified in the app, keep captions inside the central ~900×1400 px of a 1080×1920 frame, at least 450 px from the bottom, 270 px from the top, clear of the right-hand button column. **[E]** (third-party guides; they disagree, so we take the most conservative values [S13].)
 6. One highlight colour, used on the key word only. **[H]**
 7. Captions match the spoken words exactly. No paraphrase, no added claims. **[H]**
@@ -103,7 +116,8 @@ Track per reel from Instagram Insights: 3-second hold rate, average watch time (
 ## 9. Change log and next version
 
 - v0.1 (2026-11-18): first synthesis from desk research. Zero competitor videos observed.
-- v0.2 requires: (a) the A–F measurements in `creator_benchmarks.md` section 5 for at least 5 reels from each priority Indian creator; (b) results from experiments 1–5; (c) every **[H]** above either promoted to **[E]** with our own data, revised, or removed.
+- v0.2 (2026-11-19): default language changed from Hinglish to natural conversational English for a global audience; voice rules rewritten; reference creators updated (Cleo Abram, MKBHD, Bilawal Sidhu, Rowan Cheung, Mrwhosetheboss). Still zero competitor videos observed.
+- v0.3 requires: (a) the A–F measurements in `creator_benchmarks.md` section 5 for at least 5 reels from each priority Indian creator; (b) results from experiments 1–5; (c) every **[H]** above either promoted to **[E]** with our own data, revised, or removed.
 
 ## Sources
 

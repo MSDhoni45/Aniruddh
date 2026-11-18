@@ -139,3 +139,29 @@ def test_rendered_package_shows_status_and_claim_table():
     held = (ROOT / "daily" / "2026-11-18" / "held_ca-v-openai" / "package.md").read_text(encoding="utf-8")
     assert "## STATUS: RECORDING READY" in md and "## Claim verification table" in md
     assert "## STATUS: HOLD — NOT RECORDING READY" in held and "Do not record this script" in held
+
+
+# ---------- English by default ----------
+@pytest.mark.parametrize("text,bad", [
+    ("OpenAI says its new AI helps build AI.", False),
+    ("OpenAI ka naya AI, AI banane mein madad karne laga hai.", True),
+    ("यह एक टेस्ट है", True),
+    ("Kar Bank and Sab Inc. reported results.", False),
+])
+def test_language_detector(text, bad):
+    assert bool(lint.language_problems(text, "english")) is bad
+
+
+def test_package_rejects_hinglish_copy_slang_and_corporate_phrasing():
+    assert any("instagram caption" in x for x in problems(lambda p: p["instagram"].__setitem__("caption", "Yeh dekho, OpenAI ka naya model hai.")))
+    assert any("forced slang" in x for x in problems(lambda p: p.__setitem__("script", p["script"].replace("So no,", "No cap,"))))
+    assert any("cutting-edge" in x for x in problems(lambda p: p.__setitem__("script", p["script"].replace("new AI", "cutting-edge AI"))))
+    assert any("language" in x for x in problems(lambda p: p.__setitem__("language", "hinglish")))
+    assert any("280" in x for x in problems(lambda p: p["x"].__setitem__("post", "x" * 281)))
+
+
+def test_caption_lines_keep_exact_words_in_short_groups():
+    lines = package.caption_lines(PKG["script"])
+    assert " ".join(lines).split() == PKG["script"].split()
+    assert all(1 <= len(l.split()) <= 5 for l in lines)
+    assert not any(l.split()[-1].lower() in package._WEAK_END for l in lines)

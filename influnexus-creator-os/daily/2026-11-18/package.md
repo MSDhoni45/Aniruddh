@@ -7,11 +7,12 @@
 ## A. Today's winning topic
 
 - **Topic:** OpenAI rates GPT-6.2 Astra its first released model at 'High' for AI self-improvement
+- **Language:** English
 - **Category:** AI (BREAKING)
 - **Original announcement date:** 17 November 2026 (OpenAI launch post and GPT-6.2 system card)
 - **Viral potential score:** 76.0/100
 - **Evidence confidence:** HIGH
-- **Why selected:** Replaces the held California v OpenAI package. It is the highest-scoring eligible story, and every claim in the script traces to a primary source: OpenAI's own system card and launch post, and Vals AI's own post. It is more original than a routine launch video because it reads the system card rather than the benchmarks, and it gives an independent counterpoint. The 'Critical cybersecurity' rating was deliberately left out because it is not new.
+- **Why selected:** Replaces the held California v OpenAI package. It is the highest-scoring eligible story, and every claim in the script traces to a primary source: OpenAI's own system card and launch post, and Vals AI's own post. It is more original than a routine launch video because it reads the system card rather than the benchmarks, and it gives an independent counterpoint. The 'Critical cybersecurity' rating was deliberately left out because it is not new. Rewritten in English on 19 Nov when the default language changed; claims unchanged.
 
 ## B. Verified research
 
@@ -56,18 +57,20 @@ AI that helps build better AI is the scenario safety frameworks were written for
 ## C. Final recording script
 
 ```
-OpenAI ka naya AI, AI banane mein madad karne laga hai. OpenAI khud keh raha hai.
+OpenAI says its new AI helps build AI.
 
-Naye GPT-6.2 Astra ke system card mein OpenAI ne likha: yeh pehla public model hai jo 'AI self-improvement' mein unke High level tak pahuncha.
+It's right there in OpenAI's own system card for GPT-6.2 Astra. It's the first model they've released to hit their 'High' level for AI self-improvement.
 
-Matlab, OpenAI ke hisaab se: har researcher ke saath ek extra research engineer.
+OpenAI says that's like giving every OpenAI researcher an extra, highly capable research engineer.
 
-Lekin independent tester Vals AI ko pichle model se sirf thoda sudhaar dikha.
+But an independent tester, Vals AI, measured only a small gain over the previous model.
 
-OpenAI ise bas 'early milestone' kehta hai. AI khud ko upgrade nahi kar raha, par agla AI banane mein uska haath badh raha hai.
+OpenAI calls this an early milestone.
+
+So no, AI isn't upgrading itself yet. But it's starting to help build the next one.
 ```
 
-90 words · about 37.2 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90/100
+84 words · about 35.0 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90/100
 
 ## Claim verification table
 
@@ -85,33 +88,35 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 | g8 | GPT-6.2 Astra and Sol meet OpenAI's Critical cybersecurity threshold | [link](https://deploymentsafety.openai.com/gpt-6-2-astra-sol) (search-index) | [link](https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/) | COMPANY CLAIM | 2026-11-17 | HIGH | no |
 | g9 | Epoch AI found no meaningful improvement over GPT-6 Astra | NONE FOUND | [link](https://www.therundown.ai/news/openai-gpt-6-2-astra-sol-reviews-anthropic-ipo) | DISPUTED | 2026-11-18 | LOW | no |
 
-- **g2:** The same sentence appeared in OpenAI's indexed card text in two separate searches. The script paraphrases it in Hinglish rather than quoting. The rating is OpenAI's own assessment.
-- **g3:** Wording from OpenAI's launch post as indexed. Matches the April 2025 Preparedness Framework definition. The card's 17 Nov change log mentions wording updates to the threat-modelling section; the launch-post definition is the current one.
+- **g2:** The same sentence appeared in OpenAI's indexed card text in two separate searches. The script paraphrases it ('the first model they've released to hit their High level') rather than quoting. The rating is OpenAI's own assessment.
+- **g3:** Wording from OpenAI's launch post as indexed. Matches the April 2025 Preparedness Framework definition. The card's 17 Nov change log mentions wording updates to the threat-modelling section; the launch-post definition is the current one. The script paraphrases with attribution ('OpenAI says that's like…'); it does not present the words as a direct quote.
 - **g4:** Vals' own post. It also calls Astra the highest-scoring OpenAI model it has tested and says full automation of AI research is unlikely. Vals' RSI leaderboard: https://www.vals.ai/benchmarks/rsi_index
-- **g5:** Supports the script's 'AI khud ko upgrade nahi kar raha'. Vals also judged full automation of AI research unlikely.
-- **g6:** Basis for the closing line 'agla AI banane mein uska haath badh raha hai', which is an editorial reading of OpenAI's rating, not a measured fact.
+- **g5:** Supports the script's 'AI isn't upgrading itself yet'. Vals also judged full automation of AI research unlikely.
+- **g6:** Basis for the closing line 'it's starting to help build the next one', which is an editorial reading of OpenAI's rating, not a measured fact.
 - **g7:** Not in the script. Rollout is gradual; not available in regular Chat.
 - **g8:** Not used: GPT-6 Astra was already rated Critical for cyber, so presenting it as new would mislead.
 - **g9:** Epoch's own write-up (https://epoch.ai/publications/how-good-are-fable-5-2-and-gpt-6-2-astra-at-real-work) reports gains on several tasks and weaknesses on open-ended research, so this summary overstates it. Not used.
 
 ## D. Recording direction
 
-- **Tone:** Curious and measured. Intrigued on the hook, matter-of-fact on the system card, slightly sceptical on Vals, thoughtful on the close.
-- **Opening expression:** Slight frown of interest, as if you just found something surprising in a document nobody reads.
-- **Emphasise:** AI banane mein, khud keh raha hai, pehla public model, sirf thoda, early milestone, haath badh raha hai
-- **Pauses:** half a beat after the first sentence; short pause after 'OpenAI ne likha'; beat before 'Lekin'; beat before the final line
-- **Pronunciation:** GPT-6.2 Astra: G-P-T six point two, AS-tra; Vals AI: 'Vals' rhymes with 'pals'; self-improvement: keep it in English; milestone: in English
-- **Estimated duration:** 37.2 s
+Delivery only. Keep your natural accent; no editing instructions.
+
+- **Tone:** Curious and measured, like explaining something you just read to a smart friend. Intrigued on the hook, matter-of-fact on the system card, a little sceptical on Vals, thoughtful on the close.
+- **Opening expression:** A small, interested frown, as if you just found something surprising in a document most people skip.
+- **Emphasise:** helps build AI, OpenAI's own, first, only a small gain, early milestone, the next one
+- **Pauses:** half a beat after the first sentence; short pause after 'GPT-6.2 Astra'; beat before 'But'; beat after 'So no,'
+- **Pronunciation:** Keep your natural accent and pace; don't put on an American or British intonation; GPT-6.2 Astra: G-P-T six point two, Astra; Vals AI: 'Vals' rhymes with 'pals'; 'system card': two clear words
+- **Estimated duration:** 35.0 s
 
 ## E. Platform content
 
 **Instagram**
 
-Cover headline: OpenAI: naya AI, AI banane mein madad karta hai
+Cover headline: OpenAI: our new AI helps build AI
 
-OpenAI ke GPT-6.2 Astra system card mein likha hai: yeh pehla public model hai jo 'AI self-improvement' mein OpenAI ke High level tak pahuncha. Matlab, OpenAI ke hisaab se, har researcher ke saath ek extra research engineer. Independent tester Vals AI ko sirf thoda sudhaar dikha. Asli sawaal: AI kitni jaldi agla AI banane lagega? Comment mein batao.
+OpenAI's GPT-6.2 Astra system card says it's the first model they've released to hit their 'High' level for AI self-improvement. OpenAI compares it to giving every researcher an extra, highly capable research engineer. An independent tester, Vals AI, measured only a small gain. So: early milestone, not self-upgrading AI. Would you want AI helping build the next AI?
 
-#AI #OpenAI #GPT62 #TechNewsHindi #ArtificialIntelligence
+#AI #OpenAI #GPT62 #AISafety #TechNews
 
 **LinkedIn**
 
@@ -139,14 +144,14 @@ OpenAI's GPT-6.2 system card says GPT-6.2 Astra is the first model it has releas
 
 #Shorts #AI #OpenAI
 
-Keywords: GPT-6.2 Astra, OpenAI, AI self-improvement, system card, Preparedness Framework, Vals AI, AI news Hindi, AI research
+Keywords: GPT-6.2 Astra, OpenAI, AI self-improvement, system card, Preparedness Framework, Vals AI, AI news, AI research
 
 ## F. Growth reasoning
 
 - **Why they may watch:** 'AI helping build AI' is a question everyone has heard about; the hook says it actually happened, by OpenAI's own account.
 - **Why they may share:** It gives viewers a fact straight from OpenAI's own document plus an independent counterpoint, which makes it easy to forward without looking alarmist.
 - **Why they may follow:** It shows you read primary documents rather than repeating headlines, which is the reason to follow an AI explainer daily.
-- **Audience segment:** AI enthusiasts, developers, founders and students following frontier AI.
+- **Audience segment:** Global English-speaking AI enthusiasts, developers, founders and students following frontier AI.
 - **What could make it underperform:** GPT-6.2 launch fatigue (many creators covered the release); 'system card' and 'self-improvement' can feel abstract; the hook may sound like hype if delivered too dramatically.
 
 A high internal score is a writing standard, not a forecast. No view counts are promised.
@@ -197,18 +202,18 @@ Engagement counts appear only where they were actually observed.
 
 | Hook | Mechanism | Score /60 | Usable |
 |---|---|---|---|
-| OpenAI ka naya AI, AI banane mein madad karne laga hai. | unexpected fact | 53 | yes |
-| Har OpenAI researcher ko ek extra engineer mil gaya. Woh engineer ek AI hai. | unexpected comparison | 50 | yes |
-| Pehli baar OpenAI keh raha hai ki uska public AI, AI research tez kar sakta hai. | strong factual statement | 48 | yes |
-| System card koi nahi padhta. Is baar usme sabse interesting line thi. | curiosity gap | 48 | yes |
-| OpenAI ne apne hi AI ko ek nayi risk category mein daal diya. | important consequence | 45 | yes |
-| Self-improving AI ka pehla milestone, OpenAI ke hisaab se, aa gaya. | timely development | 44 | yes |
-| AI ka agla version kaun banayega? Thoda sa, AI khud. | curiosity gap | 44 | yes |
-| 'AI khud ko improve karega' wali sci-fi line ka pehla step, OpenAI ke system card mein likha hai. | counterintuitive insight | 42 | yes |
-| Tumne AI ko kaam karte dekha hai. Ab AI ko AI pe kaam karte dekho. | relatable problem | 40 | yes |
-| AI ab AI ko bana raha hai? | curiosity gap | 49 | no (accuracy) |
-| OpenAI kehta hai bada kadam, independent testers kehte hain chhota. | contradiction | 43 | no (accuracy) |
-| OpenAI ke naye model ke reviews kharab aaye, par ek line ne sabka dhyaan kheencha. | contradiction | 43 | no (accuracy) |
+| OpenAI says its new AI helps build AI. | unexpected fact | 53 | yes |
+| Every OpenAI researcher just got an extra engineer. The engineer is an AI. | unexpected comparison | 50 | yes |
+| This week, OpenAI crossed one of its own safety thresholds. | timely development | 48 | yes |
+| For the first time, OpenAI says a model it released can speed up AI research. | strong factual statement | 47 | yes |
+| OpenAI calls it a milestone. An independent tester calls it a small step. | contradiction | 46 | yes |
+| OpenAI just put its own model in a new risk category. | important consequence | 45 | yes |
+| Who builds the next AI? Partly, the current one. | curiosity gap | 44 | yes |
+| Self-improving AI sounds like science fiction. OpenAI just rated its first step. | counterintuitive insight | 44 | yes |
+| OpenAI's new model got rough reviews. One line in its safety report matters more. | contradiction | 44 | yes |
+| You've watched AI do your work. Now it's doing AI researchers' work. | relatable problem | 42 | yes |
+| AI is now building AI. | curiosity gap | 50 | no (accuracy) |
+| The first step toward self-improving AI is in a document almost nobody reads. | curiosity gap | 45 | no (accuracy) |
 
 ## Appendix 4: Script quality
 
@@ -216,12 +221,12 @@ Engagement counts appear only where they were actually observed.
 |---|---|
 | fact | 9 |
 | hook | 9 |
-| clarity | 8 |
+| clarity | 9 |
 | retention | 9 |
 | originality | 9 |
 | naturalness | 9 |
 | payoff | 9 |
-| brand | 10 |
+| brand | 9 |
 | virality | 8 |
 | duration | 10 |
 
@@ -229,4 +234,4 @@ Engagement counts appear only where they were actually observed.
 
 - openai.com, deploymentsafety.openai.com, cdn.openai.com, x.com, epoch.ai and vals.ai cannot be opened from this environment; their own indexed text was read through search.
 - No likes, reposts, views or follower counts could be observed; all are UNKNOWN. X post times are decoded from status IDs.
-- Script duration is an estimate at an assumed 150 words per minute until your pace is measured.
+- Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured.

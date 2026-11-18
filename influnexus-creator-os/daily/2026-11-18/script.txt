@@ -1,9 +1,11 @@
-OpenAI ka naya AI, AI banane mein madad karne laga hai. OpenAI khud keh raha hai.
+OpenAI says its new AI helps build AI.
 
-Naye GPT-6.2 Astra ke system card mein OpenAI ne likha: yeh pehla public model hai jo 'AI self-improvement' mein unke High level tak pahuncha.
+It's right there in OpenAI's own system card for GPT-6.2 Astra. It's the first model they've released to hit their 'High' level for AI self-improvement.
 
-Matlab, OpenAI ke hisaab se: har researcher ke saath ek extra research engineer.
+OpenAI says that's like giving every OpenAI researcher an extra, highly capable research engineer.
 
-Lekin independent tester Vals AI ko pichle model se sirf thoda sudhaar dikha.
+But an independent tester, Vals AI, measured only a small gain over the previous model.
 
-OpenAI ise bas 'early milestone' kehta hai. AI khud ko upgrade nahi kar raha, par agla AI banane mein uska haath badh raha hai.
+OpenAI calls this an early milestone.
+
+So no, AI isn't upgrading itself yet. But it's starting to help build the next one.

@@ -1,7 +1,7 @@
 # Core settings. Paths are relative to the project root unless absolute.
 timezone: Asia/Kolkata
 daily_brief_time: "09:30"
-language: hinglish
+language: english        # all scripts and platform copy; global English-speaking audience
 models_dir: ${CREATOROS_MODELS:-~/models}
 
 script:

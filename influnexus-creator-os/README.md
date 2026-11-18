@@ -1,6 +1,7 @@
 # Influnexus Creator OS
 
-Daily research → one viral-worthy topic → one recording-ready Hinglish script, with platform copy.
+Daily research → one viral-worthy topic → one recording-ready English script for a global audience, with English captions and platform copy.
+The default language is set in `config/settings.yaml` (`language: english`).
 Follower targets are stretch goals, not promises; nothing here manufactures engagement or guarantees reach.
 
 ## Scope
@@ -10,7 +11,7 @@ and `tools/make_test_footage.py` were built earlier and are not part of the dail
 
 ## Daily loop
 1. **08:41 IST** the scheduled Claude session follows `RUNBOOK.md`. The package lands in `daily/DATE/package.md` by 09:30.
-2. Read section C once, record.
+2. Read section C once, record in your natural voice. `captions.txt` has the on-screen caption text.
 3. When numbers exist, log them (`creatoros metrics-add`, `creatoros content-update`). Mondays: `creatoros weekly`.
 
 ## Setup
@@ -34,6 +35,8 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 | `creatoros metrics-add k=v ...` / `metrics-report` / `metrics-review` | analytics |
 
 ## Rules the validator enforces
+- Script and all platform copy must be English (Devanagari or Hindi words in Latin script fail), with no forced slang, corporate jargon
+  or clickbait phrasing; the X post must fit 280 characters.
 - Every package carries a claim verification table (exact claim, primary source, supporting source, status, source date, confidence, access).
 - RECORDING READY only when every central script claim is HIGH with a primary source, no quote has unverified wording and nothing is unresolved;
   otherwise HOLD — NOT RECORDING READY. Secondary repetition alone is never HIGH.
@@ -45,14 +48,14 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 - Research summary 100-150 words; 3-5 Instagram hashtags; every source has a URL.
 - A topic already in `research/content_db.jsonl` needs `material_update_of`.
 
-## Verified state (19 November 2026, 00:30 IST)
+## Verified state (19 November 2026, 01:00 IST)
 | Component | State | Evidence |
 |---|---|---|
 | Current-information retrieval | WORKING | web search returned items dated 16-18 Nov 2026 across all categories |
 | Social discovery | PARTIALLY WORKING | X posts are found through search results only; X, Instagram, YouTube, Reddit and LinkedIn cannot be opened; engagement is UNKNOWN |
 | Source verification | PARTIALLY WORKING | primary sites cannot be opened from the cloud environment; their own indexed text is read through domain-restricted search and labelled `search-index`. 18 Nov California story held because its case number, exact allegation wording and OpenAI statement could not be verified |
 | Topic ranking | WORKING | 22 candidates ranked in `daily/2026-11-18/package.md`; tests cover eligibility rules |
-| Script generation and QA | WORKING | 90-word GPT-6.2 script passes the readiness gate; 52 tests cover the validator and gate |
+| Script generation and QA | WORKING | 84-word English GPT-6.2 script passes the readiness gate; 58 tests cover the validator, gate and English rules |
 | Duplicate prevention | WORKING | content database blocks repeats unless a new development is named (tested) |
 | Daily scheduling | WORKING, first run not yet observed | scheduled task "Influnexus daily brief", 08:41 Asia/Kolkata |
 | Notification | PARTIALLY WORKING | push notification is requested at the end of each run; phone delivery cannot be confirmed from here |

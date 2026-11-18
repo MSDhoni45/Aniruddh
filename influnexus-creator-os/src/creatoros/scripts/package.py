@@ -11,7 +11,7 @@ from ..research import content_db
 from ..util import write_json
 from . import lint
 
-REQUIRED = ["date", "slug", "keys", "topic", "category", "topic_type", "announced_at", "why_selected", "evidence_confidence",
+REQUIRED = ["date", "language", "slug", "keys", "topic", "category", "topic_type", "announced_at", "why_selected", "evidence_confidence",
             "research_summary", "primary_sources", "supporting_sources", "key_facts", "uncertainties", "context",
             "script", "hook", "hooks", "quality_scores", "recording", "instagram", "linkedin", "x", "youtube", "growth",
             "x_signals", "candidates", "factcheck", "access_limits"]
@@ -26,8 +26,19 @@ def validate(p: dict) -> tuple[list[str], dict]:
     problems = [f"missing: {k}" for k in REQUIRED if k not in p]
     if problems:
         return problems, {}
-    chk = lint.check(p["script"])
+    language = config.settings().get("language", "english")
+    if p["language"] != language:
+        problems.append(f"package language is '{p['language']}' but the configured default is '{language}'")
+    chk = lint.check(p["script"], p["language"])
     problems += [f"script: {x}" for x in chk["problems"]]
+    copy_fields = {"instagram caption": p["instagram"].get("caption", ""), "instagram cover": p["instagram"].get("cover_headline", ""),
+                   "linkedin": " ".join(str(p["linkedin"].get(k, "")) for k in ("caption", "business_relevance", "discussion_prompt")),
+                   "x": p["x"].get("post", ""), "youtube": " ".join([p["youtube"].get("title", ""), p["youtube"].get("description", "")]),
+                   "hooks": " / ".join(h.get("text", "") for h in p["hooks"])}
+    for name, text in copy_fields.items():
+        problems += [f"{name}: {x}" for x in lint.language_problems(text, p["language"])]
+    if len(p["x"].get("post", "")) > 280:
+        problems.append(f"X post is {len(p['x']['post'])} characters; keep it within 280")
     if not p["script"].strip().startswith(p["hook"].strip()):
         problems.append("script must open with the chosen hook")
     problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"])]
@@ -75,7 +86,7 @@ def render(p: dict, info: dict) -> str:
     if p.get("disclosure"):
         L += [f"> {p['disclosure']}", ""]
     L += ["## A. Today's winning topic", "",
-          f"- **Topic:** {p['topic']}", f"- **Category:** {p['category']} ({p['topic_type']})",
+          f"- **Topic:** {p['topic']}", f"- **Language:** {p['language'].capitalize()}", f"- **Category:** {p['category']} ({p['topic_type']})",
           f"- **Original announcement date:** {p['announced_at']}",
           f"- **Viral potential score:** {win['trend_score']}/100" + (f" (unknown: {', '.join(win['unknown_criteria'])})" if win["unknown_criteria"] else ""),
           f"- **Evidence confidence:** {p['evidence_confidence']}", f"- **Why selected:** {p['why_selected']}", "",
@@ -89,7 +100,7 @@ def render(p: dict, info: dict) -> str:
           "## Claim verification table", "",
           "Access: *opened* = page read directly; *search-index* = the primary site's own text read through search, page not opened; "
           "*secondary-only* = only other outlets report it.", "", ver.table(p["factcheck"]["claims"]),
-          "## D. Recording direction", "", f"- **Tone:** {r['tone']}", f"- **Opening expression:** {r['opening_expression']}",
+          "## D. Recording direction", "", "Delivery only. Keep your natural accent; no editing instructions.", "", f"- **Tone:** {r['tone']}", f"- **Opening expression:** {r['opening_expression']}",
           f"- **Emphasise:** {', '.join(r['emphasis'])}", f"- **Pauses:** {'; '.join(r['pauses'])}",
           f"- **Pronunciation:** {'; '.join(r['pronunciation'])}", f"- **Estimated duration:** {chk['seconds']} s", "",
           "## E. Platform content", "", "**Instagram**", "", f"Cover headline: {ig['cover_headline']}", "", ig["caption"], "",
@@ -116,6 +127,37 @@ def render(p: dict, info: dict) -> str:
     return "\n".join(L) + "\n"
 
 
+_WEAK_END = {"a", "an", "the", "its", "it's", "of", "to", "for", "and", "but", "or", "in", "on", "at", "by", "with", "that", "their",
+             "his", "her", "my", "your", "our", "is", "are", "was", "be", "it"}
+
+
+def caption_lines(script: str, max_words: int = 5) -> list[str]:
+    """On-screen caption text: the script's exact words in groups of 2-5, never crossing a sentence, split at commas first,
+    evenly sized, and never ending a line on a dangling word like 'the' or 'its'. Text only, no timing."""
+    import math
+    import re
+    lines: list[list[str]] = []
+    for sentence in re.split(r"(?<=[.?!])\s+|\n+", script.strip()):
+        for phrase in re.split(r"(?<=,)\s+", sentence.strip()):
+            words = phrase.split()
+            if not words:
+                continue
+            if len(words) == 1 and lines and len(lines[-1]) < max_words and not re.search(r"[.?!]$", lines[-1][-1]):
+                lines[-1].append(words[0])
+                continue
+            k = math.ceil(len(words) / max_words)
+            sizes = [len(words) // k + (1 if i < len(words) % k else 0) for i in range(k)]
+            chunks, i = [], 0
+            for n in sizes:
+                chunks.append(words[i:i + n])
+                i += n
+            for j in range(len(chunks) - 1):
+                while (chunks[j][-1].lower().strip(",") in _WEAK_END and len(chunks[j]) > 2 and len(chunks[j + 1]) < max_words):
+                    chunks[j + 1].insert(0, chunks[j].pop())
+            lines += chunks
+    return [" ".join(l) for l in lines if l]
+
+
 def save(p: dict, out: Path | None = None) -> dict:
     problems, info = validate(p)
     if problems:
@@ -124,6 +166,7 @@ def save(p: dict, out: Path | None = None) -> dict:
     out.mkdir(parents=True, exist_ok=True)
     (out / "package.md").write_text(render(p, info), encoding="utf-8")
     (out / "script.txt").write_text(p["script"].strip() + "\n", encoding="utf-8")
+    (out / "captions.txt").write_text("\n".join(caption_lines(p["script"])) + "\n", encoding="utf-8")
     (out / "claims.md").write_text(ver.table(p["factcheck"]["claims"]), encoding="utf-8")
     (out / "factcheck.md").unlink(missing_ok=True)
     write_json(out / "sources.json", {"primary": p["primary_sources"], "supporting": p["supporting_sources"],
@@ -133,6 +176,6 @@ def save(p: dict, out: Path | None = None) -> dict:
                          script=p["script"].strip(), material_update_of=p.get("material_update_of"))
     status = info["ready"]["status"]
     content_db.update(p["date"], p["slug"], status="scripted" if status == ver.READY else "held",
-                      hold_reasons=info["ready"]["reasons"])
+                      hold_reasons=info["ready"]["reasons"], language=p["language"], hook=p["hook"], script=p["script"].strip())
     return {"ok": True, "status": status, "reasons": info["ready"]["reasons"], "package": str(out / "package.md"),
             "content_db": "added" if not rec.get("duplicate") else "already present"}
