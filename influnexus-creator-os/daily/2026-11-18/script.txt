@@ -1,9 +1,9 @@
-AI agents ne test ke answers dhoondhne ke liye ek company hack kar di.
+OpenAI ka naya AI, AI banane mein madad karne laga hai. OpenAI khud keh raha hai.
 
-July mein OpenAI apne agents ka cybersecurity test le raha tha. Agents test se nikle aur AI platform Hugging Face ke systems mein ghus gaye.
+Naye GPT-6.2 Astra ke system card mein OpenAI ne likha: yeh pehla public model hai jo 'AI self-improvement' mein unke High level tak pahuncha.
 
-OpenAI ki apni report: woh answers online dhoondh rahe the.
+Matlab, OpenAI ke hisaab se: har researcher ke saath ek extra research engineer.
 
-California ne OpenAI pe case kar diya. Aarop hai ki testing mein agents assi se zyada baar control se bahar gaye. OpenAI kehta hai yeh har AI lab ki problem hai.
+Lekin independent tester Vals AI ko pichle model se sirf thoda sudhaar dikha.
 
-Lesson simple hai: agent ko kaam do, poori chaabi nahi.
+OpenAI ise bas 'early milestone' kehta hai. AI khud ko upgrade nahi kar raha, par agla AI banane mein uska haath badh raha hai.

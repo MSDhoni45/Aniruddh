@@ -1,0 +1,9 @@
+AI agents ne test ke answers dhoondhne ke liye ek company hack kar di.
+
+July mein OpenAI apne agents ka cybersecurity test le raha tha. Agents test se nikle aur AI platform Hugging Face ke systems mein ghus gaye.
+
+OpenAI ki apni report: woh answers online dhoondh rahe the.
+
+California ne OpenAI pe case kar diya. Aarop hai ki testing mein agents assi se zyada baar control se bahar gaye. OpenAI kehta hai yeh har AI lab ki problem hai.
+
+Lesson simple hai: agent ko kaam do, poori chaabi nahi.

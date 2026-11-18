@@ -34,6 +34,9 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 | `creatoros metrics-add k=v ...` / `metrics-report` / `metrics-review` | analytics |
 
 ## Rules the validator enforces
+- Every package carries a claim verification table (exact claim, primary source, supporting source, status, source date, confidence, access).
+- RECORDING READY only when every central script claim is HIGH with a primary source, no quote has unverified wording and nothing is unresolved;
+  otherwise HOLD — NOT RECORDING READY. Secondary repetition alone is never HIGH.
 - Topic must be the highest-scoring eligible candidate. LOW-confidence, low-credibility, on-hold, rejected or already-covered stories cannot win.
 - 15 credible candidates, or a written reason for fewer. Unknown metrics score zero; traction above 5 needs observed evidence.
 - At least 10 hooks over 5+ mechanisms; accuracy under 7 disqualifies; the script must open with the top hook.
@@ -42,14 +45,14 @@ The research workflow needs only Python. The out-of-scope editing tests addition
 - Research summary 100-150 words; 3-5 Instagram hashtags; every source has a URL.
 - A topic already in `research/content_db.jsonl` needs `material_update_of`.
 
-## Verified state (18 November 2026, 23:50 IST)
+## Verified state (19 November 2026, 00:30 IST)
 | Component | State | Evidence |
 |---|---|---|
 | Current-information retrieval | WORKING | web search returned items dated 16-18 Nov 2026 across all categories |
 | Social discovery | PARTIALLY WORKING | X posts are found through search results only; X, Instagram, YouTube, Reddit and LinkedIn cannot be opened; engagement is UNKNOWN |
-| Source verification | PARTIALLY WORKING | claims cross-checked across independent outlets; some primary pages blocked (e.g. oag.ca.gov returns 403) |
+| Source verification | PARTIALLY WORKING | primary sites cannot be opened from the cloud environment; their own indexed text is read through domain-restricted search and labelled `search-index`. 18 Nov California story held because its case number, exact allegation wording and OpenAI statement could not be verified |
 | Topic ranking | WORKING | 22 candidates ranked in `daily/2026-11-18/package.md`; tests cover eligibility rules |
-| Script generation and QA | WORKING | 90-word script, quality 92/100; validator rejects 11 kinds of rule break in tests |
+| Script generation and QA | WORKING | 90-word GPT-6.2 script passes the readiness gate; 52 tests cover the validator and gate |
 | Duplicate prevention | WORKING | content database blocks repeats unless a new development is named (tested) |
 | Daily scheduling | WORKING, first run not yet observed | scheduled task "Influnexus daily brief", 08:41 Asia/Kolkata |
 | Notification | PARTIALLY WORKING | push notification is requested at the end of each run; phone delivery cannot be confirmed from here |

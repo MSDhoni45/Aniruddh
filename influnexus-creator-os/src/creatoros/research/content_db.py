@@ -12,7 +12,7 @@ from pathlib import Path
 from .. import config
 
 DB = "research/content_db.jsonl"
-STATUSES = ["scripted", "recorded", "published", "dropped", "superseded"]
+STATUSES = ["scripted", "held", "recorded", "published", "dropped", "superseded"]
 _STOP = set("the a an of in on for to and is are was with by from at as its it this that says say new ai".split())
 
 
@@ -42,11 +42,11 @@ def _tokens(text: str) -> set[str]:
 def find_repeat(topic: str, keys: list[str], today: str, days: int = 45, path: Path | None = None,
                 ignore_slug: str | None = None) -> dict | None:
     """A repeat shares an identifier (CVE, product, case, event key) or most topic words with a recent entry.
-    Dropped entries never count; superseded ones do, since the topic was already researched and scripted."""
+    Dropped and held entries never count (a held story may return once verified); superseded ones do."""
     cutoff = date.fromisoformat(today) - timedelta(days=days)
     hk, ht = {k.lower() for k in keys}, _tokens(topic)
     for e in entries(path):
-        if e.get("status") == "dropped" or e.get("slug") == ignore_slug or date.fromisoformat(e["date"]) < cutoff:
+        if e.get("status") in ("dropped", "held") or e.get("slug") == ignore_slug or date.fromisoformat(e["date"]) < cutoff:
             continue
         et = _tokens(e["topic"])
         jac = len(ht & et) / max(len(ht | et), 1)

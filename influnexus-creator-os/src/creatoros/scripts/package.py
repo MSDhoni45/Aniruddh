@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .. import config
 from ..factcheck import claims as fcmod
+from ..factcheck import verification as ver
 from ..research import candidates as candmod
 from ..research import content_db
 from ..util import write_json
@@ -33,6 +34,9 @@ def validate(p: dict) -> tuple[list[str], dict]:
     q = lint.quality(p["quality_scores"], p["script"])
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
+    ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []))
+    problems += [f"claim table: {x}" for x in ready["problems"]]
+    problems += ver.story_confidence_ok(p["evidence_confidence"], p["factcheck"]["claims"])
     ranked = candmod.rank(p["candidates"])
     for c in ranked:
         problems += [f"candidate '{c.get('headline', '?')[:40]}': {x}" for x in c["problems"]]
@@ -57,14 +61,17 @@ def validate(p: dict) -> tuple[list[str], dict]:
     prior = content_db.find_repeat(p["topic"], p["keys"], p["date"], ignore_slug=p["slug"])
     if prior and not p.get("material_update_of"):
         problems.append(f"repeat of {prior['date']} '{prior['topic']}'; set material_update_of to the new development")
-    return problems, {"lint": chk, "quality": q, "ranked": ranked}
+    return problems, {"lint": chk, "quality": q, "ranked": ranked, "ready": ready}
 
 
 def render(p: dict, info: dict) -> str:
     chk, q, ranked = info["lint"], info["quality"], info["ranked"]
     win = next(c for c in ranked if c["eligible"])
     r, ig, li, xx, yt, g = p["recording"], p["instagram"], p["linkedin"], p["x"], p["youtube"], p["growth"]
-    L = [f"# Recording package: {p['date']}", ""]
+    rd = info["ready"]
+    L = [f"# Recording package: {p['date']}", "", f"## STATUS: {rd['status']}", ""]
+    if rd["reasons"]:
+        L += ["Do not record this script. Unresolved:", ""] + [f"- {x}" for x in rd["reasons"]] + [""]
     if p.get("disclosure"):
         L += [f"> {p['disclosure']}", ""]
     L += ["## A. Today's winning topic", "",
@@ -79,6 +86,9 @@ def render(p: dict, info: dict) -> str:
     L += ["", "**Supporting sources**", ""] + [f"- [{s['label']}]({s['url']})" for s in p["supporting_sources"]]
     L += ["", "## C. Final recording script", "", "```", p["script"].strip(), "```", "",
           f"{chk['words']} words · about {chk['seconds']} s at {chk['words_per_minute']:.0f} words per minute ({chk['pace_basis']}) · script quality {q['total']}/100", "",
+          "## Claim verification table", "",
+          "Access: *opened* = page read directly; *search-index* = the primary site's own text read through search, page not opened; "
+          "*secondary-only* = only other outlets report it.", "", ver.table(p["factcheck"]["claims"]),
           "## D. Recording direction", "", f"- **Tone:** {r['tone']}", f"- **Opening expression:** {r['opening_expression']}",
           f"- **Emphasise:** {', '.join(r['emphasis'])}", f"- **Pauses:** {'; '.join(r['pauses'])}",
           f"- **Pronunciation:** {'; '.join(r['pronunciation'])}", f"- **Estimated duration:** {chk['seconds']} s", "",
@@ -101,23 +111,28 @@ def render(p: dict, info: dict) -> str:
     L += [f"| {h['text']} | {h['mechanism']} | {h['total']} | {'yes' if h['eligible'] else 'no (accuracy)'} |" for h in lint.score_hooks(p["hooks"])]
     L += ["", "## Appendix 4: Script quality", "", "| Check | Score /10 |", "|---|---|"]
     L += [f"| {k} | {v} |" for k, v in q["scores"].items() if k in lint.QUALITY_CHECKS]
-    L += ["", "## Appendix 5: Fact-check", "", fcmod.to_markdown(p["factcheck"]).split("\n", 2)[2], "## Appendix 6: Research access limits", ""]
+    L += ["", "## Appendix 5: Research access limits", ""]
     L += [f"- {a}" for a in p["access_limits"]]
     return "\n".join(L) + "\n"
 
 
-def save(p: dict) -> dict:
+def save(p: dict, out: Path | None = None) -> dict:
     problems, info = validate(p)
     if problems:
         return {"ok": False, "problems": problems}
-    out = config.path("daily", p["date"])
+    out = out or config.path("daily", p["date"])
     out.mkdir(parents=True, exist_ok=True)
     (out / "package.md").write_text(render(p, info), encoding="utf-8")
     (out / "script.txt").write_text(p["script"].strip() + "\n", encoding="utf-8")
-    (out / "factcheck.md").write_text(fcmod.to_markdown(p["factcheck"]), encoding="utf-8")
+    (out / "claims.md").write_text(ver.table(p["factcheck"]["claims"]), encoding="utf-8")
+    (out / "factcheck.md").unlink(missing_ok=True)
     write_json(out / "sources.json", {"primary": p["primary_sources"], "supporting": p["supporting_sources"],
                                       "x_signals": p["x_signals"], "access_limits": p["access_limits"]})
     rec = content_db.add(p["date"], p["topic"], p["keys"], p["slug"], category=p["category"],
                          sources=[s["url"] for s in p["primary_sources"] + p["supporting_sources"]], hook=p["hook"],
                          script=p["script"].strip(), material_update_of=p.get("material_update_of"))
-    return {"ok": True, "package": str(out / "package.md"), "content_db": "added" if not rec.get("duplicate") else "already present"}
+    status = info["ready"]["status"]
+    content_db.update(p["date"], p["slug"], status="scripted" if status == ver.READY else "held",
+                      hold_reasons=info["ready"]["reasons"])
+    return {"ok": True, "status": status, "reasons": info["ready"]["reasons"], "package": str(out / "package.md"),
+            "content_db": "added" if not rec.get("duplicate") else "already present"}

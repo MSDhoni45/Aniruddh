@@ -28,8 +28,8 @@ def test_todays_package_is_valid():
     (lambda p: p["quality_scores"].update(fact=6), "below 90"),
     (lambda p: p.__setitem__("hooks", p["hooks"][:9]), "at least 10"),
     (lambda p: p.__setitem__("hook", p["hooks"][7]["text"]), "top-scoring"),
-    (lambda p: p.__setitem__("topic", p["candidates"][4]["headline"]), "top eligible candidate"),
-    (lambda p: p.__setitem__("script", p["script"].replace("Aarop hai ki", "Sach yeh hai ki")), "attribution phrase"),
+    (lambda p: p.__setitem__("topic", [c for c in candidates.rank(p["candidates"]) if c["eligible"]][1]["headline"]), "top eligible candidate"),
+    (lambda p: p.__setitem__("script", p["script"].replace("Vals AI", "ek tester")), "attribution phrase"),
     (lambda p: p.__setitem__("script", "Imagine a world where " + p["script"]), "banned phrase"),
     (lambda p: p.__setitem__("research_summary", "Too short."), "100-150"),
     (lambda p: p["instagram"].__setitem__("hashtags", ["#a", "#b"]), "3-5 hashtags"),
@@ -46,7 +46,7 @@ def test_package_rejects_rule_breaks(mod, expect):
 
 
 def test_low_credibility_story_cannot_win():
-    c = copy.deepcopy(PKG["candidates"][0])
+    c = copy.deepcopy(next(x for x in PKG["candidates"] if x["headline"] == PKG["topic"]))
     flashy = {**c, "headline": "Sensational unverified claim", "evidence_confidence": "LOW", "scores": {k: 10 for k in candidates.WEIGHTS}}
     r = candidates.rank([flashy, c])
     assert r[0]["headline"] == c["headline"] and not r[1]["eligible"]
@@ -88,3 +88,54 @@ def test_weekly_review_reports_unknowns_and_numbers(tmp_path):
                       new_followers="40", shares="60", saves="90"), perf)
     text = weekly.build("2026-11-24", db, perf)
     assert "| 2026-11-18_one | instagram | 7d | 5000.0 | 8.0 | 12.0 | 18.0 |" in text and "Followers gained" in text and "anecdote" in text
+
+
+# ---------- claim verification table and readiness gate ----------
+from creatoros.factcheck import verification as ver
+
+HELD = json.loads((ROOT / "daily" / "2026-11-18" / "held_ca-v-openai" / "package.json").read_text(encoding="utf-8"))
+
+
+def test_todays_package_is_recording_ready():
+    r = ver.readiness(PKG["factcheck"]["claims"], PKG["script"], PKG.get("unresolved", []))
+    assert r["status"] == ver.READY and r["reasons"] == []
+
+
+def test_held_california_package_stays_on_hold():
+    r = ver.readiness(HELD["factcheck"]["claims"], HELD["script"], HELD.get("unresolved", []))
+    assert r["status"] == ver.HOLD
+    assert any("case number" in x for x in r["reasons"]) and any("c4" in x for x in r["reasons"])
+
+
+def test_secondary_repetition_cannot_be_high_confidence():
+    c = {**PKG["factcheck"]["claims"][1], "access": "secondary-only"}
+    assert any("HIGH confidence" in x for x in ver.check_claim(c))
+    c = {**PKG["factcheck"]["claims"][1], "primary_source": None}
+    assert any("HIGH confidence" in x for x in ver.check_claim(c))
+
+
+def test_unverified_quote_or_unresolved_item_forces_hold():
+    claims = copy.deepcopy(PKG["factcheck"]["claims"])
+    claims[1].update(quote=True, wording_verified=False, confidence="MEDIUM")
+    assert ver.readiness(claims, PKG["script"], [])["status"] == ver.HOLD
+    assert ver.readiness(PKG["factcheck"]["claims"], PKG["script"], ["case number missing"])["status"] == ver.HOLD
+
+
+def test_claim_table_fields_are_required_and_sources_must_be_urls():
+    c = {k: v for k, v in PKG["factcheck"]["claims"][0].items() if k != "source_date"}
+    assert any("source_date" in x for x in ver.check_claim(c))
+    c = {**PKG["factcheck"]["claims"][0], "primary_source": "OpenAI blog"}
+    assert any("must be a URL" in x for x in ver.check_claim(c))
+
+
+def test_story_cannot_be_high_when_a_script_claim_is_not():
+    claims = copy.deepcopy(PKG["factcheck"]["claims"])
+    claims[0]["confidence"] = "MEDIUM"
+    assert ver.story_confidence_ok("HIGH", claims)
+
+
+def test_rendered_package_shows_status_and_claim_table():
+    md = (ROOT / "daily" / "2026-11-18" / "package.md").read_text(encoding="utf-8")
+    held = (ROOT / "daily" / "2026-11-18" / "held_ca-v-openai" / "package.md").read_text(encoding="utf-8")
+    assert "## STATUS: RECORDING READY" in md and "## Claim verification table" in md
+    assert "## STATUS: HOLD — NOT RECORDING READY" in held and "Do not record this script" in held

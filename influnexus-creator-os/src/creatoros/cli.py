@@ -28,6 +28,7 @@ def main(argv=None) -> int:
     p = sub.add_parser("story-add"); p.add_argument("headline"); p.add_argument("--keys", nargs="*", default=[]); p.add_argument("--date", required=True); p.add_argument("--slug", required=True); p.add_argument("--update-of")
     p = sub.add_parser("brief", help="(legacy format) validate and render daily/DATE/brief.json"); p.add_argument("--date", required=True)
     p = sub.add_parser("package", help="validate daily/DATE/package.json, render the recording package, log it"); p.add_argument("--date", required=True)
+    p.add_argument("--file", help="package.json elsewhere (outputs are written beside it)")
     p = sub.add_parser("content-search", help="search the content database"); p.add_argument("query", nargs="?", default="")
     p.add_argument("--status"); p.add_argument("--category")
     p = sub.add_parser("content-update", help="update a content entry: key=value ..."); p.add_argument("--date", required=True)
@@ -78,7 +79,8 @@ def main(argv=None) -> int:
         return 0 if r["ok"] else 2
     elif a.cmd == "package":
         from .scripts import package
-        r = package.save(read_json(config.path("daily", a.date, "package.json")))
+        src = Path(a.file) if a.file else config.path("daily", a.date, "package.json")
+        r = package.save(read_json(src), src.parent)
         _print(r)
         return 0 if r["ok"] else 2
     elif a.cmd == "content-search":
