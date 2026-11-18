@@ -1,0 +1,54 @@
+# Core settings. Paths are relative to the project root unless absolute.
+timezone: Asia/Kolkata
+daily_brief_time: "09:30"
+language: english        # all scripts and platform copy; global English-speaking audience
+models_dir: ${CREATOROS_MODELS:-~/models}
+
+script:
+  target_seconds: [32, 38]
+  hard_max_seconds: 40
+  target_words: [75, 90]
+  # Calibrate with `creatoros calibrate <recording>`; 150 wpm is a starting assumption, not a measurement.
+  words_per_minute: 150
+  pause_allowance_seconds: 2.0
+
+transcription:
+  backend: auto            # auto | sherpa | faster_whisper
+  whisper_model: sherpa-onnx-whisper-small
+  whisper_language: hi     # Hinglish is decoded as Hindi, then matched phonetically to the Roman script
+  threads: 4
+  vad:
+    min_silence: 0.25
+    min_speech: 0.12
+    threshold: 0.5
+
+editing:
+  match_threshold: 0.55     # minimum script-sentence match to accept a take
+  weak_match: 0.72          # below this, the caption is flagged for human review
+  pad_before: 0.10
+  pad_after: 0.16
+  max_natural_pause: 0.45   # pauses longer than this are tightened
+  punch_in_scale: 1.06      # alternate framing across jump cuts; 1.0 disables
+  face_crop: true
+
+audio:
+  highpass_hz: 80
+  denoise_db: 10
+  presence_db: 2.0
+  compressor_ratio: 2.5
+  target_lufs: -14
+  true_peak_db: -1.5
+  music:
+    enabled: false
+    file: assets/music/influnexus_pad_01.wav
+    gain_db: -27
+
+export:
+  width: 1080
+  height: 1920
+  fps: 30
+  crf: 18
+  preset: medium
+  audio_bitrate: 192k
+  min_seconds: 30
+  max_seconds: 40

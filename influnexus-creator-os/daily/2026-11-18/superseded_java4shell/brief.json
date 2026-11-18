@@ -1,0 +1,592 @@
+{
+  "date": "2026-11-18",
+  "selected_story": "Java4Shell: a security startup says AI found a critical Java bug in about an hour, for under $200. Oracle has patched it.",
+  "youtube_title": "AI found a critical Java bug in 1 hour? Java4Shell explained in Hinglish",
+  "why_it_won": "Highest trend score of the eligible stories. The one-hour, under-$200 figure is a real surprise for ordinary viewers; Java touches a large share of Indian IT work; and there is one clear action (update Java). It scores lower on credibility than the OpenAI launch because the speed and cost are Calif's own unverified account, so the script attributes them and adds Oracle's 'difficult to exploit' counterpoint.",
+  "x_signals": [
+    {
+      "time": "2026-11-17 19:25",
+      "account": "@0x0SojalSec",
+      "summary": "Says the flaw leaked before Oracle's patch",
+      "url": "https://x.com/0x0SojalSec/status/2122773167009898600"
+    },
+    {
+      "time": "2026-11-17 20:07",
+      "account": "@Devoxx",
+      "summary": "Reaction from the Java conference account",
+      "url": "https://x.com/Devoxx/status/2122783607681167527"
+    },
+    {
+      "time": "2026-11-17 21:11",
+      "account": "@calif_io",
+      "summary": "Java4Shell: write once, RCE everywhere (original post)",
+      "url": "https://x.com/calif_io/status/2122799880221687837"
+    },
+    {
+      "time": "2026-11-17 21:21",
+      "account": "@Techmeme",
+      "summary": "New York Times: Calif used GPT-6 Cyber",
+      "url": "https://x.com/Techmeme/status/2122802226464948303"
+    },
+    {
+      "time": "2026-11-17 21:22",
+      "account": "@IntCyberDigest",
+      "summary": "Calif says it took over Jira, Confluence, Jenkins, Keycloak without logging in",
+      "url": "https://x.com/IntCyberDigest/status/2122802633056416195"
+    },
+    {
+      "time": "2026-11-18 07:03",
+      "account": "@niebezpiecznik",
+      "summary": "Polish security account warning",
+      "url": "https://x.com/niebezpiecznik/status/2122948778248278378"
+    },
+    {
+      "time": "2026-11-18 07:59",
+      "account": "@rootedcon",
+      "summary": "Spanish security conference warning",
+      "url": "https://x.com/rootedcon/status/2122962826360741892"
+    },
+    {
+      "time": "2026-11-18 10:42",
+      "account": "@unusual_whales",
+      "summary": "Mainstream pickup",
+      "url": "https://x.com/unusual_whales/status/2123003784062251189"
+    }
+  ],
+  "primary_sources": [
+    {
+      "label": "Calif's post on X",
+      "url": "https://x.com/calif_io/status/2122799880221687837"
+    },
+    {
+      "label": "Qualys: how to find, mitigate and patch",
+      "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now"
+    },
+    {
+      "label": "Tenable FAQ",
+      "url": "https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability"
+    },
+    {
+      "label": "The Hacker News report",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+    },
+    {
+      "label": "Malwarebytes: a critical flaw with a narrow reach",
+      "url": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach"
+    },
+    {
+      "label": "OX Security: easy to crash, hard to exploit",
+      "url": "https://www.ox.security/blog/java4shell-cve-2026-114938-rce-risk/"
+    },
+    {
+      "label": "Techmeme summary of the New York Times report",
+      "url": "https://www.techmeme.com/261117/p55"
+    }
+  ],
+  "uncertainties": [
+    "The one-hour and under-$200 figures are Calif's own and have not been independently checked.",
+    "Severity is disputed: Oracle 8.1 and 'difficult to exploit', Calif 9.2. OX Security estimates under 0.12% of JVMs are at risk of code execution.",
+    "Which AI was used is disputed (Codex per Calif, GPT-6 Cyber per the New York Times). The script says only 'AI'.",
+    "'No confirmed attacks' was true at research time on 18 November. Re-check on the day you post.",
+    "Calif's write-up and Oracle's advisory were not opened directly from this environment; open both before recording."
+  ],
+  "script": "Ek AI ne Java mein ek critical bug sirf ek ghante mein dhoondh liya. Kharcha? Do sau dollar se kam.\n\nYeh claim hai security startup Calif ka. Bug ka naam Java4Shell. Java par banks, airlines, aur shayad aapki company ka backend chalta hai.\n\nOracle ka patch aa chuka hai.\n\nLekin panic nahi. Oracle khud kehta hai exploit karna mushkil hai, aur abhi tak koi real attack confirm nahi.\n\nAsli sabak: bug dhoondhna ab sasta ho gaya hai. Patch late karna mehenga.\n\nDeveloper ho? Aaj hi Java update karo.\n",
+  "recording_instructions": [
+    "iPhone rear camera, 4K 30 fps, vertical, eye level, wireless mic on. HDR video off if possible (the pipeline tone-maps HDR, but that path is untested on real iPhone HDR footage).",
+    "Leave the top third of the frame clear above your head: title cards sit there. Captions sit just below centre.",
+    "Say the first line fast and flat, then pause on 'Kharcha?'. Slow down at 'Lekin panic nahi'.",
+    "If you fluff a line, pause one second and repeat the whole sentence. The editor keeps the last complete take of each sentence.",
+    "Record one full run. Do not stop the recording between retakes.",
+    "Save the file as footage/incoming/2026-11-18.mov, then run: creatoros edit footage/incoming/2026-11-18.mov --date 2026-11-18"
+  ],
+  "visual_references": [
+    "0-4s: face to camera with the title card '1 GHANTA. $200.' and a 'CLAIM: CALIF' label (generated by the pipeline).",
+    "Name card: 'Java4Shell, CVE-2026-114938' (generated).",
+    "Patch card: 'Oracle: patch released' (generated).",
+    "Calm beat: 'Oracle: difficult to exploit' and 'No confirmed attacks, as of 18 Nov' (generated).",
+    "Takeaway split: 'Bug dhoondhna: sasta' against 'Patch late: mehenga' (generated).",
+    "Optional real source material you capture yourself: a screenshot of Calif's post and of Oracle's advisory page. Add them to the edit plan as image overlays and list them in assets/licensed/manifest.json.",
+    "No hacker stock footage."
+  ],
+  "instagram_caption": "AI ne Java ka critical bug 1 ghante mein dhoondh liya — yeh Calif ka claim hai, independently verify nahi hua. Oracle ka patch aa chuka hai, aur abhi tak koi real attack confirm nahi. Panic nahi, patch karo. Apne backend wale dost ko bhejo.",
+  "linkedin_caption": "A security startup says an AI model found a critical Java flaw in about an hour, for under $200 in compute.\n\nThe bug, Java4Shell (CVE-2026-114938), sits in OpenJDK's Base64 decoder. Oracle patched it on 17 November.\n\nSome perspective: Oracle rates it 'difficult to exploit', one independent estimate puts under 0.12% of JVMs at real risk of code execution, and no attacks are confirmed. The speed and cost figures are Calif's own and unverified.\n\nThe bigger shift is economic. If finding serious bugs now costs hours and a few hundred dollars, slow patch cycles become the expensive part.\n\nIf you run Java 17 or later on x86 servers, check your version this week.",
+  "x_caption": "Calif says AI found a critical Java bug in ~1 hour for under $200. Oracle has patched Java4Shell; no attacks confirmed, and Oracle calls it hard to exploit. Bug-finding just got cheap. Slow patching just got expensive.",
+  "hashtags": [
+    "#Java4Shell",
+    "#CyberSecurity",
+    "#AI",
+    "#Java",
+    "#TechNewsHindi"
+  ],
+  "posting_time": "19:30 IST. This is a starting assumption, not a measured best time; it will be revised once analytics exist.",
+  "candidates": [
+    {
+      "headline": "Java4Shell (CVE-2026-114938): Calif says AI found a critical Java flaw in about an hour",
+      "original_source": "https://x.com/calif_io/status/2122799880221687837",
+      "published_at": "2026-11-17 21:11 UTC (from post ID)",
+      "first_discussed_at": "2026-11-17 19:25 UTC (earliest post found)",
+      "primary_x_post": "https://x.com/calif_io/status/2122799880221687837",
+      "independent_discussion": [
+        "https://x.com/Techmeme/status/2122802226464948303",
+        "https://x.com/niebezpiecznik/status/2122948778248278378",
+        "https://x.com/rootedcon/status/2122962826360741892",
+        "https://x.com/unusual_whales/status/2123003784062251189"
+      ],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global; high for India's Java-heavy IT services sector",
+      "audience_relevance": "Developers, IT teams, anyone curious about AI finding bugs",
+      "visual_availability": "Calif post, Oracle advisory page, product logos; no demo footage",
+      "practical_value": "Clear action: update Java or apply the workaround flag",
+      "credibility_note": "Patch and CVE consistent across Qualys, Tenable, The Hacker News; speed and cost are Calif's own claim",
+      "uncertainty": "Severity disputed (Oracle 8.1 vs Calif 9.2); which AI model is disputed; one-hour figure unverified",
+      "already_covered": false,
+      "scores": {
+        "traction": 8,
+        "surprise": 9,
+        "relevance": 9,
+        "practical": 9,
+        "visual": 6,
+        "credibility": 7
+      },
+      "traction_evidence": "Separate accounts posting in English, Polish, Spanish and Japanese within about 15 hours, plus Techmeme and New York Times pickup. Like and view counts were not observable."
+    },
+    {
+      "headline": "OpenAI releases GPT-6.2 Astra and Sol",
+      "original_source": "https://x.com/sama/status/2122798039899263456",
+      "published_at": "2026-11-17 21:04 UTC (from post ID)",
+      "first_discussed_at": "2026-11-17",
+      "primary_x_post": "https://x.com/sama/status/2122798039899263456",
+      "independent_discussion": [
+        "https://decrypt.co/383539/speaks-tongues-only-6-2-astra-understands-why-early-testers-hate-openai-new-model"
+      ],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global",
+      "audience_relevance": "ChatGPT users and developers",
+      "visual_availability": "Product UI screen recordings possible",
+      "practical_value": "Moderate: pricing and availability",
+      "credibility_note": "Official launch; pricing consistent across trackers",
+      "uncertainty": "Early tester reviews sharply mixed; no India-specific pricing found",
+      "already_covered": false,
+      "scores": {
+        "traction": 8,
+        "surprise": 5,
+        "relevance": 8,
+        "practical": 6,
+        "visual": 5,
+        "credibility": 9
+      },
+      "traction_evidence": "Launch post by the CEO plus named tester reactions reported by Decrypt. Counts not observable."
+    },
+    {
+      "headline": "Microsoft's agent-framework PyPI package shipped a credential stealer",
+      "original_source": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
+      "published_at": "2026-11-17",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [
+        "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+        "https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer"
+      ],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global developers",
+      "audience_relevance": "Python and AI-agent developers; narrow for a general audience",
+      "visual_availability": "Terminal and package page screenshots",
+      "practical_value": "High for affected developers: remove 1.26.1/1.26.2 and rotate credentials",
+      "credibility_note": "Multiple independent security vendors agree",
+      "uncertainty": "How the attacker got publish access is unknown",
+      "already_covered": false,
+      "scores": {
+        "traction": 5,
+        "surprise": 7,
+        "relevance": 6,
+        "practical": 9,
+        "visual": 4,
+        "credibility": 9
+      }
+    },
+    {
+      "headline": "Google reports exploit_agent, which it calls the first fully automated AI cyberattack",
+      "original_source": "https://cyberscoop.com/google-fully-automated-ai-cyberattack/",
+      "published_at": "2026-11-16",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [
+        "https://ground.news/article/google-warns-the-era-of-autonomous-ai-attacks-has-arrived"
+      ],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global",
+      "audience_relevance": "Broad curiosity",
+      "visual_availability": "No footage",
+      "practical_value": "Low direct action",
+      "credibility_note": "Google threat-intelligence report via CyberScoop",
+      "uncertainty": "'First' is Google's own assessment; targets reported inconsistently",
+      "already_covered": false,
+      "scores": {
+        "traction": 5,
+        "surprise": 8,
+        "relevance": 7,
+        "practical": 5,
+        "visual": 5,
+        "credibility": 8
+      },
+      "outside_window": true
+    },
+    {
+      "headline": "Nvidia board rules out Jensen Huang's return on the earnings call",
+      "original_source": "https://www.cnn.com/2026/11/17/tech/nvidia-earnings-jensen-huang-exit",
+      "published_at": "2026-11-17",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [
+        "https://www.aljazeera.com/economy/2026/11/18/nvidia-shoots-down-calls-for-jensen-huangs-return-amid-strong-earnings",
+        "https://www.forbes.com/sites/fionariley/2026/11/17/nvidia-board-chair-says-jensen-huang-reinstatement-isnt-being-considered/"
+      ],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global; strong interest in India",
+      "audience_relevance": "Broad",
+      "visual_availability": "Earnings call audio, stock chart",
+      "practical_value": "None",
+      "credibility_note": "CNN, Forbes, Al Jazeera, SEC 8-K",
+      "uncertainty": "Reasons for the resignation are under investigation; the resignation itself was 12 November",
+      "already_covered": false,
+      "scores": {
+        "traction": 8,
+        "surprise": 6,
+        "relevance": 6,
+        "practical": 2,
+        "visual": 6,
+        "credibility": 9
+      },
+      "traction_evidence": "Covered by several major outlets on the day. X counts not observable."
+    },
+    {
+      "headline": "SpaceX reportedly leasing $47B of Nvidia chips through an Apollo vehicle",
+      "original_source": "https://finance.yahoo.com/markets/article/spacex-is-leasing-47-billion-of-nvidia-chips-like-a-car--and-lenders-hold-the-title-192002200.html",
+      "published_at": "2026-11-18",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [
+        "https://www.digitimes.com/news/a20261118PD232/spacex-financing-gpu-equipment-infrastructure.html"
+      ],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Low for India",
+      "audience_relevance": "Finance-minded viewers",
+      "visual_availability": "None",
+      "practical_value": "None",
+      "credibility_note": "Sourced reporting, not a company announcement",
+      "uncertainty": "Deal terms unconfirmed by SpaceX",
+      "already_covered": false,
+      "scores": {
+        "traction": 4,
+        "surprise": 6,
+        "relevance": 4,
+        "practical": 2,
+        "visual": 4,
+        "credibility": 6
+      }
+    },
+    {
+      "headline": "Unitree unveils H2-X 'bodyguard' humanoid",
+      "original_source": "https://supercarblondie.com/unitree-robotics-h2-x-humanoid-robot-bodyguard/",
+      "published_at": "2026-11-16",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global",
+      "audience_relevance": "Broad, visual",
+      "visual_availability": "Company launch video",
+      "practical_value": "None",
+      "credibility_note": "Single outlet seen",
+      "uncertainty": "Whether the footage is staged or edited is unknown",
+      "already_covered": false,
+      "scores": {
+        "traction": "UNKNOWN",
+        "surprise": 8,
+        "relevance": 7,
+        "practical": 2,
+        "visual": 9,
+        "credibility": 4
+      },
+      "outside_window": true
+    },
+    {
+      "headline": "Anthropic cuts its bug disclosure window from 90 to 30 days",
+      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-17",
+      "published_at": "2026-11-17",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global",
+      "audience_relevance": "Security professionals",
+      "visual_availability": "None",
+      "practical_value": "Low",
+      "credibility_note": "Seen only in an aggregator digest",
+      "uncertainty": "Primary announcement not located",
+      "already_covered": false,
+      "scores": {
+        "traction": "UNKNOWN",
+        "surprise": 6,
+        "relevance": 5,
+        "practical": 4,
+        "visual": 2,
+        "credibility": 4
+      }
+    },
+    {
+      "headline": "California attorney general sues OpenAI over Hugging Face breach",
+      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-17",
+      "published_at": "2026-11-17",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "US",
+      "audience_relevance": "General news audience",
+      "visual_availability": "None",
+      "practical_value": "None",
+      "credibility_note": "Seen only in an aggregator digest",
+      "uncertainty": "Filing not located; details unverified",
+      "already_covered": false,
+      "scores": {
+        "traction": "UNKNOWN",
+        "surprise": 6,
+        "relevance": 5,
+        "practical": 2,
+        "visual": 3,
+        "credibility": 3
+      }
+    },
+    {
+      "headline": "US Commerce Department starts permit system for AI chips used via overseas data centres",
+      "original_source": "https://riorundown.substack.com/p/ai-news-nov-18-2026-ai-infrastructure",
+      "published_at": "2026-11-18",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Indirect for India's data-centre plans",
+      "audience_relevance": "Policy watchers",
+      "visual_availability": "None",
+      "practical_value": "Low",
+      "credibility_note": "Seen only in digests",
+      "uncertainty": "Rule text not located",
+      "already_covered": false,
+      "scores": {
+        "traction": "UNKNOWN",
+        "surprise": 5,
+        "relevance": 5,
+        "practical": 3,
+        "visual": 2,
+        "credibility": 4
+      }
+    },
+    {
+      "headline": "Baidu and Xiaomi CEOs warn AI spending is outrunning returns",
+      "original_source": "https://riorundown.substack.com/p/ai-news-nov-18-2026-ai-infrastructure",
+      "published_at": "2026-11-18",
+      "first_discussed_at": "UNKNOWN",
+      "primary_x_post": "UNKNOWN",
+      "independent_discussion": [],
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "geo_relevance": "Global",
+      "audience_relevance": "Business audience",
+      "visual_availability": "None",
+      "practical_value": "Low",
+      "credibility_note": "Seen only in digests",
+      "uncertainty": "Exact quotes not located",
+      "already_covered": false,
+      "scores": {
+        "traction": "UNKNOWN",
+        "surprise": 5,
+        "relevance": 5,
+        "practical": 3,
+        "visual": 2,
+        "credibility": 4
+      }
+    }
+  ],
+  "hooks": [
+    {
+      "text": "Ek AI ne Java mein ek critical bug sirf ek ghante mein dhoondh liya.",
+      "type": "unexpected result",
+      "clarity": 9,
+      "curiosity": 9,
+      "accuracy": 8,
+      "natural": 8,
+      "visual": 8
+    },
+    {
+      "text": "Bug dhoondhna ab do sau dollar ka kaam hai.",
+      "type": "surprising comparison",
+      "clarity": 7,
+      "curiosity": 8,
+      "accuracy": 7,
+      "natural": 8,
+      "visual": 6
+    },
+    {
+      "text": "Aapki company ka backend kal raat risk mein tha.",
+      "type": "important consequence",
+      "clarity": 7,
+      "curiosity": 8,
+      "accuracy": 5,
+      "natural": 8,
+      "visual": 5
+    }
+  ],
+  "factcheck": {
+    "date": "2026-11-18",
+    "story": "Java4Shell (CVE-2026-114938): Calif says AI found a critical Java flaw in about an hour",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "An AI model found the bug in about one hour, at a token cost under $200",
+        "status": "THIRD-PARTY CLAIM",
+        "attribution": "Calif",
+        "in_script": true,
+        "evidence": [
+          "https://x.com/calif_io/status/2122799880221687837",
+          "https://www.unite.ai/calif-uses-ai-to-find-java4shell-as-openjdk-and-oracle-ship-fixes/"
+        ],
+        "note": "Calif's own account. Not independently checked. Calif's write-up was not opened directly from this environment.",
+        "script_attribution": "claim hai"
+      },
+      {
+        "id": "c2",
+        "text": "The flaw is tracked as CVE-2026-114938 and sits in OpenJDK's Base64 decoder",
+        "status": "CONFIRMED",
+        "in_script": false,
+        "evidence": [
+          "https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability",
+          "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now"
+        ],
+        "note": "Consistent across independent security vendors. Oracle advisory not opened directly."
+      },
+      {
+        "id": "c3",
+        "text": "Oracle released a fix in its 17 November 2026 Critical Patch Update",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "evidence": [
+          "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+          "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now"
+        ],
+        "note": "Fixed versions reported: Java SE 17.0.21.1, 21.0.13.1, 25.0.5.1, 27.0.1.1. Re-check against Oracle's advisory before publishing."
+      },
+      {
+        "id": "c4",
+        "text": "Oracle rates the flaw 8.1 (CVSS 3.1) and describes it as difficult to exploit",
+        "status": "COMPANY CLAIM",
+        "attribution": "Oracle",
+        "in_script": true,
+        "evidence": [
+          "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach"
+        ],
+        "note": "Calif rates it 9.2 (CVSS 4.0). Severity is disputed between the two.",
+        "script_attribution": "Oracle khud kehta hai"
+      },
+      {
+        "id": "c5",
+        "text": "No exploitation in the wild has been confirmed",
+        "status": "THIRD-PARTY CLAIM",
+        "attribution": "as of 18 Nov",
+        "in_script": true,
+        "evidence": [
+          "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938"
+        ],
+        "note": "True as of research time on 18 November 2026. Must be re-checked on the day of publishing.",
+        "script_attribution": "abhi tak"
+      },
+      {
+        "id": "c6",
+        "text": "Java runs at banks, airlines and many company backends",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "evidence": [
+          "https://www.techmeme.com/261117/p55"
+        ],
+        "note": "Widely documented general fact; the '90% of Fortune 500' figure is deliberately not used."
+      },
+      {
+        "id": "c7",
+        "text": "Which model was used: Codex (Calif) or GPT-6 Cyber (New York Times)",
+        "status": "DISPUTED",
+        "in_script": false,
+        "evidence": [
+          "https://x.com/Techmeme/status/2122802226464948303"
+        ],
+        "note": "The script says only 'AI'."
+      },
+      {
+        "id": "c8",
+        "text": "CISA urged immediate patching",
+        "status": "UNVERIFIED",
+        "in_script": false,
+        "evidence": [
+          "https://x.com/markgadala/status/2122840648336252938"
+        ],
+        "note": "Conflicting reports. Not used."
+      },
+      {
+        "id": "c9",
+        "text": "The NSA network outage is linked to Java4Shell",
+        "status": "SPECULATION",
+        "in_script": false,
+        "evidence": [],
+        "note": "No reporting links them. Not used."
+      }
+    ]
+  },
+  "access_limits": [
+    "X, Instagram, YouTube and most news sites cannot be opened from this cloud environment; research used web search results only.",
+    "Likes, reposts and views could not be observed for any post and are marked UNKNOWN.",
+    "Post times are decoded from the X status IDs, not read from the posts.",
+    "The script duration is an estimate at an assumed 150 words per minute; no text-to-speech voice here reads Roman Hinglish reliably."
+  ]
+}

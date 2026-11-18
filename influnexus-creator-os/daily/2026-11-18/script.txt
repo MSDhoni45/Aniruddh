@@ -1,0 +1,11 @@
+OpenAI says its new AI helps build AI.
+
+It's right there in OpenAI's own system card for GPT-6.2 Astra. It's the first model they've released to hit their 'High' level for AI self-improvement.
+
+OpenAI says that's like giving every OpenAI researcher an extra, highly capable research engineer.
+
+But an independent tester, Vals AI, measured only a small gain over the previous model.
+
+OpenAI calls this an early milestone.
+
+So no, AI isn't upgrading itself yet. But it's starting to help build the next one.

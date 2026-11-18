@@ -1,0 +1,93 @@
+{
+  "primary": [
+    {
+      "label": "OpenAI: GPT-6.2 system card, AI self-improvement section",
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/ai-self-improvement-capabilities"
+    },
+    {
+      "label": "OpenAI: GPT-6.2 system card (overview)",
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
+    },
+    {
+      "label": "OpenAI: Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+    },
+    {
+      "label": "Vals AI on X: pre-release testing of GPT-6.2 Astra",
+      "url": "https://x.com/ValsAI/status/2122751897434309101"
+    },
+    {
+      "label": "OpenAI: Preparedness Framework v2 (April 2025)",
+      "url": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "heise: OpenAI warns of new risks from AI self-improvement",
+      "url": "https://www.heise.de/en/news/GPT-6-2-Astra-OpenAI-warns-of-new-risks-from-AI-self-improvement-11529050.html"
+    },
+    {
+      "label": "Unite.AI: first High self-improvement rating",
+      "url": "https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/"
+    },
+    {
+      "label": "TheNextWeb: price cut and early tester pushback",
+      "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+    },
+    {
+      "label": "The Rundown: rough early reviews",
+      "url": "https://www.therundown.ai/news/openai-gpt-6-2-astra-sol-reviews-anthropic-ipo"
+    },
+    {
+      "label": "Epoch AI: How good are Fable 5.2 and GPT-6.2 Astra at real work?",
+      "url": "https://epoch.ai/publications/how-good-are-fable-5-2-and-gpt-6-2-astra-at-real-work"
+    },
+    {
+      "label": "Vals AI: RSI-Index leaderboard",
+      "url": "https://www.vals.ai/benchmarks/rsi_index"
+    }
+  ],
+  "x_signals": [
+    {
+      "time": "2026-11-17 18:01",
+      "account": "@ValsAI",
+      "summary": "Pre-release testing: incremental gain on the RSI-Index",
+      "url": "https://x.com/ValsAI/status/2122751897434309101"
+    },
+    {
+      "time": "2026-11-17 18:06",
+      "account": "@kimmonismus",
+      "summary": "First public model at High self-improvement",
+      "url": "https://x.com/kimmonismus/status/2122753323128565890"
+    },
+    {
+      "time": "2026-11-17 18:22",
+      "account": "@rohanpaul_ai",
+      "summary": "System card summary: High self-improvement, Critical cyber",
+      "url": "https://x.com/rohanpaul_ai/status/2122757283449082323"
+    },
+    {
+      "time": "2026-11-17 19:13",
+      "account": "@AdamHoltererer",
+      "summary": "Verdict: better at what OpenAI was already good at",
+      "url": "https://x.com/AdamHoltererer/status/2122769994291327446"
+    },
+    {
+      "time": "2026-11-17 19:46",
+      "account": "@ChrisGPT",
+      "summary": "What 'High' self-improvement actually means",
+      "url": "https://x.com/ChrisGPT/status/2122778409432658181"
+    },
+    {
+      "time": "2026-11-17 21:04",
+      "account": "@sama",
+      "summary": "Launch post",
+      "url": "https://x.com/sama/status/2122798039899263456"
+    }
+  ],
+  "access_limits": [
+    "openai.com, deploymentsafety.openai.com, cdn.openai.com, x.com, epoch.ai and vals.ai cannot be opened from this environment; their own indexed text was read through search.",
+    "No likes, reposts, views or follower counts could be observed; all are UNKNOWN. X post times are decoded from status IDs.",
+    "Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured."
+  ]
+}

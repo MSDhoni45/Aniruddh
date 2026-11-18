@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-18",
+  "primary_sources": [
+    {
+      "label": "Calif's post on X",
+      "url": "https://x.com/calif_io/status/2122799880221687837"
+    },
+    {
+      "label": "Qualys: how to find, mitigate and patch",
+      "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now"
+    },
+    {
+      "label": "Tenable FAQ",
+      "url": "https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability"
+    },
+    {
+      "label": "The Hacker News report",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+    },
+    {
+      "label": "Malwarebytes: a critical flaw with a narrow reach",
+      "url": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach"
+    },
+    {
+      "label": "OX Security: easy to crash, hard to exploit",
+      "url": "https://www.ox.security/blog/java4shell-cve-2026-114938-rce-risk/"
+    },
+    {
+      "label": "Techmeme summary of the New York Times report",
+      "url": "https://www.techmeme.com/261117/p55"
+    }
+  ],
+  "x_signals": [
+    {
+      "time": "2026-11-17 19:25",
+      "account": "@0x0SojalSec",
+      "summary": "Says the flaw leaked before Oracle's patch",
+      "url": "https://x.com/0x0SojalSec/status/2122773167009898600"
+    },
+    {
+      "time": "2026-11-17 20:07",
+      "account": "@Devoxx",
+      "summary": "Reaction from the Java conference account",
+      "url": "https://x.com/Devoxx/status/2122783607681167527"
+    },
+    {
+      "time": "2026-11-17 21:11",
+      "account": "@calif_io",
+      "summary": "Java4Shell: write once, RCE everywhere (original post)",
+      "url": "https://x.com/calif_io/status/2122799880221687837"
+    },
+    {
+      "time": "2026-11-17 21:21",
+      "account": "@Techmeme",
+      "summary": "New York Times: Calif used GPT-6 Cyber",
+      "url": "https://x.com/Techmeme/status/2122802226464948303"
+    },
+    {
+      "time": "2026-11-17 21:22",
+      "account": "@IntCyberDigest",
+      "summary": "Calif says it took over Jira, Confluence, Jenkins, Keycloak without logging in",
+      "url": "https://x.com/IntCyberDigest/status/2122802633056416195"
+    },
+    {
+      "time": "2026-11-18 07:03",
+      "account": "@niebezpiecznik",
+      "summary": "Polish security account warning",
+      "url": "https://x.com/niebezpiecznik/status/2122948778248278378"
+    },
+    {
+      "time": "2026-11-18 07:59",
+      "account": "@rootedcon",
+      "summary": "Spanish security conference warning",
+      "url": "https://x.com/rootedcon/status/2122962826360741892"
+    },
+    {
+      "time": "2026-11-18 10:42",
+      "account": "@unusual_whales",
+      "summary": "Mainstream pickup",
+      "url": "https://x.com/unusual_whales/status/2123003784062251189"
+    }
+  ],
+  "access_limits": [
+    "X, Instagram, YouTube and most news sites cannot be opened from this cloud environment; research used web search results only.",
+    "Likes, reposts and views could not be observed for any post and are marked UNKNOWN.",
+    "Post times are decoded from the X status IDs, not read from the posts.",
+    "The script duration is an estimate at an assumed 150 words per minute; no text-to-speech voice here reads Roman Hinglish reliably."
+  ]
+}

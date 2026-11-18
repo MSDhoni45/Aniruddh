@@ -1,0 +1,12 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+logs/*.log
+renders/
+final/*.mp4
+footage/incoming/*
+footage/processed/*
+!footage/incoming/.gitkeep
+!footage/processed/.gitkeep
+subtitles/*.srt
+.env

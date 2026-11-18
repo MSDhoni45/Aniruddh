@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-18",
+  "story": "Java4Shell (CVE-2026-114938): Calif says AI found a critical Java flaw in about an hour",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "An AI model found the bug in about one hour, at a token cost under $200",
+      "status": "THIRD-PARTY CLAIM",
+      "attribution": "Calif",
+      "in_script": true,
+      "evidence": [
+        "https://x.com/calif_io/status/2122799880221687837",
+        "https://www.unite.ai/calif-uses-ai-to-find-java4shell-as-openjdk-and-oracle-ship-fixes/"
+      ],
+      "note": "Calif's own account. Not independently checked. Calif's write-up was not opened directly from this environment.",
+      "script_attribution": "claim hai"
+    },
+    {
+      "id": "c2",
+      "text": "The flaw is tracked as CVE-2026-114938 and sits in OpenJDK's Base64 decoder",
+      "status": "CONFIRMED",
+      "in_script": false,
+      "evidence": [
+        "https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability",
+        "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now"
+      ],
+      "note": "Consistent across independent security vendors. Oracle advisory not opened directly."
+    },
+    {
+      "id": "c3",
+      "text": "Oracle released a fix in its 17 November 2026 Critical Patch Update",
+      "status": "CONFIRMED",
+      "in_script": true,
+      "evidence": [
+        "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+        "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now"
+      ],
+      "note": "Fixed versions reported: Java SE 17.0.21.1, 21.0.13.1, 25.0.5.1, 27.0.1.1. Re-check against Oracle's advisory before publishing."
+    },
+    {
+      "id": "c4",
+      "text": "Oracle rates the flaw 8.1 (CVSS 3.1) and describes it as difficult to exploit",
+      "status": "COMPANY CLAIM",
+      "attribution": "Oracle",
+      "in_script": true,
+      "evidence": [
+        "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach"
+      ],
+      "note": "Calif rates it 9.2 (CVSS 4.0). Severity is disputed between the two.",
+      "script_attribution": "Oracle khud kehta hai"
+    },
+    {
+      "id": "c5",
+      "text": "No exploitation in the wild has been confirmed",
+      "status": "THIRD-PARTY CLAIM",
+      "attribution": "as of 18 Nov",
+      "in_script": true,
+      "evidence": [
+        "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938"
+      ],
+      "note": "True as of research time on 18 November 2026. Must be re-checked on the day of publishing.",
+      "script_attribution": "abhi tak"
+    },
+    {
+      "id": "c6",
+      "text": "Java runs at banks, airlines and many company backends",
+      "status": "CONFIRMED",
+      "in_script": true,
+      "evidence": [
+        "https://www.techmeme.com/261117/p55"
+      ],
+      "note": "Widely documented general fact; the '90% of Fortune 500' figure is deliberately not used."
+    },
+    {
+      "id": "c7",
+      "text": "Which model was used: Codex (Calif) or GPT-6 Cyber (New York Times)",
+      "status": "DISPUTED",
+      "in_script": false,
+      "evidence": [
+        "https://x.com/Techmeme/status/2122802226464948303"
+      ],
+      "note": "The script says only 'AI'."
+    },
+    {
+      "id": "c8",
+      "text": "CISA urged immediate patching",
+      "status": "UNVERIFIED",
+      "in_script": false,
+      "evidence": [
+        "https://x.com/markgadala/status/2122840648336252938"
+      ],
+      "note": "Conflicting reports. Not used."
+    },
+    {
+      "id": "c9",
+      "text": "The NSA network outage is linked to Java4Shell",
+      "status": "SPECULATION",
+      "in_script": false,
+      "evidence": [],
+      "note": "No reporting links them. Not used."
+    }
+  ]
+}

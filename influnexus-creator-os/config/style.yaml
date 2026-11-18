@@ -1,0 +1,30 @@
+# Influnexus visual style tokens used by captions and graphics.
+font_dir: assets/fonts
+fonts:
+  caption: Inter ExtraBold
+  caption_file: Inter-ExtraBold.otf
+  heading_file: Inter-ExtraBold.otf
+  body_file: Inter-SemiBold.otf
+colors:
+  text: "#FFFFFF"
+  outline: "#0B0B0F"
+  accent: "#FFD23F"       # emphasis words
+  card_bg: "#0B0B0FE0"
+  card_text: "#FFFFFF"
+  label_bg: "#FFD23F"
+  label_text: "#0B0B0F"
+captions:
+  font_size: 84
+  outline: 6
+  shadow: 2
+  min_words: 2
+  max_words: 5
+  max_lines: 2
+  max_line_width: 780     # px; a centred line this wide stays clear of the right-hand action rail
+  center_y: 1300          # px from top on a 1920 canvas
+  pop_ms: 90
+safe_area:                # Instagram Reels UI keep-out zones on 1080x1920
+  top: 220
+  bottom: 420
+  left: 60
+  right: 140

@@ -1,0 +1,2 @@
+{"date": "test-e2e", "platform": "instagram", "status": "blocked", "reason": "no fact-check file for test-e2e", "at": "2026-11-18T17:46:59+00:00"}
+{"date": "test-e2e", "platform": "linkedin", "status": "blocked", "reason": "linkedin: no API adapter; post manually using the prepared package", "at": "2026-11-18T17:46:59+00:00"}
