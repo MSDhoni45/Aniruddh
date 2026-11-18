@@ -260,3 +260,26 @@ def test_cli_runlog_and_ist_date(tmp_path, monkeypatch, capsys):
     assert cli.main(["recording", "--date", "2026-11-19"]) == 0
     assert "Harrell" in capsys.readouterr().out
     assert cli.main(["today", "--date", "1999-01-01"]) == 3
+
+
+def test_runstatus_verdicts(tmp_path):
+    import datetime as dt
+    import json
+    from creatoros.research import runstatus
+    log = tmp_path / "runs.jsonl"
+    utc = lambda h, m: dt.datetime(2026, 11, 20, h, m, tzinfo=dt.timezone.utc)
+    st = lambda now: runstatus.status(log, "2026-11-20", now)["verdict"]
+    assert st(utc(3, 0)) == "PENDING"          # 08:30 IST, not due
+    assert st(utc(3, 40)) == "MISSED"          # 09:10 IST, nothing logged
+    def add(ev, h, m, status="", trigger="scheduled"):
+        with open(log, "a") as fh:
+            fh.write(json.dumps({"event": ev, "trigger": trigger, "status": status, "ist_date": "2026-11-20",
+                                 "at_utc": utc(h, m).isoformat()}) + "\n")
+    add("start", 3, 12)
+    assert st(utc(3, 30)) == "RUNNING"
+    assert st(utc(4, 5)) == "FAILED"           # no end after 09:30 IST
+    add("end", 3, 50, "READY")
+    r = runstatus.status(log, "2026-11-20", utc(4, 5))
+    assert r["verdict"] == "OK" and not r["problem"] and r["started_ist"] == "08:42"
+    add("end", 4, 10, "READY")
+    assert st(utc(4, 20)) == "LATE"

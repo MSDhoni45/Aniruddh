@@ -12,6 +12,11 @@ cd influnexus-creator-os && git pull --ff-only && pip install -q -e .
 ## 0.5 Log the run and check for an existing package
 - `creatoros runlog start --trigger scheduled` (or `--trigger manual`). At the end: `creatoros runlog end --status READY|HOLD|NONE`.
   `logs/runs.jsonl` is committed; it is the evidence that a run actually happened.
+- `creatoros runlog status --date DATE` reports whether the 08:41 scheduled run started, ended and was READY by 09:30
+  (PENDING / RUNNING / OK / LATE / HOLD / NONE / FAILED / MISSED; exit code 4 = problem). Report any problem verdict to the creator.
+- Network: this cloud environment cannot open nature.com, biorxiv.org, health.ucdavis.edu, x.com or most news sites (DNS refused by
+  the environment's network policy). Reach primary sites through domain-restricted search and record `access: search-index`.
+  Never record `opened` for a page that was not fetched. Widening the environment's Allowed domains would let pages be opened.
 - If `daily/DATE/today.md` already says RECORDING READY, do not research again: re-check time-sensitive claims, re-run
   `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
 

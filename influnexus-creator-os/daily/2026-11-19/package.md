@@ -14,12 +14,12 @@
 
 ## B. Verified research
 
-Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours over 19 months. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.
+Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.
 
 **Key verified facts**
 
 - Nature Medicine, 15 June 2026 (Card, Singer-Clark, Brandman et al.).
-- Over 3,800 hours of home use over 19 months, with no researcher intervention.
+- Over 3,800 hours of home use with no researcher intervention (the paper gives the period as nearly 2 years in one place and 19 months in another).
 - 183,060 sentences, 1,960,163 words, 56.1 words per minute average.
 - Maintained full-time employment (peer-reviewed paper and preprint).
 - Four microelectrode arrays in the left precentral gyrus; voice output trained on his pre-ALS recordings (2024).
@@ -31,6 +31,7 @@ Casey Harrell has ALS, which left his speech very hard to understand (severe dys
 - A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.
 - Accuracy at home was self-rated (92% of sentences at least mostly correct); the script makes no accuracy claim.
 - No primary page could be opened directly; all were read through their indexed text.
+- Study duration: abstract says nearly 2 years; one passage says 19 months. The script avoids stating a duration.
 
 **Context**
 
@@ -75,7 +76,7 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 | b2 | The participant is Casey Harrell, a BrainGate2 trial participant at UC Davis Health | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) (search-index) | [link](https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/) | CONFIRMED | 2026-06 | HIGH | yes |
 | b3 | Four microelectrode arrays in the speech-related left precentral gyrus record his brain activity when he tries to speak | [link](https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08) (search-index) | [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/) | CONFIRMED | 2024-08 | HIGH | yes |
 | b4 | Decoded words appear as text on screen and can be read aloud at the end of a sentence by a voice built from recordings of his pre-ALS voice | [link](https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08) (search-index) | [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/) | CONFIRMED | 2024-08 | HIGH | yes |
-| b5 | He used the system at home for more than 3,800 hours over 19 months, without researcher assistance (care partners put the hardware on and started it) | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://www.natureasia.com/en/info/press-releases/detail/9358) | CONFIRMED | 2026-06-15 | HIGH | yes |
+| b5 | He used the system at home for more than 3,800 hours, without researcher assistance (care partners put the hardware on and started it) | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://www.natureasia.com/en/info/press-releases/detail/9358) | CONFIRMED | 2026-06-15 | HIGH | yes |
 | b6 | He communicated 183,060 sentences totalling 1,960,163 words, at an average of 56.1 words per minute | [link](https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2025-06-26 (preprint); journal 2026-06-15 | HIGH | yes |
 | b7 | He maintained full-time employment while using the system | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1) | CONFIRMED | 2026-06-15 | HIGH | yes |
 | b8 | The study was published in Nature Medicine on 15 June 2026 | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2026-06-15 | HIGH | yes |
@@ -99,7 +100,7 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 - **b1:** Corrected 19 Nov after independent re-check: 'lost his voice' overstated severe dysarthria and was removed. 'Gave him a way to talk again' matches UC Davis's own framing ('allows man with ALS to speak again').
 - **b2:** Harrell has been publicly identified by UC Davis since 2024.
 - **b4:** Corrected 19 Nov: the home system's main output is on-screen text; audio is produced at the end of a sentence and is optional, so the script now says 'can read them aloud'. Not to be confused with the separate 2025 real-time voice paper.
-- **b5:** Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking.
+- **b5:** Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking. Duration differs between passages (abstract: nearly 2 years, BCI used on 444 of 653 days; another passage: a 19-month period), so the script states no duration.
 - **b6:** The script says 'nearly two million words'.
 - **b7:** Confirmed in the peer-reviewed text on 19 Nov (earlier only the preprint had been seen). The paper does not claim the BCI caused the employment.
 - **b9:** Not in the script; useful if asked about accuracy.
@@ -131,7 +132,7 @@ Casey Harrell has ALS, which took his clear speech. A brain implant reads the si
 
 A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.
 
-Casey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours over 19 months, without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.
+Casey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.
 
 It's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.
 

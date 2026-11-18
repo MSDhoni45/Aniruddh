@@ -39,7 +39,7 @@ def main(argv=None) -> int:
     p.add_argument("-n", type=int, default=5)
     p = sub.add_parser("recording", help="script and delivery notes only (Prepare for recording)"); p.add_argument("--date")
     p = sub.add_parser("switch", help="archive today's package before replacing it (Different topic)"); p.add_argument("--date")
-    p = sub.add_parser("runlog", help="record a research run event"); p.add_argument("event", choices=["start", "end"])
+    p = sub.add_parser("runlog", help="record a research run event"); p.add_argument("event", choices=["start", "end", "status"]); p.add_argument("--date")
     p.add_argument("--trigger", default="manual"); p.add_argument("--status", default=""); p.add_argument("--note", default="")
     p = sub.add_parser("content-search", help="search the content database"); p.add_argument("query", nargs="?", default="")
     p.add_argument("--status"); p.add_argument("--category")
@@ -139,6 +139,11 @@ def main(argv=None) -> int:
         except KeyError:
             pass
         _print({"archived": str(dst), "next": "pick the next eligible candidate, verify it, write a new package.json"})
+    elif a.cmd == "runlog" and a.event == "status":
+        from .research import runstatus
+        res = runstatus.status(config.path("logs", "runs.jsonl"), a.date or ist_today())
+        _print(res)
+        return 4 if res["problem"] else 0
     elif a.cmd == "runlog":
         import datetime as dt
         import json as js

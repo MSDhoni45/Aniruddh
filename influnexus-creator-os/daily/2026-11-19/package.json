@@ -14,7 +14,7 @@
   "why_selected": "Highest-scoring verified candidate. It is the clearest 'wait, that's possible?' story of the day: a man whose ALS took his clear speech speaks through a brain implant in everyday life, not a lab. Every script claim is in the peer-reviewed paper, the authors' preprint or UC Davis's own releases. It is not breaking news (June 2026), but the most interesting story beat the newest: today's breaking candidates were thinner or only partly verified.",
   "why_short": "A real, peer-reviewed 'that's possible?' story with a human at the centre: brain implant to everyday speech, outside the lab.",
   "evidence_confidence": "HIGH",
-  "research_summary": "Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours over 19 months. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.",
+  "research_summary": "Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.",
   "primary_sources": [
     {
       "label": "Nature Medicine: Long-term independent use of an intracortical BCI for speech and cursor control (15 Jun 2026)",
@@ -49,7 +49,7 @@
   ],
   "key_facts": [
     "Nature Medicine, 15 June 2026 (Card, Singer-Clark, Brandman et al.).",
-    "Over 3,800 hours of home use over 19 months, with no researcher intervention.",
+    "Over 3,800 hours of home use with no researcher intervention (the paper gives the period as nearly 2 years in one place and 19 months in another).",
     "183,060 sentences, 1,960,163 words, 56.1 words per minute average.",
     "Maintained full-time employment (peer-reviewed paper and preprint).",
     "Four microelectrode arrays in the left precentral gyrus; voice output trained on his pre-ALS recordings (2024)."
@@ -59,7 +59,8 @@
     "Invasive brain surgery; investigational device, not commercially available.",
     "A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.",
     "Accuracy at home was self-rated (92% of sentences at least mostly correct); the script makes no accuracy claim.",
-    "No primary page could be opened directly; all were read through their indexed text."
+    "No primary page could be opened directly; all were read through their indexed text.",
+    "Study duration: abstract says nearly 2 years; one passage says 19 months. The script avoids stating a duration."
   ],
   "context": "Speech BCIs have improved fast since 2023, but most were tested in labs with researchers present. This paper's point is independence: a system used daily at home for nearly two years. Other groups (Stanford, UCSF, Michigan/Paradromics) work on related devices.",
   "script": "ALS took his clear speech. A brain implant gave him a way to talk again.\n\nSensors in Casey Harrell's brain catch signals when he tries to speak. Software puts the words on screen, and can read them aloud in a voice built from his old recordings.\n\nThis isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, without researchers' help.\n\nNearly two million words. He kept working full-time.\n\nMost tech news is about replacing people. This gave a man his words back.",
@@ -253,7 +254,7 @@
     ]
   },
   "linkedin": {
-    "caption": "A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.\n\nCasey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours over 19 months, without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.\n\nIt's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.",
+    "caption": "A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.\n\nCasey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.\n\nIt's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.",
     "business_relevance": "For anyone building health or assistive technology, independent daily use, not peak lab performance, is the bar that turns research into products.",
     "discussion_prompt": "What other technology have you seen that works in a demo but fails at home?"
   },
@@ -289,7 +290,7 @@
       "topic_type": "EVERGREEN",
       "announced_at": "2026-06-15 (Nature Medicine)",
       "original_source": "https://www.nature.com/articles/s41591-026-04414-6",
-      "main_claim": "A UC Davis BrainGate2 participant with ALS used an implanted speech BCI at home, without researcher assistance, for over 3,800 hours over 19 months, communicating about 2 million words and keeping a full-time job.",
+      "main_claim": "A UC Davis BrainGate2 participant with ALS used an implanted speech BCI at home, without researcher assistance, for over 3,800 hours, communicating about 2 million words and keeping a full-time job.",
       "verification_status": "VERIFIED",
       "why_it_matters": "Restoring speech is one of the most human things tech can do; peer-reviewed, real-life use rather than a lab demo.",
       "potential_hook": "ALS took his clear speech. A brain implant gave him a way to talk again.",
@@ -960,7 +961,7 @@
       },
       {
         "id": "b5",
-        "text": "He used the system at home for more than 3,800 hours over 19 months, without researcher assistance (care partners put the hardware on and started it)",
+        "text": "He used the system at home for more than 3,800 hours, without researcher assistance (care partners put the hardware on and started it)",
         "status": "CONFIRMED",
         "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
         "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
@@ -970,7 +971,7 @@
         "confidence": "HIGH",
         "access": "search-index",
         "in_script": true,
-        "note": "Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking."
+        "note": "Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking. Duration differs between passages (abstract: nearly 2 years, BCI used on 444 of 653 days; another passage: a 19-month period), so the script states no duration."
       },
       {
         "id": "b6",
