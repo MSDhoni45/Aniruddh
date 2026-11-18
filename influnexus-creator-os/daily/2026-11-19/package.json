@@ -59,7 +59,8 @@
     "Invasive brain surgery; investigational device, not commercially available.",
     "A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.",
     "The full-time employment detail is from the authors' preprint abstract; the journal wording was not seen.",
-    "No primary page could be opened directly; all were read through their indexed text."
+    "No primary page could be opened directly; all were read through their indexed text.",
+    "Study duration: abstract says nearly 2 years; one passage says 19 months. The script avoids stating a duration."
   ],
   "context": "Speech BCIs have improved fast since 2023, but most were tested in labs with researchers present. This paper's point is independence: a system used daily at home for nearly two years. Other groups (Stanford, UCSF, Michigan/Paradromics) work on related devices.",
   "script": "This man lost his voice to ALS. A brain implant gave it back.\n\nThis is Casey Harrell. Sensors in his brain catch signals when he tries to speak. Software turns them into words, read out in a voice trained on his old recordings.\n\nThis isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, with no researchers there.\n\nNearly two million words. He kept working full-time.\n\nMost tech headlines are about replacing people. This one gave a man his voice back.",
@@ -958,7 +959,8 @@
         "supporting_evidence": "Over nearly 2 years, the participant used the BCI for more than 3,800 h at home with no researchers present",
         "confidence": "HIGH",
         "access": "search-index",
-        "in_script": true
+        "in_script": true,
+        "note": "Re-checked 19 Nov 00:40 IST via search index: the paper's abstract says 'nearly 2 years' (BCI used on 444 of 653 days), while one passage refers to a 19-month period. The script does not state the duration, only 'over 3,800 hours'."
       },
       {
         "id": "b6",

@@ -28,6 +28,7 @@
 - **b1:** The hook's 'gave it back' is a metaphor: the system restores speech-based communication with a synthetic voice.
 - **b2:** Harrell has been publicly identified by UC Davis since 2024.
 - **b4:** Described for the system in 2024. The 2026 paper covers the brain-to-text decoder used at home; the script's 'read out in a voice trained on his old recordings' describes the system's voice output, not a new 2026 finding.
+- **b5:** Re-checked 19 Nov 00:40 IST via search index: the paper's abstract says 'nearly 2 years' (BCI used on 444 of 653 days), while one passage refers to a 19-month period. The script does not state the duration, only 'over 3,800 hours'.
 - **b6:** The script says 'nearly two million words'.
 - **b7:** From the authors' preprint abstract; the journal version's wording on employment was not seen in indexed text.
 - **b9:** Not in the script; useful if asked about accuracy.

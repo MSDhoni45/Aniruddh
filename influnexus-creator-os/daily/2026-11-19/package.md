@@ -31,6 +31,7 @@ Casey Harrell has ALS, which took away his ability to speak clearly. As a partic
 - A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.
 - The full-time employment detail is from the authors' preprint abstract; the journal wording was not seen.
 - No primary page could be opened directly; all were read through their indexed text.
+- Study duration: abstract says nearly 2 years; one passage says 19 months. The script avoids stating a duration.
 
 **Context**
 
@@ -99,6 +100,7 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 - **b1:** The hook's 'gave it back' is a metaphor: the system restores speech-based communication with a synthetic voice.
 - **b2:** Harrell has been publicly identified by UC Davis since 2024.
 - **b4:** Described for the system in 2024. The 2026 paper covers the brain-to-text decoder used at home; the script's 'read out in a voice trained on his old recordings' describes the system's voice output, not a new 2026 finding.
+- **b5:** Re-checked 19 Nov 00:40 IST via search index: the paper's abstract says 'nearly 2 years' (BCI used on 444 of 653 days), while one passage refers to a 19-month period. The script does not state the duration, only 'over 3,800 hours'.
 - **b6:** The script says 'nearly two million words'.
 - **b7:** From the authors' preprint abstract; the journal version's wording on employment was not seen in indexed text.
 - **b9:** Not in the script; useful if asked about accuracy.
