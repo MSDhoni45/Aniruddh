@@ -7,14 +7,14 @@
     "braingate-harrell-home-use",
     "als-speech-bci"
   ],
-  "topic": "A man who lost his voice to ALS has used a brain implant at home for 3,800+ hours",
+  "topic": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
   "category": "SCIENCE",
   "topic_type": "EVERGREEN",
   "announced_at": "15 June 2026 (Nature Medicine paper); UC Davis release June 2026",
-  "why_selected": "Highest-scoring verified candidate. It is the clearest 'wait, that's possible?' story of the day: a man who lost his voice speaks through a brain implant in everyday life, not a lab. Every script claim is in the peer-reviewed paper, the authors' preprint or UC Davis's own releases. It is not breaking news (June 2026), but the most interesting story beat the newest: today's breaking candidates were thinner or only partly verified.",
+  "why_selected": "Highest-scoring verified candidate. It is the clearest 'wait, that's possible?' story of the day: a man whose ALS took his clear speech speaks through a brain implant in everyday life, not a lab. Every script claim is in the peer-reviewed paper, the authors' preprint or UC Davis's own releases. It is not breaking news (June 2026), but the most interesting story beat the newest: today's breaking candidates were thinner or only partly verified.",
   "why_short": "A real, peer-reviewed 'that's possible?' story with a human at the centre: brain implant to everyday speech, outside the lab.",
   "evidence_confidence": "HIGH",
-  "research_summary": "Casey Harrell has ALS, which took away his ability to speak clearly. As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, with no researchers present, for more than 3,800 hours over nearly two years. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.",
+  "research_summary": "Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours over 19 months. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.",
   "primary_sources": [
     {
       "label": "Nature Medicine: Long-term independent use of an intracortical BCI for speech and cursor control (15 Jun 2026)",
@@ -49,26 +49,36 @@
   ],
   "key_facts": [
     "Nature Medicine, 15 June 2026 (Card, Singer-Clark, Brandman et al.).",
-    "Over 3,800 hours of home use over nearly two years, no researchers present.",
+    "Over 3,800 hours of home use over 19 months, with no researcher intervention.",
     "183,060 sentences, 1,960,163 words, 56.1 words per minute average.",
-    "Sustained full-time employment (authors' preprint).",
+    "Maintained full-time employment (peer-reviewed paper and preprint).",
     "Four microelectrode arrays in the left precentral gyrus; voice output trained on his pre-ALS recordings (2024)."
   ],
   "uncertainties": [
     "One participant; results may not generalise.",
     "Invasive brain surgery; investigational device, not commercially available.",
     "A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.",
-    "The full-time employment detail is from the authors' preprint abstract; the journal wording was not seen.",
+    "Accuracy at home was self-rated (92% of sentences at least mostly correct); the script makes no accuracy claim.",
     "No primary page could be opened directly; all were read through their indexed text."
   ],
   "context": "Speech BCIs have improved fast since 2023, but most were tested in labs with researchers present. This paper's point is independence: a system used daily at home for nearly two years. Other groups (Stanford, UCSF, Michigan/Paradromics) work on related devices.",
-  "script": "This man lost his voice to ALS. A brain implant gave it back.\n\nThis is Casey Harrell. Sensors in his brain catch signals when he tries to speak. Software turns them into words, read out in a voice trained on his old recordings.\n\nThis isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, with no researchers there.\n\nNearly two million words. He kept working full-time.\n\nMost tech headlines are about replacing people. This one gave a man his voice back.",
-  "hook": "This man lost his voice to ALS. A brain implant gave it back.",
+  "script": "ALS took his clear speech. A brain implant gave him a way to talk again.\n\nSensors in Casey Harrell's brain catch signals when he tries to speak. Software puts the words on screen, and can read them aloud in a voice built from his old recordings.\n\nThis isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, without researchers' help.\n\nNearly two million words. He kept working full-time.\n\nMost tech news is about replacing people. This gave a man his words back.",
+  "hook": "ALS took his clear speech. A brain implant gave him a way to talk again.",
   "hooks": [
+    {
+      "text": "ALS took his clear speech. A brain implant gave him a way to talk again.",
+      "mechanism": "unexpected fact",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 9,
+      "natural": 9,
+      "relevance": 9,
+      "comprehension": 9
+    },
     {
       "text": "This man lost his voice to ALS. A brain implant gave it back.",
       "mechanism": "unexpected fact",
-      "accuracy": 8,
+      "accuracy": 6,
       "clarity": 9,
       "curiosity": 9,
       "natural": 9,
@@ -201,19 +211,19 @@
     "tone": "Warm and steady. Let the hook land quietly rather than loudly; slightly lift on 'This isn't a lab demo'; sincere on the close.",
     "opening_expression": "Calm, direct eye contact; no smile on the first line, a small one on the last.",
     "emphasis": [
-      "lost his voice",
-      "gave it back",
+      "clear speech",
+      "a way to talk again",
       "at home",
       "3,800 hours",
       "two million words",
       "full-time",
-      "his voice back"
+      "his words back"
     ],
     "pauses": [
-      "one beat after 'lost his voice to ALS'",
-      "short pause after 'This is Casey Harrell'",
+      "one beat after 'took his clear speech'",
+      "short pause after 'when he tries to speak'",
       "beat before 'This isn't a lab demo'",
-      "one full beat before 'Most tech headlines'"
+      "one full beat before 'Most tech news'"
     ],
     "pronunciation": [
       "Harrell: HAIR-ul",
@@ -227,12 +237,13 @@
     "Screenshot of the Nature Medicine paper title page, with the date 15 June 2026 visible",
     "Simple original diagram: brain (speech area) → four tiny sensors → words on screen → speaker icon",
     "Counter graphic: 3,800+ hours at home; nearly 2,000,000 words",
-    "Text card: 'No researchers in the room'",
+    "Text card: 'No researcher help needed'",
+    "Show on-screen text output (that is the main output); voice playback only as 'can read aloud'",
     "Avoid stock 'robot brain' or sci-fi mind-reading imagery; it misrepresents the story"
   ],
   "instagram": {
-    "cover_headline": "He lost his voice. A brain implant gave it back.",
-    "caption": "Casey Harrell has ALS. A brain implant reads the signals when he tries to speak and turns them into words, in a voice trained on his old recordings. A Nature Medicine study says he used it at home for 3,800+ hours with no researchers there, and kept working full-time. One person, one trial, but a huge step. Send this to someone who needs some good tech news today.",
+    "cover_headline": "ALS took his clear speech. A brain implant gave him a way to talk.",
+    "caption": "Casey Harrell has ALS, which took his clear speech. A brain implant reads the signals when he tries to speak and puts the words on screen; it can read them aloud in a voice built from his old recordings. A Nature Medicine study says he used it at home for 3,800+ hours without researchers' help, and kept working full-time. One person, one trial, but a huge step. Send this to someone who needs some good tech news today.",
     "hashtags": [
       "#BrainComputerInterface",
       "#ALS",
@@ -242,16 +253,16 @@
     ]
   },
   "linkedin": {
-    "caption": "A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.\n\nCasey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours over nearly two years, with no researchers present, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.\n\nIt's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.",
+    "caption": "A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.\n\nCasey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours over 19 months, without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.\n\nIt's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.",
     "business_relevance": "For anyone building health or assistive technology, independent daily use, not peak lab performance, is the bar that turns research into products.",
     "discussion_prompt": "What other technology have you seen that works in a demo but fails at home?"
   },
   "x": {
-    "post": "A man who lost his voice to ALS has used a brain implant at home for 3,800+ hours, with no researchers present, per a Nature Medicine study. Nearly 2 million words. He kept working full-time. One participant, but a real-world milestone."
+    "post": "ALS took Casey Harrell's clear speech. Per a Nature Medicine study, he used a brain implant at home for 3,800+ hours without researchers' help: nearly 2 million words, and he kept working full-time. One participant, but a real-world milestone."
   },
   "youtube": {
-    "title": "Brain Implant Gives ALS Patient His Voice Back | 3,800 Hours at Home",
-    "description": "Casey Harrell lost his ability to speak clearly to ALS. A brain-computer interface decodes his attempted speech into words, and he used it at home for 3,800+ hours with no researchers present (Nature Medicine, 15 June 2026; UC Davis Health). One participant in a clinical trial.\n\n#Shorts #BCI #ALS",
+    "title": "Brain Implant Helps ALS Patient Talk Again | 3,800 Hours at Home",
+    "description": "ALS left Casey Harrell's speech very hard to understand. A brain-computer interface decodes his attempted speech into on-screen words (with optional synthetic voice), and he used it at home for 3,800+ hours without researcher assistance (Nature Medicine, 15 June 2026; UC Davis Health). One participant in a clinical trial.\n\n#Shorts #BCI #ALS",
     "keywords": [
       "brain computer interface",
       "ALS",
@@ -273,17 +284,17 @@
   "x_signals": [],
   "candidates": [
     {
-      "headline": "A man who lost his voice to ALS has used a brain implant at home for 3,800+ hours",
+      "headline": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
       "category": "SCIENCE",
       "topic_type": "EVERGREEN",
       "announced_at": "2026-06-15 (Nature Medicine)",
       "original_source": "https://www.nature.com/articles/s41591-026-04414-6",
-      "main_claim": "A UC Davis BrainGate2 participant with ALS used an implanted speech BCI at home, with no researchers present, for over 3,800 hours over nearly two years, communicating about 2 million words and keeping a full-time job.",
+      "main_claim": "A UC Davis BrainGate2 participant with ALS used an implanted speech BCI at home, without researcher assistance, for over 3,800 hours over 19 months, communicating about 2 million words and keeping a full-time job.",
       "verification_status": "VERIFIED",
       "why_it_matters": "Restoring speech is one of the most human things tech can do; peer-reviewed, real-life use rather than a lab demo.",
-      "potential_hook": "This man lost his voice to ALS. A brain implant gave it back.",
+      "potential_hook": "ALS took his clear speech. A brain implant gave him a way to talk again.",
       "target_audience": "Global general audience, tech and health curious viewers",
-      "uncertainty": "Single participant; invasive surgery; not a commercial product; 'gave his voice back' is a metaphor for a synthetic voice.",
+      "uncertainty": "Single participant; invasive surgery; investigational device, not a product; output is on-screen text with optional synthetic voice.",
       "evidence_confidence": "HIGH",
       "already_covered": false,
       "engagement": {
@@ -890,11 +901,11 @@
   ],
   "factcheck": {
     "date": "2026-11-19",
-    "story": "A man who lost his voice to ALS has used a brain implant at home for 3,800+ hours",
+    "story": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
     "claims": [
       {
         "id": "b1",
-        "text": "The participant has ALS and lost the ability to speak clearly (severe dysarthria)",
+        "text": "The participant has ALS with severe dysarthria: his natural speech is very hard to understand (script: 'ALS took his clear speech')",
         "status": "CONFIRMED",
         "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
         "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
@@ -904,7 +915,7 @@
         "confidence": "HIGH",
         "access": "search-index",
         "in_script": true,
-        "note": "The hook's 'gave it back' is a metaphor: the system restores speech-based communication with a synthetic voice."
+        "note": "Corrected 19 Nov after independent re-check: 'lost his voice' overstated severe dysarthria and was removed. 'Gave him a way to talk again' matches UC Davis's own framing ('allows man with ALS to speak again')."
       },
       {
         "id": "b2",
@@ -935,30 +946,31 @@
       },
       {
         "id": "b4",
-        "text": "Decoded words are turned into text and read aloud by software trained on recordings of his pre-ALS voice",
+        "text": "Decoded words appear as text on screen and can be read aloud at the end of a sentence by a voice built from recordings of his pre-ALS voice",
         "status": "CONFIRMED",
         "primary_source": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08",
         "source_title": "New brain-computer interface allows man with ALS to 'speak' again (UC Davis Health)",
         "supporting_source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/",
         "source_date": "2024-08",
-        "supporting_evidence": "The voice was composed using software trained with existing audio samples of his pre-ALS voice",
+        "supporting_evidence": "'reads decoded words aloud with a digital voice optimized to sound similar to his pre-ALS voice' (Nature Medicine, as indexed); 2024: 'The voice was composed using software trained with existing audio samples of his pre-ALS voice'",
         "confidence": "HIGH",
         "access": "search-index",
         "in_script": true,
-        "note": "Described for the system in 2024. The 2026 paper covers the brain-to-text decoder used at home; the script's 'read out in a voice trained on his old recordings' describes the system's voice output, not a new 2026 finding."
+        "note": "Corrected 19 Nov: the home system's main output is on-screen text; audio is produced at the end of a sentence and is optional, so the script now says 'can read them aloud'. Not to be confused with the separate 2025 real-time voice paper."
       },
       {
         "id": "b5",
-        "text": "He used the system at home for more than 3,800 hours over nearly two years, with no researchers present",
+        "text": "He used the system at home for more than 3,800 hours over 19 months, without researcher assistance (care partners put the hardware on and started it)",
         "status": "CONFIRMED",
         "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
         "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
         "supporting_source": "https://www.natureasia.com/en/info/press-releases/detail/9358",
         "source_date": "2026-06-15",
-        "supporting_evidence": "Over nearly 2 years, the participant used the BCI for more than 3,800 h at home with no researchers present",
+        "supporting_evidence": "'Over a 19-month period, the participant used the system in his home for more than 3,800 h' and 'used at home with no researcher intervention'",
         "confidence": "HIGH",
         "access": "search-index",
-        "in_script": true
+        "in_script": true,
+        "note": "Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking."
       },
       {
         "id": "b6",
@@ -976,17 +988,17 @@
       },
       {
         "id": "b7",
-        "text": "The system supported sustained full-time employment",
+        "text": "He maintained full-time employment while using the system",
         "status": "CONFIRMED",
-        "primary_source": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1",
-        "source_title": "Long-term independent use of an intracortical brain-computer interface for speech and cursor control (bioRxiv preprint, same authors)",
-        "supporting_source": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/",
-        "source_date": "2025-06-26 (preprint)",
-        "supporting_evidence": "communication with family and friends, computer control, and sustained full-time employment – despite being paralyzed",
+        "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
+        "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
+        "supporting_source": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1",
+        "source_date": "2026-06-15",
+        "supporting_evidence": "browsing the internet, managing personal and professional communications and maintaining full-time employment",
         "confidence": "HIGH",
         "access": "search-index",
         "in_script": true,
-        "note": "From the authors' preprint abstract; the journal version's wording on employment was not seen in indexed text."
+        "note": "Confirmed in the peer-reviewed text on 19 Nov (earlier only the preprint had been seen). The paper does not claim the BCI caused the employment."
       },
       {
         "id": "b8",

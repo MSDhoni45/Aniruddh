@@ -1,20 +1,20 @@
 # Recording: 2026-11-19 (RECORDING READY)
 
-This man lost his voice to ALS. A brain implant gave it back.
+ALS took his clear speech. A brain implant gave him a way to talk again.
 
-This is Casey Harrell. Sensors in his brain catch signals when he tries to speak. Software turns them into words, read out in a voice trained on his old recordings.
+Sensors in Casey Harrell's brain catch signals when he tries to speak. Software puts the words on screen, and can read them aloud in a voice built from his old recordings.
 
-This isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, with no researchers there.
+This isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, without researchers' help.
 
 Nearly two million words. He kept working full-time.
 
-Most tech headlines are about replacing people. This one gave a man his voice back.
+Most tech news is about replacing people. This gave a man his words back.
 
-About 37.6 seconds.
+About 37.8 seconds.
 
 - Tone: Warm and steady. Let the hook land quietly rather than loudly; slightly lift on 'This isn't a lab demo'; sincere on the close.
 - Opening: Calm, direct eye contact; no smile on the first line, a small one on the last.
-- Pauses: one beat after 'lost his voice to ALS'; short pause after 'This is Casey Harrell'; beat before 'This isn't a lab demo'; one full beat before 'Most tech headlines'
-- Emphasise: lost his voice, gave it back, at home, 3,800 hours, two million words, full-time, his voice back
+- Pauses: one beat after 'took his clear speech'; short pause after 'when he tries to speak'; beat before 'This isn't a lab demo'; one full beat before 'Most tech news'
+- Emphasise: clear speech, a way to talk again, at home, 3,800 hours, two million words, full-time, his words back
 - Pronunciation: Harrell: HAIR-ul; ALS: A-L-S, three letters; Nature Medicine: journal name, say it clearly; 3,800: three thousand eight hundred
 - Keep your natural accent.
