@@ -291,3 +291,17 @@ def test_access_summary_labels_search_index():
     s = access_summary(cl)
     assert "1 verified from search-index excerpts" in s and "NOT opened" in s and "1 page opened" in s and "not found" not in s
     assert "opened and read directly" in access_summary([dict(in_script=True, access="opened")])
+
+
+def test_early_test_fire_does_not_count_as_the_0841_run(tmp_path):
+    import datetime as dt
+    from creatoros.research import runstatus
+    log = tmp_path / "runs.jsonl"
+    log.write_text('{"event": "start", "trigger": "scheduled", "at_utc": "2026-11-18T19:30:00+00:00", "ist_date": "2026-11-19"}\n'
+                   '{"event": "end", "trigger": "scheduled", "status": "READY", "at_utc": "2026-11-18T19:35:00+00:00", "ist_date": "2026-11-19"}\n')
+    after = dt.datetime(2026, 11, 19, 4, 30, tzinfo=dt.timezone.utc)   # 10:00 IST
+    assert runstatus.status(log, "2026-11-19", after)["verdict"] == "MISSED"
+    with open(log, "a") as fh:
+        fh.write('{"event": "start", "trigger": "scheduled", "at_utc": "2026-11-19T03:12:00+00:00", "ist_date": "2026-11-19"}\n'
+                 '{"event": "end", "trigger": "scheduled", "status": "READY", "at_utc": "2026-11-19T03:20:00+00:00", "ist_date": "2026-11-19"}\n')
+    assert runstatus.status(log, "2026-11-19", after)["verdict"] == "OK"

@@ -36,6 +36,8 @@ def status(log: Path, date: str, now: dt.datetime | None = None) -> dict:
     recs = [r for r in _load(log) if r.get("trigger") == "scheduled" and r.get("ist_date") == date]
     for r in recs:
         r["_at"] = dt.datetime.fromisoformat(r["at_utc"]).astimezone(IST)
+    # Only runs from 15 minutes before the scheduled time count; an earlier test fire must not stand in for the 08:41 run.
+    recs = [r for r in recs if r["_at"] >= sched - dt.timedelta(minutes=GRACE_MIN)]
     starts = [r for r in recs if r.get("event") == "start"]
     ends = [r for r in recs if r.get("event") == "end"]
     manual_ready = any(r.get("trigger") != "scheduled" and r.get("ist_date") == date and r.get("event") == "end"
