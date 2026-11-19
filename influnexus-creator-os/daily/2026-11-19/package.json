@@ -27,7 +27,7 @@
     "hours": 24
   },
   "why_selected": "Creator's request; it is also the broadest-appeal verified story in today's window: launch day, primary sources plus independent reporting.",
-  "evidence_confidence": "HIGH",
+  "evidence_confidence": "MEDIUM",
   "research_summary": "Rockstar's Newswire set Grand Theft Auto VI's launch for 19 November 2026 on PlayStation 5 and Xbox Series X|S, after delays from fall 2025 and then 26 May 2026. Rockstar Support lists the Standard Edition at $79.99 and the Ultimate Edition at $99.99, and says digital pre-load began on 10 November and needs up to 212 GB depending on the device; Forbes and DotEsports report the same. Rockstar's own pages place the story in Vice City in the fictional state of Leonida, following Jason and Lucia. No PC date has been announced. Launch-day sales, reviews and server performance were not known at research time and are left out.",
   "primary_sources": [
     {
@@ -515,10 +515,11 @@
         "supporting_source": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html",
         "source_date": "2025-11 (announcement); launch 2026-11-19",
         "supporting_evidence": "Grand Theft Auto VI will launch on Nov. 19, 2026, for PlayStation 5 and Xbox Series X|S",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "access": "search-index",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00"
+        "retrieved_at": "2026-11-19T12:20:00+00:00",
+        "note": "19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED."
       },
       {
         "id": "g2",
@@ -529,11 +530,11 @@
         "supporting_source": "https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php",
         "source_date": "2025-11",
         "supporting_evidence": "now set to launch on November 19, 2026. This is the second delay",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "access": "search-index",
         "in_script": true,
         "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "GSMArena: 'GTA VI delayed yet again'."
+        "note": "GSMArena: 'GTA VI delayed yet again'. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED."
       },
       {
         "id": "g3",
@@ -544,11 +545,11 @@
         "supporting_source": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/",
         "source_date": "2026-11",
         "supporting_evidence": "The pre-load file requires up to 212 GB depending on the device",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "access": "search-index",
         "in_script": true,
         "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "Script says 'up to 212 gigabytes'."
+        "note": "Script says 'up to 212 gigabytes'. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED."
       },
       {
         "id": "g4",
@@ -559,11 +560,11 @@
         "supporting_source": "https://dotesports.com/gta/news/gta-6",
         "source_date": "2026-11",
         "supporting_evidence": "The base game is priced at $79.99. The Ultimate Edition is priced at $99.99",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "access": "search-index",
         "in_script": true,
         "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "US prices; other regions differ. The script says 'US mein'."
+        "note": "US prices; other regions differ. The script says 'US mein'. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED."
       },
       {
         "id": "g5",
@@ -574,10 +575,11 @@
         "supporting_source": "https://dotesports.com/gta/news/gta-6",
         "source_date": "2025-2026",
         "supporting_evidence": "a criminal conspiracy stretching across the state of Leonida ... Jason ... Lucia",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "access": "search-index",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00"
+        "retrieved_at": "2026-11-19T12:20:00+00:00",
+        "note": "19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED."
       },
       {
         "id": "g6",
@@ -588,11 +590,11 @@
         "supporting_source": "https://dotesports.com/gta/news/gta-6",
         "source_date": "2026-11-19",
         "supporting_evidence": "Platforms listed: PlayStation 5 and Xbox Series X|S",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "access": "search-index",
         "in_script": true,
         "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording."
+        "note": "Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED."
       }
     ]
   },
@@ -655,7 +657,7 @@
   "why_beats_alternatives": "The creator's chosen topic, and the broadest-appeal verified story in today's window: launch day, Rockstar's own pages plus independent reporting. Voyager 1 is the strongest science alternative and stays the first backup.",
   "release_type": "launch",
   "verified_development": "Rockstar's own pages: Grand Theft Auto VI launches 19 Nov 2026 on PS5 and Xbox Series X|S; independent outlets report it out today.",
-  "confidence": "HIGH",
+  "confidence": "MEDIUM",
   "thumbnail_text": "GTA 6 is here: 212 GB",
   "pinned_comment": "Day one pe loge ya PC ka wait karoge? Batao comments mein.",
   "edit_beats": {
@@ -671,5 +673,8 @@
     "retention": 9,
     "shareability": 9,
     "factual_confidence": 10
-  }
+  },
+  "unresolved": [
+    "Launch status, platforms, download size, prices and PC status: official pages blocked here; search excerpts only. Not approved for publishing (creator, 19 Nov)."
+  ]
 }

@@ -1,6 +1,15 @@
 # Today's reel: 2026-11-19
 
-**STATUS: RECORDING READY**
+**STATUS: HOLD — NOT RECORDING READY**
+
+Do not record. Unresolved:
+- g1 is central to the script but only MEDIUM confidence: GTA VI launches on 19 Nov 2026 on PlayStation 5 and Xbox Series X|S
+- g2 is central to the script but only MEDIUM confidence: The game was delayed twice (from fall 2025 to 26 May 2026, then to 19 Nov 2026)
+- g3 is central to the script but only MEDIUM confidence: Digital pre-load began on 10 Nov 2026 and needs up to 212 GB depending on the device
+- g4 is central to the script but only MEDIUM confidence: Standard Edition $79.99; Ultimate Edition $99.99 (US)
+- g5 is central to the script but only MEDIUM confidence: Set in Vice City in the fictional state of Leonida; the protagonists are Jason and Lucia
+- g6 is central to the script but only MEDIUM confidence: No PC release date has been announced
+- unresolved: Launch status, platforms, download size, prices and PC status: official pages blocked here; search excerpts only. Not approved for publishing (creator, 19 Nov).
 
 ## A. TODAY'S SELECTED TOPIC
 
@@ -8,7 +17,7 @@
 **Why selected:** The creator's chosen topic, and the broadest-appeal verified story in today's window: launch day, Rockstar's own pages plus independent reporting. Voyager 1 is the strongest science alternative and stays the first backup.
 **Verified development:** Rockstar's own pages: Grand Theft Auto VI launches 19 Nov 2026 on PS5 and Xbox Series X|S; independent outlets report it out today.
 **Publication date:** Launch 19 Nov 2026; launch date announced Nov 2025 (Rockstar Newswire)
-**Confidence:** HIGH | **Release type:** launch
+**Confidence:** MEDIUM | **Release type:** launch
 
 ## B. FINAL RECORDING SCRIPT
 
@@ -60,12 +69,12 @@ About 42.8 seconds (104 words, assumed default; not yet calibrated on the creato
 ## F. FACT-CHECK
 
 *Source access: 6 verified from search-index excerpts of the primary site; page NOT opened directly.*
-- GTA VI launches on 19 Nov 2026 on PlayStation 5 and Xbox Series X|S — [Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) (CONFIRMED, HIGH, 2025-11 (announcement); launch 2026-11-19; supporting: https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html)
-- The game was delayed twice (from fall 2025 to 26 May 2026, then to 19 Nov 2026) — [Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) (CONFIRMED, HIGH, 2025-11; supporting: https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php). Note: GSMArena: 'GTA VI delayed yet again'.
-- Digital pre-load began on 10 Nov 2026 and needs up to 212 GB depending on the device — [Grand Theft Auto VI Pre-Load Begins on November 10 (Rockstar Newswire)](https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10) (CONFIRMED, HIGH, 2026-11; supporting: https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/). Note: Script says 'up to 212 gigabytes'.
-- Standard Edition $79.99; Ultimate Edition $99.99 (US) — [Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support)](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions) (CONFIRMED, HIGH, 2026-11; supporting: https://dotesports.com/gta/news/gta-6). Note: US prices; other regions differ. The script says 'US mein'.
-- Set in Vice City in the fictional state of Leonida; the protagonists are Jason and Lucia — [Grand Theft Auto VI (Rockstar)](https://www.rockstargames.com/VI) (CONFIRMED, HIGH, 2025-2026; supporting: https://dotesports.com/gta/news/gta-6)
-- No PC release date has been announced — [Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support)](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions) (CONFIRMED, HIGH, 2026-11-19; supporting: https://dotesports.com/gta/news/gta-6). Note: Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording.
+- GTA VI launches on 19 Nov 2026 on PlayStation 5 and Xbox Series X|S — [Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) (CONFIRMED, MEDIUM, 2025-11 (announcement); launch 2026-11-19; supporting: https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html). Note: 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED.
+- The game was delayed twice (from fall 2025 to 26 May 2026, then to 19 Nov 2026) — [Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) (CONFIRMED, MEDIUM, 2025-11; supporting: https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php). Note: GSMArena: 'GTA VI delayed yet again'. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED.
+- Digital pre-load began on 10 Nov 2026 and needs up to 212 GB depending on the device — [Grand Theft Auto VI Pre-Load Begins on November 10 (Rockstar Newswire)](https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10) (CONFIRMED, MEDIUM, 2026-11; supporting: https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/). Note: Script says 'up to 212 gigabytes'. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED.
+- Standard Edition $79.99; Ultimate Edition $99.99 (US) — [Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support)](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions) (CONFIRMED, MEDIUM, 2026-11; supporting: https://dotesports.com/gta/news/gta-6). Note: US prices; other regions differ. The script says 'US mein'. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED.
+- Set in Vice City in the fictional state of Leonida; the protagonists are Jason and Lucia — [Grand Theft Auto VI (Rockstar)](https://www.rockstargames.com/VI) (CONFIRMED, MEDIUM, 2025-2026; supporting: https://dotesports.com/gta/news/gta-6). Note: 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED.
+- No PC release date has been announced — [Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support)](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions) (CONFIRMED, MEDIUM, 2026-11-19; supporting: https://dotesports.com/gta/news/gta-6). Note: Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording. 19 Nov 18:30 IST, creator's rule: official Rockstar, PlayStation and Xbox pages could not be opened from this environment (network policy); search excerpts are not proof, so this claim is UNVERIFIED.
 
 **Uncertain or left out:**
 - Prices are US; other regions differ.

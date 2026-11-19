@@ -1,4 +1,4 @@
-# Recording: 2026-11-19 (RECORDING READY)
+# Recording: 2026-11-19 (HOLD — NOT RECORDING READY)
 
 GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.
 
