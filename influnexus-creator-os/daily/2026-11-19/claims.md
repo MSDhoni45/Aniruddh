@@ -20,5 +20,5 @@ Source access: 6 verified from search-index excerpts of the primary site; page N
 
 - **g2:** GSMArena: 'GTA VI delayed yet again'.
 - **g3:** Script says 'up to 212 gigabytes'.
-- **g4:** US prices; other regions differ. Script says 'almost eighty dollars'.
+- **g4:** US prices; other regions differ. The script says 'US mein'.
 - **g6:** Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording.

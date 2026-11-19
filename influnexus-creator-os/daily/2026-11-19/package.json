@@ -563,7 +563,7 @@
         "access": "search-index",
         "in_script": true,
         "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "US prices; other regions differ. Script says 'almost eighty dollars'."
+        "note": "US prices; other regions differ. The script says 'US mein'."
       },
       {
         "id": "g5",
