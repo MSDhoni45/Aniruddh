@@ -206,7 +206,23 @@ def end(log: Path, daily: Path, status: str, run_id: str | None = None, trigger:
               "research_window": st.get("research_window"), "status": status, "delivery": rec["delivery"],
               "errors": rec["errors"], "warnings": rec["warnings"], "note": note, **summary}
     _upsert_report(daily, date, st["run_id"], report)
+    _rerender_today(daily, date)
     return report
+
+
+def _rerender_today(daily: Path, date: str) -> None:
+    """Refresh today.md so its RUN STATUS line shows this run's final status and delivery."""
+    pkg = daily / date / "package.json"
+    if not pkg.exists():
+        return
+    from ..scripts import package as pk
+    try:
+        p = json.loads(pkg.read_text(encoding="utf-8"))
+        problems, info = pk.validate(p)
+        if not problems and pk.is_v3(p):
+            (daily / date / "today.md").write_text(pk.render_today(p, info), encoding="utf-8")
+    except Exception:  # never let a re-render failure lose the run record
+        return
 
 
 def delivery(log: Path, daily: Path, run_id: str, status: str, channel: str = "", receipt: str = "",
@@ -221,4 +237,6 @@ def delivery(log: Path, daily: Path, run_id: str, status: str, channel: str = ""
     d = {"status": status, "channel": channel, "receipt": receipt or "none available", "at_ist": _iso(t.astimezone(IST))}
     _append(log, {"event": "delivery", "run_id": run_id, "trigger": st["trigger"], "status": status, "delivery": d,
                   "at_utc": _iso(t), "ist_date": st["ist_date"]})
-    return _upsert_report(daily, st["ist_date"], run_id, {"delivery": d})
+    rep = _upsert_report(daily, st["ist_date"], run_id, {"delivery": d})
+    _rerender_today(daily, st["ist_date"])
+    return rep

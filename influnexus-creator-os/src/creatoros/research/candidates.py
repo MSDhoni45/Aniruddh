@@ -145,8 +145,8 @@ def validate_v3(c: dict) -> list[str]:
             problems.append(f"{f} must be one of {allowed}")
     if c.get("original_source") and not str(c["original_source"]).startswith("http"):
         problems.append("original_source must be a URL")
-    if "published_at" in c and _iso(c["published_at"]) is None:
-        problems.append("published_at must be an ISO timestamp with a timezone (e.g. 2026-11-19T14:05:00+00:00)")
+    if "published_at" in c and _span(c["published_at"]) is None:
+        problems.append("published_at must be an ISO timestamp with a timezone, or a date (YYYY-MM-DD) when the source gives no time")
     x = c.get("x_signal")
     problems += x_signal_problems(x) if "x_signal" in c else []
     pd_ = c.get("scores", {}).get("public_discussion")
@@ -160,21 +160,36 @@ def validate_v3(c: dict) -> list[str]:
     return problems
 
 
+def _span(v) -> "tuple | None":
+    """A timestamp, or a date-only value (sources often give no time) as the whole UTC day it names."""
+    import datetime as dt
+    d = _iso(v)
+    if d:
+        return d, d
+    try:
+        day = dt.date.fromisoformat(str(v))
+    except ValueError:
+        return None
+    a = dt.datetime.combine(day, dt.time(0, 0), dt.timezone.utc)
+    return a, a + dt.timedelta(days=1) - dt.timedelta(seconds=1)
+
+
 def window_reason(c: dict, window: dict | None) -> str | None:
-    """v3 freshness rule: published inside the 24-hour research window, or a dated new development inside it."""
+    """v3 freshness rule: published inside the 24-hour research window, or a dated new development inside it.
+    A date without a time counts if that day overlaps the window (never invent a time to pass this check)."""
     if not window or scheme(c) != "v3":
         return None
     start, end = _iso(window.get("start_utc")), _iso(window.get("end_utc"))
-    pub = _iso(c.get("published_at"))
+    pub = _span(c.get("published_at"))
     if not (start and end and pub):
         return None
-    if pub > end:
+    if pub[0] > end:
         return "published after the research window ended"
-    if pub >= start:
+    if pub[1] >= start:
         return None
     nd = c.get("new_development") or {}
-    at = _iso(nd.get("at"))
-    if nd.get("what") and at and start <= at <= end:
+    at = _span(nd.get("at"))
+    if nd.get("what") and at and at[1] >= start and at[0] <= end:
         return None
     return "published before the 24-hour research window with no dated new development inside it"
 

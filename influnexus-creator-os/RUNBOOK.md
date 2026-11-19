@@ -25,7 +25,8 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
 - At the end: `creatoros runlog end --run-id RUN_ID --status READY|HOLD|NONE --delivery requested|failed|not attempted --channel push
   [--error "..."] [--warning "..."]`. It writes `daily/DATE/run_report.json` (run ID, start/end, environment, commit, window,
   candidates, selected story, source access, fact-check, words, duration, quality gate, package status, delivery, errors, warnings).
-  `logs/runs.jsonl` and `run_report.json` are committed; they are the evidence that a run happened.
+  `logs/runs.jsonl` and `run_report.json` are committed; they are the evidence that a run happened. `runlog end` (and
+  `runlog delivery`) also refresh `today.md`, so its RUN STATUS line shows this run's final status and delivery.
 - Never re-render a past date's package: historical packages stay as delivered.
 - `creatoros sources-audit --date DATE` (under a second): probes every source group (X, Reddit, YouTube, Instagram, LinkedIn,
   Google Trends, primary sites, news) from this environment and saves `daily/DATE/source_access.json`. A group it reports BLOCKED
@@ -67,6 +68,12 @@ attempts on one blocked domain. If nothing passes the gate by 09:22, deliver no 
   `access` (DIRECTLY OBSERVED / SEARCH-INDEX / SECONDARY / NOT VERIFIED) and `engagement` with `basis`
   observed / reported / estimated / unknown (+ `source` for reported numbers). "observed" needs the page directly observed.
   A story seen across several independent platforms is a stronger signal; an estimate is never shown as a measurement.
+- **Search tactics (learned in the 19 Nov manual test):** generic "AI news today" queries return mostly older pages. What works:
+  the date in quotes ("November 18, 2026") plus a topic, dated daily digests (e.g. AI news-of-the-day pages) as leads, then
+  domain-restricted searches on the primary site (`allowed_domains`: nasa.gov, blog.google, blogs.microsoft.com, nvidianews.nvidia.com,
+  openai.com...) to verify, and a search with the primary domain blocked to find independent reporting.
+- **Dates:** when a source gives a date but no time, record `published_at` as `YYYY-MM-DD`; it counts if that day overlaps the
+  window. Never invent a time.
 - **Early stories:** prefer important developments before they saturate creator platforms (new tools, robotics demos,
   unexpected capabilities, research results, failures, security discoveries, consumer changes, startup surprises).
 - **X signal (`x_signal`):** `status` VERIFIED / PARTLY VERIFIED / NOT VERIFIED, `posts` (each: `url`, `account`, `posted_at`,

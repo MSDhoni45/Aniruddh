@@ -1,0 +1,648 @@
+{
+  "language": "english",
+  "access_limits": [
+    "nature.com, biorxiv.org, health.ucdavis.edu, x.com and all news sites cannot be opened from this cloud environment; primary sites' own indexed text was read through domain-restricted search.",
+    "No X post about this story was checked; engagement is UNKNOWN.",
+    "Anthropic's IPO price was not yet set at research time (00:30 IST).",
+    "Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured."
+  ],
+  "x_signals": [],
+  "date": "2026-11-19",
+  "scoring": "v3",
+  "slug": "voyager-1-light-day-data-loss",
+  "keys": [
+    "voyager-1-light-day",
+    "voyager-1-data-loss-2026-11"
+  ],
+  "topic": "Voyager 1 reaches one light-day from Earth while its data link is down",
+  "category": "SCIENCE",
+  "topic_type": "BREAKING",
+  "announced_at": "2026-11-18 (NASA Voyager blog)",
+  "generated_at": "2026-11-19T14:05:00+05:30",
+  "research_window": {
+    "start_utc": "2026-11-18T08:02:03+00:00",
+    "end_utc": "2026-11-19T08:02:03+00:00",
+    "start_ist": "2026-11-18T13:32:03+05:30",
+    "end_ist": "2026-11-19T13:32:03+05:30",
+    "hours": 24
+  },
+  "why_selected": "Strongest verified story in the window: NASA primary source plus independent reporting; awe, a live twist, highly visual, global.",
+  "evidence_confidence": "HIGH",
+  "research_summary": "NASA's Voyager blog (18 Nov 2026) says the mission will confirm on Thursday 19 November that Voyager 1 is operating one light-day from Earth, about 25.9 billion km, making it the first spacecraft to get that far. On 14 November the team noticed it had stopped sending science and engineering data; a Deep Space Network antenna in Canberra still hears its carrier signal, which suggests the probe is pointed at Earth and its radio works. NASA says the missing data points to the onboard computer that collects and formats data, and that with a one-way delay of about 24 hours diagnosis may take weeks or longer. Independent outlets report the same. The exact crossing time was not confirmed from a primary page, so the script says this week.",
+  "primary_sources": [
+    {
+      "label": "NASA Voyager blog, 18 Nov 2026",
+      "url": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/"
+    },
+    {
+      "label": "NASA: Voyager 1 mission page",
+      "url": "https://science.nasa.gov/mission/voyager/voyager-1/"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "label": "jubileecast.com, 19 Nov 2026",
+      "url": "https://www.jubileecast.com/articles/41196/20261119/nasa-s-voyager-1-reaches-16-1-billion-miles-from-earth-as-engineers-investigate-data-loss.htm"
+    },
+    {
+      "label": "behindtheblack.com",
+      "url": "https://behindtheblack.com/behind-the-black/points-of-information/voyager-1-has-stopped-sending-any-science-data/"
+    }
+  ],
+  "key_facts": [
+    "One light-day: about 25.9 billion km (16.1 billion miles).",
+    "No science or engineering data since 14 Nov; carrier signal still received.",
+    "NASA suspects the data-formatting onboard computer; diagnosis may take weeks."
+  ],
+  "uncertainties": [
+    "Exact time of the crossing not confirmed from a primary page.",
+    "Cause of the data loss not yet known."
+  ],
+  "context": "Voyager 1 entered interstellar space in 2012. A similar onboard-computer fault in 2023-24 was eventually fixed.",
+  "script": "A message to Voyager 1 now takes a full day to arrive.\n\nThis week it became the first spacecraft one light-day from Earth. That's about 25.9 billion kilometres away.\n\nBut here's the part most people missed. Since November 14, it has sent back no science data at all.\n\nNASA can still hear its carrier signal, so it seems to be pointed at Earth and working. NASA suspects the computer that packages its data.\n\nAnd every command takes a day to get there, and another day for an answer.\n\nSo a machine launched in 1977 is being fixed from farther away than anything we've ever built.",
+  "hook": "A message to Voyager 1 now takes a full day to arrive.",
+  "hooks": [
+    {
+      "text": "A message to Voyager 1 now takes a full day to arrive.",
+      "mechanism": "unexpected fact",
+      "accuracy": 10,
+      "clarity": 10,
+      "curiosity": 9,
+      "surprise": 9,
+      "specificity": 9,
+      "natural": 9,
+      "relevance": 9
+    },
+    {
+      "text": "The farthest thing we've ever built just went quiet.",
+      "mechanism": "curiosity gap",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 9,
+      "surprise": 9,
+      "specificity": 6,
+      "natural": 9,
+      "relevance": 8
+    },
+    {
+      "text": "Voyager 1 just crossed a line no machine has ever crossed.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 8,
+      "surprise": 8,
+      "specificity": 6,
+      "natural": 9,
+      "relevance": 8
+    },
+    {
+      "text": "Imagine fixing a computer when every reply takes a day.",
+      "mechanism": "relatable problem",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 8,
+      "surprise": 7,
+      "specificity": 7,
+      "natural": 8,
+      "relevance": 8
+    },
+    {
+      "text": "NASA is debugging a 1977 computer from 25.9 billion kilometres away.",
+      "mechanism": "strong factual statement",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 8,
+      "surprise": 9,
+      "specificity": 9,
+      "natural": 7,
+      "relevance": 8
+    },
+    {
+      "text": "Light takes a whole day to reach this spacecraft.",
+      "mechanism": "unexpected comparison",
+      "accuracy": 10,
+      "clarity": 9,
+      "curiosity": 8,
+      "surprise": 8,
+      "specificity": 8,
+      "natural": 9,
+      "relevance": 8
+    },
+    {
+      "text": "Voyager 1 hit a record this week, and stopped talking.",
+      "mechanism": "contradiction",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 9,
+      "surprise": 8,
+      "specificity": 6,
+      "natural": 8,
+      "relevance": 8
+    },
+    {
+      "text": "Your messages take seconds. Voyager's take a day.",
+      "mechanism": "unexpected comparison",
+      "accuracy": 10,
+      "clarity": 9,
+      "curiosity": 7,
+      "surprise": 7,
+      "specificity": 7,
+      "natural": 9,
+      "relevance": 8
+    },
+    {
+      "text": "The most distant machine in history has a data problem.",
+      "mechanism": "important consequence",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 8,
+      "surprise": 7,
+      "specificity": 6,
+      "natural": 8,
+      "relevance": 8
+    },
+    {
+      "text": "It's 25.9 billion kilometres away and still listening.",
+      "mechanism": "counterintuitive insight",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 8,
+      "surprise": 8,
+      "specificity": 8,
+      "natural": 8,
+      "relevance": 8
+    }
+  ],
+  "quality_scores": {
+    "fact": 10,
+    "hook": 9,
+    "clarity": 9,
+    "retention": 9,
+    "originality": 9,
+    "naturalness": 9,
+    "payoff": 9,
+    "brand": 9,
+    "virality": 8
+  },
+  "recording": {
+    "tone": "Calm wonder, then a quiet lean-in for the twist.",
+    "opening_expression": "Steady eye contact; let 'a full day' land.",
+    "emphasis": [
+      "full day",
+      "first spacecraft",
+      "no science data",
+      "a day to get there",
+      "1977"
+    ],
+    "pauses": [
+      "beat after 'a full day to arrive'",
+      "beat before 'But here's the part most people missed'",
+      "slow down on the last line"
+    ],
+    "pronunciation": [
+      "Voyager: VOY-uh-jer",
+      "25.9 billion kilometres: twenty-five point nine billion kilometres",
+      "1977: nineteen seventy-seven"
+    ]
+  },
+  "visuals": [
+    "NASA Voyager imagery and NASA SVS light-day visualisation (credit NASA)",
+    "Simple animation: a signal taking 24 hours to cross"
+  ],
+  "instagram": {
+    "cover_headline": "A message to Voyager 1 now takes a full day",
+    "caption": "Voyager 1 is now one light-day from Earth, about 25.9 billion km, the first spacecraft to get that far, per NASA. The twist: since 14 November it has sent no science data. NASA can still hear its carrier signal and suspects the computer that packages its data. Every command takes a day each way.",
+    "hashtags": [
+      "#Voyager1",
+      "#NASA",
+      "#Space",
+      "#Science"
+    ]
+  },
+  "linkedin": {
+    "caption": "Voyager 1, launched in 1977, is now one light-day from Earth: the first spacecraft that far, according to NASA. It has also sent no science data since 14 November. NASA still hears its carrier signal and suspects the onboard computer that formats data. Every diagnostic step takes about two days round trip.",
+    "business_relevance": "A case study in remote diagnosis under extreme latency and legacy hardware.",
+    "discussion_prompt": "How would you debug a system you can only talk to once a day?"
+  },
+  "x": {
+    "post": "Voyager 1 is now one light-day from Earth (~25.9 billion km), the first spacecraft that far, per NASA. Twist: since 14 Nov it has sent no science data. NASA still hears its carrier signal and suspects the computer that packages its data."
+  },
+  "youtube": {
+    "title": "Voyager 1 Is One Light-Day Away, and It Stopped Sending Data",
+    "description": "NASA says Voyager 1 is now one light-day from Earth. Since 14 Nov it has sent no science data; engineers are diagnosing with a 24-hour delay each way. Sources: NASA Voyager blog, 18 Nov 2026.",
+    "keywords": [
+      "Voyager 1",
+      "light-day",
+      "NASA",
+      "deep space",
+      "space exploration"
+    ]
+  },
+  "growth": {
+    "watch": "A number that sounds impossible, then a problem to solve.",
+    "share": "Awe and a mystery people want to follow.",
+    "follow": "Explains big science clearly and finds the detail others missed.",
+    "segment": "Global curious audience, space and tech fans",
+    "underperform": "Space stories can feel distant if the visuals are weak."
+  },
+  "candidates": [
+    {
+      "headline": "Voyager 1 reaches one light-day from Earth while its data link is down",
+      "category": "SCIENCE",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18",
+      "original_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+      "main_claim": "NASA says Voyager 1 is about to be confirmed as the first spacecraft one light-day (25.9 billion km) from Earth, while it has sent no science or engineering data since 14 Nov; only its carrier signal is heard.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Awe at scale plus a live engineering problem: the farthest machine ever built is being debugged with a one-day delay.",
+      "potential_hook": "A message to Voyager 1 now takes a full day to arrive.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Exact crossing time not confirmed from a primary page; data-loss cause unknown and may take weeks to diagnose.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "Independent outlets covering both the milestone and the data loss within the window: jubileecast.com (19 Nov), behindtheblack.com, newsofbahrain.com"
+        ]
+      },
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 7,
+        "usefulness": 6,
+        "visual": 9,
+        "broad_appeal": 9,
+        "discussion_potential": 4,
+        "longevity": 4,
+        "verification_confidence": 5
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+          "title": "Voyager 1 Engineers Analyze Data Issue, Ready to Confirm Light-day (NASA, 18 Nov 2026)",
+          "retrieved_at": "2026-11-19T08:10:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.jubileecast.com/articles/41196/20261119/nasa-s-voyager-1-reaches-16-1-billion-miles-from-earth-as-engineers-investigate-data-loss.htm",
+          "title": "NASA's Voyager 1 Reaches 16.1 Billion Miles From Earth as Engineers Investigate Data Loss",
+          "retrieved_at": "2026-11-19T08:10:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://behindtheblack.com/behind-the-black/points-of-information/voyager-1-has-stopped-sending-any-science-data/",
+          "title": "Voyager-1 has stopped sending any science data",
+          "retrieved_at": "2026-11-19T08:10:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ]
+    },
+    {
+      "headline": "Google opens Genie 4 world model to AI Ultra subscribers",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18",
+      "original_source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "main_claim": "Genie 4, Google DeepMind's real-time interactive world model, is now live in Project Genie for eligible Google AI Ultra subscribers in the US.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Interactive generated worlds are highly visual.",
+      "potential_hook": "You can now type a world into existence and walk around it.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Company claims only; capability not independently tested.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "AI daily digests list it for 18 Nov (aiweekly.co, theneuron.ai)"
+        ]
+      },
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 7,
+        "significance": 6,
+        "usefulness": 6,
+        "visual": 9,
+        "broad_appeal": 7,
+        "discussion_potential": 5,
+        "longevity": 5,
+        "verification_confidence": 3
+      }
+    },
+    {
+      "headline": "Google introduces Gemini 4 Neon",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18",
+      "original_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "main_claim": "Google introduced Gemini 4 Neon for software engineering, knowledge work and science.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Model launch; hard to make visual.",
+      "potential_hook": "Google just shipped another Gemini 4 model.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Benchmarks are company claims.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "Listed in AI digests for 18 Nov"
+        ]
+      },
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 4,
+        "significance": 6,
+        "usefulness": 6,
+        "visual": 3,
+        "broad_appeal": 5,
+        "discussion_potential": 4,
+        "longevity": 4,
+        "verification_confidence": 3
+      }
+    },
+    {
+      "headline": "Anthropic prices record IPO at $83 a share",
+      "category": "AI BUSINESS & STARTUPS",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.cnn.com/2026/11/18/investing/anthropic-ipo-price-stock",
+      "main_claim": "Anthropic priced 980 million shares at $83, raising about $81.3 billion; trading under ANT was scheduled to begin 19 Nov on Nasdaq.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Record IPO; but first-day trading will change the story before recording.",
+      "potential_hook": "The biggest IPO ever is an AI company.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Primary filing not checked; first-day price unknown at research time. Conflict of interest: this research is done by an Anthropic model.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "CNN, Quartz, Fast Company, The Statesman (18-19 Nov)"
+        ]
+      },
+      "scores": {
+        "public_discussion": 6,
+        "surprise": 6,
+        "significance": 7,
+        "usefulness": 4,
+        "visual": 4,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 4,
+        "verification_confidence": 3
+      },
+      "hold_reason": "first-day trading starts 19 Nov 20:00 IST, after recording; facts will change"
+    },
+    {
+      "headline": "Microsoft announces Maia 300 inference chip at Ignite",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-17",
+      "original_source": "https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/",
+      "main_claim": "Microsoft announced Maia 300 for 2027 deployment; Maia 200 is in production.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "x",
+      "potential_hook": "Microsoft's own AI chip is coming for Nvidia.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Performance figures are projections.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "scores": {
+        "public_discussion": 3,
+        "surprise": 5,
+        "significance": 6,
+        "usefulness": 4,
+        "visual": 4,
+        "broad_appeal": 4,
+        "discussion_potential": 3,
+        "longevity": 5,
+        "verification_confidence": 3
+      }
+    },
+    {
+      "headline": "NVIDIA introduces GR00T 2 open world-action model for robots",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-10",
+      "original_source": "https://forums.developer.nvidia.com/t/news-nvidia-at-corl-2026-advancing-robot-learning/388596",
+      "main_claim": "NVIDIA introduced GR00T 2 at CoRL 2026.",
+      "verification_status": "UNVERIFIED",
+      "why_it_matters": "x",
+      "potential_hook": "Robots that learn a task from a handful of demos.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Announcement date not confirmed from a primary page; placed before the window.",
+      "evidence_confidence": "LOW",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "scores": {
+        "public_discussion": 3,
+        "surprise": 6,
+        "significance": 6,
+        "usefulness": 4,
+        "visual": 8,
+        "broad_appeal": 5,
+        "discussion_potential": 3,
+        "longevity": 5,
+        "verification_confidence": 2
+      }
+    }
+  ],
+  "factcheck": {
+    "date": "2026-11-19",
+    "story": "Voyager 1 reaches one light-day from Earth while its data link is down",
+    "claims": [
+      {
+        "id": "v1",
+        "text": "Voyager 1 is the first spacecraft to reach one light-day from Earth, about 25.9 billion km (16.1 billion miles)",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "source_title": "Voyager 1 Engineers Analyze Data Issue, Ready to Confirm Light-day (NASA)",
+        "supporting_source": "https://www.jubileecast.com/articles/41196/20261119/nasa-s-voyager-1-reaches-16-1-billion-miles-from-earth-as-engineers-investigate-data-loss.htm",
+        "source_date": "2026-11-18",
+        "supporting_evidence": "The team will still be able to confirm it is operating one light-day from Earth, or roughly 16.1 billion miles (25.9 billion kilometers), on Thursday, Nov. 19",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00",
+        "note": "Script says 'this week' rather than a crossing time, which was not confirmed from a primary page."
+      },
+      {
+        "id": "v2",
+        "text": "A one-way signal to or from Voyager 1 takes about 24 hours (one light-day)",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "source_title": "Voyager 1 Engineers Analyze Data Issue (NASA)",
+        "supporting_source": "https://www.jubileecast.com/articles/41196/20261119/nasa-s-voyager-1-reaches-16-1-billion-miles-from-earth-as-engineers-investigate-data-loss.htm",
+        "source_date": "2026-11-18",
+        "supporting_evidence": "Because of the roughly 24-hour one-way signal delay, diagnosing the cause of the issue may take weeks or longer",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      },
+      {
+        "id": "v3",
+        "text": "Since the team noticed on 14 Nov, Voyager 1 has sent no science or engineering data; a Canberra antenna still receives its carrier signal",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "source_title": "Voyager 1 Engineers Analyze Data Issue (NASA)",
+        "supporting_source": "https://behindtheblack.com/behind-the-black/points-of-information/voyager-1-has-stopped-sending-any-science-data/",
+        "source_date": "2026-11-18",
+        "supporting_evidence": "the spacecraft had stopped sending science and engineering data, even though a Canberra antenna still picked up its carrier signal (noticed Nov. 14)",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      },
+      {
+        "id": "v4",
+        "text": "The carrier signal suggests the spacecraft is still pointed at Earth and its radio works",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "source_title": "Voyager 1 Engineers Analyze Data Issue (NASA)",
+        "supporting_source": "https://www.jubileecast.com/articles/41196/20261119/nasa-s-voyager-1-reaches-16-1-billion-miles-from-earth-as-engineers-investigate-data-loss.htm",
+        "source_date": "2026-11-18",
+        "supporting_evidence": "It suggests that the attitude control computer is still keeping the spacecraft pointed at Earth and that its antenna and broadcast equipment still work",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      },
+      {
+        "id": "v5",
+        "text": "NASA suspects the onboard computer that collects and formats data for transmission",
+        "status": "COMPANY CLAIM",
+        "attribution": "NASA",
+        "script_attribution": "NASA suspects",
+        "primary_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "source_title": "Voyager 1 Engineers Analyze Data Issue (NASA)",
+        "supporting_source": "https://behindtheblack.com/behind-the-black/points-of-information/voyager-1-has-stopped-sending-any-science-data/",
+        "source_date": "2026-11-18",
+        "supporting_evidence": "The missing data points to the onboard computer that collects data from the spacecraft's various subsystems ... and formats it for transmission to Earth",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      },
+      {
+        "id": "v6",
+        "text": "Voyager 1 launched in 1977",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "source_title": "Voyager 1: The Farthest Spacecraft (NASA)",
+        "supporting_source": "https://en.wikipedia.org/wiki/Voyager_1",
+        "source_date": "1977-09-05",
+        "supporting_evidence": "Voyager 1 launched on Sept. 5, 1977",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      },
+      {
+        "id": "v7",
+        "text": "Voyager 1 is the farthest human-made object",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "source_title": "Voyager 1: The Farthest Spacecraft (NASA)",
+        "supporting_source": "https://en.wikipedia.org/wiki/Voyager_1",
+        "source_date": "2026",
+        "supporting_evidence": "Voyager 1: The Farthest Spacecraft",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      },
+      {
+        "id": "v8",
+        "text": "Diagnosis may take weeks or longer",
+        "status": "CONFIRMED",
+        "primary_source": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+        "source_title": "Voyager 1 Engineers Analyze Data Issue (NASA)",
+        "supporting_source": "https://www.jubileecast.com/articles/41196/20261119/nasa-s-voyager-1-reaches-16-1-billion-miles-from-earth-as-engineers-investigate-data-loss.htm",
+        "source_date": "2026-11-18",
+        "supporting_evidence": "diagnosing the cause of the issue may take weeks or longer",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": false,
+        "retrieved_at": "2026-11-19T08:10:00+00:00"
+      }
+    ]
+  },
+  "pillar": "startups_science",
+  "format": "E",
+  "backups": [
+    "Google opens Genie 4 world model to AI Ultra subscribers",
+    "Google introduces Gemini 4 Neon"
+  ],
+  "audience": {
+    "stop_scroll": "'A full day' for a message is concrete and surprising.",
+    "watch_to_end": "The twist (no data) arrives mid-way and needs resolving.",
+    "share": "Awe plus a live mystery people can follow.",
+    "save": "A clear explainer of what a light-day means.",
+    "comment": "How would you fix a computer with a day's delay?",
+    "follow": "Reliable, clear science and tech, with the detail others miss."
+  },
+  "editing": {
+    "opening_visual": "NASA image of Voyager with a 24:00:00 timer",
+    "key_moments": [
+      "light-day line",
+      "data stops 14 Nov",
+      "two-day round trip"
+    ],
+    "broll": [
+      "NASA Voyager illustration",
+      "Deep Space Network Canberra dish (NASA)"
+    ],
+    "on_screen_text": [
+      "1 light-day = 25.9 billion km",
+      "No science data since 14 Nov"
+    ],
+    "demonstrations": [
+      "animated signal travelling for 24 hours (illustration, labelled)"
+    ],
+    "stats": [
+      "25.9 billion km",
+      "1977",
+      "24 h each way"
+    ],
+    "rhythm": "Slow first line, faster middle, slow final line",
+    "caption_emphasis": [
+      "full day",
+      "no science data",
+      "1977"
+    ],
+    "sound": "Sparse ambient tone; a soft beep that stops at 'no science data'"
+  },
+  "limitations": [
+    "Source audit: X, Reddit, YouTube, Instagram, LinkedIn, Google Trends and news sites BLOCKED; primary sites PARTIAL (anthropic.com and github.com only).",
+    "All claims verified from search-index excerpts of nasa.gov; no page opened directly.",
+    "No X, Reddit or YouTube engagement observed; public discussion scored from independent coverage only."
+  ]
+}
