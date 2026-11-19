@@ -16,7 +16,7 @@ Push with `git push -u origin claude/daily-ai-tech-research-script-taab6w` (pull
 `main` carries the code and these instructions; it is updated by pull request, never pushed to directly.
 Dates are Asia/Kolkata (IST). `creatoros` commands run from `influnexus-creator-os/`.
 
-The scheduled task's stored prompt predates the 20 Nov 2026 rules (it still says v2 scoring, 15 candidates, 30-40 s and
+The approved text of the scheduled task's prompt is `influnexus-creator-os/config/scheduled_task_prompt.md`. If the stored prompt predates the 20 Nov 2026 rules (v2 scoring, 15 candidates, 30-40 s and
 75-90 words). Where it differs from `influnexus-creator-os/RUNBOOK.md`, the RUNBOOK wins; the validator rejects non-v3 packages
 from 2026-11-20. Always pass the `run_id` from `creatoros runlog start` to `creatoros runlog end`.
 
