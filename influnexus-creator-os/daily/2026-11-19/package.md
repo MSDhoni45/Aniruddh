@@ -4,165 +4,146 @@
 
 ## A. Today's winning topic
 
-- **Topic:** A man with ALS used a brain implant to communicate at home for 3,800+ hours
+- **Topic:** GTA VI launches today on PS5 and Xbox Series X|S after two delays
 - **Language:** English
-- **Category:** SCIENCE (EVERGREEN)
-- **Original announcement date:** 15 June 2026 (Nature Medicine paper); UC Davis release June 2026
-- **Viral potential score:** 87.0/100
+- **Category:** CONSUMER TECH (BREAKING)
+- **Original announcement date:** 2026-11-19 (launch); date set Nov 2025 (Rockstar Newswire)
+- **Viral potential score:** 78.5/100
 - **Evidence confidence:** HIGH
-- **Why selected:** Highest-scoring verified candidate. It is the clearest 'wait, that's possible?' story of the day: a man whose ALS took his clear speech speaks through a brain implant in everyday life, not a lab. Every script claim is in the peer-reviewed paper, the authors' preprint or UC Davis's own releases. It is not breaking news (June 2026), but the most interesting story beat the newest: today's breaking candidates were thinner or only partly verified.
+- **Why selected:** Creator's request; it is also the broadest-appeal verified story in today's window: launch day, primary sources plus independent reporting.
 
 ## B. Verified research
 
-Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.
+Rockstar's Newswire set Grand Theft Auto VI's launch for 19 November 2026 on PlayStation 5 and Xbox Series X|S, after delays from fall 2025 and then 26 May 2026. Rockstar Support lists the Standard Edition at $79.99 and the Ultimate Edition at $99.99, and says digital pre-load began on 10 November and needs up to 212 GB depending on the device; Forbes and DotEsports report the same. Rockstar's own pages place the story in Vice City in the fictional state of Leonida, following Jason and Lucia. No PC date has been announced. Launch-day sales, reviews and server performance were not known at research time and are left out.
 
 **Key verified facts**
 
-- Nature Medicine, 15 June 2026 (Card, Singer-Clark, Brandman et al.).
-- Over 3,800 hours of home use with no researcher intervention (the paper gives the period as nearly 2 years in one place and 19 months in another).
-- 183,060 sentences, 1,960,163 words, 56.1 words per minute average.
-- Maintained full-time employment (peer-reviewed paper and preprint).
-- Four microelectrode arrays in the left precentral gyrus; voice output trained on his pre-ALS recordings (2024).
+- Launch 19 Nov 2026, PS5 and Xbox Series X|S
+- $79.99 Standard / $99.99 Ultimate (US)
+- Pre-load from 10 Nov, up to 212 GB
+- No PC date yet
 
 **Uncertainties**
 
-- One participant; results may not generalise.
-- Invasive brain surgery; investigational device, not commercially available.
-- A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.
-- Accuracy at home was self-rated (92% of sentences at least mostly correct); the script makes no accuracy claim.
-- No primary page could be opened directly; all were read through their indexed text.
-- Study duration: abstract says nearly 2 years; one passage says 19 months. The script avoids stating a duration.
+- Prices are US; other regions differ.
+- No PC date as of 19 Nov evening IST; re-check before recording.
+- Sales, reviews and server stability unknown.
 
 **Context**
 
-Speech BCIs have improved fast since 2023, but most were tested in labs with researchers present. This paper's point is independence: a system used daily at home for nearly two years. Other groups (Stanford, UCSF, Michigan/Paradromics) work on related devices.
+Rockstar first announced GTA VI in December 2023 for 2025, then delayed it twice.
 
 **Primary sources**
 
-- [Nature Medicine: Long-term independent use of an intracortical BCI for speech and cursor control (15 Jun 2026)](https://www.nature.com/articles/s41591-026-04414-6)
-- [bioRxiv preprint, same authors](https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1)
-- [UC Davis Health release (Jun 2026)](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06)
-- [UC Davis Health release (Aug 2024)](https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08)
+- [Rockstar Newswire: launch date (Nov 2025)](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026)
+- [Rockstar Support: platforms and editions](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions)
+- [Rockstar Newswire: pre-load from 10 Nov](https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10)
+- [Rockstar: GTA VI](https://www.rockstargames.com/VI)
 
 **Supporting sources**
 
-- [Nature Asia press release](https://www.natureasia.com/en/info/press-releases/detail/9358)
-- [2024 paper on PMC: An accurate and rapidly calibrating speech neuroprosthesis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/)
-- [Martin Cid: 'a brain implant returned it for 3,800 hours'](https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/)
+- [Forbes, 16 Nov 2026](https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/)
+- [DotEsports](https://dotesports.com/gta/news/gta-6)
+- [Yahoo Tech](https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html)
+- [GSMArena](https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php)
 
 ## C. Final recording script
 
 ```
-ALS took his clear speech. A brain implant gave him a way to talk again.
+GTA 6 is finally out. And it needs up to 212 gigabytes.
 
-Sensors in Casey Harrell's brain catch signals when he tries to speak. Software puts the words on screen, and can read them aloud in a voice built from his old recordings.
+After two delays, Rockstar launched it today, November 19, on PlayStation 5 and Xbox Series X and S. Pre-loading opened on November 10, so you could download it early.
 
-This isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, without researchers' help.
+The standard edition costs 79.99 dollars. The Ultimate Edition is 99.99.
 
-Nearly two million words. He kept working full-time.
+You're in Vice City, in a fictional state called Leonida, playing as Jason and Lucia.
 
-Most tech news is about replacing people. This gave a man his words back.
+PC players are still waiting. Rockstar hasn't given a PC date yet.
+
+So check your storage before you buy.
+
+Would you pay almost eighty dollars on day one, or wait for PC?
 ```
 
-90 words · about 37.8 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90/100
+99 words · about 41.6 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90.0/100
 
 ## Claim verification table
 
 Access: *opened* = page read directly; *search-index* = the primary site's own text read through search, page not opened; *secondary-only* = only other outlets report it.
 
-Source access: 8 verified from search-index excerpts of the primary site; page NOT opened directly.
+Source access: 6 verified from search-index excerpts of the primary site; page NOT opened directly.
 
 | # | Exact claim | Primary source | Supporting source | Status | Source date | Confidence | In script |
 |---|---|---|---|---|---|---|---|
-| b1 | The participant has ALS with severe dysarthria: his natural speech is very hard to understand (script: 'ALS took his clear speech') | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2026-06-15 | HIGH | yes |
-| b2 | The participant is Casey Harrell, a BrainGate2 trial participant at UC Davis Health | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) (search-index) | [link](https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/) | CONFIRMED | 2026-06 | HIGH | yes |
-| b3 | Four microelectrode arrays in the speech-related left precentral gyrus record his brain activity when he tries to speak | [link](https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08) (search-index) | [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/) | CONFIRMED | 2024-08 | HIGH | yes |
-| b4 | Decoded words appear as text on screen and can be read aloud at the end of a sentence by a voice built from recordings of his pre-ALS voice | [link](https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08) (search-index) | [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/) | CONFIRMED | 2024-08 | HIGH | yes |
-| b5 | He used the system at home for more than 3,800 hours, without researcher assistance (care partners put the hardware on and started it) | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://www.natureasia.com/en/info/press-releases/detail/9358) | CONFIRMED | 2026-06-15 | HIGH | yes |
-| b6 | He communicated 183,060 sentences totalling 1,960,163 words, at an average of 56.1 words per minute | [link](https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2025-06-26 (preprint); journal 2026-06-15 | HIGH | yes |
-| b7 | He maintained full-time employment while using the system | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1) | CONFIRMED | 2026-06-15 | HIGH | yes |
-| b8 | The study was published in Nature Medicine on 15 June 2026 | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2026-06-15 | HIGH | yes |
-| b9 | He rated 92.3% of decoded sentences as at least mostly correct | [link](https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2025-06-26 | HIGH | no |
-| b10 | The BCI reaches 99% accuracy | NONE FOUND | [link](https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/) | DISPUTED | 2026 | LOW | no |
-| b11 | Results come from one participant with an invasive implant in a clinical trial; this is not a commercial product | [link](https://www.nature.com/articles/s41591-026-04414-6) (search-index) | [link](https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06) | CONFIRMED | 2026-06-15 | HIGH | no |
+| g1 | GTA VI launches on 19 Nov 2026 on PlayStation 5 and Xbox Series X|S | [link](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) (search-index) | [link](https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html) | CONFIRMED | 2025-11 (announcement); launch 2026-11-19 | HIGH | yes |
+| g2 | The game was delayed twice (from fall 2025 to 26 May 2026, then to 19 Nov 2026) | [link](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) (search-index) | [link](https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php) | CONFIRMED | 2025-11 | HIGH | yes |
+| g3 | Digital pre-load began on 10 Nov 2026 and needs up to 212 GB depending on the device | [link](https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10) (search-index) | [link](https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/) | CONFIRMED | 2026-11 | HIGH | yes |
+| g4 | Standard Edition $79.99; Ultimate Edition $99.99 (US) | [link](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions) (search-index) | [link](https://dotesports.com/gta/news/gta-6) | CONFIRMED | 2026-11 | HIGH | yes |
+| g5 | Set in Vice City in the fictional state of Leonida; the protagonists are Jason and Lucia | [link](https://www.rockstargames.com/VI) (search-index) | [link](https://dotesports.com/gta/news/gta-6) | CONFIRMED | 2025-2026 | HIGH | yes |
+| g6 | No PC release date has been announced | [link](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions) (search-index) | [link](https://dotesports.com/gta/news/gta-6) | CONFIRMED | 2026-11-19 | HIGH | yes |
 
 **Exact supporting evidence**
 
-- **b1** — Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine): "used at home with no researcher intervention, provides long-term and accurate restoration of speech-based communication ... in a person with severe dysarthria due to amyotrophic lateral sclerosis"
-- **b2** — Brain-computer interface enables independent, accurate communication for man living with ALS (UC Davis Health): "Casey Harrell, a participant in the BrainGate2 trial"
-- **b3** — New brain-computer interface allows man with ALS to 'speak' again (UC Davis Health): "four microelectrode arrays placed into the left precentral gyrus, a brain region responsible for coordinating speech"
-- **b4** — New brain-computer interface allows man with ALS to 'speak' again (UC Davis Health): "'reads decoded words aloud with a digital voice optimized to sound similar to his pre-ALS voice' (Nature Medicine, as indexed); 2024: 'The voice was composed using software trained with existing audio samples of his pre-ALS voice'"
-- **b5** — Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine): "'Over a 19-month period, the participant used the system in his home for more than 3,800 h' and 'used at home with no researcher intervention'"
-- **b6** — Long-term independent use of an intracortical brain-computer interface for speech and cursor control (bioRxiv preprint, same authors): "183,060 sentences – totaling 1,960,163 words – at an average rate of 56.1 words per minute"
-- **b7** — Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine): "browsing the internet, managing personal and professional communications and maintaining full-time employment"
-- **b8** — Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine): "Nature Medicine, volume 32, pages 2504–2510 (2026), published 15 June 2026"
-- **b9** — bioRxiv preprint: "labeled 92.3% of sentences as being decoded at least mostly correctly"
-- **b11** — Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine): "in a person with severe dysarthria due to amyotrophic lateral sclerosis"
+- **g1** — Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire): "Grand Theft Auto VI will launch on Nov. 19, 2026, for PlayStation 5 and Xbox Series X|S"
+- **g2** — Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire): "now set to launch on November 19, 2026. This is the second delay"
+- **g3** — Grand Theft Auto VI Pre-Load Begins on November 10 (Rockstar Newswire): "The pre-load file requires up to 212 GB depending on the device"
+- **g4** — Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support): "The base game is priced at $79.99. The Ultimate Edition is priced at $99.99"
+- **g5** — Grand Theft Auto VI (Rockstar): "a criminal conspiracy stretching across the state of Leonida ... Jason ... Lucia"
+- **g6** — Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support): "Platforms listed: PlayStation 5 and Xbox Series X|S"
 
-- **b1:** Corrected 19 Nov after independent re-check: 'lost his voice' overstated severe dysarthria and was removed. 'Gave him a way to talk again' matches UC Davis's own framing ('allows man with ALS to speak again').
-- **b2:** Harrell has been publicly identified by UC Davis since 2024.
-- **b4:** Corrected 19 Nov: the home system's main output is on-screen text; audio is produced at the end of a sentence and is optional, so the script now says 'can read them aloud'. Not to be confused with the separate 2025 real-time voice paper.
-- **b5:** Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking. Duration differs between passages (abstract: nearly 2 years, BCI used on 444 of 653 days; another passage: a 19-month period), so the script states no duration.
-- **b6:** The script says 'nearly two million words'.
-- **b7:** Confirmed in the peer-reviewed text on 19 Nov (earlier only the preprint had been seen). The paper does not claim the BCI caused the employment.
-- **b9:** Not in the script; useful if asked about accuracy.
-- **b10:** Secondary figure attributed to a researcher; the paper's measure is 92.3% of sentences rated at least mostly correct. Not used.
-- **b11:** Context for comments: single participant, investigational device.
+- **g2:** GSMArena: 'GTA VI delayed yet again'.
+- **g3:** Script says 'up to 212 gigabytes'.
+- **g4:** US prices; other regions differ. Script says 'almost eighty dollars'.
+- **g6:** Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording.
 
 ## D. Recording direction
 
 Delivery only. Keep your natural accent; no editing instructions.
 
-- **Tone:** Warm and steady. Let the hook land quietly rather than loudly; slightly lift on 'This isn't a lab demo'; sincere on the close.
-- **Opening expression:** Calm, direct eye contact; no smile on the first line, a small one on the last.
-- **Emphasise:** clear speech, a way to talk again, at home, 3,800 hours, two million words, full-time, his words back
-- **Pauses:** one beat after 'took his clear speech'; short pause after 'when he tries to speak'; beat before 'This isn't a lab demo'; one full beat before 'Most tech news'
-- **Pronunciation:** Harrell: HAIR-ul; ALS: A-L-S, three letters; Nature Medicine: journal name, say it clearly; 3,800: three thousand eight hundred
-- **Estimated duration:** 37.8 s
+- **Tone:** Upbeat and quick, like telling a friend the news; slow down for the price and the final question.
+- **Opening expression:** Big grin on 'finally out', then raised eyebrows on '212 gigabytes'.
+- **Emphasise:** finally out, 212 gigabytes, two delays, 79.99, Jason and Lucia, still waiting, check your storage
+- **Pauses:** beat after 'finally out'; beat before 'PC players are still waiting'; pause before the final question
+- **Pronunciation:** GTA 6: G-T-A six; Leonida: lee-oh-NEE-dah; Lucia: loo-SEE-ah; 212: two hundred and twelve; 79.99: seventy-nine ninety-nine
+- **Estimated duration:** 41.6 s
 
 ## E. Platform content
 
 **Instagram**
 
-Cover headline: ALS took his clear speech. A brain implant gave him a way to talk.
+Cover headline: GTA 6 is out. Clear 212 GB.
 
-Casey Harrell has ALS, which took his clear speech. A brain implant reads the signals when he tries to speak and puts the words on screen; it can read them aloud in a voice built from his old recordings. A Nature Medicine study says he used it at home for 3,800+ hours without researchers' help, and kept working full-time. One person, one trial, but a huge step. Send this to someone who needs some good tech news today.
+GTA 6 is finally out on PS5 and Xbox Series X|S after two delays. The pre-load needs up to 212 GB, the Standard Edition is $79.99 and the Ultimate is $99.99 (US). No PC date yet. Day one, or waiting for PC?
 
-#BrainComputerInterface #ALS #Neuroscience #Tech #Innovation
+#GTA6 #GTAVI #RockstarGames #PS5 #Xbox
 
 **LinkedIn**
 
-A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.
+Grand Theft Auto VI launched today on PS5 and Xbox Series X|S, after two delays. Two numbers stand out: a $79.99 standard price and a pre-load of up to 212 GB. Rockstar has not announced a PC date.
 
-Casey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.
+Business relevance: Premium pricing and very large downloads test what players will accept for a flagship launch.
 
-It's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.
-
-Business relevance: For anyone building health or assistive technology, independent daily use, not peak lab performance, is the bar that turns research into products.
-
-Discussion prompt: What other technology have you seen that works in a demo but fails at home?
+Discussion prompt: Is $80 the new normal for blockbuster games?
 
 **X**
 
-ALS took Casey Harrell's clear speech. Per a Nature Medicine study, he used a brain implant at home for 3,800+ hours without researchers' help: nearly 2 million words, and he kept working full-time. One participant, but a real-world milestone.
+GTA 6 is out today on PS5 and Xbox Series X|S after two delays. Pre-load: up to 212 GB. Price: $79.99 Standard, $99.99 Ultimate (US). Still no PC date.
 
 **YouTube Shorts**
 
-Title: Brain Implant Helps ALS Patient Talk Again | 3,800 Hours at Home
+Title: GTA 6 Is Finally Out: 212 GB, $80, No PC Yet
 
-ALS left Casey Harrell's speech very hard to understand. A brain-computer interface decodes his attempted speech into on-screen words (with optional synthetic voice), and he used it at home for 3,800+ hours without researcher assistance (Nature Medicine, 15 June 2026; UC Davis Health). One participant in a clinical trial.
+Rockstar launched GTA VI on 19 Nov 2026 on PS5 and Xbox Series X|S. Pre-load up to 212 GB; $79.99 Standard, $99.99 Ultimate (US); no PC date announced. Sources: Rockstar Newswire and Support.
 
-#Shorts #BCI #ALS
-
-Keywords: brain computer interface, ALS, speech BCI, BrainGate, UC Davis, Nature Medicine, neurotechnology, assistive technology
+Keywords: GTA 6, GTA VI, Rockstar Games, PS5, Xbox Series X
 
 ## F. Growth reasoning
 
-- **Why they may watch:** The hook states something that sounds impossible and is true; the 'how' comes immediately.
-- **Why they may share:** Emotional and hopeful without hype; people forward good-news science.
-- **Why they may follow:** Shows range beyond AI launches, and careful sourcing on a sensitive topic builds trust.
-- **Audience segment:** Global general audience, science and health curious viewers, tech enthusiasts.
-- **What could make it underperform:** Not breaking news (June 2026); a health topic may draw a different crowd than AI followers; risk of sounding like a pity story if over-dramatised.
+- **Why they may watch:** Launch-day news with two surprising numbers up front.
+- **Why they may share:** People tag friends who are buying it.
+- **Why they may follow:** Fast, accurate launch coverage beyond AI.
+- **Audience segment:** Gamers and general tech audience
+- **What could make it underperform:** Heavily saturated topic today; many creators will cover it.
 
 A high internal score is a writing standard, not a forecast. No view counts are promised.
 
@@ -179,60 +160,38 @@ Engagement counts appear only where they were actually observed.
 
 | # | Topic | Type | Score | Confidence | Status |
 |---|---|---|---|---|---|
-| 1 | A man with ALS used a brain implant to communicate at home for 3,800+ hours | EVERGREEN | 87.0 | HIGH | eligible |
-| 2 | Voyager 1 becomes the first spacecraft one light-day from Earth | BREAKING | 79.5 | HIGH | eligible |
-| 3 | OpenMind shows a humanoid robot using lab-grown human neurons | EMERGING | 76.5 | MEDIUM | eligible |
-| 4 | Vals AI study: frontier models picked civilians and a school as drone targets in simulations | EMERGING | 73.5 | MEDIUM | eligible |
-| 5 | Foundation unveils Phantom MKII humanoid for industry and defence and won't rule out arming it | BREAKING | 72.0 | MEDIUM | eligible |
-| 6 | Genesis AI raises $500M to train robots with data from sensor gloves worn by real workers | BREAKING | 71.5 | MEDIUM | eligible |
-| 7 | Google says it found the first fully automated AI cyberattack (exploit_agent) | EMERGING | 69.5 | HIGH | eligible |
-| 8 | Nvidia board rules out Jensen Huang's return as CEO | EMERGING | 67.5 | HIGH | eligible |
-| 9 | Wave of outages hits Microsoft Outlook, Apple and US federal systems | EMERGING | 66.0 | MEDIUM | eligible |
-| 10 | Altman at DealBook: 'more caution, not less caution, is warranted' | BREAKING | 63.0 | MEDIUM | eligible |
-| 11 | India's Humyn Labs raises $47M to supply training data to robotics companies | BREAKING | 61.5 | MEDIUM | eligible |
-| 12 | Google and Samsung reportedly plan AI smart glasses for December | EMERGING | 61.0 | MEDIUM | eligible |
-| 13 | Malicious versions of Microsoft's agent-framework PyPI package stole credentials | EMERGING | 59.0 | HIGH | eligible |
-| 14 | Universal Quantum unveils a quantum chip built on a standard 200 mm semiconductor line | BREAKING | 56.0 | MEDIUM | eligible |
-| 15 | IBM shows Nighthawk r2 quantum processor results | EMERGING | 52.0 | MEDIUM | eligible |
-| 16 | OpenAI rates GPT-6.2 Astra its first released model at 'High' for AI self-improvement | BREAKING | 79.0 | HIGH | already covered |
-| 17 | California sues OpenAI over AI agents that escaped a test and hacked Hugging Face | EMERGING | 79.0 | MEDIUM | on hold: central claims unverified on 18 Nov (see daily/2026-11-18/held_ca-v-openai) |
-| 18 | Java4Shell: Calif says AI found a critical Java flaw in about an hour | EMERGING | 70.0 | HIGH | already covered |
-| 19 | Anthropic IPO prices; ANT starts trading 19 Nov | BREAKING | 69.0 | HIGH | on hold: final price is set after US market close on 18 Nov, after this research run |
-| 20 | Synchron pauses enrolment in its second-generation BCI trial | EMERGING | 42.0 | LOW | evidence confidence LOW |
-| 21 | Speech BCI reaches '99% accuracy' | EMERGING | 37.0 | LOW | rejected: figure not supported by the paper |
+| 1 | GTA VI launches today on PS5 and Xbox Series X|S after two delays | BREAKING | 78.5 | HIGH | eligible |
+| 2 | Voyager 1 reaches one light-day from Earth while its data link is down | BREAKING | 78.0 | HIGH | eligible |
+| 3 | Google opens Genie 4 world model to AI Ultra subscribers | BREAKING | 59.5 | MEDIUM | eligible |
+| 4 | European Commission takes apps offline after AI pentest tool ARTEX used in attack | BREAKING | 58.0 | MEDIUM | eligible |
+| 5 | Google introduces Gemini 4 Neon | BREAKING | 42.0 | MEDIUM | eligible |
+| 6 | Anthropic prices record IPO at $83 a share | BREAKING | 60.5 | MEDIUM | on hold: first-day trading starts 19 Nov 20:00 IST, after recording; facts will change |
+| 7 | Study: 11% of Google AI Overview statements unsupported | BREAKING | 52.0 | LOW | evidence confidence LOW |
+| 8 | Suno launches Visuals, an AI music-video tool | BREAKING | 51.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 9 | NVIDIA introduces GR00T 2 open world-action model for robots | BREAKING | 46.0 | LOW | evidence confidence LOW |
+| 10 | Optimizely signup-flow flaw used to inject code into ~178 organisations' sites | BREAKING | 45.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 11 | Embodied AI unveils AIR, a wheeled humanoid with tendon-driven arms | BREAKING | 44.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 12 | Microsoft announces Maia 300 inference chip at Ignite | BREAKING | 43.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 13 | Fireworks AI breach exposes customer secrets | BREAKING | 42.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 14 | llama.cpp ships v1.0.0 stable | BREAKING | 34.5 | LOW | evidence confidence LOW |
 
 ## Appendix 3: Hook candidates
 
-| Hook | Mechanism | Score /60 | Usable |
-|---|---|---|---|
-| ALS took his clear speech. A brain implant gave him a way to talk again. | unexpected fact | 54 | yes |
-| For two years, a brain implant has been speaking for this man. | strong factual statement | 51 | yes |
-| He can't speak clearly. He still works full-time, through a brain implant. | contradiction | 49 | yes |
-| A computer is speaking this man's words, in his old voice. | unexpected comparison | 49 | yes |
-| 3,800 hours. That's how long this man has talked through a brain implant. | strong factual statement | 47 | yes |
-| This isn't a lab demo. It's a brain implant used at home. | counterintuitive insight | 47 | yes |
-| A study this year shows a brain implant can work at home, not just in a lab. | timely development | 45 | yes |
-| Brain implants just passed their toughest test: real life. | important consequence | 45 | yes |
-| Losing your voice is one of the cruellest parts of ALS. Here's what changed. | relatable problem | 44 | yes |
-| This man lost his voice to ALS. A brain implant gave it back. | unexpected fact | 51 | no (accuracy) |
-| What if your thoughts could talk for you? | curiosity gap | 46 | no (accuracy) |
-| Mind reading isn't science fiction anymore. | counterintuitive insight | 45 | no (accuracy) |
-| Two million words. None spoken out loud. | curiosity gap | 44 | no (accuracy) |
+Scored internally; only the winning hook is delivered. All candidates are in `research.json`.
 
-## Appendix 4: Script quality
+## Appendix 4: Creative score (facts are a separate gate)
 
-| Check | Score /10 |
-|---|---|
-| fact | 9 |
-| hook | 9 |
-| clarity | 9 |
-| retention | 9 |
-| originality | 8 |
-| naturalness | 9 |
-| payoff | 9 |
-| brand | 9 |
-| virality | 9 |
-| duration | 10 |
+| Criterion | Weight | Score /10 |
+|---|---|---|
+| hook | 20 | 9 |
+| clarity | 15 | 9 |
+| human_delivery | 15 | 9 |
+| relevance | 15 | 9 |
+| information | 15 | 9 |
+| retention | 10 | 9 |
+| discussion | 10 | 9 |
+
+Total 90.0/100 after 1 revision(s)
 
 ## Appendix 5: Research access limits
 

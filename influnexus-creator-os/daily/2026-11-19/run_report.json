@@ -55,6 +55,48 @@
       "warnings": [
         "research path not exercised: the package was reused"
       ]
+    },
+    "2026-11-19-manual-174108": {
+      "run_id": "2026-11-19-manual-174108",
+      "trigger": "manual",
+      "start_ist": "2026-11-19T17:41:08+05:30",
+      "end_ist": "2026-11-19T17:42:22+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "cf2d3a7",
+      "research_window": {
+        "start_utc": "2026-11-18T12:11:08+00:00",
+        "end_utc": "2026-11-19T12:11:08+00:00",
+        "start_ist": "2026-11-18T17:41:08+05:30",
+        "end_ist": "2026-11-19T17:41:08+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply (no push)",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "creator-requested switch to GTA VI; previous ALS package archived",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
+      "candidates": 14,
+      "source_access": "Source access: 6 verified from search-index excerpts of the primary site; page NOT opened directly.",
+      "fact_check": "PASS",
+      "word_count": 99,
+      "estimated_seconds": 41.6,
+      "quality_gate": "PASS",
+      "quality_total": 90.0,
+      "validation_problems": []
     }
   }
 }
