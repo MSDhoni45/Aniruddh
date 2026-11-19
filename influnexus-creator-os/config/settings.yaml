@@ -12,6 +12,13 @@ script:
   words_per_minute: 150
   pause_allowance_seconds: 2.0
 
+# Packages with "scoring": "v3" (from 20 Nov 2026): 90-105 words, 40-45 seconds, 45 s hard maximum.
+# Older v1/v2 packages keep the limits above so historical packages still validate.
+script_v3:
+  target_seconds: [40, 45]
+  hard_max_seconds: 45
+  target_words: [90, 105]
+
 transcription:
   backend: auto            # auto | sherpa | faster_whisper
   whisper_model: sherpa-onnx-whisper-small

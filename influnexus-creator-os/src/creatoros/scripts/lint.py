@@ -63,8 +63,17 @@ def estimate_seconds(text: str) -> dict:
             "seconds": round(words / wpm * 60 + pauses, 1)}
 
 
-def check(text: str, language: str | None = None) -> dict:
-    sc = config.settings()["script"]
+def limits(scheme: str | None = None) -> dict:
+    """Length limits: script_v3 for v3 packages, the original script limits otherwise."""
+    st = config.settings()
+    sc = dict(st["script"])
+    if scheme == "v3" and "script_v3" in st:
+        sc.update(st["script_v3"])
+    return sc
+
+
+def check(text: str, language: str | None = None, scheme: str | None = None) -> dict:
+    sc = limits(scheme)
     est = estimate_seconds(text)
     low = re.sub(r"\s+", " ", text.lower()).strip()
     sents = script_sentences(text)
@@ -137,12 +146,13 @@ def check_hooks(hooks: list[dict], chosen: str) -> list[str]:
 QUALITY_CHECKS = ["fact", "hook", "clarity", "retention", "originality", "naturalness", "duration", "payoff", "brand", "virality"]
 
 
-def quality(scores: dict, text: str) -> dict:
+def quality(scores: dict, text: str, scheme: str | None = None) -> dict:
     """Script quality out of 100: ten checks scored 0-10. Duration is measured, not self-assessed.
     Approval needs 90+ overall and nothing below 7. A high score is a writing standard, not a forecast of views."""
     est = estimate_seconds(text)
-    lo, hi = config.settings()["script"]["target_seconds"]
-    hard = config.settings()["script"]["hard_max_seconds"]
+    sc = limits(scheme)
+    lo, hi = sc["target_seconds"]
+    hard = sc["hard_max_seconds"]
     s = dict(scores)
     s["duration"] = 10 if lo - 2 <= est["seconds"] <= hi + 2 else (7 if est["seconds"] <= hard else 0)
     missing = [k for k in QUALITY_CHECKS if not isinstance(s.get(k), (int, float))]

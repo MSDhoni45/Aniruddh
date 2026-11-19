@@ -16,11 +16,45 @@ REQUIRED = ["date", "language", "slug", "keys", "topic", "category", "topic_type
             "script", "hook", "hooks", "quality_scores", "recording", "instagram", "linkedin", "x", "youtube", "growth",
             "x_signals", "candidates", "factcheck", "access_limits"]
 MIN_CANDIDATES = 15
+MIN_CANDIDATES_V3 = 5              # v3: a shortlist of about 5-10 credible, verified candidates
 REQUIRED_V2 = ["visuals"]          # v2 packages (scoring "v2", from 19 Nov 2026) also need visual suggestions for the editor
+REQUIRED_V3 = ["visuals", "research_window", "generated_at"]   # v3 packages (from 20 Nov 2026)
+WINDOW_HOURS = 24
+V3_FROM = "2026-11-20"             # from this IST date every package must use the v3 rules
 
 
 def is_v2(p: dict) -> bool:
-    return p.get("scoring") == "v2"
+    """v2 rules (claim table, visuals, hook reuse) also apply to v3 packages."""
+    return p.get("scoring") in ("v2", "v3")
+
+
+def is_v3(p: dict) -> bool:
+    return p.get("scoring") == "v3"
+
+
+def research_window(run_start_utc: str) -> dict:
+    """The 24 hours ending at the run's start, in UTC and IST."""
+    import datetime as dt
+    end = dt.datetime.fromisoformat(run_start_utc.replace("Z", "+00:00")).astimezone(dt.timezone.utc)
+    start = end - dt.timedelta(hours=WINDOW_HOURS)
+    ist = dt.timezone(dt.timedelta(hours=5, minutes=30))
+    f = lambda d: d.isoformat(timespec="seconds")
+    return {"start_utc": f(start), "end_utc": f(end), "start_ist": f(start.astimezone(ist)), "end_ist": f(end.astimezone(ist)),
+            "hours": WINDOW_HOURS}
+
+
+def window_problems(w) -> list[str]:
+    import datetime as dt
+    if not isinstance(w, dict):
+        return ["research_window must be an object (use `creatoros runlog start`, which prints it)"]
+    try:
+        a = dt.datetime.fromisoformat(str(w["start_utc"]).replace("Z", "+00:00"))
+        b = dt.datetime.fromisoformat(str(w["end_utc"]).replace("Z", "+00:00"))
+    except (KeyError, ValueError):
+        return ["research_window needs ISO start_utc and end_utc"]
+    if abs((b - a).total_seconds() - WINDOW_HOURS * 3600) > 300:
+        return [f"research_window must span {WINDOW_HOURS} hours (it spans {(b - a).total_seconds() / 3600:.1f})"]
+    return []
 
 
 def _hook_tokens(t: str) -> set[str]:
@@ -45,21 +79,33 @@ def _words(text: str) -> int:
 
 
 def validate(p: dict) -> tuple[list[str], dict]:
-    problems = [f"missing: {k}" for k in REQUIRED + (REQUIRED_V2 if is_v2(p) else []) if k not in p]
+    if str(p.get("date", "")) >= V3_FROM and not is_v3(p):
+        return [f"packages dated {V3_FROM} or later must use \"scoring\": \"v3\" (RUNBOOK.md); this one is "
+                f"'{p.get('scoring', 'v1')}'"], {}
+    extra = REQUIRED_V3 if is_v3(p) else (REQUIRED_V2 if is_v2(p) else [])
+    problems = [f"missing: {k}" for k in REQUIRED + extra if k not in p]
     if problems:
         return problems, {}
+    scheme = "v3" if is_v3(p) else None
+    window = p.get("research_window") if is_v3(p) else None
+    if is_v3(p):
+        problems += window_problems(window)
+        for c in p["factcheck"]["claims"]:
+            if c.get("in_script") and not c.get("retrieved_at"):
+                problems.append(f"claim {c.get('id')}: v3 claims in the script need retrieved_at (when the source was read)")
     if is_v2(p):
         if not p["visuals"] or not all(isinstance(v, str) and v.strip() for v in p["visuals"]):
             problems.append("visuals: list at least one B-roll or graphic suggestion for the editor")
-        if any(candmod.scheme(c) != "v2" for c in p["candidates"]):
-            problems.append("a v2 package must score every candidate with the v2 criteria")
+        want = "v3" if is_v3(p) else "v2"
+        if any(candmod.scheme(c) != want for c in p["candidates"]):
+            problems.append(f"a {want} package must score every candidate with the {want} criteria")
         old = reused_hook(p["hook"], p["slug"])
         if old:
             problems.append(f"hook too similar to the hook used on {old['date']} ('{old['hook']}')")
     language = config.settings().get("language", "english")
     if p["language"] != language:
         problems.append(f"package language is '{p['language']}' but the configured default is '{language}'")
-    chk = lint.check(p["script"], p["language"])
+    chk = lint.check(p["script"], p["language"], scheme)
     problems += [f"script: {x}" for x in chk["problems"]]
     copy_fields = {"instagram caption": p["instagram"].get("caption", ""), "instagram cover": p["instagram"].get("cover_headline", ""),
                    "linkedin": " ".join(str(p["linkedin"].get(k, "")) for k in ("caption", "business_relevance", "discussion_prompt")),
@@ -72,13 +118,13 @@ def validate(p: dict) -> tuple[list[str], dict]:
     if not p["script"].strip().startswith(p["hook"].strip()):
         problems.append("script must open with the chosen hook")
     problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"])]
-    q = lint.quality(p["quality_scores"], p["script"])
+    q = lint.quality(p["quality_scores"], p["script"], scheme)
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
     ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), v2=is_v2(p))
     problems += [f"claim table: {x}" for x in ready["problems"]]
     problems += ver.story_confidence_ok(p["evidence_confidence"], p["factcheck"]["claims"])
-    ranked = candmod.rank(p["candidates"])
+    ranked = candmod.rank(p["candidates"], window)
     for c in ranked:
         problems += [f"candidate '{c.get('headline', '?')[:40]}': {x}" for x in c["problems"]]
     eligible = [c for c in ranked if c["eligible"]]
@@ -87,8 +133,9 @@ def validate(p: dict) -> tuple[list[str], dict]:
     elif eligible[0]["headline"] != p["topic"]:
         problems.append(f"topic must be the top eligible candidate ('{eligible[0]['headline']}')")
     credible = [c for c in ranked if not c.get("rejected") and c.get("evidence_confidence") != "LOW"]
-    if len(credible) < MIN_CANDIDATES and not p.get("candidate_shortfall_reason"):
-        problems.append(f"{len(credible)} credible candidates; find {MIN_CANDIDATES} or explain in candidate_shortfall_reason")
+    need = MIN_CANDIDATES_V3 if is_v3(p) else MIN_CANDIDATES
+    if len(credible) < need and not p.get("candidate_shortfall_reason"):
+        problems.append(f"{len(credible)} credible candidates; find {need} or explain in candidate_shortfall_reason")
     n = _words(p["research_summary"])
     if not 100 <= n <= 150:
         problems.append(f"research summary is {n} words; keep it to 100-150")

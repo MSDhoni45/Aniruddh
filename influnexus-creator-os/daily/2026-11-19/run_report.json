@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-19",
+  "note": "Reconstructed on 2026-11-19 12:50 IST from logs/runs.jsonl, the scheduler's run record and the scheduled session's transcript. Runs before 20 Nov had no run_id; these IDs are assigned retrospectively.",
+  "runs": {
+    "2026-11-19-manual-001917": {
+      "trigger": "manual",
+      "start_ist": "2026-11-19T00:19:17+05:30",
+      "end_ist": "2026-11-19T00:25:57+05:30",
+      "status": "READY",
+      "research": "full research run (21 candidates, v2 scoring)",
+      "delivery": {
+        "status": "in-conversation reply",
+        "channel": "session reply",
+        "receipt": "none available"
+      }
+    },
+    "2026-11-19-test-fire-005209": {
+      "trigger": "test-fire",
+      "scheduler_fired_ist": "2026-11-19T00:51:33+05:30",
+      "start_ist": "2026-11-19T00:52:09+05:30",
+      "end_ist": "2026-11-19T00:52:09+05:30",
+      "status": "READY",
+      "note": "manual test fire of the daily task; not a scheduled run"
+    },
+    "2026-11-19-scheduled-084216": {
+      "trigger": "scheduled",
+      "scheduler_fired_ist": "2026-11-19T08:41:57+05:30",
+      "scheduler_record": "ROUTINE_RUN_STATUS_SUCCEEDED (hand-off to the session)",
+      "start_ist": "2026-11-19T08:42:16+05:30",
+      "end_ist": "2026-11-19T08:42:31+05:30",
+      "reply_finished_ist": "2026-11-19T08:42:52+05:30",
+      "unattended": true,
+      "environment": {
+        "cloud": true,
+        "kind": "anthropic_cloud",
+        "session": "session_01D5do3PP3XJnXqwcV8hAYH8"
+      },
+      "git_commit_at_start": "80ff355",
+      "commit_pushed": "fdf478b at 08:42:31 IST",
+      "status": "READY",
+      "research": "not run: package already RECORDING READY; re-checked for corrections or retractions (one search, none found) and re-validated",
+      "selected_story": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
+      "source_access": "8 verified from search-index excerpts of the primary site; page NOT opened directly",
+      "word_count": 90,
+      "estimated_seconds": 37.8,
+      "quality_gate": "PASS",
+      "package_status": "VALID",
+      "deadline_0930": "MET (48 minutes early)",
+      "delivery": {
+        "status": "requested",
+        "channel": "push notification + session reply",
+        "receipt": "none available: the push tool reports 'requested' only"
+      },
+      "errors": [],
+      "warnings": [
+        "research path not exercised: the package was reused"
+      ]
+    }
+  }
+}
