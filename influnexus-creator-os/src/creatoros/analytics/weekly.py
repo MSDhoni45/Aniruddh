@@ -59,6 +59,30 @@ def build(end: str, db_path: Path | None = None, perf_path: Path | None = None) 
               f"{x['median_shares_per_1k']} | {x['median_saves_per_1k']} | {x['median_retention']} |" for x in groups] + [""]
     if not any_rows:
         L.append("No 7-day Instagram data yet: no pattern can be claimed. Recommendations must wait for real numbers.")
+    L += ["", "## This week's reels against the account's own median", ""]
+    by_id = {f"{x['date']}_{x['slug']}": x for x in items}
+    reels = [r for r in growth.reel_table(store.load(perf_path)) if r["video_id"] in by_id]
+    if not reels:
+        L.append("No reel metrics for this week: best/worst story, strongest hook and conversion leaders are UNKNOWN.")
+    else:
+        def pick(key, best=True):
+            have = [r for r in reels if r[key] is not None]
+            if not have:
+                return "UNKNOWN"
+            r = (max if best else min)(have, key=lambda r: r[key])
+            return f"{by_id[r['video_id']]['topic']} ({key.replace('_', ' ')} {r[key]})"
+        conv_key = "follower_conversion" if any(r["follower_conversion"] is not None for r in reels) else "views"
+        L += [f"- Best-performing story: {pick(conv_key)}", f"- Worst-performing story: {pick(conv_key, best=False)}",
+              f"- Highest follower conversion: {pick('follower_conversion')}", f"- Highest share rate: {pick('share_rate')}",
+              f"- Strongest hook (best retention): " + (lambda r: f"\"{by_id[r['video_id']].get('hook', '')}\" ({r['avg_retention']})" if r else "UNKNOWN")(
+                  max((r for r in reels if r["avg_retention"] is not None), key=lambda r: r["avg_retention"], default=None))]
+        weak = [by_id[r["video_id"]]["topic"] for r in reels
+                if sum(1 for k in ("share_rate", "save_rate", "follower_conversion") if (r.get(k + "_vs_median") or 9) < 0.8) >= 2]
+        L.append(f"- Below the account median on two or more rates: {', '.join(weak) or 'none'}")
+        if len(reels) < 3:
+            L.append("- Fewer than three reels with data: these are anecdotes, not findings.")
+    L += ["", "## Scoring changes", "", "Change the editorial weights only with evidence from several reels; record every change, "
+          "with the evidence, in `research/scoring_changes.md`."]
     L += ["", "## Notes for the reviewer", "",
           "- Do not change the strategy on one unusually good or bad video; groups under three videos are anecdotes.",
           "- Rank content by follows, shares and saves per 1,000 views before raw views.",

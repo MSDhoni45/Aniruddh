@@ -65,3 +65,4 @@ growth:
   target_followers: 100000
   days: 60
   start_date: "2026-11-20"
+  platform: instagram        # the target counts Instagram followers only; other platforms are reported separately

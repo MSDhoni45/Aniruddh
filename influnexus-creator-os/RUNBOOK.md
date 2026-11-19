@@ -40,6 +40,42 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
 - If `daily/DATE/today.md` already says RECORDING READY, do not research again: re-check time-sensitive claims, re-run
   `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
 
+## v4: the Instagram growth rubric (required from 2026-11-21; v3 or v4 accepted on 2026-11-20)
+Where this section differs from the v3 text below, this section wins. `"scoring": "v4"`.
+- **Goal:** 100,000 Instagram followers in 60 days (day 1 = 2026-11-20); one reel a day. A target, never a promise.
+- **Candidates:** collect at least 15 genuinely distinct stories when verified material exists (`candidate_shortfall_reason`
+  otherwise; never pad). Topics include AI breakthroughs, agents, robotics, consumer tech, cybersecurity, space, science,
+  AI filmmaking and video generation, creative tools, AI coding, controversies, launches, tech in everyday life. Do not default to
+  OpenAI or to any big company; pick what people genuinely care about.
+- **Scores (0-10 each, weighted):** social traction 20, novelty and surprise 15, real-world consequence 15, broad appeal 15,
+  visual 10, discussion 10, verified significance 10, freshness 5 (`social_traction, novelty, consequence, broad_appeal, visual,
+  discussion, verified_significance, freshness`). Social traction above 3 needs signals; above 6 needs engagement actually observed.
+  Without observed engagement the total is shown as PROVISIONAL: popularity measured is kept separate from predicted potential.
+- **Per candidate:** `published_at` (original announcement), `latest_development_at`, `original_source`, independent source in
+  `signals`, `confirmed_facts`, `company_claims`, `unverified_claims`, `x_signal`/`signals` (engagement evidence or UNKNOWN),
+  `why_it_matters` (why people care), `why_share`, `visual_note`, `evidence_confidence`.
+- **Selection:** prefer a surprising opening, relevance to ordinary people, consequences, visuals, verification, curiosity,
+  discussion and a useful takeaway. Avoid generic model announcements, minor updates, rumours, old news, over-technical stories,
+  sensational or recycled claims. Write `why_beats_alternatives`.
+- **Hooks:** at least 10 scored on accuracy, clarity, curiosity, surprise, relevance, natural (spoken delivery) and retention;
+  only the winner is delivered.
+- **Script:** 90-105 words, 40-45 s (45 hard): hook (0-2 s), what happened (2-10), surprising details (10-25), why it matters
+  (25-35), takeaway or question (35-45); natural rhythm wins over timestamps. No unsupported numbers.
+- **Creative score** (`creative_scores`, 0-10 each): hook 20, clarity 15, human delivery 15, relevance 15, information 15,
+  retention 10, discussion 10. Target 90. Below 90: revise and re-score (`revisions`, max 3); after the third, state
+  `quality_limitation` honestly. Facts are a separate hard gate: a material factual error fails the package whatever the score.
+  Score against these criteria; never nudge numbers to reach 90.
+- **Also in the package:** `posting_window` (`window_ist`, `rationale`, `basis` hypothesis until the account's own data shows a
+  better time, then observed with `evidence`) and `audience_hypothesis` (the expected response, to be checked against numbers).
+- **Morning deliverable** (`today.md`): winning story, why, top five ranked candidates (provisional where traction was not
+  measured), strongest verified social signal, fact-check, script, Instagram caption, 3-5 hashtags, posting window, audience
+  hypothesis, sources, confidence and limitations. Detailed research is in `package.md` and `research.json`.
+- **Budget:** existing tools only (web search, no paid APIs). Aim for at most about 40 searches per run; two attempts per
+  blocked domain; no retries beyond the RUNBOOK time budget.
+- **Learning:** after publishing, record reel numbers at 2h, 24h, 48h and 7d with `creatoros metrics-add` (no Instagram analytics
+  connection exists yet). Rates are per account reached: share rate, save rate, follower conversion, follows per 1k reach; each
+  reel is compared with the account's own median. Weights change only with evidence, logged in `research/scoring_changes.md`.
+
 ## Time budget (scheduled run, 08:41 start)
 research 09:03 · verification 09:13 · ranking and writing 09:20 · quality and package 09:23 · delivered by 09:25 · hard deadline 09:30.
 If a phase overruns, cut scope (fewer candidates, the strongest verified one) rather than miss the deadline. Never spend more than two

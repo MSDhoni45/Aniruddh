@@ -11,10 +11,10 @@ from .. import config
 FIELDS = ["date", "video_id", "platform", "checkpoint", "views", "reach", "watch_time_s", "avg_view_duration_s",
           "completion_rate", "shares", "saves", "comments", "likes", "profile_visits", "new_followers",
           "business_inquiries", "topic", "hook_type", "language", "format", "duration_s", "source", "collected_at",
-          "viewed_rate", "top_countries", "pillar"]
+          "viewed_rate", "top_countries", "pillar", "posted_at", "plays"]
 # viewed_rate: Instagram's "viewed vs swiped away" share (0-1). top_countries: as reported, e.g. "IN 41%; US 12%".
-NUMERIC = FIELDS[4:16] + ["duration_s", "viewed_rate"]
-CHECKPOINTS = ["24h", "72h", "7d"]
+NUMERIC = FIELDS[4:16] + ["duration_s", "viewed_rate", "plays"]
+CHECKPOINTS = ["2h", "24h", "48h", "72h", "7d"]
 CSV = "analytics/performance.csv"
 
 
@@ -62,6 +62,11 @@ def _f(r, k):
         return None
 
 
+def per_reach(r: dict, k: str):
+    reach, v = _f(r, "reach"), _f(r, k)
+    return round(v / reach, 5) if v is not None and reach else None
+
+
 def derive(r: dict) -> dict:
     views = _f(r, "views")
 
@@ -76,6 +81,11 @@ def derive(r: dict) -> dict:
             "likes_per_1k_views": per_k("likes"),
             "avg_retention": round(avd / dur, 3) if avd is not None and dur else None,
             "completion_rate": _f(r, "completion_rate"), "viewed_rate": _f(r, "viewed_rate"),
+            # Rates per account reached (consistent definitions; None when reach was not recorded).
+            "share_rate": per_reach(r, "shares"), "save_rate": per_reach(r, "saves"),
+            "follower_conversion": per_reach(r, "new_followers"),
+            "follows_per_1k_reach": round(1000 * per_reach(r, "new_followers"), 2) if per_reach(r, "new_followers") is not None else None,
+            "profile_visit_rate": per_reach(r, "profile_visits"),
             "top_countries": r.get("top_countries") or None}
 
 
@@ -101,7 +111,7 @@ def due_checkpoints(now_iso: str, published: list[dict], p: Path | None = None) 
     from datetime import datetime, timedelta
     now = datetime.fromisoformat(now_iso)
     have = {(r["video_id"], r["platform"], r["checkpoint"]) for r in load(p)}
-    hours = {"24h": 24, "72h": 72, "7d": 168}
+    hours = {"2h": 2, "24h": 24, "48h": 48, "72h": 72, "7d": 168}
     due = []
     for v in published:
         t0 = datetime.fromisoformat(v["published_at"])
