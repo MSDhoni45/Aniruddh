@@ -2,10 +2,11 @@
 from __future__ import annotations
 
 STATUSES = ["CONFIRMED", "COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED", "UNVERIFIED", "RUMOR",
-            "SPECULATION"]
+            "SPECULATION", "REPORTED", "SPECULATIVE"]
+# REPORTED = a claim made by credible reporting, said with attribution; SPECULATIVE is the creator's word for SPECULATION.
 # COMPANY CLAIM covers marketing claims; PREDICTION and OPINION must be attributed to the person who made them.
-NEEDS_ATTRIBUTION = {"COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED"}
-NOT_USABLE = {"UNVERIFIED", "RUMOR", "SPECULATION"}
+NEEDS_ATTRIBUTION = {"COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED", "REPORTED"}
+NOT_USABLE = {"UNVERIFIED", "RUMOR", "SPECULATION", "SPECULATIVE"}
 
 
 def validate(fc: dict, script_text: str | None = None) -> list[str]:

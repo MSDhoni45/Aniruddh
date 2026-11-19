@@ -31,6 +31,9 @@ from 2026-11-20. Always pass the `run_id` from `creatoros runlog start` to `crea
 | **Make it 30 seconds** | Cut to about 70-75 words, keep every attribution, re-run `creatoros package` (30 s is the floor; the validator warns that it is under the 40-45 s target). |
 | **Make it more natural** | Simpler conversational English, shorter sentences, no new claims. Re-run `creatoros package`. |
 | **Prepare for recording** | Return `creatoros recording` only: script and delivery notes. |
+| **Growth dashboard** | `creatoros growth`; show it as is (UNKNOWN stays UNKNOWN). |
+| **My followers are N on PLATFORM** | `creatoros followers-add --date TODAY --platform P --followers N --source "creator, <where>"`, then `creatoros growth`. |
+| **Here are my numbers for VIDEO** | `creatoros metrics-add ...` with only the numbers given (checkpoint 24h/72h/7d), then `creatoros growth`. |
 
 After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `logs/runs.jsonl` and push to the production branch.
 
@@ -45,3 +48,5 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
 - Never invent quotes, benchmarks, specs, prices, dates, URLs, engagement numbers, creator rankings or analytics. Unobserved = UNKNOWN.
 - If a source or platform cannot be opened, say so; never claim to have watched a video or opened a blocked page.
 - Viral potential scores are editorial judgements, not view predictions. Never promise growth.
+- Goal: 100,000 followers in 60 days from 2026-11-20 (an ambitious target, not a guarantee). Never fabricate engagement,
+  follower counts or analytics; label evidence DIRECTLY OBSERVED, SEARCH-INDEX, SECONDARY or NOT VERIFIED.
