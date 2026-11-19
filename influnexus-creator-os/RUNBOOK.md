@@ -41,8 +41,11 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
   `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
 
 ## Verification policy (permanent from 2026-11-21; tiered, risk-based)
-Each script claim records `risk` (`high` = launches, release dates, prices, availability, security incidents, financial claims,
-breaking news; `low` = established history and well-documented milestones) and an `evidence` list of sources
+Each script claim's risk is classified from its temporal meaning (`classify_risk` in `factcheck/evidence.py`): present or future
+context ("today", "out now", "next month", "will", "aaj"), a future date or a date within 90 days makes it `high` (time-sensitive);
+an explicit past date over a year old or "years ago", "back in", "originally" makes it `low` (historical); with no time cue,
+prices, launches, availability, security and finance default to `high`, other stable descriptions to `low`. An optional
+`event_date` sharpens it. A declared `risk` can raise the classification, never lower it. Each claim also has an `evidence` list of sources
 (`url`, `kind` primary/news/reference/blog/forum/user-edited, `access` opened/search-index/secondary, `date`, optional `outlet`,
 `syndicated_from`) plus `conflicts` when sources disagree. The level is computed (`creatoros/factcheck/evidence.py`), never declared:
 - **HIGH:** a primary source opened directly (or authenticated primary material).

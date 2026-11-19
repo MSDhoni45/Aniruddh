@@ -50,7 +50,8 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
   when no strong verified story exists in 24 hours (`window_expansion_reason`). Older stories need a dated new development.
 - X/Twitter signal is evidence only when observed; when x.com cannot be opened it is labelled NOT VERIFIED or PARTLY VERIFIED and metrics are UNKNOWN.
 - Verification (from 2026-11-21, tiered and risk-based; RUNBOOK "Verification policy"): each script claim has a risk and an
-  evidence list, and its level (HIGH, MEDIUM-HIGH, MEDIUM, LOW, UNVERIFIED) is computed from the sources. Time-sensitive claims
+  evidence list; its risk is classified from the claim's temporal meaning (a declared risk can only raise it) and its level
+  (HIGH, MEDIUM-HIGH, MEDIUM, LOW, UNVERIFIED) is computed from the sources. Time-sensitive claims
   (launches, prices, availability, security, finance, breaking news) need MEDIUM-HIGH plus a current report; historical claims need
   MEDIUM. Copies of one report count once; search excerpts never make HIGH. A failing story is put on HOLD (`creatoros hold`) and
   the next-ranked one is tried. Older packages keep their original rule (every central claim HIGH with a primary source).
