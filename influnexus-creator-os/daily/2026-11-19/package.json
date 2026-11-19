@@ -1,5 +1,5 @@
 {
-  "language": "english",
+  "language": "hinglish",
   "access_limits": [
     "nature.com, biorxiv.org, health.ucdavis.edu, x.com and all news sites cannot be opened from this cloud environment; primary sites' own indexed text was read through domain-restricted search.",
     "No X post about this story was checked; engagement is UNKNOWN.",
@@ -8,22 +8,22 @@
   ],
   "x_signals": [],
   "date": "2026-11-19",
-  "scoring": "v4",
+  "scoring": "v5",
   "slug": "gta-vi-launch",
   "keys": [
     "gta-vi-launch",
     "grand-theft-auto-vi"
   ],
   "topic": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
-  "category": "CONSUMER TECH",
+  "category": "GAMING",
   "topic_type": "BREAKING",
-  "announced_at": "2026-11-19 (launch); date set Nov 2025 (Rockstar Newswire)",
-  "generated_at": "2026-11-19T17:55:00+05:30",
+  "announced_at": "Launch 19 Nov 2026; launch date announced Nov 2025 (Rockstar Newswire)",
+  "generated_at": "2026-11-19T18:20:00+05:30",
   "research_window": {
-    "start_utc": "2026-11-18T12:11:08+00:00",
-    "end_utc": "2026-11-19T12:11:08+00:00",
-    "start_ist": "2026-11-18T17:41:08+05:30",
-    "end_ist": "2026-11-19T17:41:08+05:30",
+    "start_utc": "2026-11-18T12:16:51+00:00",
+    "end_utc": "2026-11-19T12:16:51+00:00",
+    "start_ist": "2026-11-18T17:46:51+05:30",
+    "end_ist": "2026-11-19T17:46:51+05:30",
     "hours": 24
   },
   "why_selected": "Creator's request; it is also the broadest-appeal verified story in today's window: launch day, primary sources plus independent reporting.",
@@ -77,142 +77,83 @@
     "Sales, reviews and server stability unknown."
   ],
   "context": "Rockstar first announced GTA VI in December 2023 for 2025, then delayed it twice.",
-  "script": "GTA 6 is finally out. And it needs up to 212 gigabytes.\n\nAfter two delays, Rockstar launched it today, November 19, on PlayStation 5 and Xbox Series X and S. Pre-loading opened on November 10, so you could download it early.\n\nThe standard edition costs 79.99 dollars. The Ultimate Edition is 99.99.\n\nYou're in Vice City, in a fictional state called Leonida, playing as Jason and Lucia.\n\nPC players are still waiting. Rockstar hasn't given a PC date yet.\n\nSo check your storage before you buy.\n\nWould you pay almost eighty dollars on day one, or wait for PC?",
-  "hook": "GTA 6 is finally out. And it needs up to 212 gigabytes.",
+  "script": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.\n\nDo baar delay hone ke baad, Rockstar ne aaj, 19 November ko, ise PlayStation 5 aur Xbox Series X aur S pe launch kiya.\n\nUS mein Standard Edition 79.99 dollars ki hai, aur Ultimate 99.99 ki.\n\nStory Vice City mein hai, Leonida naam ki ek fictional state mein, aur aap khelte ho Jason aur Lucia ban ke.\n\nLekin PC walon ko abhi wait karna padega. Rockstar ne PC date abhi tak announce nahi ki.\n\nToh pehle storage check karo, phir decide karo: day one pe loge, ya PC ka wait karoge?",
+  "hook": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.",
   "hooks": [
     {
-      "text": "GTA 6 is finally out. And it needs up to 212 gigabytes.",
+      "text": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.",
       "mechanism": "unexpected fact",
       "accuracy": 10,
-      "clarity": 9,
       "curiosity": 9,
-      "surprise": 9,
-      "relevance": 10,
-      "natural": 9,
-      "retention": 9
+      "clarity": 9,
+      "credibility": 10,
+      "emotional": 9,
+      "natural": 9
     },
     {
-      "text": "After two delays, GTA 6 is finally here.",
+      "text": "Do delays ke baad, GTA 6 aaj launch ho gaya.",
       "mechanism": "timely development",
       "accuracy": 10,
+      "curiosity": 6,
       "clarity": 10,
-      "curiosity": 7,
-      "surprise": 5,
-      "relevance": 10,
-      "natural": 10,
-      "retention": 7
+      "credibility": 10,
+      "emotional": 7,
+      "natural": 10
     },
     {
-      "text": "Clear 212 gigabytes. GTA 6 just dropped.",
+      "text": "Apne console mein 212 GB khaali karo, GTA 6 aa gaya.",
       "mechanism": "relatable problem",
       "accuracy": 9,
-      "clarity": 8,
       "curiosity": 8,
-      "surprise": 8,
-      "relevance": 9,
-      "natural": 8,
-      "retention": 8
-    },
-    {
-      "text": "GTA 6 costs almost eighty dollars. Here's what you get.",
-      "mechanism": "curiosity gap",
-      "accuracy": 9,
       "clarity": 9,
-      "curiosity": 8,
-      "surprise": 6,
-      "relevance": 9,
-      "natural": 9,
-      "retention": 8
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 8
     },
     {
-      "text": "The wait is over: GTA 6 launched today.",
-      "mechanism": "timely development",
-      "accuracy": 10,
-      "clarity": 10,
-      "curiosity": 6,
-      "surprise": 4,
-      "relevance": 10,
-      "natural": 9,
-      "retention": 6
-    },
-    {
-      "text": "Your console might not have room for GTA 6.",
-      "mechanism": "important consequence",
-      "accuracy": 8,
-      "clarity": 9,
-      "curiosity": 9,
-      "surprise": 8,
-      "relevance": 9,
-      "natural": 9,
-      "retention": 9
-    },
-    {
-      "text": "GTA 6 is out, but not on PC.",
+      "text": "GTA 6 aa gaya, lekin PC pe nahi.",
       "mechanism": "contradiction",
       "accuracy": 10,
-      "clarity": 9,
       "curiosity": 8,
-      "surprise": 7,
-      "relevance": 9,
-      "natural": 9,
-      "retention": 8
+      "clarity": 9,
+      "credibility": 10,
+      "emotional": 7,
+      "natural": 9
     },
     {
-      "text": "Twelve years after GTA 5, the sequel is here.",
-      "mechanism": "strong factual statement",
-      "accuracy": 3,
-      "clarity": 9,
-      "curiosity": 7,
-      "surprise": 7,
-      "relevance": 9,
-      "natural": 9,
-      "retention": 7
-    },
-    {
-      "text": "GTA 6 is bigger than most phones can store.",
-      "mechanism": "unexpected comparison",
-      "accuracy": 4,
-      "clarity": 9,
+      "text": "Lagbhag 80 dollars aur 212 GB: GTA 6 ki asli keemat.",
+      "mechanism": "curiosity gap",
+      "accuracy": 9,
       "curiosity": 8,
-      "surprise": 8,
-      "relevance": 9,
-      "natural": 8,
-      "retention": 8
-    },
-    {
-      "text": "Two delays later, Vice City is back.",
-      "mechanism": "counterintuitive insight",
-      "accuracy": 10,
-      "clarity": 9,
-      "curiosity": 7,
-      "surprise": 6,
-      "relevance": 9,
-      "natural": 9,
-      "retention": 7
+      "clarity": 7,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 7
     }
   ],
   "recording": {
-    "tone": "Upbeat and quick, like telling a friend the news; slow down for the price and the final question.",
-    "opening_expression": "Big grin on 'finally out', then raised eyebrows on '212 gigabytes'.",
+    "tone": "Excited but controlled, like telling a friend the news first.",
+    "pacing": "Quick through the facts; slow down on the price and the last question.",
+    "opening_expression": "Big grin on 'finally aa gaya'.",
     "emphasis": [
-      "finally out",
-      "212 gigabytes",
-      "two delays",
+      "finally",
+      "212 GB",
+      "do baar delay",
       "79.99",
-      "Jason and Lucia",
-      "still waiting",
-      "check your storage"
+      "Jason aur Lucia",
+      "PC walon ko",
+      "storage check"
     ],
     "pauses": [
-      "beat after 'finally out'",
-      "beat before 'PC players are still waiting'",
+      "beat after 'aa gaya hai'",
+      "beat before 'Lekin PC walon ko'",
       "pause before the final question"
     ],
     "pronunciation": [
       "GTA 6: G-T-A six",
       "Leonida: lee-oh-NEE-dah",
       "Lucia: loo-SEE-ah",
-      "212: two hundred and twelve",
+      "212 GB: two-twelve GB",
       "79.99: seventy-nine ninety-nine"
     ]
   },
@@ -221,14 +162,14 @@
     "Storage bar filling to 212 GB"
   ],
   "instagram": {
-    "cover_headline": "GTA 6 is out. Clear 212 GB.",
-    "caption": "GTA 6 is finally out on PS5 and Xbox Series X|S after two delays. The pre-load needs up to 212 GB, the Standard Edition is $79.99 and the Ultimate is $99.99 (US). No PC date yet. Day one, or waiting for PC?",
+    "cover_headline": "GTA 6 is here: 212 GB",
+    "caption": "GTA 6 finally out hai, PS5 aur Xbox Series X|S pe, do delays ke baad. Pre-load 212 GB tak, Standard $79.99 aur Ultimate $99.99 (US prices). PC ki date abhi nahi aayi. Day one ya wait?",
     "hashtags": [
       "#GTA6",
       "#GTAVI",
       "#RockstarGames",
       "#PS5",
-      "#Xbox"
+      "#Gaming"
     ]
   },
   "linkedin": {
@@ -260,10 +201,9 @@
   "candidates": [
     {
       "headline": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
-      "category": "CONSUMER TECH",
+      "category": "GAMING",
       "topic_type": "BREAKING",
       "published_at": "2026-11-19",
-      "latest_development_at": "2026-11-19",
       "original_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
       "main_claim": "Rockstar's Grand Theft Auto VI launches 19 Nov 2026 on PS5 and Xbox Series X|S after two delays; $79.99 Standard, $99.99 Ultimate; pre-load up to 212 GB from 10 Nov; no PC date announced.",
       "verification_status": "VERIFIED",
@@ -322,30 +262,16 @@
           }
         }
       ],
-      "confirmed_facts": [
-        "Launch 19 Nov 2026 on PS5 and Xbox Series X|S (Rockstar)",
-        "$79.99 Standard, $99.99 Ultimate (Rockstar Support; PlayStation Store via DotEsports)",
-        "Pre-load from 10 Nov, up to 212 GB (Rockstar; Forbes)",
-        "Set in Vice City, state of Leonida; Jason and Lucia (Rockstar)"
-      ],
-      "company_claims": [
-        "Delays were to add polish (Rockstar)"
-      ],
-      "unverified_claims": [
-        "Launch-day sales, review scores, server performance",
-        "PC release timing"
-      ],
-      "why_share": "Everyone knows someone waiting for this; price and file size are instantly relatable.",
-      "visual_note": "Official Rockstar launch trailer and launch gallery (credit Rockstar); storage-bar graphic for 212 GB",
       "scores": {
-        "social_traction": 6,
-        "novelty": 7,
-        "consequence": 6,
-        "broad_appeal": 10,
+        "public_discussion": 7,
+        "surprise": 7,
+        "significance": 6,
+        "usefulness": 8,
         "visual": 10,
-        "discussion": 9,
-        "verified_significance": 8,
-        "freshness": 10
+        "broad_appeal": 10,
+        "discussion_potential": 9,
+        "longevity": 6,
+        "verification_confidence": 9
       }
     },
     {
@@ -366,19 +292,19 @@
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "Independent outlets covering both the milestone and the data loss within the window: jubileecast.com (19 Nov), behindtheblack.com, newsofbahrain.com",
-          "EarthSky and NPR stations covered the crossing; AP coverage 14 Nov (pre-event)"
+          "Independent outlets covering both the milestone and the data loss within the window: jubileecast.com (19 Nov), behindtheblack.com, newsofbahrain.com"
         ]
       },
       "scores": {
-        "social_traction": 5,
-        "novelty": 9,
-        "consequence": 7,
-        "broad_appeal": 9,
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 7,
+        "usefulness": 6,
         "visual": 9,
-        "discussion": 8,
-        "verified_significance": 9,
-        "freshness": 9
+        "broad_appeal": 9,
+        "discussion_potential": 4,
+        "longevity": 4,
+        "verification_confidence": 5
       },
       "signals": [
         {
@@ -410,31 +336,8 @@
           "engagement": {
             "basis": "unknown"
           }
-        },
-        {
-          "platform": "news",
-          "url": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/",
-          "title": "Voyager 1: 1 light-day from Earth (EarthSky)",
-          "retrieved_at": "2026-11-19T11:05:00+00:00",
-          "access": "SECONDARY",
-          "engagement": {
-            "basis": "unknown"
-          }
         }
-      ],
-      "latest_development_at": "2026-11-19",
-      "confirmed_facts": [
-        "First spacecraft one light-day (25.9 billion km) from Earth (NASA)",
-        "No science/engineering data since 14 Nov; carrier still heard (NASA)"
-      ],
-      "company_claims": [
-        "NASA suspects the data-formatting onboard computer"
-      ],
-      "unverified_claims": [
-        "Exact crossing time 10:16 UTC on 18 Nov (EarthSky, NPR; not confirmed from a NASA page)"
-      ],
-      "why_share": "Awe plus a live mystery; easy to explain to a friend",
-      "visual_note": "NASA imagery, a 24-hour signal animation, the Canberra dish"
+      ]
     },
     {
       "headline": "Google opens Genie 4 world model to AI Ultra subscribers",
@@ -458,25 +361,16 @@
         ]
       },
       "scores": {
-        "social_traction": 4,
-        "novelty": 7,
-        "consequence": 5,
-        "broad_appeal": 6,
+        "public_discussion": 5,
+        "surprise": 7,
+        "significance": 6,
+        "usefulness": 6,
         "visual": 9,
-        "discussion": 6,
-        "verified_significance": 5,
-        "freshness": 9
-      },
-      "latest_development_at": "2026-11-18",
-      "confirmed_facts": [
-        "Genie 4 live in Project Genie for eligible US AI Ultra subscribers (Google)"
-      ],
-      "company_claims": [
-        "Real-time interactive world model; mid-session edits by text"
-      ],
-      "unverified_claims": [],
-      "why_share": "Visual novelty",
-      "visual_note": "Google's own demo clips (credit)"
+        "broad_appeal": 7,
+        "discussion_potential": 5,
+        "longevity": 5,
+        "verification_confidence": 3
+      }
     },
     {
       "headline": "Google introduces Gemini 4 Neon",
@@ -500,25 +394,16 @@
         ]
       },
       "scores": {
-        "social_traction": 3,
-        "novelty": 4,
-        "consequence": 5,
-        "broad_appeal": 4,
+        "public_discussion": 5,
+        "surprise": 4,
+        "significance": 6,
+        "usefulness": 6,
         "visual": 3,
-        "discussion": 4,
-        "verified_significance": 5,
-        "freshness": 9
-      },
-      "latest_development_at": "2026-11-18",
-      "confirmed_facts": [
-        "Gemini 4 Neon introduced 18 Nov (Google)"
-      ],
-      "company_claims": [
-        "Coding, knowledge work and science strengths"
-      ],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
+        "broad_appeal": 5,
+        "discussion_potential": 4,
+        "longevity": 4,
+        "verification_confidence": 3
+      }
     },
     {
       "headline": "Anthropic prices record IPO at $83 a share",
@@ -542,26 +427,17 @@
         ]
       },
       "scores": {
-        "social_traction": 5,
-        "novelty": 6,
-        "consequence": 7,
-        "broad_appeal": 6,
+        "public_discussion": 6,
+        "surprise": 6,
+        "significance": 7,
+        "usefulness": 4,
         "visual": 4,
-        "discussion": 8,
-        "verified_significance": 5,
-        "freshness": 10
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 4,
+        "verification_confidence": 3
       },
-      "hold_reason": "first-day trading starts 19 Nov 20:00 IST, after recording; facts will change",
-      "latest_development_at": "2026-11-18",
-      "confirmed_facts": [
-        "Priced at $83; ~$81.3B raised (CNN, Quartz)"
-      ],
-      "company_claims": [],
-      "unverified_claims": [
-        "First-day trading price"
-      ],
-      "why_share": "Record-breaking money story",
-      "visual_note": "x"
+      "hold_reason": "first-day trading starts 19 Nov 20:00 IST, after recording; facts will change"
     },
     {
       "headline": "Microsoft announces Maia 300 inference chip at Ignite",
@@ -583,23 +459,16 @@
         "discussion_evidence": []
       },
       "scores": {
-        "social_traction": 3,
-        "novelty": 5,
-        "consequence": 6,
-        "broad_appeal": 4,
+        "public_discussion": 3,
+        "surprise": 5,
+        "significance": 6,
+        "usefulness": 4,
         "visual": 4,
-        "discussion": 3,
-        "verified_significance": 5,
-        "freshness": 6
-      },
-      "latest_development_at": "2026-11-17",
-      "confirmed_facts": [],
-      "company_claims": [
-        "40% more tokens per megawatt (projection)"
-      ],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
+        "broad_appeal": 4,
+        "discussion_potential": 3,
+        "longevity": 5,
+        "verification_confidence": 3
+      }
     },
     {
       "headline": "NVIDIA introduces GR00T 2 open world-action model for robots",
@@ -621,281 +490,16 @@
         "discussion_evidence": []
       },
       "scores": {
-        "social_traction": 2,
-        "novelty": 6,
-        "consequence": 6,
-        "broad_appeal": 5,
+        "public_discussion": 3,
+        "surprise": 6,
+        "significance": 6,
+        "usefulness": 4,
         "visual": 8,
-        "discussion": 3,
-        "verified_significance": 3,
-        "freshness": 5
-      },
-      "latest_development_at": "2026-11-10",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [
-        "Announcement date"
-      ],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "European Commission takes apps offline after AI pentest tool ARTEX used in attack",
-      "category": "CONTROVERSY",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-19",
-      "original_source": "https://cyberpress.org/european-commission-cyberattack-artex-ai/",
-      "main_claim": "CERT-EU detected a campaign using the ARTEX AI framework; apps taken offline as a precaution; no confirmed exfiltration as of 19 Nov.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "Commission/CERT-EU statement not checked; secondary reporting only",
-      "evidence_confidence": "MEDIUM",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "cyberpress.org; AI attack trackers"
-        ]
-      },
-      "scores": {
-        "social_traction": 4,
-        "novelty": 7,
-        "consequence": 7,
-        "broad_appeal": 6,
-        "visual": 4,
-        "discussion": 7,
-        "verified_significance": 4,
-        "freshness": 10
-      },
-      "latest_development_at": "2026-11-19",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [
-        "Scope of the attack"
-      ],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "Suno launches Visuals, an AI music-video tool",
-      "category": "CREATOR TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-17",
-      "original_source": "https://www.billboard.com/pro/suno-moves-into-ai-filmmaking-with-visuals-product/",
-      "main_claim": "Suno Visuals went live on the web on 17 Nov; up to 15 s of video from prompts, music or images.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "x",
-      "evidence_confidence": "MEDIUM",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "social_traction": 3,
-        "novelty": 6,
-        "consequence": 4,
-        "broad_appeal": 6,
-        "visual": 8,
-        "discussion": 6,
-        "verified_significance": 4,
-        "freshness": 6
-      },
-      "latest_development_at": "2026-11-17",
-      "confirmed_facts": [],
-      "company_claims": [
-        "Built on a MiniMax model"
-      ],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "Optimizely signup-flow flaw used to inject code into ~178 organisations' sites",
-      "category": "CONTROVERSY",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-16",
-      "original_source": "https://www.agentbeam.com/blog/november-2026-attacks-timeline",
-      "main_claim": "Attacker abused a signup flaw to inject wallet-swapping and card-skimming code; Optimizely removed it.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "x",
-      "evidence_confidence": "MEDIUM",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "social_traction": 2,
-        "novelty": 6,
-        "consequence": 7,
         "broad_appeal": 5,
-        "visual": 3,
-        "discussion": 5,
-        "verified_significance": 4,
-        "freshness": 5
-      },
-      "latest_development_at": "2026-11-16",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "Embodied AI unveils AIR, a wheeled humanoid with tendon-driven arms",
-      "category": "FUTURE TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-16",
-      "original_source": "https://www.actuia.com/veille/2026-11-16/",
-      "main_claim": "Swiss startup Embodied AI unveiled AIR at Humanoid Europe 2026 in Munich.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "x",
-      "evidence_confidence": "MEDIUM",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "social_traction": 2,
-        "novelty": 6,
-        "consequence": 4,
-        "broad_appeal": 5,
-        "visual": 8,
-        "discussion": 4,
-        "verified_significance": 3,
-        "freshness": 5
-      },
-      "latest_development_at": "2026-11-16",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "Fireworks AI breach exposes customer secrets",
-      "category": "CONTROVERSY",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-12",
-      "original_source": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/",
-      "main_claim": "Fireworks AI disclosed a breach exposing customer secrets and datasets.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "x",
-      "evidence_confidence": "MEDIUM",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "social_traction": 3,
-        "novelty": 5,
-        "consequence": 7,
-        "broad_appeal": 4,
-        "visual": 2,
-        "discussion": 5,
-        "verified_significance": 4,
-        "freshness": 3
-      },
-      "latest_development_at": "2026-11-12",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "Study: 11% of Google AI Overview statements unsupported",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-16",
-      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-16",
-      "main_claim": "A study found unsupported claims in 11% of AI Overview statements.",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "Study itself not found; date unclear",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "social_traction": 3,
-        "novelty": 6,
-        "consequence": 7,
-        "broad_appeal": 8,
-        "visual": 3,
-        "discussion": 7,
-        "verified_significance": 2,
-        "freshness": 5
-      },
-      "latest_development_at": "2026-11-16",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
-    },
-    {
-      "headline": "llama.cpp ships v1.0.0 stable",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-16",
-      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-16",
-      "main_claim": "llama.cpp reached v1.0.0 with semantic versioning and 150+ architectures.",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "x",
-      "potential_hook": "x",
-      "target_audience": "Global general audience",
-      "uncertainty": "Release page not checked (github.com reachable but not opened in this test)",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "social_traction": 3,
-        "novelty": 5,
-        "consequence": 4,
-        "broad_appeal": 3,
-        "visual": 2,
-        "discussion": 4,
-        "verified_significance": 2,
-        "freshness": 5
-      },
-      "latest_development_at": "2026-11-16",
-      "confirmed_facts": [],
-      "company_claims": [],
-      "unverified_claims": [],
-      "why_share": "x",
-      "visual_note": "x"
+        "discussion_potential": 3,
+        "longevity": 5,
+        "verification_confidence": 2
+      }
     }
   ],
   "factcheck": {
@@ -1047,22 +651,25 @@
     "No social engagement observed; traction is provisional. Launch-day sales, reviews and server status unknown.",
     "The topic was chosen at the creator's request; it also scored highest of today's candidates."
   ],
-  "creative_scores": {
+  "revisions": 1,
+  "why_beats_alternatives": "The creator's chosen topic, and the broadest-appeal verified story in today's window: launch day, Rockstar's own pages plus independent reporting. Voyager 1 is the strongest science alternative and stays the first backup.",
+  "release_type": "launch",
+  "verified_development": "Rockstar's own pages: Grand Theft Auto VI launches 19 Nov 2026 on PS5 and Xbox Series X|S; independent outlets report it out today.",
+  "confidence": "HIGH",
+  "thumbnail_text": "GTA 6 is here: 212 GB",
+  "pinned_comment": "Day one pe loge ya PC ka wait karoge? Batao comments mein.",
+  "edit_beats": {
+    "0-3": "Official GTA VI key art (credit Rockstar), then a storage bar slamming to 212 GB",
+    "3-10": "Calendar graphic: two delays, then 19 Nov; PS5 and Xbox Series X|S logos",
+    "10-25": "Price cards $79.99 / $99.99 (US), then official Vice City / Leonida stills of Jason and Lucia from Rockstar's launch gallery",
+    "25-45": "'PC: no date yet' card, storage check graphic, end on the question as on-screen text"
+  },
+  "quality_v5": {
     "hook": 9,
     "clarity": 9,
-    "human_delivery": 9,
-    "relevance": 9,
-    "information": 9,
+    "storytelling": 9,
     "retention": 9,
-    "discussion": 9
-  },
-  "revisions": 1,
-  "why_beats_alternatives": "Broadest appeal of today's verified stories (launch day, primary sources, independent reporting); Voyager 1 is the strongest science alternative and stays as the first backup.",
-  "posting_window": {
-    "window_ist": "19:00-21:00",
-    "basis": "hypothesis",
-    "rationale": "Launch day: post today while interest peaks; no account data yet to pick a better slot."
-  },
-  "audience_hypothesis": "High comments on the day-one-or-wait question and shares among gamers; saturated topic, so reach depends on posting today.",
-  "candidate_shortfall_reason": "14 distinct candidates found; most social and news platforms are blocked here, and the search index carries little dated within 24 hours."
+    "shareability": 9,
+    "factual_confidence": 10
+  }
 }

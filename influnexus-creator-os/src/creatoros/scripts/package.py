@@ -33,7 +33,13 @@ EDITING_KEYS = ["opening_visual", "key_moments", "broll", "on_screen_text", "dem
 OPENING_WORDS, OPENING_DAYS = 3, 14
 WINDOW_HOURS = 24
 V3_FROM = "2026-11-20"             # from this IST date every package must use the v3 rules (v4 counts)
-V4_FROM = "2026-11-21"             # from this IST date every package must use v4 (the Instagram growth rubric)
+V4_FROM = "2026-11-21"             # (superseded by V5_FROM: from this date packages must be v5)
+V5_FROM = "2026-11-21"             # from this IST date every package must use v5 (Master Prompt V5)
+REQUIRED_V5 = ["verified_development", "confidence", "thumbnail_text", "pinned_comment", "edit_beats", "quality_v5",
+               "revisions", "why_beats_alternatives"]
+EDIT_BEATS = ["0-3", "3-10", "10-25", "25-45"]
+RELEASE_TYPES = ["original release", "re-release", "remaster", "remake", "fan-made modification", "rumor", "official announcement",
+                 "launch"]
 MIN_CANDIDATES_V4 = 15             # v4: 15 distinct verified candidates, or say why fewer (never pad)
 REQUIRED_V4 = ["why_beats_alternatives", "posting_window", "audience_hypothesis", "creative_scores", "revisions"]
 POSTING_BASIS = ["hypothesis", "observed"]
@@ -46,11 +52,41 @@ def is_v2(p: dict) -> bool:
 
 def is_v3(p: dict) -> bool:
     """v3 rules (window, signals, backups...) also apply to v4 packages."""
-    return p.get("scoring") in ("v3", "v4")
+    return p.get("scoring") in ("v3", "v4", "v5")
 
 
 def is_v4(p: dict) -> bool:
     return p.get("scoring") == "v4"
+
+
+def is_v5(p: dict) -> bool:
+    return p.get("scoring") == "v5"
+
+
+def hook_criteria_for(p: dict) -> list[str]:
+    return (lint.HOOK_CRITERIA_V5 if is_v5(p) else lint.HOOK_CRITERIA_V4 if is_v4(p) else lint.HOOK_CRITERIA_V3 if is_v3(p)
+            else lint.HOOK_CRITERIA)
+
+
+def v5_problems(p: dict) -> list[str]:
+    probs = []
+    for f in ("verified_development", "thumbnail_text", "pinned_comment", "why_beats_alternatives"):
+        if not str(p.get(f, "")).strip():
+            probs.append(f"{f} is empty")
+    if p.get("confidence") not in candmod.CONFIDENCE:
+        probs.append(f"confidence must be one of {candmod.CONFIDENCE}")
+    beats = p.get("edit_beats") if isinstance(p.get("edit_beats"), dict) else {}
+    missing = [b for b in EDIT_BEATS if not str(beats.get(b, "")).strip()]
+    if missing:
+        probs.append(f"edit_beats: missing {missing} (editing directions per beat)")
+    if len(str(p.get("thumbnail_text", "")).split()) > 6:
+        probs.append("thumbnail_text: keep it to six words or fewer")
+    if p.get("category") == "GAMING" and p.get("release_type") not in RELEASE_TYPES:
+        probs.append(f"gaming story: release_type must be one of {RELEASE_TYPES} (never call a re-release or rumour a launch)")
+    w = p.get("research_window") or {}
+    if w.get("hours", 24) > 24 and not str(p.get("window_expansion_reason", "")).strip():
+        probs.append("research window beyond 24 hours needs window_expansion_reason (no strong verified story in 24 hours)")
+    return probs
 
 
 def v4_problems(p: dict) -> list[str]:
@@ -143,7 +179,7 @@ def v3_problems(p: dict, ranked: list[dict]) -> list[str]:
     return problems
 
 
-def window_problems(w) -> list[str]:
+def window_problems(w, allowed_hours: tuple = (WINDOW_HOURS,)) -> list[str]:
     import datetime as dt
     if not isinstance(w, dict):
         return ["research_window must be an object (use `creatoros runlog start`, which prints it)"]
@@ -152,8 +188,8 @@ def window_problems(w) -> list[str]:
         b = dt.datetime.fromisoformat(str(w["end_utc"]).replace("Z", "+00:00"))
     except (KeyError, ValueError):
         return ["research_window needs ISO start_utc and end_utc"]
-    if abs((b - a).total_seconds() - WINDOW_HOURS * 3600) > 300:
-        return [f"research_window must span {WINDOW_HOURS} hours (it spans {(b - a).total_seconds() / 3600:.1f})"]
+    if not any(abs((b - a).total_seconds() - h * 3600) <= 300 for h in allowed_hours):
+        return [f"research_window must span {' or '.join(map(str, allowed_hours))} hours (it spans {(b - a).total_seconds() / 3600:.1f})"]
     return []
 
 
@@ -179,36 +215,38 @@ def _words(text: str) -> int:
 
 
 def validate(p: dict) -> tuple[list[str], dict]:
-    if str(p.get("date", "")) >= V4_FROM and not is_v4(p):
-        return [f"packages dated {V4_FROM} or later must use \"scoring\": \"v4\" (RUNBOOK.md); this one is "
+    if str(p.get("date", "")) >= V5_FROM and not is_v5(p):
+        return [f"packages dated {V5_FROM} or later must use \"scoring\": \"v5\" (RUNBOOK.md); this one is "
                 f"'{p.get('scoring', 'v1')}'"], {}
     if str(p.get("date", "")) >= V3_FROM and not is_v3(p):
         return [f"packages dated {V3_FROM} or later must use \"scoring\": \"v3\" (RUNBOOK.md); this one is "
                 f"'{p.get('scoring', 'v1')}'"], {}
-    extra = REQUIRED_V3 + (REQUIRED_V4 if is_v4(p) else []) if is_v3(p) else (REQUIRED_V2 if is_v2(p) else [])
-    base = [k for k in REQUIRED if not (is_v4(p) and k == "quality_scores")]
+    extra = REQUIRED_V3 + (REQUIRED_V4 if is_v4(p) else []) + (REQUIRED_V5 if is_v5(p) else []) if is_v3(p) else (REQUIRED_V2 if is_v2(p) else [])
+    base = [k for k in REQUIRED if not ((is_v4(p) or is_v5(p)) and k == "quality_scores")]
     problems = [f"missing: {k}" for k in base + extra if k not in p]
     if problems:
         return problems, {}
-    scheme = "v3" if is_v3(p) else None          # length limits: v3 and v4 share 90-105 words / 45 s
+    scheme = "v5" if is_v5(p) else ("v3" if is_v3(p) else None)   # length: v5 85-105 words / 35-45 s; v3 and v4 90-105 / 40-45
     window = p.get("research_window") if is_v3(p) else None
     if is_v3(p):
-        problems += window_problems(window)
+        problems += window_problems(window, (24, 48, 72) if is_v5(p) else (WINDOW_HOURS,))
         for c in p["factcheck"]["claims"]:
             if c.get("in_script") and not c.get("retrieved_at"):
                 problems.append(f"claim {c.get('id')}: v3 claims in the script need retrieved_at (when the source was read)")
     if is_v2(p):
         if not p["visuals"] or not all(isinstance(v, str) and v.strip() for v in p["visuals"]):
             problems.append("visuals: list at least one B-roll or graphic suggestion for the editor")
-        want = "v4" if is_v4(p) else ("v3" if is_v3(p) else "v2")
+        want = "v4" if is_v4(p) else ("v3" if is_v3(p) else "v2")      # v5 packages score candidates with the v3 rubric
         if any(candmod.scheme(c) != want for c in p["candidates"]):
-            problems.append(f"a {want} package must score every candidate with the {want} criteria")
+            problems.append(f"a {p['scoring']} package must score every candidate with the {want} criteria")
         old = reused_hook(p["hook"], p["slug"])
         if old:
             problems.append(f"hook too similar to the hook used on {old['date']} ('{old['hook']}')")
-    language = config.settings().get("language", "english")
-    if p["language"] != language:
-        problems.append(f"package language is '{p['language']}' but the configured default is '{language}'")
+    allowed = config.settings().get("languages_allowed", ["english"])
+    if p["language"] not in allowed:
+        problems.append(f"package language is '{p['language']}'; allowed: {allowed}")
+    if is_v5(p) and p["language"] != config.settings().get("language", "english"):
+        problems.append(f"v5 packages use the configured language '{config.settings().get('language')}' (natural Hinglish, Roman script)")
     chk = lint.check(p["script"], p["language"], scheme)
     problems += [f"script: {x}" for x in chk["problems"]]
     copy_fields = {"instagram caption": p["instagram"].get("caption", ""), "instagram cover": p["instagram"].get("cover_headline", ""),
@@ -221,9 +259,17 @@ def validate(p: dict) -> tuple[list[str], dict]:
         problems.append(f"X post is {len(p['x']['post'])} characters; keep it within 280")
     if not p["script"].strip().startswith(p["hook"].strip()):
         problems.append("script must open with the chosen hook")
-    hook_criteria = lint.HOOK_CRITERIA_V4 if is_v4(p) else (lint.HOOK_CRITERIA_V3 if is_v3(p) else None)
-    problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"], hook_criteria)]
-    if is_v4(p):
+    if is_v5(p):
+        problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"], lint.HOOK_CRITERIA_V5,
+                                                             lint.MIN_HOOKS_V5, min_mechanisms=3)]
+    else:
+        hook_criteria = lint.HOOK_CRITERIA_V4 if is_v4(p) else (lint.HOOK_CRITERIA_V3 if is_v3(p) else None)
+        problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"], hook_criteria)]
+    if is_v5(p):
+        cr = lint.quality_v5(p["quality_v5"], p["revisions"], p.get("quality_limitation", ""))
+        q = {**cr, "scores": dict(p["quality_v5"])}
+        problems += v5_problems(p)
+    elif is_v4(p):
         cr = lint.creative(p["creative_scores"], p["revisions"], p.get("quality_limitation", ""))
         q = {**cr, "scores": dict(p["creative_scores"])}
         problems += v4_problems(p)
@@ -328,8 +374,46 @@ _WEAK_END = {"a", "an", "the", "its", "it's", "of", "to", "for", "and", "but", "
              "his", "her", "my", "your", "our", "is", "are", "was", "be", "it"}
 
 
+def render_today_v5(p: dict, info: dict) -> str:
+    """Master Prompt V5 format: A-G, script near the top, ready for a teleprompter."""
+    from ..factcheck.verification import access_summary
+    chk, rd, r, ig, yt = info["lint"], info["ready"], p["recording"], p["instagram"], p["youtube"]
+    claims = [c for c in p["factcheck"]["claims"] if c.get("in_script")]
+    q = info["quality"]
+    L = [f"# Today's reel: {p['date']}", "", f"**STATUS: {rd['status']}**", ""]
+    if rd["reasons"]:
+        L += ["Do not record. Unresolved:"] + [f"- {x}" for x in rd["reasons"]] + [""]
+    L += ["## A. TODAY'S SELECTED TOPIC", "", f"**Story title:** {p['topic']}", f"**Why selected:** {p['why_beats_alternatives']}",
+          f"**Verified development:** {p['verified_development']}", f"**Publication date:** {p['announced_at']}",
+          f"**Confidence:** {p['confidence']}" + (f" | **Release type:** {p['release_type']}" if p.get("release_type") else ""), "",
+          "## B. FINAL RECORDING SCRIPT", "", "```", p["script"].strip(), "```", "",
+          f"About {chk['seconds']} seconds ({chk['words']} words, {chk['pace_basis']}).", "",
+          "## C. RECORDING DIRECTIONS", "", f"- **Tone:** {r['tone']}", f"- **Pacing:** {r.get('pacing', r['opening_expression'])}",
+          f"- **Emphasis:** {', '.join(r['emphasis'])}", f"- **Pauses:** {'; '.join(r['pauses'])}",
+          f"- **Pronunciation:** {'; '.join(r['pronunciation'])}", "- Keep your natural accent.", "",
+          "## D. EDITING DIRECTIONS", ""] + [f"- **{b} s:** {p['edit_beats'][b]}" for b in EDIT_BEATS] + [
+          "- Use only footage you are licensed to use; label illustrations as illustrations.", "",
+          "## E. POSTING PACKAGE", "", f"**Instagram caption:** {ig['caption']}", "", f"**YouTube Shorts title:** {yt['title']}", "",
+          f"**Hashtags:** {' '.join(ig['hashtags'])}", "", f"**Thumbnail text:** {p['thumbnail_text']}", "",
+          f"**Pinned comment:** {p['pinned_comment']}", "", "## F. FACT-CHECK", "", f"*{access_summary(claims)}*"]
+    for c in claims:
+        L.append(f"- {c['text']} — [{c.get('source_title') or 'source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, "
+                 f"{c.get('source_date') or 'date unknown'}; supporting: {c.get('supporting_source') or 'none'})" + (f". Note: {c['note']}" if c.get("note") else ""))
+    if p.get("uncertainties"):
+        L += ["", "**Uncertain or left out:**"] + [f"- {u}" for u in p["uncertainties"]]
+    L += ["", "## G. INTERNAL QUALITY SCORE", ""] + [f"- {k.replace('_', ' ').capitalize()}: {v}/10" for k, v in q["scores"].items()]
+    L += [f"- **Total: {q['total']}/100** after {p['revisions']} revision(s). An editorial assessment, not a prediction of virality."]
+    if p.get("quality_limitation"):
+        L.append(f"- Limitation: {p['quality_limitation']}")
+    L += ["", f"**Backups (DIFFERENT TOPIC):** {'; '.join(p['backups'])}", "", f"**RUN STATUS:** {run_status_line(p['date'])}",
+          "", "Full research, candidates and the claim table: `package.md` and `research.json`."]
+    return "\n".join(L) + "\n"
+
+
 def render_today(p: dict, info: dict) -> str:
     """The daily deliverable, in the order the creator asked for. Concise; full detail stays in package.md."""
+    if is_v5(p):
+        return render_today_v5(p, info)
     chk, rd = info["lint"], info["ready"]
     win = next((c for c in info["ranked"] if c["eligible"] and c["headline"] == p["topic"]), None)
     score = f"{win['trend_score']}/100 (editorial score, not a view prediction)" if win else "n/a"
@@ -516,7 +600,7 @@ def save(p: dict, out: Path | None = None) -> dict:
             "candidates": [{k: c.get(k) for k in ("headline", "published_at", "original_source", "trend_score", "eligible",
                                                   "ineligible_reason", "scores", "x_signal", "signals", "verification_status",
                                                   "evidence_confidence", "new_development")} for c in info["ranked"]],
-            "hooks": lint.score_hooks(p["hooks"], lint.HOOK_CRITERIA_V4 if is_v4(p) else lint.HOOK_CRITERIA_V3), "backups": p["backups"],
+            "hooks": lint.score_hooks(p["hooks"], hook_criteria_for(p)), "backups": p["backups"],
             "limitations": p["limitations"], "source_audit": source_audit_for(p)})
     from ..research import memory
     memory.record(p, info["ranked"])

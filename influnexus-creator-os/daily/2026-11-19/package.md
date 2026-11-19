@@ -5,10 +5,10 @@
 ## A. Today's winning topic
 
 - **Topic:** GTA VI launches today on PS5 and Xbox Series X|S after two delays
-- **Language:** English
-- **Category:** CONSUMER TECH (BREAKING)
-- **Original announcement date:** 2026-11-19 (launch); date set Nov 2025 (Rockstar Newswire)
-- **Viral potential score:** 78.5/100
+- **Language:** Hinglish
+- **Category:** GAMING (BREAKING)
+- **Original announcement date:** Launch 19 Nov 2026; launch date announced Nov 2025 (Rockstar Newswire)
+- **Viral potential score:** 77.5/100
 - **Evidence confidence:** HIGH
 - **Why selected:** Creator's request; it is also the broadest-appeal verified story in today's window: launch day, primary sources plus independent reporting.
 
@@ -50,22 +50,20 @@ Rockstar first announced GTA VI in December 2023 for 2025, then delayed it twice
 ## C. Final recording script
 
 ```
-GTA 6 is finally out. And it needs up to 212 gigabytes.
+GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.
 
-After two delays, Rockstar launched it today, November 19, on PlayStation 5 and Xbox Series X and S. Pre-loading opened on November 10, so you could download it early.
+Do baar delay hone ke baad, Rockstar ne aaj, 19 November ko, ise PlayStation 5 aur Xbox Series X aur S pe launch kiya.
 
-The standard edition costs 79.99 dollars. The Ultimate Edition is 99.99.
+US mein Standard Edition 79.99 dollars ki hai, aur Ultimate 99.99 ki.
 
-You're in Vice City, in a fictional state called Leonida, playing as Jason and Lucia.
+Story Vice City mein hai, Leonida naam ki ek fictional state mein, aur aap khelte ho Jason aur Lucia ban ke.
 
-PC players are still waiting. Rockstar hasn't given a PC date yet.
+Lekin PC walon ko abhi wait karna padega. Rockstar ne PC date abhi tak announce nahi ki.
 
-So check your storage before you buy.
-
-Would you pay almost eighty dollars on day one, or wait for PC?
+Toh pehle storage check karo, phir decide karo: day one pe loge, ya PC ka wait karoge?
 ```
 
-99 words · about 41.6 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90.0/100
+104 words · about 42.8 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 91.5/100
 
 ## Claim verification table
 
@@ -100,22 +98,22 @@ Source access: 6 verified from search-index excerpts of the primary site; page N
 
 Delivery only. Keep your natural accent; no editing instructions.
 
-- **Tone:** Upbeat and quick, like telling a friend the news; slow down for the price and the final question.
-- **Opening expression:** Big grin on 'finally out', then raised eyebrows on '212 gigabytes'.
-- **Emphasise:** finally out, 212 gigabytes, two delays, 79.99, Jason and Lucia, still waiting, check your storage
-- **Pauses:** beat after 'finally out'; beat before 'PC players are still waiting'; pause before the final question
-- **Pronunciation:** GTA 6: G-T-A six; Leonida: lee-oh-NEE-dah; Lucia: loo-SEE-ah; 212: two hundred and twelve; 79.99: seventy-nine ninety-nine
-- **Estimated duration:** 41.6 s
+- **Tone:** Excited but controlled, like telling a friend the news first.
+- **Opening expression:** Big grin on 'finally aa gaya'.
+- **Emphasise:** finally, 212 GB, do baar delay, 79.99, Jason aur Lucia, PC walon ko, storage check
+- **Pauses:** beat after 'aa gaya hai'; beat before 'Lekin PC walon ko'; pause before the final question
+- **Pronunciation:** GTA 6: G-T-A six; Leonida: lee-oh-NEE-dah; Lucia: loo-SEE-ah; 212 GB: two-twelve GB; 79.99: seventy-nine ninety-nine
+- **Estimated duration:** 42.8 s
 
 ## E. Platform content
 
 **Instagram**
 
-Cover headline: GTA 6 is out. Clear 212 GB.
+Cover headline: GTA 6 is here: 212 GB
 
-GTA 6 is finally out on PS5 and Xbox Series X|S after two delays. The pre-load needs up to 212 GB, the Standard Edition is $79.99 and the Ultimate is $99.99 (US). No PC date yet. Day one, or waiting for PC?
+GTA 6 finally out hai, PS5 aur Xbox Series X|S pe, do delays ke baad. Pre-load 212 GB tak, Standard $79.99 aur Ultimate $99.99 (US prices). PC ki date abhi nahi aayi. Day one ya wait?
 
-#GTA6 #GTAVI #RockstarGames #PS5 #Xbox
+#GTA6 #GTAVI #RockstarGames #PS5 #Gaming
 
 **LinkedIn**
 
@@ -160,38 +158,25 @@ Engagement counts appear only where they were actually observed.
 
 | # | Topic | Type | Score | Confidence | Status |
 |---|---|---|---|---|---|
-| 1 | GTA VI launches today on PS5 and Xbox Series X|S after two delays | BREAKING | 78.5 | HIGH | eligible |
-| 2 | Voyager 1 reaches one light-day from Earth while its data link is down | BREAKING | 78.0 | HIGH | eligible |
-| 3 | Google opens Genie 4 world model to AI Ultra subscribers | BREAKING | 59.5 | MEDIUM | eligible |
-| 4 | European Commission takes apps offline after AI pentest tool ARTEX used in attack | BREAKING | 58.0 | MEDIUM | eligible |
-| 5 | Google introduces Gemini 4 Neon | BREAKING | 42.0 | MEDIUM | eligible |
-| 6 | Anthropic prices record IPO at $83 a share | BREAKING | 60.5 | MEDIUM | on hold: first-day trading starts 19 Nov 20:00 IST, after recording; facts will change |
-| 7 | Study: 11% of Google AI Overview statements unsupported | BREAKING | 52.0 | LOW | evidence confidence LOW |
-| 8 | Suno launches Visuals, an AI music-video tool | BREAKING | 51.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 9 | NVIDIA introduces GR00T 2 open world-action model for robots | BREAKING | 46.0 | LOW | evidence confidence LOW |
-| 10 | Optimizely signup-flow flaw used to inject code into ~178 organisations' sites | BREAKING | 45.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 11 | Embodied AI unveils AIR, a wheeled humanoid with tendon-driven arms | BREAKING | 44.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 12 | Microsoft announces Maia 300 inference chip at Ignite | BREAKING | 43.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 13 | Fireworks AI breach exposes customer secrets | BREAKING | 42.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 14 | llama.cpp ships v1.0.0 stable | BREAKING | 34.5 | LOW | evidence confidence LOW |
+| 1 | GTA VI launches today on PS5 and Xbox Series X|S after two delays | BREAKING | 77.5 | HIGH | eligible |
+| 2 | Voyager 1 reaches one light-day from Earth while its data link is down | BREAKING | 67.5 | HIGH | eligible |
+| 3 | Google opens Genie 4 world model to AI Ultra subscribers | BREAKING | 61.0 | MEDIUM | eligible |
+| 4 | Google introduces Gemini 4 Neon | BREAKING | 47.5 | MEDIUM | eligible |
+| 5 | Anthropic prices record IPO at $83 a share | BREAKING | 54.5 | MEDIUM | on hold: first-day trading starts 19 Nov 20:00 IST, after recording; facts will change |
+| 6 | NVIDIA introduces GR00T 2 open world-action model for robots | BREAKING | 48.0 | LOW | evidence confidence LOW |
+| 7 | Microsoft announces Maia 300 inference chip at Ignite | BREAKING | 42.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
 
 ## Appendix 3: Hook candidates
 
 Scored internally; only the winning hook is delivered. All candidates are in `research.json`.
 
-## Appendix 4: Creative score (facts are a separate gate)
+## Appendix 4: Script quality
 
-| Criterion | Weight | Score /10 |
-|---|---|---|
-| hook | 20 | 9 |
-| clarity | 15 | 9 |
-| human_delivery | 15 | 9 |
-| relevance | 15 | 9 |
-| information | 15 | 9 |
-| retention | 10 | 9 |
-| discussion | 10 | 9 |
-
-Total 90.0/100 after 1 revision(s)
+| Check | Score /10 |
+|---|---|
+| hook | 9 |
+| clarity | 9 |
+| retention | 9 |
 
 ## Appendix 5: Research access limits
 

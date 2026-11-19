@@ -85,7 +85,7 @@ def test_old_story_needs_a_dated_new_development_inside_the_window():
 
 
 def test_window_rule_does_not_touch_v2_candidates():
-    v2 = json.loads((ROOT / "daily/2026-11-19/package.json").read_text())["candidates"][0]
+    v2 = json.loads((ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json").read_text())["candidates"][0]
     assert candidates.window_reason(v2, WIN) is None
 
 
@@ -115,7 +115,7 @@ def test_historical_packages_still_validate(date):
 
 
 def test_v3_package_requires_window_and_retrieval_times():
-    p = json.loads((ROOT / "daily/2026-11-19/package.json").read_text())
+    p = json.loads((ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json").read_text())
     p["scoring"] = "v3"
     probs = package.validate(p)[0]
     assert "missing: research_window" in probs and "missing: generated_at" in probs and "missing: backups" in probs
@@ -189,7 +189,7 @@ def test_end_without_start_and_bad_delivery_are_errors(tmp_path):
 
 
 def test_run_report_summarises_a_real_package(tmp_path):
-    s = runs.summarise_package(ROOT / "daily/2026-11-19/package.json")
+    s = runs.summarise_package(ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json")
     assert s["package_status"] == "VALID" and s["readiness"] == "RECORDING READY" and s["fact_check"] == "PASS"
     assert s["word_count"] == 90 and s["quality_gate"] == "PASS"
     assert "search-index" in s["source_access"] and "NOT opened" in s["source_access"]
@@ -225,7 +225,7 @@ def _as_v3(p):
 
 def test_full_v3_package_end_to_end():
     """A complete v3 package validates; a 38 s script is penalised against the 40-45 s target, not rejected outright."""
-    p = _as_v3(json.loads((ROOT / "daily/2026-11-19/package.json").read_text()))
+    p = _as_v3(json.loads((ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json").read_text()))
     probs, info = package.validate(p)
     assert probs == ["quality: script quality 87/100 is below 90: revise the script"]
     assert info["quality"]["scores"]["duration"] == 7 and "40-45s target" in " ".join(info["lint"]["warnings"])
@@ -237,7 +237,7 @@ def test_full_v3_package_end_to_end():
 
 
 def test_new_dates_must_use_v3_and_old_dates_keep_their_scheme():
-    p = json.loads((ROOT / "daily/2026-11-19/package.json").read_text())
+    p = json.loads((ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json").read_text())
     p["date"] = "2026-11-20"
     assert "must use" in package.validate(p)[0][0]
     p["date"] = "2026-11-19"

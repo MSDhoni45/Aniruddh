@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def v3pkg():
-    return _as_v3(json.loads((ROOT / "daily/2026-11-19/package.json").read_text()))
+    return _as_v3(json.loads((ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json").read_text()))
 
 
 # --- source audit ----------------------------------------------------------------------------------------------------
@@ -317,14 +317,79 @@ def test_below_target_after_three_revisions_is_reported_not_hidden():
     assert probs == [] and "CREATIVE SCORE BELOW TARGET" in package.render_today(p, info)
 
 
-def test_scheme_dates_v3_or_v4_on_the_20th_and_v4_from_the_21st():
+def _as_v5(p):
+    """The real 19 Nov research package (v3 candidates) in the V5 format: Hinglish, 85-105 words, six-part quality score."""
+    p = copy.deepcopy(p)
+    p.update(scoring="v5", language="hinglish")
+    p.pop("quality_scores", None)
+    p["hooks"] = [{"text": h["text"], "mechanism": h["mechanism"], "accuracy": h["accuracy"], "curiosity": h["curiosity"],
+                   "clarity": h["clarity"], "credibility": h["accuracy"], "emotional": h["surprise"], "natural": h["natural"]}
+                  for h in p["hooks"][:6]]
+    p.update(verified_development="NASA: Voyager 1 one light-day from Earth; no science data since 14 Nov", confidence="HIGH",
+             thumbnail_text="1 message = 1 day", pinned_comment="How would you debug a computer 25.9 billion km away?",
+             edit_beats={"0-3": "NASA image + 24h timer", "3-10": "light-day graphic", "10-25": "data stops 14 Nov",
+                         "25-45": "two-day round trip; 1977 launch photo"},
+             quality_v5={"hook": 9, "clarity": 9, "storytelling": 9, "retention": 9, "shareability": 9, "factual_confidence": 10},
+             revisions=0, why_beats_alternatives="Only story with a primary source plus independent reporting in the window.")
+    return p
+
+
+def test_v5_package_validates_with_hinglish_and_the_six_part_score():
+    p = _as_v5(json.loads(FIX.read_text()))
+    probs, info = package.validate(p)
+    assert probs == [] and info["ready"]["status"] == "RECORDING READY"
+    assert info["quality"]["total"] == 91.5 and 85 <= info["lint"]["words"] <= 105 and info["lint"]["seconds"] <= 45
+    today = package.render_today(p, info)
+    heads = ["## A. TODAY'S SELECTED TOPIC", "## B. FINAL RECORDING SCRIPT", "## C. RECORDING DIRECTIONS", "## D. EDITING DIRECTIONS",
+             "## E. POSTING PACKAGE", "## F. FACT-CHECK", "## G. INTERNAL QUALITY SCORE"]
+    pos = [today.index(h) for h in heads]
+    assert pos == sorted(pos) and today.index(p["script"].splitlines()[0]) < today.index("## C.")
+    assert "Thumbnail text:" in today and "Pinned comment:" in today and "0-3 s:" in today
+
+
+@pytest.mark.parametrize("mod,expect", [
+    (lambda p: p.update(language="english"), "v5 packages use the configured language"),
+    (lambda p: p.update(script=p["script"] + " यह"), "Devanagari"),
+    (lambda p: p["quality_v5"].update(hook=5), "below 90"),
+    (lambda p: p["quality_v5"].update(factual_confidence=7), "factual confidence below 8"),
+    (lambda p: p["edit_beats"].pop("25-45"), "edit_beats: missing"),
+    (lambda p: p.update(thumbnail_text="far too many words for any thumbnail at all"), "six words"),
+    (lambda p: p.update(category="GAMING"), "release_type"),
+    (lambda p: p.update(hooks=p["hooks"][:4]), "at least 5"),
+    (lambda p: p.update(confidence="SURE"), "confidence must be"),
+])
+def test_v5_rule_breaks(mod, expect):
+    p = _as_v5(json.loads(FIX.read_text()))
+    mod(p)
+    assert any(expect in x for x in package.validate(p)[0]), package.validate(p)[0]
+
+
+def test_v5_window_may_expand_to_72_hours_only_with_a_reason():
+    import datetime as dt
+    p = _as_v5(json.loads(FIX.read_text()))
+    end = dt.datetime.fromisoformat(p["research_window"]["end_utc"])
+    p["research_window"] = {**p["research_window"], "start_utc": (end - dt.timedelta(hours=72)).isoformat(), "hours": 72}
+    assert any("window_expansion_reason" in x for x in package.validate(p)[0])
+    p["window_expansion_reason"] = "No verified story in the first 24 hours."
+    assert package.validate(p)[0] == []
+
+
+def test_scheme_dates_v3_v4_v5_on_the_20th_and_v5_from_the_21st():
     v3 = json.loads(FIX.read_text())
-    v4 = _as_v4(v3)
-    for d, p, ok in (("2026-11-20", v3, True), ("2026-11-20", v4, True), ("2026-11-21", v3, False), ("2026-11-21", v4, True)):
+    v4, v5 = _as_v4(v3), _as_v5(v3)
+    cases = [("2026-11-20", v3, True), ("2026-11-20", v4, True), ("2026-11-20", v5, True),
+             ("2026-11-21", v3, False), ("2026-11-21", v4, False), ("2026-11-21", v5, True)]
+    for d, p, ok in cases:
         q = copy.deepcopy(p)
         q["date"] = d
         first = package.validate(q)[0][:1]
         assert (not first or "must use" not in first[0]) == ok, (d, q["scoring"], first)
+
+
+def test_hinglish_reads_fine_for_hinglish_and_fails_for_english():
+    line = "Yeh dekho, GTA 6 finally aa gaya hai, aur download 212 GB ka hai."
+    assert lint.language_problems(line, "hinglish") == []
+    assert lint.language_problems(line, "english")
 
 
 def test_measured_traction_comes_only_from_observed_engagement():
@@ -345,3 +410,16 @@ def test_real_v4_package_from_the_afternoon_manual_test_validates():
     assert all(c["provisional"] for c in info["ranked"])                         # no engagement could be observed
     run = json.loads((d / "run_report.json").read_text())["runs"]["2026-11-19-manual-test-162657"]
     assert run["trigger"] == "manual-test" and run["delivery"]["status"] == "not attempted"
+
+
+def test_v5_package_saves_all_files(tmp_path, monkeypatch):
+    """Regression: saving a v5 package crashed while writing research.json (hook criteria)."""
+    from creatoros.research import content_db, memory
+    monkeypatch.setattr(content_db, "add", lambda *a, **k: {})
+    monkeypatch.setattr(content_db, "update", lambda *a, **k: {})
+    monkeypatch.setattr(memory, "record", lambda *a, **k: None)
+    p = _as_v5(json.loads(FIX.read_text()))
+    r = package.save(p, tmp_path)
+    assert r["ok"] and r["status"] == "RECORDING READY"
+    rj = json.loads((tmp_path / "research.json").read_text())
+    assert "credibility" in rj["hooks"][0] and "## B. FINAL RECORDING SCRIPT" in (tmp_path / "today.md").read_text()

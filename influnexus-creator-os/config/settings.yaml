@@ -1,7 +1,8 @@
 # Core settings. Paths are relative to the project root unless absolute.
 timezone: Asia/Kolkata
 daily_brief_time: "09:30"
-language: english        # all scripts and platform copy; global English-speaking audience
+language: hinglish       # v5 (from 2026-11-21): natural Hinglish in Roman script; older packages stay English
+languages_allowed: [english, hinglish]
 models_dir: ${CREATOROS_MODELS:-~/models}
 
 script:
@@ -14,6 +15,11 @@ script:
 
 # Packages with "scoring": "v3" (from 20 Nov 2026): 90-105 words, 40-45 seconds, 45 s hard maximum.
 # Older v1/v2 packages keep the limits above so historical packages still validate.
+script_v5:
+  target_seconds: [35, 45]
+  hard_max_seconds: 45
+  target_words: [85, 105]
+
 script_v3:
   target_seconds: [40, 45]
   hard_max_seconds: 45

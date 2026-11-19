@@ -97,6 +97,48 @@
       "quality_gate": "PASS",
       "quality_total": 90.0,
       "validation_problems": []
+    },
+    "2026-11-19-manual-174651": {
+      "run_id": "2026-11-19-manual-174651",
+      "trigger": "manual",
+      "start_ist": "2026-11-19T17:46:51+05:30",
+      "end_ist": "2026-11-19T17:47:29+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "57fa982",
+      "research_window": {
+        "start_utc": "2026-11-18T12:16:51+00:00",
+        "end_utc": "2026-11-19T12:16:51+00:00",
+        "start_ist": "2026-11-18T17:46:51+05:30",
+        "end_ist": "2026-11-19T17:46:51+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply (no push)",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "V5 Hinglish version of today's GTA VI reel; English v4 archived",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
+      "candidates": 7,
+      "source_access": "Source access: 6 verified from search-index excerpts of the primary site; page NOT opened directly.",
+      "fact_check": "PASS",
+      "word_count": 104,
+      "estimated_seconds": 42.8,
+      "quality_gate": "PASS",
+      "quality_total": 91.5,
+      "validation_problems": []
     }
   }
 }

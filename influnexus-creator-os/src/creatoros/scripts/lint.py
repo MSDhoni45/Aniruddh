@@ -31,7 +31,12 @@ HINGLISH_MARKERS = {"hai", "hain", "nahi", "nahin", "kya", "yeh", "woh", "aur", 
 def language_problems(text: str, language: str | None = None) -> list[str]:
     """The default language is English. Devanagari or repeated Hindi words in Latin script fail the check."""
     language = language or config.settings().get("language", "english")
-    if language != "english" or not text:
+    if not text:
+        return []
+    if language == "hinglish":
+        # Hinglish is written in Roman script so it reads straight off a teleprompter.
+        return ["contains Devanagari script; write Hinglish in Roman script"] if re.search(r"[\u0900-\u097f]", text) else []
+    if language != "english":
         return []
     if re.search(r"[\u0900-\u097f]", text):
         return ["contains Devanagari script; all copy must be in English"]
@@ -69,8 +74,8 @@ def limits(scheme: str | None = None) -> dict:
     """Length limits: script_v3 for v3 packages, the original script limits otherwise."""
     st = config.settings()
     sc = dict(st["script"])
-    if scheme == "v3" and "script_v3" in st:
-        sc.update(st["script_v3"])
+    if scheme in ("v3", "v5") and f"script_{scheme}" in st:
+        sc.update(st[f"script_{scheme}"])
     return sc
 
 
@@ -128,19 +133,20 @@ def score_hooks(hooks: list[dict], criteria: list[str] | None = None) -> list[di
     return sorted(out, key=lambda h: (h["eligible"], h["total"]), reverse=True)
 
 
-def check_hooks(hooks: list[dict], chosen: str, criteria: list[str] | None = None) -> list[str]:
+def check_hooks(hooks: list[dict], chosen: str, criteria: list[str] | None = None, min_hooks: int = MIN_HOOKS,
+                min_mechanisms: int = 5) -> list[str]:
     criteria = criteria or HOOK_CRITERIA
     problems = []
-    if len(hooks) < MIN_HOOKS:
-        problems.append(f"only {len(hooks)} hook candidates; generate at least {MIN_HOOKS}")
+    if len(hooks) < min_hooks:
+        problems.append(f"only {len(hooks)} hook candidates; generate at least {min_hooks}")
     for h in hooks:
         missing = [k for k in criteria if not isinstance(h.get(k), (int, float))]
         if missing:
             problems.append(f"hook '{h.get('text', '')[:30]}' lacks scores for {missing}")
         if h.get("mechanism") not in HOOK_MECHANISMS:
             problems.append(f"hook '{h.get('text', '')[:30]}' needs a mechanism from {HOOK_MECHANISMS}")
-    if len({h.get("mechanism") for h in hooks}) < 5:
-        problems.append("explore at least five different hook mechanisms")
+    if len({h.get("mechanism") for h in hooks}) < min_mechanisms:
+        problems.append(f"explore at least {min_mechanisms} different hook mechanisms")
     if problems:
         return problems
     best = score_hooks(hooks, criteria)[0]
@@ -192,3 +198,25 @@ def creative(scores: dict, revisions: int = 0, limitation: str = "") -> dict:
         problems.append(f"creative score {total}/100 is below {CREATIVE_TARGET}: revise (attempt {revisions} of {MAX_REVISIONS}), "
                         "or after the third revision state quality_limitation")
     return {"total": total, "approved": not problems, "below_target": below, "problems": problems}
+
+
+# v5 (Master Prompt V5): at least five hooks, judged on curiosity, clarity, credibility, emotional impact and natural delivery;
+# accuracy stays the disqualifying gate. Quality score: six criteria weighted to 100.
+HOOK_CRITERIA_V5 = ["accuracy", "curiosity", "clarity", "credibility", "emotional", "natural"]
+MIN_HOOKS_V5 = 5
+QUALITY_V5 = {"hook": 20, "clarity": 15, "storytelling": 20, "retention": 15, "shareability": 15, "factual_confidence": 15}
+
+
+def quality_v5(scores: dict, revisions: int = 0, limitation: str = "") -> dict:
+    """Editorial assessment, not a prediction of virality. Below 90: revise (max 3), then state the limitation."""
+    missing = [k for k in QUALITY_V5 if not isinstance(scores.get(k), (int, float)) or not 0 <= scores[k] <= 10]
+    total = round(sum(w * float(scores.get(k, 0)) / 10 for k, w in QUALITY_V5.items()), 1)
+    problems = [f"quality scores missing or out of 0-10: {missing}"] if missing else []
+    if not isinstance(revisions, int) or not 0 <= revisions <= MAX_REVISIONS:
+        problems.append(f"revisions must be 0-{MAX_REVISIONS}")
+    if isinstance(scores.get("factual_confidence"), (int, float)) and scores["factual_confidence"] < 8:
+        problems.append("factual confidence below 8/10: fix the facts before anything else")
+    if total < CREATIVE_TARGET and not (revisions == MAX_REVISIONS and limitation.strip()):
+        problems.append(f"quality score {total}/100 is below {CREATIVE_TARGET}: revise (attempt {revisions} of {MAX_REVISIONS}), "
+                        "or after the third revision state quality_limitation")
+    return {"total": total, "approved": not problems, "below_target": total < CREATIVE_TARGET, "problems": problems}

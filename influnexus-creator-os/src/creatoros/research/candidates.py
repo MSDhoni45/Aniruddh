@@ -26,7 +26,7 @@ REQUIRED = ["headline", "category", "topic_type", "announced_at", "original_sour
             "why_it_matters", "target_audience", "discussion_signals", "competing_coverage", "uncertainty", "novelty",
             "evidence_confidence", "already_covered", "scores", "secondary"]
 CATEGORIES = ["AI", "CONSUMER TECH", "FUTURE TECH", "AI BUSINESS & STARTUPS", "CREATOR TECH", "CONTROVERSY", "TECH COMPANIES",
-              "FOUNDERS & CEOS", "STARTUPS", "EMERGING TECH", "SCIENCE"]
+              "FOUNDERS & CEOS", "STARTUPS", "EMERGING TECH", "SCIENCE", "GAMING"]
 TOPIC_TYPES = ["BREAKING", "EMERGING", "EVERGREEN", "EXPERIMENTAL"]
 CONFIDENCE = ["HIGH", "MEDIUM", "LOW"]
 SECONDARY = ["shareability", "comment_potential", "follower_conversion", "saturation", "freshness", "brand_alignment"]

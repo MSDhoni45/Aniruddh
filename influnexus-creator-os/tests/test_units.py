@@ -182,7 +182,7 @@ def test_script_passes_and_bad_scripts_fail():
     assert not lint.check("Breaking news! " + english)["ok"]
     assert not lint.check(english + " " + english)["ok"], "a script over 40 seconds must be rejected"
     assert not lint.check(english + " What do you think?")["ok"]
-    assert not lint.check(SCRIPT)["ok"], "a Hinglish script fails while English is the default"
+    assert not lint.check(SCRIPT, "english")["ok"], "a Hinglish script fails an English package"
     assert lint.check(SCRIPT, language="hinglish")["ok"], "the language rule is configurable"
 
 
