@@ -37,6 +37,7 @@ V4_FROM = "2026-11-21"             # (superseded by V5_FROM: from this date pack
 V5_FROM = "2026-11-21"             # from this IST date every package must use v5 (Master Prompt V5)
 REQUIRED_V5 = ["verified_development", "confidence", "thumbnail_text", "pinned_comment", "edit_beats", "quality_v5",
                "revisions", "why_beats_alternatives"]
+TIERED_FROM = V5_FROM = "2026-11-21"   # the tiered, risk-based verification policy is mandatory from this date
 EDIT_BEATS = ["0-3", "3-10", "10-25", "25-45"]
 RELEASE_TYPES = ["original release", "re-release", "remaster", "remake", "fan-made modification", "rumor", "official announcement",
                  "launch"]
@@ -61,6 +62,18 @@ def is_v4(p: dict) -> bool:
 
 def is_v5(p: dict) -> bool:
     return p.get("scoring") == "v5"
+
+
+def is_tiered(p: dict) -> bool:
+    """Tiered verification: every v5 package from 2026-11-21, or an earlier v5 package that opts in."""
+    return is_v5(p) and (p.get("verification") == "tiered" or str(p.get("date", "")) >= TIERED_FROM)
+
+
+def holds_for(date: str) -> list[dict]:
+    """Stories already put on HOLD today (creatoros hold); they can never be selected again for this date."""
+    import json
+    f = config.path("daily", date, "holds.json")
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
 
 
 def hook_criteria_for(p: dict) -> list[str]:
@@ -277,9 +290,18 @@ def validate(p: dict) -> tuple[list[str], dict]:
         q = lint.quality(p["quality_scores"], p["script"], scheme)
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
-    ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), v2=is_v2(p))
+    if is_tiered(p):
+        ready = ver.readiness_v5(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), p["date"])
+    else:
+        ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), v2=is_v2(p))
     problems += [f"claim table: {x}" for x in ready["problems"]]
-    problems += ver.story_confidence_ok(p["evidence_confidence"], p["factcheck"]["claims"])
+    if not is_tiered(p):
+        problems += ver.story_confidence_ok(p["evidence_confidence"], p["factcheck"]["claims"])
+    held = {h["topic"]: h for h in holds_for(p["date"])}
+    for c in p["candidates"]:
+        if c.get("headline") in held and not c.get("hold_reason"):
+            problems.append(f"candidate '{c['headline'][:40]}' was put on HOLD today ({held[c['headline']]['reason']}); "
+                            "copy that into its hold_reason so the next-ranked story is chosen")
     ranked = candmod.rank(p["candidates"], window)
     if is_v3(p):
         problems += v3_problems(p, ranked)
@@ -288,6 +310,8 @@ def validate(p: dict) -> tuple[list[str], dict]:
     eligible = [c for c in ranked if c["eligible"]]
     if not eligible:
         problems.append("no eligible candidate")
+    elif p.get("creator_request") and any(c["headline"] == p["topic"] for c in eligible):
+        pass                                             # REEL SCRIPT: [TOPIC] - the creator chose the story
     elif eligible[0]["headline"] != p["topic"]:
         problems.append(f"topic must be the top eligible candidate ('{eligible[0]['headline']}')")
     credible = [c for c in ranked if not c.get("rejected") and c.get("evidence_confidence") != "LOW"]
@@ -396,9 +420,17 @@ def render_today_v5(p: dict, info: dict) -> str:
           "## E. POSTING PACKAGE", "", f"**Instagram caption:** {ig['caption']}", "", f"**YouTube Shorts title:** {yt['title']}", "",
           f"**Hashtags:** {' '.join(ig['hashtags'])}", "", f"**Thumbnail text:** {p['thumbnail_text']}", "",
           f"**Pinned comment:** {p['pinned_comment']}", "", "## F. FACT-CHECK", "", f"*{access_summary(claims)}*"]
-    for c in claims:
-        L.append(f"- {c['text']} — [{c.get('source_title') or 'source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, "
-                 f"{c.get('source_date') or 'date unknown'}; supporting: {c.get('supporting_source') or 'none'})" + (f". Note: {c['note']}" if c.get("note") else ""))
+    if ver.is_tiered(claims):
+        from ..factcheck import evidence as ev
+        for c in claims:
+            lv = ev.level(c)
+            srcs = ", ".join(f"[{ev.outlet(it)}]({it['url']})" for it in c.get("evidence") or [])
+            L.append(f"- {c['text']}: **{lv['level']}** ({c['risk']}-risk; {lv['why']}). {c['status']}. Sources: {srcs}"
+                     + (f". Note: {c['note']}" if c.get("note") else ""))
+    else:
+        for c in claims:
+            L.append(f"- {c['text']} — [{c.get('source_title') or 'source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, "
+                     f"{c.get('source_date') or 'date unknown'}; supporting: {c.get('supporting_source') or 'none'})" + (f". Note: {c['note']}" if c.get("note") else ""))
     if p.get("uncertainties"):
         L += ["", "**Uncertain or left out:**"] + [f"- {u}" for u in p["uncertainties"]]
     L += ["", "## G. INTERNAL QUALITY SCORE", ""] + [f"- {k.replace('_', ' ').capitalize()}: {v}/10" for k, v in q["scores"].items()]

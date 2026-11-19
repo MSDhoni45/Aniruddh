@@ -21,7 +21,10 @@ def validate(fc: dict, script_text: str | None = None) -> list[str]:
         if st not in STATUSES:
             problems.append(f"{cid}: status must be one of {STATUSES}")
             continue
-        evidence = list(c.get("evidence") or []) + [u for u in (c.get("primary_source"), c.get("supporting_source")) if u]
+        raw = list(c.get("evidence") or [])
+        # Evidence may be URLs (older packages) or source records with a "url" (tiered verification, v5).
+        evidence = [e.get("url", "") if isinstance(e, dict) else e for e in raw] + \
+                   [u for u in (c.get("primary_source"), c.get("supporting_source")) if u]
         if st not in NOT_USABLE and not evidence:
             problems.append(f"{cid}: {st} needs at least one evidence URL")
         if any(not str(u).startswith("http") for u in evidence):

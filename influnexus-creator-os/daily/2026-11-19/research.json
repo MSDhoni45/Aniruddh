@@ -1,85 +1,14 @@
 {
   "date": "2026-11-19",
-  "generated_at": "2026-11-19T18:20:00+05:30",
+  "generated_at": "2026-11-19T18:25:00+05:30",
   "research_window": {
-    "start_utc": "2026-11-18T12:16:51+00:00",
-    "end_utc": "2026-11-19T12:16:51+00:00",
-    "start_ist": "2026-11-18T17:46:51+05:30",
-    "end_ist": "2026-11-19T17:46:51+05:30",
+    "start_utc": "2026-11-18T12:45:59+00:00",
+    "end_utc": "2026-11-19T12:45:59+00:00",
+    "start_ist": "2026-11-18T18:15:59+05:30",
+    "end_ist": "2026-11-19T18:15:59+05:30",
     "hours": 24
   },
   "candidates": [
-    {
-      "headline": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
-      "published_at": "2026-11-19",
-      "original_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
-      "trend_score": 77.5,
-      "eligible": true,
-      "ineligible_reason": null,
-      "scores": {
-        "public_discussion": 7,
-        "surprise": 7,
-        "significance": 6,
-        "usefulness": 8,
-        "visual": 10,
-        "broad_appeal": 10,
-        "discussion_potential": 9,
-        "longevity": 6,
-        "verification_confidence": 9
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "Launch-day coverage by Yahoo Tech, Forbes (16 Nov), DotEsports, LADbible, PCWorld; x.com and Reddit could not be opened"
-        ]
-      },
-      "signals": [
-        {
-          "platform": "primary",
-          "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
-          "title": "Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)",
-          "retrieved_at": "2026-11-19T12:20:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        },
-        {
-          "platform": "primary",
-          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-          "title": "GTA VI Platforms, Editions, and Versions (Rockstar Support)",
-          "retrieved_at": "2026-11-19T12:20:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        },
-        {
-          "platform": "news",
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/",
-          "title": "'GTA VI' Release Date And Time On PS5 And Xbox Series X, Download Size (Forbes, 16 Nov)",
-          "retrieved_at": "2026-11-19T12:20:00+00:00",
-          "access": "SECONDARY",
-          "engagement": {
-            "basis": "unknown"
-          }
-        },
-        {
-          "platform": "news",
-          "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html",
-          "title": "'GTA 6' is out now and officially ready to play (Yahoo Tech)",
-          "retrieved_at": "2026-11-19T12:20:00+00:00",
-          "access": "SECONDARY",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "HIGH",
-      "new_development": null
-    },
     {
       "headline": "Voyager 1 reaches one light-day from Earth while its data link is down",
       "published_at": "2026-11-18",
@@ -142,6 +71,57 @@
       "new_development": null
     },
     {
+      "headline": "GTA Vice City nostalgia: the 2002 game set in 1986",
+      "published_at": "2002-10-27",
+      "original_source": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+      "trend_score": 62.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 7,
+        "significance": 4,
+        "usefulness": 5,
+        "visual": 9,
+        "broad_appeal": 9,
+        "discussion_potential": 9,
+        "longevity": 9,
+        "verification_confidence": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "20th-anniversary features: Game*Spark, GamingBible, NME (2022)"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+          "title": "Vice City 20th anniversary (Game*Spark)",
+          "retrieved_at": "2026-11-19T12:50:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742",
+          "title": "Revisiting Vice City's 80s soundtrack 20 years on (NME)",
+          "retrieved_at": "2026-11-19T12:50:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null
+    },
+    {
       "headline": "Google opens Genie 4 world model to AI Ultra subscribers",
       "published_at": "2026-11-18",
       "original_source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
@@ -199,6 +179,77 @@
       "signals": null,
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
+      "new_development": null
+    },
+    {
+      "headline": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
+      "published_at": "2026-11-19",
+      "original_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "trend_score": 77.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: held 19 Nov: time-sensitive launch facts rest on search excerpts only; official pages blocked",
+      "scores": {
+        "public_discussion": 7,
+        "surprise": 7,
+        "significance": 6,
+        "usefulness": 8,
+        "visual": 10,
+        "broad_appeal": 10,
+        "discussion_potential": 9,
+        "longevity": 6,
+        "verification_confidence": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "Launch-day coverage by Yahoo Tech, Forbes (16 Nov), DotEsports, LADbible, PCWorld; x.com and Reddit could not be opened"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+          "title": "Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)",
+          "retrieved_at": "2026-11-19T12:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "primary",
+          "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
+          "title": "GTA VI Platforms, Editions, and Versions (Rockstar Support)",
+          "retrieved_at": "2026-11-19T12:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/",
+          "title": "'GTA VI' Release Date And Time On PS5 And Xbox Series X, Download Size (Forbes, 16 Nov)",
+          "retrieved_at": "2026-11-19T12:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html",
+          "title": "'GTA 6' is out now and officially ready to play (Yahoo Tech)",
+          "retrieved_at": "2026-11-19T12:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
       "new_development": null
     },
     {
@@ -290,63 +341,63 @@
   ],
   "hooks": [
     {
-      "text": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.",
-      "mechanism": "unexpected fact",
+      "text": "2002 mein ek game aayi thi jo 1986 mein set thi.",
+      "mechanism": "counterintuitive insight",
       "accuracy": 10,
       "curiosity": 9,
       "clarity": 9,
       "credibility": 10,
+      "emotional": 8,
+      "natural": 9,
+      "total": 55,
+      "eligible": true
+    },
+    {
+      "text": "Vice City ka asli hero Tommy nahi, radio tha.",
+      "mechanism": "contradiction",
+      "accuracy": 9,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
       "emotional": 9,
       "natural": 9,
-      "total": 56,
-      "eligible": true
-    },
-    {
-      "text": "Do delays ke baad, GTA 6 aaj launch ho gaya.",
-      "mechanism": "timely development",
-      "accuracy": 10,
-      "curiosity": 6,
-      "clarity": 10,
-      "credibility": 10,
-      "emotional": 7,
-      "natural": 10,
       "total": 53,
       "eligible": true
     },
     {
-      "text": "GTA 6 aa gaya, lekin PC pe nahi.",
-      "mechanism": "contradiction",
-      "accuracy": 10,
-      "curiosity": 8,
-      "clarity": 9,
-      "credibility": 10,
-      "emotional": 7,
-      "natural": 9,
-      "total": 53,
-      "eligible": true
-    },
-    {
-      "text": "Apne console mein 212 GB khaali karo, GTA 6 aa gaya.",
+      "text": "Kitni baar aapne Vice City mein mission chhoda, sirf radio ke liye?",
       "mechanism": "relatable problem",
       "accuracy": 9,
       "curiosity": 8,
       "clarity": 9,
-      "credibility": 9,
-      "emotional": 8,
-      "natural": 8,
-      "total": 51,
+      "credibility": 8,
+      "emotional": 9,
+      "natural": 9,
+      "total": 52,
       "eligible": true
     },
     {
-      "text": "Lagbhag 80 dollars aur 212 GB: GTA 6 ki asli keemat.",
-      "mechanism": "curiosity gap",
+      "text": "Ek game jisne humein 80s mein bhej diya, bina time machine ke.",
+      "mechanism": "unexpected comparison",
       "accuracy": 9,
       "curiosity": 8,
-      "clarity": 7,
-      "credibility": 9,
-      "emotional": 7,
+      "clarity": 8,
+      "credibility": 8,
+      "emotional": 9,
+      "natural": 8,
+      "total": 50,
+      "eligible": true
+    },
+    {
+      "text": "Ray Liotta ki awaaz, neon sheher, aur 80s ke gaane: yaad hai?",
+      "mechanism": "strong factual statement",
+      "accuracy": 10,
+      "curiosity": 7,
+      "clarity": 8,
+      "credibility": 10,
+      "emotional": 8,
       "natural": 7,
-      "total": 47,
+      "total": 50,
       "eligible": true
     }
   ],
@@ -358,7 +409,8 @@
     "Source audit: X, Reddit, YouTube, Instagram, LinkedIn, Google Trends and news sites BLOCKED; primary sites PARTIAL.",
     "All claims verified from search-index excerpts of rockstargames.com plus independent outlets; no page opened directly.",
     "No social engagement observed; traction is provisional. Launch-day sales, reviews and server status unknown.",
-    "The topic was chosen at the creator's request; it also scored highest of today's candidates."
+    "The topic was chosen at the creator's request; it also scored highest of today's candidates.",
+    "Topic chosen by the creator as a fallback; exempt from the 24-hour window."
   ],
   "source_audit": {
     "checked_at_utc": "2026-11-19T12:11:09+00:00",

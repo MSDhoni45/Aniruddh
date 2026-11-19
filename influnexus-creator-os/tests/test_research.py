@@ -263,7 +263,8 @@ def test_analytics_new_fields(tmp_path):
 def test_cli_runlog_and_ist_date(tmp_path, monkeypatch, capsys):
     assert len(cli.ist_today()) == 10
     assert cli.main(["recording", "--date", "2026-11-19"]) == 0
-    assert "GTA 6" in capsys.readouterr().out          # today's package was switched to the GTA VI launch
+    today_pkg = json.loads((ROOT / "daily" / "2026-11-19" / "package.json").read_text(encoding="utf-8"))
+    assert today_pkg["script"].splitlines()[0] in capsys.readouterr().out    # whatever today's package currently holds
     assert cli.main(["today", "--date", "1999-01-01"]) == 3
 
 

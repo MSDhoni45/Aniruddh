@@ -1,0 +1,45 @@
+{
+  "primary": [
+    {
+      "label": "Rockstar Newswire: launch date (Nov 2025)",
+      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+    },
+    {
+      "label": "Rockstar Support: platforms and editions",
+      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+    },
+    {
+      "label": "Rockstar Newswire: pre-load from 10 Nov",
+      "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+    },
+    {
+      "label": "Rockstar: GTA VI",
+      "url": "https://www.rockstargames.com/VI"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "Forbes, 16 Nov 2026",
+      "url": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"
+    },
+    {
+      "label": "DotEsports",
+      "url": "https://dotesports.com/gta/news/gta-6"
+    },
+    {
+      "label": "Yahoo Tech",
+      "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html"
+    },
+    {
+      "label": "GSMArena",
+      "url": "https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "nature.com, biorxiv.org, health.ucdavis.edu, x.com and all news sites cannot be opened from this cloud environment; primary sites' own indexed text was read through domain-restricted search.",
+    "No X post about this story was checked; engagement is UNKNOWN.",
+    "Anthropic's IPO price was not yet set at research time (00:30 IST).",
+    "Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured."
+  ]
+}
