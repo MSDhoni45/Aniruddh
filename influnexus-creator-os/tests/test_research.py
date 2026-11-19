@@ -156,7 +156,7 @@ def test_package_rejects_hinglish_copy_slang_and_corporate_phrasing():
     assert any("instagram caption" in x for x in problems(lambda p: p["instagram"].__setitem__("caption", "Yeh dekho, OpenAI ka naya model hai.")))
     assert any("forced slang" in x for x in problems(lambda p: p.__setitem__("script", p["script"].replace("So no,", "No cap,"))))
     assert any("cutting-edge" in x for x in problems(lambda p: p.__setitem__("script", p["script"].replace("new AI", "cutting-edge AI"))))
-    assert any("language" in x for x in problems(lambda p: p.__setitem__("language", "hinglish")))
+    assert any("language" in x for x in problems(lambda p: p.__setitem__("language", "tamil")))
     assert any("280" in x for x in problems(lambda p: p["x"].__setitem__("post", "x" * 281)))
 
 
@@ -171,7 +171,7 @@ def test_caption_lines_keep_exact_words_in_short_groups():
 from creatoros import cli
 from creatoros.research import memory
 
-PKG19 = json.loads((ROOT / "daily" / "2026-11-19" / "package.json").read_text(encoding="utf-8"))
+PKG19 = json.loads((ROOT / "daily/2026-11-19/previous_als-brain-implant-home-use/package.json").read_text(encoding="utf-8"))
 
 
 def v2(**kw):
@@ -230,11 +230,16 @@ def test_hook_reuse_is_detected():
 def test_today_and_recording_views():
     d = ROOT / "daily" / "2026-11-19"
     today = (d / "today.md").read_text(encoding="utf-8")
-    for heading in ("DATE:", "SELECTED TOPIC:", "WHY THIS TOPIC:", "VIRAL POTENTIAL:", "BEST HOOK:", "FINAL SCRIPT:", "ESTIMATED DURATION:",
-                    "RECORDING DIRECTIONS:", "VISUAL SUGGESTIONS", "FACT-CHECK:", "ENGLISH CAPTIONS:", "PLATFORM CONTENT:"):
+    scheme = json.loads((d / "package.json").read_text(encoding="utf-8")).get("scoring")
+    headings = (["A. TODAY'S SELECTED TOPIC", "B. FINAL RECORDING SCRIPT", "C. RECORDING DIRECTIONS", "D. EDITING DIRECTIONS",
+                 "E. POSTING PACKAGE", "F. FACT-CHECK", "G. INTERNAL QUALITY SCORE"] if scheme == "v5" else
+                ["DATE:", "SELECTED TOPIC:", "WHY THIS TOPIC:", "VIRAL POTENTIAL:", "BEST HOOK:", "FINAL SCRIPT:", "ESTIMATED DURATION:",
+                 "RECORDING DIRECTIONS:", "VISUAL SUGGESTIONS", "FACT-CHECK:", "ENGLISH CAPTIONS:", "PLATFORM CONTENT:"])
+    for heading in headings:
         assert heading in today, heading
     rec = (d / "recording.md").read_text(encoding="utf-8")
-    assert PKG19["script"].splitlines()[0] in rec and "PLATFORM" not in rec
+    current = json.loads((d / "package.json").read_text(encoding="utf-8"))
+    assert current["script"].splitlines()[0] in rec and "PLATFORM" not in rec
 
 
 def test_memory_upserts_without_duplicates(tmp_path):
@@ -258,7 +263,7 @@ def test_analytics_new_fields(tmp_path):
 def test_cli_runlog_and_ist_date(tmp_path, monkeypatch, capsys):
     assert len(cli.ist_today()) == 10
     assert cli.main(["recording", "--date", "2026-11-19"]) == 0
-    assert "Harrell" in capsys.readouterr().out
+    assert "GTA 6" in capsys.readouterr().out          # today's package was switched to the GTA VI launch
     assert cli.main(["today", "--date", "1999-01-01"]) == 3
 
 

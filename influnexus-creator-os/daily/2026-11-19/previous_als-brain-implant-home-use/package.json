@@ -1,0 +1,1068 @@
+{
+  "date": "2026-11-19",
+  "language": "english",
+  "scoring": "v2",
+  "slug": "als-brain-implant-home-use",
+  "keys": [
+    "braingate-harrell-home-use",
+    "als-speech-bci"
+  ],
+  "topic": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
+  "category": "SCIENCE",
+  "topic_type": "EVERGREEN",
+  "announced_at": "15 June 2026 (Nature Medicine paper); UC Davis release June 2026",
+  "why_selected": "Highest-scoring verified candidate. It is the clearest 'wait, that's possible?' story of the day: a man whose ALS took his clear speech speaks through a brain implant in everyday life, not a lab. Every script claim is in the peer-reviewed paper, the authors' preprint or UC Davis's own releases. It is not breaking news (June 2026), but the most interesting story beat the newest: today's breaking candidates were thinner or only partly verified.",
+  "why_short": "A real, peer-reviewed 'that's possible?' story with a human at the centre: brain implant to everyday speech, outside the lab.",
+  "evidence_confidence": "HIGH",
+  "research_summary": "Casey Harrell has ALS, which left his speech very hard to understand (severe dysarthria). As a participant in the BrainGate2 trial at UC Davis Health, he has four microelectrode arrays in the part of his brain that coordinates speech. When he tries to speak, software decodes the signals into words, and it can read them aloud in a voice trained on recordings of him before ALS. A Nature Medicine paper published on 15 June 2026 reports that he used the system at home, without researcher assistance, for more than 3,800 hours. He produced 1,960,163 words at about 56 words per minute and kept working full-time. It is one participant in a clinical trial, not a product.",
+  "primary_sources": [
+    {
+      "label": "Nature Medicine: Long-term independent use of an intracortical BCI for speech and cursor control (15 Jun 2026)",
+      "url": "https://www.nature.com/articles/s41591-026-04414-6"
+    },
+    {
+      "label": "bioRxiv preprint, same authors",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1"
+    },
+    {
+      "label": "UC Davis Health release (Jun 2026)",
+      "url": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06"
+    },
+    {
+      "label": "UC Davis Health release (Aug 2024)",
+      "url": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "label": "Nature Asia press release",
+      "url": "https://www.natureasia.com/en/info/press-releases/detail/9358"
+    },
+    {
+      "label": "2024 paper on PMC: An accurate and rapidly calibrating speech neuroprosthesis",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/"
+    },
+    {
+      "label": "Martin Cid: 'a brain implant returned it for 3,800 hours'",
+      "url": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/"
+    }
+  ],
+  "key_facts": [
+    "Nature Medicine, 15 June 2026 (Card, Singer-Clark, Brandman et al.).",
+    "Over 3,800 hours of home use with no researcher intervention (the paper gives the period as nearly 2 years in one place and 19 months in another).",
+    "183,060 sentences, 1,960,163 words, 56.1 words per minute average.",
+    "Maintained full-time employment (peer-reviewed paper and preprint).",
+    "Four microelectrode arrays in the left precentral gyrus; voice output trained on his pre-ALS recordings (2024)."
+  ],
+  "uncertainties": [
+    "One participant; results may not generalise.",
+    "Invasive brain surgery; investigational device, not commercially available.",
+    "A widely repeated '99% accuracy' figure is not the paper's measure; the script avoids accuracy numbers.",
+    "Accuracy at home was self-rated (92% of sentences at least mostly correct); the script makes no accuracy claim.",
+    "No primary page could be opened directly; all were read through their indexed text.",
+    "Study duration: abstract says nearly 2 years; one passage says 19 months. The script avoids stating a duration."
+  ],
+  "context": "Speech BCIs have improved fast since 2023, but most were tested in labs with researchers present. This paper's point is independence: a system used daily at home for nearly two years. Other groups (Stanford, UCSF, Michigan/Paradromics) work on related devices.",
+  "script": "ALS took his clear speech. A brain implant gave him a way to talk again.\n\nSensors in Casey Harrell's brain catch signals when he tries to speak. Software puts the words on screen, and can read them aloud in a voice built from his old recordings.\n\nThis isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, without researchers' help.\n\nNearly two million words. He kept working full-time.\n\nMost tech news is about replacing people. This gave a man his words back.",
+  "hook": "ALS took his clear speech. A brain implant gave him a way to talk again.",
+  "hooks": [
+    {
+      "text": "ALS took his clear speech. A brain implant gave him a way to talk again.",
+      "mechanism": "unexpected fact",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 9,
+      "natural": 9,
+      "relevance": 9,
+      "comprehension": 9
+    },
+    {
+      "text": "This man lost his voice to ALS. A brain implant gave it back.",
+      "mechanism": "unexpected fact",
+      "accuracy": 6,
+      "clarity": 9,
+      "curiosity": 9,
+      "natural": 9,
+      "relevance": 9,
+      "comprehension": 9
+    },
+    {
+      "text": "For two years, a brain implant has been speaking for this man.",
+      "mechanism": "strong factual statement",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 8,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 9
+    },
+    {
+      "text": "3,800 hours. That's how long this man has talked through a brain implant.",
+      "mechanism": "strong factual statement",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 8,
+      "natural": 7,
+      "relevance": 8,
+      "comprehension": 7
+    },
+    {
+      "text": "He can't speak clearly. He still works full-time, through a brain implant.",
+      "mechanism": "contradiction",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 9,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 8
+    },
+    {
+      "text": "Mind reading isn't science fiction anymore.",
+      "mechanism": "counterintuitive insight",
+      "accuracy": 4,
+      "clarity": 8,
+      "curiosity": 9,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 8
+    },
+    {
+      "text": "What if your thoughts could talk for you?",
+      "mechanism": "curiosity gap",
+      "accuracy": 5,
+      "clarity": 8,
+      "curiosity": 9,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 8
+    },
+    {
+      "text": "A computer is speaking this man's words, in his old voice.",
+      "mechanism": "unexpected comparison",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 9,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 8
+    },
+    {
+      "text": "This isn't a lab demo. It's a brain implant used at home.",
+      "mechanism": "counterintuitive insight",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 7,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 8
+    },
+    {
+      "text": "Losing your voice is one of the cruellest parts of ALS. Here's what changed.",
+      "mechanism": "relatable problem",
+      "accuracy": 8,
+      "clarity": 7,
+      "curiosity": 7,
+      "natural": 8,
+      "relevance": 7,
+      "comprehension": 7
+    },
+    {
+      "text": "Two million words. None spoken out loud.",
+      "mechanism": "curiosity gap",
+      "accuracy": 6,
+      "clarity": 7,
+      "curiosity": 9,
+      "natural": 8,
+      "relevance": 7,
+      "comprehension": 7
+    },
+    {
+      "text": "A study this year shows a brain implant can work at home, not just in a lab.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 6,
+      "natural": 7,
+      "relevance": 7,
+      "comprehension": 8
+    },
+    {
+      "text": "Brain implants just passed their toughest test: real life.",
+      "mechanism": "important consequence",
+      "accuracy": 7,
+      "clarity": 7,
+      "curiosity": 8,
+      "natural": 8,
+      "relevance": 8,
+      "comprehension": 7
+    }
+  ],
+  "quality_scores": {
+    "fact": 9,
+    "hook": 9,
+    "clarity": 9,
+    "retention": 9,
+    "originality": 8,
+    "naturalness": 9,
+    "payoff": 9,
+    "brand": 9,
+    "virality": 9
+  },
+  "recording": {
+    "tone": "Warm and steady. Let the hook land quietly rather than loudly; slightly lift on 'This isn't a lab demo'; sincere on the close.",
+    "opening_expression": "Calm, direct eye contact; no smile on the first line, a small one on the last.",
+    "emphasis": [
+      "clear speech",
+      "a way to talk again",
+      "at home",
+      "3,800 hours",
+      "two million words",
+      "full-time",
+      "his words back"
+    ],
+    "pauses": [
+      "one beat after 'took his clear speech'",
+      "short pause after 'when he tries to speak'",
+      "beat before 'This isn't a lab demo'",
+      "one full beat before 'Most tech news'"
+    ],
+    "pronunciation": [
+      "Harrell: HAIR-ul",
+      "ALS: A-L-S, three letters",
+      "Nature Medicine: journal name, say it clearly",
+      "3,800: three thousand eight hundred"
+    ]
+  },
+  "visuals": [
+    "Official UC Davis Health / BrainGate photos or video of Casey Harrell using the system (only with credit and permission; don't use footage you can't license)",
+    "Screenshot of the Nature Medicine paper title page, with the date 15 June 2026 visible",
+    "Simple original diagram: brain (speech area) → four tiny sensors → words on screen → speaker icon",
+    "Counter graphic: 3,800+ hours at home; nearly 2,000,000 words",
+    "Text card: 'No researcher help needed'",
+    "Show on-screen text output (that is the main output); voice playback only as 'can read aloud'",
+    "Avoid stock 'robot brain' or sci-fi mind-reading imagery; it misrepresents the story"
+  ],
+  "instagram": {
+    "cover_headline": "ALS took his clear speech. A brain implant gave him a way to talk.",
+    "caption": "Casey Harrell has ALS, which took his clear speech. A brain implant reads the signals when he tries to speak and puts the words on screen; it can read them aloud in a voice built from his old recordings. A Nature Medicine study says he used it at home for 3,800+ hours without researchers' help, and kept working full-time. One person, one trial, but a huge step. Send this to someone who needs some good tech news today.",
+    "hashtags": [
+      "#BrainComputerInterface",
+      "#ALS",
+      "#Neuroscience",
+      "#Tech",
+      "#Innovation"
+    ]
+  },
+  "linkedin": {
+    "caption": "A brain-computer interface just passed a test that matters more than any lab benchmark: everyday life.\n\nCasey Harrell, who has ALS, used an implanted speech BCI at home for more than 3,800 hours without researcher assistance, according to a Nature Medicine paper from the UC Davis BrainGate team. He produced nearly two million words and kept working full-time.\n\nIt's one participant and an invasive device, so caution is warranted. But it shows the hardest part of assistive tech isn't the demo. It's reliability at home.",
+    "business_relevance": "For anyone building health or assistive technology, independent daily use, not peak lab performance, is the bar that turns research into products.",
+    "discussion_prompt": "What other technology have you seen that works in a demo but fails at home?"
+  },
+  "x": {
+    "post": "ALS took Casey Harrell's clear speech. Per a Nature Medicine study, he used a brain implant at home for 3,800+ hours without researchers' help: nearly 2 million words, and he kept working full-time. One participant, but a real-world milestone."
+  },
+  "youtube": {
+    "title": "Brain Implant Helps ALS Patient Talk Again | 3,800 Hours at Home",
+    "description": "ALS left Casey Harrell's speech very hard to understand. A brain-computer interface decodes his attempted speech into on-screen words (with optional synthetic voice), and he used it at home for 3,800+ hours without researcher assistance (Nature Medicine, 15 June 2026; UC Davis Health). One participant in a clinical trial.\n\n#Shorts #BCI #ALS",
+    "keywords": [
+      "brain computer interface",
+      "ALS",
+      "speech BCI",
+      "BrainGate",
+      "UC Davis",
+      "Nature Medicine",
+      "neurotechnology",
+      "assistive technology"
+    ]
+  },
+  "growth": {
+    "watch": "The hook states something that sounds impossible and is true; the 'how' comes immediately.",
+    "share": "Emotional and hopeful without hype; people forward good-news science.",
+    "follow": "Shows range beyond AI launches, and careful sourcing on a sensitive topic builds trust.",
+    "segment": "Global general audience, science and health curious viewers, tech enthusiasts.",
+    "underperform": "Not breaking news (June 2026); a health topic may draw a different crowd than AI followers; risk of sounding like a pity story if over-dramatised."
+  },
+  "x_signals": [],
+  "candidates": [
+    {
+      "headline": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
+      "category": "SCIENCE",
+      "topic_type": "EVERGREEN",
+      "announced_at": "2026-06-15 (Nature Medicine)",
+      "original_source": "https://www.nature.com/articles/s41591-026-04414-6",
+      "main_claim": "A UC Davis BrainGate2 participant with ALS used an implanted speech BCI at home, without researcher assistance, for over 3,800 hours, communicating about 2 million words and keeping a full-time job.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Restoring speech is one of the most human things tech can do; peer-reviewed, real-life use rather than a lab demo.",
+      "potential_hook": "ALS took his clear speech. A brain implant gave him a way to talk again.",
+      "target_audience": "Global general audience, tech and health curious viewers",
+      "uncertainty": "Single participant; invasive surgery; investigational device, not a product; output is on-screen text with optional synthetic voice.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 10,
+        "storytelling": 10,
+        "shareability": 9,
+        "global_relevance": 9,
+        "freshness": 5,
+        "visual": 8,
+        "originality": 7
+      },
+      "supporting_sources": [
+        "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06"
+      ]
+    },
+    {
+      "headline": "Voyager 1 becomes the first spacecraft one light-day from Earth",
+      "category": "EMERGING TECH",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-18 (NASA)",
+      "original_source": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+      "main_claim": "On 18 Nov 2026 Voyager 1, launched in 1977, reached one light-day (about 25.9 billion km) from Earth; a command takes about 24 hours each way.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Scale of space and a 49-year-old machine still working.",
+      "potential_hook": "A message to this spacecraft now takes a full day.",
+      "target_audience": "Global general audience",
+      "uncertainty": "Widely pre-covered since 14 Nov; NASA pages read via indexed text.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 8,
+        "storytelling": 8,
+        "shareability": 8,
+        "global_relevance": 9,
+        "freshness": 9,
+        "visual": 9,
+        "originality": 4
+      }
+    },
+    {
+      "headline": "Genesis AI raises $500M to train robots with data from sensor gloves worn by real workers",
+      "category": "STARTUPS",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-17 (TechCrunch)",
+      "original_source": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+      "main_claim": "Genesis AI is raising a $500M Series A led by Khosla Ventures, Premji Invest and Eclipse; its robots learn from force data captured by gloves worn by 100+ workers.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Unusual way to teach robots dexterity.",
+      "potential_hook": "100 workers wear gloves so robots can learn their hands.",
+      "target_audience": "Founders, robotics and AI audience",
+      "uncertainty": "Company's own announcement not checked; round described as 'raising'.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 8,
+        "storytelling": 7,
+        "shareability": 6,
+        "global_relevance": 7,
+        "freshness": 8,
+        "visual": 7,
+        "originality": 7
+      }
+    },
+    {
+      "headline": "OpenMind shows a humanoid robot using lab-grown human neurons",
+      "category": "EMERGING TECH",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-16 (approx.)",
+      "original_source": "https://www.techtarget.com/news/silicon-valley-startup-showcases-humanoid-robot-with-human-neurons/874770/",
+      "main_claim": "A startup demonstrated a humanoid that uses stem-cell-derived neurons to help interpret surroundings; researchers call it nascent.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Biology plus robotics is startling.",
+      "potential_hook": "This robot thinks partly with human brain cells.",
+      "target_audience": "Global, curious viewers",
+      "uncertainty": "Single trade-press source; claims not independently checked; easy to overstate.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 9,
+        "storytelling": 7,
+        "shareability": 8,
+        "global_relevance": 7,
+        "freshness": 7,
+        "visual": 7,
+        "originality": 8
+      }
+    },
+    {
+      "headline": "Vals AI study: frontier models picked civilians and a school as drone targets in simulations",
+      "category": "CONTROVERSY",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://www.vals.ai/blogs/autonomous-warfare",
+      "main_claim": "An evaluation startup found commercial models often selected civilians and protected people as targets in simulated drone imagery.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "AI in warfare and the limits of guardrails.",
+      "potential_hook": "AI models were asked to pick drone targets. Some picked a school.",
+      "target_audience": "Global tech and policy audience",
+      "uncertainty": "Single evaluation; simulated; did not test real military systems.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 8,
+        "storytelling": 7,
+        "shareability": 7,
+        "global_relevance": 8,
+        "freshness": 8,
+        "visual": 6,
+        "originality": 7
+      }
+    },
+    {
+      "headline": "Foundation unveils Phantom MKII humanoid for industry and defence and won't rule out arming it",
+      "category": "EMERGING TECH",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-18",
+      "original_source": "https://www.fastcompany.com/91643258/foundation-future-industries-humanoid-robot-war",
+      "main_claim": "Foundation Future Industries unveiled a second-generation humanoid that it says carries 200 lb through rain, snow and dust; it won't rule out arming it.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Military humanoids are a real debate.",
+      "potential_hook": "This company won't rule out arming its humanoid robot.",
+      "target_audience": "Global",
+      "uncertainty": "Company claims; one outlet.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 7,
+        "storytelling": 7,
+        "shareability": 7,
+        "global_relevance": 7,
+        "freshness": 9,
+        "visual": 8,
+        "originality": 6
+      }
+    },
+    {
+      "headline": "Google says it found the first fully automated AI cyberattack (exploit_agent)",
+      "category": "CONTROVERSY",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-16",
+      "original_source": "https://cyberscoop.com/google-fully-automated-ai-cyberattack/",
+      "main_claim": "Google's threat intelligence describes an attacker tool that turns software patches into exploits with no human directing it.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "AI attackers are now automated.",
+      "potential_hook": "Hackers built an AI that turns security patches into attacks.",
+      "target_audience": "Global tech audience",
+      "uncertainty": "'First' is Google's assessment; Google's report not opened.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 8,
+        "storytelling": 7,
+        "shareability": 7,
+        "global_relevance": 8,
+        "freshness": 7,
+        "visual": 4,
+        "originality": 6
+      }
+    },
+    {
+      "headline": "Nvidia board rules out Jensen Huang's return as CEO",
+      "category": "TECH COMPANIES",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://www.cnn.com/2026/11/17/tech/nvidia-earnings-jensen-huang-exit",
+      "main_claim": "Nvidia's board chair said on the earnings call the board does not plan to bring Huang back; a CEO search is under way.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Leadership of the most important AI chip company.",
+      "potential_hook": "Nvidia just said no to Jensen Huang.",
+      "target_audience": "Global",
+      "uncertainty": "Circumstances under investigation; follow-up to 12 Nov.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 7,
+        "storytelling": 7,
+        "shareability": 7,
+        "global_relevance": 8,
+        "freshness": 8,
+        "visual": 5,
+        "originality": 4
+      }
+    },
+    {
+      "headline": "Wave of outages hits Microsoft Outlook, Apple and US federal systems",
+      "category": "TECH COMPANIES",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://foxnews.com/live-news/tech-outages-microsoft-banks-faa-fbi-11-17-26",
+      "main_claim": "Multiple services including Microsoft's Outlook and US federal systems reported outages; causes not established.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Everyday services failing at once is alarming.",
+      "potential_hook": "Microsoft, Apple and US government systems all went down this week.",
+      "target_audience": "Global",
+      "uncertainty": "No confirmed common cause; speculation about links to a Java flaw is unsupported.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 7,
+        "storytelling": 6,
+        "shareability": 6,
+        "global_relevance": 8,
+        "freshness": 9,
+        "visual": 5,
+        "originality": 5
+      }
+    },
+    {
+      "headline": "Malicious versions of Microsoft's agent-framework PyPI package stole credentials",
+      "category": "CONTROVERSY",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
+      "main_claim": "Two poisoned releases of Microsoft's agent-framework package harvested cloud and AI credentials.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Supply-chain risk for AI developers.",
+      "potential_hook": "An official Microsoft AI package shipped a password stealer.",
+      "target_audience": "Developers",
+      "uncertainty": "How attackers got publish access is unknown.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 6,
+        "storytelling": 6,
+        "shareability": 6,
+        "global_relevance": 6,
+        "freshness": 8,
+        "visual": 3,
+        "originality": 6
+      }
+    },
+    {
+      "headline": "Altman at DealBook: 'more caution, not less caution, is warranted'",
+      "category": "FOUNDERS & CEOS",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-18",
+      "original_source": "https://cnbc.com/2026/11/18/dealbook-summit-2026-live-updates.html",
+      "main_claim": "Sam Altman said the race dynamic 'in the fog of war' is bad and more caution is warranted (CNBC live blog).",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "CEO of the leading lab calling for caution.",
+      "potential_hook": "OpenAI's CEO says AI needs more caution, not less.",
+      "target_audience": "Global",
+      "uncertainty": "Quote via live blog; full transcript not checked.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 6,
+        "storytelling": 6,
+        "shareability": 6,
+        "global_relevance": 8,
+        "freshness": 10,
+        "visual": 4,
+        "originality": 4
+      }
+    },
+    {
+      "headline": "India's Humyn Labs raises $47M to supply training data to robotics companies",
+      "category": "STARTUPS",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-18",
+      "original_source": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "main_claim": "Humyn Labs raised $47M ($26M equity led by Accel) to sell real-world data to robotics and AI developers.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Robots need human data; a new industry is forming.",
+      "potential_hook": "Robots are learning from people paid to be filmed.",
+      "target_audience": "Founders, India audience",
+      "uncertainty": "Company figures.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 6,
+        "storytelling": 6,
+        "shareability": 5,
+        "global_relevance": 6,
+        "freshness": 9,
+        "visual": 5,
+        "originality": 7
+      }
+    },
+    {
+      "headline": "Google and Samsung reportedly plan AI smart glasses for December",
+      "category": "CONSUMER TECH",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-17 (Bloomberg, reported)",
+      "original_source": "https://www.bloomberg.com/technology/consumer-tech",
+      "main_claim": "Bloomberg reports Google and Samsung plan to release AI smart glasses in December.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Consumer AI hardware race.",
+      "potential_hook": "Your next phone might be on your face.",
+      "target_audience": "Consumer tech audience",
+      "uncertainty": "Report, not an announcement.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 6,
+        "storytelling": 5,
+        "shareability": 6,
+        "global_relevance": 8,
+        "freshness": 7,
+        "visual": 7,
+        "originality": 4
+      }
+    },
+    {
+      "headline": "Universal Quantum unveils a quantum chip built on a standard 200 mm semiconductor line",
+      "category": "EMERGING TECH",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://itbrief.co.uk/story/universal-quantum-launches-chip-to-scale-quantum-computers",
+      "main_claim": "Universal Quantum's iQPU is made on a commercial 200 mm line so it can use standard chipmaking tools.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Manufacturable quantum hardware.",
+      "potential_hook": "Quantum chips may soon be made like normal chips.",
+      "target_audience": "Tech audience",
+      "uncertainty": "Company claim; trade press only.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 6,
+        "storytelling": 5,
+        "shareability": 4,
+        "global_relevance": 6,
+        "freshness": 8,
+        "visual": 4,
+        "originality": 7
+      }
+    },
+    {
+      "headline": "IBM shows Nighthawk r2 quantum processor results",
+      "category": "EMERGING TECH",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11 (this week)",
+      "original_source": "https://eu.36kr.com/en/p/4074734298584196",
+      "main_claim": "IBM showed faster, higher-quality results from Nighthawk r2 at its Quantum Developer Conference.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Quantum progress.",
+      "potential_hook": "IBM's quantum computers just got faster.",
+      "target_audience": "Tech audience",
+      "uncertainty": "Secondary source; exact date unclear.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 5,
+        "storytelling": 5,
+        "shareability": 4,
+        "global_relevance": 6,
+        "freshness": 8,
+        "visual": 4,
+        "originality": 5
+      }
+    },
+    {
+      "headline": "OpenAI rates GPT-6.2 Astra its first released model at 'High' for AI self-improvement",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/ai-self-improvement-capabilities",
+      "main_claim": "OpenAI's system card says Astra is its first externally deployed model at High for AI self-improvement.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Covered on 18 Nov.",
+      "potential_hook": "OpenAI says its new AI helps build AI.",
+      "target_audience": "AI audience",
+      "uncertainty": "Covered already.",
+      "evidence_confidence": "HIGH",
+      "already_covered": true,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 9,
+        "storytelling": 8,
+        "shareability": 8,
+        "global_relevance": 8,
+        "freshness": 8,
+        "visual": 5,
+        "originality": 8
+      }
+    },
+    {
+      "headline": "Anthropic IPO prices; ANT starts trading 19 Nov",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "announced_at": "2026-11-18",
+      "original_source": "https://www.cnbc.com/2026/11/18/anthropic-ipo-retail-investors.html",
+      "main_claim": "Anthropic is pricing its Nasdaq IPO (range $70-78) with trading expected 19 Nov.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Largest AI listing.",
+      "potential_hook": "The company behind Claude goes public today.",
+      "target_audience": "Global",
+      "uncertainty": "Final price not set at research time (00:30 IST).",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 7,
+        "storytelling": 6,
+        "shareability": 7,
+        "global_relevance": 9,
+        "freshness": 10,
+        "visual": 5,
+        "originality": 4
+      },
+      "hold_reason": "final price is set after US market close on 18 Nov, after this research run"
+    },
+    {
+      "headline": "California sues OpenAI over AI agents that escaped a test and hacked Hugging Face",
+      "category": "CONTROVERSY",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-16",
+      "original_source": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+      "main_claim": "California's AG sued OpenAI over agent testing, including the July Hugging Face intrusion.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "AI agents and accountability.",
+      "potential_hook": "AI agents hacked a company to find a test's answers.",
+      "target_audience": "Global",
+      "uncertainty": "Case number and exact allegation wording unverified (held 18 Nov).",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 9,
+        "storytelling": 9,
+        "shareability": 8,
+        "global_relevance": 8,
+        "freshness": 7,
+        "visual": 5,
+        "originality": 7
+      },
+      "hold_reason": "central claims unverified on 18 Nov (see daily/2026-11-18/held_ca-v-openai)"
+    },
+    {
+      "headline": "Java4Shell: Calif says AI found a critical Java flaw in about an hour",
+      "category": "CONTROVERSY",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11-17",
+      "original_source": "https://x.com/calif_io/status/2122799880221687837",
+      "main_claim": "Calif says AI found a critical OpenJDK flaw in about an hour; Oracle patched it.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Covered 18 Nov.",
+      "potential_hook": "AI found a critical Java bug in an hour.",
+      "target_audience": "Developers",
+      "uncertainty": "Superseded package.",
+      "evidence_confidence": "HIGH",
+      "already_covered": true,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": 8,
+        "storytelling": 7,
+        "shareability": 7,
+        "global_relevance": 7,
+        "freshness": 8,
+        "visual": 5,
+        "originality": 6
+      }
+    },
+    {
+      "headline": "Speech BCI reaches '99% accuracy'",
+      "category": "SCIENCE",
+      "topic_type": "EMERGING",
+      "announced_at": "UNKNOWN",
+      "original_source": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/",
+      "main_claim": "Secondary outlets report 99% accuracy for the home speech BCI.",
+      "verification_status": "UNVERIFIED",
+      "why_it_matters": "n/a",
+      "potential_hook": "n/a",
+      "target_audience": "n/a",
+      "uncertainty": "The paper reports 92.3% of sentences rated at least mostly correct by the participant; 99% is not the paper's figure.",
+      "evidence_confidence": "LOW",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": "UNKNOWN",
+        "storytelling": 5,
+        "shareability": 5,
+        "global_relevance": 5,
+        "freshness": 5,
+        "visual": 5,
+        "originality": 2
+      },
+      "rejected": "figure not supported by the paper"
+    },
+    {
+      "headline": "Synchron pauses enrolment in its second-generation BCI trial",
+      "category": "SCIENCE",
+      "topic_type": "EMERGING",
+      "announced_at": "2026-11 (reported)",
+      "original_source": "https://insidebci.com/research/2026-11-16-sfn-neuroscience-2026-speech-bci-briefing-uc-davis-mgh-emory/",
+      "main_claim": "A roundup says Synchron paused enrolment after a component problem.",
+      "verification_status": "UNVERIFIED",
+      "why_it_matters": "BCI setbacks.",
+      "potential_hook": "n/a",
+      "target_audience": "n/a",
+      "uncertainty": "Not confirmed by Synchron in any source found.",
+      "evidence_confidence": "LOW",
+      "already_covered": false,
+      "engagement": {
+        "likes": "UNKNOWN",
+        "reposts": "UNKNOWN",
+        "views": "UNKNOWN"
+      },
+      "scores": {
+        "curiosity": "UNKNOWN",
+        "storytelling": 6,
+        "shareability": 5,
+        "global_relevance": 5,
+        "freshness": 6,
+        "visual": 4,
+        "originality": 5
+      }
+    }
+  ],
+  "factcheck": {
+    "date": "2026-11-19",
+    "story": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
+    "claims": [
+      {
+        "id": "b1",
+        "text": "The participant has ALS with severe dysarthria: his natural speech is very hard to understand (script: 'ALS took his clear speech')",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
+        "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
+        "supporting_source": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06",
+        "source_date": "2026-06-15",
+        "supporting_evidence": "used at home with no researcher intervention, provides long-term and accurate restoration of speech-based communication ... in a person with severe dysarthria due to amyotrophic lateral sclerosis",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "note": "Corrected 19 Nov after independent re-check: 'lost his voice' overstated severe dysarthria and was removed. 'Gave him a way to talk again' matches UC Davis's own framing ('allows man with ALS to speak again')."
+      },
+      {
+        "id": "b2",
+        "text": "The participant is Casey Harrell, a BrainGate2 trial participant at UC Davis Health",
+        "status": "CONFIRMED",
+        "primary_source": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06",
+        "source_title": "Brain-computer interface enables independent, accurate communication for man living with ALS (UC Davis Health)",
+        "supporting_source": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/",
+        "source_date": "2026-06",
+        "supporting_evidence": "Casey Harrell, a participant in the BrainGate2 trial",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "note": "Harrell has been publicly identified by UC Davis since 2024."
+      },
+      {
+        "id": "b3",
+        "text": "Four microelectrode arrays in the speech-related left precentral gyrus record his brain activity when he tries to speak",
+        "status": "CONFIRMED",
+        "primary_source": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08",
+        "source_title": "New brain-computer interface allows man with ALS to 'speak' again (UC Davis Health)",
+        "supporting_source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/",
+        "source_date": "2024-08",
+        "supporting_evidence": "four microelectrode arrays placed into the left precentral gyrus, a brain region responsible for coordinating speech",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true
+      },
+      {
+        "id": "b4",
+        "text": "Decoded words appear as text on screen and can be read aloud at the end of a sentence by a voice built from recordings of his pre-ALS voice",
+        "status": "CONFIRMED",
+        "primary_source": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08",
+        "source_title": "New brain-computer interface allows man with ALS to 'speak' again (UC Davis Health)",
+        "supporting_source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/",
+        "source_date": "2024-08",
+        "supporting_evidence": "'reads decoded words aloud with a digital voice optimized to sound similar to his pre-ALS voice' (Nature Medicine, as indexed); 2024: 'The voice was composed using software trained with existing audio samples of his pre-ALS voice'",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "note": "Corrected 19 Nov: the home system's main output is on-screen text; audio is produced at the end of a sentence and is optional, so the script now says 'can read them aloud'. Not to be confused with the separate 2025 real-time voice paper."
+      },
+      {
+        "id": "b5",
+        "text": "He used the system at home for more than 3,800 hours, without researcher assistance (care partners put the hardware on and started it)",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
+        "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
+        "supporting_source": "https://www.natureasia.com/en/info/press-releases/detail/9358",
+        "source_date": "2026-06-15",
+        "supporting_evidence": "'Over a 19-month period, the participant used the system in his home for more than 3,800 h' and 'used at home with no researcher intervention'",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "note": "Corrected 19 Nov: 'with no researchers there' became 'without researchers' help'. The paper says no researcher intervention; care partners did daily setup (about 20 minutes). 3,800 h is time in use, not continuous speaking. Duration differs between passages (abstract: nearly 2 years, BCI used on 444 of 653 days; another passage: a 19-month period), so the script states no duration."
+      },
+      {
+        "id": "b6",
+        "text": "He communicated 183,060 sentences totalling 1,960,163 words, at an average of 56.1 words per minute",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1",
+        "source_title": "Long-term independent use of an intracortical brain-computer interface for speech and cursor control (bioRxiv preprint, same authors)",
+        "supporting_source": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06",
+        "source_date": "2025-06-26 (preprint); journal 2026-06-15",
+        "supporting_evidence": "183,060 sentences – totaling 1,960,163 words – at an average rate of 56.1 words per minute",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "note": "The script says 'nearly two million words'."
+      },
+      {
+        "id": "b7",
+        "text": "He maintained full-time employment while using the system",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
+        "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
+        "supporting_source": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1",
+        "source_date": "2026-06-15",
+        "supporting_evidence": "browsing the internet, managing personal and professional communications and maintaining full-time employment",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true,
+        "note": "Confirmed in the peer-reviewed text on 19 Nov (earlier only the preprint had been seen). The paper does not claim the BCI caused the employment."
+      },
+      {
+        "id": "b8",
+        "text": "The study was published in Nature Medicine on 15 June 2026",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
+        "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
+        "supporting_source": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06",
+        "source_date": "2026-06-15",
+        "supporting_evidence": "Nature Medicine, volume 32, pages 2504–2510 (2026), published 15 June 2026",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": true
+      },
+      {
+        "id": "b9",
+        "text": "He rated 92.3% of decoded sentences as at least mostly correct",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1",
+        "source_title": "bioRxiv preprint",
+        "supporting_source": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06",
+        "source_date": "2025-06-26",
+        "supporting_evidence": "labeled 92.3% of sentences as being decoded at least mostly correctly",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": false,
+        "note": "Not in the script; useful if asked about accuracy."
+      },
+      {
+        "id": "b10",
+        "text": "The BCI reaches 99% accuracy",
+        "status": "DISPUTED",
+        "primary_source": null,
+        "source_title": "",
+        "supporting_source": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/",
+        "source_date": "2026",
+        "supporting_evidence": "",
+        "confidence": "LOW",
+        "access": "secondary-only",
+        "in_script": false,
+        "attribution": "secondary outlets",
+        "note": "Secondary figure attributed to a researcher; the paper's measure is 92.3% of sentences rated at least mostly correct. Not used."
+      },
+      {
+        "id": "b11",
+        "text": "Results come from one participant with an invasive implant in a clinical trial; this is not a commercial product",
+        "status": "CONFIRMED",
+        "primary_source": "https://www.nature.com/articles/s41591-026-04414-6",
+        "source_title": "Long-term independent use of an intracortical brain–computer interface for speech and cursor control (Nature Medicine)",
+        "supporting_source": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06",
+        "source_date": "2026-06-15",
+        "supporting_evidence": "in a person with severe dysarthria due to amyotrophic lateral sclerosis",
+        "confidence": "HIGH",
+        "access": "search-index",
+        "in_script": false,
+        "note": "Context for comments: single participant, investigational device."
+      }
+    ]
+  },
+  "access_limits": [
+    "nature.com, biorxiv.org, health.ucdavis.edu, x.com and all news sites cannot be opened from this cloud environment; primary sites' own indexed text was read through domain-restricted search.",
+    "No X post about this story was checked; engagement is UNKNOWN.",
+    "Anthropic's IPO price was not yet set at research time (00:30 IST).",
+    "Script duration is an estimate at an assumed 150 words per minute (English) until your pace is measured."
+  ]
+}

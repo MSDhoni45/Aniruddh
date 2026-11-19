@@ -1,34 +1,38 @@
 {
   "primary": [
     {
-      "label": "Nature Medicine: Long-term independent use of an intracortical BCI for speech and cursor control (15 Jun 2026)",
-      "url": "https://www.nature.com/articles/s41591-026-04414-6"
+      "label": "Rockstar Newswire: launch date (Nov 2025)",
+      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
     },
     {
-      "label": "bioRxiv preprint, same authors",
-      "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661591v1"
+      "label": "Rockstar Support: platforms and editions",
+      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
     },
     {
-      "label": "UC Davis Health release (Jun 2026)",
-      "url": "https://health.ucdavis.edu/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06"
+      "label": "Rockstar Newswire: pre-load from 10 Nov",
+      "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
     },
     {
-      "label": "UC Davis Health release (Aug 2024)",
-      "url": "https://health.ucdavis.edu/news/headlines/new-brain-computer-interface-allows-man-with-als-to-speak-again/2024/08"
+      "label": "Rockstar: GTA VI",
+      "url": "https://www.rockstargames.com/VI"
     }
   ],
   "supporting": [
     {
-      "label": "Nature Asia press release",
-      "url": "https://www.natureasia.com/en/info/press-releases/detail/9358"
+      "label": "Forbes, 16 Nov 2026",
+      "url": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"
     },
     {
-      "label": "2024 paper on PMC: An accurate and rapidly calibrating speech neuroprosthesis",
-      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11030484/"
+      "label": "DotEsports",
+      "url": "https://dotesports.com/gta/news/gta-6"
     },
     {
-      "label": "Martin Cid: 'a brain implant returned it for 3,800 hours'",
-      "url": "https://www.martincid.com/science/als-brain-computer-interface-casey-harrell-nature-medicine-2/"
+      "label": "Yahoo Tech",
+      "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html"
+    },
+    {
+      "label": "GSMArena",
+      "url": "https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php"
     }
   ],
   "x_signals": [],

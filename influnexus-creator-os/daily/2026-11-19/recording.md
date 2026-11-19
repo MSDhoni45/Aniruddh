@@ -1,20 +1,22 @@
 # Recording: 2026-11-19 (RECORDING READY)
 
-ALS took his clear speech. A brain implant gave him a way to talk again.
+GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.
 
-Sensors in Casey Harrell's brain catch signals when he tries to speak. Software puts the words on screen, and can read them aloud in a voice built from his old recordings.
+Do baar delay hone ke baad, Rockstar ne aaj, 19 November ko, ise PlayStation 5 aur Xbox Series X aur S pe launch kiya.
 
-This isn't a lab demo. A Nature Medicine study says he used it at home for over 3,800 hours, without researchers' help.
+US mein Standard Edition 79.99 dollars ki hai, aur Ultimate 99.99 ki.
 
-Nearly two million words. He kept working full-time.
+Story Vice City mein hai, Leonida naam ki ek fictional state mein, aur aap khelte ho Jason aur Lucia ban ke.
 
-Most tech news is about replacing people. This gave a man his words back.
+Lekin PC walon ko abhi wait karna padega. Rockstar ne PC date abhi tak announce nahi ki.
 
-About 37.8 seconds.
+Toh pehle storage check karo, phir decide karo: day one pe loge, ya PC ka wait karoge?
 
-- Tone: Warm and steady. Let the hook land quietly rather than loudly; slightly lift on 'This isn't a lab demo'; sincere on the close.
-- Opening: Calm, direct eye contact; no smile on the first line, a small one on the last.
-- Pauses: one beat after 'took his clear speech'; short pause after 'when he tries to speak'; beat before 'This isn't a lab demo'; one full beat before 'Most tech news'
-- Emphasise: clear speech, a way to talk again, at home, 3,800 hours, two million words, full-time, his words back
-- Pronunciation: Harrell: HAIR-ul; ALS: A-L-S, three letters; Nature Medicine: journal name, say it clearly; 3,800: three thousand eight hundred
+About 42.8 seconds.
+
+- Tone: Excited but controlled, like telling a friend the news first.
+- Opening: Big grin on 'finally aa gaya'.
+- Pauses: beat after 'aa gaya hai'; beat before 'Lekin PC walon ko'; pause before the final question
+- Emphasise: finally, 212 GB, do baar delay, 79.99, Jason aur Lucia, PC walon ko, storage check
+- Pronunciation: GTA 6: G-T-A six; Leonida: lee-oh-NEE-dah; Lucia: loo-SEE-ah; 212 GB: two-twelve GB; 79.99: seventy-nine ninety-nine
 - Keep your natural accent.

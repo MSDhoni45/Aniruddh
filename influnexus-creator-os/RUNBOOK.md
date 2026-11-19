@@ -40,7 +40,34 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
 - If `daily/DATE/today.md` already says RECORDING READY, do not research again: re-check time-sensitive claims, re-run
   `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
 
-## v4: the Instagram growth rubric (required from 2026-11-21; v3 or v4 accepted on 2026-11-20)
+## v5: Master Prompt V5 (required from 2026-11-21; v3, v4 or v5 accepted on 2026-11-20)
+Where this section differs from the v4 and v3 text below, this section wins. `"scoring": "v5"`, `"language": "hinglish"`.
+- **Language:** natural Hinglish in Roman script (teleprompter-ready), for Indian and international English-speaking tech fans.
+  English technical terms as people say them; no forced Hindi translations, no formal or robotic narration, no generic AI phrases.
+- **Research:** last 24 hours; widen to 48-72 hours only when no strong verified story exists (`research_window.hours` 48 or 72
+  plus `window_expansion_reason`). Search internationally, with attention to stories Indian audiences care about. Separate the
+  announcement date from the date of any older event being discussed. Never call an unverified story confirmed.
+- **Story scores:** the v3 rubric (public discussion 20, surprise 15, significance 15, usefulness 15, visual 10, broad appeal 10,
+  conversation 5, longevity 5, verification 5). Missing engagement is UNKNOWN and lowers confidence; the top number does not win
+  automatically when its evidence is weak. Shortlist at least 5 credible candidates. Write `why_beats_alternatives`.
+- **Gaming:** set `category: "GAMING"` and `release_type` (original release, re-release, remaster, remake, fan-made modification,
+  rumor, official announcement, launch). Never say a game launched unless the release is independently verified. For nostalgic
+  games: childhood memories, recognisable gameplay, iconic music or places, surprising history, modern relevance.
+- **Hooks:** at least 5 scored internally on accuracy, curiosity, clarity, credibility, emotional impact and natural delivery
+  (accuracy under 7 disqualifies); no "Hey guys", "Today we're talking about", "Did you know", "In today's video", "Breaking news".
+- **Script:** 85-105 words, 35-45 s (45 hard): hook (0-3 s), what happened (3-10), most interesting details (10-25), why it
+  matters (25-37), satisfying ending or a specific question (37-45). Natural over formulaic; every sentence earns its place.
+- **Quality score** (`quality_v5`, 0-10 each): hook 20, clarity 15, storytelling 20, retention 15, shareability 15, factual
+  confidence 15. Below 90: revise (`revisions`, max 3), then state `quality_limitation`. Factual confidence under 8 always fails.
+- **Package fields:** `verified_development`, `confidence`, `thumbnail_text` (six words or fewer), `pinned_comment`,
+  `edit_beats` (`0-3`, `3-10`, `10-25`, `25-45`: visuals, screenshots, graphics, licensed B-roll; never assume footage is licensed).
+- **Delivery (`today.md`):** A selected topic, B final script (near the top, no timestamps or stage directions inside it),
+  C recording directions, D editing directions, E posting package (Instagram caption, Shorts title, 3-5 hashtags, thumbnail text,
+  pinned comment), F fact-check, G internal quality score. One script only.
+- **Creator study:** `research/creators_db.csv` grows toward 300 creators over time; never claim more than it holds. Learn
+  principles (hooks, structure, pacing, retention); never copy scripts or distinctive expressions.
+
+## v4: the Instagram growth rubric (superseded by v5 from 2026-11-21)
 Where this section differs from the v3 text below, this section wins. `"scoring": "v4"`.
 - **Goal:** 100,000 Instagram followers in 60 days (day 1 = 2026-11-20); one reel a day. A target, never a promise.
 - **Candidates:** collect at least 15 genuinely distinct stories when verified material exists (`candidate_shortfall_reason`
