@@ -1,38 +1,26 @@
 {
   "primary": [
     {
-      "label": "Rockstar Newswire: launch date (Nov 2025)",
-      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
-    },
-    {
-      "label": "Rockstar Support: platforms and editions",
-      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
-    },
-    {
-      "label": "Rockstar Newswire: pre-load from 10 Nov",
-      "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
-    },
-    {
-      "label": "Rockstar: GTA VI",
-      "url": "https://www.rockstargames.com/VI"
+      "label": "Game*Spark 20th anniversary feature (27 Oct 2022)",
+      "url": "https://www.gamespark.jp/article/2022/10/27/123853.html"
     }
   ],
   "supporting": [
     {
-      "label": "Forbes, 16 Nov 2026",
-      "url": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"
+      "label": "NME, 20 years on (2022)",
+      "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742"
     },
     {
-      "label": "DotEsports",
-      "url": "https://dotesports.com/gta/news/gta-6"
+      "label": "Game Informer obituary (26 May 2022)",
+      "url": "https://gameinformer.com/obituary/2022/05/26/ray-liotta-voice-of-tommy-vercetti-in-grand-theft-auto-vice-city-has-died"
     },
     {
-      "label": "Yahoo Tech",
-      "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html"
+      "label": "VideoGamesChronicle obituary (26 May 2022)",
+      "url": "https://www.videogameschronicle.com/news/ray-liotta-the-actor-known-in-gaming-as-gta-vice-citys-tommy-vercetti-has-died"
     },
     {
-      "label": "GSMArena",
-      "url": "https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php"
+      "label": "GamingBible (22 Nov 2022)",
+      "url": "https://www.gamingbible.com/features/gta-vice-citys-soundtrack-still-goes-hard-20-years-later-20221122"
     }
   ],
   "x_signals": [],

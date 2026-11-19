@@ -49,8 +49,11 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
 - Research window: the 24 hours before the run starts (`creatoros runlog start` prints it); v5 may widen to 48-72 hours only
   when no strong verified story exists in 24 hours (`window_expansion_reason`). Older stories need a dated new development.
 - X/Twitter signal is evidence only when observed; when x.com cannot be opened it is labelled NOT VERIFIED or PARTLY VERIFIED and metrics are UNKNOWN.
-- Every central claim is verified from a primary source, with source URL, title, publication date and exact supporting evidence
-  in the claim table. If a central claim cannot be verified, the package is HOLD — NOT RECORDING READY and another topic is chosen.
+- Verification (from 2026-11-21, tiered and risk-based; RUNBOOK "Verification policy"): each script claim has a risk and an
+  evidence list, and its level (HIGH, MEDIUM-HIGH, MEDIUM, LOW, UNVERIFIED) is computed from the sources. Time-sensitive claims
+  (launches, prices, availability, security, finance, breaking news) need MEDIUM-HIGH plus a current report; historical claims need
+  MEDIUM. Copies of one report count once; search excerpts never make HIGH. A failing story is put on HOLD (`creatoros hold`) and
+  the next-ranked one is tried. Older packages keep their original rule (every central claim HIGH with a primary source).
 - Never invent quotes, benchmarks, specs, prices, dates, URLs, engagement numbers, creator rankings or analytics. Unobserved = UNKNOWN.
 - If a source or platform cannot be opened, say so; never claim to have watched a video or opened a blocked page.
 - Viral potential scores are editorial judgements, not view predictions. Never promise growth.

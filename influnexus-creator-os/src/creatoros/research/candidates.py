@@ -221,8 +221,8 @@ def validate_v4(c: dict) -> list[str]:
 def window_reason(c: dict, window: dict | None) -> str | None:
     """v3 freshness rule: published inside the 24-hour research window, or a dated new development inside it.
     A date without a time counts if that day overlaps the window (never invent a time to pass this check)."""
-    if not window or scheme(c) not in ("v3", "v4"):
-        return None
+    if not window or scheme(c) not in ("v3", "v4") or c.get("creator_request"):
+        return None                                      # a topic the creator asked for is exempt from the window rule
     start, end = _iso(window.get("start_utc")), _iso(window.get("end_utc"))
     pub = _span(c.get("published_at"))
     if not (start and end and pub):

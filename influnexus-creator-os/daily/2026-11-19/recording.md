@@ -1,22 +1,24 @@
 # Recording: 2026-11-19 (RECORDING READY)
 
-GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.
+2002 mein ek game aayi thi jo 1986 mein set thi.
 
-Do baar delay hone ke baad, Rockstar ne aaj, 19 November ko, ise PlayStation 5 aur Xbox Series X aur S pe launch kiya.
+Neon lights, Hawaiian shirts, aur Miami se inspired ek sheher: Vice City.
 
-US mein Standard Edition 79.99 dollars ki hai, aur Ultimate 99.99 ki.
+Hero tha Tommy Vercetti, aur uski awaaz thi Hollywood actor Ray Liotta ki.
 
-Story Vice City mein hai, Leonida naam ki ek fictional state mein, aur aap khelte ho Jason aur Lucia ban ke.
+Lekin is game ka asli jaadu tha uska radio. Gaadi mein baitho, aur 80s ke asli gaane bajne lagte the. Zyada-tar music licensed tha: real songs, real artists.
 
-Lekin PC walon ko abhi wait karna padega. Rockstar ne PC date abhi tak announce nahi ki.
+Isiliye Vice City ek game kam, aur ek time machine zyada lagti thi.
 
-Toh pehle storage check karo, phir decide karo: day one pe loge, ya PC ka wait karoge?
+Aur sach batao, aapne bhi kabhi mission chhod ke sirf gaadi chalayi hai na, bas gaane sunne ke liye?
 
-About 42.8 seconds.
+Vice City ki aapki sabse pehli yaad kya hai?
 
-- Tone: Excited but controlled, like telling a friend the news first.
-- Opening: Big grin on 'finally aa gaya'.
-- Pauses: beat after 'aa gaya hai'; beat before 'Lekin PC walon ko'; pause before the final question
-- Emphasise: finally, 212 GB, do baar delay, 79.99, Jason aur Lucia, PC walon ko, storage check
-- Pronunciation: GTA 6: G-T-A six; Leonida: lee-oh-NEE-dah; Lucia: loo-SEE-ah; 212 GB: two-twelve GB; 79.99: seventy-nine ninety-nine
+About 43.6 seconds.
+
+- Tone: Warm, a little wistful, then playful on the question.
+- Opening: Half-smile, like remembering something.
+- Pauses: beat after '1986 mein set thi'; beat before 'Lekin is game ka asli jaadu'; pause before the last question
+- Emphasise: 2002, 1986, Vice City, Ray Liotta, radio, time machine
+- Pronunciation: Vercetti: ver-CHET-ee; Liotta: lee-OH-tuh; 1986: nineteen eighty-six
 - Keep your natural accent.

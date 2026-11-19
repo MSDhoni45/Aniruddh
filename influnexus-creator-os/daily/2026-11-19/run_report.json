@@ -139,6 +139,48 @@
       "quality_gate": "PASS",
       "quality_total": 91.5,
       "validation_problems": []
+    },
+    "2026-11-19-manual-181559": {
+      "run_id": "2026-11-19-manual-181559",
+      "trigger": "manual",
+      "start_ist": "2026-11-19T18:15:59+05:30",
+      "end_ist": "2026-11-19T18:17:34+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "9922b38",
+      "research_window": {
+        "start_utc": "2026-11-18T12:45:59+00:00",
+        "end_utc": "2026-11-19T12:45:59+00:00",
+        "start_ist": "2026-11-18T18:15:59+05:30",
+        "end_ist": "2026-11-19T18:15:59+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply (no push)",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "GTA VI held (fallback); Vice City nostalgia reel passes the tiered gate",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "GTA Vice City nostalgia: the 2002 game set in 1986",
+      "candidates": 8,
+      "source_access": "Evidence levels: 5 MEDIUM. Claims with a source opened directly: 0 of 5; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 105,
+      "estimated_seconds": 43.6,
+      "quality_gate": "PASS",
+      "quality_total": 90.0,
+      "validation_problems": []
     }
   }
 }

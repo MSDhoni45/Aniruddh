@@ -40,6 +40,25 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
 - If `daily/DATE/today.md` already says RECORDING READY, do not research again: re-check time-sensitive claims, re-run
   `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
 
+## Verification policy (permanent from 2026-11-21; tiered, risk-based)
+Each script claim records `risk` (`high` = launches, release dates, prices, availability, security incidents, financial claims,
+breaking news; `low` = established history and well-documented milestones) and an `evidence` list of sources
+(`url`, `kind` primary/news/reference/blog/forum/user-edited, `access` opened/search-index/secondary, `date`, optional `outlet`,
+`syndicated_from`) plus `conflicts` when sources disagree. The level is computed (`creatoros/factcheck/evidence.py`), never declared:
+- **HIGH:** a primary source opened directly (or authenticated primary material).
+- **MEDIUM-HIGH:** official text read through a search index, plus at least two genuinely independent reputable sources.
+- **MEDIUM:** at least two independent reputable reports, consistent, each dated and attributed.
+- **LOW:** a single source, unclear attribution, syndicated copies of one report, or incomplete evidence.
+- **UNVERIFIED:** rumour, conflicting sources, or nothing traceable.
+Copies of one report count once; blogs, forums and user-edited wikis (fandom, TV Tropes, Reddit) never count as reputable;
+search excerpts agreeing never make a claim HIGH. Gate: high-risk claims need MEDIUM-HIGH or better and a corroborating report
+dated within 7 days; low-risk claims need MEDIUM or better.
+**Automatic fallback:** if the selected story fails, `creatoros hold --date DATE --reason "..."` archives it under
+`daily/DATE/held_<slug>/`, logs it in `holds.json` and names the next-ranked story; give the held candidate its `hold_reason`
+(the validator insists) and verify the next one. Repeat until one passes. Never fill an evidence gap. If none passes, deliver no
+script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
+not from verification.
+
 ## v5: Master Prompt V5 (required from 2026-11-21; v3, v4 or v5 accepted on 2026-11-20)
 Where this section differs from the v4 and v3 text below, this section wins. `"scoring": "v5"`, `"language": "hinglish"`.
 - **Language:** natural Hinglish in Roman script (teleprompter-ready), for Indian and international English-speaking tech fans.

@@ -45,6 +45,8 @@ def main(argv=None) -> int:
     p.add_argument("--run-id"); p.add_argument("--delivery", default="not attempted", help="requested|confirmed|failed|not attempted")
     p.add_argument("--channel", default=""); p.add_argument("--receipt", default="")
     p.add_argument("--error", action="append", default=[]); p.add_argument("--warning", action="append", default=[])
+    p = sub.add_parser("hold", help="put today's story on HOLD, record why, and name the next-ranked story")
+    p.add_argument("--date"); p.add_argument("--reason", required=True)
     p = sub.add_parser("sources-audit", help="probe every source group from this environment; save daily/DATE/source_access.json")
     p.add_argument("--date")
     p = sub.add_parser("followers-add", help="record a follower count you actually saw")
@@ -172,6 +174,13 @@ def main(argv=None) -> int:
                     return 2
                 _print(runs.delivery(log, daily, a.run_id, a.delivery, a.channel, a.receipt))
         except ValueError as e:
+            print(str(e), file=sys.stderr)
+            return 2
+    elif a.cmd == "hold":
+        from .research import holds
+        try:
+            _print(holds.hold(config.path("daily", a.date or ist_today()), a.reason))
+        except (ValueError, FileNotFoundError) as e:
             print(str(e), file=sys.stderr)
             return 2
     elif a.cmd == "sources-audit":

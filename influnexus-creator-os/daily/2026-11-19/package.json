@@ -9,186 +9,168 @@
   "x_signals": [],
   "date": "2026-11-19",
   "scoring": "v5",
-  "slug": "gta-vi-launch",
+  "slug": "gta-vice-city-nostalgia",
   "keys": [
-    "gta-vi-launch",
-    "grand-theft-auto-vi"
+    "gta-vice-city-nostalgia",
+    "gta-vice-city-1986"
   ],
-  "topic": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
+  "topic": "GTA Vice City nostalgia: the 2002 game set in 1986",
   "category": "GAMING",
-  "topic_type": "BREAKING",
-  "announced_at": "Launch 19 Nov 2026; launch date announced Nov 2025 (Rockstar Newswire)",
-  "generated_at": "2026-11-19T18:20:00+05:30",
+  "topic_type": "EVERGREEN",
+  "announced_at": "Released 27 Oct 2002 (North America)",
+  "generated_at": "2026-11-19T18:25:00+05:30",
   "research_window": {
-    "start_utc": "2026-11-18T12:16:51+00:00",
-    "end_utc": "2026-11-19T12:16:51+00:00",
-    "start_ist": "2026-11-18T17:46:51+05:30",
-    "end_ist": "2026-11-19T17:46:51+05:30",
+    "start_utc": "2026-11-18T12:45:59+00:00",
+    "end_utc": "2026-11-19T12:45:59+00:00",
+    "start_ist": "2026-11-18T18:15:59+05:30",
+    "end_ist": "2026-11-19T18:15:59+05:30",
     "hours": 24
   },
-  "why_selected": "Creator's request; it is also the broadest-appeal verified story in today's window: launch day, primary sources plus independent reporting.",
-  "evidence_confidence": "HIGH",
-  "research_summary": "Rockstar's Newswire set Grand Theft Auto VI's launch for 19 November 2026 on PlayStation 5 and Xbox Series X|S, after delays from fall 2025 and then 26 May 2026. Rockstar Support lists the Standard Edition at $79.99 and the Ultimate Edition at $99.99, and says digital pre-load began on 10 November and needs up to 212 GB depending on the device; Forbes and DotEsports report the same. Rockstar's own pages place the story in Vice City in the fictional state of Leonida, following Jason and Lucia. No PC date has been announced. Launch-day sales, reviews and server performance were not known at research time and are left out.",
+  "why_selected": "Creator's fallback request after the GTA VI launch package was held.",
+  "evidence_confidence": "MEDIUM",
+  "research_summary": "Grand Theft Auto: Vice City was released in North America on 27 October 2002 and is set in 1986 in Vice City, a fictional city inspired by Miami, as 20th-anniversary features from Game*Spark, GamingBible and NME describe. Its protagonist, Tommy Vercetti, was voiced by Ray Liotta; Game Informer and VideoGamesChronicle both said so in their May 2022 obituaries, and Rockstar's own tribute called him the iconic voice of Tommy Vercetti. NME says the music was plucked almost entirely from the 1980s. The claim that Billie Jean was later removed over licensing rests only on a blog and a fan wiki and is left out. No official page could be opened here.",
   "primary_sources": [
     {
-      "label": "Rockstar Newswire: launch date (Nov 2025)",
-      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
-    },
-    {
-      "label": "Rockstar Support: platforms and editions",
-      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
-    },
-    {
-      "label": "Rockstar Newswire: pre-load from 10 Nov",
-      "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
-    },
-    {
-      "label": "Rockstar: GTA VI",
-      "url": "https://www.rockstargames.com/VI"
+      "label": "Game*Spark 20th anniversary feature (27 Oct 2022)",
+      "url": "https://www.gamespark.jp/article/2022/10/27/123853.html"
     }
   ],
   "supporting_sources": [
     {
-      "label": "Forbes, 16 Nov 2026",
-      "url": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/"
+      "label": "NME, 20 years on (2022)",
+      "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742"
     },
     {
-      "label": "DotEsports",
-      "url": "https://dotesports.com/gta/news/gta-6"
+      "label": "Game Informer obituary (26 May 2022)",
+      "url": "https://gameinformer.com/obituary/2022/05/26/ray-liotta-voice-of-tommy-vercetti-in-grand-theft-auto-vice-city-has-died"
     },
     {
-      "label": "Yahoo Tech",
-      "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html"
+      "label": "VideoGamesChronicle obituary (26 May 2022)",
+      "url": "https://www.videogameschronicle.com/news/ray-liotta-the-actor-known-in-gaming-as-gta-vice-citys-tommy-vercetti-has-died"
     },
     {
-      "label": "GSMArena",
-      "url": "https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php"
+      "label": "GamingBible (22 Nov 2022)",
+      "url": "https://www.gamingbible.com/features/gta-vice-citys-soundtrack-still-goes-hard-20-years-later-20221122"
     }
   ],
   "key_facts": [
-    "Launch 19 Nov 2026, PS5 and Xbox Series X|S",
-    "$79.99 Standard / $99.99 Ultimate (US)",
-    "Pre-load from 10 Nov, up to 212 GB",
-    "No PC date yet"
+    "Released 27 Oct 2002 (NA)",
+    "Set in 1986",
+    "Miami-inspired city",
+    "Ray Liotta voiced Tommy Vercetti",
+    "Mostly licensed 80s music"
   ],
   "uncertainties": [
-    "Prices are US; other regions differ.",
-    "No PC date as of 19 Nov evening IST; re-check before recording.",
-    "Sales, reviews and server stability unknown."
+    "No official Rockstar page could be opened; facts rest on dated independent reports (MEDIUM, low-risk historical)."
   ],
-  "context": "Rockstar first announced GTA VI in December 2023 for 2025, then delayed it twice.",
-  "script": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.\n\nDo baar delay hone ke baad, Rockstar ne aaj, 19 November ko, ise PlayStation 5 aur Xbox Series X aur S pe launch kiya.\n\nUS mein Standard Edition 79.99 dollars ki hai, aur Ultimate 99.99 ki.\n\nStory Vice City mein hai, Leonida naam ki ek fictional state mein, aur aap khelte ho Jason aur Lucia ban ke.\n\nLekin PC walon ko abhi wait karna padega. Rockstar ne PC date abhi tak announce nahi ki.\n\nToh pehle storage check karo, phir decide karo: day one pe loge, ya PC ka wait karoge?",
-  "hook": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.",
+  "context": "GTA VI returns to Vice City; its launch facts are on HOLD today pending verification.",
+  "script": "2002 mein ek game aayi thi jo 1986 mein set thi.\n\nNeon lights, Hawaiian shirts, aur Miami se inspired ek sheher: Vice City.\n\nHero tha Tommy Vercetti, aur uski awaaz thi Hollywood actor Ray Liotta ki.\n\nLekin is game ka asli jaadu tha uska radio. Gaadi mein baitho, aur 80s ke asli gaane bajne lagte the. Zyada-tar music licensed tha: real songs, real artists.\n\nIsiliye Vice City ek game kam, aur ek time machine zyada lagti thi.\n\nAur sach batao, aapne bhi kabhi mission chhod ke sirf gaadi chalayi hai na, bas gaane sunne ke liye?\n\nVice City ki aapki sabse pehli yaad kya hai?",
+  "hook": "2002 mein ek game aayi thi jo 1986 mein set thi.",
   "hooks": [
     {
-      "text": "GTA 6 finally aa gaya hai, aur iska download hai 212 GB tak.",
-      "mechanism": "unexpected fact",
+      "text": "2002 mein ek game aayi thi jo 1986 mein set thi.",
+      "mechanism": "counterintuitive insight",
       "accuracy": 10,
       "curiosity": 9,
       "clarity": 9,
       "credibility": 10,
+      "emotional": 8,
+      "natural": 9
+    },
+    {
+      "text": "Ek game jisne humein 80s mein bhej diya, bina time machine ke.",
+      "mechanism": "unexpected comparison",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 8,
+      "emotional": 9,
+      "natural": 8
+    },
+    {
+      "text": "Vice City ka asli hero Tommy nahi, radio tha.",
+      "mechanism": "contradiction",
+      "accuracy": 9,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
       "emotional": 9,
       "natural": 9
     },
     {
-      "text": "Do delays ke baad, GTA 6 aaj launch ho gaya.",
-      "mechanism": "timely development",
+      "text": "Ray Liotta ki awaaz, neon sheher, aur 80s ke gaane: yaad hai?",
+      "mechanism": "strong factual statement",
       "accuracy": 10,
-      "curiosity": 6,
-      "clarity": 10,
+      "curiosity": 7,
+      "clarity": 8,
       "credibility": 10,
-      "emotional": 7,
-      "natural": 10
+      "emotional": 8,
+      "natural": 7
     },
     {
-      "text": "Apne console mein 212 GB khaali karo, GTA 6 aa gaya.",
+      "text": "Kitni baar aapne Vice City mein mission chhoda, sirf radio ke liye?",
       "mechanism": "relatable problem",
       "accuracy": 9,
       "curiosity": 8,
       "clarity": 9,
-      "credibility": 9,
-      "emotional": 8,
-      "natural": 8
-    },
-    {
-      "text": "GTA 6 aa gaya, lekin PC pe nahi.",
-      "mechanism": "contradiction",
-      "accuracy": 10,
-      "curiosity": 8,
-      "clarity": 9,
-      "credibility": 10,
-      "emotional": 7,
+      "credibility": 8,
+      "emotional": 9,
       "natural": 9
-    },
-    {
-      "text": "Lagbhag 80 dollars aur 212 GB: GTA 6 ki asli keemat.",
-      "mechanism": "curiosity gap",
-      "accuracy": 9,
-      "curiosity": 8,
-      "clarity": 7,
-      "credibility": 9,
-      "emotional": 7,
-      "natural": 7
     }
   ],
   "recording": {
-    "tone": "Excited but controlled, like telling a friend the news first.",
-    "pacing": "Quick through the facts; slow down on the price and the last question.",
-    "opening_expression": "Big grin on 'finally aa gaya'.",
+    "tone": "Warm, a little wistful, then playful on the question.",
+    "pacing": "Unhurried; let '1986' and 'time machine' land.",
+    "opening_expression": "Half-smile, like remembering something.",
     "emphasis": [
-      "finally",
-      "212 GB",
-      "do baar delay",
-      "79.99",
-      "Jason aur Lucia",
-      "PC walon ko",
-      "storage check"
+      "2002",
+      "1986",
+      "Vice City",
+      "Ray Liotta",
+      "radio",
+      "time machine"
     ],
     "pauses": [
-      "beat after 'aa gaya hai'",
-      "beat before 'Lekin PC walon ko'",
-      "pause before the final question"
+      "beat after '1986 mein set thi'",
+      "beat before 'Lekin is game ka asli jaadu'",
+      "pause before the last question"
     ],
     "pronunciation": [
-      "GTA 6: G-T-A six",
-      "Leonida: lee-oh-NEE-dah",
-      "Lucia: loo-SEE-ah",
-      "212 GB: two-twelve GB",
-      "79.99: seventy-nine ninety-nine"
+      "Vercetti: ver-CHET-ee",
+      "Liotta: lee-OH-tuh",
+      "1986: nineteen eighty-six"
     ]
   },
   "visuals": [
-    "Official GTA VI launch trailer and launch gallery (credit Rockstar Games)",
-    "Storage bar filling to 212 GB"
+    "Original neon 80s graphics",
+    "Rockstar art only if licensed"
   ],
   "instagram": {
-    "cover_headline": "GTA 6 is here: 212 GB",
-    "caption": "GTA 6 finally out hai, PS5 aur Xbox Series X|S pe, do delays ke baad. Pre-load 212 GB tak, Standard $79.99 aur Ultimate $99.99 (US prices). PC ki date abhi nahi aayi. Day one ya wait?",
+    "cover_headline": "Vice City was a time machine",
+    "caption": "2002 ki game, 1986 ki duniya. Vice City ek game kam aur time machine zyada thi. Aapki sabse pehli Vice City yaad kya hai?",
     "hashtags": [
-      "#GTA6",
-      "#GTAVI",
-      "#RockstarGames",
-      "#PS5",
-      "#Gaming"
+      "#GTAViceCity",
+      "#GTA",
+      "#RetroGaming",
+      "#Nostalgia"
     ]
   },
   "linkedin": {
-    "caption": "Grand Theft Auto VI launched today on PS5 and Xbox Series X|S, after two delays. Two numbers stand out: a $79.99 standard price and a pre-load of up to 212 GB. Rockstar has not announced a PC date.",
-    "business_relevance": "Premium pricing and very large downloads test what players will accept for a flagship launch.",
-    "discussion_prompt": "Is $80 the new normal for blockbuster games?"
+    "caption": "Vice City (2002) built a whole era out of licensed music and setting: a lesson in how atmosphere sells a product.",
+    "business_relevance": "Atmosphere as product design.",
+    "discussion_prompt": "Which game felt like a time machine to you?"
   },
   "x": {
-    "post": "GTA 6 is out today on PS5 and Xbox Series X|S after two delays. Pre-load: up to 212 GB. Price: $79.99 Standard, $99.99 Ultimate (US). Still no PC date."
+    "post": "GTA Vice City came out in 2002 but lived in 1986: a Miami-inspired city, Ray Liotta as Tommy Vercetti, and a radio full of real 80s hits."
   },
   "youtube": {
-    "title": "GTA 6 Is Finally Out: 212 GB, $80, No PC Yet",
-    "description": "Rockstar launched GTA VI on 19 Nov 2026 on PS5 and Xbox Series X|S. Pre-load up to 212 GB; $79.99 Standard, $99.99 Ultimate (US); no PC date announced. Sources: Rockstar Newswire and Support.",
+    "title": "GTA Vice City Was a Time Machine",
+    "description": "The 2002 game set in 1986: Ray Liotta's Tommy Vercetti and an 80s radio that people still remember.",
     "keywords": [
-      "GTA 6",
-      "GTA VI",
-      "Rockstar Games",
-      "PS5",
-      "Xbox Series X"
+      "GTA Vice City",
+      "Tommy Vercetti",
+      "retro gaming",
+      "80s"
     ]
   },
   "growth": {
@@ -199,6 +181,62 @@
     "underperform": "Heavily saturated topic today; many creators will cover it."
   },
   "candidates": [
+    {
+      "headline": "GTA Vice City nostalgia: the 2002 game set in 1986",
+      "category": "GAMING",
+      "topic_type": "EVERGREEN",
+      "published_at": "2002-10-27",
+      "original_source": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+      "creator_request": true,
+      "main_claim": "Vice City (2002) is set in 1986 in a Miami-inspired city, starred Ray Liotta's voice, and is remembered for its licensed 80s radio.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Childhood nostalgia for a huge Indian and global gaming audience; GTA is in the news today.",
+      "potential_hook": "2002 mein ek game aayi thi jo 1986 mein set thi.",
+      "target_audience": "Indian and global gamers, 20-35",
+      "uncertainty": "No official page opened; historical facts from dated independent reports.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "20th-anniversary features: Game*Spark, GamingBible, NME (2022)"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+          "title": "Vice City 20th anniversary (Game*Spark)",
+          "retrieved_at": "2026-11-19T12:50:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742",
+          "title": "Revisiting Vice City's 80s soundtrack 20 years on (NME)",
+          "retrieved_at": "2026-11-19T12:50:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 7,
+        "significance": 4,
+        "usefulness": 5,
+        "visual": 9,
+        "broad_appeal": 9,
+        "discussion_potential": 9,
+        "longevity": 9,
+        "verification_confidence": 7
+      }
+    },
     {
       "headline": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
       "category": "GAMING",
@@ -272,7 +310,8 @@
         "discussion_potential": 9,
         "longevity": 6,
         "verification_confidence": 9
-      }
+      },
+      "hold_reason": "held 19 Nov: time-sensitive launch facts rest on search excerpts only; official pages blocked"
     },
     {
       "headline": "Voyager 1 reaches one light-day from Earth while its data link is down",
@@ -504,100 +543,177 @@
   ],
   "factcheck": {
     "date": "2026-11-19",
-    "story": "GTA VI launches today on PS5 and Xbox Series X|S after two delays",
+    "story": "GTA Vice City nostalgia: the 2002 game set in 1986",
     "claims": [
       {
-        "id": "g1",
-        "text": "GTA VI launches on 19 Nov 2026 on PlayStation 5 and Xbox Series X|S",
+        "id": "vc1",
+        "text": "GTA Vice City came out in 2002 (North America: 27 Oct 2002)",
         "status": "CONFIRMED",
-        "primary_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
-        "source_title": "Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)",
-        "supporting_source": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html",
-        "source_date": "2025-11 (announcement); launch 2026-11-19",
-        "supporting_evidence": "Grand Theft Auto VI will launch on Nov. 19, 2026, for PlayStation 5 and Xbox Series X|S",
-        "confidence": "HIGH",
-        "access": "search-index",
+        "risk": "low",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00"
+        "evidence": [
+          {
+            "url": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-10-27"
+          },
+          {
+            "url": "https://www.gamingbible.com/features/gta-vice-citys-soundtrack-still-goes-hard-20-years-later-20221122",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-11-22"
+          },
+          {
+            "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "kind": "reference",
+            "access": "secondary",
+            "date": null
+          }
+        ],
+        "retrieved_at": "2026-11-19T12:50:00+00:00"
       },
       {
-        "id": "g2",
-        "text": "The game was delayed twice (from fall 2025 to 26 May 2026, then to 19 Nov 2026)",
+        "id": "vc2",
+        "text": "The game is set in 1986",
         "status": "CONFIRMED",
-        "primary_source": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
-        "source_title": "Grand Theft Auto VI is Now Set to Launch November 19, 2026 (Rockstar Newswire)",
-        "supporting_source": "https://m.gsmarena.com/gta_vi_delayed_yet_again_-amp-70193.php",
-        "source_date": "2025-11",
-        "supporting_evidence": "now set to launch on November 19, 2026. This is the second delay",
-        "confidence": "HIGH",
-        "access": "search-index",
+        "risk": "low",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "GSMArena: 'GTA VI delayed yet again'."
+        "evidence": [
+          {
+            "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022"
+          },
+          {
+            "url": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-10-27"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "kind": "reference",
+            "access": "secondary",
+            "date": null
+          }
+        ],
+        "retrieved_at": "2026-11-19T12:50:00+00:00"
       },
       {
-        "id": "g3",
-        "text": "Digital pre-load began on 10 Nov 2026 and needs up to 212 GB depending on the device",
+        "id": "vc3",
+        "text": "Vice City is a fictional city inspired by Miami",
         "status": "CONFIRMED",
-        "primary_source": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-        "source_title": "Grand Theft Auto VI Pre-Load Begins on November 10 (Rockstar Newswire)",
-        "supporting_source": "https://www.forbes.com/sites/erikkain/2026/11/16/gta-6-release-date-time-ps5-xbox-series-x-download-size-day-one-update/",
-        "source_date": "2026-11",
-        "supporting_evidence": "The pre-load file requires up to 212 GB depending on the device",
-        "confidence": "HIGH",
-        "access": "search-index",
+        "risk": "low",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "Script says 'up to 212 gigabytes'."
+        "evidence": [
+          {
+            "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022"
+          },
+          {
+            "url": "https://www.gamespark.jp/article/2022/10/27/123853.html",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-10-27"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "kind": "reference",
+            "access": "secondary",
+            "date": null
+          }
+        ],
+        "retrieved_at": "2026-11-19T12:50:00+00:00"
       },
       {
-        "id": "g4",
-        "text": "Standard Edition $79.99; Ultimate Edition $99.99 (US)",
+        "id": "vc4",
+        "text": "Tommy Vercetti was voiced by actor Ray Liotta",
         "status": "CONFIRMED",
-        "primary_source": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-        "source_title": "Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support)",
-        "supporting_source": "https://dotesports.com/gta/news/gta-6",
-        "source_date": "2026-11",
-        "supporting_evidence": "The base game is priced at $79.99. The Ultimate Edition is priced at $99.99",
-        "confidence": "HIGH",
-        "access": "search-index",
+        "risk": "low",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "US prices; other regions differ. Script says 'almost eighty dollars'."
+        "evidence": [
+          {
+            "url": "https://gameinformer.com/obituary/2022/05/26/ray-liotta-voice-of-tommy-vercetti-in-grand-theft-auto-vice-city-has-died",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-05-26"
+          },
+          {
+            "url": "https://www.videogameschronicle.com/news/ray-liotta-the-actor-known-in-gaming-as-gta-vice-citys-tommy-vercetti-has-died",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-05-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City",
+            "kind": "reference",
+            "access": "secondary",
+            "date": null
+          }
+        ],
+        "retrieved_at": "2026-11-19T12:50:00+00:00",
+        "note": "Rockstar's own 2022 tribute ('the iconic voice of Tommy Vercetti') was seen only through search."
       },
       {
-        "id": "g5",
-        "text": "Set in Vice City in the fictional state of Leonida; the protagonists are Jason and Lucia",
+        "id": "vc5",
+        "text": "The soundtrack was mostly licensed real 1980s music",
         "status": "CONFIRMED",
-        "primary_source": "https://www.rockstargames.com/VI",
-        "source_title": "Grand Theft Auto VI (Rockstar)",
-        "supporting_source": "https://dotesports.com/gta/news/gta-6",
-        "source_date": "2025-2026",
-        "supporting_evidence": "a criminal conspiracy stretching across the state of Leonida ... Jason ... Lucia",
-        "confidence": "HIGH",
-        "access": "search-index",
+        "risk": "low",
         "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00"
+        "evidence": [
+          {
+            "url": "https://www.nme.com/features/grand-theft-auto-vice-city-80s-soundtrack-3231742",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022"
+          },
+          {
+            "url": "https://www.gamingbible.com/features/gta-vice-citys-soundtrack-still-goes-hard-20-years-later-20221122",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2022-11-22"
+          }
+        ],
+        "retrieved_at": "2026-11-19T12:50:00+00:00",
+        "note": "NME: music plucked almost entirely from the '80s."
       },
       {
-        "id": "g6",
-        "text": "No PC release date has been announced",
-        "status": "CONFIRMED",
-        "primary_source": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-        "source_title": "Grand Theft Auto VI Platforms, Editions, and Versions (Rockstar Support)",
-        "supporting_source": "https://dotesports.com/gta/news/gta-6",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "Platforms listed: PlayStation 5 and Xbox Series X|S",
-        "confidence": "HIGH",
-        "access": "search-index",
-        "in_script": true,
-        "retrieved_at": "2026-11-19T12:20:00+00:00",
-        "note": "Absence of a PC date as of 19 Nov 17:45 IST; time-sensitive, re-check before recording."
+        "id": "vc6",
+        "text": "'Billie Jean' was removed from later versions over licensing",
+        "status": "UNVERIFIED",
+        "risk": "low",
+        "in_script": false,
+        "evidence": [
+          {
+            "url": "https://crooked-wanderer.com/2022/06/30/the-music-of-grand-theft-auto-vice-city/",
+            "kind": "blog",
+            "access": "secondary",
+            "date": "2022-06-30"
+          },
+          {
+            "url": "https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/GrandTheftAutoViceCity",
+            "kind": "reference",
+            "access": "secondary",
+            "date": null
+          }
+        ],
+        "retrieved_at": "2026-11-19T12:50:00+00:00",
+        "note": "Left out of the script: only a blog and a user-edited wiki."
       }
     ]
   },
   "pillar": "consumer_hardware",
-  "format": "A",
+  "format": "E",
   "backups": [
     "Voyager 1 reaches one light-day from Earth while its data link is down",
     "Google opens Genie 4 world model to AI Ultra subscribers"
@@ -649,20 +765,20 @@
     "Source audit: X, Reddit, YouTube, Instagram, LinkedIn, Google Trends and news sites BLOCKED; primary sites PARTIAL.",
     "All claims verified from search-index excerpts of rockstargames.com plus independent outlets; no page opened directly.",
     "No social engagement observed; traction is provisional. Launch-day sales, reviews and server status unknown.",
-    "The topic was chosen at the creator's request; it also scored highest of today's candidates."
+    "The topic was chosen at the creator's request; it also scored highest of today's candidates.",
+    "Topic chosen by the creator as a fallback; exempt from the 24-hour window."
   ],
   "revisions": 1,
-  "why_beats_alternatives": "The creator's chosen topic, and the broadest-appeal verified story in today's window: launch day, Rockstar's own pages plus independent reporting. Voyager 1 is the strongest science alternative and stays the first backup.",
-  "release_type": "launch",
-  "verified_development": "Rockstar's own pages: Grand Theft Auto VI launches 19 Nov 2026 on PS5 and Xbox Series X|S; independent outlets report it out today.",
-  "confidence": "HIGH",
-  "thumbnail_text": "GTA 6 is here: 212 GB",
-  "pinned_comment": "Day one pe loge ya PC ka wait karoge? Batao comments mein.",
+  "why_beats_alternatives": "The GTA VI launch could not be verified to the time-sensitive standard; Vice City history is low-risk and backed by dated independent reports, and keeps today's GTA interest.",
+  "verified_development": "Historical: Vice City released 27 Oct 2002 (NA), set in 1986; Ray Liotta voiced Tommy Vercetti (2022 obituaries).",
+  "confidence": "MEDIUM",
+  "thumbnail_text": "Vice City was a time machine",
+  "pinned_comment": "Mission chhod ke sirf radio sunne waale, haath upar karo. Aapka favourite gaana kaunsa tha?",
   "edit_beats": {
-    "0-3": "Official GTA VI key art (credit Rockstar), then a storage bar slamming to 212 GB",
-    "3-10": "Calendar graphic: two delays, then 19 Nov; PS5 and Xbox Series X|S logos",
-    "10-25": "Price cards $79.99 / $99.99 (US), then official Vice City / Leonida stills of Jason and Lucia from Rockstar's launch gallery",
-    "25-45": "'PC: no date yet' card, storage check graphic, end on the question as on-screen text"
+    "0-3": "'2002' then '1986' hitting the screen over a neon pink/teal sunset (original graphic)",
+    "3-10": "Neon skyline illustration (labelled), Hawaiian-shirt pattern, 'VICE CITY' title card",
+    "10-25": "Tommy Vercetti name card; car-radio dial graphic; 'Real 80s songs, real artists'",
+    "25-45": "'Game < Time machine' card; end on the question as big on-screen text; Rockstar art only if licensed"
   },
   "quality_v5": {
     "hook": 9,
@@ -670,6 +786,12 @@
     "storytelling": 9,
     "retention": 9,
     "shareability": 9,
-    "factual_confidence": 10
-  }
+    "factual_confidence": 9
+  },
+  "verification": "tiered",
+  "creator_request": {
+    "topic": "GTA Vice City nostalgia: the 2002 game set in 1986",
+    "asked": "GTA-related development or a GTA Vice City nostalgia story"
+  },
+  "release_type": "original release"
 }

@@ -48,6 +48,47 @@ def check_claim(c: dict, v2: bool = False) -> list[str]:
     return p
 
 
+def check_claim_v5(c: dict) -> list[str]:
+    """v5 claims: the level is computed from the evidence list (factcheck/evidence.py), never self-declared."""
+    from . import evidence as ev
+    cid = c.get("id", "?")
+    p = [f"{cid}: missing {f}" for f in ("id", "text", "status", "risk", "evidence", "in_script") if f not in c]
+    if p:
+        return p
+    if c["status"] not in STATUSES:
+        p.append(f"{cid}: status must be one of {STATUSES}")
+    if c["risk"] not in ev.RISKS:
+        p.append(f"{cid}: risk must be 'high' (time-sensitive) or 'low' (historical)")
+    for i, it in enumerate(c["evidence"]):
+        p += [f"{cid}: {x}" for x in ev.item_problems(it, i)]
+    if c["status"] in NEEDS_ATTRIBUTION and not c.get("attribution"):
+        p.append(f"{cid}: {c['status']} needs an attribution")
+    return p
+
+
+def readiness_v5(claims: list[dict], script: str, unresolved: list[str], package_date: str) -> dict:
+    from . import evidence as ev
+    problems = [x for c in claims for x in check_claim_v5(c)]
+    if problems:
+        return {"status": HOLD, "problems": problems, "reasons": ["claim table incomplete"]}
+    low, reasons = script.lower(), []
+    for c in claims:
+        c["level"] = ev.level(c)["level"]
+        if not c["in_script"]:
+            continue
+        if c["status"] in NOT_USABLE:
+            reasons.append(f"{c['id']} is {c['status']} but used in the script")
+        reasons += ev.gate(c, package_date)
+        if c["status"] in NEEDS_ATTRIBUTION:
+            phrase = c.get("script_attribution")
+            if not phrase or phrase.lower() not in low:
+                reasons.append(f"{c['id']} is a {c['status']} but the script does not attribute it (script_attribution)")
+        if c.get("quote") and not c.get("wording_verified"):
+            reasons.append(f"{c['id']} quotes a statement whose exact wording is not verified")
+    reasons += [f"unresolved: {u}" for u in unresolved]
+    return {"status": READY if not reasons else HOLD, "problems": [], "reasons": reasons}
+
+
 def readiness(claims: list[dict], script: str, unresolved: list[str], v2: bool = False) -> dict:
     """Decide READY or HOLD. Problems are structural errors; reasons are what keeps the script from recording.
     v2 packages also require, for every script claim, the source title and the exact supporting evidence text."""
@@ -92,8 +133,42 @@ ACCESS_LABEL = {"opened": "page opened and read directly",
                 "not found": "primary source not found"}
 
 
+def is_tiered(claims: list[dict]) -> bool:
+    return any("evidence" in c and "risk" in c for c in claims)
+
+
+def level_summary(claims: list[dict]) -> str:
+    """Tiered policy: evidence level per script claim, and how many sources were opened directly."""
+    from . import evidence as ev
+    used = [c for c in claims if c.get("in_script")]
+    if not used:
+        return ""
+    counts: dict[str, int] = {}
+    for c in used:
+        lv = ev.level(c)["level"]
+        counts[lv] = counts.get(lv, 0) + 1
+    opened = sum(1 for c in used if any(it.get("access") == "opened" for it in c.get("evidence") or []))
+    order = [lv for lv in reversed(ev.LEVELS) if lv in counts]
+    return ("Evidence levels: " + ", ".join(f"{counts[lv]} {lv}" for lv in order) +
+            f". Claims with a source opened directly: {opened} of {len(used)}; the rest rely on search-index excerpts and independent reports.")
+
+
+def table_v5(claims: list[dict]) -> str:
+    from . import evidence as ev
+    rows = ["| # | Claim | Risk | Evidence level | Why | Sources (kind, access, date) | In script |", "|---|---|---|---|---|---|---|"]
+    for c in claims:
+        lv = ev.level(c)
+        src = "; ".join(f"[{ev.outlet(it)}]({it['url']}) ({it.get('kind')}, {it.get('access')}, {it.get('date', 'undated')}"
+                        + (f", copy of {it['syndicated_from']}" if it.get("syndicated_from") else "") + ")" for it in c.get("evidence") or [])
+        rows.append(f"| {c['id']} | {c['text']} | {c.get('risk')} | {lv['level']} | {lv['why']} | {src or 'none'} | "
+                    f"{'yes' if c.get('in_script') else 'no'} |")
+    return "\n".join(rows) + "\n"
+
+
 def access_summary(claims: list[dict]) -> str:
     """One plain line saying how the script's sources were actually reached."""
+    if is_tiered(claims):
+        return level_summary(claims)
     used = [c for c in claims if c.get("in_script")]
     kinds = sorted({c.get("access") or "not found" for c in used})
     if not used:
@@ -105,6 +180,12 @@ def access_summary(claims: list[dict]) -> str:
 
 
 def table(claims: list[dict]) -> str:
+    if is_tiered(claims):
+        return table_v5(claims)
+    return _table_v1(claims)
+
+
+def _table_v1(claims: list[dict]) -> str:
     def link(u):
         return f"[link]({u})" if u else "NONE FOUND"
     rows = ["| # | Exact claim | Primary source | Supporting source | Status | Source date | Confidence | In script |",
