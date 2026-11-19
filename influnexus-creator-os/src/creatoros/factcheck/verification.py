@@ -52,13 +52,13 @@ def check_claim_v5(c: dict) -> list[str]:
     """v5 claims: the level is computed from the evidence list (factcheck/evidence.py), never self-declared."""
     from . import evidence as ev
     cid = c.get("id", "?")
-    p = [f"{cid}: missing {f}" for f in ("id", "text", "status", "risk", "evidence", "in_script") if f not in c]
+    p = [f"{cid}: missing {f}" for f in ("id", "text", "status", "evidence", "in_script") if f not in c]
     if p:
         return p
     if c["status"] not in STATUSES:
         p.append(f"{cid}: status must be one of {STATUSES}")
-    if c["risk"] not in ev.RISKS:
-        p.append(f"{cid}: risk must be 'high' (time-sensitive) or 'low' (historical)")
+    if c.get("risk") not in ev.RISKS + [None]:
+        p.append(f"{cid}: risk, if declared, must be 'high' (time-sensitive) or 'low' (historical)")
     for i, it in enumerate(c["evidence"]):
         p += [f"{cid}: {x}" for x in ev.item_problems(it, i)]
     if c["status"] in NEEDS_ATTRIBUTION and not c.get("attribution"):
@@ -74,6 +74,8 @@ def readiness_v5(claims: list[dict], script: str, unresolved: list[str], package
     low, reasons = script.lower(), []
     for c in claims:
         c["level"] = ev.level(c)["level"]
+        rk = ev.effective_risk(c, package_date)
+        c["risk_effective"], c["risk_why"] = rk["risk"], rk["why"]
         if not c["in_script"]:
             continue
         if c["status"] in NOT_USABLE:
@@ -134,7 +136,7 @@ ACCESS_LABEL = {"opened": "page opened and read directly",
 
 
 def is_tiered(claims: list[dict]) -> bool:
-    return any("evidence" in c and "risk" in c for c in claims)
+    return any(isinstance(c.get("evidence"), list) and c["evidence"] and isinstance(c["evidence"][0], dict) for c in claims)
 
 
 def level_summary(claims: list[dict]) -> str:
@@ -160,7 +162,8 @@ def table_v5(claims: list[dict]) -> str:
         lv = ev.level(c)
         src = "; ".join(f"[{ev.outlet(it)}]({it['url']}) ({it.get('kind')}, {it.get('access')}, {it.get('date', 'undated')}"
                         + (f", copy of {it['syndicated_from']}" if it.get("syndicated_from") else "") + ")" for it in c.get("evidence") or [])
-        rows.append(f"| {c['id']} | {c['text']} | {c.get('risk')} | {lv['level']} | {lv['why']} | {src or 'none'} | "
+        risk = c.get("risk_effective", c.get("risk") or "?") + (f" ({c['risk_why']})" if c.get("risk_why") else "")
+        rows.append(f"| {c['id']} | {c['text']} | {risk} | {lv['level']} | {lv['why']} | {src or 'none'} | "
                     f"{'yes' if c.get('in_script') else 'no'} |")
     return "\n".join(rows) + "\n"
 

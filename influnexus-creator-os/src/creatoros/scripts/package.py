@@ -425,7 +425,8 @@ def render_today_v5(p: dict, info: dict) -> str:
         for c in claims:
             lv = ev.level(c)
             srcs = ", ".join(f"[{ev.outlet(it)}]({it['url']})" for it in c.get("evidence") or [])
-            L.append(f"- {c['text']}: **{lv['level']}** ({c['risk']}-risk; {lv['why']}). {c['status']}. Sources: {srcs}"
+            L.append(f"- {c['text']}: **{lv['level']}** ({c.get('risk_effective', c.get('risk'))}-risk: {c.get('risk_why', 'declared')}; "
+                     f"{lv['why']}). {c['status']}. Sources: {srcs}"
                      + (f". Note: {c['note']}" if c.get("note") else ""))
     else:
         for c in claims:

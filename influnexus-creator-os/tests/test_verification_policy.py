@@ -18,8 +18,8 @@ def item(url, kind="news", access="secondary", date="2026-11-20", **kw):
     return {"url": url, "kind": kind, "access": access, "date": date, **kw}
 
 
-def claim(risk, items, status="CONFIRMED", **kw):
-    return {"id": "c1", "text": "x", "status": status, "risk": risk, "evidence": items, "in_script": True, **kw}
+def claim(risk, items, status="CONFIRMED", text="x", **kw):
+    return {"id": "c1", "text": text, "status": status, "risk": risk, "evidence": items, "in_script": True, **kw}
 
 
 OFFICIAL_IDX = item("https://www.rockstargames.com/newswire/launch", "primary", "search-index")
@@ -97,7 +97,7 @@ def test_search_index_alone_is_low_and_agreeing_excerpts_never_make_high():
 def test_rumoured_or_single_excerpt_launch_is_held():
     assert ev.level(claim("high", [OFFICIAL_IDX, FORBES, VERGE], status="RUMOR"))["level"] == "UNVERIFIED"
     assert ev.gate(claim("high", [item("https://leaks.example.com/gta6")]), DAY)
-    assert ev.gate({**claim("high", [FORBES, VERGE]), "risk": None}, DAY)[0].endswith("'low' (historical)")
+    assert "if declared" in ev.gate({**claim("high", [FORBES, VERGE]), "risk": "medium"}, DAY)[0]
 
 
 # --- the package gate and the automatic fallback -----------------------------------------------------------------------
@@ -136,10 +136,13 @@ def test_tiered_v5_package_is_ready_with_corroborated_evidence_and_held_without(
     assert any("needs MEDIUM" in r for r in info["ready"]["reasons"])
 
 
-def test_tiered_claims_need_risk_and_evidence():
+def test_tiered_claims_need_evidence_and_risk_is_classified_when_not_declared():
     p = _tiered(_v5(), [NASA_IDX, JUB, EARTHSKY])
     p["factcheck"]["claims"][0].pop("risk")
-    assert any("missing risk" in x for x in package.validate(p)[0])
+    probs, info = package.validate(p)
+    assert probs == [] and "risk_effective" in p["factcheck"]["claims"][0]
+    p["factcheck"]["claims"][0].pop("evidence")
+    assert any("missing evidence" in x for x in package.validate(p)[0])
 
 
 def test_hold_archives_the_story_and_names_the_next_one(tmp_path, monkeypatch):
@@ -183,3 +186,62 @@ def test_older_packages_keep_their_original_verification_and_today_uses_the_tier
     assert package.is_tiered(today) and probs == [] and info["ready"]["status"] == ver.READY
     held = json.loads((ROOT / "daily/2026-11-19/holds.json").read_text())
     assert held[0]["slug"] == "gta-vi-launch"
+
+
+
+# --- semantic risk classification (temporal context, not keywords alone) ----------------------------------------------
+
+@pytest.mark.parametrize("text,risk", [
+    # the creator's examples
+    ("GTA Vice City released in 2002", "low"),
+    ("GTA VI launched today", "high"),
+    ("GTA VI launches next month", "high"),
+    ("A game released 20 years ago", "low"),
+    ("Game prices changed today", "high"),
+    # historical release dates
+    ("GTA Vice City came out in 2002 (North America: 27 Oct 2002)", "low"),
+    ("The original PlayStation launched in Japan on 3 December 1994", "low"),
+    ("Back in the 1990s, Nintendo released the Game Boy Color", "low"),
+    ("Voyager 1 launched in 1977", "low"),
+    # current launches
+    ("GTA 6 is out now on PS5 and Xbox Series X|S", "high"),
+    ("Rockstar just launched GTA VI", "high"),
+    ("GTA 6 finally aa gaya hai, aaj launch hua", "high"),
+    ("GTA VI launches on 19 Nov 2026 on PlayStation 5", "high"),
+    # future launches
+    ("The PC version will release in 2027", "high"),
+    ("Apple is set to launch the device on 2 December 2026", "high"),
+    ("Pre-orders open next week", "high"),
+    # price changes and prices
+    ("The Standard Edition costs $79.99", "high"),
+    ("Xbox raised console prices this week", "high"),
+    ("In 2002 the game cost $49.99", "low"),
+    # stable descriptive facts
+    ("Vice City is a fictional city inspired by Miami", "low"),
+    ("Tommy Vercetti was voiced by actor Ray Liotta", "low"),
+    ("The soundtrack was mostly licensed real 1980s music", "low"),
+])
+def test_risk_is_classified_from_temporal_meaning(text, risk):
+    assert ev.classify_risk(text, "2026-11-19")["risk"] == risk, ev.classify_risk(text, "2026-11-19")
+
+
+def test_event_date_field_overrides_a_vague_claim():
+    assert ev.classify_risk("The update rolled out", "2026-11-19", event_date="2026-11-18")["risk"] == "high"
+    assert ev.classify_risk("The update rolled out", "2026-11-19", event_date="2019-03-01")["risk"] == "low"
+
+
+def test_declared_risk_can_raise_but_never_lower_the_classified_risk():
+    hist = claim("high", [OLD_NME, OLD_YAHOO], text="GTA Vice City released in 2002")
+    assert ev.effective_risk(hist, DAY)["risk"] == "high"                        # writer chose the stricter gate
+    launch = claim("low", [OFFICIAL_IDX], text="GTA VI launched today")
+    eff = ev.effective_risk(launch, DAY)
+    assert eff["risk"] == "high" and eff["declared"] == "low"
+    assert ev.gate(launch, DAY) and "high-risk" in ev.gate(launch, DAY)[0]       # thresholds unchanged: needs MEDIUM-HIGH
+
+
+def test_thresholds_are_unchanged_for_classified_claims():
+    hist = claim(None, [OLD_NME, OLD_YAHOO], text="GTA Vice City released in 2002")
+    assert ev.gate(hist, DAY) == []                                               # historical: MEDIUM is enough
+    launch = claim(None, [OLD_NME, OLD_YAHOO], text="GTA VI launched today")
+    assert ev.gate(launch, DAY)                                                   # time-sensitive: MEDIUM is not enough
+    assert ev.gate(claim(None, [OFFICIAL_IDX, FORBES, VERGE], text="GTA VI launched today"), DAY) == []
