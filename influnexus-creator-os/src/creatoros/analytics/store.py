@@ -11,7 +11,7 @@ from .. import config
 FIELDS = ["date", "video_id", "platform", "checkpoint", "views", "reach", "watch_time_s", "avg_view_duration_s",
           "completion_rate", "shares", "saves", "comments", "likes", "profile_visits", "new_followers",
           "business_inquiries", "topic", "hook_type", "language", "format", "duration_s", "source", "collected_at",
-          "viewed_rate", "top_countries"]
+          "viewed_rate", "top_countries", "pillar"]
 # viewed_rate: Instagram's "viewed vs swiped away" share (0-1). top_countries: as reported, e.g. "IN 41%; US 12%".
 NUMERIC = FIELDS[4:16] + ["duration_s", "viewed_rate"]
 CHECKPOINTS = ["24h", "72h", "7d"]
@@ -117,7 +117,7 @@ def review(p: Path | None = None, platform: str = "instagram") -> str:
     lines = [f"## Review after {len(rows)} videos with 7-day data ({platform})", ""]
     if len(rows) < 10:
         lines.append(f"Only {len(rows)} videos have 7-day data. Patterns below are provisional; change nothing on the basis of one video.")
-    for dim in ("topic", "hook_type", "language", "format"):
+    for dim in ("topic", "pillar", "hook_type", "format", "duration_s"):
         lines += ["", f"### By {dim}", "", f"| {dim} | Videos | Enough data | Median views | Follows /1k | Shares /1k | Saves /1k | Retention |", "|---|---|---|---|---|---|---|---|"]
         for g in by_dimension(dim, "7d", platform, p):
             lines.append(f"| {g[dim]} | {g['videos']} | {'yes' if g['enough_data'] else 'no'} | {g['median_views']} | {g['median_follows_per_1k']} | {g['median_shares_per_1k']} | {g['median_saves_per_1k']} | {g['median_retention']} |")

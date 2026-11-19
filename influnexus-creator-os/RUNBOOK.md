@@ -27,6 +27,10 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
   candidates, selected story, source access, fact-check, words, duration, quality gate, package status, delivery, errors, warnings).
   `logs/runs.jsonl` and `run_report.json` are committed; they are the evidence that a run happened.
 - Never re-render a past date's package: historical packages stay as delivered.
+- `creatoros sources-audit --date DATE` (under a second): probes every source group (X, Reddit, YouTube, Instagram, LinkedIn,
+  Google Trends, primary sites, news) from this environment and saves `daily/DATE/source_access.json`. A group it reports BLOCKED
+  can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting, and the validator refuses any claim
+  that it was DIRECTLY OBSERVED. Do not retry blocked hosts.
 - `creatoros runlog status --date DATE` reports whether the 08:41 scheduled run started, ended and was READY by 09:30
   (PENDING / RUNNING / OK / LATE / HOLD / NONE / FAILED / MISSED; exit code 4 = problem). Report any problem verdict to the creator.
 - Network: this cloud environment cannot open nature.com, biorxiv.org, health.ucdavis.edu, x.com or most news sites (DNS refused by
@@ -52,6 +56,19 @@ attempts on one blocked domain. If nothing passes the gate by 09:22, deliver no 
   NVIDIA/Jensen Huang; Google/DeepMind/Gemini; Apple, Microsoft, Amazon, Meta, Anthropic, Mistral; robotics, humanoids, autonomous
   vehicles, cybersecurity, chips, consumer electronics, startups and VC, science, space, open-source AI, developer tools, AI video,
   hardware. Smaller researchers and builders count as much as famous accounts. Social posts are leads, never facts.
+- **Source groups:** X (leaders such as Musk, Altman, Huang, Hassabis, Pichai, Nadella, Zuckerberg, Amodei, Karpathy, LeCun,
+  Ng, Fei-Fei Li, plus founders, researchers, engineers, investors, journalists and smaller accounts); Reddit (r/artificial,
+  r/technology, r/singularity, r/MachineLearning, r/LocalLLaMA, r/OpenAI, r/ChatGPT, r/ClaudeAI, r/Futurology, r/robotics,
+  r/programming, r/startups, r/Entrepreneur); YouTube (tech creators and Shorts: study patterns, never copy); Instagram reels;
+  LinkedIn; Google Trends; primary sources; credible reporting (Reuters, AP, Bloomberg, The Verge, TechCrunch, Ars Technica,
+  Wired, MIT Technology Review, IEEE Spectrum, FT). Reporting helps discovery; it never replaces available primary evidence.
+- **Cross-platform signals (`signals` on each candidate; required for the selected story):** one entry per observation:
+  `platform` (x, reddit, youtube, instagram, linkedin, google_trends, primary, news), `url`, `title`, `retrieved_at`,
+  `access` (DIRECTLY OBSERVED / SEARCH-INDEX / SECONDARY / NOT VERIFIED) and `engagement` with `basis`
+  observed / reported / estimated / unknown (+ `source` for reported numbers). "observed" needs the page directly observed.
+  A story seen across several independent platforms is a stronger signal; an estimate is never shown as a measurement.
+- **Early stories:** prefer important developments before they saturate creator platforms (new tools, robotics demos,
+  unexpected capabilities, research results, failures, security discoveries, consumer changes, startup surprises).
 - **X signal (`x_signal`):** `status` VERIFIED / PARTLY VERIFIED / NOT VERIFIED, `posts` (each: `url`, `account`, `posted_at`,
   `retrieved_at`, `access`, `metrics` with likes, reposts, replies, quotes, views as observed numbers or `"UNKNOWN"`), and
   `discussion_evidence` (other public signals: outlets covering it, forum threads, with links). x.com cannot be opened from this
@@ -69,7 +86,7 @@ attempts on one blocked domain. If nothing passes the gate by 09:22, deliver no 
 - Search the last 24 hours across all categories above.
 - Send searches in parallel. Use social platforms to find discussion and authoritative sources to verify it.
 - Record the original announcement date, not the date of a repost.
-- Shortlist 5-10 credible candidates (the validator needs 5 at MEDIUM or HIGH). Do not pad: weak items go in with
+- Discover at least 10 candidates when credible material exists; shortlist 5-10 (the validator needs 5 at MEDIUM or HIGH). Do not pad: weak items go in with
   `evidence_confidence: "LOW"`; claims that fail verification go in with `rejected`. If fewer than 5, say why in `candidate_shortfall_reason`.
 - Every field in `creatoros.research.candidates.REQUIRED_V3`. Unobserved metrics are `"UNKNOWN"`.
 - Check repeats: `creatoros content-search "<words>"`. A covered topic only returns with `material_update_of` naming the new development.
@@ -110,6 +127,12 @@ attempts on one blocked domain. If nothing passes the gate by 09:22, deliver no 
 - Learn storytelling principles from Cleo Abram, MKBHD, Bilawal Sidhu, Rowan Cheung and Mrwhosetheboss (see `research/creator_style_guide.md`).
   Never copy their lines, formats or catchphrases.
 - Use only claims that are HIGH in the claim table. Leave out true-but-old facts presented as new.
+- Claim labels: CONFIRMED, REPORTED (said with attribution), UNVERIFIED, SPECULATIVE (plus the finer existing labels).
+  Never confuse a prototype with a product, a demo with general capability, a benchmark with real-world performance,
+  valuation with revenue, a research claim with consensus, or a rumour with confirmation.
+- Hooks (v3): score at least 10 internally on accuracy, clarity, curiosity, surprise, specificity, natural delivery and
+  relevance (/70; accuracy under 7 disqualifies). Only the winner is delivered; the rest go to `research.json`. Do not reuse an
+  opening from the last 14 days (the validator checks the first three words).
 - Accuracy: never generalise one trial participant to all patients; a prototype is not a product you can buy; valuation is not
   revenue; a speculative capability is not a demonstrated one; preliminary research says so.
 - Recording direction covers delivery only (tone, emphasis, pauses, pronunciation of difficult names). Visual suggestions for the
@@ -118,7 +141,18 @@ attempts on one blocked domain. If nothing passes the gate by 09:22, deliver no 
 
 ## 4. Build
 Write `daily/DATE/package.json` with `"scoring": "v3"` (the shape of `daily/2026-11-19/package.json` plus `research_window`
-copied from `runlog start`, `generated_at`, v3 candidates and `retrieved_at` on claims), including `visuals`
+copied from `runlog start`, `generated_at`, v3 candidates and `retrieved_at` on claims), plus:
+- `pillar`: ai_breakthroughs (30%), future_tech_robotics (20%), useful_ai_tools (15%), big_tech_leaders (15%), consumer_hardware (10%),
+  startups_science (10%). Starting shares are hypotheses; never force a pillar over a clearly stronger story.
+- `format`: A "Something important just happened", B "This technology is actually useful", C "The future is already here",
+  D "Everyone is talking about this, but...", E "Here's what most people missed", F "This changes how we use technology",
+  G "Watch what this technology can do", H "The real story behind this announcement".
+- `backups`: two other eligible candidates (recovery only), or `backup_shortfall_reason`.
+- `audience`: stop_scroll, watch_to_end, share, save, comment, follow (one honest sentence each; no outrage or fear bait).
+- `editing`: opening_visual, key_moments, broll, on_screen_text, demonstrations, stats, rhythm, caption_emphasis, sound
+  (authentic, licensable visuals only; label illustrations as illustrations).
+- `limitations`: what could not be reached today (from the source audit) and any other research limits.
+Including `visuals`
 (B-roll and graphic suggestions for the creator's separate editor; never footage you can't license, never fake footage). Then:
 ```
 creatoros package --date DATE
@@ -131,7 +165,9 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 ## 5. Deliver
 - Send one push notification with the topic (the only configured delivery channel besides the run's own reply). The tool reports
   "requested", not a receipt: record `--delivery requested --channel push`; if it errors, `--delivery failed`. Never claim it reached the phone.
-- `creatoros runlog end ...` (above), then commit `daily/DATE/`, `research/*.jsonl` and `logs/runs.jsonl` in ONE commit and push
+- `creatoros growth --date DATE` refreshes `reports/growth/DATE.md` (60-day target, trajectory, observed conversion, content mix;
+  UNKNOWN where no numbers exist).
+- `creatoros runlog end ...` (above), then commit `daily/DATE/`, `research/*.jsonl`, `reports/growth/` and `logs/` in ONE commit and push
   (pull `--rebase` first; retry the push up to 4 times with backoff). If the push fails, say PACKAGE READY — DELIVERY FAILED.
 - If no candidate passes the gate by 09:22 IST, deliver no script: say so plainly, list what blocked each top candidate.
 - Reply with the contents of `creatoros today` (DATE, SELECTED TOPIC, WHY, VIRAL POTENTIAL, BEST HOOK, FINAL SCRIPT, DURATION,
@@ -139,13 +175,19 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 - Do not publish anything anywhere.
 
 ## 6. Learning (when the creator supplies numbers)
-- `creatoros metrics-add ...` at 24 h, 72 h and 7 days; `creatoros content-update --date D --slug S status=published platforms=instagram,x`.
-- Never invent numbers. One video is an anecdote.
+- No analytics connector (Instagram, YouTube, X, LinkedIn) is connected, so numbers come from the creator.
+- `creatoros metrics-add date=D video_id=D_SLUG platform=P checkpoint=24h|72h|7d views=.. reach=.. avg_view_duration_s=..
+  completion_rate=.. shares=.. saves=.. comments=.. profile_visits=.. new_followers=.. pillar=.. format=.. hook_type=.. source=..`
+  at 24 h, 72 h and 7 days; `creatoros content-update --date D --slug S status=published platforms=instagram,x`.
+- `creatoros followers-add --date D --platform instagram|youtube|x|linkedin --followers N --source "where it was read"`.
+- Never invent numbers. One video is an anecdote; groups under three videos are not evidence. Correlation is not causation.
 
 ## Creator intelligence
 - `research/creators_db.csv` holds the verified creator database (target 100-200; started at 50+). Record metrics only when observed,
   with source and date; anything not watched is NOT OBSERVED. Learn principles; never copy scripts or distinctive expression.
 
 ## Weekly (Mondays)
-- `creatoros weekly --end DATE`, then add a short "Recommendations" section to `reports/weekly/DATE.md`, citing the data above it.
+- `creatoros weekly --end DATE` (topics, 60-day target, pillar and format mix, 7-day performance by pillar/format/hook type),
+  then add a short "Recommendations" section to `reports/weekly/DATE.md` citing the data above it: top and weak topics, best hooks
+  and lengths, follower conversion, repeated audience questions. Change one variable at a time.
 - Refresh `research/creator_benchmarks.md` and `research/creator_video_samples.csv` (competitor database). Keep MEASURED, THIRD-PARTY and HYPOTHESIS labels; don't claim to have watched videos you could not open.

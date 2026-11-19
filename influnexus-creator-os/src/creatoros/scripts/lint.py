@@ -16,7 +16,9 @@ BANNED_OPENINGS += ["hey everyone", "hey guys", "what's up", "whats up", "in thi
 BANNED_ANYWHERE = ["technology ki duniya mein", "ai is changing everything", "imagine a world where", "aaj hum baat karenge",
                    "you won't believe", "nobody is talking about", "no one is talking about", "shocking", "this changes everything",
                    "in today's fast-paced world", "cutting-edge", "cutting edge", "synergy", "leverage", "revolutionize",
-                   "revolutionise", "seamless", "unlock the power", "delve", "smash that like", "don't forget to subscribe"]
+                   "revolutionise", "seamless", "unlock the power", "delve", "smash that like", "don't forget to subscribe",
+                   "rapidly evolving", "technological landscape", "groundbreaking", "ground-breaking", "only time will tell",
+                   "like and subscribe"]
 # Forced slang that does not fit a global audience or a natural Indian-English delivery.
 FORCED_SLANG = ["no cap", "bussin", "lowkey", "low-key", "highkey", "fr fr", "it's giving", "rizz", "y'all", "slaps", "sheesh",
                 "on god", "deadass", "bestie", "periodt", "big yikes"]
@@ -112,21 +114,25 @@ HOOK_MECHANISMS = ["unexpected fact", "contradiction", "surprising demonstration
                    "relatable problem", "counterintuitive insight", "unexpected comparison", "strong factual statement",
                    "timely development"]
 MIN_HOOKS = 10
+# v3 (from 20 Nov 2026): seven criteria, total /70. Accuracy below 7 still disqualifies.
+HOOK_CRITERIA_V3 = ["accuracy", "clarity", "curiosity", "surprise", "specificity", "natural", "relevance"]
 
 
-def score_hooks(hooks: list[dict]) -> list[dict]:
-    """Rank hook candidates scored 0-10 on each of HOOK_CRITERIA (total /60).
+def score_hooks(hooks: list[dict], criteria: list[str] | None = None) -> list[dict]:
+    """Rank hook candidates scored 0-10 on each criterion (HOOK_CRITERIA /60, or HOOK_CRITERIA_V3 /70).
     Accuracy below 7 disqualifies a hook regardless of its total."""
-    out = [{**h, "total": sum(h[k] for k in HOOK_CRITERIA), "eligible": h["accuracy"] >= 7} for h in hooks]
+    criteria = criteria or HOOK_CRITERIA
+    out = [{**h, "total": sum(h[k] for k in criteria), "eligible": h["accuracy"] >= 7} for h in hooks]
     return sorted(out, key=lambda h: (h["eligible"], h["total"]), reverse=True)
 
 
-def check_hooks(hooks: list[dict], chosen: str) -> list[str]:
+def check_hooks(hooks: list[dict], chosen: str, criteria: list[str] | None = None) -> list[str]:
+    criteria = criteria or HOOK_CRITERIA
     problems = []
     if len(hooks) < MIN_HOOKS:
         problems.append(f"only {len(hooks)} hook candidates; generate at least {MIN_HOOKS}")
     for h in hooks:
-        missing = [k for k in HOOK_CRITERIA if not isinstance(h.get(k), (int, float))]
+        missing = [k for k in criteria if not isinstance(h.get(k), (int, float))]
         if missing:
             problems.append(f"hook '{h.get('text', '')[:30]}' lacks scores for {missing}")
         if h.get("mechanism") not in HOOK_MECHANISMS:
@@ -135,7 +141,7 @@ def check_hooks(hooks: list[dict], chosen: str) -> list[str]:
         problems.append("explore at least five different hook mechanisms")
     if problems:
         return problems
-    best = score_hooks(hooks)[0]
+    best = score_hooks(hooks, criteria)[0]
     if not best["eligible"]:
         return ["no hook candidate scored 7 or more on accuracy"]
     if best["text"].strip() != chosen.strip():

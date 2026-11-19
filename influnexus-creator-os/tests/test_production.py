@@ -118,8 +118,9 @@ def test_v3_package_requires_window_and_retrieval_times():
     p = json.loads((ROOT / "daily/2026-11-19/package.json").read_text())
     p["scoring"] = "v3"
     probs = package.validate(p)[0]
-    assert "missing: research_window" in probs and "missing: generated_at" in probs
-    p.update(research_window=WIN, generated_at="2026-11-20T09:05:00+05:30")
+    assert "missing: research_window" in probs and "missing: generated_at" in probs and "missing: backups" in probs
+    p.update(research_window=WIN, generated_at="2026-11-20T09:05:00+05:30", pillar="startups_science", format="C",
+             backups=[], audience={}, editing={}, limitations=[])
     probs = package.validate(p)[0]
     assert any("retrieved_at" in x for x in probs) and any("v3 criteria" in x for x in probs)
 
@@ -208,6 +209,17 @@ def _as_v3(p):
         c["x_signal"] = {"status": "NOT VERIFIED", "posts": [], "discussion_evidence": ["covered by several outlets"]}
         c["scores"] = {k: 7 for k in candidates.WEIGHTS_V3}
         c["scores"].update(public_discussion=5, surprise=10 - min(i, 9))
+    for h in p["hooks"]:
+        h.setdefault("surprise", h["curiosity"])
+        h.setdefault("specificity", h["clarity"])
+    p["candidates"][0]["signals"] = [{"platform": "primary", "url": "https://www.nature.com/articles/s41591-026-04414-6",
+                                      "title": "Nature Medicine paper", "retrieved_at": "2026-11-20T03:30:00+00:00",
+                                      "access": "SEARCH-INDEX", "engagement": {"basis": "unknown"}}]
+    others = [c["headline"] for c in candidates.rank(p["candidates"], WIN) if c["eligible"] and c["headline"] != p["topic"]]
+    p.update(pillar="startups_science", format="C", backups=others[:2],
+             audience={q: "because" for q in package.AUDIENCE_QUESTIONS},
+             editing={k: ["x"] for k in package.EDITING_KEYS},
+             limitations=["x.com and nature.com could not be opened; search-index only"])
     return p
 
 

@@ -18,7 +18,19 @@ REQUIRED = ["date", "language", "slug", "keys", "topic", "category", "topic_type
 MIN_CANDIDATES = 15
 MIN_CANDIDATES_V3 = 5              # v3: a shortlist of about 5-10 credible, verified candidates
 REQUIRED_V2 = ["visuals"]          # v2 packages (scoring "v2", from 19 Nov 2026) also need visual suggestions for the editor
-REQUIRED_V3 = ["visuals", "research_window", "generated_at"]   # v3 packages (from 20 Nov 2026)
+REQUIRED_V3 = ["visuals", "research_window", "generated_at", "pillar", "format", "backups", "audience", "editing",
+               "limitations"]   # v3 packages (from 20 Nov 2026)
+# Content pillars with their starting share of output (hypotheses; adjust only on observed performance).
+PILLARS = {"ai_breakthroughs": 30, "future_tech_robotics": 20, "useful_ai_tools": 15, "big_tech_leaders": 15,
+           "consumer_hardware": 10, "startups_science": 10}
+FORMATS = {"A": "Something important just happened", "B": "This technology is actually useful",
+           "C": "The future is already here", "D": "Everyone is talking about this, but...",
+           "E": "Here's what most people missed", "F": "This changes how we use technology",
+           "G": "Watch what this technology can do", "H": "The real story behind this announcement"}
+AUDIENCE_QUESTIONS = ["stop_scroll", "watch_to_end", "share", "save", "comment", "follow"]
+EDITING_KEYS = ["opening_visual", "key_moments", "broll", "on_screen_text", "demonstrations", "stats", "rhythm",
+                "caption_emphasis", "sound"]
+OPENING_WORDS, OPENING_DAYS = 3, 14
 WINDOW_HOURS = 24
 V3_FROM = "2026-11-20"             # from this IST date every package must use the v3 rules
 
@@ -41,6 +53,70 @@ def research_window(run_start_utc: str) -> dict:
     f = lambda d: d.isoformat(timespec="seconds")
     return {"start_utc": f(start), "end_utc": f(end), "start_ist": f(start.astimezone(ist)), "end_ist": f(end.astimezone(ist)),
             "hours": WINDOW_HOURS}
+
+
+def source_audit_for(p: dict) -> dict | None:
+    """The source audit recorded for this package's day (daily/DATE/source_access.json), if any."""
+    from ..research import signals
+    return signals.load_audit(config.path("daily", p["date"], "source_access.json"))
+
+
+def opening_repeat(hook: str, date: str, slug: str, days: int = OPENING_DAYS) -> dict | None:
+    """Same first three words as a hook used in the last two weeks: an opening the audience has heard recently."""
+    import datetime as dt
+    import re
+    first = lambda t: " ".join(re.findall(r"[a-z0-9']+", t.lower())[:OPENING_WORDS])
+    d0 = dt.date.fromisoformat(date)
+    for e in content_db.entries():
+        if e.get("slug") == slug or not e.get("hook"):
+            continue
+        age = (d0 - dt.date.fromisoformat(e["date"])).days
+        if 0 <= age <= days and first(e["hook"]) == first(hook):
+            return e
+    return None
+
+
+def v3_problems(p: dict, ranked: list[dict]) -> list[str]:
+    """The v3 package rules: pillar, format, backups, audience questions, editing notes, cross-platform signals."""
+    from ..research import signals
+    problems = []
+    if p["pillar"] not in PILLARS:
+        problems.append(f"pillar must be one of {list(PILLARS)}")
+    if p["format"] not in FORMATS:
+        problems.append(f"format must be one of {list(FORMATS)} ({'; '.join(f'{k}: {v}' for k, v in FORMATS.items())})")
+    eligible = [c["headline"] for c in ranked if c["eligible"]]
+    backups = p["backups"] if isinstance(p["backups"], list) else []
+    for b in backups:
+        if b == p["topic"]:
+            problems.append("a backup story cannot be the selected story")
+        elif b not in eligible:
+            problems.append(f"backup '{b[:40]}' must be an eligible candidate")
+    if len(set(backups)) < 2 and not p.get("backup_shortfall_reason"):
+        problems.append(f"name two backup stories (eligible candidates) or explain in backup_shortfall_reason "
+                        f"({max(len(eligible) - 1, 0)} other eligible)")
+    aud = p["audience"] if isinstance(p["audience"], dict) else {}
+    missing = [q for q in AUDIENCE_QUESTIONS if not str(aud.get(q, "")).strip()]
+    if missing:
+        problems.append(f"audience: answer {missing} (why would someone stop, finish, share, save, comment, follow?)")
+    ed = p["editing"] if isinstance(p["editing"], dict) else {}
+    missing = [k for k in EDITING_KEYS if not ed.get(k)]
+    if missing:
+        problems.append(f"editing: missing {missing}")
+    if not isinstance(p["limitations"], list):
+        problems.append("limitations must be a list (research limits for today; empty only if nothing was blocked)")
+    blocked = signals.blocked_platforms(source_audit_for(p))
+    win = next((c for c in ranked if c["headline"] == p["topic"]), None)
+    for c in ranked:
+        for i, sig in enumerate(c.get("signals") or []):
+            problems += [f"candidate '{c['headline'][:30]}': {x}" for x in signals.signal_problems(sig, i, blocked)]
+    if win is not None and not win.get("signals"):
+        problems.append("the selected story needs cross-platform evidence in candidate.signals (at least one source)")
+    if blocked and not p["limitations"]:
+        problems.append(f"limitations: the source audit found {sorted(blocked)} blocked; say so")
+    old = opening_repeat(p["hook"], p["date"], p["slug"])
+    if old:
+        problems.append(f"the hook opens like the {old['date']} hook ('{old['hook']}'); vary the opening")
+    return problems
 
 
 def window_problems(w) -> list[str]:
@@ -117,7 +193,8 @@ def validate(p: dict) -> tuple[list[str], dict]:
         problems.append(f"X post is {len(p['x']['post'])} characters; keep it within 280")
     if not p["script"].strip().startswith(p["hook"].strip()):
         problems.append("script must open with the chosen hook")
-    problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"])]
+    hook_criteria = lint.HOOK_CRITERIA_V3 if is_v3(p) else None
+    problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"], hook_criteria)]
     q = lint.quality(p["quality_scores"], p["script"], scheme)
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
@@ -125,6 +202,8 @@ def validate(p: dict) -> tuple[list[str], dict]:
     problems += [f"claim table: {x}" for x in ready["problems"]]
     problems += ver.story_confidence_ok(p["evidence_confidence"], p["factcheck"]["claims"])
     ranked = candmod.rank(p["candidates"], window)
+    if is_v3(p):
+        problems += v3_problems(p, ranked)
     for c in ranked:
         problems += [f"candidate '{c.get('headline', '?')[:40]}': {x}" for x in c["problems"]]
     eligible = [c for c in ranked if c["eligible"]]
@@ -195,8 +274,11 @@ def render(p: dict, info: dict) -> str:
     L += ["", "## Appendix 2: Candidates ranked", "", "| # | Topic | Type | Score | Confidence | Status |", "|---|---|---|---|---|---|"]
     for i, c in enumerate(ranked, 1):
         L.append(f"| {i} | {c['headline']} | {c['topic_type']} | {c['trend_score']} | {c['evidence_confidence']} | {'eligible' if c['eligible'] else c['ineligible_reason']} |")
-    L += ["", "## Appendix 3: Hook candidates", "", "| Hook | Mechanism | Score /60 | Usable |", "|---|---|---|---|"]
-    L += [f"| {h['text']} | {h['mechanism']} | {h['total']} | {'yes' if h['eligible'] else 'no (accuracy)'} |" for h in lint.score_hooks(p["hooks"])]
+    if is_v3(p):
+        L += ["", "## Appendix 3: Hook candidates", "", "Scored internally; only the winning hook is delivered. All candidates are in `research.json`."]
+    else:
+        L += ["", "## Appendix 3: Hook candidates", "", "| Hook | Mechanism | Score /60 | Usable |", "|---|---|---|---|"]
+        L += [f"| {h['text']} | {h['mechanism']} | {h['total']} | {'yes' if h['eligible'] else 'no (accuracy)'} |" for h in lint.score_hooks(p["hooks"])]
     L += ["", "## Appendix 4: Script quality", "", "| Check | Score /10 |", "|---|---|"]
     L += [f"| {k} | {v} |" for k, v in q["scores"].items() if k in lint.QUALITY_CHECKS]
     L += ["", "## Appendix 5: Research access limits", ""]
@@ -230,11 +312,55 @@ def render_today(p: dict, info: dict) -> str:
     for c in claims:
         L.append(f"- {c['text']} — [{c.get('source_title') or 'primary source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, {c.get('source_date') or 'date unknown'}, {c.get('access') or 'access unknown'})"
                  if c.get("primary_source") else f"- {c['text']} — no primary source ({c['status']}, {c['confidence']})")
+    if is_v3(p):
+        L += v3_today_sections(p, info)
     L += ["", "**ENGLISH CAPTIONS:**", "", "```"] + caption_lines(p["script"]) + ["```", "", "**PLATFORM CONTENT:**", "",
           "*Instagram*", "", ig["caption"], "", " ".join(ig["hashtags"]), "", "*YouTube Shorts*", "", f"Title: {yt['title']}", "",
           yt["description"], "", "*LinkedIn*", "", li["caption"], "", "*X*", "", xx["post"], "",
           "Full research, all candidates, hooks and the claim table: `package.md`."]
     return "\n".join(L) + "\n"
+
+
+def v3_today_sections(p: dict, info: dict) -> list[str]:
+    """Creator-facing extras for v3: evidence across platforms, backups, editing notes, limitations, run status."""
+    import json
+    from ..research import signals
+    win = next(c for c in info["ranked"] if c["headline"] == p["topic"])
+    L = ["", f"**PILLAR / FORMAT:** {p['pillar'].replace('_', ' ')} / {p['format']}: \"{FORMATS.get(p['format'], '')}\"", "",
+         "**CROSS-PLATFORM EVIDENCE:**"]
+    sigs = win.get("signals") or []
+    sm = signals.summary(sigs)
+    L.append(f"*Seen on {sm['count']} source type(s): {', '.join(sm['platforms']) or 'none'}. "
+             f"Directly observed: {', '.join(sm['directly_observed']) or 'none'}.*")
+    for s_ in sigs:
+        eng = s_.get("engagement") or {}
+        nums = ", ".join(f"{k} {v}" for k, v in eng.items() if k not in ("basis", "source") and v != "UNKNOWN")
+        L.append(f"- {s_['platform']}: [{s_['title']}]({s_['url']}) ({s_['access']}; engagement "
+                 f"{eng.get('basis', 'unknown')}{': ' + nums if nums else ''})")
+    xs = win.get("x_signal") or {}
+    L.append(f"- X signal: {xs.get('status', 'NOT VERIFIED')}")
+    a = p["audience"]
+    L += ["", "**WHY PEOPLE WILL CARE:**", f"- Stop scrolling: {a['stop_scroll']}", f"- Share: {a['share']}",
+          f"- Save: {a['save']}", f"- Follow: {a['follow']}", "", "**VISUAL PRODUCTION NOTES (for your editor):**"]
+    ed = p["editing"]
+    lst = lambda v: "; ".join(v) if isinstance(v, list) else str(v)
+    L += [f"- Opening visual: {lst(ed['opening_visual'])}", f"- Key moments: {lst(ed['key_moments'])}",
+          f"- B-roll: {lst(ed['broll'])}", f"- On-screen text: {lst(ed['on_screen_text'])}",
+          f"- Demonstrations: {lst(ed['demonstrations'])}", f"- Stats on screen: {lst(ed['stats'])}",
+          f"- Rhythm: {lst(ed['rhythm'])}", f"- Caption emphasis: {lst(ed['caption_emphasis'])}", f"- Sound: {lst(ed['sound'])}",
+          "", "**BACKUP STORIES (recovery only):**"] + [f"- {b}" for b in p["backups"]]
+    if p.get("backup_shortfall_reason"):
+        L.append(f"- Fewer than two: {p['backup_shortfall_reason']}")
+    L += ["", "**RESEARCH LIMITATIONS:**"] + ([f"- {x}" for x in p["limitations"]] or ["- None recorded."])
+    rep_path = config.path("daily", p["date"], "run_report.json")
+    status = "no run report yet (a manual package)"
+    if rep_path.exists():
+        runs_ = json.loads(rep_path.read_text(encoding="utf-8")).get("runs", {})
+        if runs_:
+            rid, r = list(runs_.items())[-1]
+            status = f"{rid}: {r.get('status', 'UNKNOWN')}, delivery {((r.get('delivery') or {}).get('status')) or 'UNKNOWN'}"
+    L += ["", f"**RUN STATUS:** {status}"]
+    return L
 
 
 def render_recording(p: dict, info: dict) -> str:
@@ -294,6 +420,15 @@ def save(p: dict, out: Path | None = None) -> dict:
     status = info["ready"]["status"]
     content_db.update(p["date"], p["slug"], status="scripted" if status == ver.READY else "held",
                       hold_reasons=info["ready"]["reasons"], language=p["language"], hook=p["hook"], script=p["script"].strip())
+    if is_v3(p):
+        content_db.update(p["date"], p["slug"], pillar=p["pillar"], format=p["format"])
+        write_json(out / "research.json", {
+            "date": p["date"], "generated_at": p["generated_at"], "research_window": p["research_window"],
+            "candidates": [{k: c.get(k) for k in ("headline", "published_at", "original_source", "trend_score", "eligible",
+                                                  "ineligible_reason", "scores", "x_signal", "signals", "verification_status",
+                                                  "evidence_confidence", "new_development")} for c in info["ranked"]],
+            "hooks": lint.score_hooks(p["hooks"], lint.HOOK_CRITERIA_V3), "backups": p["backups"],
+            "limitations": p["limitations"], "source_audit": source_audit_for(p)})
     from ..research import memory
     memory.record(p, info["ranked"])
     return {"ok": True, "status": status, "reasons": info["ready"]["reasons"], "package": str(out / "package.md"),

@@ -45,6 +45,12 @@ def main(argv=None) -> int:
     p.add_argument("--run-id"); p.add_argument("--delivery", default="not attempted", help="requested|confirmed|failed|not attempted")
     p.add_argument("--channel", default=""); p.add_argument("--receipt", default="")
     p.add_argument("--error", action="append", default=[]); p.add_argument("--warning", action="append", default=[])
+    p = sub.add_parser("sources-audit", help="probe every source group from this environment; save daily/DATE/source_access.json")
+    p.add_argument("--date")
+    p = sub.add_parser("followers-add", help="record a follower count you actually saw")
+    p.add_argument("--date", required=True); p.add_argument("--platform", required=True); p.add_argument("--followers", required=True)
+    p.add_argument("--source", required=True)
+    p = sub.add_parser("growth", help="60-day growth dashboard -> reports/growth/DATE.md"); p.add_argument("--date")
     p = sub.add_parser("content-search", help="search the content database"); p.add_argument("query", nargs="?", default="")
     p.add_argument("--status"); p.add_argument("--category")
     p = sub.add_parser("content-update", help="update a content entry: key=value ..."); p.add_argument("--date", required=True)
@@ -168,6 +174,25 @@ def main(argv=None) -> int:
         except ValueError as e:
             print(str(e), file=sys.stderr)
             return 2
+    elif a.cmd == "sources-audit":
+        from .research import signals
+        res = signals.audit()
+        d = a.date or ist_today()
+        signals.save_audit(config.path("daily", d, "source_access.json"), res)
+        signals.save_audit(config.path("logs", "source_access.json"), res)
+        _print({g: v["status"] for g, v in res["groups"].items()} | {"saved": f"daily/{d}/source_access.json"})
+    elif a.cmd == "followers-add":
+        from .analytics import growth
+        try:
+            _print(growth.add_snapshot(a.date, a.platform, a.followers, a.source))
+        except ValueError as e:
+            print(str(e), file=sys.stderr)
+            return 2
+    elif a.cmd == "growth":
+        from .analytics import growth
+        d = a.date or ist_today()
+        path = growth.save(d)
+        print(path.read_text(encoding="utf-8"))
     elif a.cmd == "content-search":
         from .research import content_db
         _print([{k: e.get(k) for k in ("date", "slug", "topic", "category", "status", "hook")}

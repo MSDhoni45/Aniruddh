@@ -59,3 +59,9 @@ export:
   audio_bitrate: 192k
   min_seconds: 30
   max_seconds: 40
+
+# 60-day growth target (a goal, not a forecast). start_date is day 1; change it if the creator starts on another day.
+growth:
+  target_followers: 100000
+  days: 60
+  start_date: "2026-11-20"
