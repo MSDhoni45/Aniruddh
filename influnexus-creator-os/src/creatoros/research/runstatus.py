@@ -60,6 +60,11 @@ def status(log: Path, date: str, now: dt.datetime | None = None) -> dict:
             v = "OK" if ends[-1]["_at"] <= deadline else "LATE"
         else:
             v = st or "FAILED"
+    # Delivery: the last recorded delivery state for today's scheduled run (end record or a later delivery event).
+    deliveries = [r.get("delivery") for r in recs if isinstance(r.get("delivery"), dict)]
+    res["delivery"] = deliveries[-1] if deliveries else None
+    if v in ("OK", "LATE") and res["delivery"] and res["delivery"].get("status") == "failed":
+        v = "PACKAGE READY — DELIVERY FAILED"
     res["verdict"] = v
-    res["problem"] = v in ("MISSED", "FAILED", "LATE", "HOLD", "NONE")
+    res["problem"] = v in ("MISSED", "FAILED", "LATE", "HOLD", "NONE", "INTERRUPTED", "PACKAGE READY — DELIVERY FAILED")
     return res

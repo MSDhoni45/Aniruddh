@@ -39,8 +39,12 @@ def main(argv=None) -> int:
     p.add_argument("-n", type=int, default=5)
     p = sub.add_parser("recording", help="script and delivery notes only (Prepare for recording)"); p.add_argument("--date")
     p = sub.add_parser("switch", help="archive today's package before replacing it (Different topic)"); p.add_argument("--date")
-    p = sub.add_parser("runlog", help="record a research run event"); p.add_argument("event", choices=["start", "end", "status"]); p.add_argument("--date")
+    p = sub.add_parser("runlog", help="run records: start (duplicate guard, window, budgets), end, delivery, status")
+    p.add_argument("event", choices=["start", "end", "delivery", "status"]); p.add_argument("--date")
     p.add_argument("--trigger", default="manual"); p.add_argument("--status", default=""); p.add_argument("--note", default="")
+    p.add_argument("--run-id"); p.add_argument("--delivery", default="not attempted", help="requested|confirmed|failed|not attempted")
+    p.add_argument("--channel", default=""); p.add_argument("--receipt", default="")
+    p.add_argument("--error", action="append", default=[]); p.add_argument("--warning", action="append", default=[])
     p = sub.add_parser("content-search", help="search the content database"); p.add_argument("query", nargs="?", default="")
     p.add_argument("--status"); p.add_argument("--category")
     p = sub.add_parser("content-update", help="update a content entry: key=value ..."); p.add_argument("--date", required=True)
@@ -145,15 +149,25 @@ def main(argv=None) -> int:
         _print(res)
         return 4 if res["problem"] else 0
     elif a.cmd == "runlog":
-        import datetime as dt
-        import json as js
-        log = config.path("logs", "runs.jsonl")
-        log.parent.mkdir(exist_ok=True)
-        rec = {"event": a.event, "trigger": a.trigger, "status": a.status, "note": a.note,
-               "at_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "ist_date": ist_today()}
-        with open(log, "a", encoding="utf-8") as fh:
-            fh.write(js.dumps(rec) + "\n")
-        _print(rec)
+        from .research import runs
+        log, daily = config.path("logs", "runs.jsonl"), config.path("daily")
+        try:
+            if a.event == "start":
+                rec = runs.start(log, a.trigger, a.note, root=config.path("."))
+                _print(rec)
+                return {"ALREADY_DONE": 5, "IN_PROGRESS": 6}.get(rec.get("duplicate"), 0)
+            if a.event == "end":
+                _print(runs.end(log, daily, a.status or "NONE", run_id=a.run_id, trigger=None,
+                                note=a.note, delivery=a.delivery, channel=a.channel, receipt=a.receipt,
+                                errors=a.error, warnings=a.warning))
+            else:
+                if not a.run_id:
+                    print("runlog delivery needs --run-id", file=sys.stderr)
+                    return 2
+                _print(runs.delivery(log, daily, a.run_id, a.delivery, a.channel, a.receipt))
+        except ValueError as e:
+            print(str(e), file=sys.stderr)
+            return 2
     elif a.cmd == "content-search":
         from .research import content_db
         _print([{k: e.get(k) for k in ("date", "slug", "topic", "category", "status", "hook")}
