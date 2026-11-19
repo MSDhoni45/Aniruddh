@@ -15,6 +15,12 @@ REQUIRED_V3 = ["headline", "category", "topic_type", "published_at", "original_s
                "why_it_matters", "potential_hook", "target_audience", "uncertainty", "evidence_confidence", "already_covered",
                "scores", "x_signal"]
 X_STATUS = ["VERIFIED", "PARTLY VERIFIED", "NOT VERIFIED"]
+# v4 (from 21 Nov 2026; the creator's Instagram growth rubric). Editorial, not a prediction of views. Social traction is a
+# measurement only when a signal was observed; otherwise the total is PROVISIONAL.
+WEIGHTS_V4 = {"social_traction": 20, "novelty": 15, "consequence": 15, "broad_appeal": 15, "visual": 10,
+              "discussion": 10, "verified_significance": 10, "freshness": 5}
+REQUIRED_V4 = REQUIRED_V3 + ["latest_development_at", "confirmed_facts", "company_claims", "unverified_claims",
+                             "why_share", "visual_note"]
 X_METRICS = ["likes", "reposts", "replies", "quotes", "views"]
 REQUIRED = ["headline", "category", "topic_type", "announced_at", "original_source", "supporting_sources", "what_happened",
             "why_it_matters", "target_audience", "discussion_signals", "competing_coverage", "uncertainty", "novelty",
@@ -29,14 +35,18 @@ UNKNOWN = "UNKNOWN"
 
 def scheme(c: dict) -> str:
     sc = c.get("scores", {})
+    if "social_traction" in sc:
+        return "v4"
     return "v3" if "public_discussion" in sc else ("v2" if "curiosity" in sc else "v1")
 
 
 def weights(c: dict) -> dict:
-    return {"v3": WEIGHTS_V3, "v2": WEIGHTS_V2}.get(scheme(c), WEIGHTS)
+    return {"v4": WEIGHTS_V4, "v3": WEIGHTS_V3, "v2": WEIGHTS_V2}.get(scheme(c), WEIGHTS)
 
 
 def validate(c: dict) -> list[str]:
+    if scheme(c) == "v4":
+        return validate_v4(c)
     if scheme(c) == "v3":
         return validate_v3(c)
     if scheme(c) == "v2":
@@ -174,10 +184,44 @@ def _span(v) -> "tuple | None":
     return a, a + dt.timedelta(days=1) - dt.timedelta(seconds=1)
 
 
+def traction_measured(c: dict) -> bool:
+    """True only if some engagement was actually observed (an X post opened, or a signal with observed numbers)."""
+    if isinstance(c.get("x_signal"), dict) and c["x_signal"].get("status") == "VERIFIED":
+        return True
+    for s in c.get("signals") or []:
+        eng = s.get("engagement") or {}
+        if eng.get("basis") == "observed" and any(isinstance(v, (int, float)) for k, v in eng.items() if k not in ("basis", "source")):
+            return True
+    return False
+
+
+def validate_v4(c: dict) -> list[str]:
+    """v3 rules (window, X signal, sources) with the v4 rubric and the per-candidate research record."""
+    probs = [p for p in validate_v3({**c, "scores": {k: 0 for k in WEIGHTS_V3}}) if not p.startswith("score ")]
+    probs += [f"missing field: {f}" for f in REQUIRED_V4 if f not in c and f not in REQUIRED_V3]
+    for k in WEIGHTS_V4:
+        v = c.get("scores", {}).get(k)
+        if v != UNKNOWN and not (isinstance(v, (int, float)) and 0 <= v <= 10):
+            probs.append(f"score {k} must be 0-10 or UNKNOWN")
+    for f in ("confirmed_facts", "company_claims", "unverified_claims"):
+        if f in c and not isinstance(c[f], list):
+            probs.append(f"{f} must be a list (empty if none)")
+    if "latest_development_at" in c and _span(c["latest_development_at"]) is None:
+        probs.append("latest_development_at must be a timestamp or a YYYY-MM-DD date")
+    st = c.get("scores", {}).get("social_traction")
+    evidence = (c.get("x_signal") or {}).get("discussion_evidence") if isinstance(c.get("x_signal"), dict) else None
+    if isinstance(st, (int, float)):
+        if st > 3 and not (evidence or c.get("signals")):
+            probs.append("social_traction above 3 needs signals or discussion_evidence; fame alone does not count")
+        if st > 6 and not traction_measured(c):
+            probs.append("social_traction above 6 needs measured engagement (an observed signal); otherwise score it as provisional (6 or less)")
+    return probs
+
+
 def window_reason(c: dict, window: dict | None) -> str | None:
     """v3 freshness rule: published inside the 24-hour research window, or a dated new development inside it.
     A date without a time counts if that day overlaps the window (never invent a time to pass this check)."""
-    if not window or scheme(c) != "v3":
+    if not window or scheme(c) not in ("v3", "v4"):
         return None
     start, end = _iso(window.get("start_utc")), _iso(window.get("end_utc"))
     pub = _span(c.get("published_at"))
@@ -232,5 +276,6 @@ def rank(cands: list[dict], window: dict | None = None) -> list[dict]:
         s = trend_score(c)
         reason = ineligible_reason(c) or window_reason(c, window)
         out.append({**c, "trend_score": s["total"], "unknown_criteria": s["unknown"], "problems": validate(c),
+                    "provisional": scheme(c) == "v4" and not traction_measured(c),
                     "eligible": reason is None, "ineligible_reason": reason})
     return sorted(out, key=lambda c: (c["eligible"], c["trend_score"]), reverse=True)

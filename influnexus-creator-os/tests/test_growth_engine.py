@@ -137,24 +137,53 @@ def test_dashboard_is_unknown_without_data(tmp_path):
 
 
 def test_growth_mathematics_and_trajectory(tmp_path):
+    """The target counts Instagram only; other platforms are reported separately, never added in."""
     f, perf = tmp_path / "f.csv", tmp_path / "p.csv"
     growth.add_snapshot("2026-11-20", "instagram", 2000, "app", f)
     growth.add_snapshot("2026-11-20", "youtube", 1000, "studio", f)
     growth.add_snapshot("2026-11-30", "instagram", 6000, "app", f)
-    growth.add_snapshot("2026-11-30", "youtube", 2000, "studio", f)
     store.upsert(dict(date="2026-11-21", video_id="v1", platform="instagram", checkpoint="7d", views="50000",
                       new_followers="400"), perf)
     store.upsert(dict(date="2026-11-21", video_id="v1", platform="instagram", checkpoint="24h", views="10000",
                       new_followers="50"), perf)
     d = growth.dashboard("2026-11-30", f, perf, tmp_path / "db.jsonl")
-    assert d["current_followers"] == 8000 and d["remaining_followers"] == 92000
-    assert d["days_remaining"] == 49 and d["daily_net_growth_required"] == round(92000 / 49)
+    assert d["current_followers"] == 6000 and d["followers_by_platform"]["youtube"] == 1000
+    assert d["remaining_followers"] == 94000 and d["days_remaining"] == 49
+    assert d["daily_net_growth_required"] == round(94000 / 49)
+    assert d["average_daily_required_over_60"] == round(98000 / 60)
+    assert d["net_gained"] == 4000 and d["daily_growth"] == 400.0 and d["growth_7d"] == 4000 and d["growth_30d"] == "UNKNOWN"
     t = d["trajectory"]
-    expected = 3000 + (100000 - 3000) * 10 / 59
-    assert t["expected_today"] == round(expected) and t["status"] == "BEHIND"
+    assert t["expected_today"] == round(2000 + 98000 * 10 / 59) and t["status"] == "BEHIND"
     assert d["conversion"] == {"videos": 1, "views": 50000, "new_followers": 400, "followers_per_1k_views": 8.0}
-    assert d["daily_views_needed_at_observed_conversion"] == round(d["daily_net_growth_required"] / 8.0 * 1000)
     assert d["phase"].startswith("Phase 2")
+    pr = d["projection"]
+    assert pr["baseline"] == 6000 + 400 * 49 and pr["conservative"] == "UNKNOWN" and pr["on_track"] is False
+    assert "not enough" in pr["warning"]
+
+
+def test_scenarios_use_observed_rates_and_flag_a_shortfall():
+    import datetime as dt
+    D = lambda n: dt.date(2026, 11, 20) + dt.timedelta(days=n)
+    series = [(D(0), 1000), (D(1), 1300), (D(2), 1500), (D(3), 2100)]
+    pr = growth.scenarios(series, 56, 100000)
+    assert pr["observed_avg_daily"] == round(1100 / 3, 1)
+    assert pr["conservative"] == 2100 + 200 * 56 and pr["optimistic"] == 2100 + 600 * 56
+    assert pr["baseline"] == round(2100 + (1100 / 3) * 56) and pr["on_track"] is False
+    assert growth.scenarios(series[:1], 56, 100000)["status"] == "UNKNOWN"
+    fast = [(D(0), 1000), (D(1), 3000), (D(2), 5000)]
+    assert growth.scenarios(fast, 58, 100000)["on_track"] is True
+
+
+def test_reel_rates_are_per_reach_and_compared_with_the_account_median(tmp_path):
+    perf = tmp_path / "p.csv"
+    for vid, reach, shares, follows in (("a", 10000, 100, 50), ("b", 20000, 100, 40), ("c", 5000, 150, 30)):
+        store.upsert(dict(date="2026-11-21", video_id=vid, platform="instagram", checkpoint="48h", views=str(reach * 2),
+                          reach=str(reach), shares=str(shares), new_followers=str(follows)), perf)
+    store.upsert(dict(date="2026-11-21", video_id="a", platform="instagram", checkpoint="2h", reach="900"), perf)
+    reels = {r["video_id"]: r for r in growth.reel_table(store.load(perf))}
+    assert reels["a"]["checkpoint"] == "48h" and reels["a"]["share_rate"] == 0.01
+    assert reels["c"]["share_rate"] == 0.03 and reels["c"]["share_rate_vs_median"] == 3.0
+    assert reels["b"]["follows_per_1k_reach"] == 2.0 and reels["b"]["save_rate"] is None
 
 
 def test_follower_snapshots_reject_bad_input_and_replace_same_day(tmp_path):
@@ -213,3 +242,106 @@ def test_run_status_line_shows_the_current_run_not_an_older_one(monkeypatch):
                  "delivery": {"status": "failed", "channel": "push"}})
     assert package.run_status_line("D") == "D-manual-133203: READY, delivery failed via push"
     assert package.run_status_line("E").startswith("no run recorded")
+
+
+# --- v4: the creator's Instagram growth rubric -----------------------------------------------------------------------
+
+def _as_v4(p):
+    """Convert the real 19 Nov MANUAL TEST package (v3) to v4, keeping its research."""
+    p = copy.deepcopy(p)
+    p["scoring"] = "v4"
+    for c in p["candidates"]:
+        sc = c["scores"]
+        c["scores"] = {"social_traction": min(sc["public_discussion"], 6), "novelty": sc["surprise"], "consequence": sc["significance"],
+                       "broad_appeal": sc["broad_appeal"], "visual": sc["visual"], "discussion": min(sc["discussion_potential"] * 2, 10),
+                       "verified_significance": min(sc["verification_confidence"] * 2, 10), "freshness": 9}
+        c.update(latest_development_at=c["published_at"], confirmed_facts=[c["main_claim"]], company_claims=[],
+                 unverified_claims=[], why_share="x", visual_note="x")
+    for h in p["hooks"]:
+        h["retention"] = h.pop("specificity")
+    p.pop("quality_scores")
+    p.update(creative_scores={"hook": 9, "clarity": 9, "human_delivery": 9, "relevance": 9, "information": 9, "retention": 9,
+                              "discussion": 9}, revisions=1,
+             why_beats_alternatives="Verified by NASA plus independent outlets, awe plus a live twist; Genie 4 is company claims only.",
+             posting_window={"window_ist": "19:00-21:00", "basis": "hypothesis", "rationale": "Untested starting slot; replace with the account's own best time once reels have data."},
+             audience_hypothesis="High saves for the light-day explainer; comments on how to debug with a one-day delay.",
+             candidate_shortfall_reason="Only 6 distinct candidates had dated primary sources in the window; most platforms are blocked.")
+    return p
+
+
+FIX = ROOT / "tests/fixtures/manual_test_v3_2026-11-19/package.json"
+
+
+def test_v4_package_validates_and_delivers_the_morning_items():
+    p = _as_v4(json.loads(FIX.read_text()))
+    probs, info = package.validate(p)
+    assert probs == [] and info["ready"]["status"] == "RECORDING READY"
+    assert info["quality"]["total"] == 90.0 and info["quality"]["approved"]
+    today = package.render_today(p, info)
+    for heading in ("WHY IT BEATS THE ALTERNATIVES", "TOP FIVE RANKED CANDIDATES", "STRONGEST VERIFIED SOCIAL SIGNAL",
+                    "RECOMMENDED POSTING WINDOW", "EXPECTED AUDIENCE RESPONSE (hypothesis)", "RESEARCH LIMITATIONS"):
+        assert heading in today
+    assert "provisional: traction not measured" in today and "(hypothesis)" in today
+    assert "SOCIAL SIGNAL:** none observed" in today and "Strongest public evidence instead" in today
+    p["candidates"][0]["signals"].append({"platform": "reddit", "url": "https://www.reddit.com/r/space/x", "title": "r/space thread",
+                                          "retrieved_at": "2026-11-19T09:00:00+00:00", "access": "SEARCH-INDEX",
+                                          "engagement": {"basis": "unknown"}})
+    assert "SOCIAL SIGNAL:** [r/space thread]" in package.render_today(p, package.validate(p)[1])
+    assert "Creative score" in package.render(p, info)
+
+
+@pytest.mark.parametrize("mod,expect", [
+    (lambda p: p["creative_scores"].update(hook=6), "below 90"),
+    (lambda p: p["creative_scores"].pop("discussion"), "creative scores missing"),
+    (lambda p: p.update(revisions=4), "revisions must be"),
+    (lambda p: p.update(posting_window={"window_ist": "19:00", "basis": "best", "rationale": "x"}), "posting_window"),
+    (lambda p: p.update(posting_window={"window_ist": "19:00", "basis": "observed", "rationale": "x"}), "needs evidence"),
+    (lambda p: p.update(audience_hypothesis=" "), "audience_hypothesis"),
+    (lambda p: p.pop("candidate_shortfall_reason"), "find 15"),
+    (lambda p: p["candidates"][0]["scores"].update(social_traction=8), "measured engagement"),
+    (lambda p: p["candidates"][0].pop("company_claims"), "missing field: company_claims"),
+    (lambda p: p["hooks"][0].pop("retention"), "lacks scores"),
+])
+def test_v4_rule_breaks(mod, expect):
+    p = _as_v4(json.loads(FIX.read_text()))
+    mod(p)
+    assert any(expect in x for x in package.validate(p)[0]), package.validate(p)[0]
+
+
+def test_below_target_after_three_revisions_is_reported_not_hidden():
+    p = _as_v4(json.loads(FIX.read_text()))
+    p["creative_scores"].update(hook=7, discussion=7)
+    assert any("below 90" in x for x in package.validate(p)[0])
+    p.update(revisions=3, quality_limitation="Hook stays literal to remain accurate; no stronger accurate hook found.")
+    probs, info = package.validate(p)
+    assert probs == [] and "CREATIVE SCORE BELOW TARGET" in package.render_today(p, info)
+
+
+def test_scheme_dates_v3_or_v4_on_the_20th_and_v4_from_the_21st():
+    v3 = json.loads(FIX.read_text())
+    v4 = _as_v4(v3)
+    for d, p, ok in (("2026-11-20", v3, True), ("2026-11-20", v4, True), ("2026-11-21", v3, False), ("2026-11-21", v4, True)):
+        q = copy.deepcopy(p)
+        q["date"] = d
+        first = package.validate(q)[0][:1]
+        assert (not first or "must use" not in first[0]) == ok, (d, q["scoring"], first)
+
+
+def test_measured_traction_comes_only_from_observed_engagement():
+    c = {"x_signal": {"status": "NOT VERIFIED"}, "signals": [{"engagement": {"basis": "reported", "likes": 5, "source": "x"}}]}
+    assert not candidates.traction_measured(c)
+    c["signals"].append({"engagement": {"basis": "observed", "views": 1200}})
+    assert candidates.traction_measured(c)
+    assert sum(candidates.WEIGHTS_V4.values()) == 100 and sum(lint.CREATIVE_V4.values()) == 100
+
+
+def test_real_v4_package_from_the_afternoon_manual_test_validates():
+    """MANUAL TEST v4 (19 Nov 2026 16:27 IST, isolated copy, fresh research): 13 candidates, honest shortfall, 0 revisions."""
+    d = ROOT / "tests/fixtures/manual_test_v4_2026-11-19"
+    p = json.loads((d / "package.json").read_text())
+    probs, info = package.validate(p)
+    assert probs == [] and info["ready"]["status"] == "RECORDING READY" and info["quality"]["total"] >= 90
+    assert len(p["candidates"]) == 13 and p["revisions"] == 0 and "candidate_shortfall_reason" in p
+    assert all(c["provisional"] for c in info["ranked"])                         # no engagement could be observed
+    run = json.loads((d / "run_report.json").read_text())["runs"]["2026-11-19-manual-test-162657"]
+    assert run["trigger"] == "manual-test" and run["delivery"]["status"] == "not attempted"

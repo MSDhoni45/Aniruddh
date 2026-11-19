@@ -116,6 +116,8 @@ HOOK_MECHANISMS = ["unexpected fact", "contradiction", "surprising demonstration
 MIN_HOOKS = 10
 # v3 (from 20 Nov 2026): seven criteria, total /70. Accuracy below 7 still disqualifies.
 HOOK_CRITERIA_V3 = ["accuracy", "clarity", "curiosity", "surprise", "specificity", "natural", "relevance"]
+# v4: the creator's hook criteria (natural = spoken delivery; retention = audience retention potential)
+HOOK_CRITERIA_V4 = ["accuracy", "clarity", "curiosity", "surprise", "relevance", "natural", "retention"]
 
 
 def score_hooks(hooks: list[dict], criteria: list[str] | None = None) -> list[dict]:
@@ -170,3 +172,23 @@ def quality(scores: dict, text: str, scheme: str | None = None) -> dict:
     if weak:
         problems.append(f"checks below 7/10: {weak}")
     return {"scores": s, "total": total, "approved": not problems, "problems": problems}
+
+
+# v4 creative score (the creator's rubric). Each criterion scored 0-10 and weighted to 100. Facts are a separate hard gate.
+CREATIVE_V4 = {"hook": 20, "clarity": 15, "human_delivery": 15, "relevance": 15, "information": 15, "retention": 10,
+               "discussion": 10}
+CREATIVE_TARGET, MAX_REVISIONS = 90, 3
+
+
+def creative(scores: dict, revisions: int = 0, limitation: str = "") -> dict:
+    """Weighted creative total. Below 90 is allowed only after the third revision and with the limitation stated."""
+    missing = [k for k in CREATIVE_V4 if not isinstance(scores.get(k), (int, float)) or not 0 <= scores[k] <= 10]
+    total = round(sum(w * float(scores.get(k, 0)) / 10 for k, w in CREATIVE_V4.items()), 1)
+    problems = [f"creative scores missing or out of 0-10: {missing}"] if missing else []
+    if not isinstance(revisions, int) or not 0 <= revisions <= MAX_REVISIONS:
+        problems.append(f"revisions must be 0-{MAX_REVISIONS}")
+    below = total < CREATIVE_TARGET
+    if below and not (revisions == MAX_REVISIONS and limitation.strip()):
+        problems.append(f"creative score {total}/100 is below {CREATIVE_TARGET}: revise (attempt {revisions} of {MAX_REVISIONS}), "
+                        "or after the third revision state quality_limitation")
+    return {"total": total, "approved": not problems, "below_target": below, "problems": problems}

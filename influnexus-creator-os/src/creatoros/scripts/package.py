@@ -32,7 +32,11 @@ EDITING_KEYS = ["opening_visual", "key_moments", "broll", "on_screen_text", "dem
                 "caption_emphasis", "sound"]
 OPENING_WORDS, OPENING_DAYS = 3, 14
 WINDOW_HOURS = 24
-V3_FROM = "2026-11-20"             # from this IST date every package must use the v3 rules
+V3_FROM = "2026-11-20"             # from this IST date every package must use the v3 rules (v4 counts)
+V4_FROM = "2026-11-21"             # from this IST date every package must use v4 (the Instagram growth rubric)
+MIN_CANDIDATES_V4 = 15             # v4: 15 distinct verified candidates, or say why fewer (never pad)
+REQUIRED_V4 = ["why_beats_alternatives", "posting_window", "audience_hypothesis", "creative_scores", "revisions"]
+POSTING_BASIS = ["hypothesis", "observed"]
 
 
 def is_v2(p: dict) -> bool:
@@ -41,7 +45,27 @@ def is_v2(p: dict) -> bool:
 
 
 def is_v3(p: dict) -> bool:
-    return p.get("scoring") == "v3"
+    """v3 rules (window, signals, backups...) also apply to v4 packages."""
+    return p.get("scoring") in ("v3", "v4")
+
+
+def is_v4(p: dict) -> bool:
+    return p.get("scoring") == "v4"
+
+
+def v4_problems(p: dict) -> list[str]:
+    probs = []
+    if not str(p["why_beats_alternatives"]).strip():
+        probs.append("why_beats_alternatives: say why this story beats the runners-up")
+    pw = p["posting_window"] if isinstance(p["posting_window"], dict) else {}
+    if not pw.get("window_ist") or pw.get("basis") not in POSTING_BASIS or not pw.get("rationale"):
+        probs.append(f"posting_window needs window_ist, rationale and basis {POSTING_BASIS} (hypothesis until the "
+                     "account's own data shows a better time)")
+    if pw.get("basis") == "observed" and not pw.get("evidence"):
+        probs.append("posting_window basis 'observed' needs evidence (which reels' numbers)")
+    if not str(p["audience_hypothesis"]).strip():
+        probs.append("audience_hypothesis: the expected response, stated as a hypothesis to check against real numbers")
+    return probs
 
 
 def research_window(run_start_utc: str) -> dict:
@@ -155,14 +179,18 @@ def _words(text: str) -> int:
 
 
 def validate(p: dict) -> tuple[list[str], dict]:
+    if str(p.get("date", "")) >= V4_FROM and not is_v4(p):
+        return [f"packages dated {V4_FROM} or later must use \"scoring\": \"v4\" (RUNBOOK.md); this one is "
+                f"'{p.get('scoring', 'v1')}'"], {}
     if str(p.get("date", "")) >= V3_FROM and not is_v3(p):
         return [f"packages dated {V3_FROM} or later must use \"scoring\": \"v3\" (RUNBOOK.md); this one is "
                 f"'{p.get('scoring', 'v1')}'"], {}
-    extra = REQUIRED_V3 if is_v3(p) else (REQUIRED_V2 if is_v2(p) else [])
-    problems = [f"missing: {k}" for k in REQUIRED + extra if k not in p]
+    extra = REQUIRED_V3 + (REQUIRED_V4 if is_v4(p) else []) if is_v3(p) else (REQUIRED_V2 if is_v2(p) else [])
+    base = [k for k in REQUIRED if not (is_v4(p) and k == "quality_scores")]
+    problems = [f"missing: {k}" for k in base + extra if k not in p]
     if problems:
         return problems, {}
-    scheme = "v3" if is_v3(p) else None
+    scheme = "v3" if is_v3(p) else None          # length limits: v3 and v4 share 90-105 words / 45 s
     window = p.get("research_window") if is_v3(p) else None
     if is_v3(p):
         problems += window_problems(window)
@@ -172,7 +200,7 @@ def validate(p: dict) -> tuple[list[str], dict]:
     if is_v2(p):
         if not p["visuals"] or not all(isinstance(v, str) and v.strip() for v in p["visuals"]):
             problems.append("visuals: list at least one B-roll or graphic suggestion for the editor")
-        want = "v3" if is_v3(p) else "v2"
+        want = "v4" if is_v4(p) else ("v3" if is_v3(p) else "v2")
         if any(candmod.scheme(c) != want for c in p["candidates"]):
             problems.append(f"a {want} package must score every candidate with the {want} criteria")
         old = reused_hook(p["hook"], p["slug"])
@@ -193,9 +221,14 @@ def validate(p: dict) -> tuple[list[str], dict]:
         problems.append(f"X post is {len(p['x']['post'])} characters; keep it within 280")
     if not p["script"].strip().startswith(p["hook"].strip()):
         problems.append("script must open with the chosen hook")
-    hook_criteria = lint.HOOK_CRITERIA_V3 if is_v3(p) else None
+    hook_criteria = lint.HOOK_CRITERIA_V4 if is_v4(p) else (lint.HOOK_CRITERIA_V3 if is_v3(p) else None)
     problems += [f"hooks: {x}" for x in lint.check_hooks(p["hooks"], p["hook"], hook_criteria)]
-    q = lint.quality(p["quality_scores"], p["script"], scheme)
+    if is_v4(p):
+        cr = lint.creative(p["creative_scores"], p["revisions"], p.get("quality_limitation", ""))
+        q = {**cr, "scores": dict(p["creative_scores"])}
+        problems += v4_problems(p)
+    else:
+        q = lint.quality(p["quality_scores"], p["script"], scheme)
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
     ready = ver.readiness(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), v2=is_v2(p))
@@ -212,7 +245,7 @@ def validate(p: dict) -> tuple[list[str], dict]:
     elif eligible[0]["headline"] != p["topic"]:
         problems.append(f"topic must be the top eligible candidate ('{eligible[0]['headline']}')")
     credible = [c for c in ranked if not c.get("rejected") and c.get("evidence_confidence") != "LOW"]
-    need = MIN_CANDIDATES_V3 if is_v3(p) else MIN_CANDIDATES
+    need = MIN_CANDIDATES_V4 if is_v4(p) else (MIN_CANDIDATES_V3 if is_v3(p) else MIN_CANDIDATES)
     if len(credible) < need and not p.get("candidate_shortfall_reason"):
         problems.append(f"{len(credible)} credible candidates; find {need} or explain in candidate_shortfall_reason")
     n = _words(p["research_summary"])
@@ -279,8 +312,13 @@ def render(p: dict, info: dict) -> str:
     else:
         L += ["", "## Appendix 3: Hook candidates", "", "| Hook | Mechanism | Score /60 | Usable |", "|---|---|---|---|"]
         L += [f"| {h['text']} | {h['mechanism']} | {h['total']} | {'yes' if h['eligible'] else 'no (accuracy)'} |" for h in lint.score_hooks(p["hooks"])]
-    L += ["", "## Appendix 4: Script quality", "", "| Check | Score /10 |", "|---|---|"]
-    L += [f"| {k} | {v} |" for k, v in q["scores"].items() if k in lint.QUALITY_CHECKS]
+    if is_v4(p):
+        L += ["", "## Appendix 4: Creative score (facts are a separate gate)", "", "| Criterion | Weight | Score /10 |", "|---|---|---|"]
+        L += [f"| {k} | {w} | {q['scores'].get(k)} |" for k, w in lint.CREATIVE_V4.items()]
+        L += ["", f"Total {q['total']}/100 after {p['revisions']} revision(s)" + (f". Limitation: {p['quality_limitation']}" if p.get("quality_limitation") else "")]
+    else:
+        L += ["", "## Appendix 4: Script quality", "", "| Check | Score /10 |", "|---|---|"]
+        L += [f"| {k} | {v} |" for k, v in q["scores"].items() if k in lint.QUALITY_CHECKS]
     L += ["", "## Appendix 5: Research access limits", ""]
     L += [f"- {a}" for a in p["access_limits"]]
     return "\n".join(L) + "\n"
@@ -312,6 +350,8 @@ def render_today(p: dict, info: dict) -> str:
     for c in claims:
         L.append(f"- {c['text']} — [{c.get('source_title') or 'primary source'}]({c['primary_source']}) ({c['status']}, {c['confidence']}, {c.get('source_date') or 'date unknown'}, {c.get('access') or 'access unknown'})"
                  if c.get("primary_source") else f"- {c['text']} — no primary source ({c['status']}, {c['confidence']})")
+    if is_v4(p):
+        L += v4_today_sections(p, info)
     if is_v3(p):
         L += v3_today_sections(p, info)
     L += ["", "**ENGLISH CAPTIONS:**", "", "```"] + caption_lines(p["script"]) + ["```", "", "**PLATFORM CONTENT:**", "",
@@ -319,6 +359,44 @@ def render_today(p: dict, info: dict) -> str:
           yt["description"], "", "*LinkedIn*", "", li["caption"], "", "*X*", "", xx["post"], "",
           "Full research, all candidates, hooks and the claim table: `package.md`."]
     return "\n".join(L) + "\n"
+
+
+ACCESS_RANK = {"DIRECTLY OBSERVED": 0, "SEARCH-INDEX": 1, "SECONDARY": 2, "NOT VERIFIED": 3}
+
+
+def v4_today_sections(p: dict, info: dict) -> list[str]:
+    """The creator's v4 morning items: why it wins, top five, strongest verified signal, posting window, hypothesis."""
+    ranked = info["ranked"]
+    win = next(c for c in ranked if c["headline"] == p["topic"])
+    L = ["", f"**WHY IT BEATS THE ALTERNATIVES:** {p['why_beats_alternatives']}", "", "**TOP FIVE RANKED CANDIDATES:**"]
+    for i, c in enumerate(ranked[:5], 1):
+        tag = "eligible" if c["eligible"] else c["ineligible_reason"]
+        L.append(f"{i}. {c['headline']}: {c['trend_score']}/100{' (provisional: traction not measured)' if c.get('provisional') else ''}, "
+                 f"{c['evidence_confidence']} confidence, {tag}")
+    social = {"x", "reddit", "youtube", "instagram", "linkedin", "google_trends"}
+    rank = lambda s: ACCESS_RANK.get(s.get("access"), 9)
+    sigs = win.get("signals") or []
+    soc = sorted([s_ for s_ in sigs if s_.get("platform") in social and s_.get("access") != "NOT VERIFIED"], key=rank)
+
+    def describe(s0):
+        eng = s0.get("engagement") or {}
+        nums = ", ".join(f"{k} {v}" for k, v in eng.items() if k not in ("basis", "source") and v != "UNKNOWN")
+        return (f"[{s0['title']}]({s0['url']}) ({s0['platform']}, {s0['access']}; engagement {eng.get('basis', 'unknown')}"
+                f"{': ' + nums if nums else ''})")
+    if soc:
+        L += ["", f"**STRONGEST VERIFIED SOCIAL SIGNAL:** {describe(soc[0])}"]
+    else:
+        pub = sorted(sigs, key=rank)
+        L += ["", "**STRONGEST VERIFIED SOCIAL SIGNAL:** none observed (no social-platform post could be verified)."
+              + (f" Strongest public evidence instead: {describe(pub[0])}" if pub else "")]
+    if not candmod.traction_measured(win):
+        L.append("No engagement was measured for this story; its traction score is provisional.")
+    pw = p["posting_window"]
+    L += ["", f"**RECOMMENDED POSTING WINDOW:** {pw['window_ist']} IST ({pw['basis']}): {pw['rationale']}",
+          "", f"**EXPECTED AUDIENCE RESPONSE (hypothesis):** {p['audience_hypothesis']}"]
+    if p.get("quality_limitation"):
+        L += ["", f"**CREATIVE SCORE BELOW TARGET:** {info['quality']['total']}/100 after {p['revisions']} revisions. {p['quality_limitation']}"]
+    return L
 
 
 def run_status_line(date: str) -> str:
@@ -438,7 +516,7 @@ def save(p: dict, out: Path | None = None) -> dict:
             "candidates": [{k: c.get(k) for k in ("headline", "published_at", "original_source", "trend_score", "eligible",
                                                   "ineligible_reason", "scores", "x_signal", "signals", "verification_status",
                                                   "evidence_confidence", "new_development")} for c in info["ranked"]],
-            "hooks": lint.score_hooks(p["hooks"], lint.HOOK_CRITERIA_V3), "backups": p["backups"],
+            "hooks": lint.score_hooks(p["hooks"], lint.HOOK_CRITERIA_V4 if is_v4(p) else lint.HOOK_CRITERIA_V3), "backups": p["backups"],
             "limitations": p["limitations"], "source_audit": source_audit_for(p)})
     from ..research import memory
     memory.record(p, info["ranked"])

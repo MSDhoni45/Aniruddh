@@ -221,7 +221,7 @@ def test_analytics_upsert_and_derived_metrics(tmp_path):
     g = store.by_dimension("topic", "7d", "instagram", p)
     assert g[0]["videos"] == 1 and g[0]["enough_data"] is False
     due = store.due_checkpoints("2026-11-23T12:00:00", [{"video_id": "v1", "platform": "instagram", "published_at": "2026-11-19T14:00:00"}], p)
-    assert due == [{"video_id": "v1", "platform": "instagram", "checkpoint": "72h"}]
+    assert [d["checkpoint"] for d in due] == ["2h", "48h", "72h"]          # 24h and 7d are stored; 7d not yet due
 
 
 # ---------- publishing safeguards ----------
