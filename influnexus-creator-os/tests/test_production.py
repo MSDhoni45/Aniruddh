@@ -240,3 +240,23 @@ def test_end_without_run_id_closes_the_open_run_whatever_trigger_was_typed(tmp_p
     assert rep["run_id"] == r["run_id"] and rep["trigger"] == "scheduled"
     with pytest.raises(ValueError):
         runs.end(log, daily, "READY", now=RUN_START + dt.timedelta(minutes=31))     # nothing left open
+
+
+def test_duplicate_guard_sees_runs_logged_before_run_ids_existed(tmp_path):
+    log = tmp_path / "runs.jsonl"
+    legacy = [{"event": "start", "trigger": "scheduled", "at_utc": "2026-11-19T03:12:16+00:00", "ist_date": "2026-11-19"},
+              {"event": "end", "trigger": "scheduled", "status": "READY", "at_utc": "2026-11-19T03:12:31+00:00",
+               "ist_date": "2026-11-19"}]
+    log.write_text("".join(json.dumps(r) + "\n" for r in legacy))
+    noon = dt.datetime(2026, 11, 19, 7, 0, tzinfo=UTC)
+    rec = runs.start(log, "scheduled", root=tmp_path, now=noon)
+    assert rec["duplicate"] == "ALREADY_DONE" and rec["run_id"] == "2026-11-19-scheduled-084216"
+
+
+def test_early_scheduled_tagged_test_run_does_not_block_the_0841_run(tmp_path):
+    log = tmp_path / "runs.jsonl"
+    early = [{"event": "start", "trigger": "scheduled", "at_utc": "2026-11-19T19:30:00+00:00", "ist_date": "2026-11-20"},
+             {"event": "end", "trigger": "scheduled", "status": "READY", "at_utc": "2026-11-19T19:31:00+00:00",
+              "ist_date": "2026-11-20"}]
+    log.write_text("".join(json.dumps(r) + "\n" for r in early))
+    assert "duplicate" not in runs.start(log, "scheduled", root=tmp_path, now=RUN_START)

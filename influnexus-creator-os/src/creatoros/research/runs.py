@@ -80,12 +80,26 @@ def budgets(start: dt.datetime, trigger: str) -> dict:
 
 
 def _runs_for(recs: list[dict], date: str, trigger: str) -> dict:
-    """run_id -> {start, end} for one IST date and trigger."""
+    """run_id -> {start, end} for one IST date and trigger. Records from before run IDs existed are grouped in order
+    (an end belongs to the latest start). Scheduled-tagged records more than 15 minutes before 08:41 IST are ignored,
+    so a test fire never counts as the day's scheduled run (same rule as `runlog status`)."""
+    sched = dt.datetime.combine(dt.date.fromisoformat(date), dt.time(8, 26), IST)
     runs: dict[str, dict] = {}
+    last_legacy = None
     for r in recs:
-        if r.get("ist_date") != date or r.get("trigger") != trigger or not r.get("run_id"):
+        if r.get("ist_date") != date or r.get("trigger") != trigger or r.get("event") not in ("start", "end"):
             continue
-        runs.setdefault(r["run_id"], {})[r["event"]] = r
+        if trigger == "scheduled" and dt.datetime.fromisoformat(r["at_utc"]) < sched:
+            continue
+        rid = r.get("run_id")
+        if not rid:
+            if r["event"] == "start":
+                last_legacy = rid = f"{date}-{trigger}-{dt.datetime.fromisoformat(r['at_utc']).astimezone(IST):%H%M%S}"
+            else:
+                rid = last_legacy
+            if rid is None:
+                continue
+        runs.setdefault(rid, {})[r["event"]] = r
     return runs
 
 
