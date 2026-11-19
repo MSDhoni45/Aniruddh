@@ -321,6 +321,23 @@ def render_today(p: dict, info: dict) -> str:
     return "\n".join(L) + "\n"
 
 
+def run_status_line(date: str) -> str:
+    """The latest run for this date from logs/runs.jsonl (never an older run's report)."""
+    from ..research import runs
+    recs = [r for r in runs.load(config.path("logs", "runs.jsonl")) if r.get("ist_date") == date and r.get("run_id")]
+    starts = [r for r in recs if r.get("event") == "start"]
+    if not starts:
+        return "no run recorded for this date (built outside a logged run)"
+    rid = starts[-1]["run_id"]
+    end = next((r for r in reversed(recs) if r.get("run_id") == rid and r.get("event") == "end"), None)
+    dels = [r["delivery"] for r in recs if r.get("run_id") == rid and isinstance(r.get("delivery"), dict)]
+    if end is None:
+        return f"{rid}: IN PROGRESS (delivery is recorded when the run ends)"
+    d = dels[-1] if dels else {}
+    return f"{rid}: {end.get('status') or 'UNKNOWN'}, delivery {d.get('status', 'UNKNOWN')}" + (
+        f" via {d['channel']}" if d.get("channel") else "")
+
+
 def v3_today_sections(p: dict, info: dict) -> list[str]:
     """Creator-facing extras for v3: evidence across platforms, backups, editing notes, limitations, run status."""
     import json
@@ -352,13 +369,7 @@ def v3_today_sections(p: dict, info: dict) -> list[str]:
     if p.get("backup_shortfall_reason"):
         L.append(f"- Fewer than two: {p['backup_shortfall_reason']}")
     L += ["", "**RESEARCH LIMITATIONS:**"] + ([f"- {x}" for x in p["limitations"]] or ["- None recorded."])
-    rep_path = config.path("daily", p["date"], "run_report.json")
-    status = "no run report yet (a manual package)"
-    if rep_path.exists():
-        runs_ = json.loads(rep_path.read_text(encoding="utf-8")).get("runs", {})
-        if runs_:
-            rid, r = list(runs_.items())[-1]
-            status = f"{rid}: {r.get('status', 'UNKNOWN')}, delivery {((r.get('delivery') or {}).get('status')) or 'UNKNOWN'}"
+    status = run_status_line(p["date"])
     L += ["", f"**RUN STATUS:** {status}"]
     return L
 

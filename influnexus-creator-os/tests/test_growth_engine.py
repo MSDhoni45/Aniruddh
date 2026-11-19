@@ -185,3 +185,31 @@ def test_weekly_review_includes_target_and_refuses_patterns_without_data(tmp_pat
     text = weekly.build("2026-11-26", db, tmp_path / "p.csv")
     assert "## 60-day target" in text and "useful_ai_tools | 1 | 100%" in text
     assert "no pattern can be claimed" in text
+
+
+def test_real_v3_package_from_the_manual_test_run_validates():
+    """MANUAL TEST output (19 Nov 2026, isolated clone, real research): the first genuine v3 package."""
+    p = json.loads((ROOT / "tests/fixtures/manual_test_v3_2026-11-19/package.json").read_text())
+    probs, info = package.validate(p)
+    assert probs == [] and info["ready"]["status"] == "RECORDING READY"
+    assert 90 <= info["lint"]["words"] <= 105 and info["lint"]["seconds"] <= 45
+    ranked = {c["headline"]: c for c in info["ranked"]}
+    assert ranked["Microsoft announces Maia 300 inference chip at Ignite"]["ineligible_reason"].startswith("published before")
+    assert ranked["Anthropic prices record IPO at $83 a share"]["ineligible_reason"].startswith("on hold")
+    rep = json.loads((ROOT / "tests/fixtures/manual_test_v3_2026-11-19/run_report.json").read_text())
+    run = rep["runs"]["2026-11-19-manual-test-133203"]
+    assert run["trigger"] == "manual-test" and run["quality_gate"] == "PASS" and run["delivery"]["status"] == "not attempted"
+
+
+def test_run_status_line_shows_the_current_run_not_an_older_one(monkeypatch):
+    from creatoros.research import runs
+    recs = [{"event": "start", "run_id": "D-scheduled-084216", "ist_date": "D"},
+            {"event": "end", "run_id": "D-scheduled-084216", "ist_date": "D", "status": "READY",
+             "delivery": {"status": "requested", "channel": "push"}},
+            {"event": "start", "run_id": "D-manual-133203", "ist_date": "D"}]
+    monkeypatch.setattr(runs, "load", lambda path: recs)
+    assert package.run_status_line("D") == "D-manual-133203: IN PROGRESS (delivery is recorded when the run ends)"
+    recs.append({"event": "end", "run_id": "D-manual-133203", "ist_date": "D", "status": "READY",
+                 "delivery": {"status": "failed", "channel": "push"}})
+    assert package.run_status_line("D") == "D-manual-133203: READY, delivery failed via push"
+    assert package.run_status_line("E").startswith("no run recorded")

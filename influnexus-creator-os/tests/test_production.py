@@ -272,3 +272,14 @@ def test_early_scheduled_tagged_test_run_does_not_block_the_0841_run(tmp_path):
               "ist_date": "2026-11-20"}]
     log.write_text("".join(json.dumps(r) + "\n" for r in early))
     assert "duplicate" not in runs.start(log, "scheduled", root=tmp_path, now=RUN_START)
+
+
+def test_date_only_publication_counts_when_that_day_overlaps_the_window():
+    """Sources often give a date but no time; the run must not invent one."""
+    c = v3_candidate(published_at="2026-11-19")                      # window: 19 Nov 03:11 -> 20 Nov 03:11 UTC
+    assert candidates.validate(c) == [] and candidates.window_reason(c, WIN) is None
+    assert candidates.window_reason(v3_candidate(published_at="2026-11-18"), WIN)
+    assert candidates.window_reason(v3_candidate(published_at="2026-11-21"), WIN) == "published after the research window ended"
+    old = v3_candidate(published_at="2026-06-15", new_development={"what": "confirmed", "at": "2026-11-20"})
+    assert candidates.window_reason(old, WIN) is None
+    assert candidates.validate(v3_candidate(published_at="last Tuesday"))
