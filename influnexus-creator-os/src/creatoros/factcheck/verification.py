@@ -151,8 +151,9 @@ def level_summary(claims: list[dict]) -> str:
         counts[lv] = counts.get(lv, 0) + 1
     opened = sum(1 for c in used if any(it.get("access") == "opened" for it in c.get("evidence") or []))
     order = [lv for lv in reversed(ev.LEVELS) if lv in counts]
+    rest = "" if opened == len(used) else "; the rest rely on search-index excerpts and independent reports"
     return ("Evidence levels: " + ", ".join(f"{counts[lv]} {lv}" for lv in order) +
-            f". Claims with a source opened directly: {opened} of {len(used)}; the rest rely on search-index excerpts and independent reports.")
+            f". Claims with a source opened directly: {opened} of {len(used)}{rest}.")
 
 
 def table_v5(claims: list[dict]) -> str:

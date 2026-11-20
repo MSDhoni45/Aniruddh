@@ -40,9 +40,9 @@ def main(argv=None) -> int:
     p = sub.add_parser("recording", help="script and delivery notes only (Prepare for recording)"); p.add_argument("--date")
     p = sub.add_parser("switch", help="archive today's package before replacing it (Different topic)"); p.add_argument("--date")
     p = sub.add_parser("runlog", help="run records: start (duplicate guard, window, budgets), end, delivery, status")
-    p.add_argument("event", choices=["start", "end", "delivery", "status"]); p.add_argument("--date")
+    p.add_argument("event", choices=["start", "end", "delivery", "status", "stages"]); p.add_argument("--date")
     p.add_argument("--trigger", default="manual"); p.add_argument("--status", default=""); p.add_argument("--note", default="")
-    p.add_argument("--run-id"); p.add_argument("--delivery", default="not attempted", help="requested|confirmed|failed|not attempted")
+    p.add_argument("--run-id"); p.add_argument("--delivery", default="not attempted", help="not attempted|failed|requested|accepted|received (accepted/received need --receipt)")
     p.add_argument("--channel", default=""); p.add_argument("--receipt", default="")
     p.add_argument("--error", action="append", default=[]); p.add_argument("--warning", action="append", default=[])
     p = sub.add_parser("hold", help="put today's story on HOLD, record why, and name the next-ranked story")
@@ -160,8 +160,13 @@ def main(argv=None) -> int:
         from .research import runs
         log, daily = config.path("logs", "runs.jsonl"), config.path("daily")
         try:
+            if a.event == "stages":
+                _print(runs.delivery_stages(daily, a.date or ist_today(), log, config.path(".."),
+                                            "claude/daily-ai-tech-research-script-taab6w"))
+                return 0
             if a.event == "start":
-                rec = runs.start(log, a.trigger, a.note, root=config.path("."))
+                from .research import signals
+                rec = runs.start(log, a.trigger, a.note, root=config.path("."), daily=daily, audit_fn=signals.audit)
                 _print(rec)
                 return {"ALREADY_DONE": 5, "IN_PROGRESS": 6}.get(rec.get("duplicate"), 0)
             if a.event == "end":

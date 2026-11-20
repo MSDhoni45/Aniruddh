@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-20",
+  "runs": {
+    "2026-11-20-scheduled-084143": {
+      "run_id": "2026-11-20-scheduled-084143",
+      "trigger": "scheduled",
+      "start_ist": "2026-11-20T08:41:43+05:30",
+      "end_ist": "2026-11-20T08:48:27+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3PP3XJnXqwcV8hAYH8",
+        "CLAUDE_CODE_CONTAINER_ID": "container_01TwuzHFrXeRSSJiMMp6zv78",
+        "cloud": true
+      },
+      "git_commit": "74054cc",
+      "research_window": {
+        "start_utc": "2026-11-19T03:11:43+00:00",
+        "end_utc": "2026-11-20T03:11:43+00:00",
+        "start_ist": "2026-11-19T08:41:43+05:30",
+        "end_ist": "2026-11-20T08:41:43+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "requested",
+        "channel": "push",
+        "receipt": "none available",
+        "at_ist": "2026-11-20T08:48:27+05:30"
+      },
+      "errors": [],
+      "warnings": [
+        "source audit: x, news, google_trends BLOCKED; primary PARTIAL; claims via search index"
+      ],
+      "note": "",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
+      "candidates": 9,
+      "source_access": "Evidence levels: 5 MEDIUM-HIGH. Claims with a source opened directly: 0 of 5; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 92,
+      "estimated_seconds": 38.4,
+      "quality_gate": "PASS",
+      "quality_total": 90.0,
+      "validation_problems": []
+    },
+    "2026-11-20-manual-134940": {
+      "run_id": "2026-11-20-manual-134940",
+      "trigger": "manual",
+      "start_ist": "2026-11-20T13:49:40+05:30",
+      "end_ist": "2026-11-20T13:51:21+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "510a7a3",
+      "research_window": {
+        "start_utc": "2026-11-19T03:11:43+00:00",
+        "end_utc": "2026-11-20T03:11:43+00:00",
+        "start_ist": "2026-11-19T08:41:43+05:30",
+        "end_ist": "2026-11-20T08:41:43+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply (no push)",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "20 Nov hardening: replacement package with directly opened primary sources",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Anthropic priced its IPO at $83, above its own $70-78 range",
+      "candidates": 10,
+      "source_access": "Evidence levels: 4 HIGH. Claims with a source opened directly: 4 of 4; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 91,
+      "estimated_seconds": 38.0,
+      "quality_gate": "PASS",
+      "quality_total": 91.5,
+      "validation_problems": []
+    }
+  }
+}

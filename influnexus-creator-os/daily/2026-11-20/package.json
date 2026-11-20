@@ -1,0 +1,864 @@
+{
+  "date": "2026-11-20",
+  "language": "hinglish",
+  "scoring": "v5",
+  "slug": "anthropic-ipo-pricing",
+  "keys": [
+    "anthropic-ipo-pricing",
+    "anthropic-ipo-ant"
+  ],
+  "topic": "Anthropic priced its IPO at $83, above its own $70-78 range",
+  "category": "TECH COMPANIES",
+  "topic_type": "BREAKING",
+  "announced_at": "18-19 November 2026 (pricing and first trading day)",
+  "generated_at": "2026-11-20T13:55:00+05:30",
+  "research_window": {
+    "start_utc": "2026-11-19T03:11:43+00:00",
+    "end_utc": "2026-11-20T03:11:43+00:00",
+    "start_ist": "2026-11-19T08:41:43+05:30",
+    "end_ist": "2026-11-20T08:41:43+05:30",
+    "hours": 24
+  },
+  "creator_request": false,
+  "why_selected": "Strongest verified story inside the 24-hour window: the biggest AI listing so far, with every number in the script from Anthropic's own release, Nasdaq's newsroom or four independent outlets. Higher-curiosity stories (Caltech's space robot, the bank AI-agent rules) fall outside the window; Genie 4's rollout date could not be pinned down.",
+  "why_short": "The maker of Claude went public and opened 34% above its IPO price: verified numbers, broad interest, and an easy boom-or-bubble conversation.",
+  "why_beats_alternatives": "Every financial claim comes from Anthropic's own releases, opened directly. The first version's opening-price hook was held because Nasdaq's page cannot be opened here. Genie 4's rollout date is not confirmed by Google's own posts, and the Nvidia story is only reported.",
+  "evidence_confidence": "HIGH",
+  "confidence": "HIGH",
+  "verified_development": "Anthropic's own releases (opened directly): priced at $83.00, expected range $70.00-78.00, 980,000,000 shares, Nasdaq ticker ANT from 19 Nov.",
+  "disclosure": "Disclosure: this package was written by Claude, an Anthropic model. The script reports only verified figures, makes no investment claim, and ends on an open question rather than a view.",
+  "research_summary": "Anthropic's own pricing release, opened directly on 20 November, says the company priced its IPO of Class A common stock at $83.00 per share, with 980,000,000 shares offered, and that trading was expected to begin on the Nasdaq Global Select Market on 19 November 2026 under the symbol ANT. Its earlier roadshow release, also opened, gave an expected price range of $70.00 to $78.00. At $83 the offering totals about $81.3 billion. Forbes and CNN report the pricing and the debut. The opening price of $111.50 is left out: it appears only on Nasdaq's page, which cannot be opened from this environment, and an extraordinary financial claim needs its primary document opened.",
+  "primary_sources": [
+    {
+      "label": "Anthropic: Anthropic prices initial public offering",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    },
+    {
+      "label": "Nasdaq: Anthropic Marks its IPO at Nasdaq",
+      "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "label": "Forbes: stock closes day at $97, up more than 17%",
+      "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/"
+    },
+    {
+      "label": "CNN live: first day of trading",
+      "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo"
+    },
+    {
+      "label": "Bloomberg live blog: trading debut",
+      "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates"
+    },
+    {
+      "label": "CNBC: price range $70-78 (10 Nov)",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+    },
+    {
+      "label": "Yahoo Finance live: priced at $83",
+      "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html"
+    }
+  ],
+  "key_facts": [
+    "IPO price $83.00, above the $70-78 range.",
+    "980,000,000 shares offered (~$81.3B).",
+    "Ticker ANT on Nasdaq; first trade 19 Nov 2026.",
+    "Opened $111.50 (Nasdaq), about 34% above the IPO price.",
+    "Reported close $97.17 (+17%): news outlets only, not used in the script."
+  ],
+  "uncertainties": [
+    "The first-day open and close are left out (no opened primary source).",
+    "Valuation estimates conflict; left out.",
+    "Written by Claude, an Anthropic model (disclosed); no investment view."
+  ],
+  "context": "Anthropic makes the Claude models. The listing follows months of record private funding for AI labs and an active debate about an AI bubble.",
+  "script": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.\n\nAnthropic ne pehle kaha tha price hoga 70 se 78 dollar per share. Final price aaya 83 dollar.\n\nAur offering thi 980 million shares ki. Matlab lagbhag 81 billion dollar.\n\nShares Nasdaq pe ANT naam se, 19 November se trade hone the.\n\nYeh saare numbers company ki apni official release se hain.\n\nSimple baat: investors abhi bhi AI pe bahut bada daav laga rahe hain.\n\nAb aap batao: yeh AI boom hai, ya AI bubble?",
+  "hook": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
+  "hooks": [
+    {
+      "text": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
+      "mechanism": "unexpected fact",
+      "accuracy": 10,
+      "curiosity": 8,
+      "clarity": 9,
+      "credibility": 10,
+      "emotional": 7,
+      "natural": 9
+    },
+    {
+      "text": "83 dollar: Anthropic ne apni hi range tod di.",
+      "mechanism": "strong factual statement",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 7,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 8
+    },
+    {
+      "text": "81 billion dollar. Itna bada offering kisi AI company ka.",
+      "mechanism": "curiosity gap",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 8
+    },
+    {
+      "text": "AI boom ya bubble? Anthropic ka IPO ek clue deta hai.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 9,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 9
+    },
+    {
+      "text": "Jo company Claude banati hai, ab woh public hai.",
+      "mechanism": "important consequence",
+      "accuracy": 8,
+      "curiosity": 7,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 6,
+      "natural": 9
+    }
+  ],
+  "revisions": 1,
+  "quality_v5": {
+    "hook": 9,
+    "clarity": 9,
+    "storytelling": 9,
+    "retention": 9,
+    "shareability": 9,
+    "factual_confidence": 10
+  },
+  "recording": {
+    "tone": "Confident and conversational, like explaining market news to a friend. No hype, no stock-tip energy.",
+    "opening_expression": "Slight smile, eyebrows up on '34 percent'.",
+    "emphasis": [
+      "apni hi range se upar",
+      "70 se 78",
+      "83 dollar",
+      "81 billion",
+      "official release",
+      "boom",
+      "bubble"
+    ],
+    "pauses": [
+      "beat after the first line",
+      "beat before 'Final price aaya'",
+      "beat before 'Simple baat'",
+      "pause before the final question"
+    ],
+    "pronunciation": [
+      "Anthropic: an-THROP-ik",
+      "Claude: klawd",
+      "Nasdaq: NAZ-dak",
+      "ANT: say the letters A-N-T"
+    ]
+  },
+  "visuals": [
+    "Anthropic logo and the Nasdaq listing photo from Nasdaq's newsroom (credit Nasdaq; use only media-cleared images)",
+    "Simple original price graphic: $70-78 range bar, $83 IPO price, $111.50 open",
+    "Text card: '980 million shares, ~$81.3B'",
+    "End card: 'AI boom ya bubble?'",
+    "No stock-tip styling, no rocket emojis"
+  ],
+  "edit_beats": {
+    "0-3": "'$70-78' card crossed out, '$83' slams in",
+    "3-10": "Anthropic's release headline on screen (screenshot of the official page)",
+    "10-25": "'980M shares x $83 = ~$81.3B' calculation card",
+    "25-45": "'Boom ya bubble?' end card; on-screen note: 'Source: Anthropic release. Not investment advice.'"
+  },
+  "thumbnail_text": "Priced above its own range",
+  "pinned_comment": "AI boom ya bubble? Comment karo. (Investment advice nahi hai.)",
+  "pillar": "big_tech_leaders",
+  "format": "B",
+  "backups": [
+    "Google rolls out Genie 4 world model to AI Ultra subscribers",
+    "Nvidia reportedly halts H200 shipments to China"
+  ],
+  "audience": {
+    "stop_scroll": "A specific, surprising number (+34%) about a company they know through Claude.",
+    "watch_to_end": "The opening-price detail and the closing question.",
+    "share": "Easy to forward to friends who follow AI or markets.",
+    "save": "All the key IPO numbers in one place.",
+    "comment": "Boom or bubble is an open, two-sided question.",
+    "follow": "Clear, verified explanations of big AI news."
+  },
+  "editing": {
+    "opening_visual": "+34% at open over a price line",
+    "key_moments": [
+      "$83 vs $70-78",
+      "980M shares",
+      "$111.50 open"
+    ],
+    "broll": [
+      "Nasdaq newsroom listing photo (credit Nasdaq)"
+    ],
+    "on_screen_text": [
+      "+34% at open",
+      "IPO $83",
+      "Open $111.50",
+      "Boom ya bubble?"
+    ],
+    "demonstrations": [
+      "Price-line graphic (original)"
+    ],
+    "stats": [
+      "+34% open vs $83 IPO price",
+      "$70-78 range",
+      "980M shares (~$81.3B)",
+      "Open $111.50"
+    ],
+    "rhythm": "Fast first line, steady middle, pause before the closing question",
+    "caption_emphasis": [
+      "34 percent",
+      "83 dollar",
+      "111 dollar 50 cent",
+      "boom",
+      "bubble"
+    ],
+    "sound": "Low, neutral bed only if licensed; no hype stingers"
+  },
+  "limitations": [
+    "Source audit: x.com, news sites, anthropic.com and nasdaq.com cannot be opened from this environment; primary text read via search index.",
+    "No social engagement observed; public-discussion scores are provisional.",
+    "Reported closing price ($97.17) not used: no primary record found.",
+    "Writer is an Anthropic model (disclosed).",
+    "The opening and closing prices are left out: Nasdaq's page cannot be opened here."
+  ],
+  "instagram": {
+    "cover_headline": "Claude maker opens 34% higher",
+    "caption": "Anthropic (Claude ki company) ne IPO price kiya 83 dollar per share, apni hi 70-78 dollar range se upar. 980 million shares, lagbhag 81 billion dollar. Source: Anthropic's official release. AI boom ya bubble? (Not investment advice.)",
+    "hashtags": [
+      "#Anthropic",
+      "#Claude",
+      "#IPO",
+      "#AI",
+      "#TechNews"
+    ]
+  },
+  "linkedin": {
+    "caption": "Anthropic, the company behind Claude, began trading on Nasdaq on 19 November under ANT.\n\nIt priced at $83 a share, above its $70-78 range, selling 980 million shares (about $81.3B). The first trade was at $111.50, about 34% above the offer price.\n\nWhatever the long-term price does, day one shows how much capital still wants exposure to frontier AI.",
+    "business_relevance": "AI lab valuations shape funding, hiring and pricing across the whole AI ecosystem.",
+    "discussion_prompt": "Is this AI boom being priced sensibly, or are we in bubble territory?"
+  },
+  "x": {
+    "post": "Anthropic (Claude) debuted on Nasdaq as ANT: priced at $83, above its $70-78 range; 980M shares (~$81.3B). First trade: $111.50, about 34% above the IPO price. AI boom or bubble?"
+  },
+  "youtube": {
+    "title": "Claude Maker Anthropic Opens 34% Above IPO Price | ANT on Nasdaq",
+    "description": "Anthropic priced its IPO at $83 (above its $70-78 range), sold 980M shares (~$81.3B), and opened at $111.50 on 19 Nov 2026. Sources: Anthropic, Nasdaq, Forbes, CNN, Bloomberg. Not investment advice.\n\n#Shorts #Anthropic #IPO",
+    "keywords": [
+      "Anthropic IPO",
+      "ANT stock",
+      "Claude",
+      "Nasdaq",
+      "AI IPO",
+      "AI bubble",
+      "tech news Hindi",
+      "AI news"
+    ]
+  },
+  "growth": {
+    "watch": "A concrete number (+34%) in the first line about a company viewers know through Claude.",
+    "share": "Markets plus AI is a common conversation.",
+    "follow": "Clear, sourced coverage of big AI business news.",
+    "segment": "Indian and global AI and investing-curious viewers.",
+    "underperform": "Finance topics can feel distant; many outlets covered the IPO already; viewers may expect a stock tip."
+  },
+  "x_signals": [],
+  "candidates": [
+    {
+      "headline": "Anthropic priced its IPO at $83, above its own $70-78 range",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "main_claim": "Anthropic priced its IPO at $83.00 (expected $70.00-78.00), 980,000,000 shares, Nasdaq ticker ANT from 19 Nov (company releases, opened).",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "The maker of Claude going public is a referendum on how much money is still flowing into AI.",
+      "potential_hook": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
+      "target_audience": "AI fans, Indian and global investors, startup audience",
+      "uncertainty": "Valuation figures differ by method ($1.27T vs $1.76T); the writer is an Anthropic model (disclosed).",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+          "title": "www.forbes.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+          "title": "www.cnn.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
+          "title": "www.bloomberg.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+          "title": "www.nasdaq.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 6,
+        "significance": 9,
+        "usefulness": 5,
+        "visual": 6,
+        "broad_appeal": 8,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 9
+      },
+      "new_development": {
+        "what": "Shares scheduled to begin trading on Nasdaq",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-19T09:30:00-05:00",
+      "original_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "main_claim": "Anthropic priced its IPO at $83 (above the $70-78 range), sold 980 million shares (~$81.3B) and opened on Nasdaq at $111.50, about 34% above the IPO price.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "The maker of Claude going public is a referendum on how much money is still flowing into AI.",
+      "potential_hook": "Jis company ne Claude banaya, uska share pehle hi trade mein 34 percent upar khula.",
+      "target_audience": "AI fans, Indian and global investors, startup audience",
+      "uncertainty": "Valuation figures differ by method ($1.27T vs $1.76T); the writer is an Anthropic model (disclosed).",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+          "title": "www.forbes.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+          "title": "www.cnn.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
+          "title": "www.bloomberg.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+          "title": "www.nasdaq.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 6,
+        "significance": 9,
+        "usefulness": 5,
+        "visual": 6,
+        "broad_appeal": 8,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 9
+      },
+      "hold_reason": "20 Nov: opening-price hook not confirmed by an opened primary document (nasdaq.com blocked)"
+    },
+    {
+      "headline": "Google rolls out Genie 4 world model to AI Ultra subscribers",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-19T00:00:00-08:00",
+      "original_source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "main_claim": "Google says it is rolling out Genie 4, which generates interactive worlds from text, to eligible AI Ultra subscribers.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Type a sentence and walk around a world it generates.",
+      "potential_hook": "Ek line likho, aur uski duniya mein ghoomo.",
+      "target_audience": "Global tech fans",
+      "uncertainty": "Exact rollout date not confirmed in Google's indexed text; US-only and paid tier.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "title": "deepmind.google",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 8,
+        "significance": 6,
+        "usefulness": 5,
+        "visual": 10,
+        "broad_appeal": 7,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 6
+      }
+    },
+    {
+      "headline": "US banks shift losses from third-party AI agents onto customers",
+      "category": "AI",
+      "topic_type": "EMERGING",
+      "published_at": "2026-11-17T00:00:00-05:00",
+      "original_source": "https://startupfortune.com/citi-pnc-and-citizens-tell-customers-they-own-any-loss-an-ai-agent-causes/",
+      "main_claim": "Citi, PNC and Citizens updated terms so customers bear losses caused by third-party AI agents, even if hacked.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Anyone giving an AI agent bank access needs to know this.",
+      "potential_hook": "Aapka AI agent paisa uda de, to bank kehta hai: aapki zimmedaari.",
+      "target_audience": "AI users",
+      "uncertainty": "First reported before the 24-hour window; dates conflict; bank terms not read directly.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 8,
+        "usefulness": 9,
+        "visual": 3,
+        "broad_appeal": 7,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 5
+      },
+      "outside_window": true
+    },
+    {
+      "headline": "Nvidia reportedly halts H200 shipments to China",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-19T00:00:00-05:00",
+      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-19",
+      "main_claim": "Reports say Nvidia will stop selling H200 chips in China.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "AI chip geopolitics.",
+      "potential_hook": "Nvidia ne China ko chips bechna band kiya?",
+      "target_audience": "Global",
+      "uncertainty": "Digest only; Nvidia statement not found.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 6,
+        "significance": 8,
+        "usefulness": 4,
+        "visual": 3,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 4
+      }
+    },
+    {
+      "headline": "Google releases Gemini 4 Neon",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18T00:00:00-08:00",
+      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-19",
+      "main_claim": "Google released Gemini 4 Neon at $3/$15 per million tokens.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Model launch.",
+      "potential_hook": "Google ka naya fast model.",
+      "target_audience": "Developers",
+      "uncertainty": "Release date differs between digests; may predate the window.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 4,
+        "significance": 5,
+        "usefulness": 5,
+        "visual": 3,
+        "broad_appeal": 5,
+        "discussion_potential": 4,
+        "longevity": 4,
+        "verification_confidence": 5
+      }
+    },
+    {
+      "headline": "Palo Alto Networks to buy Applied Compute for $4.5B",
+      "category": "STARTUPS",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-19T00:00:00-05:00",
+      "original_source": "https://aiweekly.co/ai-news-today/edition/2026-11-19",
+      "main_claim": "Palo Alto Networks agreed to acquire Applied Compute for $4.5B in stock.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Enterprise AI M&A.",
+      "potential_hook": "Ek cybersecurity giant ne AI startup 4.5 billion mein khareeda.",
+      "target_audience": "Business",
+      "uncertainty": "Digest only.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 3,
+        "surprise": 5,
+        "significance": 5,
+        "usefulness": 3,
+        "visual": 2,
+        "broad_appeal": 4,
+        "discussion_potential": 4,
+        "longevity": 4,
+        "verification_confidence": 4
+      }
+    },
+    {
+      "headline": "Caltech's ASTRA robot built a section of an antenna frame in orbit by itself",
+      "category": "EMERGING TECH",
+      "topic_type": "EVERGREEN",
+      "published_at": "2026-11-05T00:00:00-08:00",
+      "original_source": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+      "main_claim": "A robotic truss builder added a third bay to a 1.4 m antenna frame in orbit; Caltech calls it the first structure autonomously constructed in space.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Space construction without astronauts.",
+      "potential_hook": "Space mein ek robot ne khud kuch banaya.",
+      "target_audience": "Global",
+      "uncertainty": "Announced 5 Nov, outside the 24-hour window with no new development.",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 9,
+        "significance": 7,
+        "usefulness": 4,
+        "visual": 10,
+        "broad_appeal": 8,
+        "discussion_potential": 7,
+        "longevity": 8,
+        "verification_confidence": 8
+      },
+      "outside_window": true
+    },
+    {
+      "headline": "Musk and Nadella on Jensen Huang at DealBook",
+      "category": "FOUNDERS & CEOS",
+      "topic_type": "EMERGING",
+      "published_at": "2026-11-18T00:00:00-05:00",
+      "original_source": "https://www.cnbc.com/2026/11/19/elon-musk-jensen-huang-midterms.html",
+      "main_claim": "Musk said no one can really replace Jensen; Nadella said founders also die, so companies must outlast them.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "CEO succession.",
+      "potential_hook": "Musk aur Nadella, Jensen Huang pe alag-alag soch.",
+      "target_audience": "Business audience",
+      "uncertainty": "Remarks made 18 Nov (US); quotes vary by outlet.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 6,
+        "significance": 6,
+        "usefulness": 4,
+        "visual": 3,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 5,
+        "verification_confidence": 5
+      }
+    },
+    {
+      "headline": "A man with ALS used a brain implant to communicate at home for 3,800+ hours",
+      "category": "SCIENCE",
+      "topic_type": "EVERGREEN",
+      "published_at": "2026-06-15T00:00:00+00:00",
+      "original_source": "https://www.nature.com/articles/s41591-026-04414-6",
+      "main_claim": "Covered on 19 Nov.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "Covered.",
+      "potential_hook": "n/a",
+      "target_audience": "Global",
+      "uncertainty": "Covered.",
+      "evidence_confidence": "HIGH",
+      "already_covered": true,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 8,
+        "usefulness": 6,
+        "visual": 8,
+        "broad_appeal": 9,
+        "discussion_potential": 7,
+        "longevity": 9,
+        "verification_confidence": 9
+      }
+    }
+  ],
+  "candidate_shortfall_reason": "Nine candidates shortlisted; most 19 Nov items came from digests and could not be checked against company pages within the 09:30 deadline.",
+  "factcheck": {
+    "date": "2026-11-20",
+    "story": "Anthropic priced its IPO at $83, above its own $70-78 range",
+    "claims": [
+      {
+        "id": "p1",
+        "text": "Anthropic had said its IPO price was expected to be between $70.00 and $78.00 per share",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
+        "evidence": [
+          {
+            "url": "https://www.anthropic.com/news/roadshow-launch",
+            "kind": "primary",
+            "access": "opened",
+            "date": "2026-11"
+          },
+          {
+            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          }
+        ],
+        "supporting_evidence": "The initial public offering price is expected to be between $70.00 and $78.00 per share (roadshow release, opened 20 Nov)"
+      },
+      {
+        "id": "p2",
+        "text": "Anthropic priced its IPO at $83.00 per share",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
+        "evidence": [
+          {
+            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+            "kind": "primary",
+            "access": "opened",
+            "date": "2026-11-18"
+          },
+          {
+            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          },
+          {
+            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          }
+        ],
+        "supporting_evidence": "Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share (opened 20 Nov)"
+      },
+      {
+        "id": "p3",
+        "text": "The offering was 980,000,000 shares, about $81.3 billion at the $83 IPO price",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
+        "evidence": [
+          {
+            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+            "kind": "primary",
+            "access": "opened",
+            "date": "2026-11-18"
+          },
+          {
+            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          }
+        ],
+        "supporting_evidence": "The offering consists of 980,000,000 shares of Class A common stock (opened 20 Nov); 980,000,000 x $83.00 = $81.34 billion",
+        "note": "The dollar total is arithmetic on the release's own figures."
+      },
+      {
+        "id": "p4",
+        "text": "The shares were expected to begin trading on the Nasdaq Global Select Market on 19 November 2026 under the ticker ANT",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
+        "evidence": [
+          {
+            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+            "kind": "primary",
+            "access": "opened",
+            "date": "2026-11-18"
+          },
+          {
+            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          }
+        ],
+        "supporting_evidence": "expected to begin trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol \"ANT\" (opened 20 Nov)"
+      },
+      {
+        "id": "p5",
+        "text": "The stock opened at $111.50, about 34% above the IPO price",
+        "status": "CONFIRMED",
+        "in_script": false,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
+        "evidence": [
+          {
+            "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-19"
+          },
+          {
+            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          },
+          {
+            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          }
+        ],
+        "note": "Left out: nasdaq.com cannot be opened here, and an extraordinary financial claim needs the primary document opened."
+      }
+    ]
+  },
+  "access_limits": [
+    "anthropic.com, nasdaq.com, x.com and news sites cannot be opened from this environment; indexed text read via search.",
+    "No social engagement observed; UNKNOWN.",
+    "Time-boxed to the 09:30 IST deadline."
+  ],
+  "verification": "tiered"
+}

@@ -18,7 +18,11 @@ DELIVER_BY = dt.time(9, 25)  # target, leaving 5 minutes before the 09:30 deadli
 BUDGET_MIN = {"research": 22, "verification": 32, "ranking_and_writing": 39, "quality_and_package": 42}
 ENV_KEYS = ["CLAUDE_CODE_REMOTE", "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE", "CLAUDE_CODE_REMOTE_SESSION_ID",
             "CLAUDE_CODE_CONTAINER_ID"]
-DELIVERY = ["requested", "confirmed", "failed", "not attempted"]
+# Notification stages, weakest to strongest. "requested" = we asked the notification tool; "accepted" = the provider
+# acknowledged it (needs the provider's response as evidence); "received" = the creator saw it (needs their confirmation).
+# "confirmed" is the older word for "received". Never record accepted or received without evidence.
+DELIVERY = ["not attempted", "failed", "requested", "accepted", "received", "confirmed"]
+NEEDS_EVIDENCE = {"accepted", "received", "confirmed"}
 
 
 def _now(now: dt.datetime | None) -> dt.datetime:
@@ -103,7 +107,8 @@ def _runs_for(recs: list[dict], date: str, trigger: str) -> dict:
     return runs
 
 
-def start(log: Path, trigger: str, note: str = "", root: Path | None = None, now: dt.datetime | None = None) -> dict:
+def start(log: Path, trigger: str, note: str = "", root: Path | None = None, now: dt.datetime | None = None,
+          daily: Path | None = None, audit_fn=None) -> dict:
     """Begin a run. For scheduled runs, refuse a duplicate: ALREADY_DONE if today's scheduled run already ended READY,
     IN_PROGRESS if one started under an hour ago and has not ended. A start older than that with no end is closed as
     INTERRUPTED and a new run proceeds (recovery)."""
@@ -125,10 +130,20 @@ def start(log: Path, trigger: str, note: str = "", root: Path | None = None, now
                 _append(log, {"event": "end", "run_id": rid, "trigger": "scheduled", "status": "INTERRUPTED",
                               "note": f"no end recorded {age:.0f} min after start; closed by the next run",
                               "at_utc": _iso(t), "ist_date": date})
+    audit_summary = None
+    if daily is not None and audit_fn is not None:
+        # The source audit runs BEFORE any research, so the run knows what it can reach; research.json records it.
+        from . import signals
+        res = audit_fn()
+        signals.save_audit(daily / date / "source_access.json", res)
+        signals.save_audit(log.parent / "source_access.json", res)
+        audit_summary = {"checked_at_utc": res["checked_at_utc"], **{g: v["status"] for g, v in res["groups"].items()}}
     rid = f"{date}-{trigger}-{t.astimezone(IST).strftime('%H%M%S')}"
     rec = {"event": "start", "run_id": rid, "trigger": trigger, "status": "", "note": note, "at_utc": _iso(t),
            "at_ist": _iso(t.astimezone(IST)), "ist_date": date, "git_commit": git_commit(root or log.parent),
            "environment": environment(), "research_window": window(t), "budgets": budgets(t, trigger)}
+    if audit_summary:
+        rec["source_audit"] = audit_summary
     _append(log, rec)
     return rec
 
@@ -193,6 +208,8 @@ def end(log: Path, daily: Path, status: str, run_id: str | None = None, trigger:
         raise ValueError("no matching run start; run `creatoros runlog start` first")
     if delivery not in DELIVERY:
         raise ValueError(f"delivery must be one of {DELIVERY}")
+    if delivery in NEEDS_EVIDENCE and not receipt.strip():
+        raise ValueError(f"delivery '{delivery}' needs --receipt with the evidence (provider response or the creator's confirmation)")
     date = st["ist_date"]
     summary = summarise_package(daily / date / "package.json")
     rec = {"event": "end", "run_id": st["run_id"], "trigger": st["trigger"], "status": status, "note": note,
@@ -230,6 +247,8 @@ def delivery(log: Path, daily: Path, run_id: str, status: str, channel: str = ""
     """Record (or correct) a run's delivery after the fact, e.g. a confirmed receipt or a failure."""
     if status not in DELIVERY:
         raise ValueError(f"delivery must be one of {DELIVERY}")
+    if status in NEEDS_EVIDENCE and not receipt.strip():
+        raise ValueError(f"delivery '{status}' needs --receipt with the evidence (provider response or the creator's confirmation)")
     t = _now(now)
     st = _find_start(load(log), run_id, None)
     if st is None:
@@ -240,3 +259,35 @@ def delivery(log: Path, daily: Path, run_id: str, status: str, channel: str = ""
     rep = _upsert_report(daily, st["ist_date"], run_id, {"delivery": d})
     _rerender_today(daily, st["ist_date"])
     return rep
+
+
+def delivery_stages(daily: Path, date: str, log: Path, repo: Path | None = None, branch: str | None = None) -> dict:
+    """Each delivery stage separately, from evidence only: generated, saved, pushed, notification requested,
+    accepted by the provider, received by the creator."""
+    pkg = daily / date / "package.json"
+    out = {"package_generated": "NO", "package_saved": "NO", "pushed": "UNKNOWN", "notification_requested": "NO",
+           "notification_accepted": "UNKNOWN", "notification_received": "UNKNOWN"}
+    if pkg.exists():
+        s = summarise_package(pkg)
+        out["package_generated"] = "YES" if s.get("package_status") == "VALID" else f"INVALID ({s.get('package_status')})"
+        out["readiness"] = s.get("readiness")
+        out["package_saved"] = "YES" if (daily / date / "today.md").exists() else "PARTIAL (no today.md)"
+    if repo is not None and branch:
+        try:
+            h = subprocess.run(["git", "log", "-1", "--format=%h %cI", f"origin/{branch}", "--", str(daily / date)], cwd=repo,
+                               capture_output=True, text=True, timeout=10).stdout.strip()
+            out["pushed"] = f"YES ({h})" if h else "NO"
+        except (OSError, subprocess.SubprocessError):
+            pass
+    recs = [r for r in load(log) if r.get("ist_date") == date and isinstance(r.get("delivery"), dict)]
+    states = {r["delivery"].get("status") for r in recs}
+    receipts = [r["delivery"].get("receipt") for r in recs if r["delivery"].get("status") in NEEDS_EVIDENCE]
+    if states & {"requested", "accepted", "received", "confirmed"}:
+        out["notification_requested"] = "YES"
+    if "failed" in states and not states & {"requested", "accepted", "received", "confirmed"}:
+        out["notification_requested"] = "FAILED"
+    if states & {"accepted", "received", "confirmed"}:
+        out["notification_accepted"] = f"YES ({receipts[0]})"
+    if states & {"received", "confirmed"}:
+        out["notification_received"] = f"YES ({receipts[-1]})"
+    return out
