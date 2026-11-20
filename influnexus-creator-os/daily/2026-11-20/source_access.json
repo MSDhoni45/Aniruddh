@@ -1,0 +1,224 @@
+{
+  "checked_at_utc": "2026-11-20T03:18:20+00:00",
+  "groups": {
+    "x": {
+      "status": "BLOCKED",
+      "reachable": [],
+      "blocked": [
+        "x.com",
+        "api.twitter.com"
+      ],
+      "needs_credentials": []
+    },
+    "reddit": {
+      "status": "BLOCKED",
+      "reachable": [],
+      "blocked": [
+        "www.reddit.com",
+        "oauth.reddit.com"
+      ],
+      "needs_credentials": []
+    },
+    "youtube": {
+      "status": "BLOCKED",
+      "reachable": [
+        "www.googleapis.com"
+      ],
+      "blocked": [
+        "www.youtube.com"
+      ],
+      "needs_credentials": [
+        "www.googleapis.com: needs YouTube Data API key"
+      ]
+    },
+    "instagram": {
+      "status": "BLOCKED",
+      "reachable": [],
+      "blocked": [
+        "www.instagram.com",
+        "graph.instagram.com"
+      ],
+      "needs_credentials": []
+    },
+    "linkedin": {
+      "status": "BLOCKED",
+      "reachable": [],
+      "blocked": [
+        "www.linkedin.com"
+      ],
+      "needs_credentials": []
+    },
+    "google_trends": {
+      "status": "BLOCKED",
+      "reachable": [],
+      "blocked": [
+        "trends.google.com"
+      ],
+      "needs_credentials": []
+    },
+    "primary": {
+      "status": "PARTIAL",
+      "reachable": [
+        "www.anthropic.com",
+        "github.com"
+      ],
+      "blocked": [
+        "openai.com",
+        "blog.google",
+        "nvidianews.nvidia.com",
+        "arxiv.org",
+        "www.nature.com",
+        "huggingface.co"
+      ],
+      "needs_credentials": []
+    },
+    "news": {
+      "status": "BLOCKED",
+      "reachable": [],
+      "blocked": [
+        "www.reuters.com",
+        "apnews.com",
+        "www.theverge.com",
+        "techcrunch.com",
+        "arstechnica.com",
+        "www.wired.com",
+        "www.technologyreview.com",
+        "spectrum.ieee.org"
+      ],
+      "needs_credentials": []
+    }
+  },
+  "hosts": {
+    "api.twitter.com": {
+      "host": "api.twitter.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "apnews.com": {
+      "host": "apnews.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "arstechnica.com": {
+      "host": "arstechnica.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "arxiv.org": {
+      "host": "arxiv.org",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "blog.google": {
+      "host": "blog.google",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "github.com": {
+      "host": "github.com",
+      "reachable": true,
+      "http": 400
+    },
+    "graph.instagram.com": {
+      "host": "graph.instagram.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "huggingface.co": {
+      "host": "huggingface.co",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "nvidianews.nvidia.com": {
+      "host": "nvidianews.nvidia.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "oauth.reddit.com": {
+      "host": "oauth.reddit.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "openai.com": {
+      "host": "openai.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "spectrum.ieee.org": {
+      "host": "spectrum.ieee.org",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "techcrunch.com": {
+      "host": "techcrunch.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "trends.google.com": {
+      "host": "trends.google.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.anthropic.com": {
+      "host": "www.anthropic.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.googleapis.com": {
+      "host": "www.googleapis.com",
+      "reachable": true,
+      "http": 404
+    },
+    "www.instagram.com": {
+      "host": "www.instagram.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.linkedin.com": {
+      "host": "www.linkedin.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.nature.com": {
+      "host": "www.nature.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.reddit.com": {
+      "host": "www.reddit.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.reuters.com": {
+      "host": "www.reuters.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.technologyreview.com": {
+      "host": "www.technologyreview.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.theverge.com": {
+      "host": "www.theverge.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.wired.com": {
+      "host": "www.wired.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "www.youtube.com": {
+      "host": "www.youtube.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    },
+    "x.com": {
+      "host": "x.com",
+      "reachable": false,
+      "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+    }
+  },
+  "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+}
