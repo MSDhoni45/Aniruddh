@@ -61,7 +61,7 @@ About 38.0 seconds (91 words, assumed default; not yet calibrated on the creator
 
 ## F. FACT-CHECK
 
-*Evidence levels: 4 HIGH. Claims with a source opened directly: 4 of 4; the rest rely on search-index excerpts and independent reports.*
+*Evidence levels: 4 HIGH. Claims with a source opened directly: 4 of 4.*
 - Anthropic had said its IPO price was expected to be between $70.00 and $78.00 per share: **HIGH** (high-risk: present or future time context; primary source opened directly). CONFIRMED. Sources: [anthropic.com](https://www.anthropic.com/news/roadshow-launch), [forbes.com](https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/)
 - Anthropic priced its IPO at $83.00 per share: **HIGH** (high-risk: price, launch, availability, security or financial fact with no clear past date; primary source opened directly). CONFIRMED. Sources: [anthropic.com](https://www.anthropic.com/news/anthropic-prices-initial-public-offering), [forbes.com](https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/), [cnn.com](https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo)
 - The offering was 980,000,000 shares, about $81.3 billion at the $83 IPO price: **HIGH** (high-risk: price, launch, availability, security or financial fact with no clear past date; primary source opened directly). CONFIRMED. Sources: [anthropic.com](https://www.anthropic.com/news/anthropic-prices-initial-public-offering), [forbes.com](https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/). Note: The dollar total is arithmetic on the release's own figures.
