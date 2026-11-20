@@ -28,7 +28,8 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
   `logs/runs.jsonl` and `run_report.json` are committed; they are the evidence that a run happened. `runlog end` (and
   `runlog delivery`) also refresh `today.md`, so its RUN STATUS line shows this run's final status and delivery.
 - Never re-render a past date's package: historical packages stay as delivered.
-- `creatoros sources-audit --date DATE` (under a second): probes every source group (X, Reddit, YouTube, Instagram, LinkedIn,
+- `creatoros runlog start` now runs the source audit itself, BEFORE research, and saves `daily/DATE/source_access.json`
+  (tiered packages are refused without it). `creatoros sources-audit --date DATE` re-runs it by hand: it probes every source group (X, Reddit, YouTube, Instagram, LinkedIn,
   Google Trends, primary sites, news) from this environment and saves `daily/DATE/source_access.json`. A group it reports BLOCKED
   can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting, and the validator refuses any claim
   that it was DIRECTLY OBSERVED. Do not retry blocked hosts.
@@ -39,6 +40,24 @@ CLI works, and say so in the reply. Never continue on a stale or wrong branch.
   Never record `opened` for a page that was not fetched. Widening the environment's Allowed domains would let pages be opened.
 - If `daily/DATE/today.md` already says RECORDING READY, do not research again: re-check time-sensitive claims, re-run
   `creatoros package --date DATE`, deliver it, and log the run as `--status READY --note reused`.
+
+## Cost control (from 21 Nov 2026)
+The 20 Nov run cost about $11, almost all of it the main session re-reading its long conversation history (~730K tokens) on
+each of 28 requests; the research itself (12 searches) cost about $0.14. So the scheduled session stays thin:
+1. Main session: setup, `creatoros runlog start --trigger scheduled` (audits sources first), then hand steps 1-4 (research,
+   verification, writing, `creatoros package`) to ONE subagent (Agent tool, fresh context) with a short brief: the run_id,
+   research window, budgets, and "follow influnexus-creator-os/RUNBOOK.md (v5, Verification policy) and write
+   daily/DATE/package.json; return the package status and topic". The subagent does all searches and file work.
+2. Main session again: `creatoros growth`, the push notification, `creatoros runlog end`, one commit and push, the reply.
+   Aim for at most about 8 main-session requests, batch independent tool calls, and never paste large files into the main session.
+Research depth, verification thresholds and the deadline do not change. A fresh session per run would cut the cost further,
+but that needs a new scheduled task, which only the creator can approve.
+
+## Delivery stages (never claim more than the evidence shows)
+`creatoros runlog stages --date DATE` reports separately: package generated, package saved, pushed (commit on the production
+branch), notification requested, notification accepted by the provider, notification received by the creator. The push tool's
+reply is "requested". Record `--delivery accepted` only with the provider's response as `--receipt`, and `received` only with
+the creator's confirmation; the CLI refuses either without a receipt.
 
 ## Verification policy (permanent from 2026-11-21; tiered, risk-based)
 Each script claim's risk is classified from its temporal meaning (`classify_risk` in `factcheck/evidence.py`): present or future
@@ -55,7 +74,10 @@ prices, launches, availability, security and finance default to `high`, other st
 - **UNVERIFIED:** rumour, conflicting sources, or nothing traceable.
 Copies of one report count once; blogs, forums and user-edited wikis (fandom, TV Tropes, Reddit) never count as reputable;
 search excerpts agreeing never make a claim HIGH. Gate: high-risk claims need MEDIUM-HIGH or better and a corroborating report
-dated within 7 days; low-risk claims need MEDIUM or better.
+dated within 7 days; low-risk claims need MEDIUM or better. **Extraordinary financial claims** (share prices and moves, IPO
+pricing and proceeds, valuations, market caps, amounts in the billions; detected automatically, or set `financial: true`) that are
+time-sensitive need **HIGH**: the primary document itself opened directly (e.g. the company's release on its own site). Search
+excerpts of a primary page plus press coverage are not enough for them.
 **Automatic fallback:** if the selected story fails, `creatoros hold --date DATE --reason "..."` archives it under
 `daily/DATE/held_<slug>/`, logs it in `holds.json` and names the next-ranked story; give the held candidate its `hold_reason`
 (the validator insists) and verify the next one. Repeat until one passes. Never fill an evidence gap. If none passes, deliver no

@@ -198,6 +198,20 @@ def effective_risk(claim: dict, package_date: str) -> dict:
     return {"risk": "low", "why": auto["why"], "auto": auto["risk"], "declared": declared}
 
 
+# Extraordinary financial claims: share-price moves, IPO pricing and proceeds, valuations, market caps, and amounts in the
+# billions. When time-sensitive they need a primary source OPENED directly (HIGH); search excerpts are not enough.
+_FINANCIAL = [r"\bipo\b", r"\bper share\b", r"\bshare price", r"\bstock price", r"\bmarket cap", r"\bvaluation",
+              r"\bvalued at\b", r"\bpriced (at|its|the)\b", r"\b(opened|closed|traded|jumped|soared|fell|dropped|rose|surged|plunged)\b.{0,40}\b(\d+(\.\d+)?\s?%|percent|\$)",
+              r"\b\d+(\.\d+)?\s?(%|percent)\s+(higher|lower|up|down|above|below)\b", r"\bshares? (opened|closed|rose|fell|jumped)\b",
+              r"\$\s?\d[\d,.]*\s?(billion|trillion|bn|tn)\b", r"\b\d[\d,.]*\s?(billion|trillion) (dollars?|usd)\b",
+              r"\b(revenue|proceeds|raised|funding round)\b.{0,30}\$?\d", r"\bshares? (sold|offered)\b", r"\bticker\b"]
+
+
+def is_extraordinary_financial(text: str) -> bool:
+    t = text.lower()
+    return any(_re.search(p, t) for p in _FINANCIAL)
+
+
 def gate(claim: dict, package_date: str) -> list[str]:
     """Reasons this script claim blocks recording (empty = it passes)."""
     cid = claim.get("id", "?")
@@ -207,6 +221,8 @@ def gate(claim: dict, package_date: str) -> list[str]:
     lv = level(claim)
     reasons = []
     need = REQUIRED_LEVEL[risk]
+    if risk == "high" and (claim.get("financial") or is_extraordinary_financial(claim.get("text", ""))):
+        need = "HIGH"                      # extraordinary financial claim: the primary document itself must be opened
     if not at_least(lv["level"], need):
         reasons.append(f"{cid} ({risk}-risk) is {lv['level']} ({lv['why']}); needs {need}: {claim.get('text', '')}")
     if risk == "high" and at_least(lv["level"], need) and lv["level"] != "HIGH" and not _current(claim.get("evidence") or [], package_date):

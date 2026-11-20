@@ -53,11 +53,14 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
   evidence list; its risk is classified from the claim's temporal meaning (a declared risk can only raise it) and its level
   (HIGH, MEDIUM-HIGH, MEDIUM, LOW, UNVERIFIED) is computed from the sources. Time-sensitive claims
   (launches, prices, availability, security, finance, breaking news) need MEDIUM-HIGH plus a current report; historical claims need
-  MEDIUM. Copies of one report count once; search excerpts never make HIGH. A failing story is put on HOLD (`creatoros hold`) and
+  MEDIUM; time-sensitive extraordinary financial claims (share prices and moves, IPO pricing/proceeds, valuations, billions)
+  need HIGH, i.e. the primary document opened directly. Copies of one report count once; search excerpts never make HIGH. A failing story is put on HOLD (`creatoros hold`) and
   the next-ranked one is tried. Older packages keep their original rule (every central claim HIGH with a primary source).
 - Never invent quotes, benchmarks, specs, prices, dates, URLs, engagement numbers, creator rankings or analytics. Unobserved = UNKNOWN.
 - If a source or platform cannot be opened, say so; never claim to have watched a video or opened a blocked page.
 - Viral potential scores are editorial judgements, not view predictions. Never promise growth.
 - Goal: 100,000 Instagram followers in 60 days from 2026-11-20, one reel a day (an ambitious target, not a guarantee). Packages
   use the RUNBOOK's v5 rules from 2026-11-21. Never fabricate engagement, follower counts or analytics; label evidence
-  DIRECTLY OBSERVED, SEARCH-INDEX, SECONDARY or NOT VERIFIED. A notification the service accepted is "requested", not delivered.
+  DIRECTLY OBSERVED, SEARCH-INDEX, SECONDARY or NOT VERIFIED. Delivery is reported in stages (`creatoros runlog stages`):
+  generated, saved, pushed, notification requested, accepted by the provider, received by the creator; accepted and received
+  need evidence. Scheduled runs keep the main session thin and hand research to one fresh subagent (RUNBOOK "Cost control").

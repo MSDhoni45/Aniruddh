@@ -290,6 +290,9 @@ def validate(p: dict) -> tuple[list[str], dict]:
         q = lint.quality(p["quality_scores"], p["script"], scheme)
     problems += [f"quality: {x}" for x in q["problems"]]
     problems += [f"fact-check: {x}" for x in fcmod.validate(p["factcheck"], p["script"])]
+    if is_tiered(p) and source_audit_for(p) is None:
+        problems.append("no source audit for this date: run `creatoros runlog start` (it audits sources before research) "
+                        "or `creatoros sources-audit --date DATE`")
     if is_tiered(p):
         ready = ver.readiness_v5(p["factcheck"]["claims"], p["script"], p.get("unresolved", []), p["date"])
     else:

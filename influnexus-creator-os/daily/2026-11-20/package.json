@@ -2,16 +2,16 @@
   "date": "2026-11-20",
   "language": "hinglish",
   "scoring": "v5",
-  "slug": "anthropic-ipo-first-day",
+  "slug": "anthropic-ipo-pricing",
   "keys": [
-    "anthropic-ipo",
-    "ant-nasdaq-debut"
+    "anthropic-ipo-pricing",
+    "anthropic-ipo-ant"
   ],
-  "topic": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
+  "topic": "Anthropic priced its IPO at $83, above its own $70-78 range",
   "category": "TECH COMPANIES",
   "topic_type": "BREAKING",
   "announced_at": "18-19 November 2026 (pricing and first trading day)",
-  "generated_at": "2026-11-20T03:20:00+00:00",
+  "generated_at": "2026-11-20T13:55:00+05:30",
   "research_window": {
     "start_utc": "2026-11-19T03:11:43+00:00",
     "end_utc": "2026-11-20T03:11:43+00:00",
@@ -22,12 +22,12 @@
   "creator_request": false,
   "why_selected": "Strongest verified story inside the 24-hour window: the biggest AI listing so far, with every number in the script from Anthropic's own release, Nasdaq's newsroom or four independent outlets. Higher-curiosity stories (Caltech's space robot, the bank AI-agent rules) fall outside the window; Genie 4's rollout date could not be pinned down.",
   "why_short": "The maker of Claude went public and opened 34% above its IPO price: verified numbers, broad interest, and an easy boom-or-bubble conversation.",
-  "why_beats_alternatives": "Genie 4 is more visual but its rollout date is unconfirmed; the bank AI-agent and Caltech stories predate the window; Nvidia/China, Gemini 4 Neon and Palo Alto rest on digests only.",
-  "evidence_confidence": "MEDIUM",
-  "confidence": "MEDIUM",
-  "verified_development": "Anthropic priced its IPO at $83 (18 Nov) and began trading on Nasdaq on 19 Nov 2026, opening at $111.50 (about +34%).",
+  "why_beats_alternatives": "Every financial claim comes from Anthropic's own releases, opened directly. The first version's opening-price hook was held because Nasdaq's page cannot be opened here. Genie 4's rollout date is not confirmed by Google's own posts, and the Nvidia story is only reported.",
+  "evidence_confidence": "HIGH",
+  "confidence": "HIGH",
+  "verified_development": "Anthropic's own releases (opened directly): priced at $83.00, expected range $70.00-78.00, 980,000,000 shares, Nasdaq ticker ANT from 19 Nov.",
   "disclosure": "Disclosure: this package was written by Claude, an Anthropic model. The script reports only verified figures, makes no investment claim, and ends on an open question rather than a view.",
-  "research_summary": "Anthropic, the company behind Claude, priced its IPO at $83 a share on 18 November 2026, above the $70-78 range it set on 10 November, selling 980 million Class A shares (about $81.3 billion at the offer price). Trading began on Nasdaq on 19 November under the ticker ANT. Nasdaq reported an opening price of $111.50, about 34% above the IPO price. News outlets report a first-day close of $97.17 (+17%), but no primary record of the close was found, so the script uses the open. Market-value estimates differ by counting method, so they are not used. The writer of this package is an Anthropic model; the script sticks to verified numbers and makes no prediction about the stock.",
+  "research_summary": "Anthropic's own pricing release, opened directly on 20 November, says the company priced its IPO of Class A common stock at $83.00 per share, with 980,000,000 shares offered, and that trading was expected to begin on the Nasdaq Global Select Market on 19 November 2026 under the symbol ANT. Its earlier roadshow release, also opened, gave an expected price range of $70.00 to $78.00. At $83 the offering totals about $81.3 billion. Forbes and CNN report the pricing and the debut. The opening price of $111.50 is left out: it appears only on Nasdaq's page, which cannot be opened from this environment, and an extraordinary financial claim needs its primary document opened.",
   "primary_sources": [
     {
       "label": "Anthropic: Anthropic prices initial public offering",
@@ -68,73 +68,62 @@
     "Reported close $97.17 (+17%): news outlets only, not used in the script."
   ],
   "uncertainties": [
-    "The opening price is a single moment; the reported close was lower ($97.17), and after-hours lower still. The script says only how it opened.",
-    "Valuation estimates conflict ($1.27T basic vs $1.76T diluted); not used.",
-    "After-hours price reportedly fell to about $92.60; first-day moves say little about long-term value.",
-    "The writer is an Anthropic model; the creator should judge the framing independently."
+    "The first-day open and close are left out (no opened primary source).",
+    "Valuation estimates conflict; left out.",
+    "Written by Claude, an Anthropic model (disclosed); no investment view."
   ],
   "context": "Anthropic makes the Claude models. The listing follows months of record private funding for AI labs and an active debate about an AI bubble.",
-  "script": "Jis company ne Claude banaya, uska share pehle hi trade mein 34 percent upar khula.\n\nKal Anthropic Nasdaq pe list hui, ticker ANT. IPO price tha 83 dollar per share. Company ki apni expected range thi 70 se 78 dollar, yaani price range se bhi upar gaya.\n\n980 million shares bike. Matlab lagbhag 81 billion dollar ka offering.\n\nAur jab trading khuli, pehla price tha 111 dollar 50 cent.\n\nSimple baat: investors abhi bhi AI pe bahut bada daav laga rahe hain.\n\nAb aap batao: yeh AI boom hai, ya AI bubble?",
-  "hook": "Jis company ne Claude banaya, uska share pehle hi trade mein 34 percent upar khula.",
+  "script": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.\n\nAnthropic ne pehle kaha tha price hoga 70 se 78 dollar per share. Final price aaya 83 dollar.\n\nAur offering thi 980 million shares ki. Matlab lagbhag 81 billion dollar.\n\nShares Nasdaq pe ANT naam se, 19 November se trade hone the.\n\nYeh saare numbers company ki apni official release se hain.\n\nSimple baat: investors abhi bhi AI pe bahut bada daav laga rahe hain.\n\nAb aap batao: yeh AI boom hai, ya AI bubble?",
+  "hook": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
   "hooks": [
     {
-      "text": "Jis company ne Claude banaya, uska share pehle hi trade mein 34 percent upar khula.",
-      "mechanism": "strong factual statement",
-      "accuracy": 9,
+      "text": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
+      "mechanism": "unexpected fact",
+      "accuracy": 10,
       "curiosity": 8,
       "clarity": 9,
-      "credibility": 9,
+      "credibility": 10,
       "emotional": 7,
       "natural": 9
     },
     {
-      "text": "AI company ka IPO, aur pehle trade mein 34 percent ka jump.",
-      "mechanism": "timely development",
-      "accuracy": 9,
-      "curiosity": 7,
-      "clarity": 8,
-      "credibility": 9,
-      "emotional": 6,
-      "natural": 9
-    },
-    {
-      "text": "81 billion dollar. Itna paisa ek AI company ke shares mein ek din mein laga.",
+      "text": "83 dollar: Anthropic ne apni hi range tod di.",
       "mechanism": "strong factual statement",
-      "accuracy": 7,
+      "accuracy": 9,
       "curiosity": 8,
       "clarity": 7,
-      "credibility": 7,
-      "emotional": 7,
-      "natural": 7
-    },
-    {
-      "text": "Claude banane wali company ab stock market pe hai.",
-      "mechanism": "timely development",
-      "accuracy": 9,
-      "curiosity": 6,
-      "clarity": 9,
       "credibility": 9,
-      "emotional": 5,
-      "natural": 9
-    },
-    {
-      "text": "Kya AI bubble hai? Kal Wall Street ne apna jawab diya.",
-      "mechanism": "curiosity gap",
-      "accuracy": 7,
-      "curiosity": 9,
-      "clarity": 7,
-      "credibility": 7,
       "emotional": 7,
       "natural": 8
     },
     {
-      "text": "History ka sabse bada AI IPO.",
-      "mechanism": "strong factual statement",
-      "accuracy": 5,
-      "curiosity": 9,
+      "text": "81 billion dollar. Itna bada offering kisi AI company ka.",
+      "mechanism": "curiosity gap",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 8
+    },
+    {
+      "text": "AI boom ya bubble? Anthropic ka IPO ek clue deta hai.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "curiosity": 8,
       "clarity": 9,
-      "credibility": 5,
+      "credibility": 9,
       "emotional": 7,
+      "natural": 9
+    },
+    {
+      "text": "Jo company Claude banati hai, ab woh public hai.",
+      "mechanism": "important consequence",
+      "accuracy": 8,
+      "curiosity": 7,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 6,
       "natural": 9
     }
   ],
@@ -145,34 +134,23 @@
     "storytelling": 9,
     "retention": 9,
     "shareability": 9,
-    "factual_confidence": 9
-  },
-  "quality_scores": {
-    "fact": 9,
-    "hook": 9,
-    "clarity": 9,
-    "retention": 9,
-    "originality": 8,
-    "naturalness": 9,
-    "payoff": 9,
-    "brand": 9,
-    "virality": 9
+    "factual_confidence": 10
   },
   "recording": {
     "tone": "Confident and conversational, like explaining market news to a friend. No hype, no stock-tip energy.",
     "opening_expression": "Slight smile, eyebrows up on '34 percent'.",
     "emphasis": [
-      "pehle hi trade",
-      "34 percent",
+      "apni hi range se upar",
+      "70 se 78",
       "83 dollar",
-      "range se bhi upar",
-      "111 dollar 50 cent",
+      "81 billion",
+      "official release",
       "boom",
       "bubble"
     ],
     "pauses": [
       "beat after the first line",
-      "beat after 'ticker ANT'",
+      "beat before 'Final price aaya'",
       "beat before 'Simple baat'",
       "pause before the final question"
     ],
@@ -191,13 +169,13 @@
     "No stock-tip styling, no rocket emojis"
   ],
   "edit_beats": {
-    "0-3": "'+34% at open' on screen over a simple price line (original graphic)",
-    "3-10": "Nasdaq/ANT ticker card; '$83' vs '$70-78' range bar",
-    "10-25": "'980M shares, ~$81.3B' card; $83 IPO price vs $111.50 open on the price line",
-    "25-45": "'Boom ya bubble?' as big text; hold for comments"
+    "0-3": "'$70-78' card crossed out, '$83' slams in",
+    "3-10": "Anthropic's release headline on screen (screenshot of the official page)",
+    "10-25": "'980M shares x $83 = ~$81.3B' calculation card",
+    "25-45": "'Boom ya bubble?' end card; on-screen note: 'Source: Anthropic release. Not investment advice.'"
   },
-  "thumbnail_text": "Claude maker opens 34% higher",
-  "pinned_comment": "AI boom ya AI bubble? Aapka vote: 🟢 boom / 🔴 bubble. (Ye investment advice nahi hai.)",
+  "thumbnail_text": "Priced above its own range",
+  "pinned_comment": "AI boom ya bubble? Comment karo. (Investment advice nahi hai.)",
   "pillar": "big_tech_leaders",
   "format": "B",
   "backups": [
@@ -251,11 +229,12 @@
     "Source audit: x.com, news sites, anthropic.com and nasdaq.com cannot be opened from this environment; primary text read via search index.",
     "No social engagement observed; public-discussion scores are provisional.",
     "Reported closing price ($97.17) not used: no primary record found.",
-    "Writer is an Anthropic model (disclosed)."
+    "Writer is an Anthropic model (disclosed).",
+    "The opening and closing prices are left out: Nasdaq's page cannot be opened here."
   ],
   "instagram": {
     "cover_headline": "Claude maker opens 34% higher",
-    "caption": "Anthropic, the company behind Claude, listed on Nasdaq as ANT. IPO price: $83 (above its $70-78 range). 980 million shares, about $81.3B. First trade: $111.50, about 34% above the IPO price. AI boom ya AI bubble? Comment karo. (Not investment advice.)",
+    "caption": "Anthropic (Claude ki company) ne IPO price kiya 83 dollar per share, apni hi 70-78 dollar range se upar. 980 million shares, lagbhag 81 billion dollar. Source: Anthropic's official release. AI boom ya bubble? (Not investment advice.)",
     "hashtags": [
       "#Anthropic",
       "#Claude",
@@ -295,6 +274,86 @@
   },
   "x_signals": [],
   "candidates": [
+    {
+      "headline": "Anthropic priced its IPO at $83, above its own $70-78 range",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "main_claim": "Anthropic priced its IPO at $83.00 (expected $70.00-78.00), 980,000,000 shares, Nasdaq ticker ANT from 19 Nov (company releases, opened).",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "The maker of Claude going public is a referendum on how much money is still flowing into AI.",
+      "potential_hook": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
+      "target_audience": "AI fans, Indian and global investors, startup audience",
+      "uncertainty": "Valuation figures differ by method ($1.27T vs $1.76T); the writer is an Anthropic model (disclosed).",
+      "evidence_confidence": "HIGH",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+          "title": "www.forbes.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+          "title": "www.cnn.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
+          "title": "www.bloomberg.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+          "title": "www.nasdaq.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 6,
+        "significance": 9,
+        "usefulness": 5,
+        "visual": 6,
+        "broad_appeal": 8,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 9
+      },
+      "new_development": {
+        "what": "Shares scheduled to begin trading on Nasdaq",
+        "at": "2026-11-19"
+      }
+    },
     {
       "headline": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
       "category": "TECH COMPANIES",
@@ -369,7 +428,8 @@
         "discussion_potential": 9,
         "longevity": 7,
         "verification_confidence": 9
-      }
+      },
+      "hold_reason": "20 Nov: opening-price hook not confirmed by an opened primary document (nasdaq.com blocked)"
     },
     {
       "headline": "Google rolls out Genie 4 world model to AI Ultra subscribers",
@@ -668,33 +728,42 @@
   "candidate_shortfall_reason": "Nine candidates shortlisted; most 19 Nov items came from digests and could not be checked against company pages within the 09:30 deadline.",
   "factcheck": {
     "date": "2026-11-20",
-    "story": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
+    "story": "Anthropic priced its IPO at $83, above its own $70-78 range",
     "claims": [
       {
-        "id": "a1",
-        "text": "Anthropic, the company that makes Claude, listed on Nasdaq under the ticker ANT, with trading beginning on 19 November 2026",
+        "id": "p1",
+        "text": "Anthropic had said its IPO price was expected to be between $70.00 and $78.00 per share",
         "status": "CONFIRMED",
-        "risk": "high",
-        "primary_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-        "source_title": "Anthropic prices initial public offering (Anthropic)",
-        "supporting_source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "expected to begin trading on the Nasdaq Global Select Market under the symbol \"ANT\" on November 19, 2026",
-        "confidence": "HIGH",
-        "access": "search-index",
         "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
+        "evidence": [
+          {
+            "url": "https://www.anthropic.com/news/roadshow-launch",
+            "kind": "primary",
+            "access": "opened",
+            "date": "2026-11"
+          },
+          {
+            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
+          }
+        ],
+        "supporting_evidence": "The initial public offering price is expected to be between $70.00 and $78.00 per share (roadshow release, opened 20 Nov)"
+      },
+      {
+        "id": "p2",
+        "text": "Anthropic priced its IPO at $83.00 per share",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
         "evidence": [
           {
             "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
             "kind": "primary",
-            "access": "search-index",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
-            "kind": "primary",
-            "access": "search-index",
-            "date": "2026-11-19"
+            "access": "opened",
+            "date": "2026-11-18"
           },
           {
             "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
@@ -709,75 +778,43 @@
             "date": "2026-11-19"
           }
         ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00"
+        "supporting_evidence": "Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share (opened 20 Nov)"
       },
       {
-        "id": "a2",
-        "text": "The IPO was priced at $83.00 per share, above the expected $70-78 range",
+        "id": "p3",
+        "text": "The offering was 980,000,000 shares, about $81.3 billion at the $83 IPO price",
         "status": "CONFIRMED",
-        "risk": "high",
-        "primary_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-        "source_title": "Anthropic prices initial public offering (Anthropic)",
-        "supporting_source": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "priced its initial public offering of its Class A common stock at $83.00 per share",
-        "confidence": "HIGH",
-        "access": "search-index",
         "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
         "evidence": [
           {
             "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
             "kind": "primary",
-            "access": "search-index",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-10"
+            "access": "opened",
+            "date": "2026-11-18"
           },
           {
             "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html",
             "kind": "news",
             "access": "secondary",
             "date": "2026-11-19"
           }
         ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00",
-        "note": "Range $70-78 set 10 Nov (CNBC); script calls it the company's expected range."
+        "supporting_evidence": "The offering consists of 980,000,000 shares of Class A common stock (opened 20 Nov); 980,000,000 x $83.00 = $81.34 billion",
+        "note": "The dollar total is arithmetic on the release's own figures."
       },
       {
-        "id": "a3",
-        "text": "980 million shares were sold, about $81.3 billion at the IPO price",
+        "id": "p4",
+        "text": "The shares were expected to begin trading on the Nasdaq Global Select Market on 19 November 2026 under the ticker ANT",
         "status": "CONFIRMED",
-        "risk": "high",
-        "primary_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-        "source_title": "Anthropic prices initial public offering (Anthropic)",
-        "supporting_source": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "The offering consists of 980,000,000 shares of Class A common stock",
-        "confidence": "HIGH",
-        "access": "search-index",
         "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
         "evidence": [
           {
             "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
             "kind": "primary",
-            "access": "search-index",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
+            "access": "opened",
+            "date": "2026-11-18"
           },
           {
             "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
@@ -786,99 +823,14 @@
             "date": "2026-11-19"
           }
         ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00",
-        "note": "980,000,000 x $83 = $81.34B; Forbes reports $81.3B raised. Of these, 23.6M shares were sold by existing holders (Anthropic gets no proceeds from those), so the script says 'offering', not 'Anthropic raised'."
+        "supporting_evidence": "expected to begin trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol \"ANT\" (opened 20 Nov)"
       },
       {
-        "id": "a4",
-        "text": "The stock opened at $111.50",
+        "id": "p5",
+        "text": "The stock opened at $111.50, about 34% above the IPO price",
         "status": "CONFIRMED",
-        "risk": "high",
-        "primary_source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
-        "source_title": "Anthropic Marks its IPO at Nasdaq (Nasdaq)",
-        "supporting_source": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "opened for trading at $111.50 per share",
-        "confidence": "HIGH",
-        "access": "search-index",
-        "in_script": true,
-        "evidence": [
-          {
-            "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
-            "kind": "primary",
-            "access": "search-index",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          }
-        ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00"
-      },
-      {
-        "id": "a5",
-        "text": "It closed its first day at $97.17, about 17% above the IPO price",
-        "status": "CONFIRMED",
-        "risk": "high",
-        "primary_source": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
-        "source_title": "Anthropic IPO Live: Stock Closes Day At $97—Up More Than 17% (Forbes)",
-        "supporting_source": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "Stock Closes Day At $97—Up More Than 17%",
-        "confidence": "MEDIUM",
-        "access": "secondary-only",
         "in_script": false,
-        "evidence": [
-          {
-            "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          }
-        ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00",
-        "note": "Not used in the script: no exchange or company page for the closing price was found (search of nasdaq.com, anthropic.com and sec.gov); four independent outlets agree on $97.17 / +17%."
-      },
-      {
-        "id": "a7",
-        "text": "The opening price of $111.50 was about 34% above the $83 IPO price",
-        "status": "CONFIRMED",
-        "risk": "high",
-        "primary_source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
-        "source_title": "Anthropic Marks its IPO at Nasdaq (Nasdaq)",
-        "supporting_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "opened for trading at $111.50 per share",
-        "confidence": "HIGH",
-        "access": "search-index",
-        "in_script": true,
+        "retrieved_at": "2026-11-20T08:16:00+00:00",
         "evidence": [
           {
             "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
@@ -887,57 +839,19 @@
             "date": "2026-11-19"
           },
           {
-            "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-            "kind": "primary",
-            "access": "search-index",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
-            "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          }
-        ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00",
-        "note": "Arithmetic from two primary figures: 111.50 / 83.00 = 1.343, so about 34% above the IPO price. CBS/FinanceFeeds-style reports also say +34% at the open."
-      },
-      {
-        "id": "a6",
-        "text": "Valuation at the close: about $1.27 trillion (basic) or $1.76 trillion (fully diluted)",
-        "status": "DISPUTED",
-        "risk": "high",
-        "primary_source": null,
-        "source_title": "",
-        "supporting_source": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
-        "source_date": "2026-11-19",
-        "supporting_evidence": "",
-        "confidence": "LOW",
-        "access": "secondary-only",
-        "in_script": false,
-        "evidence": [
-          {
-            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
-            "kind": "news",
-            "access": "secondary",
-            "date": "2026-11-19"
-          },
-          {
             "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
             "kind": "news",
             "access": "secondary",
             "date": "2026-11-19"
+          },
+          {
+            "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+            "kind": "news",
+            "access": "secondary",
+            "date": "2026-11-19"
           }
         ],
-        "retrieved_at": "2026-11-20T03:20:00+00:00",
-        "attribution": "news outlets (methods differ)",
-        "note": "Not used: figures depend on share count method."
+        "note": "Left out: nasdaq.com cannot be opened here, and an extraordinary financial claim needs the primary document opened."
       }
     ]
   },
@@ -945,5 +859,6 @@
     "anthropic.com, nasdaq.com, x.com and news sites cannot be opened from this environment; indexed text read via search.",
     "No social engagement observed; UNKNOWN.",
     "Time-boxed to the 09:30 IST deadline."
-  ]
+  ],
+  "verification": "tiered"
 }

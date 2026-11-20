@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "generated_at": "2026-11-20T03:20:00+00:00",
+  "generated_at": "2026-11-20T13:55:00+05:30",
   "research_window": {
     "start_utc": "2026-11-19T03:11:43+00:00",
     "end_utc": "2026-11-20T03:11:43+00:00",
@@ -10,8 +10,8 @@
   },
   "candidates": [
     {
-      "headline": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
-      "published_at": "2026-11-19T09:30:00-05:00",
+      "headline": "Anthropic priced its IPO at $83, above its own $70-78 range",
+      "published_at": "2026-11-18",
       "original_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
       "trend_score": 66.5,
       "eligible": true,
@@ -78,7 +78,10 @@
       ],
       "verification_status": "VERIFIED",
       "evidence_confidence": "HIGH",
-      "new_development": null
+      "new_development": {
+        "what": "Shares scheduled to begin trading on Nasdaq",
+        "at": "2026-11-19"
+      }
     },
     {
       "headline": "Google rolls out Genie 4 world model to AI Ultra subscribers",
@@ -272,6 +275,77 @@
       "new_development": null
     },
     {
+      "headline": "Anthropic's Nasdaq debut: priced at $83 and opened 34% higher",
+      "published_at": "2026-11-19T09:30:00-05:00",
+      "original_source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "trend_score": 66.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: 20 Nov: opening-price hook not confirmed by an opened primary document (nasdaq.com blocked)",
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 6,
+        "significance": 9,
+        "usefulness": 5,
+        "visual": 6,
+        "broad_appeal": 8,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/",
+          "title": "www.forbes.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo",
+          "title": "www.cnn.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.bloomberg.com/news/live-blog/2026-11-19/anthropic-trading-debut-live-updates",
+          "title": "www.bloomberg.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+          "title": "www.nasdaq.com",
+          "retrieved_at": "2026-11-20T03:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
+      "new_development": null
+    },
+    {
       "headline": "Musk and Nadella on Jensen Huang at DealBook",
       "published_at": "2026-11-18T00:00:00-05:00",
       "original_source": "https://www.cnbc.com/2026/11/19/elon-musk-jensen-huang-midterms.html",
@@ -334,8 +408,20 @@
   ],
   "hooks": [
     {
-      "text": "Jis company ne Claude banaya, uska share pehle hi trade mein 34 percent upar khula.",
-      "mechanism": "strong factual statement",
+      "text": "Claude banane wali company ne apne IPO ka price apni hi range se upar set kiya.",
+      "mechanism": "unexpected fact",
+      "accuracy": 10,
+      "curiosity": 8,
+      "clarity": 9,
+      "credibility": 10,
+      "emotional": 7,
+      "natural": 9,
+      "total": 53,
+      "eligible": true
+    },
+    {
+      "text": "AI boom ya bubble? Anthropic ka IPO ek clue deta hai.",
+      "mechanism": "timely development",
       "accuracy": 9,
       "curiosity": 8,
       "clarity": 9,
@@ -346,64 +432,40 @@
       "eligible": true
     },
     {
-      "text": "AI company ka IPO, aur pehle trade mein 34 percent ka jump.",
-      "mechanism": "timely development",
+      "text": "81 billion dollar. Itna bada offering kisi AI company ka.",
+      "mechanism": "curiosity gap",
       "accuracy": 9,
-      "curiosity": 7,
+      "curiosity": 8,
       "clarity": 8,
       "credibility": 9,
-      "emotional": 6,
-      "natural": 9,
+      "emotional": 8,
+      "natural": 8,
+      "total": 50,
+      "eligible": true
+    },
+    {
+      "text": "83 dollar: Anthropic ne apni hi range tod di.",
+      "mechanism": "strong factual statement",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 7,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 8,
       "total": 48,
       "eligible": true
     },
     {
-      "text": "Claude banane wali company ab stock market pe hai.",
-      "mechanism": "timely development",
-      "accuracy": 9,
-      "curiosity": 6,
+      "text": "Jo company Claude banati hai, ab woh public hai.",
+      "mechanism": "important consequence",
+      "accuracy": 8,
+      "curiosity": 7,
       "clarity": 9,
-      "credibility": 9,
-      "emotional": 5,
+      "credibility": 8,
+      "emotional": 6,
       "natural": 9,
       "total": 47,
       "eligible": true
-    },
-    {
-      "text": "Kya AI bubble hai? Kal Wall Street ne apna jawab diya.",
-      "mechanism": "curiosity gap",
-      "accuracy": 7,
-      "curiosity": 9,
-      "clarity": 7,
-      "credibility": 7,
-      "emotional": 7,
-      "natural": 8,
-      "total": 45,
-      "eligible": true
-    },
-    {
-      "text": "81 billion dollar. Itna paisa ek AI company ke shares mein ek din mein laga.",
-      "mechanism": "strong factual statement",
-      "accuracy": 7,
-      "curiosity": 8,
-      "clarity": 7,
-      "credibility": 7,
-      "emotional": 7,
-      "natural": 7,
-      "total": 43,
-      "eligible": true
-    },
-    {
-      "text": "History ka sabse bada AI IPO.",
-      "mechanism": "strong factual statement",
-      "accuracy": 5,
-      "curiosity": 9,
-      "clarity": 9,
-      "credibility": 5,
-      "emotional": 7,
-      "natural": 9,
-      "total": 44,
-      "eligible": false
     }
   ],
   "backups": [
@@ -414,7 +476,231 @@
     "Source audit: x.com, news sites, anthropic.com and nasdaq.com cannot be opened from this environment; primary text read via search index.",
     "No social engagement observed; public-discussion scores are provisional.",
     "Reported closing price ($97.17) not used: no primary record found.",
-    "Writer is an Anthropic model (disclosed)."
+    "Writer is an Anthropic model (disclosed).",
+    "The opening and closing prices are left out: Nasdaq's page cannot be opened here."
   ],
-  "source_audit": null
+  "source_audit": {
+    "checked_at_utc": "2026-11-20T08:19:40+00:00",
+    "groups": {
+      "x": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "needs_credentials": []
+      },
+      "reddit": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "needs_credentials": []
+      },
+      "youtube": {
+        "status": "BLOCKED",
+        "reachable": [
+          "www.googleapis.com"
+        ],
+        "blocked": [
+          "www.youtube.com"
+        ],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "needs_credentials": []
+      },
+      "linkedin": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.linkedin.com"
+        ],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "trends.google.com"
+        ],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "PARTIAL",
+        "reachable": [
+          "www.anthropic.com",
+          "github.com"
+        ],
+        "blocked": [
+          "openai.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co"
+        ],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  }
 }
