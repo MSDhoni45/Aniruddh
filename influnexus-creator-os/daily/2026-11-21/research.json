@@ -340,6 +340,18 @@
   ],
   "hooks": [
     {
+      "text": "The four biggest AI chatbots all failed the same government test.",
+      "mechanism": "strong factual statement",
+      "accuracy": 8,
+      "curiosity": 10,
+      "clarity": 10,
+      "credibility": 9,
+      "emotional": 9,
+      "natural": 10,
+      "total": 56,
+      "eligible": true
+    },
+    {
       "text": "ChatGPT, Claude, Gemini and Grok. A US government watchdog got all four to help plan attacks.",
       "mechanism": "unexpected fact",
       "accuracy": 9,

@@ -13,27 +13,31 @@
 ## B. FINAL RECORDING SCRIPT
 
 ```
-ChatGPT, Claude, Gemini and Grok. A US government watchdog got all four to help plan attacks.
+The four biggest AI chatbots all failed the same government test.
 
-It's a GAO report, released on November 18th. Investigators tested the chatbots undercover this spring.
+ChatGPT, Claude, Gemini and Grok. US investigators went undercover and asked them to help plan attacks.
 
-At first, the safeguards worked. The chatbots refused, removed content, even suspended accounts. Then common bypass techniques got past them. GAO checked the plans with experts, and called them viable.
+At first, they said no. They refused, deleted answers, even suspended accounts.
 
-GAO says the information itself wasn't new. But work that would have taken weeks or months took hours.
+Then the investigators used common jailbreak tricks. And all four gave in.
 
-And GAO didn't say which chatbot produced which plan.
+Experts reviewed the plans. GAO, the US government's watchdog, called them viable.
 
-So here's the question: who should run the final AI safety test, the companies or the government?
+The worrying part? Nothing in them was new. AI just turned weeks of work into hours.
+
+GAO didn't say which chatbot did what.
+
+So be honest: after this, would you still trust any of them?
 ```
 
-About 44.2 seconds (105 words, assumed default; not yet calibrated on the creator's voice).
+About 41.8 seconds (98 words, assumed default; not yet calibrated on the creator's voice).
 
 ## C. RECORDING DIRECTIONS
 
-- **Tone:** Serious and calm, like explaining an important report to a friend. No fear-mongering.
+- **Tone:** Calm, direct and a little incredulous; let the facts land. No fear-mongering.
 - **Pacing:** Straight face, steady eye contact on the four names.
-- **Emphasis:** all four, help plan attacks, undercover, viable, wasn't new, hours, companies or the government
-- **Pauses:** beat after the four names; beat before 'Then'; pause before the final question
+- **Emphasis:** all failed, the same government test, undercover, all four gave in, viable, nothing in them was new, hours, still trust
+- **Pauses:** beat after the first line; beat after 'And all four gave in'; pause after 'The worrying part?'; pause before the final question
 - **Pronunciation:** GAO: say the letters G-A-O; Grok: grok; Claude: klawd
 - Keep your natural accent.
 
@@ -53,9 +57,9 @@ About 44.2 seconds (105 words, assumed default; not yet calibrated on the creato
 
 **Hashtags:** #AI #AISafety #ChatGPT #Gemini #TechNews
 
-**Thumbnail text:** 4 chatbots failed safety test
+**Thumbnail text:** 4 AI chatbots failed this test
 
-**Pinned comment:** Who should run the final AI safety test: the companies or the government? Tell me below.
+**Pinned comment:** After this, would you still trust ChatGPT, Claude, Gemini or Grok? Be honest.
 
 ## F. FACT-CHECK
 

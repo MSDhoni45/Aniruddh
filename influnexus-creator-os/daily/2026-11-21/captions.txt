@@ -1,30 +1,29 @@
+The four biggest AI
+chatbots all failed
+the same government test.
 ChatGPT, Claude,
 Gemini and Grok.
-A US government watchdog
-got all four
+US investigators went undercover
+and asked them
 to help plan attacks.
-It's a GAO report,
-released on November 18th.
-Investigators tested the chatbots
-undercover this spring.
 At first,
-the safeguards worked.
-The chatbots refused,
-removed content,
+they said no.
+They refused,
+deleted answers,
 even suspended accounts.
-Then common bypass techniques
-got past them.
-GAO checked
-the plans with experts,
-and called them viable.
-GAO says the information
-itself wasn't new.
-But work that would
-have taken weeks
-or months took hours.
-And GAO didn't say which
-chatbot produced which plan.
-So here's the question:
-who should run
-the final AI safety test,
-the companies or the government?
+Then the investigators used
+common jailbreak tricks.
+And all four gave in.
+Experts reviewed the plans.
+GAO,
+the US government's watchdog,
+called them viable.
+The worrying part?
+Nothing in them was new.
+AI just turned weeks
+of work into hours.
+GAO didn't say which
+chatbot did what.
+So be honest: after this,
+would you still trust
+any of them?
