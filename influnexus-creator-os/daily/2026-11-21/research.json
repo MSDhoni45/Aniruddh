@@ -1,0 +1,650 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T09:00:00+05:30",
+  "research_window": {
+    "start_utc": "2026-11-18T03:11:47+00:00",
+    "end_utc": "2026-11-21T03:11:47+00:00",
+    "start_ist": "2026-11-18T08:41:47+05:30",
+    "end_ist": "2026-11-21T08:41:47+05:30",
+    "hours": 72
+  },
+  "candidates": [
+    {
+      "headline": "GAO: ChatGPT, Claude, Gemini and Grok all produced viable attack plans in covert tests",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.gao.gov/products/gao-27-108814",
+      "trend_score": 74.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 9,
+        "usefulness": 7,
+        "visual": 6,
+        "broad_appeal": 9,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://www.gao.gov/products/gao-27-108814",
+          "title": "GAO-27-108814",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.washingtonpost.com/technology/2026/11/18/chatbots-helped-plan-terrorist-attacks-tests-by-congressional-watchdog/",
+          "title": "Washington Post",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/19/chatgpt-claude-gemini-and-grok-produced-viable-terror-attack-plans-government-finds/",
+          "title": "Forbes",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.nextgov.com/artificial-intelligence/2026/11/major-ai-platforms-generated-viable-plans-terrorist-attacks-gao-finds/417305/",
+          "title": "Nextgov",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://fortune.com/2026/11/18/gao-ai-chatbots-attack-plans-hassan-patching-nsa-outages/",
+          "title": "Fortune",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "GAO publicly released report GAO-27-108814",
+        "at": "2026-11-18"
+      }
+    },
+    {
+      "headline": "Google opens Genie 4 world model to developers in the Gemini API",
+      "published_at": "2026-11-19",
+      "original_source": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "trend_score": 66.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 8,
+        "significance": 7,
+        "usefulness": 6,
+        "visual": 10,
+        "broad_appeal": 8,
+        "discussion_potential": 6,
+        "longevity": 7,
+        "verification_confidence": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.testingcatalog.com/google-opens-genie-4-world-model-to-developers-in-gemini-api/",
+          "title": "TestingCatalog",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.unite.ai/google-opens-genie-4-world-generation-to-gemini-api-developers/",
+          "title": "Unite.AI",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "Genie 4 opened to Gemini API developers",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "European Commission confirms an AI-assisted cyberattack disrupted internal systems",
+      "published_at": "2026-11-19",
+      "original_source": "https://audiovisual.ec.europa.eu/en/media/video/I-298222",
+      "trend_score": 63.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 8,
+        "significance": 8,
+        "usefulness": 6,
+        "visual": 5,
+        "broad_appeal": 7,
+        "discussion_potential": 8,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
+          "title": "Help Net Security",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+          "title": "The Record",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+          "title": "SecurityWeek",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "Commission spokesperson confirmed AI use at the midday briefing",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "Google launches Gemini 4 Neon, its fourth Gemini model in a month",
+      "published_at": "2026-11-18",
+      "original_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "trend_score": 51.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 5,
+        "significance": 6,
+        "usefulness": 6,
+        "visual": 4,
+        "broad_appeal": 6,
+        "discussion_potential": 5,
+        "longevity": 4,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/",
+          "title": "9to5Google",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "Gemini 4 Neon launched",
+        "at": "2026-11-18"
+      }
+    },
+    {
+      "headline": "Google keeps Gemini chats about two months even with history off",
+      "published_at": "2026-11-16",
+      "original_source": "https://www.androidheadlines.com/2026/11/google-gemini-keeps-chat-logs-two-months-history-off.html",
+      "trend_score": 68.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: Outside the research window (16 Nov) with no new development inside it",
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 8,
+        "significance": 7,
+        "usefulness": 9,
+        "visual": 5,
+        "broad_appeal": 9,
+        "discussion_potential": 8,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://gizmodo.com/google-to-keep-ai-chat-logs-for-two-months-even-with-gemini-history-turned-off-2000841271",
+          "title": "Gizmodo",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "REJECTED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null
+    },
+    {
+      "headline": "Caltech's ASTRA robot assembles a structure in orbit without astronauts",
+      "published_at": "2026-11-09",
+      "original_source": "https://interestingengineering.com/ai-robotics/caltech-darpa-astra-robot",
+      "trend_score": 60.5,
+      "eligible": false,
+      "ineligible_reason": "rejected: Outside the research window (9 Nov)",
+      "scores": {
+        "public_discussion": 3,
+        "surprise": 9,
+        "significance": 6,
+        "usefulness": 4,
+        "visual": 9,
+        "broad_appeal": 8,
+        "discussion_potential": 5,
+        "longevity": 7,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.space.com/technology/a-robot-just-built-a-structure-autonomously-in-space-for-the-1st-time-ever",
+          "title": "Space.com",
+          "retrieved_at": "2026-11-21T03:20:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "REJECTED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null
+    }
+  ],
+  "hooks": [
+    {
+      "text": "ChatGPT, Claude, Gemini aur Grok. America ke government watchdog GAO ne chaaron se attack plans nikalwa liye.",
+      "mechanism": "unexpected fact",
+      "accuracy": 9,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 9,
+      "total": 53,
+      "eligible": true
+    },
+    {
+      "text": "Aapka favourite chatbot 'no' bolta hai. Par government test mein woh 'no' kitni der tika?",
+      "mechanism": "relatable problem",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 7,
+      "credibility": 8,
+      "emotional": 8,
+      "natural": 8,
+      "total": 48,
+      "eligible": true
+    },
+    {
+      "text": "Chaaron bade AI chatbots ka safety filter ek government test mein fail ho gaya.",
+      "mechanism": "strong factual statement",
+      "accuracy": 8,
+      "curiosity": 8,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 7,
+      "natural": 8,
+      "total": 48,
+      "eligible": true
+    },
+    {
+      "text": "Jo kaam weeks leta tha, AI ne ghanton mein kar diya. Aur ye achhi khabar nahi hai.",
+      "mechanism": "curiosity gap",
+      "accuracy": 8,
+      "curiosity": 8,
+      "clarity": 7,
+      "credibility": 7,
+      "emotional": 8,
+      "natural": 9,
+      "total": 47,
+      "eligible": true
+    },
+    {
+      "text": "US government ke investigators undercover gaye, chatbots ko test karne.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "curiosity": 7,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 6,
+      "natural": 8,
+      "total": 47,
+      "eligible": true
+    },
+    {
+      "text": "AI safety ka report card aaya hai, aur result achha nahi hai.",
+      "mechanism": "timely development",
+      "accuracy": 7,
+      "curiosity": 7,
+      "clarity": 7,
+      "credibility": 7,
+      "emotional": 6,
+      "natural": 9,
+      "total": 43,
+      "eligible": true
+    }
+  ],
+  "backups": [
+    "European Commission confirms an AI-assisted cyberattack disrupted internal systems",
+    "Google opens Genie 4 world model to developers in the Gemini API"
+  ],
+  "limitations": [
+    "Source audit: x, reddit, youtube, instagram, linkedin, google_trends and news sites blocked; only anthropic.com and github.com openable.",
+    "gao.gov, techmeme.com and theneuron.ai could not be opened; GAO text read via search index.",
+    "No social engagement observed; public discussion UNKNOWN.",
+    "Search index held few items dated 20-21 Nov; window widened to 72 h.",
+    "Writer is an Anthropic model, and Claude was one of the tested platforms (disclosed)."
+  ],
+  "source_audit": {
+    "checked_at_utc": "2026-11-21T03:11:48+00:00",
+    "groups": {
+      "x": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "needs_credentials": []
+      },
+      "reddit": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "needs_credentials": []
+      },
+      "youtube": {
+        "status": "BLOCKED",
+        "reachable": [
+          "www.googleapis.com"
+        ],
+        "blocked": [
+          "www.youtube.com"
+        ],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "needs_credentials": []
+      },
+      "linkedin": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.linkedin.com"
+        ],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "trends.google.com"
+        ],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "PARTIAL",
+        "reachable": [
+          "www.anthropic.com",
+          "github.com"
+        ],
+        "blocked": [
+          "openai.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co"
+        ],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-21",
+  "runs": {
+    "2026-11-21-scheduled-084147": {
+      "run_id": "2026-11-21-scheduled-084147",
+      "trigger": "scheduled",
+      "start_ist": "2026-11-21T08:41:47+05:30",
+      "end_ist": "2026-11-21T08:47:46+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3PP3XJnXqwcV8hAYH8",
+        "CLAUDE_CODE_CONTAINER_ID": "container_01TwuzHFrXeRSSJiMMp6zv78",
+        "cloud": true
+      },
+      "git_commit": "ace35d0",
+      "research_window": {
+        "start_utc": "2026-11-18T03:11:47+00:00",
+        "end_utc": "2026-11-21T03:11:47+00:00",
+        "start_ist": "2026-11-18T08:41:47+05:30",
+        "end_ist": "2026-11-21T08:41:47+05:30",
+        "hours": 72
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "requested",
+        "channel": "push",
+        "receipt": "none available",
+        "at_ist": "2026-11-21T08:47:46+05:30"
+      },
+      "errors": [],
+      "warnings": [
+        "window widened to 72h (few verifiable stories dated 20-21 Nov); source audit: social and news BLOCKED, primary PARTIAL; no page opened directly"
+      ],
+      "note": "",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "GAO: ChatGPT, Claude, Gemini and Grok all produced viable attack plans in covert tests",
+      "candidates": 6,
+      "source_access": "Evidence levels: 6 MEDIUM-HIGH. Claims with a source opened directly: 0 of 6; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 104,
+      "estimated_seconds": 43.4,
+      "quality_gate": "PASS",
+      "quality_total": 90.0,
+      "validation_problems": []
+    }
+  }
+}

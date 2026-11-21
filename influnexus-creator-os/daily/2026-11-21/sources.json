@@ -1,0 +1,40 @@
+{
+  "primary": [
+    {
+      "label": "GAO-27-108814 product page",
+      "url": "https://www.gao.gov/products/gao-27-108814"
+    },
+    {
+      "label": "GAO-27-108814 full report",
+      "url": "https://files.gao.gov/reports/GAO-27-108814/index.html"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "Washington Post (18 Nov)",
+      "url": "https://www.washingtonpost.com/technology/2026/11/18/chatbots-helped-plan-terrorist-attacks-tests-by-congressional-watchdog/"
+    },
+    {
+      "label": "Fortune (18 Nov)",
+      "url": "https://fortune.com/2026/11/18/gao-ai-chatbots-attack-plans-hassan-patching-nsa-outages/"
+    },
+    {
+      "label": "Forbes (19 Nov)",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/19/chatgpt-claude-gemini-and-grok-produced-viable-terror-attack-plans-government-finds/"
+    },
+    {
+      "label": "Nextgov/FCW",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/11/major-ai-platforms-generated-viable-plans-terrorist-attacks-gao-finds/417305/"
+    },
+    {
+      "label": "Tech Times (19 Nov)",
+      "url": "https://www.techtimes.com/articles/331074/20261119/gao-bypassed-ai-chatbot-safeguards-chatgpt-claude-gemini-grok-attack-plans-under-12-hours.htm"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "gao.gov, news sites and x.com cannot be opened from this environment; indexed text read via search.",
+    "No social engagement observed; UNKNOWN.",
+    "Time-boxed to the 09:22 IST hard stop."
+  ]
+}
