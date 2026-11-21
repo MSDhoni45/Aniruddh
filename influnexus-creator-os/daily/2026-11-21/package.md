@@ -56,7 +56,7 @@ GAO is the US Congress's investigative watchdog. The audit was requested by Sen.
 ```
 ChatGPT, Claude, Gemini aur Grok. America ke government watchdog GAO ne chaaron se attack plans nikalwa liye.
 
-18 November ki report: spring 2026 mein undercover testing hui.
+18 November ko aayi report: spring 2026 mein undercover testing hui.
 
 Pehle safeguards chale. Chatbots ne mana kiya, content hataya, accounts suspend hue. Phir common bypass techniques se safeguards cross ho gaye, aur experts se check karke GAO ne plans ko viable maana.
 
@@ -67,7 +67,7 @@ GAO ne ye nahi bataya ki kaunsa plan kis chatbot ne diya.
 Sawaal ye hai: AI safety ka final test kaun kare, company ya government?
 ```
 
-104 words · about 43.4 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90.0/100
+105 words · about 43.8 s at 150 words per minute (assumed default; not yet calibrated on the creator's voice) · script quality 90.0/100
 
 ## Claim verification table
 
@@ -92,7 +92,7 @@ Delivery only. Keep your natural accent; no editing instructions.
 - **Emphasise:** chaaron, attack plans, undercover, viable, nayi nahi thi, ghanton mein, company ya government
 - **Pauses:** beat after the four names; beat before 'Phir'; pause before the final question
 - **Pronunciation:** GAO: say the letters G-A-O; Grok: grok; Claude: klawd
-- **Estimated duration:** 43.4 s
+- **Estimated duration:** 43.8 s
 
 ## E. Platform content
 

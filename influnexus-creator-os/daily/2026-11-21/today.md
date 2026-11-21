@@ -15,7 +15,7 @@
 ```
 ChatGPT, Claude, Gemini aur Grok. America ke government watchdog GAO ne chaaron se attack plans nikalwa liye.
 
-18 November ki report: spring 2026 mein undercover testing hui.
+18 November ko aayi report: spring 2026 mein undercover testing hui.
 
 Pehle safeguards chale. Chatbots ne mana kiya, content hataya, accounts suspend hue. Phir common bypass techniques se safeguards cross ho gaye, aur experts se check karke GAO ne plans ko viable maana.
 
@@ -26,7 +26,7 @@ GAO ne ye nahi bataya ki kaunsa plan kis chatbot ne diya.
 Sawaal ye hai: AI safety ka final test kaun kare, company ya government?
 ```
 
-About 43.4 seconds (104 words, assumed default; not yet calibrated on the creator's voice).
+About 43.8 seconds (105 words, assumed default; not yet calibrated on the creator's voice).
 
 ## C. RECORDING DIRECTIONS
 
