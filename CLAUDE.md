@@ -41,9 +41,9 @@ from 2026-11-20. Always pass the `run_id` from `creatoros runlog start` to `crea
 After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `logs/runs.jsonl` and push to the production branch.
 
 ## Non-negotiables
-- From 2026-11-21 (v5): natural Hinglish in Roman script for India and international English-speaking tech fans; English
-  technical terms used naturally; no forced Hindi translations, no formal or robotic narration. The creator keeps their accent.
-  Older packages stay in English.
+- LANGUAGE (creator's instruction, repeated 21 Nov 2026): every script and all platform copy are in 100% natural conversational
+  English for a global audience (`config/settings.yaml` `language: english`). Hinglish only when the creator asks for it for a
+  specific script. The creator keeps their natural Indian accent. The v5 rules below otherwise apply unchanged.
 - v5: 35-45 seconds (45 is the hard limit), about 85-105 words, a hook in the first 3 seconds. At least 5 hooks are scored
   internally; the best accurate one wins and only it is delivered. (v3/v4: 40-45 s, 90-105 words; before 20 Nov: 30-40 s, 75-90.)
 - Research window: the 24 hours before the run starts (`creatoros runlog start` prints it); v5 may widen to 48-72 hours only

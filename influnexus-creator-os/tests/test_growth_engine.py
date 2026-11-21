@@ -320,7 +320,7 @@ def test_below_target_after_three_revisions_is_reported_not_hidden():
 def _as_v5(p):
     """The real 19 Nov research package (v3 candidates) in the V5 format: Hinglish, 85-105 words, six-part quality score."""
     p = copy.deepcopy(p)
-    p.update(scoring="v5", language="hinglish")
+    p.update(scoring="v5", language="hinglish", language_requested_by_creator=True)   # Hinglish only on request
     p.pop("quality_scores", None)
     p["hooks"] = [{"text": h["text"], "mechanism": h["mechanism"], "accuracy": h["accuracy"], "curiosity": h["curiosity"],
                    "clarity": h["clarity"], "credibility": h["accuracy"], "emotional": h["surprise"], "natural": h["natural"]}
@@ -348,7 +348,7 @@ def test_v5_package_validates_with_hinglish_and_the_six_part_score():
 
 
 @pytest.mark.parametrize("mod,expect", [
-    (lambda p: p.update(language="english"), "v5 packages use the configured language"),
+    (lambda p: (p.pop("language_requested_by_creator"), p.update(date="2026-11-22")), "v5 packages use the configured language"),
     (lambda p: p.update(script=p["script"] + " यह"), "Devanagari"),
     (lambda p: p["quality_v5"].update(hook=5), "below 90"),
     (lambda p: p["quality_v5"].update(factual_confidence=7), "factual confidence below 8"),

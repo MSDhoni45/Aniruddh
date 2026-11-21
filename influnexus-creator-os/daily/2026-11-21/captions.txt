@@ -1,28 +1,30 @@
 ChatGPT, Claude,
-Gemini aur Grok.
-America ke government watchdog
-GAO ne chaaron se
-attack plans nikalwa liye.
-18 November ko aayi
-report: spring 2026 mein
-undercover testing hui.
-Pehle safeguards chale.
-Chatbots ne mana kiya,
-content hataya,
-accounts suspend hue.
-Phir common bypass techniques se
-safeguards cross ho gaye,
-aur experts se check
-karke GAO ne plans
-ko viable maana.
-GAO ke hisaab se
-information nayi nahi thi.
-Par jo kaam weeks
-ya months leta,
-woh ghanton mein ho gaya.
-GAO ne ye nahi
-bataya ki kaunsa plan
-kis chatbot ne diya.
-Sawaal ye hai: AI safety
-ka final test kaun kare,
-company ya government?
+Gemini and Grok.
+A US government watchdog
+got all four
+to help plan attacks.
+It's a GAO report,
+released on November 18th.
+Investigators tested the chatbots
+undercover this spring.
+At first,
+the safeguards worked.
+The chatbots refused,
+removed content,
+even suspended accounts.
+Then common bypass techniques
+got past them.
+GAO checked
+the plans with experts,
+and called them viable.
+GAO says the information
+itself wasn't new.
+But work that would
+have taken weeks
+or months took hours.
+And GAO didn't say which
+chatbot produced which plan.
+So here's the question:
+who should run
+the final AI safety test,
+the companies or the government?

@@ -85,9 +85,10 @@ script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [
 not from verification.
 
 ## v5: Master Prompt V5 (required from 2026-11-21; v3, v4 or v5 accepted on 2026-11-20)
-Where this section differs from the v4 and v3 text below, this section wins. `"scoring": "v5"`, `"language": "hinglish"`.
-- **Language:** natural Hinglish in Roman script (teleprompter-ready), for Indian and international English-speaking tech fans.
-  English technical terms as people say them; no forced Hindi translations, no formal or robotic narration, no generic AI phrases.
+Where this section differs from the v4 and v3 text below, this section wins. `"scoring": "v5"`, `"language": "english"`
+(creator's instruction, 21 Nov 2026: natural conversational English for a global audience; Hinglish only on request).
+- **Language:** natural conversational English for a global audience: short sentences, simple international words, technical
+  terms explained once; no corporate jargon, forced slang or robotic narration. Hinglish only when the creator asks for it.
 - **Research:** last 24 hours; widen to 48-72 hours only when no strong verified story exists (`research_window.hours` 48 or 72
   plus `window_expansion_reason`). Search internationally, with attention to stories Indian audiences care about. Separate the
   announcement date from the date of any older event being discussed. Never call an unverified story confirmed.

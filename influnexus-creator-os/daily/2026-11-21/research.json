@@ -340,7 +340,7 @@
   ],
   "hooks": [
     {
-      "text": "ChatGPT, Claude, Gemini aur Grok. America ke government watchdog GAO ne chaaron se attack plans nikalwa liye.",
+      "text": "ChatGPT, Claude, Gemini and Grok. A US government watchdog got all four to help plan attacks.",
       "mechanism": "unexpected fact",
       "accuracy": 9,
       "curiosity": 9,
@@ -352,7 +352,7 @@
       "eligible": true
     },
     {
-      "text": "Aapka favourite chatbot 'no' bolta hai. Par government test mein woh 'no' kitni der tika?",
+      "text": "Your favourite chatbot says 'no'. In a government test, how long did that 'no' last?",
       "mechanism": "relatable problem",
       "accuracy": 8,
       "curiosity": 9,
@@ -364,7 +364,7 @@
       "eligible": true
     },
     {
-      "text": "Chaaron bade AI chatbots ka safety filter ek government test mein fail ho gaya.",
+      "text": "All four big AI chatbots failed a government safety test.",
       "mechanism": "strong factual statement",
       "accuracy": 8,
       "curiosity": 8,
@@ -376,7 +376,7 @@
       "eligible": true
     },
     {
-      "text": "Jo kaam weeks leta tha, AI ne ghanton mein kar diya. Aur ye achhi khabar nahi hai.",
+      "text": "Work that used to take weeks, AI did in hours. And that's not good news.",
       "mechanism": "curiosity gap",
       "accuracy": 8,
       "curiosity": 8,
@@ -388,7 +388,7 @@
       "eligible": true
     },
     {
-      "text": "US government ke investigators undercover gaye, chatbots ko test karne.",
+      "text": "US government investigators went undercover to test chatbots.",
       "mechanism": "timely development",
       "accuracy": 9,
       "curiosity": 7,
@@ -400,7 +400,7 @@
       "eligible": true
     },
     {
-      "text": "AI safety ka report card aaya hai, aur result achha nahi hai.",
+      "text": "The AI safety report card is out, and it's not good.",
       "mechanism": "timely development",
       "accuracy": 7,
       "curiosity": 7,

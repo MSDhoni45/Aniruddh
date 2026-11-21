@@ -1,7 +1,7 @@
 # Core settings. Paths are relative to the project root unless absolute.
 timezone: Asia/Kolkata
 daily_brief_time: "09:30"
-language: hinglish       # v5 (from 2026-11-21): natural Hinglish in Roman script; older packages stay English
+language: english        # creator instruction (21 Nov 2026): English scripts; Hinglish allowed only on request
 languages_allowed: [english, hinglish]
 models_dir: ${CREATOROS_MODELS:-~/models}
 

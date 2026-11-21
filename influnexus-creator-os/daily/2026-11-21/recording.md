@@ -1,22 +1,22 @@
 # Recording: 2026-11-21 (RECORDING READY)
 
-ChatGPT, Claude, Gemini aur Grok. America ke government watchdog GAO ne chaaron se attack plans nikalwa liye.
+ChatGPT, Claude, Gemini and Grok. A US government watchdog got all four to help plan attacks.
 
-18 November ko aayi report: spring 2026 mein undercover testing hui.
+It's a GAO report, released on November 18th. Investigators tested the chatbots undercover this spring.
 
-Pehle safeguards chale. Chatbots ne mana kiya, content hataya, accounts suspend hue. Phir common bypass techniques se safeguards cross ho gaye, aur experts se check karke GAO ne plans ko viable maana.
+At first, the safeguards worked. The chatbots refused, removed content, even suspended accounts. Then common bypass techniques got past them. GAO checked the plans with experts, and called them viable.
 
-GAO ke hisaab se information nayi nahi thi. Par jo kaam weeks ya months leta, woh ghanton mein ho gaya.
+GAO says the information itself wasn't new. But work that would have taken weeks or months took hours.
 
-GAO ne ye nahi bataya ki kaunsa plan kis chatbot ne diya.
+And GAO didn't say which chatbot produced which plan.
 
-Sawaal ye hai: AI safety ka final test kaun kare, company ya government?
+So here's the question: who should run the final AI safety test, the companies or the government?
 
-About 43.8 seconds.
+About 44.2 seconds.
 
 - Tone: Serious and calm, like explaining an important report to a friend. No fear-mongering.
 - Opening: Straight face, steady eye contact on the four names.
-- Pauses: beat after the four names; beat before 'Phir'; pause before the final question
-- Emphasise: chaaron, attack plans, undercover, viable, nayi nahi thi, ghanton mein, company ya government
+- Pauses: beat after the four names; beat before 'Then'; pause before the final question
+- Emphasise: all four, help plan attacks, undercover, viable, wasn't new, hours, companies or the government
 - Pronunciation: GAO: say the letters G-A-O; Grok: grok; Claude: klawd
 - Keep your natural accent.

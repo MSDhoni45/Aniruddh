@@ -16,6 +16,7 @@ REQUIRED = ["date", "language", "slug", "keys", "topic", "category", "topic_type
             "script", "hook", "hooks", "quality_scores", "recording", "instagram", "linkedin", "x", "youtube", "growth",
             "x_signals", "candidates", "factcheck", "access_limits"]
 MIN_CANDIDATES = 15
+ENGLISH_DEFAULT_FROM = "2026-11-21"   # creator's instruction: English by default again from this IST date
 MIN_CANDIDATES_V3 = 5              # v3: a shortlist of about 5-10 credible, verified candidates
 REQUIRED_V2 = ["visuals"]          # v2 packages (scoring "v2", from 19 Nov 2026) also need visual suggestions for the editor
 REQUIRED_V3 = ["visuals", "research_window", "generated_at", "pillar", "format", "backups", "audience", "editing",
@@ -258,8 +259,11 @@ def validate(p: dict) -> tuple[list[str], dict]:
     allowed = config.settings().get("languages_allowed", ["english"])
     if p["language"] not in allowed:
         problems.append(f"package language is '{p['language']}'; allowed: {allowed}")
-    if is_v5(p) and p["language"] != config.settings().get("language", "english"):
-        problems.append(f"v5 packages use the configured language '{config.settings().get('language')}' (natural Hinglish, Roman script)")
+    # Packages written while Hinglish was the default (before 21 Nov 2026) stay valid as historical records.
+    if (is_v5(p) and p["date"] >= ENGLISH_DEFAULT_FROM and p["language"] != config.settings().get("language", "english")
+            and not p.get("language_requested_by_creator")):
+        problems.append(f"v5 packages use the configured language '{config.settings().get('language')}'; another language needs "
+                        "language_requested_by_creator: true (the creator asked for it)")
     chk = lint.check(p["script"], p["language"], scheme)
     problems += [f"script: {x}" for x in chk["problems"]]
     copy_fields = {"instagram caption": p["instagram"].get("caption", ""), "instagram cover": p["instagram"].get("cover_headline", ""),
