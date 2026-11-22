@@ -86,6 +86,48 @@
       "quality_gate": "PASS",
       "quality_total": 88.5,
       "validation_problems": []
+    },
+    "2026-11-22-manual-193926": {
+      "run_id": "2026-11-22-manual-193926",
+      "trigger": "manual",
+      "start_ist": "2026-11-22T19:39:26+05:30",
+      "end_ist": "2026-11-22T19:42:13+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "66d968d",
+      "research_window": {
+        "start_utc": "2026-11-21T14:09:26+00:00",
+        "end_utc": "2026-11-22T14:09:26+00:00",
+        "start_ist": "2026-11-21T19:39:26+05:30",
+        "end_ist": "2026-11-22T19:39:26+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "V7 package: Tesla FSD v15 Reality View; Riemann v6 package held (V7 extraordinary-claims rule); OpenRouter held (breach claim, sources not openable)",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Tesla starts rolling out FSD (Supervised) v15, whose driving AI now draws what it plans to do (Reality View)",
+      "candidates": 23,
+      "source_access": "Evidence levels: 4 MEDIUM-HIGH. Claims with a source opened directly: 0 of 4; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 87,
+      "estimated_seconds": 39.7,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
     }
   }
 }

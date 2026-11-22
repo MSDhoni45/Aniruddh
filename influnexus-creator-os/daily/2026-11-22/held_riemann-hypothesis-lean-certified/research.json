@@ -1,0 +1,1308 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T14:05:00+05:30",
+  "research_window": {
+    "start_utc": "2026-11-21T08:12:33+00:00",
+    "end_utc": "2026-11-22T08:12:33+00:00",
+    "start_ist": "2026-11-21T13:42:33+05:30",
+    "end_ist": "2026-11-22T13:42:33+05:30",
+    "hours": 24
+  },
+  "candidates": [
+    {
+      "headline": "Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis",
+      "published_at": "2026-11-20",
+      "original_source": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "trend_score": 79.2,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "curiosity": 10,
+        "surprise": 10,
+        "broad_relevance": 7,
+        "shareability": 9,
+        "save_potential": 6,
+        "comment_potential": 9,
+        "visual_storytelling": 7,
+        "practical_usefulness": 3,
+        "long_term_relevance": 10,
+        "factual_confidence": 7
+      },
+      "x_signal": {
+        "status": "PARTLY VERIFIED",
+        "posts": [
+          {
+            "url": "https://x.com/leanprover/status/2124159121645801562",
+            "account": "@leanprover",
+            "posted_at": "2026-11-21",
+            "retrieved_at": "2026-11-22T08:15:00+00:00",
+            "access": "search-index",
+            "metrics": {
+              "likes": "UNKNOWN",
+              "reposts": "UNKNOWN",
+              "replies": "UNKNOWN",
+              "quotes": "UNKNOWN",
+              "views": "UNKNOWN"
+            }
+          }
+        ],
+        "discussion_evidence": [
+          "Hacker News thread found via search index: https://news.ycombinator.com/item?id=50574968 (engagement UNKNOWN)",
+          "GitHub: leanprover-community/riemann-hypothesis shows 471 stars, 101 forks when opened (repository counts, not social engagement)",
+          "x.com blocked: post seen only in search results; metrics UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+          "title": "Lean community blog: Lean verification of the Riemann Hypothesis",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "primary",
+          "url": "https://github.com/leanprover-community/riemann-hypothesis",
+          "title": "leanprover-community/riemann-hypothesis (GitHub, opened)",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
+          "title": "NPR (21 Nov)",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/",
+          "title": "Scientific American",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked",
+          "title": "Al Jazeera (21 Nov)",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "Lean FRO and Mathlib Initiative joint statement certifying the Lean proof (statement and proof) as correct",
+        "at": "2026-11-21"
+      },
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI",
+      "published_at": "2026-11-21",
+      "original_source": "https://news.un.org/en/story/2026/11/1168854",
+      "trend_score": 41.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "curiosity": 4,
+        "surprise": 3,
+        "broad_relevance": 6,
+        "shareability": 3,
+        "save_potential": 3,
+        "comment_potential": 5,
+        "visual_storytelling": 3,
+        "practical_usefulness": 2,
+        "long_term_relevance": 6,
+        "factual_confidence": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.manilatimes.net/2026/11/21/world/un-news/bridgetown-ai-summit-to-tackle-safety-as-risks-outpace-capacity-to-respond/2475471",
+          "title": "Manila Times (UN News copy, 21 Nov)",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "Signal starts blocking screenshots so phone AI assistants can't read chats",
+      "published_at": "2026-11-20",
+      "original_source": "https://signal.org/blog/protecting-your-privacy/",
+      "trend_score": 74.2,
+      "eligible": false,
+      "ineligible_reason": "already covered",
+      "scores": {
+        "curiosity": 8,
+        "surprise": 8,
+        "broad_relevance": 8,
+        "shareability": 8,
+        "save_potential": 6,
+        "comment_potential": 8,
+        "visual_storytelling": 7,
+        "practical_usefulness": 6,
+        "long_term_relevance": 6,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Waymo pauses US freeway rides and files two recalls after California's freeway ban",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.foxbusiness.com/technology/waymo-issues-double-safety-recall-days-after-california-bans-robotaxis-from-freeways",
+      "trend_score": 70.4,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 8,
+        "surprise": 7,
+        "broad_relevance": 8,
+        "shareability": 8,
+        "save_potential": 4,
+        "comment_potential": 8,
+        "visual_storytelling": 8,
+        "practical_usefulness": 4,
+        "long_term_relevance": 6,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/waymo-robotaxis-california-dmv-freeways-autonomous-vehicles/",
+          "title": "CBS San Francisco",
+          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "MIT: the brain's sleep-time cleaning waves weaken after 60",
+      "published_at": "2026-11-13",
+      "original_source": "https://news.mit.edu/2026/waste-clearing-waves-in-brain-during-sleep-are-impaired-in-older-adults-1113",
+      "trend_score": 69.6,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 8,
+        "surprise": 7,
+        "broad_relevance": 8,
+        "shareability": 7,
+        "save_potential": 7,
+        "comment_potential": 6,
+        "visual_storytelling": 6,
+        "practical_usefulness": 5,
+        "long_term_relevance": 7,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Microsoft will retire To Do in June 2027, with no replacement for personal users",
+      "published_at": "2026-11-19",
+      "original_source": "https://9to5google.com/2026/11/20/microsoft-to-do-shut-down-wunderlist/",
+      "trend_score": 66.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 6,
+        "broad_relevance": 7,
+        "shareability": 7,
+        "save_potential": 8,
+        "comment_potential": 6,
+        "visual_storytelling": 5,
+        "practical_usefulness": 8,
+        "long_term_relevance": 5,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Potatoes grown in simulated Moon soil match Earth yields, with 30% compost",
+      "published_at": "2026-11-19",
+      "original_source": "https://www.nature.com/articles/s41526-026-00668-z",
+      "trend_score": 58.4,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 7,
+        "surprise": 7,
+        "broad_relevance": 5,
+        "shareability": 6,
+        "save_potential": 4,
+        "comment_potential": 5,
+        "visual_storytelling": 7,
+        "practical_usefulness": 3,
+        "long_term_relevance": 6,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "FBI warns criminals use the ARTEX AI agent framework to breach networks in under three hours",
+      "published_at": "2026-11-13",
+      "original_source": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+      "trend_score": 58.4,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 7,
+        "surprise": 7,
+        "broad_relevance": 6,
+        "shareability": 6,
+        "save_potential": 5,
+        "comment_potential": 6,
+        "visual_storytelling": 3,
+        "practical_usefulness": 4,
+        "long_term_relevance": 6,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Stanford's Ravi Vakil posts a rival, all-human draft proof of the generalized Riemann Hypothesis",
+      "published_at": "2026-11-20",
+      "original_source": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "trend_score": 58.2,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 8,
+        "surprise": 8,
+        "broad_relevance": 5,
+        "shareability": 7,
+        "save_potential": 3,
+        "comment_potential": 7,
+        "visual_storytelling": 4,
+        "practical_usefulness": 2,
+        "long_term_relevance": 7,
+        "factual_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "Hackers leak customer data tied to Visa, Mastercard and JPMorgan via third-party vendors",
+      "published_at": "2026-11-19",
+      "original_source": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+      "trend_score": 57.4,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 5,
+        "broad_relevance": 7,
+        "shareability": 6,
+        "save_potential": 6,
+        "comment_potential": 6,
+        "visual_storytelling": 3,
+        "practical_usefulness": 7,
+        "long_term_relevance": 4,
+        "factual_confidence": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Trump threatens a 'tremendous tax' on US companies building AI data centers abroad",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
+      "trend_score": 57.2,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 7,
+        "surprise": 7,
+        "broad_relevance": 6,
+        "shareability": 6,
+        "save_potential": 3,
+        "comment_potential": 8,
+        "visual_storytelling": 4,
+        "practical_usefulness": 3,
+        "long_term_relevance": 5,
+        "factual_confidence": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "ChatGPT Space rolls out to Plus users",
+      "published_at": "2026-11-20",
+      "original_source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "trend_score": 56.4,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 5,
+        "surprise": 4,
+        "broad_relevance": 6,
+        "shareability": 5,
+        "save_potential": 7,
+        "comment_potential": 4,
+        "visual_storytelling": 7,
+        "practical_usefulness": 7,
+        "long_term_relevance": 4,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Apple's $250M Siri AI settlement: one month left to claim",
+      "published_at": "2026-09-21",
+      "original_source": "https://www.macrumors.com/2026/11/21/apple-siri-ai-settlement-payment-amount/",
+      "trend_score": 55.6,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 4,
+        "broad_relevance": 4,
+        "shareability": 6,
+        "save_potential": 8,
+        "comment_potential": 5,
+        "visual_storytelling": 4,
+        "practical_usefulness": 8,
+        "long_term_relevance": 3,
+        "factual_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Bell Canada says an 'agentic' hacker stole enterprise customer data",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+      "trend_score": 51.8,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 6,
+        "broad_relevance": 5,
+        "shareability": 5,
+        "save_potential": 4,
+        "comment_potential": 6,
+        "visual_storytelling": 3,
+        "practical_usefulness": 4,
+        "long_term_relevance": 6,
+        "factual_confidence": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "YouTube reportedly did not bid for US rights to the 2030 and 2034 World Cups",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.tubefilter.com/2026/11/20/youtube-fifa-world-cup-streaming-rights-netflix-bid/",
+      "trend_score": 51.6,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 6,
+        "broad_relevance": 6,
+        "shareability": 6,
+        "save_potential": 2,
+        "comment_potential": 7,
+        "visual_storytelling": 5,
+        "practical_usefulness": 2,
+        "long_term_relevance": 4,
+        "factual_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "Musk promises an unscripted Optimus demo within two months",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.basenor.com/blogs/news/tesla-optimus-demo-coming-in-1-2-months-what-musk-said",
+      "trend_score": 51.6,
+      "eligible": false,
+      "ineligible_reason": "evidence confidence LOW",
+      "scores": {
+        "curiosity": 7,
+        "surprise": 6,
+        "broad_relevance": 6,
+        "shareability": 6,
+        "save_potential": 2,
+        "comment_potential": 8,
+        "visual_storytelling": 6,
+        "practical_usefulness": 1,
+        "long_term_relevance": 4,
+        "factual_confidence": 3
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "CLAIMED"
+    },
+    {
+      "headline": "OpenAI board member Paul Christiano puts one-year AI takeover risk at about 10%",
+      "published_at": "2026-11-09",
+      "original_source": "https://thenextweb.com/news/paul-christiano-ai-takeover-hinton-lectures-openai-board",
+      "trend_score": 49.8,
+      "eligible": false,
+      "ineligible_reason": "claim status CLAIMED (only CONFIRMED or REPORTED stories can be selected)",
+      "scores": {
+        "curiosity": 7,
+        "surprise": 6,
+        "broad_relevance": 6,
+        "shareability": 6,
+        "save_potential": 2,
+        "comment_potential": 8,
+        "visual_storytelling": 2,
+        "practical_usefulness": 1,
+        "long_term_relevance": 5,
+        "factual_confidence": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CLAIMED"
+    },
+    {
+      "headline": "Reuters: SEC enforcement staff are examining Nvidia's accounting",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.bloomberg.com/news/articles/2026-11-20/wall-street-regulator-probing-nvidia-s-accounting-reuters-says",
+      "trend_score": 49.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 7,
+        "surprise": 6,
+        "broad_relevance": 5,
+        "shareability": 5,
+        "save_potential": 2,
+        "comment_potential": 7,
+        "visual_storytelling": 3,
+        "practical_usefulness": 2,
+        "long_term_relevance": 5,
+        "factual_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "Nothing sets 8 December reveal for its first screen-free AI device",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.gizmochina.com/2026/11/21/nothings-first-ai-gadget-finally-has-a-launch-date/",
+      "trend_score": 47.2,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 5,
+        "broad_relevance": 5,
+        "shareability": 5,
+        "save_potential": 3,
+        "comment_potential": 5,
+        "visual_storytelling": 5,
+        "practical_usefulness": 3,
+        "long_term_relevance": 3,
+        "factual_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "York University study: 'brain-like' vision AI may rely on parts the brain doesn't use",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
+      "trend_score": 42.6,
+      "eligible": false,
+      "ineligible_reason": "evidence confidence LOW",
+      "scores": {
+        "curiosity": 6,
+        "surprise": 6,
+        "broad_relevance": 4,
+        "shareability": 4,
+        "save_potential": 3,
+        "comment_potential": 4,
+        "visual_storytelling": 3,
+        "practical_usefulness": 2,
+        "long_term_relevance": 5,
+        "factual_confidence": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    },
+    {
+      "headline": "Linux KVM flaw CVE-2026-99312 let a cloud VM read host memory on AMD servers",
+      "published_at": "2026-11-19",
+      "original_source": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+      "trend_score": 41.2,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "curiosity": 5,
+        "surprise": 7,
+        "broad_relevance": 3,
+        "shareability": 3,
+        "save_potential": 4,
+        "comment_potential": 4,
+        "visual_storytelling": 2,
+        "practical_usefulness": 3,
+        "long_term_relevance": 4,
+        "factual_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "REPORTED"
+    }
+  ],
+  "hooks": [
+    {
+      "text": "Seventeen million lines of code might just settle a 167-year-old math problem.",
+      "approach": "visual demonstration",
+      "accuracy": 8,
+      "curiosity": 10,
+      "clarity": 9,
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 9,
+      "total": 53,
+      "eligible": true
+    },
+    {
+      "text": "Does a proof count if no human can follow it?",
+      "approach": "contrarian question",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 8,
+      "natural": 9,
+      "total": 51,
+      "eligible": true
+    },
+    {
+      "text": "An AI-assisted proof of math's most famous problem just passed a computer's check.",
+      "approach": "surprising fact",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 8,
+      "total": 50,
+      "eligible": true
+    },
+    {
+      "text": "We may have math's biggest answer before anyone understands why it's true.",
+      "approach": "unexpected consequence",
+      "accuracy": 7,
+      "curiosity": 9,
+      "clarity": 8,
+      "credibility": 7,
+      "emotional": 8,
+      "natural": 8,
+      "total": 47,
+      "eligible": true
+    },
+    {
+      "text": "If you've ever asked AI for an answer, this math proof matters.",
+      "approach": "direct relevance",
+      "accuracy": 8,
+      "curiosity": 7,
+      "clarity": 8,
+      "credibility": 8,
+      "emotional": 6,
+      "natural": 8,
+      "total": 45,
+      "eligible": true
+    }
+  ],
+  "backups": [
+    "UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI"
+  ],
+  "limitations": [
+    "Source audit: x, reddit, youtube, instagram, linkedin, google_trends BLOCKED; news sites mostly blocked.",
+    "Only the leanprover-community GitHub repository page was opened directly; every other source is search-index.",
+    "Weekend window: few stories published 21-22 Nov.",
+    "No engagement observed; metrics UNKNOWN.",
+    "Writer conflict of interest (Claude/Anthropic) disclosed."
+  ],
+  "source_audit": {
+    "checked_at_utc": "2026-11-22T08:27:45+00:00",
+    "groups": {
+      "x": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "needs_credentials": []
+      },
+      "reddit": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "needs_credentials": []
+      },
+      "youtube": {
+        "status": "BLOCKED",
+        "reachable": [
+          "www.googleapis.com"
+        ],
+        "blocked": [
+          "www.youtube.com"
+        ],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "needs_credentials": []
+      },
+      "linkedin": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.linkedin.com"
+        ],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "trends.google.com"
+        ],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "PARTIAL",
+        "reachable": [
+          "www.anthropic.com",
+          "github.com"
+        ],
+        "blocked": [
+          "openai.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co"
+        ],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  },
+  "finalists": [
+    {
+      "headline": "Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis",
+      "why_not": null,
+      "hooks": [
+        {
+          "text": "Seventeen million lines of code might just settle a 167-year-old math problem.",
+          "approach": "visual demonstration",
+          "accuracy": 8,
+          "curiosity": 10,
+          "clarity": 9,
+          "credibility": 9,
+          "emotional": 8,
+          "natural": 9,
+          "total": 53,
+          "eligible": true
+        },
+        {
+          "text": "Does a proof count if no human can follow it?",
+          "approach": "contrarian question",
+          "accuracy": 8,
+          "curiosity": 9,
+          "clarity": 9,
+          "credibility": 8,
+          "emotional": 8,
+          "natural": 9,
+          "total": 51,
+          "eligible": true
+        },
+        {
+          "text": "An AI-assisted proof of math's most famous problem just passed a computer's check.",
+          "approach": "surprising fact",
+          "accuracy": 8,
+          "curiosity": 9,
+          "clarity": 9,
+          "credibility": 9,
+          "emotional": 7,
+          "natural": 8,
+          "total": 50,
+          "eligible": true
+        },
+        {
+          "text": "We may have math's biggest answer before anyone understands why it's true.",
+          "approach": "unexpected consequence",
+          "accuracy": 7,
+          "curiosity": 9,
+          "clarity": 8,
+          "credibility": 7,
+          "emotional": 8,
+          "natural": 8,
+          "total": 47,
+          "eligible": true
+        },
+        {
+          "text": "If you've ever asked AI for an answer, this math proof matters.",
+          "approach": "direct relevance",
+          "accuracy": 8,
+          "curiosity": 7,
+          "clarity": 8,
+          "credibility": 8,
+          "emotional": 6,
+          "natural": 8,
+          "total": 45,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "headline": "UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI",
+      "why_not": "A summit preview with no outcome yet: abstract, hard to visualise and far less shareable than a machine-checked proof of math's most famous problem.",
+      "hooks": [
+        {
+          "text": "Can a summit with no treaty actually control AI?",
+          "approach": "contrarian question",
+          "accuracy": 8,
+          "curiosity": 7,
+          "clarity": 9,
+          "credibility": 8,
+          "emotional": 6,
+          "natural": 9,
+          "total": 47,
+          "eligible": true
+        },
+        {
+          "text": "Rich countries have hundreds of AI incident teams. Poor countries have six.",
+          "approach": "unexpected consequence",
+          "accuracy": 7,
+          "curiosity": 8,
+          "clarity": 8,
+          "credibility": 7,
+          "emotional": 7,
+          "natural": 8,
+          "total": 45,
+          "eligible": true
+        },
+        {
+          "text": "32 countries just signed a call to control the most powerful AI.",
+          "approach": "surprising fact",
+          "accuracy": 7,
+          "curiosity": 7,
+          "clarity": 8,
+          "credibility": 7,
+          "emotional": 6,
+          "natural": 8,
+          "total": 43,
+          "eligible": true
+        },
+        {
+          "text": "Who decides how powerful AI gets? The UN meets Monday to talk.",
+          "approach": "direct relevance",
+          "accuracy": 8,
+          "curiosity": 6,
+          "clarity": 8,
+          "credibility": 8,
+          "emotional": 5,
+          "natural": 8,
+          "total": 43,
+          "eligible": true
+        },
+        {
+          "text": "Picture 150 officials in Barbados trying to manage frontier AI.",
+          "approach": "visual demonstration",
+          "accuracy": 7,
+          "curiosity": 5,
+          "clarity": 8,
+          "credibility": 7,
+          "emotional": 4,
+          "natural": 7,
+          "total": 38,
+          "eligible": true
+        }
+      ]
+    }
+  ],
+  "variants": {
+    "A": {
+      "angle": "curiosity storytelling",
+      "script": "Seventeen million lines of code might just settle a 167-year-old math problem.\n\nIt's the Riemann Hypothesis, the most famous open question about prime numbers.\n\nOn November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.\n\nBut this proof isn't written for people. It's Lean code that a computer can check.\n\nA day later, Lean's own maintainers said they have full confidence it's correct.\n\nThe strange part? Even they say the next job is for mathematicians to explain why it works.\n\nSo we may have the answer before anyone understands it.",
+      "words": 93,
+      "seconds": 42.7
+    },
+    "B": {
+      "angle": "practical usefulness",
+      "script": "An AI-assisted proof of math's most famous problem just passed a computer's check.\n\nOn November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved the Riemann Hypothesis. It's a 167-year-old question about prime numbers.\n\nThe proof is about 17 million lines of Lean, code that a computer can check.\n\nA day later, Lean's own maintainers said they have full confidence it's correct.\n\nThat's a useful habit for all of us. When AI hands you an answer, ask for something you can check.\n\nEven they say the next job is human: explaining why it works.",
+      "words": 96,
+      "seconds": 43.6
+    },
+    "C": {
+      "angle": "surprising consequences",
+      "script": "Math's most famous problem may be solved, and nobody can explain why yet.\n\nThe Riemann Hypothesis has been open for 167 years. It's about how prime numbers behave.\n\nOn November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it, in about 17 million lines of Lean code.\n\nA day later, Lean's own maintainers said they have full confidence it's correct.\n\nEven they say the next job is for mathematicians to explain why it works.\n\nThat's new. The answer arrived before the understanding. So who gets the credit?",
+      "words": 90,
+      "seconds": 41.4
+    }
+  },
+  "selected_variant": "A",
+  "creative_gate": {
+    "nontechnical_viewer_cares": {
+      "pass": true,
+      "why": "Everyone has heard of 'unsolved math problems'; an AI-assisted proof that only a computer can check is a story anyone can retell."
+    },
+    "hook_compelling": {
+      "pass": true,
+      "why": "A concrete, visual number (17 million lines) against a 167-year-old mystery creates an immediate curiosity gap in 13 words."
+    },
+    "delivers_on_hook": {
+      "pass": true,
+      "why": "The script names the problem, who claims the proof, how it was checked and who certified it, all within the first 30 seconds."
+    },
+    "takeaway": {
+      "pass": true,
+      "why": "The surprising implication: we may have a verified answer before any human understands why it is true."
+    },
+    "natural_language": {
+      "pass": true,
+      "why": "Short spoken sentences, no jargon beyond 'Lean', which is explained in the same line."
+    },
+    "visualizable": {
+      "pass": true,
+      "why": "Real Lean code is public on GitHub to scroll, and the creator can record a tiny Lean proof being checked."
+    },
+    "claims_verified": {
+      "pass": true,
+      "why": "Every script claim passes the tiered gate; the certification and Alpöge's claim are attributed in the spoken words."
+    },
+    "memorable_ending": {
+      "pass": true,
+      "why": "'So we may have the answer before anyone understands it' is a quotable, debatable closing line."
+    },
+    "sounds_like_creator": {
+      "pass": true,
+      "why": "Conversational asides ('The strange part?') and a first-person storyteller tone, not a news-anchor read."
+    }
+  },
+  "visual_plan": {
+    "opening_visual": "Fast scroll through the real Lean source in the public GitHub repository leanprover-community/riemann-hypothesis, with a counter ticking up to 17,000,000 lines.",
+    "broll": [
+      "GitHub repository page leanprover-community/riemann-hypothesis (screen capture, credited)",
+      "Public-domain portrait of Bernhard Riemann with an '1859' card"
+    ],
+    "screen_recordings": [
+      {
+        "what": "Scrolling the Lean files of the proof on GitHub",
+        "source": "https://github.com/leanprover-community/riemann-hypothesis"
+      },
+      {
+        "what": "Headline of the Lean community blog statement (credited)",
+        "source": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+      }
+    ],
+    "demonstrations": [
+      {
+        "what": "Creator types a one-line Lean proof (for example 2 + 2 = 4) and shows Lean accepting it, to explain what 'a computer can check' means",
+        "source": "creator-recorded"
+      }
+    ],
+    "motion_graphics": [
+      "Prime numbers on a number line, thinning out",
+      "Counter 0 to 17,000,000",
+      "Split card: 'Computer: checked' / 'Humans: explaining why'"
+    ],
+    "on_screen_text": [
+      "Riemann Hypothesis (1859)",
+      "17 million lines of Lean",
+      "Alpöge (Anthropic) + Claude, 20 Nov",
+      "Lean FRO + Mathlib: full confidence, 21 Nov",
+      "Next: humans explain why"
+    ],
+    "transitions": [
+      "Hard cut on 'The strange part?'",
+      "Code-scroll wipe into the statement card",
+      "Slow push-in on the final line"
+    ]
+  },
+  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented v6 rubric unchanged."
+}

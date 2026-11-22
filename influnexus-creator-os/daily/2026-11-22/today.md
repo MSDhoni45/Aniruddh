@@ -4,68 +4,81 @@
 
 ## 1. Today's story
 
-**Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis**
+- **Headline:** Tesla starts rolling out FSD (Supervised) v15, whose driving AI now draws what it plans to do (Reality View)
+- **Date:** 21 November 2026 (Tesla's X post, 19:24 UTC; coverage 21-22 Nov) (event: 2026-11-21)
+- **Category:** FUTURE TECH
+- **Confidence:** MEDIUM
 
-On 21 Nov 2026 the Lean FRO and the Mathlib Initiative endorsed a joint statement (Lean community blog, indexed text) saying they have full confidence that Levent Alpöge's 17-million-line Lean proof of the Riemann Hypothesis, released on 20 Nov, is correct; reported by Scientific American, Unite.AI and OfficeChai.
+## 2. Why this story
 
-Published: 20 November 2026 (Alpöge's Lean proof); 21 November 2026 (Lean FRO and Mathlib Initiative joint statement) · Confidence: MEDIUM
+Tesla began rolling out FSD (Supervised) v15 on 21 Nov, and its headline feature, Reality View, draws the car's planned turns on screen: a rare look at what a driving AI intends. It is visual, easy to grasp and invites a trust debate. X signal: Tesla's and its AI lead's posts were seen only in search results; engagement is unverified (x.com blocked). It beat OpenRouter's prompt-theft story, which failed the extraordinary-claims check, and older or unconfirmed stories (Amazon zero-day, FBI breach, Decart deal).
 
-## 2. Why it was selected
-
-The only other eligible story, the Bridgetown UN AI safety summit preview, has no outcome yet and little to show or share. Stronger everyday stories (Waymo's freeway pause and recalls, Microsoft To Do's retirement, Trump's data-center tax threat, the Nvidia SEC report) were all published on 19-20 Nov, before the 24-hour window, with no dated development inside it; Signal's screenshot block is already today's v5 package.
-
-## 3. Verified facts and sources
-
-- In a joint statement on 21 November 2026, the Lean FRO and the Mathlib Initiative said they have full confidence that Levent Alpöge's Lean proof of the Riemann Hypothesis is correct — **THIRD-PARTY CLAIM** (MEDIUM-HIGH). [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [scientific american](https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/), [unite.ai](https://www.unite.ai/lean-and-mathlib-communities-certify-claude-assisted-riemann-proof/), [officechai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/)
-- On 20 November 2026 Levent Alpöge released a Lean formalization claiming a proof of the Riemann Hypothesis (and of GRH for Dirichlet L-functions) — **CONFIRMED** (HIGH). [leanprover-community (github)](https://github.com/leanprover-community/riemann-hypothesis), [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/), [npr](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
-- Levent Alpöge, a mathematician at Anthropic, says he found the proof working with Claude — **CLAIMED** (MEDIUM). [npr](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai), [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/), [phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html), [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
-- The Lean proof is about 17 million lines of code — **CONFIRMED** (MEDIUM-HIGH). [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
-- The Riemann Hypothesis was first posed in 1859, 167 years ago — **CONFIRMED** (MEDIUM). [phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html), [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/), [scientific american](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/)
-- The Riemann Hypothesis is described as the most famous open problem in mathematics and is a prediction about prime numbers — **CONFIRMED** (MEDIUM). [scientific american](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked), [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer)
-- The proof is written as Lean code, which a computer checks — **CONFIRMED** (HIGH). [leanprover-community (github)](https://github.com/leanprover-community/riemann-hypothesis), [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html)
-- The Lean statement says Lean verification confirms the proof is correct but does not explain why it works, and looks to mathematicians to explain it — **THIRD-PARTY CLAIM** (MEDIUM-HIGH). [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [officechai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
-
-Not in the script / uncertain: No written human-readable paper; outside mathematicians are still reviewing the argument.; Reports differ on whether the certified statement covers the generalized hypothesis (the Lean statement certifies Mathlib's RH).; The Lean blog and the Lean X post could not be opened (blocked); read via search index.; Exact publication days of Scientific American, Unite.AI and OfficeChai coverage are not observed; the search index places them on 21-22 Nov.
-
-## 4. Recording-ready script
+## 3. Final recording script
 
 ```
-Seventeen million lines of code might just settle a 167-year-old math problem.
+Tesla's driving AI now shows you what it's about to do.
 
-It's the Riemann Hypothesis, the most famous open question about prime numbers.
+On November 21, Tesla started rolling out FSD Supervised version 15 to a first wave of owners.
 
-On November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.
+The new feature is called Reality View.
 
-But this proof isn't written for people. It's Lean code that a computer can check.
+Tesla's head of AI software says the model that drives the car also draws the road around it, live.
 
-A day later, Lean's own maintainers said they have full confidence it's correct.
+Arrows show the turns it plans to take.
 
-The strange part? Even they say the next job is for mathematicians to explain why it works.
+Tesla claims a 25x improvement in critical interventions. That's Tesla's own number, not an independent test.
 
-So we may have the answer before anyone understands it.
+Would seeing its plan make you trust it more?
 ```
 
-## 5. Estimated speaking duration
+87 words, about 39.7 s (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)).
 
-About 42.7 seconds (93 words; natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)).
-Delivery: Curious and a little awed, careful not to overclaim. Pauses: beat after the hook; pause before 'The strange part?'; slow final line.
+## 4. Caption
 
-## 6. Opening visual
+Tesla's driving AI now shows you what it's about to do. FSD (Supervised) v15 started rolling out on 21 Nov with Reality View: arrows for the turns it plans to take. Tesla also claims a 25x improvement, but that's its own number. Would seeing its plan make you trust it more?
 
-Fast scroll through the real Lean source in the public GitHub repository leanprover-community/riemann-hypothesis, with a counter ticking up to 17,000,000 lines.
+#Tesla #FSD #SelfDriving #AI
 
-## 7. Caption
+## 5. Sources
 
-An Anthropic mathematician says he and Claude proved the Riemann Hypothesis, posed in 1859. The proof is about 17 million lines of Lean code. On 21 Nov, Lean's maintainers said they have full confidence it is correct, but humans still have to explain why it works. Would you trust it?
+- [tesla (x)](https://x.com/Tesla/status/2124222447855743019) (primary, 2026-11-21, not opened: search-index)
+- [ashok elluswamy, tesla (x)](https://x.com/aelluswamy/status/2124224924512641512) (primary, 2026-11-21, not opened: search-index)
+- [tesla north](https://teslanorth.com/2026/11/21/tesla-software-update-2026-38-6-11-fsd-15-0-1/) (news, 2026-11-21, not opened: search-index)
+- [paultan.org](https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/) (news, 2026-11-22, not opened: search-index)
+- [electrek](https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/) (news, 2026-11-21, not opened: search-index)
+- [ashok elluswamy, tesla (x)](https://x.com/aelluswamy/status/2124229978560835880) (primary, 2026-11-21, not opened: search-index)
+- [tesla north](https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/) (news, 2026-11-21, not opened: search-index)
+- [techau](https://x.com/techAU/status/2124262266661126207) (news, 2026-11-21, not opened: search-index)
+- [digital trends](https://www.digitaltrends.com/cars/tesla-fsd-v15-rollout/) (news, 2026-11, not opened: search-index)
 
-## 8. Hashtags
+## 6. Fact-check notes
 
-#RiemannHypothesis #AI #Math #Lean
+**In the script (status, evidence level):**
+- On 21 November 2026 Tesla started rolling out FSD (Supervised) v15 to a first wave of owners (CONFIRMED, MEDIUM-HIGH)
+- Tesla's head of AI software, Ashok Elluswamy, says the same end-to-end driving model also renders a live, realistic view of the world around the car (Reality View) (COMPANY-CLAIMED, MEDIUM-HIGH)
+- In Reality View, arrows show the turns FSD intends to take (COMPANY-CLAIMED, MEDIUM-HIGH)
+- Tesla claims FSD v15 improves the critical intervention rate by 25x; it has not published the underlying numbers (COMPANY-CLAIMED, MEDIUM-HIGH)
+
+**Important uncertainties:**
+- How many cars received v15 and in which countries (first wave reported in the US).
+- Hardware coverage: reports say HW4/AI4 first; whether HW3 cars get it is unclear.
+- Tesla has not defined or published the data behind the 25x claim; no independent test exists.
+- A realistic rendering is not proof the car understands the scene perfectly.
+- Tesla's posts and every news page were read through search results; none could be opened (DNS blocked).
+
+**Excluded from the script:**
+- Elon Musk says FSD v15 will be released widely in December
+- Hardware details (HW3 vs HW4) where reports differ.
+- Speed Camera Slowdown, Bike Rack Mode and other release-note items (not central).
+
+## 7. Recording guidance
+
+- **Hook emphasis:** Lean on 'shows you' and 'about to do'.
+- **Important pause:** A full beat after 'not an independent test.' before the question.
+- **Final delivery tone:** Curious and even-handed, not a fan and not a critic.
 
 ---
 
-Backups (DIFFERENT TOPIC): UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI
+RUN STATUS: 2026-11-22-manual-193926: READY, delivery not attempted via session reply
 
-RUN STATUS: 2026-11-22-manual-135744: READY, delivery not attempted via session reply
-
-Internal: `creative.md` (finalists, 25 hooks, 3 variants, visual plan, quality gate), `package.md`, `research.json`.
+Internal: `package.md` (all candidates, scores, hooks, script checks) and `research.json`.

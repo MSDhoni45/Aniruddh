@@ -189,3 +189,41 @@ def test_learning_compares_script_length_and_posting_time(tmp_path):
     assert bands["30-35s"]["follows_per_1k_views"] == 20.0 and bands["40-45s"]["enough_data"]
     assert {g["name"] for g in d["dimensions"]["posting_hour_ist"]} == {"19:00 IST", "09:00 IST"}
     assert any(x.startswith("length_band: strongest follower conversion '30-35s'") for x in d["lessons"])
+
+
+# --- the real V7 package for 22 Nov 2026 (controlled production test) -------------------------------------------------
+
+def v7pkg():
+    return json.loads((Path(__file__).parent / "fixtures" / "v7_2026-11-22" / "package.json").read_text(encoding="utf-8"))
+
+
+def test_v7_package_is_ready_and_renders_seven_sections(tmp_path):
+    p = v7pkg()
+    probs, info = package.validate(p)
+    assert probs == [] and info["ready"]["status"] == "RECORDING READY"
+    assert 30 <= info["lint"]["seconds"] <= 40 and 70 <= info["lint"]["words"] <= 90
+    r = package.save(p, tmp_path, record=False)               # regression: saving a v7 package once crashed on hook criteria
+    assert r["ok"]
+    today = (tmp_path / "today.md").read_text(encoding="utf-8")
+    for h in ["## 1. Today's story", "## 2. Why this story", "## 3. Final recording script", "## 4. Caption", "## 5. Sources",
+              "## 6. Fact-check notes", "## 7. Recording guidance"]:
+        assert h in today
+    assert "Editing" not in today and "edit beats" not in today.lower()
+    rj = json.loads((tmp_path / "research.json").read_text(encoding="utf-8"))
+    assert rj["story"]["company"] == "Tesla" and len(rj["hooks"]) >= 5
+
+
+def test_v7_package_rules_refuse_bad_changes():
+    base = v7pkg()
+    long = base["script"].replace("Would seeing", "Honestly, after all of that, and thinking about it carefully, would seeing")
+    assert any("hard maximum" in x for x in package.validate({**base, "script": long})[0])
+    assert any("why_this_story" in x for x in package.validate({**base, "why_this_story": "word " * 120})[0])
+    tk = {**base["practical_takeaway"], "price": ""}
+    assert any("practical_takeaway" in x for x in package.validate({**base, "practical_takeaway": tk})[0])
+    ch = {**base["script_checks"], "no_jargon": {"pass": False, "why": "critical interventions is unexplained jargon"}}
+    assert any("script check failed" in x for x in package.validate({**base, "script_checks": ch})[0])
+    cands = [dict(c) for c in base["candidates"]]
+    for c in cands:
+        if c["headline"].startswith("OpenRouter"):
+            c.pop("hold_reason")                               # without the hold, the higher-scoring story must win
+    assert any("topic must be the top eligible candidate" in x for x in package.validate({**base, "candidates": cands})[0])

@@ -1,56 +1,35 @@
 {
   "primary": [
     {
-      "label": "Lean community blog: Lean verification of the Riemann Hypothesis (21 Nov 2026, indexed text)",
-      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+      "label": "Tesla on X: FSD v15 now starting to roll out (21 Nov 2026)",
+      "url": "https://x.com/Tesla/status/2124222447855743019"
     },
     {
-      "label": "leanprover-community/riemann-hypothesis on GitHub (opened)",
-      "url": "https://github.com/leanprover-community/riemann-hypothesis"
+      "label": "Ashok Elluswamy on X: Reality View (21 Nov 2026)",
+      "url": "https://x.com/aelluswamy/status/2124229978560835880"
     }
   ],
   "supporting": [
     {
-      "label": "NPR (21 Nov)",
-      "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai"
+      "label": "Tesla North (21 Nov)",
+      "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/"
     },
     {
-      "label": "Al Jazeera (21 Nov)",
-      "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked"
+      "label": "paultan.org (22 Nov)",
+      "url": "https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/"
     },
     {
-      "label": "TechCrunch (20 Nov)",
-      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+      "label": "Electrek (21 Nov)",
+      "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/"
     },
     {
-      "label": "Scientific American",
-      "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/"
-    },
-    {
-      "label": "Science",
-      "url": "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer"
-    },
-    {
-      "label": "Unite.AI",
-      "url": "https://www.unite.ai/lean-and-mathlib-communities-certify-claude-assisted-riemann-proof/"
-    },
-    {
-      "label": "OfficeChai",
-      "url": "https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/"
-    },
-    {
-      "label": "heise online",
-      "url": "https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html"
-    },
-    {
-      "label": "Phys.org",
-      "url": "https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html"
+      "label": "Digital Trends",
+      "url": "https://www.digitaltrends.com/cars/tesla-fsd-v15-rollout/"
     }
   ],
   "x_signals": [],
   "access_limits": [
-    "x.com, reddit, youtube, instagram, linkedin and most news sites blocked; outlets read via search index.",
-    "leanprover-community.github.io, claymath.org, npr.org, techmeme.com and daily-digest sites failed DNS; GitHub repository page opened via WebFetch.",
-    "No social engagement observed; UNKNOWN."
+    "x.com posts were read through search results only; engagement UNKNOWN.",
+    "News and Tesla sites could not be opened (DNS blocked)."
   ]
 }

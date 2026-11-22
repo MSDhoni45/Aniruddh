@@ -107,7 +107,7 @@ def holds_for(date: str) -> list[dict]:
 
 
 def hook_criteria_for(p: dict) -> list[str]:
-    return (lint.HOOK_CRITERIA_V5 if is_v5(p) else lint.HOOK_CRITERIA_V4 if is_v4(p) else lint.HOOK_CRITERIA_V3 if is_v3(p)
+    return (lint.HOOK_CRITERIA_V7 if is_v7(p) else lint.HOOK_CRITERIA_V5 if is_v5(p) else lint.HOOK_CRITERIA_V4 if is_v4(p) else lint.HOOK_CRITERIA_V3 if is_v3(p)
             else lint.HOOK_CRITERIA)
 
 
@@ -737,7 +737,7 @@ def render_today_v7(p: dict, info: dict) -> str:
                 seen.add(it["url"])
                 L.append(f"- [{ev.outlet(it)}]({it['url']}) ({it.get('kind', 'source')}, {it.get('date') or 'date unknown'}, "
                          f"{'opened' if it.get('access') == 'opened' else 'not opened: ' + str(it.get('access'))})")
-    L += ["", "## 6. Fact-check notes", "", "**Confirmed in the script:**"]
+    L += ["", "## 6. Fact-check notes", "", "**In the script (status, evidence level):**"]
     for c in used:
         lv = ev.level(c)["level"] if ver.is_tiered(used) else c.get("confidence", "")
         L.append(f"- {c['text']} ({c['status']}, {lv})")

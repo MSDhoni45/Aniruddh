@@ -1,41 +1,53 @@
 {
   "date": "2026-11-22",
-  "generated_at": "2026-11-22T14:05:00+05:30",
+  "generated_at": "2026-11-22T14:20:00+00:00",
   "research_window": {
-    "start_utc": "2026-11-21T08:12:33+00:00",
-    "end_utc": "2026-11-22T08:12:33+00:00",
-    "start_ist": "2026-11-21T13:42:33+05:30",
-    "end_ist": "2026-11-22T13:42:33+05:30",
+    "start_utc": "2026-11-21T14:09:26+00:00",
+    "end_utc": "2026-11-22T14:09:26+00:00",
+    "start_ist": "2026-11-21T19:39:26+05:30",
+    "end_ist": "2026-11-22T19:39:26+05:30",
     "hours": 24
   },
   "candidates": [
     {
-      "headline": "Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis",
-      "published_at": "2026-11-20",
-      "original_source": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-      "trend_score": 79.2,
+      "headline": "Tesla starts rolling out FSD (Supervised) v15, whose driving AI now draws what it plans to do (Reality View)",
+      "published_at": "2026-11-21T19:24:32+00:00",
+      "original_source": "https://x.com/Tesla/status/2124222447855743019",
+      "trend_score": 63.0,
       "eligible": true,
       "ineligible_reason": null,
       "scores": {
-        "curiosity": 10,
-        "surprise": 10,
         "broad_relevance": 7,
-        "shareability": 9,
-        "save_potential": 6,
-        "comment_potential": 9,
-        "visual_storytelling": 7,
-        "practical_usefulness": 3,
-        "long_term_relevance": 10,
-        "factual_confidence": 7
+        "surprise": 6,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 9,
+        "consequence": 6,
+        "discussion": 8,
+        "timeliness": 10
       },
       "x_signal": {
         "status": "PARTLY VERIFIED",
         "posts": [
           {
-            "url": "https://x.com/leanprover/status/2124159121645801562",
-            "account": "@leanprover",
-            "posted_at": "2026-11-21",
-            "retrieved_at": "2026-11-22T08:15:00+00:00",
+            "url": "https://x.com/Tesla/status/2124222447855743019",
+            "account": "@Tesla",
+            "posted_at": "2026-11-21T19:24:32+00:00",
+            "retrieved_at": "2026-11-22T14:20:00+00:00",
+            "access": "search-index",
+            "metrics": {
+              "likes": "UNKNOWN",
+              "reposts": "UNKNOWN",
+              "replies": "UNKNOWN",
+              "quotes": "UNKNOWN",
+              "views": "UNKNOWN"
+            }
+          },
+          {
+            "url": "https://x.com/aelluswamy/status/2124229978560835880",
+            "account": "@aelluswamy",
+            "posted_at": "2026-11-21T19:54:27+00:00",
+            "retrieved_at": "2026-11-22T14:20:00+00:00",
             "access": "search-index",
             "metrics": {
               "likes": "UNKNOWN",
@@ -47,37 +59,27 @@
           }
         ],
         "discussion_evidence": [
-          "Hacker News thread found via search index: https://news.ycombinator.com/item?id=50574968 (engagement UNKNOWN)",
-          "GitHub: leanprover-community/riemann-hypothesis shows 471 stars, 101 forks when opened (repository counts, not social engagement)",
-          "x.com blocked: post seen only in search results; metrics UNKNOWN"
+          "https://x.com/SawyerMerritt/status/2124223625222148567",
+          "https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/",
+          "https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/"
         ]
       },
       "signals": [
         {
-          "platform": "primary",
-          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-          "title": "Lean community blog: Lean verification of the Riemann Hypothesis",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "platform": "x",
+          "url": "https://x.com/Tesla/status/2124222447855743019",
+          "title": "Tesla: FSD v15 now starting to roll out",
+          "retrieved_at": "2026-11-22T14:20:00+00:00",
           "access": "SEARCH-INDEX",
           "engagement": {
             "basis": "unknown"
           }
         },
         {
-          "platform": "primary",
-          "url": "https://github.com/leanprover-community/riemann-hypothesis",
-          "title": "leanprover-community/riemann-hypothesis (GitHub, opened)",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
-          "access": "DIRECTLY OBSERVED",
-          "engagement": {
-            "basis": "unknown"
-          }
-        },
-        {
           "platform": "news",
-          "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
-          "title": "NPR (21 Nov)",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/",
+          "title": "Tesla North: FSD v15 release notes",
+          "retrieved_at": "2026-11-22T14:20:00+00:00",
           "access": "SECONDARY",
           "engagement": {
             "basis": "unknown"
@@ -85,19 +87,9 @@
         },
         {
           "platform": "news",
-          "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/",
-          "title": "Scientific American",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
-          "access": "SECONDARY",
-          "engagement": {
-            "basis": "unknown"
-          }
-        },
-        {
-          "platform": "news",
-          "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked",
-          "title": "Al Jazeera (21 Nov)",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
+          "url": "https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/",
+          "title": "paultan.org: FSD v15 starts rolling out in US",
+          "retrieved_at": "2026-11-22T14:20:00+00:00",
           "access": "SECONDARY",
           "engagement": {
             "basis": "unknown"
@@ -106,314 +98,91 @@
       ],
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
-      "new_development": {
-        "what": "Lean FRO and Mathlib Initiative joint statement certifying the Lean proof (statement and proof) as correct",
-        "at": "2026-11-21"
-      },
-      "claim_status": "REPORTED"
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
     },
     {
-      "headline": "UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI",
+      "headline": "Waymo files two recalls and pauses freeway rides nationwide after California DMV 'imminent hazard' freeway ban",
       "published_at": "2026-11-21",
-      "original_source": "https://news.un.org/en/story/2026/11/1168854",
-      "trend_score": 41.0,
+      "original_source": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
+      "trend_score": 54.5,
       "eligible": true,
       "ineligible_reason": null,
       "scores": {
-        "curiosity": 4,
-        "surprise": 3,
         "broad_relevance": 6,
-        "shareability": 3,
-        "save_potential": 3,
-        "comment_potential": 5,
-        "visual_storytelling": 3,
-        "practical_usefulness": 2,
-        "long_term_relevance": 6,
-        "factual_confidence": 7
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.manilatimes.net/2026/11/21/world/un-news/bridgetown-ai-summit-to-tackle-safety-as-risks-outpace-capacity-to-respond/2475471",
-          "title": "Manila Times (UN News copy, 21 Nov)",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
-          "access": "SECONDARY",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "verification_status": "PARTLY VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "REPORTED"
-    },
-    {
-      "headline": "Signal starts blocking screenshots so phone AI assistants can't read chats",
-      "published_at": "2026-11-20",
-      "original_source": "https://signal.org/blog/protecting-your-privacy/",
-      "trend_score": 74.2,
-      "eligible": false,
-      "ineligible_reason": "already covered",
-      "scores": {
-        "curiosity": 8,
-        "surprise": 8,
-        "broad_relevance": 8,
-        "shareability": 8,
-        "save_potential": 6,
-        "comment_potential": 8,
-        "visual_storytelling": 7,
-        "practical_usefulness": 6,
-        "long_term_relevance": 6,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "Waymo pauses US freeway rides and files two recalls after California's freeway ban",
-      "published_at": "2026-11-20",
-      "original_source": "https://www.foxbusiness.com/technology/waymo-issues-double-safety-recall-days-after-california-bans-robotaxis-from-freeways",
-      "trend_score": 70.4,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 8,
-        "surprise": 7,
-        "broad_relevance": 8,
-        "shareability": 8,
-        "save_potential": 4,
-        "comment_potential": 8,
-        "visual_storytelling": 8,
-        "practical_usefulness": 4,
-        "long_term_relevance": 6,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.cbsnews.com/sanfrancisco/news/waymo-robotaxis-california-dmv-freeways-autonomous-vehicles/",
-          "title": "CBS San Francisco",
-          "retrieved_at": "2026-11-22T08:15:00+00:00",
-          "access": "SECONDARY",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "MIT: the brain's sleep-time cleaning waves weaken after 60",
-      "published_at": "2026-11-13",
-      "original_source": "https://news.mit.edu/2026/waste-clearing-waves-in-brain-during-sleep-are-impaired-in-older-adults-1113",
-      "trend_score": 69.6,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 8,
-        "surprise": 7,
-        "broad_relevance": 8,
-        "shareability": 7,
-        "save_potential": 7,
-        "comment_potential": 6,
-        "visual_storytelling": 6,
-        "practical_usefulness": 5,
-        "long_term_relevance": 7,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "Microsoft will retire To Do in June 2027, with no replacement for personal users",
-      "published_at": "2026-11-19",
-      "original_source": "https://9to5google.com/2026/11/20/microsoft-to-do-shut-down-wunderlist/",
-      "trend_score": 66.0,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 6,
         "surprise": 6,
-        "broad_relevance": 7,
-        "shareability": 7,
-        "save_potential": 8,
-        "comment_potential": 6,
-        "visual_storytelling": 5,
-        "practical_usefulness": 8,
-        "long_term_relevance": 5,
-        "factual_confidence": 8
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 8,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 7
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "Potatoes grown in simulated Moon soil match Earth yields, with 30% compost",
-      "published_at": "2026-11-19",
-      "original_source": "https://www.nature.com/articles/s41526-026-00668-z",
-      "trend_score": 58.4,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 7,
-        "surprise": 7,
-        "broad_relevance": 5,
-        "shareability": 6,
-        "save_potential": 4,
-        "comment_potential": 5,
-        "visual_storytelling": 7,
-        "practical_usefulness": 3,
-        "long_term_relevance": 6,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "FBI warns criminals use the ARTEX AI agent framework to breach networks in under three hours",
-      "published_at": "2026-11-13",
-      "original_source": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-      "trend_score": 58.4,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 7,
-        "surprise": 7,
-        "broad_relevance": 6,
-        "shareability": 6,
-        "save_potential": 5,
-        "comment_potential": 6,
-        "visual_storytelling": 3,
-        "practical_usefulness": 4,
-        "long_term_relevance": 6,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "Stanford's Ravi Vakil posts a rival, all-human draft proof of the generalized Riemann Hypothesis",
-      "published_at": "2026-11-20",
-      "original_source": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-      "trend_score": 58.2,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 8,
-        "surprise": 8,
-        "broad_relevance": 5,
-        "shareability": 7,
-        "save_potential": 3,
-        "comment_potential": 7,
-        "visual_storytelling": 4,
-        "practical_usefulness": 2,
-        "long_term_relevance": 7,
-        "factual_confidence": 6
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917"
         ]
       },
       "signals": null,
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
       "new_development": null,
-      "claim_status": "REPORTED"
+      "claim_status": "INDEPENDENTLY REPORTED"
     },
     {
-      "headline": "Hackers leak customer data tied to Visa, Mastercard and JPMorgan via third-party vendors",
-      "published_at": "2026-11-19",
-      "original_source": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-      "trend_score": 57.4,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "headline": "Amazon reportedly nears ~$7.5B deal to buy AI startup Decart (FT)",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+      "trend_score": 54.0,
+      "eligible": true,
+      "ineligible_reason": null,
       "scores": {
-        "curiosity": 6,
+        "broad_relevance": 6,
+        "surprise": 6,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 7,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "UN talks on AI 'killer robots' end with mandate to elaborate possible rules by 2028, no binding commitment",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+      "trend_score": 52.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 6,
         "surprise": 5,
-        "broad_relevance": 7,
-        "shareability": 6,
-        "save_potential": 6,
-        "comment_potential": 6,
-        "visual_storytelling": 3,
-        "practical_usefulness": 7,
-        "long_term_relevance": 4,
-        "factual_confidence": 7
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 7,
+        "discussion": 7,
+        "timeliness": 10
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in"
         ]
       },
       "signals": null,
@@ -423,125 +192,207 @@
       "claim_status": "CONFIRMED"
     },
     {
-      "headline": "Trump threatens a 'tremendous tax' on US companies building AI data centers abroad",
-      "published_at": "2026-11-20",
-      "original_source": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
-      "trend_score": 57.2,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "headline": "Microsoft: attackers exploited Entra Connect Health API flaw to read tenant metadata (admin emails, tenant IDs)",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "trend_score": 48.5,
+      "eligible": true,
+      "ineligible_reason": null,
       "scores": {
-        "curiosity": 7,
-        "surprise": 7,
-        "broad_relevance": 6,
-        "shareability": 6,
-        "save_potential": 3,
-        "comment_potential": 8,
-        "visual_storytelling": 4,
-        "practical_usefulness": 3,
-        "long_term_relevance": 5,
-        "factual_confidence": 7
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "PARTLY VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "REPORTED"
-    },
-    {
-      "headline": "ChatGPT Space rolls out to Plus users",
-      "published_at": "2026-11-20",
-      "original_source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "trend_score": 56.4,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 5,
-        "surprise": 4,
-        "broad_relevance": 6,
-        "shareability": 5,
-        "save_potential": 7,
-        "comment_potential": 4,
-        "visual_storytelling": 7,
-        "practical_usefulness": 7,
-        "long_term_relevance": 4,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "Apple's $250M Siri AI settlement: one month left to claim",
-      "published_at": "2026-09-21",
-      "original_source": "https://www.macrumors.com/2026/11/21/apple-siri-ai-settlement-payment-amount/",
-      "trend_score": 55.6,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 6,
-        "surprise": 4,
-        "broad_relevance": 4,
-        "shareability": 6,
-        "save_potential": 8,
-        "comment_potential": 5,
-        "visual_storytelling": 4,
-        "practical_usefulness": 8,
-        "long_term_relevance": 3,
-        "factual_confidence": 8
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
-    },
-    {
-      "headline": "Bell Canada says an 'agentic' hacker stole enterprise customer data",
-      "published_at": "2026-11-20",
-      "original_source": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-      "trend_score": 51.8,
-      "eligible": false,
-      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
-      "scores": {
-        "curiosity": 6,
-        "surprise": 6,
         "broad_relevance": 5,
-        "shareability": 5,
-        "save_potential": 4,
-        "comment_potential": 6,
-        "visual_storytelling": 3,
-        "practical_usefulness": 4,
-        "long_term_relevance": 6,
-        "factual_confidence": 7
+        "surprise": 5,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 6,
+        "discussion": 5,
+        "timeliness": 10
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
+      "published_at": "2026-11-22",
+      "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+      "trend_score": 40.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 4,
+        "usefulness": 5,
+        "social_momentum": 2,
+        "visual": 5,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://news.sbs.co.kr/english/article.do?news_id=N1008857683"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "KEPCO says personal data of ~1.52M records leaked (customer platform + procurement system)",
+      "published_at": "2026-11-22",
+      "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857930",
+      "trend_score": 36.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 4,
+        "usefulness": 3,
+        "social_momentum": 2,
+        "visual": 3,
+        "consequence": 5,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://news.sbs.co.kr/english/article.do?news_id=N1008857930"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after Dragos canary study found prompt theft",
+      "published_at": "2026-11-22",
+      "original_source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "trend_score": 69.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 extraordinary-claims rule (security breach): neither OpenRouter's notice nor Dragos's study could be opened (DNS blocked) and no independent confirmation could be opened; all evidence is search excerpts",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 8,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 8,
+        "discussion": 8,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Amazon: China-linked actor's autonomous AI agents (Cairn framework) found and exploited a MONAI Label zero-day in ~11 minutes",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+      "trend_score": 63.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 9,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 9,
+        "discussion": 8,
+        "timeliness": 4
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Google makes Gemini Tasks (agent) free in six countries incl. India, on Gemini 4 Hydrogen",
+      "published_at": "2026-11-17",
+      "original_source": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+      "trend_score": 60.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 8,
+        "surprise": 6,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 1
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Instagram lets users edit Stories within 15 minutes of posting (keeps views/replies, shows 'Edited' label)",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
+      "trend_score": 58.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 8,
+        "surprise": 5,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 8,
+        "consequence": 3,
+        "discussion": 6,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it"
         ]
       },
       "signals": null,
@@ -551,304 +402,436 @@
       "claim_status": "CONFIRMED"
     },
     {
-      "headline": "YouTube reportedly did not bid for US rights to the 2030 and 2034 World Cups",
+      "headline": "FBI investigating suspected breach of its NCIC criminal-information database (CNN)",
       "published_at": "2026-11-20",
-      "original_source": "https://www.tubefilter.com/2026/11/20/youtube-fifa-world-cup-streaming-rights-netflix-bid/",
-      "trend_score": 51.6,
+      "original_source": "https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database",
+      "trend_score": 55.5,
       "eligible": false,
       "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
       "scores": {
-        "curiosity": 6,
-        "surprise": 6,
-        "broad_relevance": 6,
-        "shareability": 6,
-        "save_potential": 2,
-        "comment_potential": 7,
-        "visual_storytelling": 5,
-        "practical_usefulness": 2,
-        "long_term_relevance": 4,
-        "factual_confidence": 6
+        "broad_relevance": 7,
+        "surprise": 7,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 8,
+        "discussion": 7,
+        "timeliness": 6
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"
         ]
       },
       "signals": null,
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
       "new_development": null,
-      "claim_status": "REPORTED"
+      "claim_status": "INDEPENDENTLY REPORTED"
     },
     {
-      "headline": "Musk promises an unscripted Optimus demo within two months",
+      "headline": "AI trade has worst week since March 2020; Nasdaq erases 2026 gains",
       "published_at": "2026-11-20",
-      "original_source": "https://www.basenor.com/blogs/news/tesla-optimus-demo-coming-in-1-2-months-what-musk-said",
-      "trend_score": 51.6,
+      "original_source": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+      "trend_score": 53.5,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 6,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 7,
+        "discussion": 7,
+        "timeliness": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "OpenAI launches ChatGPT Wallet letting 'dots' agents make purchases with tokenized cards",
+      "published_at": "2026-11-13",
+      "original_source": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "trend_score": 52.5,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 6,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 6,
+        "discussion": 6,
+        "timeliness": 1
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://openai.com/index/introducing-chatgpt-wallet/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Meta tests standalone 'Direct' messaging app for Instagram in Turkiye and Thailand",
+      "published_at": "2026-11-17",
+      "original_source": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
+      "trend_score": 51.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 6,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 4,
+        "discussion": 6,
+        "timeliness": 1
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+      "published_at": "2026-11-22",
+      "original_source": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
+      "trend_score": 50.5,
       "eligible": false,
       "ineligible_reason": "evidence confidence LOW",
       "scores": {
-        "curiosity": 7,
-        "surprise": 6,
         "broad_relevance": 6,
-        "shareability": 6,
-        "save_potential": 2,
-        "comment_potential": 8,
-        "visual_storytelling": 6,
-        "practical_usefulness": 1,
-        "long_term_relevance": 4,
-        "factual_confidence": 3
+        "surprise": 7,
+        "usefulness": 1,
+        "social_momentum": 2,
+        "visual": 9,
+        "consequence": 3,
+        "discussion": 7,
+        "timeliness": 9
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622"
+        ]
+      },
+      "signals": null,
+      "verification_status": "REJECTED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "DISPUTED"
+    },
+    {
+      "headline": "iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock (MacRumors weekly roundup)",
+      "published_at": "2026-11-21",
+      "original_source": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
+      "trend_score": 49.0,
+      "eligible": false,
+      "ineligible_reason": "evidence confidence LOW",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 5,
+        "usefulness": 3,
+        "social_momentum": 2,
+        "visual": 7,
+        "consequence": 4,
+        "discussion": 6,
+        "timeliness": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock"
         ]
       },
       "signals": null,
       "verification_status": "UNVERIFIED",
       "evidence_confidence": "LOW",
       "new_development": null,
-      "claim_status": "CLAIMED"
+      "claim_status": "PRELIMINARY"
     },
     {
-      "headline": "OpenAI board member Paul Christiano puts one-year AI takeover risk at about 10%",
-      "published_at": "2026-11-09",
-      "original_source": "https://thenextweb.com/news/paul-christiano-ai-takeover-hinton-lectures-openai-board",
-      "trend_score": 49.8,
-      "eligible": false,
-      "ineligible_reason": "claim status CLAIMED (only CONFIRMED or REPORTED stories can be selected)",
-      "scores": {
-        "curiosity": 7,
-        "surprise": 6,
-        "broad_relevance": 6,
-        "shareability": 6,
-        "save_potential": 2,
-        "comment_potential": 8,
-        "visual_storytelling": 2,
-        "practical_usefulness": 1,
-        "long_term_relevance": 5,
-        "factual_confidence": 5
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
-        ]
-      },
-      "signals": null,
-      "verification_status": "PARTLY VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CLAIMED"
-    },
-    {
-      "headline": "Reuters: SEC enforcement staff are examining Nvidia's accounting",
+      "headline": "Documents show US approved sale of ~580,000 Nvidia AI chips to China under revenue-share plan, incl. firms Pentagon lists as military-linked",
       "published_at": "2026-11-20",
-      "original_source": "https://www.bloomberg.com/news/articles/2026-11-20/wall-street-regulator-probing-nvidia-s-accounting-reuters-says",
-      "trend_score": 49.0,
+      "original_source": "https://politicalwire.com/2026/11/20/officials-approved-sale-of-580000-nvidia-chips-to-china/",
+      "trend_score": 46.5,
       "eligible": false,
       "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
       "scores": {
-        "curiosity": 7,
-        "surprise": 6,
         "broad_relevance": 5,
-        "shareability": 5,
-        "save_potential": 2,
-        "comment_potential": 7,
-        "visual_storytelling": 3,
-        "practical_usefulness": 2,
-        "long_term_relevance": 5,
-        "factual_confidence": 6
+        "surprise": 6,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 7,
+        "discussion": 7,
+        "timeliness": 4
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://politicalwire.com/2026/11/20/officials-approved-sale-of-580000-nvidia-chips-to-china/"
         ]
       },
       "signals": null,
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
       "new_development": null,
-      "claim_status": "REPORTED"
+      "claim_status": "INDEPENDENTLY REPORTED"
     },
     {
-      "headline": "Nothing sets 8 December reveal for its first screen-free AI device",
+      "headline": "CERT-In critical advisory: attackers altering payee records to push fraudulent payments through normal approvals, beyond banks",
       "published_at": "2026-11-20",
-      "original_source": "https://www.gizmochina.com/2026/11/21/nothings-first-ai-gadget-finally-has-a-launch-date/",
-      "trend_score": 47.2,
+      "original_source": "https://www.aninews.in/news/business/cert-in-flags-unauthorised-payments-beyond-financial-sector20261121153710/",
+      "trend_score": 46.0,
       "eligible": false,
       "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
       "scores": {
-        "curiosity": 6,
+        "broad_relevance": 5,
         "surprise": 5,
-        "broad_relevance": 5,
-        "shareability": 5,
-        "save_potential": 3,
-        "comment_potential": 5,
-        "visual_storytelling": 5,
-        "practical_usefulness": 3,
-        "long_term_relevance": 3,
-        "factual_confidence": 6
+        "usefulness": 6,
+        "social_momentum": 2,
+        "visual": 3,
+        "consequence": 6,
+        "discussion": 4,
+        "timeliness": 7
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://www.aninews.in/news/business/cert-in-flags-unauthorised-payments-beyond-financial-sector20261121153710/"
         ]
       },
       "signals": null,
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
       "new_development": null,
-      "claim_status": "REPORTED"
+      "claim_status": "INDEPENDENTLY REPORTED"
     },
     {
-      "headline": "York University study: 'brain-like' vision AI may rely on parts the brain doesn't use",
+      "headline": "Thinking Machines Lab releases Inkling 2 Mini, Apache-2.0 open-weights looped MoE (26.4B total / 3.4B active) that runs on a 32GB Mac",
       "published_at": "2026-11-20",
-      "original_source": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
-      "trend_score": 42.6,
+      "original_source": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "trend_score": 42.5,
+      "eligible": false,
+      "ineligible_reason": "verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected)",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 6,
+        "social_momentum": 2,
+        "visual": 4,
+        "consequence": 4,
+        "discussion": 5,
+        "timeliness": 4
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://thinkingmachines.ai/news/inkling-2-mini/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Ubisoft launches Motherbrain subsidiary for AI NPCs with memory and AI game masters",
+      "published_at": "2026-11-19",
+      "original_source": "https://tech.yahoo.com/gaming/articles/ubisoft-dumps-money-gen-ai-225650356.html",
+      "trend_score": 40.0,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 5,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 4,
+        "discussion": 6,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://tech.yahoo.com/gaming/articles/ubisoft-dumps-money-gen-ai-225650356.html"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Musk says first Optimus deployments will be in mining and ore refining",
+      "published_at": "2026-11-22",
+      "original_source": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
+      "trend_score": 39.5,
       "eligible": false,
       "ineligible_reason": "evidence confidence LOW",
       "scores": {
-        "curiosity": 6,
-        "surprise": 6,
-        "broad_relevance": 4,
-        "shareability": 4,
-        "save_potential": 3,
-        "comment_potential": 4,
-        "visual_storytelling": 3,
-        "practical_usefulness": 2,
-        "long_term_relevance": 5,
-        "factual_confidence": 5
+        "broad_relevance": 5,
+        "surprise": 5,
+        "usefulness": 1,
+        "social_momentum": 2,
+        "visual": 5,
+        "consequence": 4,
+        "discussion": 5,
+        "timeliness": 7
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026"
         ]
       },
       "signals": null,
-      "verification_status": "PARTLY VERIFIED",
+      "verification_status": "UNVERIFIED",
       "evidence_confidence": "LOW",
       "new_development": null,
-      "claim_status": "REPORTED"
+      "claim_status": "PRELIMINARY"
     },
     {
-      "headline": "Linux KVM flaw CVE-2026-99312 let a cloud VM read host memory on AMD servers",
-      "published_at": "2026-11-19",
-      "original_source": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-      "trend_score": 41.2,
+      "headline": "Cognition (Devin) in talks to raise $2B+ at $75B valuation (Bloomberg)",
+      "published_at": "2026-11-20",
+      "original_source": "https://thenextweb.com/news/cognition-funding-75bn-valuation-bloomberg-devin",
+      "trend_score": 36.5,
       "eligible": false,
       "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
       "scores": {
-        "curiosity": 5,
-        "surprise": 7,
-        "broad_relevance": 3,
-        "shareability": 3,
-        "save_potential": 4,
-        "comment_potential": 4,
-        "visual_storytelling": 2,
-        "practical_usefulness": 3,
-        "long_term_relevance": 4,
-        "factual_confidence": 6
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 3,
+        "consequence": 5,
+        "discussion": 5,
+        "timeliness": 4
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "x.com cannot be opened from this environment; X metrics UNKNOWN"
+          "https://thenextweb.com/news/cognition-funding-75bn-valuation-bloomberg-devin"
         ]
       },
       "signals": null,
       "verification_status": "PARTLY VERIFIED",
       "evidence_confidence": "MEDIUM",
       "new_development": null,
-      "claim_status": "REPORTED"
+      "claim_status": "INDEPENDENTLY REPORTED"
     }
   ],
   "hooks": [
     {
-      "text": "Seventeen million lines of code might just settle a 167-year-old math problem.",
-      "approach": "visual demonstration",
-      "accuracy": 8,
-      "curiosity": 10,
+      "text": "Tesla's driving AI now shows you what it's about to do.",
+      "approach": "surprising capability",
+      "accuracy": 9,
       "clarity": 9,
-      "credibility": 9,
+      "curiosity": 9,
+      "specificity": 8,
       "emotional": 8,
-      "natural": 9,
-      "total": 53,
+      "comprehension": 9,
+      "total": 52,
       "eligible": true
     },
     {
-      "text": "Does a proof count if no human can follow it?",
-      "approach": "contrarian question",
+      "text": "Tesla says its newest FSD is 25 times better. Here's the catch.",
+      "approach": "contradiction",
       "accuracy": 8,
-      "curiosity": 9,
-      "clarity": 9,
-      "credibility": 8,
-      "emotional": 8,
-      "natural": 9,
-      "total": 51,
-      "eligible": true
-    },
-    {
-      "text": "An AI-assisted proof of math's most famous problem just passed a computer's check.",
-      "approach": "surprising fact",
-      "accuracy": 8,
-      "curiosity": 9,
-      "clarity": 9,
-      "credibility": 9,
-      "emotional": 7,
-      "natural": 8,
-      "total": 50,
-      "eligible": true
-    },
-    {
-      "text": "We may have math's biggest answer before anyone understands why it's true.",
-      "approach": "unexpected consequence",
-      "accuracy": 7,
-      "curiosity": 9,
       "clarity": 8,
-      "credibility": 7,
-      "emotional": 8,
-      "natural": 8,
+      "curiosity": 8,
+      "specificity": 8,
+      "emotional": 7,
+      "comprehension": 8,
       "total": 47,
       "eligible": true
     },
     {
-      "text": "If you've ever asked AI for an answer, this math proof matters.",
-      "approach": "direct relevance",
-      "accuracy": 8,
-      "curiosity": 7,
-      "clarity": 8,
-      "credibility": 8,
-      "emotional": 6,
-      "natural": 8,
-      "total": 45,
+      "text": "Tesla just started rolling out FSD version 15.",
+      "approach": "major product reveal",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 5,
+      "specificity": 8,
+      "emotional": 4,
+      "comprehension": 8,
+      "total": 43,
       "eligible": true
+    },
+    {
+      "text": "If a car drives itself, should it show you its plan?",
+      "approach": "important warning",
+      "accuracy": 8,
+      "clarity": 7,
+      "curiosity": 7,
+      "specificity": 5,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 42,
+      "eligible": true
+    },
+    {
+      "text": "Tesla's new update lets you watch the car think.",
+      "approach": "unusual demonstration",
+      "accuracy": 6,
+      "clarity": 9,
+      "curiosity": 9,
+      "specificity": 6,
+      "emotional": 9,
+      "comprehension": 9,
+      "total": 48,
+      "eligible": false
     }
   ],
-  "backups": [
-    "UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI"
-  ],
+  "backups": [],
   "limitations": [
-    "Source audit: x, reddit, youtube, instagram, linkedin, google_trends BLOCKED; news sites mostly blocked.",
-    "Only the leanprover-community GitHub repository page was opened directly; every other source is search-index.",
-    "Weekend window: few stories published 21-22 Nov.",
-    "No engagement observed; metrics UNKNOWN.",
-    "Writer conflict of interest (Claude/Anthropic) disclosed."
+    "Source audit: x.com, Reddit, YouTube, Instagram and most news sites blocked; anthropic.com and github.com reachable.",
+    "tesla.com, teslanorth.com, paultan.org, electrek.co, teslarati.com and notateslaapp.com could not be opened (DNS blocked).",
+    "All social engagement UNKNOWN."
   ],
   "source_audit": {
-    "checked_at_utc": "2026-11-22T08:27:45+00:00",
+    "checked_at_utc": "2026-11-22T14:09:26+00:00",
     "groups": {
       "x": {
         "status": "BLOCKED",
@@ -1071,238 +1054,73 @@
     },
     "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
   },
-  "finalists": [
-    {
-      "headline": "Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis",
-      "why_not": null,
-      "hooks": [
-        {
-          "text": "Seventeen million lines of code might just settle a 167-year-old math problem.",
-          "approach": "visual demonstration",
-          "accuracy": 8,
-          "curiosity": 10,
-          "clarity": 9,
-          "credibility": 9,
-          "emotional": 8,
-          "natural": 9,
-          "total": 53,
-          "eligible": true
-        },
-        {
-          "text": "Does a proof count if no human can follow it?",
-          "approach": "contrarian question",
-          "accuracy": 8,
-          "curiosity": 9,
-          "clarity": 9,
-          "credibility": 8,
-          "emotional": 8,
-          "natural": 9,
-          "total": 51,
-          "eligible": true
-        },
-        {
-          "text": "An AI-assisted proof of math's most famous problem just passed a computer's check.",
-          "approach": "surprising fact",
-          "accuracy": 8,
-          "curiosity": 9,
-          "clarity": 9,
-          "credibility": 9,
-          "emotional": 7,
-          "natural": 8,
-          "total": 50,
-          "eligible": true
-        },
-        {
-          "text": "We may have math's biggest answer before anyone understands why it's true.",
-          "approach": "unexpected consequence",
-          "accuracy": 7,
-          "curiosity": 9,
-          "clarity": 8,
-          "credibility": 7,
-          "emotional": 8,
-          "natural": 8,
-          "total": 47,
-          "eligible": true
-        },
-        {
-          "text": "If you've ever asked AI for an answer, this math proof matters.",
-          "approach": "direct relevance",
-          "accuracy": 8,
-          "curiosity": 7,
-          "clarity": 8,
-          "credibility": 8,
-          "emotional": 6,
-          "natural": 8,
-          "total": 45,
-          "eligible": true
-        }
-      ]
+  "script_checks": {
+    "hook_clarity": {
+      "pass": true,
+      "why": "First line says exactly what is new in eleven plain words."
     },
-    {
-      "headline": "UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI",
-      "why_not": "A summit preview with no outcome yet: abstract, hard to visualise and far less shareable than a machine-checked proof of math's most famous problem.",
-      "hooks": [
-        {
-          "text": "Can a summit with no treaty actually control AI?",
-          "approach": "contrarian question",
-          "accuracy": 8,
-          "curiosity": 7,
-          "clarity": 9,
-          "credibility": 8,
-          "emotional": 6,
-          "natural": 9,
-          "total": 47,
-          "eligible": true
-        },
-        {
-          "text": "Rich countries have hundreds of AI incident teams. Poor countries have six.",
-          "approach": "unexpected consequence",
-          "accuracy": 7,
-          "curiosity": 8,
-          "clarity": 8,
-          "credibility": 7,
-          "emotional": 7,
-          "natural": 8,
-          "total": 45,
-          "eligible": true
-        },
-        {
-          "text": "32 countries just signed a call to control the most powerful AI.",
-          "approach": "surprising fact",
-          "accuracy": 7,
-          "curiosity": 7,
-          "clarity": 8,
-          "credibility": 7,
-          "emotional": 6,
-          "natural": 8,
-          "total": 43,
-          "eligible": true
-        },
-        {
-          "text": "Who decides how powerful AI gets? The UN meets Monday to talk.",
-          "approach": "direct relevance",
-          "accuracy": 8,
-          "curiosity": 6,
-          "clarity": 8,
-          "credibility": 8,
-          "emotional": 5,
-          "natural": 8,
-          "total": 43,
-          "eligible": true
-        },
-        {
-          "text": "Picture 150 officials in Barbados trying to manage frontier AI.",
-          "approach": "visual demonstration",
-          "accuracy": 7,
-          "curiosity": 5,
-          "clarity": 8,
-          "credibility": 7,
-          "emotional": 4,
-          "natural": 7,
-          "total": 38,
-          "eligible": true
-        }
-      ]
-    }
-  ],
-  "variants": {
-    "A": {
-      "angle": "curiosity storytelling",
-      "script": "Seventeen million lines of code might just settle a 167-year-old math problem.\n\nIt's the Riemann Hypothesis, the most famous open question about prime numbers.\n\nOn November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.\n\nBut this proof isn't written for people. It's Lean code that a computer can check.\n\nA day later, Lean's own maintainers said they have full confidence it's correct.\n\nThe strange part? Even they say the next job is for mathematicians to explain why it works.\n\nSo we may have the answer before anyone understands it.",
-      "words": 93,
-      "seconds": 42.7
+    "factual_accuracy": {
+      "pass": true,
+      "why": "Every sentence maps to claims c1-c4 with attributions spoken aloud."
     },
-    "B": {
-      "angle": "practical usefulness",
-      "script": "An AI-assisted proof of math's most famous problem just passed a computer's check.\n\nOn November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved the Riemann Hypothesis. It's a 167-year-old question about prime numbers.\n\nThe proof is about 17 million lines of Lean, code that a computer can check.\n\nA day later, Lean's own maintainers said they have full confidence it's correct.\n\nThat's a useful habit for all of us. When AI hands you an answer, ask for something you can check.\n\nEven they say the next job is human: explaining why it works.",
-      "words": 96,
-      "seconds": 43.6
+    "natural_delivery": {
+      "pass": true,
+      "why": "Short spoken sentences; read aloud twice at a normal pace."
     },
-    "C": {
-      "angle": "surprising consequences",
-      "script": "Math's most famous problem may be solved, and nobody can explain why yet.\n\nThe Riemann Hypothesis has been open for 167 years. It's about how prime numbers behave.\n\nOn November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it, in about 17 million lines of Lean code.\n\nA day later, Lean's own maintainers said they have full confidence it's correct.\n\nEven they say the next job is for mathematicians to explain why it works.\n\nThat's new. The answer arrived before the understanding. So who gets the credit?",
-      "words": 90,
-      "seconds": 41.4
+    "narrative_coherence": {
+      "pass": true,
+      "why": "One idea throughout: the car shows its plan, and can you trust it."
+    },
+    "audience_relevance": {
+      "pass": true,
+      "why": "Self-driving trust is a broad, current debate beyond Tesla owners."
+    },
+    "practical_takeaway": {
+      "pass": true,
+      "why": "Says who has it now and flags the unverified 25x claim before viewers repeat it."
+    },
+    "ending_quality": {
+      "pass": true,
+      "why": "Ends on a natural trust question that invites comments."
+    },
+    "no_redundancy": {
+      "pass": true,
+      "why": "No sentence repeats the headline or another sentence."
+    },
+    "no_jargon": {
+      "pass": true,
+      "why": "Only 'critical interventions' is technical, and it reads plainly in context."
+    },
+    "no_unsupported_implications": {
+      "pass": true,
+      "why": "Never says the car is self-driving or safer; the 25x claim is labelled Tesla's own."
     }
   },
-  "selected_variant": "A",
-  "creative_gate": {
-    "nontechnical_viewer_cares": {
-      "pass": true,
-      "why": "Everyone has heard of 'unsolved math problems'; an AI-assisted proof that only a computer can check is a story anyone can retell."
-    },
-    "hook_compelling": {
-      "pass": true,
-      "why": "A concrete, visual number (17 million lines) against a 167-year-old mystery creates an immediate curiosity gap in 13 words."
-    },
-    "delivers_on_hook": {
-      "pass": true,
-      "why": "The script names the problem, who claims the proof, how it was checked and who certified it, all within the first 30 seconds."
-    },
-    "takeaway": {
-      "pass": true,
-      "why": "The surprising implication: we may have a verified answer before any human understands why it is true."
-    },
-    "natural_language": {
-      "pass": true,
-      "why": "Short spoken sentences, no jargon beyond 'Lean', which is explained in the same line."
-    },
-    "visualizable": {
-      "pass": true,
-      "why": "Real Lean code is public on GitHub to scroll, and the creator can record a tiny Lean proof being checked."
-    },
-    "claims_verified": {
-      "pass": true,
-      "why": "Every script claim passes the tiered gate; the certification and Alpöge's claim are attributed in the spoken words."
-    },
-    "memorable_ending": {
-      "pass": true,
-      "why": "'So we may have the answer before anyone understands it' is a quotable, debatable closing line."
-    },
-    "sounds_like_creator": {
-      "pass": true,
-      "why": "Conversational asides ('The strange part?') and a first-person storyteller tone, not a news-anchor read."
-    }
+  "audience_check": {
+    "why_care_today": "It started rolling out yesterday and the clips are spreading.",
+    "affects_life_or_work": "Self-driving decides how millions may travel; trust is the open question.",
+    "can_they_use_it": "Only Tesla owners in the first wave can use it now.",
+    "surprising": "The driving AI itself draws its plan, like a window into its head.",
+    "demonstrable": "Owners' screen footage and Tesla's own clips show it clearly.",
+    "clear_consequence": "A car that shows its next move may be easier to trust, or to doubt.",
+    "would_share": "People will send it to friends who argue about Tesla and self-driving.",
+    "right_audience": "Tech fans, AI users and car-curious viewers we want to reach."
   },
-  "visual_plan": {
-    "opening_visual": "Fast scroll through the real Lean source in the public GitHub repository leanprover-community/riemann-hypothesis, with a counter ticking up to 17,000,000 lines.",
-    "broll": [
-      "GitHub repository page leanprover-community/riemann-hypothesis (screen capture, credited)",
-      "Public-domain portrait of Bernhard Riemann with an '1859' card"
-    ],
-    "screen_recordings": [
-      {
-        "what": "Scrolling the Lean files of the proof on GitHub",
-        "source": "https://github.com/leanprover-community/riemann-hypothesis"
-      },
-      {
-        "what": "Headline of the Lean community blog statement (credited)",
-        "source": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
-      }
-    ],
-    "demonstrations": [
-      {
-        "what": "Creator types a one-line Lean proof (for example 2 + 2 = 4) and shows Lean accepting it, to explain what 'a computer can check' means",
-        "source": "creator-recorded"
-      }
-    ],
-    "motion_graphics": [
-      "Prime numbers on a number line, thinning out",
-      "Counter 0 to 17,000,000",
-      "Split card: 'Computer: checked' / 'Humans: explaining why'"
-    ],
-    "on_screen_text": [
-      "Riemann Hypothesis (1859)",
-      "17 million lines of Lean",
-      "Alpöge (Anthropic) + Claude, 20 Nov",
-      "Lean FRO + Mathlib: full confidence, 21 Nov",
-      "Next: humans explain why"
-    ],
-    "transitions": [
-      "Hard cut on 'The strange part?'",
-      "Code-scroll wipe into the statement card",
-      "Slow push-in on the final line"
-    ]
+  "practical_takeaway": {
+    "who_can_use": "Tesla owners with FSD (Supervised) in the first rollout wave (reported in the US, HW4/AI4 cars first)",
+    "what_it_does": "Shows a live rendered view of the road with arrows for the turns FSD plans to take",
+    "availability": "Rolling out from 21 Nov 2026 to a first wave; wider timing is only a Musk prediction",
+    "price": "UNKNOWN (no price stated in the sources)",
+    "difference": "The view is rendered by the same model that drives, according to Tesla, instead of a separate visualization",
+    "limitations": "Supervised only; the 25x claim is unverified; not every car or country yet",
+    "why_it_matters": "Seeing a driving AI's intent could change how much people trust it"
   },
-  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented v6 rubric unchanged."
+  "scrutiny": null,
+  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7 virality model unchanged.",
+  "story": {
+    "story_id": "2026-11-22-tesla-fsd-v15-reality-view",
+    "company": "Tesla",
+    "event_date": "2026-11-21",
+    "announced_at": "21 November 2026 (Tesla's X post, 19:24 UTC; coverage 21-22 Nov)"
+  }
 }

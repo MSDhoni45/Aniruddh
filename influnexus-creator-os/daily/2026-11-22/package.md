@@ -2,79 +2,73 @@
 
 ## STATUS: RECORDING READY
 
-> Disclosure: this package was written by Claude, an Anthropic model. The story is about an Anthropic mathematician and Claude, so Anthropic has a direct interest; every claim is attributed and the script makes no claim beyond the Lean community's statement.
+> Disclosure: written by Claude, an Anthropic model. Tesla and xAI are not Anthropic; no conflict known.
 
 ## A. Today's winning topic
 
-- **Topic:** Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis
+- **Topic:** Tesla starts rolling out FSD (Supervised) v15, whose driving AI now draws what it plans to do (Reality View)
 - **Language:** English
-- **Category:** AI (BREAKING)
-- **Original announcement date:** 20 November 2026 (Alpöge's Lean proof); 21 November 2026 (Lean FRO and Mathlib Initiative joint statement)
-- **Viral potential score:** 79.2/100
+- **Category:** FUTURE TECH (BREAKING)
+- **Original announcement date:** 21 November 2026 (Tesla's X post, 19:24 UTC; coverage 21-22 Nov)
+- **Viral potential score:** 63.0/100
 - **Evidence confidence:** MEDIUM
-- **Why selected:** The only strong story with a dated development inside the 24-hour window, and the top v6 score: a machine-checked proof of math's most famous problem, made with AI, certified by Lean's maintainers on 21 Nov.
+- **Why selected:** Strongest eligible story after the V7 verification gate: a visual, widely discussed product change with a clear consequence (can you see what the car will do?).
 
 ## B. Verified research
 
-On 20 November 2026 Levent Alpöge, a mathematician at Anthropic, released a Lean formalization claiming a proof of the Riemann Hypothesis, posed in 1859, and says he found it working with Claude. The proof is about 17 million lines of Lean code in 175,187 files. On 21 November the Lean FRO and the Mathlib Initiative endorsed a joint statement on the Lean community blog saying they have full confidence that the statement and proof are correct, after two tools matched the theorem to Mathlib's definition. The statement adds that verification does not explain why the proof works. No written paper exists, human review continues, and the Clay prize requires publication plus two years of scrutiny. Hours after Alpöge's claim, Stanford's Ravi Vakil posted a rival all-human draft of the generalized hypothesis. The Lean blog was read through a search index; the Lean community's GitHub repository was opened directly.
+A fresh research pass covered 23 developments from 21-22 Nov across AI labs, tools, creator tech, robotics, cybersecurity, fintech and policy. Ten were eligible inside the 24-hour window. The highest scorer, OpenRouter removing three inference providers after a Dragos study of prompt theft, was held under the V7 extraordinary-claims rule because neither the notice nor the study could be opened. Tesla's FSD (Supervised) v15 rollout is the next eligible story: Tesla's own post and its head of AI software announced it on 21 Nov, and Tesla North, paultan.org, Electrek and techAU covered it. Reality View is the visual hook; the 25x claim is Tesla's, with no published baseline. All social metrics are unknown because x.com cannot be opened here.
 
 **Key verified facts**
 
-- 20 Nov 2026: Alpöge (Anthropic) releases a Lean proof of the Riemann Hypothesis; says he worked with Claude.
-- About 17 million lines of Lean code (175,187 files).
-- 21 Nov: Lean FRO and Mathlib Initiative say they have full confidence it is correct.
-- Their statement says verification does not explain why it works.
-- The problem dates from 1859.
+- Rollout began 21 Nov 2026 (first wave).
+- FSD (Supervised) v15.0.1 in update 2026.38.6.11.
+- Reality View: the driving model renders a live view; arrows show planned turns (Tesla's description).
+- 25x critical intervention claim is Tesla's own, no published baseline.
+- Musk: wide release in December (prediction).
 
 **Uncertainties**
 
-- No written human-readable paper; outside mathematicians are still reviewing the argument.
-- Reports differ on whether the certified statement covers the generalized hypothesis (the Lean statement certifies Mathlib's RH).
-- The Lean blog and the Lean X post could not be opened (blocked); read via search index.
-- Exact publication days of Scientific American, Unite.AI and OfficeChai coverage are not observed; the search index places them on 21-22 Nov.
-- An arXiv paper (2609.35719) describes an earlier Claude result as partial; it appears to concern Anthropic's August zeta-zero work, not this proof.
-- Written by Claude about Anthropic and Claude: conflict of interest disclosed.
+- How many cars received v15 and in which countries (first wave reported in the US).
+- Hardware coverage: reports say HW4/AI4 first; whether HW3 cars get it is unclear.
+- Tesla has not defined or published the data behind the 25x claim; no independent test exists.
+- A realistic rendering is not proof the car understands the scene perfectly.
+- Tesla's posts and every news page were read through search results; none could be opened (DNS blocked).
 
 **Context**
 
-In August 2026 Anthropic reported that Claude improved a lower bound on the share of zeta zeros on the critical line, a partial result. The Clay Mathematics Institute's $1 million Millennium Prize needs publication, two years of scrutiny and general acceptance.
+FSD (Supervised) still requires an attentive driver. Earlier versions showed a simpler, game-like visualization; Reality View replaces it with a rendered scene from the driving model itself.
 
 **Primary sources**
 
-- [Lean community blog: Lean verification of the Riemann Hypothesis (21 Nov 2026, indexed text)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/)
-- [leanprover-community/riemann-hypothesis on GitHub (opened)](https://github.com/leanprover-community/riemann-hypothesis)
+- [Tesla on X: FSD v15 now starting to roll out (21 Nov 2026)](https://x.com/Tesla/status/2124222447855743019)
+- [Ashok Elluswamy on X: Reality View (21 Nov 2026)](https://x.com/aelluswamy/status/2124229978560835880)
 
 **Supporting sources**
 
-- [NPR (21 Nov)](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai)
-- [Al Jazeera (21 Nov)](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
-- [TechCrunch (20 Nov)](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/)
-- [Scientific American](https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/)
-- [Science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer)
-- [Unite.AI](https://www.unite.ai/lean-and-mathlib-communities-certify-claude-assisted-riemann-proof/)
-- [OfficeChai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/)
-- [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html)
-- [Phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html)
+- [Tesla North (21 Nov)](https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/)
+- [paultan.org (22 Nov)](https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/)
+- [Electrek (21 Nov)](https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/)
+- [Digital Trends](https://www.digitaltrends.com/cars/tesla-fsd-v15-rollout/)
 
 ## C. Final recording script
 
 ```
-Seventeen million lines of code might just settle a 167-year-old math problem.
+Tesla's driving AI now shows you what it's about to do.
 
-It's the Riemann Hypothesis, the most famous open question about prime numbers.
+On November 21, Tesla started rolling out FSD Supervised version 15 to a first wave of owners.
 
-On November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.
+The new feature is called Reality View.
 
-But this proof isn't written for people. It's Lean code that a computer can check.
+Tesla's head of AI software says the model that drives the car also draws the road around it, live.
 
-A day later, Lean's own maintainers said they have full confidence it's correct.
+Arrows show the turns it plans to take.
 
-The strange part? Even they say the next job is for mathematicians to explain why it works.
+Tesla claims a 25x improvement in critical interventions. That's Tesla's own number, not an independent test.
 
-So we may have the answer before anyone understands it.
+Would seeing its plan make you trust it more?
 ```
 
-93 words · about 42.7 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 88.5/100
+87 words · about 39.7 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
 
 ## Claim verification table
 
@@ -82,67 +76,60 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 
 | # | Claim | Risk | Evidence level | Why | Sources (kind, access, date) | In script |
 |---|---|---|---|---|---|---|
-| c1 | In a joint statement on 21 November 2026, the Lean FRO and the Mathlib Initiative said they have full confidence that Levent Alpöge's Lean proof of the Riemann Hypothesis is correct | high (refers to a recent date (2026-11-21)) | MEDIUM-HIGH | official indexed text plus 3 independent sources: officechai, scientific american, unite.ai | [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) (primary, search-index, 2026-11-21); [scientific american](https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/) (news, search-index, 2026-11-22); [unite.ai](https://www.unite.ai/lean-and-mathlib-communities-certify-claude-assisted-riemann-proof/) (news, search-index, 2026-11-22); [officechai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/) (news, search-index, 2026-11-22) | yes |
-| c2 | On 20 November 2026 Levent Alpöge released a Lean formalization claiming a proof of the Riemann Hypothesis (and of GRH for Dirichlet L-functions) | high (refers to a recent date (2026-11-20)) | HIGH | primary source opened directly | [leanprover-community (github)](https://github.com/leanprover-community/riemann-hypothesis) (primary, opened, 2026-11-20); [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/) (news, search-index, 2026-11-20); [npr](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai) (news, search-index, 2026-11-21); [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) (news, search-index, 2026-11-21) | yes |
-| c3 | Levent Alpöge, a mathematician at Anthropic, says he found the proof working with Claude | low (stable descriptive fact with no time-sensitive content) | MEDIUM | 5 independent reputable reports: al jazeera, heise online, npr, phys.org, techcrunch | [npr](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai) (news, search-index, 2026-11-21); [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/) (news, search-index, 2026-11-20); [phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html) (news, search-index, 2026-11); [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html) (news, search-index, 2026-11); [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) (news, search-index, 2026-11-21) | yes |
-| c4 | The Lean proof is about 17 million lines of code | low (stable descriptive fact with no time-sensitive content) | MEDIUM-HIGH | official indexed text plus 2 independent sources: al jazeera, science | [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) (primary, search-index, 2026-11-21); [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer) (news, search-index, 2026-11); [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) (news, search-index, 2026-11-21) | yes |
-| c5 | The Riemann Hypothesis was first posed in 1859, 167 years ago | low (explicitly in the past) | MEDIUM | 3 independent reputable reports: phys.org, scientific american, techcrunch | [phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html) (news, search-index, 2026-11); [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/) (news, search-index, 2026-11-20); [scientific american](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/) (news, search-index, 2026-11) | yes |
-| c6 | The Riemann Hypothesis is described as the most famous open problem in mathematics and is a prediction about prime numbers | low (stable descriptive fact with no time-sensitive content) | MEDIUM | 3 independent reputable reports: al jazeera, science, scientific american | [scientific american](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/) (news, search-index, 2026-11); [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) (news, search-index, 2026-11-21); [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer) (news, search-index, 2026-11) | yes |
-| c7 | The proof is written as Lean code, which a computer checks | low (stable descriptive fact with no time-sensitive content) | HIGH | primary source opened directly | [leanprover-community (github)](https://github.com/leanprover-community/riemann-hypothesis) (primary, opened, 2026-11-20); [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html) (news, search-index, 2026-11) | yes |
-| c8 | The Lean statement says Lean verification confirms the proof is correct but does not explain why it works, and looks to mathematicians to explain it | low (stable descriptive fact with no time-sensitive content) | MEDIUM-HIGH | official indexed text plus 2 independent sources: al jazeera, officechai | [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) (primary, search-index, 2026-11-21); [officechai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/) (news, search-index, 2026-11-22); [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) (news, search-index, 2026-11-21) | yes |
-| c9 | Hours after Alpöge's claim, Stanford's Ravi Vakil posted a draft proof of the generalized Riemann Hypothesis by Alessandro Masullo, described as all human with no AI | low (stable descriptive fact with no time-sensitive content) | MEDIUM | 2 independent reputable reports: science, techcrunch | [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/) (news, search-index, 2026-11-20); [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer) (news, search-index, 2026-11) | no |
-| c10 | The Clay Millennium Prize requires publication, two years of scrutiny and general acceptance before a solution is considered | low (stable descriptive fact with no time-sensitive content) | LOW | syndicated or repeated copies of one report | [clay mathematics institute](https://www.claymath.org/millennium-problems/rules/) (primary, search-index, 2018-09-26); [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) (news, search-index, 2026-11-21) | no |
+| c1 | On 21 November 2026 Tesla started rolling out FSD (Supervised) v15 to a first wave of owners | high (refers to a recent date (2026-11-21)) | MEDIUM-HIGH | official indexed text plus 3 independent sources: electrek, paultan.org, tesla north | [tesla (x)](https://x.com/Tesla/status/2124222447855743019) (primary, search-index, 2026-11-21); [ashok elluswamy, tesla (x)](https://x.com/aelluswamy/status/2124224924512641512) (primary, search-index, 2026-11-21); [tesla north](https://teslanorth.com/2026/11/21/tesla-software-update-2026-38-6-11-fsd-15-0-1/) (news, search-index, 2026-11-21); [paultan.org](https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/) (news, search-index, 2026-11-22); [electrek](https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/) (news, search-index, 2026-11-21) | yes |
+| c2 | Tesla's head of AI software, Ashok Elluswamy, says the same end-to-end driving model also renders a live, realistic view of the world around the car (Reality View) | high (refers to a recent date (2026-11-21)) | MEDIUM-HIGH | official indexed text plus 3 independent sources: paultan.org, techau, tesla north | [ashok elluswamy, tesla (x)](https://x.com/aelluswamy/status/2124229978560835880) (primary, search-index, 2026-11-21); [tesla north](https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/) (news, search-index, 2026-11-21); [paultan.org](https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/) (news, search-index, 2026-11-22); [techau](https://x.com/techAU/status/2124262266661126207) (news, search-index, 2026-11-21) | yes |
+| c3 | In Reality View, arrows show the turns FSD intends to take | high (refers to a recent date (2026-11-21)) | MEDIUM-HIGH | official indexed text plus 2 independent sources: paultan.org, tesla north | [ashok elluswamy, tesla (x)](https://x.com/aelluswamy/status/2124229978560835880) (primary, search-index, 2026-11-21); [tesla north](https://teslanorth.com/2026/11/21/tesla-fsd-v15-release-notes/) (news, search-index, 2026-11-21); [paultan.org](https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/) (news, search-index, 2026-11-22) | yes |
+| c4 | Tesla claims FSD v15 improves the critical intervention rate by 25x; it has not published the underlying numbers | high (refers to a recent date (2026-11-21)) | MEDIUM-HIGH | official indexed text plus 2 independent sources: digital trends, electrek | [tesla (x)](https://x.com/Tesla/status/2124222447855743019) (primary, search-index, 2026-11-21); [electrek](https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/) (news, search-index, 2026-11-21); [digital trends](https://www.digitaltrends.com/cars/tesla-fsd-v15-rollout/) (news, search-index, 2026-11) | yes |
+| c5 | Elon Musk says FSD v15 will be released widely in December | high (present or future time context) | LOW | syndicated or repeated copies of one report | [tesla oracle](https://www.teslaoracle.com/2026/11/21/tesla-fsd-v15-to-go-wide-release-with-the-2026-holiday-update-and-mind-bending-reality-renders-in-december-says-musk/) (news, search-index, 2026-11-21); [sawyer merritt (x)](https://x.com/SawyerMerritt/status/2124043482683625943) (blog, search-index, 2026-11-21) | no |
 
 ## D. Recording direction
 
 Delivery only. Keep your natural accent; no editing instructions.
 
-- **Tone:** Curious and a little awed, careful not to overclaim.
-- **Opening expression:** Look at a laptop full of scrolling code, then turn to camera.
-- **Emphasise:** Seventeen million, 167-year-old, said he and Claude, full confidence, explain why, before anyone understands it
-- **Pauses:** beat after the hook; pause before 'The strange part?'; slow final line
-- **Pronunciation:** Riemann: REE-mahn; Alpöge: AL-puh-gay (unverified; check his own talks); Lean: as in 'lean'
-- **Estimated duration:** 42.7 s
+- **Tone:** Curious, even-handed.
+- **Opening expression:** Look at the camera as if showing a friend something on your phone.
+- **Emphasise:** shows you, about to do, Reality View, Tesla's own number
+- **Pauses:** beat after the hook; full beat after 'not an independent test.'
+- **Pronunciation:** FSD: eff-ess-dee; Reality View: two words, equal stress
+- **Estimated duration:** 39.7 s
 
 ## E. Platform content
 
 **Instagram**
 
-Cover headline: AI, 17 million lines, and math's biggest problem
+Cover headline: Tesla's AI shows its plan
 
-An Anthropic mathematician says he and Claude proved the Riemann Hypothesis, posed in 1859. The proof is about 17 million lines of Lean code. On 21 Nov, Lean's maintainers said they have full confidence it is correct, but humans still have to explain why it works. Would you trust it?
+Tesla's driving AI now shows you what it's about to do. FSD (Supervised) v15 started rolling out on 21 Nov with Reality View: arrows for the turns it plans to take. Tesla also claims a 25x improvement, but that's its own number. Would seeing its plan make you trust it more?
 
-#RiemannHypothesis #AI #Math #Lean
+#Tesla #FSD #SelfDriving #AI
 
 **LinkedIn**
 
-On 20 November, Anthropic mathematician Levent Alpöge released a Lean proof of the Riemann Hypothesis, made with Claude. On 21 November the Lean FRO and the Mathlib Initiative said they have full confidence that the 17-million-line proof is correct. They also note that verification does not explain why it works.
+Tesla began rolling out FSD (Supervised) v15 on 21 Nov. Its new Reality View is rendered by the driving model itself and shows planned turns. Tesla also claims a 25x better critical intervention rate, without published numbers.
 
-Business relevance: Machine-checkable output may become the standard for trusting AI-generated work in high-stakes fields.
+Business relevance: Explainability as a product feature: showing intent may matter as much as raw capability for trust.
 
-Discussion prompt: Would your organisation accept AI output that is machine-verified but not yet understood?
+Discussion prompt: Does showing an AI's plan build trust, or just look convincing?
 
 **X**
 
-An Anthropic mathematician says he and Claude proved the Riemann Hypothesis in ~17M lines of Lean. On 21 Nov the Lean FRO and Mathlib Initiative said they have full confidence it is correct. Human understanding comes next. (Lean community blog)
+Tesla started rolling out FSD (Supervised) v15 on 21 Nov. Reality View draws the turns the car plans to take, rendered by the driving model itself (per Tesla). The 25x claim is Tesla's own number; no independent test yet.
 
 **YouTube Shorts**
 
-Title: AI-Assisted Proof of the Riemann Hypothesis Checked by Computer
+Title: Tesla's FSD v15 Now Shows You What It's About to Do
 
-On 20 Nov 2026 Levent Alpöge (Anthropic) released a 17-million-line Lean proof of the Riemann Hypothesis made with Claude; on 21 Nov the Lean FRO and Mathlib Initiative said they have full confidence it is correct. Sources: Lean community blog, NPR, Scientific American. Disclosure: written with Claude (Anthropic).
+FSD (Supervised) v15 began rolling out on 21 Nov 2026 with Reality View. Sources: Tesla on X, Ashok Elluswamy on X, Tesla North, paultan.org, Electrek. The 25x claim is Tesla's own.
 
-#Shorts #AI #Math
-
-Keywords: Riemann Hypothesis, Lean, Claude, AI math proof, Mathlib
+Keywords: Tesla FSD v15, Reality View, self-driving, AI
 
 ## F. Growth reasoning
 
-- **Why they may watch:** A visual number and a famous mystery.
-- **Why they may share:** A milestone people retell.
-- **Why they may follow:** Sourced AI milestones without hype.
-- **Audience segment:** Students, AI-curious and science-curious viewers in India and globally.
-- **What could make it underperform:** Abstract maths may lose casual viewers; Anthropic connection may read as promotional (disclosed).
+- **Why they may watch:** A rendered driving view is striking.
+- **Why they may share:** Self-driving trust debate.
+- **Why they may follow:** Even-handed coverage of company claims.
+- **Audience segment:** Global tech fans and AI users.
+- **What could make it underperform:** Tesla fatigue; many viewers do not own a Tesla.
 
 A high internal score is a writing standard, not a forecast. No view counts are promised.
 
@@ -159,27 +146,29 @@ Engagement counts appear only where they were actually observed.
 
 | # | Topic | Type | Score | Confidence | Status |
 |---|---|---|---|---|---|
-| 1 | Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis | BREAKING | 79.2 | MEDIUM | eligible |
-| 2 | UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI | EMERGING | 41.0 | MEDIUM | eligible |
-| 3 | Signal starts blocking screenshots so phone AI assistants can't read chats | BREAKING | 74.2 | MEDIUM | already covered |
-| 4 | Waymo pauses US freeway rides and files two recalls after California's freeway ban | BREAKING | 70.4 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 5 | MIT: the brain's sleep-time cleaning waves weaken after 60 | EVERGREEN | 69.6 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 6 | Microsoft will retire To Do in June 2027, with no replacement for personal users | BREAKING | 66.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 7 | Potatoes grown in simulated Moon soil match Earth yields, with 30% compost | EVERGREEN | 58.4 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 8 | FBI warns criminals use the ARTEX AI agent framework to breach networks in under three hours | BREAKING | 58.4 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 9 | Stanford's Ravi Vakil posts a rival, all-human draft proof of the generalized Riemann Hypothesis | BREAKING | 58.2 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 10 | Hackers leak customer data tied to Visa, Mastercard and JPMorgan via third-party vendors | BREAKING | 57.4 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 11 | Trump threatens a 'tremendous tax' on US companies building AI data centers abroad | BREAKING | 57.2 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 12 | ChatGPT Space rolls out to Plus users | BREAKING | 56.4 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 13 | Apple's $250M Siri AI settlement: one month left to claim | EVERGREEN | 55.6 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 14 | Bell Canada says an 'agentic' hacker stole enterprise customer data | BREAKING | 51.8 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 15 | YouTube reportedly did not bid for US rights to the 2030 and 2034 World Cups | BREAKING | 51.6 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 16 | Musk promises an unscripted Optimus demo within two months | EMERGING | 51.6 | LOW | evidence confidence LOW |
-| 17 | OpenAI board member Paul Christiano puts one-year AI takeover risk at about 10% | EVERGREEN | 49.8 | MEDIUM | claim status CLAIMED (only CONFIRMED or REPORTED stories can be selected) |
-| 18 | Reuters: SEC enforcement staff are examining Nvidia's accounting | BREAKING | 49.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 19 | Nothing sets 8 December reveal for its first screen-free AI device | EMERGING | 47.2 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
-| 20 | York University study: 'brain-like' vision AI may rely on parts the brain doesn't use | EMERGING | 42.6 | LOW | evidence confidence LOW |
-| 21 | Linux KVM flaw CVE-2026-99312 let a cloud VM read host memory on AMD servers | BREAKING | 41.2 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 1 | Tesla starts rolling out FSD (Supervised) v15, whose driving AI now draws what it plans to do (Reality View) | BREAKING | 63.0 | MEDIUM | eligible |
+| 2 | Waymo files two recalls and pauses freeway rides nationwide after California DMV 'imminent hazard' freeway ban | BREAKING | 54.5 | MEDIUM | eligible |
+| 3 | Amazon reportedly nears ~$7.5B deal to buy AI startup Decart (FT) | BREAKING | 54.0 | MEDIUM | eligible |
+| 4 | UN talks on AI 'killer robots' end with mandate to elaborate possible rules by 2028, no binding commitment | BREAKING | 52.0 | MEDIUM | eligible |
+| 5 | Microsoft: attackers exploited Entra Connect Health API flaw to read tenant metadata (admin emails, tenant IDs) | BREAKING | 48.5 | MEDIUM | eligible |
+| 6 | South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov | BREAKING | 40.5 | MEDIUM | eligible |
+| 7 | KEPCO says personal data of ~1.52M records leaked (customer platform + procurement system) | BREAKING | 36.5 | MEDIUM | eligible |
+| 8 | OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after Dragos canary study found prompt theft | BREAKING | 69.5 | MEDIUM | on hold: V7 extraordinary-claims rule (security breach): neither OpenRouter's notice nor Dragos's study could be opened (DNS blocked) and no independent confirmation could be opened; all evidence is search excerpts |
+| 9 | Amazon: China-linked actor's autonomous AI agents (Cairn framework) found and exploited a MONAI Label zero-day in ~11 minutes | EMERGING | 63.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 10 | Google makes Gemini Tasks (agent) free in six countries incl. India, on Gemini 4 Hydrogen | EMERGING | 60.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 11 | Instagram lets users edit Stories within 15 minutes of posting (keeps views/replies, shows 'Edited' label) | EMERGING | 58.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 12 | FBI investigating suspected breach of its NCIC criminal-information database (CNN) | EMERGING | 55.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 13 | AI trade has worst week since March 2020; Nasdaq erases 2026 gains | EMERGING | 53.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 14 | OpenAI launches ChatGPT Wallet letting 'dots' agents make purchases with tokenized cards | EMERGING | 52.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 15 | Meta tests standalone 'Direct' messaging app for Instagram in Turkiye and Thailand | EMERGING | 51.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 16 | Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet | BREAKING | 50.5 | LOW | evidence confidence LOW |
+| 17 | iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock (MacRumors weekly roundup) | BREAKING | 49.0 | LOW | evidence confidence LOW |
+| 18 | Documents show US approved sale of ~580,000 Nvidia AI chips to China under revenue-share plan, incl. firms Pentagon lists as military-linked | EMERGING | 46.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 19 | CERT-In critical advisory: attackers altering payee records to push fraudulent payments through normal approvals, beyond banks | EMERGING | 46.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 20 | Thinking Machines Lab releases Inkling 2 Mini, Apache-2.0 open-weights looped MoE (26.4B total / 3.4B active) that runs on a 32GB Mac | EMERGING | 42.5 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
+| 21 | Ubisoft launches Motherbrain subsidiary for AI NPCs with memory and AI game masters | EMERGING | 40.0 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
+| 22 | Musk says first Optimus deployments will be in mining and ore refining | BREAKING | 39.5 | LOW | evidence confidence LOW |
+| 23 | Cognition (Devin) in talks to raise $2B+ at $75B valuation (Bloomberg) | EMERGING | 36.5 | MEDIUM | published before the 24-hour research window with no dated new development inside it |
 
 ## Appendix 3: Hook candidates
 
@@ -189,12 +178,8 @@ Scored internally; only the winning hook is delivered. All candidates are in `re
 
 | Check | Score /10 |
 |---|---|
-| hook | 9 |
-| clarity | 9 |
-| retention | 8 |
 
 ## Appendix 5: Research access limits
 
-- x.com, reddit, youtube, instagram, linkedin and most news sites blocked; outlets read via search index.
-- leanprover-community.github.io, claymath.org, npr.org, techmeme.com and daily-digest sites failed DNS; GitHub repository page opened via WebFetch.
-- No social engagement observed; UNKNOWN.
+- x.com posts were read through search results only; engagement UNKNOWN.
+- News and Tesla sites could not be opened (DNS blocked).

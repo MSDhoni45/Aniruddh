@@ -1,23 +1,21 @@
-Seventeen million lines
-of code might just settle
-a 167-year-old math problem.
-It's the Riemann Hypothesis,
-the most famous open
-question about prime numbers.
-On November 20,
-Anthropic mathematician Levent Alpöge
-said he and Claude
-had proved it.
-But this proof isn't
-written for people.
-It's Lean code
-that a computer can check.
-A day later,
-Lean's own maintainers said they
-have full confidence it's correct.
-The strange part?
-Even they say the next
-job is for mathematicians
-to explain why it works.
-So we may have the
-answer before anyone understands it.
+Tesla's driving AI now
+shows you what
+it's about to do.
+On November 21,
+Tesla started rolling out FSD
+Supervised version 15 to
+a first wave of owners.
+The new feature
+is called Reality View.
+Tesla's head of AI software
+says the model that drives
+the car also draws
+the road around it, live.
+Arrows show the turns
+it plans to take.
+Tesla claims a 25x
+improvement in critical interventions.
+That's Tesla's own number,
+not an independent test.
+Would seeing its plan make
+you trust it more?

@@ -188,7 +188,8 @@ def trial():
     return json.loads(f.read_text(encoding="utf-8"))
 
 
-def test_trial_package_is_recording_ready_and_delivers_eight_items_only(tmp_path):
+def test_trial_package_is_recording_ready_and_delivers_eight_items_only(tmp_path, monkeypatch):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])   # as it stood at trial time (the story was held later under V7)
     p = trial()
     probs, info = package.validate(p)
     assert probs == [] and info["ready"]["status"] == "RECORDING READY"
@@ -206,7 +207,8 @@ def test_trial_package_is_recording_ready_and_delivers_eight_items_only(tmp_path
     assert sum(len(f["hooks"]) for f in rj["finalists"]) == 5 * len(p["finalists"]) and set(rj["variants"]) == {"A", "B", "C"}
 
 
-def test_trial_mutations_are_refused():
+def test_trial_mutations_are_refused(monkeypatch):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])
     base = trial()
     p = {**base, "script": base["variants"]["B"]["script"]}
     assert any("selected variant" in x or "chosen hook" in x or "open with" in x for x in package.validate(p)[0])

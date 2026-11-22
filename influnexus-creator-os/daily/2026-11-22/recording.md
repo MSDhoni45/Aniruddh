@@ -1,24 +1,24 @@
 # Recording: 2026-11-22 (RECORDING READY)
 
-Seventeen million lines of code might just settle a 167-year-old math problem.
+Tesla's driving AI now shows you what it's about to do.
 
-It's the Riemann Hypothesis, the most famous open question about prime numbers.
+On November 21, Tesla started rolling out FSD Supervised version 15 to a first wave of owners.
 
-On November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.
+The new feature is called Reality View.
 
-But this proof isn't written for people. It's Lean code that a computer can check.
+Tesla's head of AI software says the model that drives the car also draws the road around it, live.
 
-A day later, Lean's own maintainers said they have full confidence it's correct.
+Arrows show the turns it plans to take.
 
-The strange part? Even they say the next job is for mathematicians to explain why it works.
+Tesla claims a 25x improvement in critical interventions. That's Tesla's own number, not an independent test.
 
-So we may have the answer before anyone understands it.
+Would seeing its plan make you trust it more?
 
-About 42.7 seconds.
+About 39.7 seconds.
 
-- Tone: Curious and a little awed, careful not to overclaim.
-- Opening: Look at a laptop full of scrolling code, then turn to camera.
-- Pauses: beat after the hook; pause before 'The strange part?'; slow final line
-- Emphasise: Seventeen million, 167-year-old, said he and Claude, full confidence, explain why, before anyone understands it
-- Pronunciation: Riemann: REE-mahn; Alpöge: AL-puh-gay (unverified; check his own talks); Lean: as in 'lean'
+- Tone: Curious, even-handed.
+- Opening: Look at the camera as if showing a friend something on your phone.
+- Pauses: beat after the hook; full beat after 'not an independent test.'
+- Emphasise: shows you, about to do, Reality View, Tesla's own number
+- Pronunciation: FSD: eff-ess-dee; Reality View: two words, equal stress
 - Keep your natural accent.
