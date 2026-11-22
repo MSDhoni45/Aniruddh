@@ -250,3 +250,30 @@ def test_v7_package_rules_refuse_bad_changes(monkeypatch):
         if c["headline"].startswith("OpenRouter"):
             c.pop("hold_reason")                               # without the hold, the higher-scoring story must win
     assert any("topic must be the top eligible candidate" in x for x in package.validate({**base, "candidates": cands})[0])
+
+
+# --- V7.1: best discovered / verified / ready, and the fallback guard ------------------------------------------------
+
+def test_selection_tiers_list_blockers_above_the_selected_story(monkeypatch):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])
+    probs, info = package.validate(opened_copy())
+    t = info["tiers"]
+    assert probs == [] and t["best_discovered"]["headline"].startswith("OpenRouter")
+    assert t["best_ready"]["headline"].startswith("Tesla") and t["fallback"] is False      # 6.5 points: not a fallback
+    assert any(b["headline"].startswith("OpenRouter") and "extraordinary" in b["blocker"] for b in t["blockers"])
+
+
+def test_a_much_weaker_ready_story_must_explain_the_fallback(monkeypatch, tmp_path):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])
+    p = opened_copy()
+    for c in p["candidates"]:
+        if c["headline"].startswith("Tesla"):
+            c["scores"] = {k: 5.7 for k in c["scores"]}                                # 57 vs 69.5: a fallback
+    probs, info = package.validate(p)
+    assert info["tiers"]["fallback"] and any(x.startswith("fallback:") for x in probs)
+    p["fallback_reason"] = "OpenRouter's notice and study could not be opened from this environment; allow openrouter.ai."
+    probs, info = package.validate(p)
+    assert probs == []
+    package.save(p, tmp_path, record=False)
+    today = (tmp_path / "today.md").read_text(encoding="utf-8")
+    assert "FALLBACK STORY" in today and "A. Best story discovered" in today and "C. Best story ready to record" in today

@@ -84,6 +84,23 @@ excerpts of a primary page plus press coverage are not enough for them.
 script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
 not from verification.
 
+## V7.1: discovery before verification (22 Nov 2026, evening)
+Where this differs from the V7 section below, this wins.
+- **Discover on audience potential, not on what opens.** Build the pool from everything search and approved integrations
+  surface, whatever its source can be opened. Look first at major AI launches, surprising demos, creator and marketing tools,
+  robotics, consumer tech, OpenAI/Google/Meta/NVIDIA/Apple/Microsoft/Tesla/Anthropic developments, AI in healthcare and fintech,
+  and significant startup news. Niche updates qualify but never win just because they are easier to verify.
+- **Three tiers, always reported** (computed by `creatoros package` and shown in today.md section 2): A best story
+  discovered, B best story that passed the verification gate, C best story ready to record, plus the blocker for every story
+  ranked above C. If C is 10 or more points below A, the package needs `fallback_reason` (what blocked the stronger story and
+  what would unblock it) and the brief opens that section with a FALLBACK STORY banner. Verification is never relaxed.
+- **Approved integrations:** in interactive sessions the Product Hunt connector (no sign-in) is a discovery source for new
+  tools and launches (`get_product_leaderboard`, `search_products`); a launch page is the maker's own claim (COMPANY-CLAIMED).
+  The scheduled task has no connectors attached (`mcp_connections: []`), so the 08:41 run uses web search and WebFetch only.
+- **Analytics:** Metricool is connected but its brand has no social network linked; once Instagram is linked there,
+  `getAnalyticsDataByMetrics` can supply followers and reel metrics (record them with `creatoros followers-add` /
+  `metrics-add`, source "Metricool"). HubSpot is connected without the Social permission.
+
 ## V7: Viral AI & Technology Creator Engine (accepted from 2026-11-22, required from 2026-11-23)
 The creator's V7 brief. Where it differs from v6, v5, v4 or v3 below, this section wins. Unchanged and still required:
 "Verification policy", HOLD/fallback, time budget, cost control (ONE fresh subagent), delivery stages, the duplicate guard.

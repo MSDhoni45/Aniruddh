@@ -1,1551 +1,1552 @@
 {
-  "date": "2026-11-22",
-  "language": "english",
-  "scoring": "v7",
-  "slug": "obs-33-0-3-older-cpu-crash-fix",
-  "keys": [
-    "obs-studio-33.0.3",
-    "obs-33-0-2-crash"
-  ],
-  "topic": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
-  "category": "CREATOR TECH",
-  "topic_type": "BREAKING",
-  "announced_at": "22 November 2026 (GitHub release 33.0.3; 33.0.2 on 20 Nov)",
-  "event_date": "2026-11-22",
-  "story_id": "2026-11-22-obs-33-0-3-older-cpu-crash-fix",
-  "company": "OBS Project",
-  "generated_at": "2026-11-22T14:40:00+00:00",
-  "research_window": {
-    "start_utc": "2026-11-21T14:22:00+00:00",
-    "end_utc": "2026-11-22T14:22:00+00:00",
-    "start_ist": "2026-11-21T19:52:00+05:30",
-    "end_ist": "2026-11-22T19:52:00+05:30",
-    "hours": 24
+ "date": "2026-11-22",
+ "language": "english",
+ "scoring": "v7",
+ "slug": "obs-33-0-3-older-cpu-crash-fix",
+ "keys": [
+  "obs-studio-33.0.3",
+  "obs-33-0-2-crash"
+ ],
+ "topic": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+ "category": "CREATOR TECH",
+ "topic_type": "BREAKING",
+ "announced_at": "22 November 2026 (GitHub release 33.0.3; 33.0.2 on 20 Nov)",
+ "event_date": "2026-11-22",
+ "story_id": "2026-11-22-obs-33-0-3-older-cpu-crash-fix",
+ "company": "OBS Project",
+ "generated_at": "2026-11-22T14:40:00+00:00",
+ "research_window": {
+  "start_utc": "2026-11-21T14:22:00+00:00",
+  "end_utc": "2026-11-22T14:22:00+00:00",
+  "start_ist": "2026-11-21T19:52:00+05:30",
+  "end_ist": "2026-11-22T19:52:00+05:30",
+  "hours": 24
+ },
+ "window_expansion_reason": null,
+ "creator_request": false,
+ "why_selected": "The only story in the 24-hour pool whose central claims could be verified from an opened primary source under V7 rule 6b; it is practical for the creator's audience of streamers and recorders.",
+ "why_short": "An OBS update crashed some older PCs; 33.0.3 fixes it.",
+ "why_beats_alternatives": "Higher-scoring stories (OpenRouter prompt theft, Tesla FSD v15, Waymo recalls, UN autonomous-weapons talks, Amazon-Decart) could not be opened from this environment (openrouter.ai and npr.org failed with ENOTFOUND; x.com and news sites are blocked), so V7 rule 6b holds them. OBS 33.0.3 is modest news, but it is confirmed by the OBS Project's own release pages, opened directly, and it is something viewers can act on today.",
+ "why_this_story": "OBS Studio 33.0.2 (20 Nov) could crash at startup on certain older processors; on 22 Nov the OBS team shipped 33.0.3 with the fix. It is practical: anyone who streams or records on an older Windows PC should update. X signal: none observed (x.com blocked; engagement UNKNOWN). It beat bigger stories only because they could not be verified by opening a source here.",
+ "evidence_confidence": "HIGH",
+ "confidence": "HIGH",
+ "verified_development": "On 22 Nov 2026 the OBS Project published OBS Studio 33.0.3 on GitHub, marked Latest, with one hotfix: 'Fixed a crash on Windows in 33.0.2 with certain older CPUs'. 33.0.2 (20 Nov) had warned of a startup crash on certain older processors and told affected users to install 33.0.1 or 32.2.2.",
+ "disclosure": "Disclosure: written by Claude, an Anthropic model. The OBS Project is not Anthropic; no conflict known.",
+ "research_summary": "End-to-end test run (V7). The pool has 23 developments: 13 inside the 24-hour window (21-22 Nov) and 10 older context items, from fresh searches and leads from today's earlier research pass. Only anthropic.com and github.com opened; openrouter.ai and npr.org failed with ENOTFOUND and news, X, Reddit, YouTube and Instagram are blocked per the source audit. Every in-window story except OBS rests on search excerpts, so V7 rule 6b holds them. OBS Studio 33.0.3, released 22 Nov to fix a startup crash on certain older CPUs introduced in 33.0.2, is confirmed by its opened GitHub release pages and is today's eligible story.",
+ "primary_sources": [
+  {
+   "label": "OBS Studio 33.0.3 release (GitHub, 22 Nov 2026, opened)",
+   "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3"
   },
-  "window_expansion_reason": null,
-  "creator_request": false,
-  "why_selected": "The only story in the 24-hour pool whose central claims could be verified from an opened primary source under V7 rule 6b; it is practical for the creator's audience of streamers and recorders.",
-  "why_short": "An OBS update crashed some older PCs; 33.0.3 fixes it.",
-  "why_beats_alternatives": "Higher-scoring stories (OpenRouter prompt theft, Tesla FSD v15, Waymo recalls, UN autonomous-weapons talks, Amazon-Decart) could not be opened from this environment (openrouter.ai and npr.org failed with ENOTFOUND; x.com and news sites are blocked), so V7 rule 6b holds them. OBS 33.0.3 is modest news, but it is confirmed by the OBS Project's own release pages, opened directly, and it is something viewers can act on today.",
-  "why_this_story": "OBS Studio 33.0.2 (20 Nov) could crash at startup on certain older processors; on 22 Nov the OBS team shipped 33.0.3 with the fix. It is practical: anyone who streams or records on an older Windows PC should update. X signal: none observed (x.com blocked; engagement UNKNOWN). It beat bigger stories only because they could not be verified by opening a source here.",
-  "evidence_confidence": "HIGH",
-  "confidence": "HIGH",
-  "verified_development": "On 22 Nov 2026 the OBS Project published OBS Studio 33.0.3 on GitHub, marked Latest, with one hotfix: 'Fixed a crash on Windows in 33.0.2 with certain older CPUs'. 33.0.2 (20 Nov) had warned of a startup crash on certain older processors and told affected users to install 33.0.1 or 32.2.2.",
-  "disclosure": "Disclosure: written by Claude, an Anthropic model. The OBS Project is not Anthropic; no conflict known.",
-  "research_summary": "End-to-end test run (V7). The pool has 23 developments: 13 inside the 24-hour window (21-22 Nov) and 10 older context items, from fresh searches and leads from today's earlier research pass. Only anthropic.com and github.com opened; openrouter.ai and npr.org failed with ENOTFOUND and news, X, Reddit, YouTube and Instagram are blocked per the source audit. Every in-window story except OBS rests on search excerpts, so V7 rule 6b holds them. OBS Studio 33.0.3, released 22 Nov to fix a startup crash on certain older CPUs introduced in 33.0.2, is confirmed by its opened GitHub release pages and is today's eligible story.",
-  "primary_sources": [
-    {
-      "label": "OBS Studio 33.0.3 release (GitHub, 22 Nov 2026, opened)",
-      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3"
-    },
-    {
-      "label": "OBS Studio 33.0.2 release (GitHub, 20 Nov 2026, opened)",
-      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2"
-    }
-  ],
-  "supporting_sources": [
-    {
-      "label": "obsproject/obs-studio repository (opened)",
-      "url": "https://github.com/obsproject/obs-studio"
-    }
-  ],
-  "key_facts": [
-    "33.0.2 released 20 Nov 2026.",
-    "Known issue in 33.0.2: startup crash on certain older processors; 'does not affect everyone'.",
-    "Workaround given: install 33.0.1 or 32.2.2.",
-    "33.0.3 released 22 Nov 2026, marked Latest: fixes the Windows crash in 33.0.2 with certain older CPUs.",
-    "OBS Studio is free and open source (GPL-2.0)."
-  ],
-  "uncertainties": [
-    "Which CPUs exactly are affected and how many users were hit is not stated.",
-    "Release times are shown without a year or time zone on the page; asset names and the page context place them in 2026.",
-    "No independent coverage was opened; the claims rest on the OBS Project's own release pages.",
-    "Whether 33.0.2's crash also affected macOS or Linux users is not stated; 33.0.3 names Windows."
-  ],
-  "excluded_claims": [
-    "'About 20 fixes' in 33.0.2 (a summariser's count, not checked line by line).",
-    "WebGPU for browser sources and other 33.0.2 items (not central).",
-    "80.0k GitHub stars (not relevant)."
-  ],
-  "context": "OBS Studio is free, open-source streaming and recording software. 33.0.1 (29 Oct) and 33.0.2 (20 Nov) were hotfix releases on the 33.0 line.",
-  "script": "Did OBS crash on your Windows PC after updating this week? There's a fix.\n\nOn November 20, OBS Studio released version 33.0.2.\n\nThen the team flagged a known issue. On certain older processors, OBS could crash at startup.\n\nTheir advice? Install an older version, like 33.0.1, until a fix arrived.\n\nOn November 22, it did. Version 33.0.3 fixes that Windows crash.\n\nIf you stream or record on an older PC, update now.\n\nDid the crash hit you?",
-  "hook": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
-  "hooks": [
-    {
-      "text": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
-      "approach": "practical discovery",
-      "accuracy": 9,
-      "clarity": 9,
-      "curiosity": 7,
-      "specificity": 8,
-      "emotional": 7,
-      "comprehension": 9
-    },
-    {
-      "text": "An OBS update was crashing some older PCs. Here's the fix.",
-      "approach": "important warning",
-      "accuracy": 9,
-      "clarity": 9,
-      "curiosity": 6,
-      "specificity": 7,
-      "emotional": 6,
-      "comprehension": 9
-    },
-    {
-      "text": "If you stream on an older PC, check your OBS version today.",
-      "approach": "important warning",
-      "accuracy": 8,
-      "clarity": 8,
-      "curiosity": 6,
-      "specificity": 6,
-      "emotional": 5,
-      "comprehension": 8
-    },
-    {
-      "text": "OBS fixed one problem and created another. Then fixed that too.",
-      "approach": "contradiction",
-      "accuracy": 8,
-      "clarity": 7,
-      "curiosity": 8,
-      "specificity": 5,
-      "emotional": 6,
-      "comprehension": 7
-    },
-    {
-      "text": "OBS just shipped two updates in three days.",
-      "approach": "major product reveal",
-      "accuracy": 9,
-      "clarity": 8,
-      "curiosity": 5,
-      "specificity": 7,
-      "emotional": 3,
-      "comprehension": 8
-    },
-    {
-      "text": "OBS broke millions of streams this week.",
-      "approach": "unexpected consequence",
-      "accuracy": 2,
-      "clarity": 8,
-      "curiosity": 9,
-      "specificity": 5,
-      "emotional": 9,
-      "comprehension": 8
-    }
-  ],
-  "revisions": 1,
+  {
+   "label": "OBS Studio 33.0.2 release (GitHub, 20 Nov 2026, opened)",
+   "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2"
+  }
+ ],
+ "supporting_sources": [
+  {
+   "label": "obsproject/obs-studio repository (opened)",
+   "url": "https://github.com/obsproject/obs-studio"
+  }
+ ],
+ "key_facts": [
+  "33.0.2 released 20 Nov 2026.",
+  "Known issue in 33.0.2: startup crash on certain older processors; 'does not affect everyone'.",
+  "Workaround given: install 33.0.1 or 32.2.2.",
+  "33.0.3 released 22 Nov 2026, marked Latest: fixes the Windows crash in 33.0.2 with certain older CPUs.",
+  "OBS Studio is free and open source (GPL-2.0)."
+ ],
+ "uncertainties": [
+  "Which CPUs exactly are affected and how many users were hit is not stated.",
+  "Release times are shown without a year or time zone on the page; asset names and the page context place them in 2026.",
+  "No independent coverage was opened; the claims rest on the OBS Project's own release pages.",
+  "Whether 33.0.2's crash also affected macOS or Linux users is not stated; 33.0.3 names Windows."
+ ],
+ "excluded_claims": [
+  "'About 20 fixes' in 33.0.2 (a summariser's count, not checked line by line).",
+  "WebGPU for browser sources and other 33.0.2 items (not central).",
+  "80.0k GitHub stars (not relevant)."
+ ],
+ "context": "OBS Studio is free, open-source streaming and recording software. 33.0.1 (29 Oct) and 33.0.2 (20 Nov) were hotfix releases on the 33.0 line.",
+ "script": "Did OBS crash on your Windows PC after updating this week? There's a fix.\n\nOn November 20, OBS Studio released version 33.0.2.\n\nThen the team flagged a known issue. On certain older processors, OBS could crash at startup.\n\nTheir advice? Install an older version, like 33.0.1, until a fix arrived.\n\nOn November 22, it did. Version 33.0.3 fixes that Windows crash.\n\nIf you stream or record on an older PC, update now.\n\nDid the crash hit you?",
+ "hook": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
+ "hooks": [
+  {
+   "text": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
+   "approach": "practical discovery",
+   "accuracy": 9,
+   "clarity": 9,
+   "curiosity": 7,
+   "specificity": 8,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "An OBS update was crashing some older PCs. Here's the fix.",
+   "approach": "important warning",
+   "accuracy": 9,
+   "clarity": 9,
+   "curiosity": 6,
+   "specificity": 7,
+   "emotional": 6,
+   "comprehension": 9
+  },
+  {
+   "text": "If you stream on an older PC, check your OBS version today.",
+   "approach": "important warning",
+   "accuracy": 8,
+   "clarity": 8,
+   "curiosity": 6,
+   "specificity": 6,
+   "emotional": 5,
+   "comprehension": 8
+  },
+  {
+   "text": "OBS fixed one problem and created another. Then fixed that too.",
+   "approach": "contradiction",
+   "accuracy": 8,
+   "clarity": 7,
+   "curiosity": 8,
+   "specificity": 5,
+   "emotional": 6,
+   "comprehension": 7
+  },
+  {
+   "text": "OBS just shipped two updates in three days.",
+   "approach": "major product reveal",
+   "accuracy": 9,
+   "clarity": 8,
+   "curiosity": 5,
+   "specificity": 7,
+   "emotional": 3,
+   "comprehension": 8
+  },
+  {
+   "text": "OBS broke millions of streams this week.",
+   "approach": "unexpected consequence",
+   "accuracy": 2,
+   "clarity": 8,
+   "curiosity": 9,
+   "specificity": 5,
+   "emotional": 9,
+   "comprehension": 8
+  }
+ ],
+ "revisions": 1,
+ "practical_takeaway": {
+  "who_can_use": "Anyone who streams or records with OBS Studio, especially on an older Windows PC",
+  "what_it_does": "33.0.3 fixes the startup crash that 33.0.2 caused on certain older CPUs",
+  "availability": "Released 22 Nov 2026 on the OBS Project's GitHub releases page (Windows, macOS, Ubuntu builds)",
+  "price": "Free (OBS Studio is free and open-source software, GPL-2.0)",
+  "difference": "33.0.2 users on affected CPUs no longer need to roll back to 33.0.1 or 32.2.2",
+  "limitations": "Which CPUs are affected is not specified; the fix note names Windows",
+  "why_it_matters": "A crash at startup can cost a creator a stream or a recording session"
+ },
+ "audience_check": {
+  "why_care_today": "The fix shipped today, two days after a buggy update.",
+  "affects_life_or_work": "Creators who stream or record with OBS depend on it opening.",
+  "can_they_use_it": "Yes: update to 33.0.3 for free.",
+  "surprising": "Mildly: a hotfix needed its own hotfix.",
+  "demonstrable": "The release page and version number can be shown on screen.",
+  "clear_consequence": "Update and the startup crash on older CPUs should be gone.",
+  "would_share": "Creators may send it to a friend who streams on an old PC.",
+  "right_audience": "Yes: creator-tech is a core audience for this account."
+ },
+ "script_checks": {
+  "hook_clarity": {
+   "pass": true,
+   "why": "Names the app, the symptom and the promise of a fix in one line."
+  },
+  "factual_accuracy": {
+   "pass": true,
+   "why": "Every sentence maps to c1-c3, each backed by an opened OBS release page."
+  },
+  "natural_delivery": {
+   "pass": true,
+   "why": "Short spoken sentences; version numbers read naturally."
+  },
+  "narrative_coherence": {
+   "pass": true,
+   "why": "One thread: update, crash, workaround, fix, action."
+  },
+  "audience_relevance": {
+   "pass": true,
+   "why": "Streamers and creators use OBS; the fix is actionable."
+  },
   "practical_takeaway": {
-    "who_can_use": "Anyone who streams or records with OBS Studio, especially on an older Windows PC",
-    "what_it_does": "33.0.3 fixes the startup crash that 33.0.2 caused on certain older CPUs",
-    "availability": "Released 22 Nov 2026 on the OBS Project's GitHub releases page (Windows, macOS, Ubuntu builds)",
-    "price": "Free (OBS Studio is free and open-source software, GPL-2.0)",
-    "difference": "33.0.2 users on affected CPUs no longer need to roll back to 33.0.1 or 32.2.2",
-    "limitations": "Which CPUs are affected is not specified; the fix note names Windows",
-    "why_it_matters": "A crash at startup can cost a creator a stream or a recording session"
+   "pass": true,
+   "why": "Clear action: update to 33.0.3 if you stream or record on an older PC."
   },
-  "audience_check": {
-    "why_care_today": "The fix shipped today, two days after a buggy update.",
-    "affects_life_or_work": "Creators who stream or record with OBS depend on it opening.",
-    "can_they_use_it": "Yes: update to 33.0.3 for free.",
-    "surprising": "Mildly: a hotfix needed its own hotfix.",
-    "demonstrable": "The release page and version number can be shown on screen.",
-    "clear_consequence": "Update and the startup crash on older CPUs should be gone.",
-    "would_share": "Creators may send it to a friend who streams on an old PC.",
-    "right_audience": "Yes: creator-tech is a core audience for this account."
+  "ending_quality": {
+   "pass": true,
+   "why": "A short question that invites people to share whether they were hit."
   },
-  "script_checks": {
-    "hook_clarity": {
-      "pass": true,
-      "why": "Names the app, the symptom and the promise of a fix in one line."
-    },
-    "factual_accuracy": {
-      "pass": true,
-      "why": "Every sentence maps to c1-c3, each backed by an opened OBS release page."
-    },
-    "natural_delivery": {
-      "pass": true,
-      "why": "Short spoken sentences; version numbers read naturally."
-    },
-    "narrative_coherence": {
-      "pass": true,
-      "why": "One thread: update, crash, workaround, fix, action."
-    },
-    "audience_relevance": {
-      "pass": true,
-      "why": "Streamers and creators use OBS; the fix is actionable."
-    },
-    "practical_takeaway": {
-      "pass": true,
-      "why": "Clear action: update to 33.0.3 if you stream or record on an older PC."
-    },
-    "ending_quality": {
-      "pass": true,
-      "why": "A short question that invites people to share whether they were hit."
-    },
-    "no_redundancy": {
-      "pass": true,
-      "why": "Each line adds a new step of the story."
-    },
-    "no_jargon": {
-      "pass": true,
-      "why": "Only 'CPU' and 'processor', both familiar to creators."
-    },
-    "no_unsupported_implications": {
-      "pass": true,
-      "why": "Says 'certain older processors' and 'could crash', never that everyone was affected."
+  "no_redundancy": {
+   "pass": true,
+   "why": "Each line adds a new step of the story."
+  },
+  "no_jargon": {
+   "pass": true,
+   "why": "Only 'CPU' and 'processor', both familiar to creators."
+  },
+  "no_unsupported_implications": {
+   "pass": true,
+   "why": "Says 'certain older processors' and 'could crash', never that everyone was affected."
+  }
+ },
+ "recording_guidance": {
+  "hook_emphasis": "Lean on 'crash' and 'There's a fix'.",
+  "important_pause": "A beat after 'until a fix arrived.' before 'On November 22, it did.'",
+  "final_tone": "Helpful and friendly, like a tip to a fellow creator."
+ },
+ "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7 virality model unchanged.",
+ "recording": {
+  "tone": "Helpful, relaxed.",
+  "opening_expression": "Slight wince on 'crash', then a smile on 'There's a fix.'",
+  "emphasis": [
+   "crash",
+   "There's a fix",
+   "older processors",
+   "33.0.3"
+  ],
+  "pauses": [
+   "beat after the hook",
+   "beat after 'until a fix arrived.'"
+  ],
+  "pronunciation": [
+   "OBS: oh-bee-ess",
+   "33.0.3: thirty-three point oh point three"
+  ]
+ },
+ "visuals": [
+  "Screen recording of the OBS Studio 33.0.3 GitHub release page",
+  "Text card: '33.0.2 = startup crash on some older CPUs; 33.0.3 = fixed'"
+ ],
+ "pillar": "useful_ai_tools",
+ "format": "B",
+ "backups": [],
+ "backup_shortfall_reason": "No other in-window story could be verified by opening a source; DIFFERENT TOPIC will research afresh.",
+ "audience": {
+  "stop_scroll": "'Did OBS crash?' speaks directly to anyone who just updated.",
+  "watch_to_end": "The fix version comes near the end.",
+  "share": "Creators pass fixes to friends who stream.",
+  "save": "Some will save it for when they update.",
+  "comment": "Viewers can say whether the crash hit them.",
+  "follow": "Practical creator-tech tips, checked at the source."
+ },
+ "editing": {
+  "opening_visual": "OBS logo or a startup screen (own footage)",
+  "key_moments": [
+   "33.0.2 warning",
+   "33.0.3 fix"
+  ],
+  "broll": [
+   "screen recording of the release pages"
+  ],
+  "on_screen_text": [
+   "33.0.2: startup crash on some older CPUs",
+   "33.0.3: fixed (22 Nov)"
+  ],
+  "demonstrations": [
+   "none invented"
+  ],
+  "stats": [
+   "none: version numbers only"
+  ],
+  "rhythm": "Quick, one step per shot",
+  "caption_emphasis": [
+   "crash",
+   "fix",
+   "33.0.3"
+  ],
+  "sound": "Light bed"
+ },
+ "limitations": [
+  "Source audit: x, reddit, youtube, instagram, linkedin, google_trends and news BLOCKED; primary PARTIAL (anthropic.com and github.com open).",
+  "openrouter.ai and www.npr.org failed in WebFetch with getaddrinfo ENOTFOUND.",
+  "All social engagement UNKNOWN.",
+  "E2E TEST package: written to daily/2026-11-22/e2e_test/ only."
+ ],
+ "instagram": {
+  "cover_headline": "OBS crashing? Fixed",
+  "caption": "Did OBS crash on your Windows PC after updating? Version 33.0.2 could crash at startup on certain older processors. On 22 Nov the OBS team released 33.0.3 with the fix. Did the crash hit you?",
+  "hashtags": [
+   "#OBSStudio",
+   "#Streaming",
+   "#CreatorTips",
+   "#TechNews"
+  ]
+ },
+ "linkedin": {
+  "caption": "OBS Studio 33.0.2 (20 Nov) could crash at startup on certain older processors. On 22 Nov the OBS Project shipped 33.0.3, which fixes the Windows crash.",
+  "business_relevance": "Teams that stream or record with OBS on older hardware should update.",
+  "discussion_prompt": "How do you handle a broken update in a live production setup?"
+ },
+ "x": {
+  "post": "OBS Studio 33.0.2 could crash at startup on some older CPUs. 33.0.3 (22 Nov) fixes the Windows crash. If you stream on an older PC, update. Source: OBS release notes on GitHub."
+ },
+ "youtube": {
+  "title": "OBS Crashing After the Update? 33.0.3 Fixes It",
+  "description": "OBS Studio 33.0.2 (20 Nov 2026) could crash at startup on certain older processors. 33.0.3 (22 Nov 2026) fixes the Windows crash. Source: OBS Project release notes on GitHub.",
+  "keywords": [
+   "OBS Studio",
+   "OBS 33.0.3",
+   "OBS crash fix",
+   "streaming"
+  ]
+ },
+ "growth": {
+  "watch": "Direct, practical problem and fix.",
+  "share": "Useful tip among streamers.",
+  "follow": "Checked creator-tech tips.",
+  "segment": "Streamers and creators.",
+  "underperform": "Narrow audience; low surprise."
+ },
+ "x_signals": [],
+ "candidates": [
+  {
+   "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "main_claim": "OpenRouter notice (22 Nov, per search excerpts and today's earlier pass): three providers off-boarded, 125 endpoints removed from ZDR eligibility.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Shows the hidden supply chain behind AI apps' privacy promises.",
+   "potential_hook": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention aft",
+   "target_audience": "Developers and AI app users",
+   "uncertainty": "Breach vs retention-violation framing contested",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "OpenRouter notice (22 Nov, per search excerpts and today's earlier pass): three providers off-boarded, 125 endpoints removed from ZDR eligibility.",
+   "audience_relevance": "Developers and AI app users",
+   "practical_usefulness": "Check routing and retention settings",
+   "visual_potential": "Diagram only",
+   "potential_controversy": "Breach vs retention-violation framing contested",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 8,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 8,
+    "discussion": 8,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+     "title": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zer",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
     }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; openrouter.ai failed to open (WebFetch: getaddrinfo ENOTFOUND openrouter.ai) and the Dragos study was not opened; a security-breach claim is extraordinary and needs primary plus independent confirmation opened"
   },
-  "recording_guidance": {
-    "hook_emphasis": "Lean on 'crash' and 'There's a fix'.",
-    "important_pause": "A beat after 'until a fix arrived.' before 'On November 22, it did.'",
-    "final_tone": "Helpful and friendly, like a tip to a fellow creator."
-  },
-  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7 virality model unchanged.",
-  "recording": {
-    "tone": "Helpful, relaxed.",
-    "opening_expression": "Slight wince on 'crash', then a smile on 'There's a fix.'",
-    "emphasis": [
-      "crash",
-      "There's a fix",
-      "older processors",
-      "33.0.3"
-    ],
-    "pauses": [
-      "beat after the hook",
-      "beat after 'until a fix arrived.'"
-    ],
-    "pronunciation": [
-      "OBS: oh-bee-ess",
-      "33.0.3: thirty-three point oh point three"
-    ]
-  },
-  "visuals": [
-    "Screen recording of the OBS Studio 33.0.3 GitHub release page",
-    "Text card: '33.0.2 = startup crash on some older CPUs; 33.0.3 = fixed'"
-  ],
-  "pillar": "useful_ai_tools",
-  "format": "B",
-  "backups": [],
-  "backup_shortfall_reason": "No other in-window story could be verified by opening a source; DIFFERENT TOPIC will research afresh.",
-  "audience": {
-    "stop_scroll": "'Did OBS crash?' speaks directly to anyone who just updated.",
-    "watch_to_end": "The fix version comes near the end.",
-    "share": "Creators pass fixes to friends who stream.",
-    "save": "Some will save it for when they update.",
-    "comment": "Viewers can say whether the crash hit them.",
-    "follow": "Practical creator-tech tips, checked at the source."
-  },
-  "editing": {
-    "opening_visual": "OBS logo or a startup screen (own footage)",
-    "key_moments": [
-      "33.0.2 warning",
-      "33.0.3 fix"
-    ],
-    "broll": [
-      "screen recording of the release pages"
-    ],
-    "on_screen_text": [
-      "33.0.2: startup crash on some older CPUs",
-      "33.0.3: fixed (22 Nov)"
-    ],
-    "demonstrations": [
-      "none invented"
-    ],
-    "stats": [
-      "none: version numbers only"
-    ],
-    "rhythm": "Quick, one step per shot",
-    "caption_emphasis": [
-      "crash",
-      "fix",
-      "33.0.3"
-    ],
-    "sound": "Light bed"
-  },
-  "limitations": [
-    "Source audit: x, reddit, youtube, instagram, linkedin, google_trends and news BLOCKED; primary PARTIAL (anthropic.com and github.com open).",
-    "openrouter.ai and www.npr.org failed in WebFetch with getaddrinfo ENOTFOUND.",
-    "All social engagement UNKNOWN.",
-    "E2E TEST package: written to daily/2026-11-22/e2e_test/ only."
-  ],
-  "instagram": {
-    "cover_headline": "OBS crashing? Fixed",
-    "caption": "Did OBS crash on your Windows PC after updating? Version 33.0.2 could crash at startup on certain older processors. On 22 Nov the OBS team released 33.0.3 with the fix. Did the crash hit you?",
-    "hashtags": [
-      "#OBSStudio",
-      "#Streaming",
-      "#CreatorTips",
-      "#TechNews"
-    ]
-  },
-  "linkedin": {
-    "caption": "OBS Studio 33.0.2 (20 Nov) could crash at startup on certain older processors. On 22 Nov the OBS Project shipped 33.0.3, which fixes the Windows crash.",
-    "business_relevance": "Teams that stream or record with OBS on older hardware should update.",
-    "discussion_prompt": "How do you handle a broken update in a live production setup?"
-  },
-  "x": {
-    "post": "OBS Studio 33.0.2 could crash at startup on some older CPUs. 33.0.3 (22 Nov) fixes the Windows crash. If you stream on an older PC, update. Source: OBS release notes on GitHub."
-  },
-  "youtube": {
-    "title": "OBS Crashing After the Update? 33.0.3 Fixes It",
-    "description": "OBS Studio 33.0.2 (20 Nov 2026) could crash at startup on certain older processors. 33.0.3 (22 Nov 2026) fixes the Windows crash. Source: OBS Project release notes on GitHub.",
-    "keywords": [
-      "OBS Studio",
-      "OBS 33.0.3",
-      "OBS crash fix",
-      "streaming"
-    ]
-  },
-  "growth": {
-    "watch": "Direct, practical problem and fix.",
-    "share": "Useful tip among streamers.",
-    "follow": "Checked creator-tech tips.",
-    "segment": "Streamers and creators.",
-    "underperform": "Narrow audience; low surprise."
-  },
-  "x_signals": [],
-  "candidates": [
+  {
+   "headline": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-21T19:24:32+00:00",
+   "original_source": "https://x.com/Tesla/status/2124222447855743019",
+   "main_claim": "First-wave rollout of FSD (Supervised) v15.0.1; Reality View renders planned turns (Tesla's description).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Visual product change in a widely debated technology.",
+   "potential_hook": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
+   "target_audience": "Tech fans, EV owners",
+   "uncertainty": "25x claim is Tesla's own",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "First-wave rollout of FSD (Supervised) v15.0.1; Reality View renders planned turns (Tesla's description).",
+   "audience_relevance": "Tech fans, EV owners",
+   "practical_usefulness": "Tesla first-wave owners only",
+   "visual_potential": "High",
+   "potential_controversy": "25x claim is Tesla's own",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 9,
+    "consequence": 6,
+    "discussion": 8,
+    "timeliness": 10
+   },
+   "signals": [
     {
-      "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft",
-      "category": "CONTROVERSY",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-22",
-      "original_source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-      "main_claim": "OpenRouter notice (22 Nov, per search excerpts and today's earlier pass): three providers off-boarded, 125 endpoints removed from ZDR eligibility.",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Shows the hidden supply chain behind AI apps' privacy promises.",
-      "potential_hook": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention aft",
-      "target_audience": "Developers and AI app users",
-      "uncertainty": "Breach vs retention-violation framing contested",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "OpenRouter notice (22 Nov, per search excerpts and today's earlier pass): three providers off-boarded, 125 endpoints removed from ZDR eligibility.",
-      "audience_relevance": "Developers and AI app users",
-      "practical_usefulness": "Check routing and retention settings",
-      "visual_potential": "Diagram only",
-      "potential_controversy": "Breach vs retention-violation framing contested",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 7,
-        "surprise": 8,
-        "usefulness": 8,
-        "social_momentum": 3,
-        "visual": 6,
-        "consequence": 8,
-        "discussion": 8,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-          "title": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zer",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; openrouter.ai failed to open (WebFetch: getaddrinfo ENOTFOUND openrouter.ai) and the Dragos study was not opened; a security-breach claim is extraordinary and needs primary plus independent confirmation opened"
-    },
-    {
-      "headline": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
-      "category": "FUTURE TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-21T19:24:32+00:00",
-      "original_source": "https://x.com/Tesla/status/2124222447855743019",
-      "main_claim": "First-wave rollout of FSD (Supervised) v15.0.1; Reality View renders planned turns (Tesla's description).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Visual product change in a widely debated technology.",
-      "potential_hook": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
-      "target_audience": "Tech fans, EV owners",
-      "uncertainty": "25x claim is Tesla's own",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "First-wave rollout of FSD (Supervised) v15.0.1; Reality View renders planned turns (Tesla's description).",
-      "audience_relevance": "Tech fans, EV owners",
-      "practical_usefulness": "Tesla first-wave owners only",
-      "visual_potential": "High",
-      "potential_controversy": "25x claim is Tesla's own",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 7,
-        "surprise": 6,
-        "usefulness": 5,
-        "social_momentum": 3,
-        "visual": 9,
-        "consequence": 6,
-        "discussion": 8,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://x.com/Tesla/status/2124222447855743019",
-          "title": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; held earlier today (holds.json): x.com, tesla.com and all news sites cannot be opened from this environment; not re-tried in this run"
-    },
-    {
-      "headline": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
-      "category": "FUTURE TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-21",
-      "original_source": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
-      "main_claim": "Waymo pauses freeway rides nationwide and files two recalls (search excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Robotaxi safety and regulation",
-      "potential_hook": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
-      "target_audience": "US robotaxi riders, tech fans",
-      "uncertainty": "Details of the DMV action vary by report",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Waymo pauses freeway rides nationwide and files two recalls (search excerpts).",
-      "audience_relevance": "US robotaxi riders, tech fans",
-      "practical_usefulness": "Riders in Waymo cities only",
-      "visual_potential": "Medium",
-      "potential_controversy": "Details of the DMV action vary by report",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 6,
-        "surprise": 6,
-        "usefulness": 3,
-        "social_momentum": 1,
-        "visual": 6,
-        "consequence": 7,
-        "discussion": 7,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
-          "title": "Waymo files two recalls and pauses freeway rides after California DMV freeway ac",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; nbcnews.com not opened (news group BLOCKED in today's source audit); only search excerpts"
-    },
-    {
-      "headline": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by 2028, no binding commitment",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-21",
-      "original_source": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
-      "main_claim": "States agree to more talks, no binding commitment.",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Autonomous weapons governance",
-      "potential_hook": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by 2028, no binding co",
-      "target_audience": "Global audience",
-      "uncertainty": "Framing differs by outlet",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "States agree to more talks, no binding commitment.",
-      "audience_relevance": "Global audience",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "Low",
-      "potential_controversy": "Framing differs by outlet",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 6,
-        "surprise": 4,
-        "usefulness": 2,
-        "social_momentum": 1,
-        "visual": 3,
-        "consequence": 7,
-        "discussion": 7,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
-          "title": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; www.npr.org failed to open (WebFetch: getaddrinfo ENOTFOUND www.npr.org)"
-    },
-    {
-      "headline": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant metadata",
-      "category": "TECH COMPANIES",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-21",
-      "original_source": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-      "main_claim": "Exploited flaw exposed tenant metadata (search excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Enterprise identity security",
-      "potential_hook": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant metadata",
-      "target_audience": "IT admins",
-      "uncertainty": "Scope unclear",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Exploited flaw exposed tenant metadata (search excerpts).",
-      "audience_relevance": "IT admins",
-      "practical_usefulness": "Admins should check advisories",
-      "visual_potential": "Low",
-      "potential_controversy": "Scope unclear",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 4,
-        "surprise": 5,
-        "usefulness": 5,
-        "social_momentum": 1,
-        "visual": 2,
-        "consequence": 6,
-        "discussion": 5,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-          "title": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant m",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; bleepingcomputer.com and Microsoft's advisory not opened (news BLOCKED); an actively exploited flaw is an extraordinary claim needing independent confirmation opened"
-    },
-    {
-      "headline": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
-      "category": "AI BUSINESS & STARTUPS",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-21",
-      "original_source": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
-      "main_claim": "Unsigned deal reported by FT.",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Big Tech consolidation of AI video",
-      "potential_hook": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
-      "target_audience": "Tech and business audience",
-      "uncertainty": "Unsigned; billions",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Unsigned deal reported by FT.",
-      "audience_relevance": "Tech and business audience",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "Medium (Decart demos)",
-      "potential_controversy": "Unsigned; billions",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 5,
-        "surprise": 6,
-        "usefulness": 2,
-        "social_momentum": 1,
-        "visual": 6,
-        "consequence": 5,
-        "discussion": 6,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
-          "title": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; FT/TradingView not opened; a billion-dollar deal report is extraordinary financial and needs the primary opened (no primary exists: unsigned)"
-    },
-    {
-      "headline": "KEPCO says about 1.52M records of personal data leaked",
-      "category": "TECH COMPANIES",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-22",
-      "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
-      "main_claim": "Korean utility data leak (search excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Large utility breach",
-      "potential_hook": "KEPCO says about 1.52M records of personal data leaked",
-      "target_audience": "Korean audience mainly",
-      "uncertainty": "Scope unclear",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Korean utility data leak (search excerpts).",
-      "audience_relevance": "Korean audience mainly",
-      "practical_usefulness": "Not usable outside Korea",
-      "visual_potential": "Low",
-      "potential_controversy": "Scope unclear",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 3,
-        "surprise": 4,
-        "usefulness": 3,
-        "social_momentum": 1,
-        "visual": 2,
-        "consequence": 5,
-        "discussion": 4,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
-          "title": "KEPCO says about 1.52M records of personal data leaked",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; news.sbs.co.kr not opened (news BLOCKED); breach is an extraordinary claim"
-    },
-    {
-      "headline": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
-      "category": "EMERGING TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-22",
-      "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
-      "main_claim": "Fintech apps can verify ID cards (search excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Digital ID in fintech",
-      "potential_hook": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
-      "target_audience": "Korean users",
-      "uncertainty": "Privacy debate",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Fintech apps can verify ID cards (search excerpts).",
-      "audience_relevance": "Korean users",
-      "practical_usefulness": "Korea only",
-      "visual_potential": "Low",
-      "potential_controversy": "Privacy debate",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 2,
-        "surprise": 3,
-        "usefulness": 4,
-        "social_momentum": 1,
-        "visual": 2,
-        "consequence": 4,
-        "discussion": 3,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
-          "title": "South Korea gives Kakao Pay and Toss access to resident registration card verifi",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; news.sbs.co.kr not opened (news BLOCKED)"
-    },
-    {
-      "headline": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a robot gripper from a text description (Formnext)",
-      "category": "FUTURE TECH",
-      "topic_type": "EMERGING",
-      "published_at": "2026-11-21",
-      "original_source": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
-      "main_claim": "Trade-show demo (aggregator excerpts only).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "AI-designed hardware parts",
-      "potential_hook": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a robot gripper from ",
-      "target_audience": "Engineers, makers",
-      "uncertainty": "Company demo, not general capability",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "COMPANY-CLAIMED",
-      "latest_development": "Trade-show demo (aggregator excerpts only).",
-      "audience_relevance": "Engineers, makers",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "Medium",
-      "potential_controversy": "Company demo, not general capability",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 4,
-        "surprise": 6,
-        "usefulness": 2,
-        "social_momentum": 1,
-        "visual": 6,
-        "consequence": 4,
-        "discussion": 4,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
-          "title": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Not eligible: COMPANY-CLAIMED trade-show demo seen only in aggregator excerpts; no source opened"
-    },
-    {
-      "headline": "South Korea's FSS deploys an AI reading system for illegal private loan contract applications",
-      "category": "EMERGING TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-22",
-      "original_source": "https://aienews.org/digest/2026-11-22/",
-      "main_claim": "Regulator uses AI to review applications, staff decide (digest excerpt).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "AI in public services",
-      "potential_hook": "South Korea's FSS deploys an AI reading system for illegal private loan contract applications",
-      "target_audience": "Korean audience",
-      "uncertainty": "None",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "COMPANY-CLAIMED",
-      "latest_development": "Regulator uses AI to review applications, staff decide (digest excerpt).",
-      "audience_relevance": "Korean audience",
-      "practical_usefulness": "Korea only",
-      "visual_potential": "Low",
-      "potential_controversy": "None",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 2,
-        "surprise": 3,
-        "usefulness": 3,
-        "social_momentum": 1,
-        "visual": 1,
-        "consequence": 3,
-        "discussion": 2,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://aienews.org/digest/2026-11-22/",
-          "title": "South Korea's FSS deploys an AI reading system for illegal private loan contract",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Not eligible: digest excerpt only; no primary or independent source opened"
-    },
-    {
-      "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
-      "category": "FUTURE TECH",
-      "topic_type": "EMERGING",
-      "published_at": "2026-11-22",
-      "original_source": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
-      "main_claim": "Clip authenticity and autonomy unclear.",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Humanoid hype",
-      "potential_hook": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
-      "target_audience": "Tech fans",
-      "uncertainty": "Teleoperation unknown",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "DISPUTED",
-      "latest_development": "Clip authenticity and autonomy unclear.",
-      "audience_relevance": "Tech fans",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "High",
-      "potential_controversy": "Teleoperation unknown",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 6,
-        "surprise": 6,
-        "usefulness": 1,
-        "social_momentum": 3,
-        "visual": 9,
-        "consequence": 3,
-        "discussion": 7,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
-          "title": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Not eligible: DISPUTED (autonomy/teleoperation unknown); source not opened"
-    },
-    {
-      "headline": "Musk says first Optimus deployments will be in mining and ore refining",
-      "category": "FUTURE TECH",
-      "topic_type": "EXPERIMENTAL",
-      "published_at": "2026-11-22",
-      "original_source": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
-      "main_claim": "Prediction (newsletter excerpt).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Humanoid deployment plans",
-      "potential_hook": "Musk says first Optimus deployments will be in mining and ore refining",
-      "target_audience": "Tech fans",
-      "uncertainty": "Prediction",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "SPECULATIVE",
-      "latest_development": "Prediction (newsletter excerpt).",
-      "audience_relevance": "Tech fans",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "Low",
-      "potential_controversy": "Prediction",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 4,
-        "surprise": 4,
-        "usefulness": 1,
-        "social_momentum": 1,
-        "visual": 3,
-        "consequence": 3,
-        "discussion": 4,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
-          "title": "Musk says first Optimus deployments will be in mining and ore refining",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Not eligible: a prediction seen only in a newsletter excerpt"
-    },
-    {
-      "headline": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock",
-      "category": "CONSUMER TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-21",
-      "original_source": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
-      "main_claim": "User complaints and beta features (excerpt).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Phone durability",
-      "potential_hook": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock",
-      "target_audience": "iPhone users",
-      "uncertainty": "Anecdotal complaints",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "PRELIMINARY",
-      "latest_development": "User complaints and beta features (excerpt).",
-      "audience_relevance": "iPhone users",
-      "practical_usefulness": "Beta only",
-      "visual_potential": "Medium",
-      "potential_controversy": "Anecdotal complaints",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 6,
-        "surprise": 5,
-        "usefulness": 3,
-        "social_momentum": 1,
-        "visual": 5,
-        "consequence": 3,
-        "discussion": 6,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
-          "title": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera fac",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Not eligible: PRELIMINARY (user complaints, beta); macrumors.com not opened"
-    },
-    {
-      "headline": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
-      "category": "CREATOR TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-22",
-      "original_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
-      "main_claim": "33.0.3 (22 Nov, marked Latest on GitHub): 'Fixed a crash on Windows in 33.0.2 with certain older CPUs'. 33.0.2 (20 Nov) had warned of a startup crash on certain older processors and advised installing 33.0.1 or 32.2.2.",
-      "verification_status": "VERIFIED",
-      "why_it_matters": "OBS is the free, open-source app many creators stream and record with; anyone who updated on 20 Nov and hit a crash has a fix.",
-      "potential_hook": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
-      "target_audience": "Streamers, creators, anyone recording their screen",
-      "uncertainty": "How many users were affected and which CPUs exactly is not stated; no independent coverage opened",
-      "evidence_confidence": "HIGH",
-      "already_covered": false,
-      "claim_status": "CONFIRMED",
-      "latest_development": "33.0.3 (22 Nov, marked Latest on GitHub): 'Fixed a crash on Windows in 33.0.2 with certain older CPUs'. 33.0.2 (20 Nov) had warned of a startup crash on certain older processors and advised installing 33.0.1 or 32.2.2.",
-      "audience_relevance": "Streamers, creators, anyone recording their screen",
-      "practical_usefulness": "Directly actionable: update to 33.0.3 (free).",
-      "visual_potential": "Low-medium: screen recording of the OBS release page and the update dialog",
-      "potential_controversy": "Low; some users may have rolled back",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 5,
-        "surprise": 3,
-        "usefulness": 8,
-        "social_momentum": 1,
-        "visual": 4,
-        "consequence": 4,
-        "discussion": 4,
-        "timeliness": 10
-      },
-      "signals": [
-        {
-          "platform": "primary",
-          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
-          "title": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on ",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "DIRECTLY OBSERVED",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ]
-    },
-    {
-      "headline": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterprise Admin Console sign-in",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-20",
-      "original_source": "https://github.com/anthropics/claude-code/releases",
-      "main_claim": "Release notes opened on GitHub (20 Nov 22:32 as shown).",
-      "verification_status": "VERIFIED",
-      "why_it_matters": "Developer tool update",
-      "potential_hook": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterprise Admin Console si",
-      "target_audience": "Developers",
-      "uncertainty": "Conflict of interest: Anthropic product, script written by Claude",
-      "evidence_confidence": "HIGH",
-      "already_covered": false,
-      "claim_status": "CONFIRMED",
-      "latest_development": "Release notes opened on GitHub (20 Nov 22:32 as shown).",
-      "audience_relevance": "Developers",
-      "practical_usefulness": "Developers only",
-      "visual_potential": "Low",
-      "potential_controversy": "Conflict of interest: Anthropic product, script written by Claude",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 3,
-        "surprise": 3,
-        "usefulness": 5,
-        "social_momentum": 1,
-        "visual": 3,
-        "consequence": 2,
-        "discussion": 2,
-        "timeliness": 2
-      },
-      "signals": [
-        {
-          "platform": "primary",
-          "url": "https://github.com/anthropics/claude-code/releases",
-          "title": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterpr",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "DIRECTLY OBSERVED",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov, before 2026-11-21T14:22Z; also developer-only and an Anthropic product (disclosure conflict)"
-    },
-    {
-      "headline": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as default",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-20",
-      "original_source": "https://github.com/openai/codex/releases",
-      "main_claim": "Release notes opened on GitHub (20 Nov 00:44 as shown).",
-      "verification_status": "VERIFIED",
-      "why_it_matters": "Coding agent update",
-      "potential_hook": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as default",
-      "target_audience": "Developers",
-      "uncertainty": "None",
-      "evidence_confidence": "HIGH",
-      "already_covered": false,
-      "claim_status": "CONFIRMED",
-      "latest_development": "Release notes opened on GitHub (20 Nov 00:44 as shown).",
-      "audience_relevance": "Developers",
-      "practical_usefulness": "Developers only",
-      "visual_potential": "Low",
-      "potential_controversy": "None",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 4,
-        "surprise": 3,
-        "usefulness": 5,
-        "social_momentum": 1,
-        "visual": 2,
-        "consequence": 3,
-        "discussion": 3,
-        "timeliness": 2
-      },
-      "signals": [
-        {
-          "platform": "primary",
-          "url": "https://github.com/openai/codex/releases",
-          "title": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "DIRECTLY OBSERVED",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; the GPT-6.2 model launch itself (week of 15-21 Nov) could not be opened on openai.com"
-    },
-    {
-      "headline": "Anthropic announces the close of its IPO and a concurrent private placement",
-      "category": "AI BUSINESS & STARTUPS",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-20",
-      "original_source": "https://www.anthropic.com/news",
-      "main_claim": "Listed on anthropic.com/news (opened) dated 20 Nov.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "Major AI IPO",
-      "potential_hook": "Anthropic announces the close of its IPO and a concurrent private placement",
-      "target_audience": "Business audience",
-      "uncertainty": "Conflict of interest; extraordinary financial",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "CONFIRMED",
-      "latest_development": "Listed on anthropic.com/news (opened) dated 20 Nov.",
-      "audience_relevance": "Business audience",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "Low",
-      "potential_controversy": "Conflict of interest; extraordinary financial",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 5,
-        "surprise": 4,
-        "usefulness": 1,
-        "social_momentum": 1,
-        "visual": 2,
-        "consequence": 5,
-        "discussion": 6,
-        "timeliness": 2
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.anthropic.com/news",
-          "title": "Anthropic announces the close of its IPO and a concurrent private placement",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 20 Nov; billion-dollar event needs independent confirmation opened (news BLOCKED); Anthropic conflict of interest"
-    },
-    {
-      "headline": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minutes",
-      "category": "TECH COMPANIES",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-20",
-      "original_source": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
-      "main_claim": "Amazon report (excerpts); GitHub shows a critical MONAILabel advisory GHSA-qc22-rmgc-vg94 dated 18 Nov (opened), which does not mention AI agents.",
-      "verification_status": "PARTLY VERIFIED",
-      "why_it_matters": "AI agents in offensive security",
-      "potential_hook": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minute",
-      "target_audience": "Security audience",
-      "uncertainty": "Attribution claims",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Amazon report (excerpts); GitHub shows a critical MONAILabel advisory GHSA-qc22-rmgc-vg94 dated 18 Nov (opened), which does not mention AI agents.",
-      "audience_relevance": "Security audience",
-      "practical_usefulness": "Patch guidance",
-      "visual_potential": "Low",
-      "potential_controversy": "Attribution claims",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 6,
-        "surprise": 9,
-        "usefulness": 4,
-        "social_momentum": 1,
-        "visual": 3,
-        "consequence": 8,
-        "discussion": 7,
-        "timeliness": 2
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
-          "title": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-da",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; zero-day/AI-agent claim is extraordinary; securityweek.com and Amazon's report not opened; a GitHub advisory does not prove the AI-agent claim"
-    },
-    {
-      "headline": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six models",
-      "category": "CONSUMER TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-19",
-      "original_source": "https://nltimes.nl/node/93265",
-      "main_claim": "Regulator test found privacy risks and unreliable answers (excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Smart-glasses privacy",
-      "potential_hook": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six mod",
-      "target_audience": "Global consumers",
-      "uncertainty": "Meta lawsuit pending",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Regulator test found privacy risks and unreliable answers (excerpts).",
-      "audience_relevance": "Global consumers",
-      "practical_usefulness": "Buying advice",
-      "visual_potential": "Medium",
-      "potential_controversy": "Meta lawsuit pending",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 7,
-        "surprise": 7,
-        "usefulness": 6,
-        "social_momentum": 1,
-        "visual": 6,
-        "consequence": 6,
-        "discussion": 8,
-        "timeliness": 1
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://nltimes.nl/node/93265",
-          "title": "Dutch data protection authority advises consumers not to buy AI camera glasses a",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 19 Nov; nltimes.nl / autoriteitpersoonsgegevens.nl not opened"
-    },
-    {
-      "headline": "Replit launches Missions: agent swarms that work toward a goal within a budget",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-17",
-      "original_source": "https://replit.com/blog/introducing-replit-missions",
-      "main_claim": "Launch post (excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Multi-agent coding",
-      "potential_hook": "Replit launches Missions: agent swarms that work toward a goal within a budget",
-      "target_audience": "Developers, founders",
-      "uncertainty": "Benchmarks are Replit's own",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "COMPANY-CLAIMED",
-      "latest_development": "Launch post (excerpts).",
-      "audience_relevance": "Developers, founders",
-      "practical_usefulness": "Teams; pricing unclear",
-      "visual_potential": "Medium",
-      "potential_controversy": "Benchmarks are Replit's own",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 4,
-        "surprise": 5,
-        "usefulness": 5,
-        "social_momentum": 1,
-        "visual": 4,
-        "consequence": 4,
-        "discussion": 4,
-        "timeliness": 0
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://replit.com/blog/introducing-replit-missions",
-          "title": "Replit launches Missions: agent swarms that work toward a goal within a budget",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; replit.com not opened"
-    },
-    {
-      "headline": "US BIS interim rule: licences for advanced AI chips to five countries and for remote access by China-headquartered firms",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-16",
-      "original_source": "https://www.gtlaw.com/de/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
-      "main_claim": "Interim final rule (law-firm and press excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Chip geopolitics",
-      "potential_hook": "US BIS interim rule: licences for advanced AI chips to five countries and for remote access by China",
-      "target_audience": "Business audience",
-      "uncertainty": "Federal Register status unclear",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Interim final rule (law-firm and press excerpts).",
-      "audience_relevance": "Business audience",
-      "practical_usefulness": "Not usable",
-      "visual_potential": "Low",
-      "potential_controversy": "Federal Register status unclear",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 4,
-        "surprise": 4,
-        "usefulness": 1,
-        "social_momentum": 1,
-        "visual": 2,
-        "consequence": 6,
-        "discussion": 5,
-        "timeliness": 0
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.gtlaw.com/de/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
-          "title": "US BIS interim rule: licences for advanced AI chips to five countries and for re",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 16 Nov; bis.gov / federalregister.gov not opened"
-    },
-    {
-      "headline": "Instagram lets users edit Stories within 15 minutes of posting",
-      "category": "CREATOR TECH",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-18",
-      "original_source": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
-      "main_claim": "Edit window with 'Edited' label (excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Creator workflow",
-      "potential_hook": "Instagram lets users edit Stories within 15 minutes of posting",
-      "target_audience": "Instagram users",
-      "uncertainty": "None",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "CONFIRMED",
-      "latest_development": "Edit window with 'Edited' label (excerpts).",
-      "audience_relevance": "Instagram users",
-      "practical_usefulness": "Everyone on Instagram",
-      "visual_potential": "Medium",
-      "potential_controversy": "None",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 8,
-        "surprise": 4,
-        "usefulness": 8,
-        "social_momentum": 1,
-        "visual": 6,
-        "consequence": 3,
-        "discussion": 5,
-        "timeliness": 1
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
-          "title": "Instagram lets users edit Stories within 15 minutes of posting",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 18 Nov (covered earlier this week); fastcompany.com and about.instagram.com not opened"
-    },
-    {
-      "headline": "Google makes Gemini Tasks agent free in six countries including India",
-      "category": "AI",
-      "topic_type": "BREAKING",
-      "published_at": "2026-11-17",
-      "original_source": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
-      "main_claim": "Free agent access (excerpts).",
-      "verification_status": "UNVERIFIED",
-      "why_it_matters": "Free AI agent for millions",
-      "potential_hook": "Google makes Gemini Tasks agent free in six countries including India",
-      "target_audience": "Gemini users",
-      "uncertainty": "None",
-      "evidence_confidence": "LOW",
-      "already_covered": false,
-      "claim_status": "INDEPENDENTLY REPORTED",
-      "latest_development": "Free agent access (excerpts).",
-      "audience_relevance": "Gemini users",
-      "practical_usefulness": "Free in six countries",
-      "visual_potential": "Medium",
-      "potential_controversy": "None",
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": []
-      },
-      "scores": {
-        "broad_relevance": 8,
-        "surprise": 5,
-        "usefulness": 8,
-        "social_momentum": 1,
-        "visual": 5,
-        "consequence": 5,
-        "discussion": 5,
-        "timeliness": 0
-      },
-      "signals": [
-        {
-          "platform": "news",
-          "url": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
-          "title": "Google makes Gemini Tasks agent free in six countries including India",
-          "retrieved_at": "2026-11-22T14:40:00+00:00",
-          "access": "SEARCH-INDEX",
-          "engagement": {
-            "basis": "unknown"
-          }
-        }
-      ],
-      "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; androidpolice.com and blog.google not opened"
+     "platform": "news",
+     "url": "https://x.com/Tesla/status/2124222447855743019",
+     "title": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
     }
-  ],
-  "candidate_shortfall_reason": "23 developments were found, but only 4 rest on a source opened directly (OBS release pages, Claude Code and Codex release notes on GitHub, and anthropic.com/news for the IPO item); every other candidate is evidence_confidence LOW because, under V7 rule 6b, search excerpts are leads and not verification, and the news, X and most primary sites cannot be opened from this environment. No filler was added.",
-  "factcheck": {
-    "story": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
-    "date": "2026-11-22",
-    "claims": [
-      {
-        "id": "c1",
-        "text": "On 20 November 2026 OBS Studio released version 33.0.2",
-        "status": "CONFIRMED",
-        "in_script": true,
-        "central": true,
-        "retrieved_at": "2026-11-22T14:40:00+00:00",
-        "event_date": "2026-11-20",
-        "risk": "low",
-        "evidence": [
-          {
-            "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
-            "kind": "primary",
-            "access": "opened",
-            "date": "2026-11-20",
-            "outlet": "OBS Project (GitHub releases)"
-          }
-        ],
-        "supporting_evidence": "Release page opened: '33.0.2' released 20 Nov (shown as '20 Nov 15:00', no year on the page; asset names and the 33.0.3 page place it in 2026).",
-        "primary_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
-        "source_title": "OBS Studio 33.0.2 release (GitHub)",
-        "supporting_source": "https://github.com/obsproject/obs-studio",
-        "source_date": "2026-11-20",
-        "confidence": "HIGH",
-        "access": "opened"
-      },
-      {
-        "id": "c2",
-        "text": "The OBS team flagged a known issue with 33.0.2: on certain older processors OBS Studio crashes during startup, and advised installing an older version such as 33.0.1 or 32.2.2 until it was addressed",
-        "status": "CONFIRMED",
-        "in_script": true,
-        "central": true,
-        "retrieved_at": "2026-11-22T14:40:00+00:00",
-        "event_date": "2026-11-20",
-        "risk": "low",
-        "evidence": [
-          {
-            "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
-            "kind": "primary",
-            "access": "opened",
-            "date": "2026-11-20",
-            "outlet": "OBS Project (GitHub releases)"
-          }
-        ],
-        "supporting_evidence": "33.0.2 release page (opened): 'There is a known issue with 33.0.2 on certain older processors where OBS Studio will crash during startup.' 'This issue does not affect everyone.' '...an installer for an older version such as 33.0.1 or 32.2.2 until we are able to address this.'",
-        "primary_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
-        "source_title": "OBS Studio 33.0.2 release (GitHub)",
-        "supporting_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
-        "source_date": "2026-11-20",
-        "confidence": "HIGH",
-        "access": "opened",
-        "attribution": "OBS team"
-      },
-      {
-        "id": "c3",
-        "text": "On 22 November 2026 OBS Studio released 33.0.3, which fixes the Windows crash in 33.0.2 with certain older CPUs; it is marked Latest",
-        "status": "CONFIRMED",
-        "in_script": true,
-        "central": true,
-        "retrieved_at": "2026-11-22T14:40:00+00:00",
-        "event_date": "2026-11-22",
-        "risk": "high",
-        "evidence": [
-          {
-            "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
-            "kind": "primary",
-            "access": "opened",
-            "date": "2026-11-22",
-            "outlet": "OBS Project (GitHub releases)"
-          }
-        ],
-        "supporting_evidence": "33.0.3 release page (opened), shown as '22 Nov 02:06', marked Latest, published by github-actions: 'Fixed a crash on Windows in 33.0.2 with certain older CPUs [R1CH/Warchamp7]'. Assets include Windows x64 installer, macOS and Ubuntu builds.",
-        "primary_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
-        "source_title": "OBS Studio 33.0.3 release (GitHub)",
-        "supporting_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
-        "source_date": "2026-11-22",
-        "confidence": "HIGH",
-        "access": "opened"
-      },
-      {
-        "id": "c4",
-        "text": "OBS Studio is free and open-source software for live streaming and screen recording (GPL-2.0)",
-        "status": "CONFIRMED",
-        "in_script": false,
-        "central": false,
-        "retrieved_at": "2026-11-22T14:40:00+00:00",
-        "event_date": "2026-11-22",
-        "risk": "low",
-        "evidence": [
-          {
-            "url": "https://github.com/obsproject/obs-studio",
-            "kind": "primary",
-            "access": "opened",
-            "date": "2026-11-22",
-            "outlet": "OBS Project (GitHub repository)"
-          }
-        ],
-        "supporting_evidence": "Repository description (opened): 'OBS Studio - Free and open source software for live streaming and screen recording.' Licence: GPL-2.0.",
-        "primary_source": "https://github.com/obsproject/obs-studio",
-        "source_title": "obsproject/obs-studio (GitHub)",
-        "supporting_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
-        "source_date": "2026-11-22",
-        "confidence": "HIGH",
-        "access": "opened"
-      }
-    ]
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; held earlier today (holds.json): x.com, tesla.com and all news sites cannot be opened from this environment; not re-tried in this run"
   },
-  "access_limits": [
-    "x.com blocked: no social signal observed; engagement UNKNOWN.",
-    "News sites, openrouter.ai and npr.org could not be opened."
-  ],
-  "verification": "tiered"
+  {
+   "headline": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-21",
+   "original_source": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
+   "main_claim": "Waymo pauses freeway rides nationwide and files two recalls (search excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Robotaxi safety and regulation",
+   "potential_hook": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
+   "target_audience": "US robotaxi riders, tech fans",
+   "uncertainty": "Details of the DMV action vary by report",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Waymo pauses freeway rides nationwide and files two recalls (search excerpts).",
+   "audience_relevance": "US robotaxi riders, tech fans",
+   "practical_usefulness": "Riders in Waymo cities only",
+   "visual_potential": "Medium",
+   "potential_controversy": "Details of the DMV action vary by report",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 1,
+    "visual": 6,
+    "consequence": 7,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
+     "title": "Waymo files two recalls and pauses freeway rides after California DMV freeway ac",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; nbcnews.com not opened (news group BLOCKED in today's source audit); only search excerpts"
+  },
+  {
+   "headline": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by 2028, no binding commitment",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-21",
+   "original_source": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+   "main_claim": "States agree to more talks, no binding commitment.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Autonomous weapons governance",
+   "potential_hook": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by 2028, no binding co",
+   "target_audience": "Global audience",
+   "uncertainty": "Framing differs by outlet",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "States agree to more talks, no binding commitment.",
+   "audience_relevance": "Global audience",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "Low",
+   "potential_controversy": "Framing differs by outlet",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 4,
+    "usefulness": 2,
+    "social_momentum": 1,
+    "visual": 3,
+    "consequence": 7,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+     "title": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; www.npr.org failed to open (WebFetch: getaddrinfo ENOTFOUND www.npr.org)"
+  },
+  {
+   "headline": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant metadata",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-21",
+   "original_source": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "main_claim": "Exploited flaw exposed tenant metadata (search excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Enterprise identity security",
+   "potential_hook": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant metadata",
+   "target_audience": "IT admins",
+   "uncertainty": "Scope unclear",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Exploited flaw exposed tenant metadata (search excerpts).",
+   "audience_relevance": "IT admins",
+   "practical_usefulness": "Admins should check advisories",
+   "visual_potential": "Low",
+   "potential_controversy": "Scope unclear",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 5,
+    "social_momentum": 1,
+    "visual": 2,
+    "consequence": 6,
+    "discussion": 5,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+     "title": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant m",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; bleepingcomputer.com and Microsoft's advisory not opened (news BLOCKED); an actively exploited flaw is an extraordinary claim needing independent confirmation opened"
+  },
+  {
+   "headline": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
+   "category": "AI BUSINESS & STARTUPS",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-21",
+   "original_source": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+   "main_claim": "Unsigned deal reported by FT.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Big Tech consolidation of AI video",
+   "potential_hook": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
+   "target_audience": "Tech and business audience",
+   "uncertainty": "Unsigned; billions",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Unsigned deal reported by FT.",
+   "audience_relevance": "Tech and business audience",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "Medium (Decart demos)",
+   "potential_controversy": "Unsigned; billions",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 1,
+    "visual": 6,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+     "title": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; FT/TradingView not opened; a billion-dollar deal report is extraordinary financial and needs the primary opened (no primary exists: unsigned)"
+  },
+  {
+   "headline": "KEPCO says about 1.52M records of personal data leaked",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+   "main_claim": "Korean utility data leak (search excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Large utility breach",
+   "potential_hook": "KEPCO says about 1.52M records of personal data leaked",
+   "target_audience": "Korean audience mainly",
+   "uncertainty": "Scope unclear",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Korean utility data leak (search excerpts).",
+   "audience_relevance": "Korean audience mainly",
+   "practical_usefulness": "Not usable outside Korea",
+   "visual_potential": "Low",
+   "potential_controversy": "Scope unclear",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 4,
+    "usefulness": 3,
+    "social_momentum": 1,
+    "visual": 2,
+    "consequence": 5,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+     "title": "KEPCO says about 1.52M records of personal data leaked",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; news.sbs.co.kr not opened (news BLOCKED); breach is an extraordinary claim"
+  },
+  {
+   "headline": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
+   "category": "EMERGING TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+   "main_claim": "Fintech apps can verify ID cards (search excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Digital ID in fintech",
+   "potential_hook": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
+   "target_audience": "Korean users",
+   "uncertainty": "Privacy debate",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Fintech apps can verify ID cards (search excerpts).",
+   "audience_relevance": "Korean users",
+   "practical_usefulness": "Korea only",
+   "visual_potential": "Low",
+   "potential_controversy": "Privacy debate",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 2,
+    "surprise": 3,
+    "usefulness": 4,
+    "social_momentum": 1,
+    "visual": 2,
+    "consequence": 4,
+    "discussion": 3,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+     "title": "South Korea gives Kakao Pay and Toss access to resident registration card verifi",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "V7 rule 6b: every central claim needs one source opened directly; news.sbs.co.kr not opened (news BLOCKED)"
+  },
+  {
+   "headline": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a robot gripper from a text description (Formnext)",
+   "category": "FUTURE TECH",
+   "topic_type": "EMERGING",
+   "published_at": "2026-11-21",
+   "original_source": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
+   "main_claim": "Trade-show demo (aggregator excerpts only).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "AI-designed hardware parts",
+   "potential_hook": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a robot gripper from ",
+   "target_audience": "Engineers, makers",
+   "uncertainty": "Company demo, not general capability",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Trade-show demo (aggregator excerpts only).",
+   "audience_relevance": "Engineers, makers",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "Medium",
+   "potential_controversy": "Company demo, not general capability",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 1,
+    "visual": 6,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
+     "title": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Not eligible: COMPANY-CLAIMED trade-show demo seen only in aggregator excerpts; no source opened"
+  },
+  {
+   "headline": "South Korea's FSS deploys an AI reading system for illegal private loan contract applications",
+   "category": "EMERGING TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://aienews.org/digest/2026-11-22/",
+   "main_claim": "Regulator uses AI to review applications, staff decide (digest excerpt).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "AI in public services",
+   "potential_hook": "South Korea's FSS deploys an AI reading system for illegal private loan contract applications",
+   "target_audience": "Korean audience",
+   "uncertainty": "None",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Regulator uses AI to review applications, staff decide (digest excerpt).",
+   "audience_relevance": "Korean audience",
+   "practical_usefulness": "Korea only",
+   "visual_potential": "Low",
+   "potential_controversy": "None",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 2,
+    "surprise": 3,
+    "usefulness": 3,
+    "social_momentum": 1,
+    "visual": 1,
+    "consequence": 3,
+    "discussion": 2,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://aienews.org/digest/2026-11-22/",
+     "title": "South Korea's FSS deploys an AI reading system for illegal private loan contract",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Not eligible: digest excerpt only; no primary or independent source opened"
+  },
+  {
+   "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+   "category": "FUTURE TECH",
+   "topic_type": "EMERGING",
+   "published_at": "2026-11-22",
+   "original_source": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
+   "main_claim": "Clip authenticity and autonomy unclear.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Humanoid hype",
+   "potential_hook": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+   "target_audience": "Tech fans",
+   "uncertainty": "Teleoperation unknown",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "DISPUTED",
+   "latest_development": "Clip authenticity and autonomy unclear.",
+   "audience_relevance": "Tech fans",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "High",
+   "potential_controversy": "Teleoperation unknown",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 1,
+    "social_momentum": 3,
+    "visual": 9,
+    "consequence": 3,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
+     "title": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Not eligible: DISPUTED (autonomy/teleoperation unknown); source not opened"
+  },
+  {
+   "headline": "Musk says first Optimus deployments will be in mining and ore refining",
+   "category": "FUTURE TECH",
+   "topic_type": "EXPERIMENTAL",
+   "published_at": "2026-11-22",
+   "original_source": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
+   "main_claim": "Prediction (newsletter excerpt).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Humanoid deployment plans",
+   "potential_hook": "Musk says first Optimus deployments will be in mining and ore refining",
+   "target_audience": "Tech fans",
+   "uncertainty": "Prediction",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Prediction (newsletter excerpt).",
+   "audience_relevance": "Tech fans",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "Low",
+   "potential_controversy": "Prediction",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 4,
+    "usefulness": 1,
+    "social_momentum": 1,
+    "visual": 3,
+    "consequence": 3,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
+     "title": "Musk says first Optimus deployments will be in mining and ore refining",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Not eligible: a prediction seen only in a newsletter excerpt"
+  },
+  {
+   "headline": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-21",
+   "original_source": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
+   "main_claim": "User complaints and beta features (excerpt).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Phone durability",
+   "potential_hook": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock",
+   "target_audience": "iPhone users",
+   "uncertainty": "Anecdotal complaints",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "User complaints and beta features (excerpt).",
+   "audience_relevance": "iPhone users",
+   "practical_usefulness": "Beta only",
+   "visual_potential": "Medium",
+   "potential_controversy": "Anecdotal complaints",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 1,
+    "visual": 5,
+    "consequence": 3,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
+     "title": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera fac",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Not eligible: PRELIMINARY (user complaints, beta); macrumors.com not opened"
+  },
+  {
+   "headline": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+   "category": "CREATOR TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+   "main_claim": "33.0.3 (22 Nov, marked Latest on GitHub): 'Fixed a crash on Windows in 33.0.2 with certain older CPUs'. 33.0.2 (20 Nov) had warned of a startup crash on certain older processors and advised installing 33.0.1 or 32.2.2.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "OBS is the free, open-source app many creators stream and record with; anyone who updated on 20 Nov and hit a crash has a fix.",
+   "potential_hook": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+   "target_audience": "Streamers, creators, anyone recording their screen",
+   "uncertainty": "How many users were affected and which CPUs exactly is not stated; no independent coverage opened",
+   "evidence_confidence": "HIGH",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "33.0.3 (22 Nov, marked Latest on GitHub): 'Fixed a crash on Windows in 33.0.2 with certain older CPUs'. 33.0.2 (20 Nov) had warned of a startup crash on certain older processors and advised installing 33.0.1 or 32.2.2.",
+   "audience_relevance": "Streamers, creators, anyone recording their screen",
+   "practical_usefulness": "Directly actionable: update to 33.0.3 (free).",
+   "visual_potential": "Low-medium: screen recording of the OBS release page and the update dialog",
+   "potential_controversy": "Low; some users may have rolled back",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 3,
+    "usefulness": 8,
+    "social_momentum": 1,
+    "visual": 4,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "signals": [
+    {
+     "platform": "primary",
+     "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+     "title": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on ",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ]
+  },
+  {
+   "headline": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterprise Admin Console sign-in",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-20",
+   "original_source": "https://github.com/anthropics/claude-code/releases",
+   "main_claim": "Release notes opened on GitHub (20 Nov 22:32 as shown).",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Developer tool update",
+   "potential_hook": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterprise Admin Console si",
+   "target_audience": "Developers",
+   "uncertainty": "Conflict of interest: Anthropic product, script written by Claude",
+   "evidence_confidence": "HIGH",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Release notes opened on GitHub (20 Nov 22:32 as shown).",
+   "audience_relevance": "Developers",
+   "practical_usefulness": "Developers only",
+   "visual_potential": "Low",
+   "potential_controversy": "Conflict of interest: Anthropic product, script written by Claude",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 3,
+    "usefulness": 5,
+    "social_momentum": 1,
+    "visual": 3,
+    "consequence": 2,
+    "discussion": 2,
+    "timeliness": 2
+   },
+   "signals": [
+    {
+     "platform": "primary",
+     "url": "https://github.com/anthropics/claude-code/releases",
+     "title": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterpr",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov, before 2026-11-21T14:22Z; also developer-only and an Anthropic product (disclosure conflict)"
+  },
+  {
+   "headline": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as default",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-20",
+   "original_source": "https://github.com/openai/codex/releases",
+   "main_claim": "Release notes opened on GitHub (20 Nov 00:44 as shown).",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Coding agent update",
+   "potential_hook": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as default",
+   "target_audience": "Developers",
+   "uncertainty": "None",
+   "evidence_confidence": "HIGH",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Release notes opened on GitHub (20 Nov 00:44 as shown).",
+   "audience_relevance": "Developers",
+   "practical_usefulness": "Developers only",
+   "visual_potential": "Low",
+   "potential_controversy": "None",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 3,
+    "usefulness": 5,
+    "social_momentum": 1,
+    "visual": 2,
+    "consequence": 3,
+    "discussion": 3,
+    "timeliness": 2
+   },
+   "signals": [
+    {
+     "platform": "primary",
+     "url": "https://github.com/openai/codex/releases",
+     "title": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; the GPT-6.2 model launch itself (week of 15-21 Nov) could not be opened on openai.com"
+  },
+  {
+   "headline": "Anthropic announces the close of its IPO and a concurrent private placement",
+   "category": "AI BUSINESS & STARTUPS",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-20",
+   "original_source": "https://www.anthropic.com/news",
+   "main_claim": "Listed on anthropic.com/news (opened) dated 20 Nov.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Major AI IPO",
+   "potential_hook": "Anthropic announces the close of its IPO and a concurrent private placement",
+   "target_audience": "Business audience",
+   "uncertainty": "Conflict of interest; extraordinary financial",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Listed on anthropic.com/news (opened) dated 20 Nov.",
+   "audience_relevance": "Business audience",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "Low",
+   "potential_controversy": "Conflict of interest; extraordinary financial",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 4,
+    "usefulness": 1,
+    "social_momentum": 1,
+    "visual": 2,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 2
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.anthropic.com/news",
+     "title": "Anthropic announces the close of its IPO and a concurrent private placement",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 20 Nov; billion-dollar event needs independent confirmation opened (news BLOCKED); Anthropic conflict of interest"
+  },
+  {
+   "headline": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minutes",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-20",
+   "original_source": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+   "main_claim": "Amazon report (excerpts); GitHub shows a critical MONAILabel advisory GHSA-qc22-rmgc-vg94 dated 18 Nov (opened), which does not mention AI agents.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI agents in offensive security",
+   "potential_hook": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minute",
+   "target_audience": "Security audience",
+   "uncertainty": "Attribution claims",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Amazon report (excerpts); GitHub shows a critical MONAILabel advisory GHSA-qc22-rmgc-vg94 dated 18 Nov (opened), which does not mention AI agents.",
+   "audience_relevance": "Security audience",
+   "practical_usefulness": "Patch guidance",
+   "visual_potential": "Low",
+   "potential_controversy": "Attribution claims",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 9,
+    "usefulness": 4,
+    "social_momentum": 1,
+    "visual": 3,
+    "consequence": 8,
+    "discussion": 7,
+    "timeliness": 2
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+     "title": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-da",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; zero-day/AI-agent claim is extraordinary; securityweek.com and Amazon's report not opened; a GitHub advisory does not prove the AI-agent claim"
+  },
+  {
+   "headline": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six models",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-19",
+   "original_source": "https://nltimes.nl/node/93265",
+   "main_claim": "Regulator test found privacy risks and unreliable answers (excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Smart-glasses privacy",
+   "potential_hook": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six mod",
+   "target_audience": "Global consumers",
+   "uncertainty": "Meta lawsuit pending",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Regulator test found privacy risks and unreliable answers (excerpts).",
+   "audience_relevance": "Global consumers",
+   "practical_usefulness": "Buying advice",
+   "visual_potential": "Medium",
+   "potential_controversy": "Meta lawsuit pending",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 7,
+    "usefulness": 6,
+    "social_momentum": 1,
+    "visual": 6,
+    "consequence": 6,
+    "discussion": 8,
+    "timeliness": 1
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://nltimes.nl/node/93265",
+     "title": "Dutch data protection authority advises consumers not to buy AI camera glasses a",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 19 Nov; nltimes.nl / autoriteitpersoonsgegevens.nl not opened"
+  },
+  {
+   "headline": "Replit launches Missions: agent swarms that work toward a goal within a budget",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-17",
+   "original_source": "https://replit.com/blog/introducing-replit-missions",
+   "main_claim": "Launch post (excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Multi-agent coding",
+   "potential_hook": "Replit launches Missions: agent swarms that work toward a goal within a budget",
+   "target_audience": "Developers, founders",
+   "uncertainty": "Benchmarks are Replit's own",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Launch post (excerpts).",
+   "audience_relevance": "Developers, founders",
+   "practical_usefulness": "Teams; pricing unclear",
+   "visual_potential": "Medium",
+   "potential_controversy": "Benchmarks are Replit's own",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 5,
+    "social_momentum": 1,
+    "visual": 4,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 0
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://replit.com/blog/introducing-replit-missions",
+     "title": "Replit launches Missions: agent swarms that work toward a goal within a budget",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; replit.com not opened"
+  },
+  {
+   "headline": "US BIS interim rule: licences for advanced AI chips to five countries and for remote access by China-headquartered firms",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-16",
+   "original_source": "https://www.gtlaw.com/de/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+   "main_claim": "Interim final rule (law-firm and press excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Chip geopolitics",
+   "potential_hook": "US BIS interim rule: licences for advanced AI chips to five countries and for remote access by China",
+   "target_audience": "Business audience",
+   "uncertainty": "Federal Register status unclear",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Interim final rule (law-firm and press excerpts).",
+   "audience_relevance": "Business audience",
+   "practical_usefulness": "Not usable",
+   "visual_potential": "Low",
+   "potential_controversy": "Federal Register status unclear",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 4,
+    "usefulness": 1,
+    "social_momentum": 1,
+    "visual": 2,
+    "consequence": 6,
+    "discussion": 5,
+    "timeliness": 0
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.gtlaw.com/de/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+     "title": "US BIS interim rule: licences for advanced AI chips to five countries and for re",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 16 Nov; bis.gov / federalregister.gov not opened"
+  },
+  {
+   "headline": "Instagram lets users edit Stories within 15 minutes of posting",
+   "category": "CREATOR TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-18",
+   "original_source": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
+   "main_claim": "Edit window with 'Edited' label (excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Creator workflow",
+   "potential_hook": "Instagram lets users edit Stories within 15 minutes of posting",
+   "target_audience": "Instagram users",
+   "uncertainty": "None",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Edit window with 'Edited' label (excerpts).",
+   "audience_relevance": "Instagram users",
+   "practical_usefulness": "Everyone on Instagram",
+   "visual_potential": "Medium",
+   "potential_controversy": "None",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 4,
+    "usefulness": 8,
+    "social_momentum": 1,
+    "visual": 6,
+    "consequence": 3,
+    "discussion": 5,
+    "timeliness": 1
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
+     "title": "Instagram lets users edit Stories within 15 minutes of posting",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 18 Nov (covered earlier this week); fastcompany.com and about.instagram.com not opened"
+  },
+  {
+   "headline": "Google makes Gemini Tasks agent free in six countries including India",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-17",
+   "original_source": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+   "main_claim": "Free agent access (excerpts).",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Free AI agent for millions",
+   "potential_hook": "Google makes Gemini Tasks agent free in six countries including India",
+   "target_audience": "Gemini users",
+   "uncertainty": "None",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Free agent access (excerpts).",
+   "audience_relevance": "Gemini users",
+   "practical_usefulness": "Free in six countries",
+   "visual_potential": "Medium",
+   "potential_controversy": "None",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": []
+   },
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 5,
+    "usefulness": 8,
+    "social_momentum": 1,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 5,
+    "timeliness": 0
+   },
+   "signals": [
+    {
+     "platform": "news",
+     "url": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+     "title": "Google makes Gemini Tasks agent free in six countries including India",
+     "retrieved_at": "2026-11-22T14:40:00+00:00",
+     "access": "SEARCH-INDEX",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ],
+   "hold_reason": "Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; androidpolice.com and blog.google not opened"
+  }
+ ],
+ "candidate_shortfall_reason": "23 developments were found, but only 4 rest on a source opened directly (OBS release pages, Claude Code and Codex release notes on GitHub, and anthropic.com/news for the IPO item); every other candidate is evidence_confidence LOW because, under V7 rule 6b, search excerpts are leads and not verification, and the news, X and most primary sites cannot be opened from this environment. No filler was added.",
+ "factcheck": {
+  "story": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+  "date": "2026-11-22",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "On 20 November 2026 OBS Studio released version 33.0.2",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-22T14:40:00+00:00",
+    "event_date": "2026-11-20",
+    "risk": "low",
+    "evidence": [
+     {
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-20",
+      "outlet": "OBS Project (GitHub releases)"
+     }
+    ],
+    "supporting_evidence": "Release page opened: '33.0.2' released 20 Nov (shown as '20 Nov 15:00', no year on the page; asset names and the 33.0.3 page place it in 2026).",
+    "primary_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
+    "source_title": "OBS Studio 33.0.2 release (GitHub)",
+    "supporting_source": "https://github.com/obsproject/obs-studio",
+    "source_date": "2026-11-20",
+    "confidence": "HIGH",
+    "access": "opened"
+   },
+   {
+    "id": "c2",
+    "text": "The OBS team flagged a known issue with 33.0.2: on certain older processors OBS Studio crashes during startup, and advised installing an older version such as 33.0.1 or 32.2.2 until it was addressed",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-22T14:40:00+00:00",
+    "event_date": "2026-11-20",
+    "risk": "low",
+    "evidence": [
+     {
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-20",
+      "outlet": "OBS Project (GitHub releases)"
+     }
+    ],
+    "supporting_evidence": "33.0.2 release page (opened): 'There is a known issue with 33.0.2 on certain older processors where OBS Studio will crash during startup.' 'This issue does not affect everyone.' '...an installer for an older version such as 33.0.1 or 32.2.2 until we are able to address this.'",
+    "primary_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
+    "source_title": "OBS Studio 33.0.2 release (GitHub)",
+    "supporting_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+    "source_date": "2026-11-20",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "OBS team"
+   },
+   {
+    "id": "c3",
+    "text": "On 22 November 2026 OBS Studio released 33.0.3, which fixes the Windows crash in 33.0.2 with certain older CPUs; it is marked Latest",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-22T14:40:00+00:00",
+    "event_date": "2026-11-22",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-22",
+      "outlet": "OBS Project (GitHub releases)"
+     }
+    ],
+    "supporting_evidence": "33.0.3 release page (opened), shown as '22 Nov 02:06', marked Latest, published by github-actions: 'Fixed a crash on Windows in 33.0.2 with certain older CPUs [R1CH/Warchamp7]'. Assets include Windows x64 installer, macOS and Ubuntu builds.",
+    "primary_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+    "source_title": "OBS Studio 33.0.3 release (GitHub)",
+    "supporting_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
+    "source_date": "2026-11-22",
+    "confidence": "HIGH",
+    "access": "opened"
+   },
+   {
+    "id": "c4",
+    "text": "OBS Studio is free and open-source software for live streaming and screen recording (GPL-2.0)",
+    "status": "CONFIRMED",
+    "in_script": false,
+    "central": false,
+    "retrieved_at": "2026-11-22T14:40:00+00:00",
+    "event_date": "2026-11-22",
+    "risk": "low",
+    "evidence": [
+     {
+      "url": "https://github.com/obsproject/obs-studio",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-22",
+      "outlet": "OBS Project (GitHub repository)"
+     }
+    ],
+    "supporting_evidence": "Repository description (opened): 'OBS Studio - Free and open source software for live streaming and screen recording.' Licence: GPL-2.0.",
+    "primary_source": "https://github.com/obsproject/obs-studio",
+    "source_title": "obsproject/obs-studio (GitHub)",
+    "supporting_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+    "source_date": "2026-11-22",
+    "confidence": "HIGH",
+    "access": "opened"
+   }
+  ]
+ },
+ "access_limits": [
+  "x.com blocked: no social signal observed; engagement UNKNOWN.",
+  "News sites, openrouter.ai and npr.org could not be opened."
+ ],
+ "verification": "tiered",
+ "fallback_reason": "Stronger stories were found (OpenRouter prompt theft 69.5, Tesla FSD v15 63.0) but every source for them (openrouter.ai, dragos.com, tesla.com, x.com, news sites) is blocked by this cloud environment's network policy, so no critical claim could be checked on an opened page. Widening the environment's Allowed domains would unblock them; OBS is a useful but niche creator tip chosen only because its GitHub release pages open."
 }

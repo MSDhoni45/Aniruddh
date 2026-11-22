@@ -13,6 +13,17 @@
 
 OBS Studio 33.0.2 (20 Nov) could crash at startup on certain older processors; on 22 Nov the OBS team shipped 33.0.3 with the fix. It is practical: anyone who streams or records on an older Windows PC should update. X signal: none observed (x.com blocked; engagement UNKNOWN). It beat bigger stories only because they could not be verified by opening a source here.
 
+> **FALLBACK STORY.** A stronger story was discovered but could not be verified from this environment. Stronger stories were found (OpenRouter prompt theft 69.5, Tesla FSD v15 63.0) but every source for them (openrouter.ai, dragos.com, tesla.com, x.com, news sites) is blocked by this cloud environment's network policy, so no critical claim could be checked on an opened page. Widening the environment's Allowed domains would unblock them; OBS is a useful but niche creator tip chosen only because its GitHub release pages open.
+
+- **A. Best story discovered:** OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft (69.5/100)
+- **B. Best story verified:** OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs (45.0/100)
+- **C. Best story ready to record:** OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs (45.0/100)
+  - Blocked: OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft (69.5): V7 rule 6b: every central claim needs one source opened directly; openrouter.ai failed to open (WebFetch: getaddrinfo ENOTFOUND openrouter.ai) and the Dragos study was not opened; a security-breach claim is extraordinary and needs primary plus independent confirmation opened
+  - Blocked: Tesla starts rolling out FSD (Supervised) v15 with Reality View (63.0): V7 rule 6b: every central claim needs one source opened directly; held earlier today (holds.json): x.com, tesla.com and all news sites cannot be opened from this environment; not re-tried in this run
+  - Blocked: Dutch data protection authority advises consumers not to buy AI camera glasses after testing six models (55.5): Outside the 24-hour window (and the release timing is before the run window); dated 19 Nov; nltimes.nl / autoriteitpersoonsgegevens.nl not opened
+  - Blocked: Waymo files two recalls and pauses freeway rides after California DMV freeway action (52.0): V7 rule 6b: every central claim needs one source opened directly; nbcnews.com not opened (news group BLOCKED in today's source audit); only search excerpts
+  - Blocked: Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minutes (52.0): Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; zero-day/AI-agent claim is extraordinary; securityweek.com and Amazon's report not opened; a GitHub advisory does not prove the AI-agent claim
+
 ## 3. Final recording script
 
 ```

@@ -1212,6 +1212,71 @@
     },
     "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
   },
+  "selection_tiers": {
+    "best_discovered": {
+      "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft",
+      "score": 69.5,
+      "broad_relevance": 7
+    },
+    "best_verified": {
+      "headline": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+      "score": 45.0,
+      "broad_relevance": 5
+    },
+    "best_ready": {
+      "headline": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+      "score": 45.0,
+      "broad_relevance": 5
+    },
+    "blockers": [
+      {
+        "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft",
+        "score": 69.5,
+        "blocker": "V7 rule 6b: every central claim needs one source opened directly; openrouter.ai failed to open (WebFetch: getaddrinfo ENOTFOUND openrouter.ai) and the Dragos study was not opened; a security-breach claim is extraordinary and needs primary plus independent confirmation opened"
+      },
+      {
+        "headline": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
+        "score": 63.0,
+        "blocker": "V7 rule 6b: every central claim needs one source opened directly; held earlier today (holds.json): x.com, tesla.com and all news sites cannot be opened from this environment; not re-tried in this run"
+      },
+      {
+        "headline": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six models",
+        "score": 55.5,
+        "blocker": "Outside the 24-hour window (and the release timing is before the run window); dated 19 Nov; nltimes.nl / autoriteitpersoonsgegevens.nl not opened"
+      },
+      {
+        "headline": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
+        "score": 52.0,
+        "blocker": "V7 rule 6b: every central claim needs one source opened directly; nbcnews.com not opened (news group BLOCKED in today's source audit); only search excerpts"
+      },
+      {
+        "headline": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minutes",
+        "score": 52.0,
+        "blocker": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; zero-day/AI-agent claim is extraordinary; securityweek.com and Amazon's report not opened; a GitHub advisory does not prove the AI-agent claim"
+      },
+      {
+        "headline": "Google makes Gemini Tasks agent free in six countries including India",
+        "score": 52.0,
+        "blocker": "Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; androidpolice.com and blog.google not opened"
+      },
+      {
+        "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+        "score": 51.0,
+        "blocker": "Not eligible: DISPUTED (autonomy/teleoperation unknown); source not opened"
+      },
+      {
+        "headline": "Instagram lets users edit Stories within 15 minutes of posting",
+        "score": 50.0,
+        "blocker": "Outside the 24-hour window (and the release timing is before the run window); dated 18 Nov (covered earlier this week); fastcompany.com and about.instagram.com not opened"
+      },
+      {
+        "headline": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
+        "score": 45.5,
+        "blocker": "V7 rule 6b: every central claim needs one source opened directly; FT/TradingView not opened; a billion-dollar deal report is extraordinary financial and needs the primary opened (no primary exists: unsigned)"
+      }
+    ],
+    "fallback": true
+  },
   "script_checks": {
     "hook_clarity": {
       "pass": true,

@@ -50,6 +50,8 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
   historic firsts, billion-dollar events, breaches, radical robotics) need the primary source and independent confirmation
   both opened, never a GitHub repo or a snippet; 30-40 s (40 hard), about 70-90 words at a natural pace; at least 5 hooks;
   ten script checks; story history with company and event date; a seven-section brief with no editing plan.
+- V7.1: discover on audience potential, never on which sites open; the brief reports A best discovered, B best verified,
+  C best ready to record and each blocker; a ready story 10+ points below A needs `fallback_reason` and a FALLBACK banner.
 - v6 (accepted on 2026-11-22 only, superseded by V7): creator-led technology content, not a news summary. 15-25 candidates scored on the
   ten-part v6 rubric with a claim status (CONFIRMED, REPORTED, CLAIMED, SPECULATIVE, UNVERIFIED; only CONFIRMED or REPORTED
   stories win); five finalists with five hooks each (one per approach, no generic openings); three script variants

@@ -214,12 +214,40 @@ def v6_problems(p: dict, ranked: list[dict], ready: dict) -> list[str]:
     return probs
 
 
+FALLBACK_GAP = 10          # points: a ready story this far below the best discovered one is a fallback that must be explained
+_NOT_DISCOVERY = ("already covered", "published before", "published after", "outside the 24-hour window")
+
+
+def selection_tiers(p: dict, ranked: list[dict], ready_status: str) -> dict:
+    """V7.1: A = best story discovered (verification aside), B = best story that passed the verification gate,
+    C = best story ready to record (the package). Stories above C carry the verification blocker that kept them out."""
+    pool = [c for c in ranked if not c.get("already_covered") and not str(c.get("rejected", "")).strip()
+            and not any(k in str(c.get("ineligible_reason") or "") for k in _NOT_DISCOVERY)]
+    pool.sort(key=lambda c: c["trend_score"], reverse=True)
+    a = pool[0] if pool else None
+    b = next((c for c in ranked if c["eligible"]), None)
+    c = next((x for x in ranked if x.get("headline") == p["topic"]), None)
+    pick = lambda x: {"headline": x["headline"], "score": x["trend_score"],
+                      "broad_relevance": x["scores"].get("broad_relevance")} if x else None
+    blockers = [{"headline": x["headline"], "score": x["trend_score"],
+                 "blocker": x.get("hold_reason") or x.get("ineligible_reason") or "not selected"}
+                for x in pool if c and x["trend_score"] > c["trend_score"] and x["headline"] != p["topic"]]
+    fallback = bool(a and c and a["headline"] != c["headline"] and a["trend_score"] - c["trend_score"] >= FALLBACK_GAP)
+    return {"best_discovered": pick(a), "best_verified": pick(b),
+            "best_ready": pick(c) if ready_status == ver.READY else None, "blockers": blockers, "fallback": fallback}
+
+
 def _filled(v) -> bool:
     return bool(str(v if v is not None else "").strip())
 
 
-def v7_problems(p: dict, ready: dict) -> list[str]:
+def v7_problems(p: dict, ready: dict, tiers: dict | None = None) -> list[str]:
     probs = []
+    if tiers and tiers["fallback"] and len(str(p.get("fallback_reason", "")).split()) < 8:
+        a, c = tiers["best_discovered"], tiers["best_ready"] or {}
+        probs.append(f"fallback: the best story discovered ('{a['headline'][:50]}', {a['score']}) beats the selected one by "
+                     f"{round(a['score'] - c.get('score', 0), 1)} points; write fallback_reason (what blocked the stronger story "
+                     "and what would unblock it). Never let a niche story win silently because it is easier to verify")
     if len(str(p["why_this_story"]).split()) > MAX_WHY_WORDS or not _filled(p["why_this_story"]):
         probs.append(f"why_this_story: 1-{MAX_WHY_WORDS} words (why it matters, what is interesting, the X signal, why it won)")
     if "x" not in str(p["why_this_story"]).lower() and "social" not in str(p["why_this_story"]).lower():
@@ -517,15 +545,16 @@ def validate(p: dict) -> tuple[list[str], dict]:
     prior = content_db.find_repeat(p["topic"], p["keys"], p["date"], ignore_slug=p["slug"])
     if prior and not p.get("material_update_of"):
         problems.append(f"repeat of {prior['date']} '{prior['topic']}'; set material_update_of to the new development")
+    tiers = selection_tiers(p, ranked, ready["status"]) if is_v7(p) else None
     if is_v7(p):
-        problems += v7_problems(p, ready)
+        problems += v7_problems(p, ready, tiers)
     if is_v6(p) or is_v7(p):
         if is_v6(p):
             problems += v6_problems(p, ranked, ready)
         wlo, whi = lint.limits(scheme)["target_words"]
         if not wlo <= chk["words"] <= whi:
             problems.append(f"script: {chk['words']} words; write {wlo}-{whi} at a natural pace")
-    return problems, {"lint": chk, "quality": q, "ranked": ranked, "ready": ready, "hooks": p["hooks"]}
+    return problems, {"lint": chk, "quality": q, "ranked": ranked, "ready": ready, "hooks": p["hooks"], "tiers": tiers}
 
 
 def render(p: dict, info: dict) -> str:
@@ -715,6 +744,21 @@ def render_creative(p: dict, info: dict) -> str:
     return "\n".join(L) + "\n"
 
 
+def _tier_lines(p: dict, info: dict) -> list[str]:
+    t = info.get("tiers")
+    if not t:
+        return []
+    f = lambda x: f"{x['headline']} ({x['score']}/100)" if x else "none"
+    L = [f"- **A. Best story discovered:** {f(t['best_discovered'])}", f"- **B. Best story verified:** {f(t['best_verified'])}",
+         f"- **C. Best story ready to record:** {f(t['best_ready'])}"]
+    for b in t["blockers"][:5]:
+        L.append(f"  - Blocked: {b['headline']} ({b['score']}): {b['blocker']}")
+    if t["fallback"]:
+        L = ["> **FALLBACK STORY.** A stronger story was discovered but could not be verified from this environment. "
+             + str(p.get("fallback_reason", "")), ""] + L
+    return L
+
+
 def render_today_v7(p: dict, info: dict) -> str:
     """V7 daily brief: seven sections, one story, no editing plan."""
     chk, rd, ig = info["lint"], info["ready"], p["instagram"]
@@ -726,7 +770,7 @@ def render_today_v7(p: dict, info: dict) -> str:
     L += ["## 1. Today's story", "", f"- **Headline:** {p['topic']}", f"- **Date:** {p['announced_at']}"
           + (f" (event: {p['event_date']})" if str(p["event_date"]) not in str(p["announced_at"]) else ""),
           f"- **Category:** {p['category']}", f"- **Confidence:** {p['confidence']}", "",
-          "## 2. Why this story", "", p["why_this_story"], "",
+          "## 2. Why this story", "", p["why_this_story"], ""] + _tier_lines(p, info) + ["",
           "## 3. Final recording script", "", "```", p["script"].strip(), "```", "",
           f"{chk['words']} words, about {chk['seconds']} s ({chk['pace_basis']}).", "",
           "## 4. Caption", "", ig["caption"], "", " ".join(ig["hashtags"]), "", "## 5. Sources", ""]
@@ -930,6 +974,7 @@ def research_record(p: dict, info: dict) -> dict:
            "hooks": lint.score_hooks(p["hooks"], hook_criteria_for(p)), "backups": p["backups"],
            "limitations": p["limitations"], "source_audit": source_audit_for(p)}
     if is_v7(p):
+        rec.update(selection_tiers=info.get("tiers"))
         rec.update(hooks=lint.score_hooks(p["hooks"], lint.HOOK_CRITERIA_V7), script_checks=p["script_checks"],
                    audience_check=p["audience_check"], practical_takeaway=p["practical_takeaway"],
                    scrutiny=p.get("scrutiny"), learning_applied=p["learning_applied"],
