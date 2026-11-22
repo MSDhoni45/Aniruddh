@@ -1,0 +1,955 @@
+{
+  "date": "2026-11-22",
+  "language": "english",
+  "scoring": "v5",
+  "slug": "signal-blocks-screenshots-ai-assistants",
+  "keys": [
+    "signal-blocks-screenshots-ai-assistants",
+    "signal-block-siri-ai"
+  ],
+  "topic": "Signal starts blocking screenshots so phone AI assistants like Siri and Gemini can't read your chats",
+  "category": "AI",
+  "topic_type": "BREAKING",
+  "announced_at": "20 November 2026 (Signal blog post by Meredith Whittaker; coverage 20-21 Nov)",
+  "generated_at": "2026-11-22T08:55:00+05:30",
+  "research_window": {
+    "start_utc": "2026-11-20T03:11:52+00:00",
+    "end_utc": "2026-11-22T03:11:52+00:00",
+    "start_ist": "2026-11-20T08:41:52+05:30",
+    "end_ist": "2026-11-22T08:41:52+05:30",
+    "hours": 48
+  },
+  "window_expansion_reason": "No strong verified story inside the 24 hours (21-22 Nov): the search index held only newsletter digests for 21 Nov, whose items were either older (chip approvals and the Dragos study, 19 Nov; ChatGPT Wallet, 13 Nov), extraordinary and unverified (a claimed Riemann Hypothesis proof), or financial claims needing an unopenable primary (Nvidia SEC report). Widened to 48 hours, which brings in Signal's 20 Nov announcement.",
+  "creator_request": false,
+  "why_selected": "Strongest verified story in the widened 48-hour window: Signal's own announcement (indexed text) plus six independent outlets, about a privacy fight that touches every phone user.",
+  "why_short": "A messaging app is blocking the AI on your own phone: relatable, surprising, and easy to discuss.",
+  "why_beats_alternatives": "The House chip-approval disclosure and the Dragos prompt-canary study were released on 19 Nov (before even the widened 48-hour window) and rely on secondary figures; the Claude Riemann Hypothesis proof claim is extraordinary, single-sourced and conflicts with the writer's disclosure; ChatGPT Wallet (13 Nov) and Walmart's Agent Gateway (21 Oct) are outside the window.",
+  "evidence_confidence": "MEDIUM",
+  "confidence": "MEDIUM",
+  "verified_development": "On 20 Nov 2026 Signal announced screenshot blocking on iOS 27 (default 'Block Siri AI' setting) and detection-based Screen security on some Android versions, to keep OS-level AI assistants out of chats (Signal blog indexed text plus 9to5Mac, Android Authority, Decrypt, Digital Trends, gHacks, CyberInsider).",
+  "disclosure": "Disclosure: this package was written by Claude, an Anthropic model. The story concerns Apple, Google and Signal; Anthropic is not involved.",
+  "research_summary": "Signal president Meredith Whittaker's blog post 'Signal is Serious About Protecting Your Privacy' (20 Nov 2026) says AI agents built into operating systems, such as Apple's Siri AI and Google's Gemini, are an existential threat to private messaging. Signal now blocks in-app screenshots by default on iOS 27 through a 'Block Siri AI' setting, and turns on Screen security on Android versions where it can detect an assistant reading the screen. macOS cannot be reliably protected; Signal recommends excluding Signal from Siri there. Users can switch the protection off, with a warning that it exposes their and their contacts' messages. Signal admits agents could still read data stored on the device and asks Apple, Google and Microsoft for an official opt-out. It follows Signal's 2025 move against Windows Recall.",
+  "primary_sources": [
+    {
+      "label": "Signal blog: Signal is Serious About Protecting Your Privacy (20 Nov 2026)",
+      "url": "https://signal.org/blog/protecting-your-privacy/"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "label": "9to5Mac (20 Nov)",
+      "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/"
+    },
+    {
+      "label": "Android Authority (20 Nov)",
+      "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/"
+    },
+    {
+      "label": "Decrypt",
+      "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots"
+    },
+    {
+      "label": "Digital Trends",
+      "url": "https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/"
+    },
+    {
+      "label": "gHacks (21 Nov)",
+      "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/"
+    },
+    {
+      "label": "CyberInsider",
+      "url": "https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/"
+    }
+  ],
+  "key_facts": [
+    "Signal announced on 20 Nov 2026.",
+    "iOS 27: 'Block Siri AI' on by default; screenshots blocked in Signal.",
+    "Android: Screen security turns on when an AI assistant is detected (some versions only).",
+    "Can be switched off, with a warning about contacts' messages.",
+    "Whittaker: OS-level AI is an 'existential threat'.",
+    "Incomplete: macOS not reliably blocked; on-device files still reachable."
+  ],
+  "uncertainties": [
+    "No public response from Apple or Google found.",
+    "Android detection does not work on every Android version.",
+    "Exact app version numbers differ across reports and are left out of the script.",
+    "signal.org could not be opened; Signal's text read via search index.",
+    "Written by Claude, an Anthropic model (disclosed)."
+  ],
+  "context": "Signal used the same tactic in 2025 against Microsoft Recall on Windows 11. It is asking Apple, Google and Microsoft for a documented way for apps to opt out of AI access.",
+  "script": "Signal just started blocking screenshots. And the reason is AI.\n\nSignal says the AI assistants built into your phone, like Siri and Gemini, can read what's on your screen. Including your private chats.\n\nSo on iPhones running iOS 27, screenshots inside Signal are now blocked by default. On some Android phones, Signal switches on a screen shield when it spots an AI assistant reading.\n\nYou can turn it off. But Signal warns that exposes your contacts' messages too.\n\nIts president calls this kind of AI an existential threat. And Signal admits the fix isn't complete.\n\nSo, would you trade AI convenience for privacy?",
+  "hook": "Signal just started blocking screenshots. And the reason is AI.",
+  "hooks": [
+    {
+      "text": "Signal just started blocking screenshots. And the reason is AI.",
+      "mechanism": "unexpected fact",
+      "accuracy": 9,
+      "curiosity": 10,
+      "clarity": 10,
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 10
+    },
+    {
+      "text": "The AI on your phone can read your private chats. Signal just fought back.",
+      "mechanism": "relatable problem",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 9,
+      "natural": 9
+    },
+    {
+      "text": "Siri and Gemini just got locked out of one chat app.",
+      "mechanism": "strong factual statement",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 7,
+      "natural": 9
+    },
+    {
+      "text": "Try to screenshot a Signal chat on iOS 27. It won't let you.",
+      "mechanism": "surprising demonstration",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 6,
+      "natural": 9
+    },
+    {
+      "text": "A privacy app just called phone AI an existential threat.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 8
+    },
+    {
+      "text": "Your phone's AI assistant might be the biggest privacy risk you own.",
+      "mechanism": "curiosity gap",
+      "accuracy": 6,
+      "curiosity": 9,
+      "clarity": 8,
+      "credibility": 6,
+      "emotional": 9,
+      "natural": 9
+    }
+  ],
+  "revisions": 2,
+  "quality_v5": {
+    "hook": 9,
+    "clarity": 9,
+    "storytelling": 9,
+    "retention": 9,
+    "shareability": 9,
+    "factual_confidence": 9
+  },
+  "recording": {
+    "tone": "Curious and calm, a little surprised; privacy without fear-mongering.",
+    "opening_expression": "Hold up a phone, mock a screenshot press, then look straight at the camera.",
+    "emphasis": [
+      "blocking screenshots",
+      "the reason is AI",
+      "private chats",
+      "by default",
+      "contacts' messages too",
+      "existential threat",
+      "isn't complete",
+      "convenience for privacy"
+    ],
+    "pauses": [
+      "beat after 'And the reason is AI'",
+      "beat after 'Including your private chats'",
+      "pause before the final question"
+    ],
+    "pronunciation": [
+      "Gemini: JEM-in-eye",
+      "iOS 27: eye-oh-ess twenty-seven",
+      "Whittaker is not named in the script"
+    ]
+  },
+  "visuals": [
+    "Screen recording of your own phone attempting a screenshot (only if you have Signal on iOS 27; never fake one)",
+    "Screenshot of the Signal blog post headline (credit Signal)",
+    "Text cards: 'iOS 27: blocked by default', 'Android: shield when AI is detected', 'Mac: not fully protected'",
+    "End card: 'AI convenience or privacy?'",
+    "No Apple or Google logos unless cleared"
+  ],
+  "edit_beats": {
+    "0-3": "Phone screenshot attempt, flash, 'BLOCKED' text; word 'AI' pops",
+    "3-10": "Signal blog headline screenshot with '20 Nov 2026'; 'Siri' and 'Gemini' text cards over a chat bubble",
+    "10-25": "Split card: iOS 27 'blocked by default' / Android 'shield on when AI detected'; toggle-off graphic with 'your contacts too'",
+    "25-45": "Quote card 'existential threat' (Signal's president); 'Mac: not fully protected'; end question card"
+  },
+  "thumbnail_text": "Signal vs your phone's AI",
+  "pinned_comment": "Honest answer: would you turn off your phone's AI assistant to keep your chats private?",
+  "pillar": "ai_breakthroughs",
+  "format": "F",
+  "backup_shortfall_reason": "No other candidate dated inside the widened 48-hour window passed verification by the 09:20 IST stop. Nearest options (both 19 Nov, outside the 48-hour window, so ineligible): the House committee disclosure of ~879,000 AI chips approved for China, and the Dragos 2-million-canary AI prompt study (LOW, secondary only).",
+  "backups_considered": [
+    "US House committee: Commerce approved about 879,000 Nvidia and AMD AI chips for China (released 19 Nov)",
+    "Dragos researcher HD Moore planted 2 million fake secrets in AI prompts and found three breached hosting providers (published 19 Nov)"
+  ],
+  "audience": {
+    "stop_scroll": "A screenshot ban is something every phone user instantly understands.",
+    "watch_to_end": "Why a privacy app is blocking Siri and Gemini, and what it can't stop.",
+    "share": "People who use Signal, WhatsApp or AI assistants will want friends to know.",
+    "save": "A quick explainer of how phone AI can see your screen.",
+    "comment": "Convenience versus privacy is a genuine two-sided question.",
+    "follow": "Clear, sourced coverage of AI that affects everyday phones."
+  },
+  "editing": {
+    "opening_visual": "A phone screenshot attempt that gets blocked",
+    "key_moments": [
+      "blocked screenshot",
+      "Siri and Gemini names",
+      "your contacts too",
+      "existential threat"
+    ],
+    "broll": [
+      "Signal blog post screenshot (credited)",
+      "Your own phone screen recordings"
+    ],
+    "on_screen_text": [
+      "Signal: 20 Nov 2026",
+      "iOS 27: blocked by default",
+      "Android: shield when AI detected",
+      "Mac: not fully protected",
+      "AI convenience or privacy?"
+    ],
+    "demonstrations": [
+      "Only a real screenshot attempt on your own device; never stage a fake block message"
+    ],
+    "stats": [
+      "2 platforms protected (iOS 27, some Android)",
+      "Mac not reliably protected"
+    ],
+    "rhythm": "Fast open, steady middle, pause before the question",
+    "caption_emphasis": [
+      "blocking screenshots",
+      "AI",
+      "private chats",
+      "existential threat",
+      "privacy"
+    ],
+    "sound": "Low neutral bed only if licensed"
+  },
+  "limitations": [
+    "Source audit: social platforms and news sites blocked; primary sources partly reachable.",
+    "signal.org, aitoolly.com could not be opened (DNS blocked); Signal's post read via search index.",
+    "No social engagement observed; public discussion UNKNOWN.",
+    "No Apple or Google response found.",
+    "Writer is an Anthropic model (disclosed)."
+  ],
+  "instagram": {
+    "cover_headline": "Signal is blocking your phone's AI",
+    "caption": "Signal now blocks screenshots by default on iOS 27, and switches on screen protection on some Android phones when it detects an AI assistant reading the screen. Signal says OS-level AI like Siri and Gemini can read your chats, and calls it an existential threat. It admits the fix isn't complete. Source: Signal blog, 20 Nov 2026. Would you trade AI convenience for privacy?",
+    "hashtags": [
+      "#Signal",
+      "#Privacy",
+      "#AI",
+      "#iOS27",
+      "#TechNews"
+    ]
+  },
+  "linkedin": {
+    "caption": "Signal announced on 20 November that it now blocks in-app screenshots by default on iOS 27 and turns on Screen security on some Android versions when it detects an AI assistant reading the screen.\n\nIts president, Meredith Whittaker, calls AI agents built into operating systems an existential threat to private messaging. Signal admits the fix is incomplete and is asking Apple, Google and Microsoft for an official opt-out for apps.",
+    "business_relevance": "Any app handling sensitive data will face the same question about OS-level AI access.",
+    "discussion_prompt": "Should operating systems give apps a standard way to opt out of AI assistants reading the screen?"
+  },
+  "x": {
+    "post": "Signal now blocks screenshots by default on iOS 27, and turns on screen protection on some Android phones when it spots an AI assistant. Its president calls OS-level AI like Siri and Gemini an existential threat. Signal admits the fix isn't complete. (Signal blog, 20 Nov)"
+  },
+  "youtube": {
+    "title": "Signal Is Blocking Screenshots to Stop Siri and Gemini Reading Your Chats",
+    "description": "Signal (20 Nov 2026) now blocks screenshots by default on iOS 27 and turns on Screen security on some Android phones when an AI assistant is detected. Sources: Signal blog, 9to5Mac, Android Authority, Decrypt.\n\n#Shorts #Signal #Privacy #AI",
+    "keywords": [
+      "Signal screenshot block",
+      "Siri AI",
+      "Gemini",
+      "iOS 27",
+      "privacy",
+      "AI assistants",
+      "tech news"
+    ]
+  },
+  "growth": {
+    "watch": "A blocked screenshot is instantly visual and relatable.",
+    "share": "Privacy of everyday chats.",
+    "follow": "Calm, sourced coverage of AI on your phone.",
+    "segment": "Global and Indian smartphone users, privacy-minded viewers.",
+    "underperform": "Signal is less used than WhatsApp in India; no observed social discussion."
+  },
+  "x_signals": [],
+  "candidates": [
+    {
+      "headline": "Signal starts blocking screenshots so phone AI assistants like Siri and Gemini can't read your chats",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-20",
+      "original_source": "https://signal.org/blog/protecting-your-privacy/",
+      "main_claim": "Signal blocks screenshots by default on iOS 27 and on some Android versions when it detects an AI assistant, to keep Siri AI and Gemini out of chats.",
+      "verification_status": "VERIFIED",
+      "why_it_matters": "OS-level AI reading screens affects every phone user's privacy.",
+      "potential_hook": "Signal just started blocking screenshots. And the reason is AI.",
+      "target_audience": "Global and Indian AI users and tech fans",
+      "uncertainty": "No Apple/Google response; Android detection partial; signal.org read via search index.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://signal.org/blog/protecting-your-privacy/",
+          "title": "Signal blog",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+          "title": "9to5Mac",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+          "title": "Android Authority",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/",
+          "title": "gHacks",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+          "title": "Decrypt",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 8,
+        "usefulness": 8,
+        "visual": 8,
+        "broad_appeal": 9,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 8
+      },
+      "new_development": {
+        "what": "Signal announced screenshot blocking against OS-level AI",
+        "at": "2026-11-20"
+      }
+    },
+    {
+      "headline": "US House committee: Commerce approved about 879,000 Nvidia and AMD AI chips for China",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-19",
+      "original_source": "https://aiweekly.co/alerts/house-foreign-affairs-chair-mast-discloses-commerce-approved-879000-nvidia-and",
+      "main_claim": "House Foreign Affairs Chair Brian Mast released Commerce licence records showing ~879,000 AI chips approved for Chinese buyers (Dec 2025-May 2026).",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Shows the scale of US AI chip exports to China despite controls.",
+      "potential_hook": "The US approved nearly 900,000 AI chips for China in six months.",
+      "target_audience": "Global and Indian AI users and tech fans",
+      "uncertainty": "Released 19 Nov, before the window; shipment status unclear; committee document not opened; Tencent figures differ.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.thestandard.com.hk/world/article/349075/US-signed-off-on-sales-of-nearly-900000-AI-chips-to-China-in-six-months-committee-says",
+          "title": "The Standard (Reuters)",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.unite.ai/?p=527451",
+          "title": "Unite.AI",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 8,
+        "significance": 9,
+        "usefulness": 5,
+        "visual": 4,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "new_development": {
+        "what": "House committee released Commerce licence records",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "Dragos researcher plants 2 million fake secrets in AI prompts and finds three breached hosting providers",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-19",
+      "original_source": "https://ai-tldr.dev/releases/dragos-ai-supply-chain-canaries/",
+      "main_claim": "HD Moore (Dragos) seeded ~2M prompts with canary links and fake keys (Jul-Nov); found attackers inside three AI hosting providers and resellers logging prompts.",
+      "verification_status": "PARTLY VERIFIED",
+      "why_it_matters": "Shows prompts sent to cheap AI resellers can leak.",
+      "potential_hook": "Someone hid 2 million fake passwords in AI prompts. Then watched who used them.",
+      "target_audience": "Global and Indian AI users and tech fans",
+      "uncertainty": "Published 19 Nov, before the window; Ars Technica and Dragos originals not opened; misuse figures differ between reports.",
+      "evidence_confidence": "LOW",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://ai-tldr.dev/releases/dragos-ai-supply-chain-canaries/",
+          "title": "AI TL;DR",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.bankless.com/read/news/study-finds-ai-sellers-reading-customer-prompts",
+          "title": "Bankless",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://privacyaffairs.com/openrouter-minimax-prompts",
+          "title": "Privacy Affairs",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 9,
+        "significance": 7,
+        "usefulness": 7,
+        "visual": 4,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 5
+      },
+      "new_development": {
+        "what": "Dragos published canary study",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "Anthropic mathematician says Claude helped produce a proof of the Riemann Hypothesis",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-21",
+      "original_source": "https://samonai.substack.com/p/ai-brief-november-21-2026",
+      "main_claim": "Newsletter reports a claimed Riemann Hypothesis proof produced with Claude, reportedly checked in Lean.",
+      "verification_status": "REJECTED",
+      "why_it_matters": "Would be historic if true.",
+      "potential_hook": "",
+      "target_audience": "Global and Indian AI users and tech fans",
+      "uncertainty": "Extraordinary claim from newsletters only; no primary paper or independent expert verification found; writer is an Anthropic model.",
+      "evidence_confidence": "LOW",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://samonai.substack.com/p/ai-brief-november-21-2026",
+          "title": "Sam on AI",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 10,
+        "significance": 10,
+        "usefulness": 3,
+        "visual": 3,
+        "broad_appeal": 7,
+        "discussion_potential": 9,
+        "longevity": 8,
+        "verification_confidence": 1
+      },
+      "rejected": "Extraordinary claim with no primary or independent verification (UNVERIFIED)"
+    },
+    {
+      "headline": "OpenAI launches ChatGPT Wallet so agents can buy things for users",
+      "category": "AI",
+      "topic_type": "BREAKING",
+      "published_at": "2026-11-13",
+      "original_source": "https://openai.com/blog/introducing-chatgpt-wallet",
+      "main_claim": "ChatGPT Wallet lets 'dots' agents make purchases for US Pro users with eligible cards.",
+      "verification_status": "REJECTED",
+      "why_it_matters": "Agents spending your money is a big consumer shift.",
+      "potential_hook": "",
+      "target_audience": "Global and Indian AI users and tech fans",
+      "uncertainty": "Launched 13 Nov, outside the window; a newsletter listed it on 21 Nov without a new development.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.fintechfutures.com/digital-payments/openai-chatgpt-wallet-launch",
+          "title": "FinTech Futures",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 7,
+        "significance": 7,
+        "usefulness": 7,
+        "visual": 6,
+        "broad_appeal": 7,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "rejected": "Outside the research window (13 Nov)"
+    },
+    {
+      "headline": "Walmart opens Agent Gateway for third-party AI shopping agents",
+      "category": "TECH COMPANIES",
+      "topic_type": "BREAKING",
+      "published_at": "2026-10-21",
+      "original_source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "main_claim": "Walmart's MCP-based Agent Gateway lets approved AI agents shop for customers.",
+      "verification_status": "REJECTED",
+      "why_it_matters": "Retail opening up to AI agents.",
+      "potential_hook": "",
+      "target_audience": "Global and Indian AI users and tech fans",
+      "uncertainty": "Announced 21 Oct; no dated new development in the window found.",
+      "evidence_confidence": "MEDIUM",
+      "already_covered": false,
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+          "title": "TechCrunch",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "creator_request": false,
+      "scores": {
+        "public_discussion": 3,
+        "surprise": 6,
+        "significance": 6,
+        "usefulness": 6,
+        "visual": 5,
+        "broad_appeal": 6,
+        "discussion_potential": 6,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "rejected": "Outside the research window (21 Oct)"
+    }
+  ],
+  "backups": [],
+  "candidate_shortfall_reason": "Only one strong story is dated inside the widened 48-hour window with primary text; the next options date from 19 Nov (outside it) or are unverified.",
+  "factcheck": {
+    "date": "2026-11-22",
+    "story": "Signal starts blocking screenshots so phone AI assistants like Siri and Gemini can't read your chats",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "On 20 November 2026 Signal announced it is blocking screenshots in its app to stop AI assistants built into phone operating systems, such as Apple's Siri AI and Google's Gemini, from reading chats",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "9to5Mac"
+          },
+          {
+            "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Android Authority"
+          },
+          {
+            "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-21",
+            "outlet": "gHacks"
+          }
+        ],
+        "supporting_evidence": "Signal blog (indexed text, 20 Nov): restricting OS-level AI agents such as Siri AI and Gemini from capturing Signal data. 9to5Mac (20 Nov), Android Authority and gHacks (21 Nov) report screenshot blocking to stop Siri AI and Gemini reading chats.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      },
+      {
+        "id": "c2",
+        "text": "Signal says AI assistants built into the operating system can read what is on your screen, including private chats",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Decrypt"
+          },
+          {
+            "url": "https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-21",
+            "outlet": "Digital Trends"
+          }
+        ],
+        "supporting_evidence": "Signal (indexed): OS-level AI agents scan screen contents, like Microsoft Recall; content can end up in a local database or remote server. Decrypt and Digital Trends report the same.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      },
+      {
+        "id": "c3",
+        "text": "On iPhones running iOS 27, a 'Block Siri AI' setting is on by default and blocks screenshots inside Signal",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "9to5Mac"
+          },
+          {
+            "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Android Authority"
+          },
+          {
+            "url": "https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-21",
+            "outlet": "CyberInsider"
+          }
+        ],
+        "supporting_evidence": "Signal (indexed): blocks screenshots on iOS 27. Android Authority: 'Block Siri AI' setting on by default; message 'Screenshot prevented by Block Siri AI setting'. 9to5Mac and CyberInsider agree.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      },
+      {
+        "id": "c4",
+        "text": "On some Android versions Signal switches on its Screen security setting when it detects an AI assistant reading the screen",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Android Authority"
+          },
+          {
+            "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-21",
+            "outlet": "gHacks"
+          }
+        ],
+        "supporting_evidence": "Signal (indexed): turns on Screen security on Android versions where it can detect an assistant reading the screen. Android Authority and gHacks: detection works only on some Android versions.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      },
+      {
+        "id": "c5",
+        "text": "Users can turn the protection off, but Signal warns that doing so can expose their own and their contacts' messages to AI agents",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Android Authority"
+          },
+          {
+            "url": "https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-21",
+            "outlet": "Digital Trends"
+          }
+        ],
+        "supporting_evidence": "Signal (indexed): turning off screen security will potentially expose your (and your contacts') Signal content to these AI agents. Android Authority and Digital Trends report the same opt-out warning.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      },
+      {
+        "id": "c6",
+        "text": "Signal president Meredith Whittaker calls AI agents built into operating systems an existential threat",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Decrypt"
+          },
+          {
+            "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Android Authority"
+          }
+        ],
+        "supporting_evidence": "Signal blog by Meredith Whittaker (indexed): agentic AI integrations are an existential threat to Signal and its mission. Decrypt headline and Android Authority quote 'existential threat'.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      },
+      {
+        "id": "c7",
+        "text": "Signal admits the fix is incomplete: it cannot reliably block screenshots on macOS, and agents could still reach data stored on the device",
+        "status": "CONFIRMED",
+        "in_script": true,
+        "central": true,
+        "retrieved_at": "2026-11-22T03:15:00+00:00",
+        "event_date": "2026-11-20",
+        "evidence": [
+          {
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "kind": "primary",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Signal"
+          },
+          {
+            "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-20",
+            "outlet": "Android Authority"
+          },
+          {
+            "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/",
+            "kind": "news",
+            "access": "search-index",
+            "date": "2026-11-21",
+            "outlet": "gHacks"
+          }
+        ],
+        "supporting_evidence": "Signal (indexed): cannot reliably block screenshots on macOS; restricting screenshots does not stop agents reading files on the device. Android Authority and gHacks report both limits.",
+        "primary_source": "https://signal.org/blog/protecting-your-privacy/",
+        "source_title": "Signal blog: Signal is Serious About Protecting Your Privacy (Meredith Whittaker, 20 Nov 2026)",
+        "supporting_source": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+        "source_date": "2026-11-20",
+        "confidence": "MEDIUM-HIGH",
+        "access": "search-index"
+      }
+    ]
+  },
+  "access_limits": [
+    "signal.org and aitoolly.com cannot be opened from this environment (DNS blocked); Signal text read via search index.",
+    "News sites and x.com not opened; outlets read via search index.",
+    "No social engagement observed; UNKNOWN.",
+    "Time-boxed to the 09:20 IST hard stop."
+  ],
+  "verification": "tiered"
+}

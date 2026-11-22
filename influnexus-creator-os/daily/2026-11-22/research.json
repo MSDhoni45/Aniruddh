@@ -1,0 +1,644 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T08:55:00+05:30",
+  "research_window": {
+    "start_utc": "2026-11-20T03:11:52+00:00",
+    "end_utc": "2026-11-22T03:11:52+00:00",
+    "start_ist": "2026-11-20T08:41:52+05:30",
+    "end_ist": "2026-11-22T08:41:52+05:30",
+    "hours": 48
+  },
+  "candidates": [
+    {
+      "headline": "Signal starts blocking screenshots so phone AI assistants like Siri and Gemini can't read your chats",
+      "published_at": "2026-11-20",
+      "original_source": "https://signal.org/blog/protecting-your-privacy/",
+      "trend_score": 76.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 9,
+        "significance": 8,
+        "usefulness": 8,
+        "visual": 8,
+        "broad_appeal": 9,
+        "discussion_potential": 9,
+        "longevity": 7,
+        "verification_confidence": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://signal.org/blog/protecting-your-privacy/",
+          "title": "Signal blog",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+          "title": "9to5Mac",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/",
+          "title": "Android Authority",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/",
+          "title": "gHacks",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+          "title": "Decrypt",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "Signal announced screenshot blocking against OS-level AI",
+        "at": "2026-11-20"
+      }
+    },
+    {
+      "headline": "OpenAI launches ChatGPT Wallet so agents can buy things for users",
+      "published_at": "2026-11-13",
+      "original_source": "https://openai.com/blog/introducing-chatgpt-wallet",
+      "trend_score": 64.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: Outside the research window (13 Nov)",
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 7,
+        "significance": 7,
+        "usefulness": 7,
+        "visual": 6,
+        "broad_appeal": 7,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.fintechfutures.com/digital-payments/openai-chatgpt-wallet-launch",
+          "title": "FinTech Futures",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "REJECTED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null
+    },
+    {
+      "headline": "Anthropic mathematician says Claude helped produce a proof of the Riemann Hypothesis",
+      "published_at": "2026-11-21",
+      "original_source": "https://samonai.substack.com/p/ai-brief-november-21-2026",
+      "trend_score": 63.5,
+      "eligible": false,
+      "ineligible_reason": "rejected: Extraordinary claim with no primary or independent verification (UNVERIFIED)",
+      "scores": {
+        "public_discussion": 5,
+        "surprise": 10,
+        "significance": 10,
+        "usefulness": 3,
+        "visual": 3,
+        "broad_appeal": 7,
+        "discussion_potential": 9,
+        "longevity": 8,
+        "verification_confidence": 1
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://samonai.substack.com/p/ai-brief-november-21-2026",
+          "title": "Sam on AI",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "REJECTED",
+      "evidence_confidence": "LOW",
+      "new_development": null
+    },
+    {
+      "headline": "Dragos researcher plants 2 million fake secrets in AI prompts and finds three breached hosting providers",
+      "published_at": "2026-11-19",
+      "original_source": "https://ai-tldr.dev/releases/dragos-ai-supply-chain-canaries/",
+      "trend_score": 61.5,
+      "eligible": false,
+      "ineligible_reason": "evidence confidence LOW",
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 9,
+        "significance": 7,
+        "usefulness": 7,
+        "visual": 4,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://ai-tldr.dev/releases/dragos-ai-supply-chain-canaries/",
+          "title": "AI TL;DR",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.bankless.com/read/news/study-finds-ai-sellers-reading-customer-prompts",
+          "title": "Bankless",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://privacyaffairs.com/openrouter-minimax-prompts",
+          "title": "Privacy Affairs",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": {
+        "what": "Dragos published canary study",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "US House committee: Commerce approved about 879,000 Nvidia and AMD AI chips for China",
+      "published_at": "2026-11-19",
+      "original_source": "https://aiweekly.co/alerts/house-foreign-affairs-chair-mast-discloses-commerce-approved-879000-nvidia-and",
+      "trend_score": 60.5,
+      "eligible": false,
+      "ineligible_reason": "published before the 24-hour research window with no dated new development inside it",
+      "scores": {
+        "public_discussion": 4,
+        "surprise": 8,
+        "significance": 9,
+        "usefulness": 5,
+        "visual": 4,
+        "broad_appeal": 6,
+        "discussion_potential": 7,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.thestandard.com.hk/world/article/349075/US-signed-off-on-sales-of-nearly-900000-AI-chips-to-China-in-six-months-committee-says",
+          "title": "The Standard (Reuters)",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.unite.ai/?p=527451",
+          "title": "Unite.AI",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": {
+        "what": "House committee released Commerce licence records",
+        "at": "2026-11-19"
+      }
+    },
+    {
+      "headline": "Walmart opens Agent Gateway for third-party AI shopping agents",
+      "published_at": "2026-10-21",
+      "original_source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "trend_score": 53.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: Outside the research window (21 Oct)",
+      "scores": {
+        "public_discussion": 3,
+        "surprise": 6,
+        "significance": 6,
+        "usefulness": 6,
+        "visual": 5,
+        "broad_appeal": 6,
+        "discussion_potential": 6,
+        "longevity": 6,
+        "verification_confidence": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "x.com cannot be opened from this environment; engagement UNKNOWN"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+          "title": "TechCrunch",
+          "retrieved_at": "2026-11-22T03:15:00+00:00",
+          "access": "SECONDARY",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "REJECTED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null
+    }
+  ],
+  "hooks": [
+    {
+      "text": "Signal just started blocking screenshots. And the reason is AI.",
+      "mechanism": "unexpected fact",
+      "accuracy": 9,
+      "curiosity": 10,
+      "clarity": 10,
+      "credibility": 9,
+      "emotional": 8,
+      "natural": 10,
+      "total": 56,
+      "eligible": true
+    },
+    {
+      "text": "The AI on your phone can read your private chats. Signal just fought back.",
+      "mechanism": "relatable problem",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 9,
+      "natural": 9,
+      "total": 52,
+      "eligible": true
+    },
+    {
+      "text": "Siri and Gemini just got locked out of one chat app.",
+      "mechanism": "strong factual statement",
+      "accuracy": 8,
+      "curiosity": 9,
+      "clarity": 9,
+      "credibility": 8,
+      "emotional": 7,
+      "natural": 9,
+      "total": 50,
+      "eligible": true
+    },
+    {
+      "text": "Try to screenshot a Signal chat on iOS 27. It won't let you.",
+      "mechanism": "surprising demonstration",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 6,
+      "natural": 9,
+      "total": 49,
+      "eligible": true
+    },
+    {
+      "text": "A privacy app just called phone AI an existential threat.",
+      "mechanism": "timely development",
+      "accuracy": 9,
+      "curiosity": 8,
+      "clarity": 8,
+      "credibility": 9,
+      "emotional": 7,
+      "natural": 8,
+      "total": 49,
+      "eligible": true
+    },
+    {
+      "text": "Your phone's AI assistant might be the biggest privacy risk you own.",
+      "mechanism": "curiosity gap",
+      "accuracy": 6,
+      "curiosity": 9,
+      "clarity": 8,
+      "credibility": 6,
+      "emotional": 9,
+      "natural": 9,
+      "total": 47,
+      "eligible": false
+    }
+  ],
+  "backups": [],
+  "limitations": [
+    "Source audit: social platforms and news sites blocked; primary sources partly reachable.",
+    "signal.org, aitoolly.com could not be opened (DNS blocked); Signal's post read via search index.",
+    "No social engagement observed; public discussion UNKNOWN.",
+    "No Apple or Google response found.",
+    "Writer is an Anthropic model (disclosed)."
+  ],
+  "source_audit": {
+    "checked_at_utc": "2026-11-22T03:11:53+00:00",
+    "groups": {
+      "x": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "needs_credentials": []
+      },
+      "reddit": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "needs_credentials": []
+      },
+      "youtube": {
+        "status": "BLOCKED",
+        "reachable": [
+          "www.googleapis.com"
+        ],
+        "blocked": [
+          "www.youtube.com"
+        ],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "needs_credentials": []
+      },
+      "linkedin": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.linkedin.com"
+        ],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "trends.google.com"
+        ],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "PARTIAL",
+        "reachable": [
+          "www.anthropic.com",
+          "github.com"
+        ],
+        "blocked": [
+          "openai.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co"
+        ],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  }
+}

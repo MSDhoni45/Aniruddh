@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-22",
+  "runs": {
+    "2026-11-22-scheduled-084152": {
+      "run_id": "2026-11-22-scheduled-084152",
+      "trigger": "scheduled",
+      "start_ist": "2026-11-22T08:41:52+05:30",
+      "end_ist": "2026-11-22T08:46:40+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3PP3XJnXqwcV8hAYH8",
+        "CLAUDE_CODE_CONTAINER_ID": "container_01TwuzHFrXeRSSJiMMp6zv78",
+        "cloud": true
+      },
+      "git_commit": "7ca5ba1",
+      "research_window": {
+        "start_utc": "2026-11-20T03:11:52+00:00",
+        "end_utc": "2026-11-22T03:11:52+00:00",
+        "start_ist": "2026-11-20T08:41:52+05:30",
+        "end_ist": "2026-11-22T08:41:52+05:30",
+        "hours": 48
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "requested",
+        "channel": "push",
+        "receipt": "none available",
+        "at_ist": "2026-11-22T08:46:40+05:30"
+      },
+      "errors": [],
+      "warnings": [
+        "window widened to 48h; no backups passed verification; social and news sources BLOCKED, primary PARTIAL; no page opened directly"
+      ],
+      "note": "",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Signal starts blocking screenshots so phone AI assistants like Siri and Gemini can't read your chats",
+      "candidates": 6,
+      "source_access": "Evidence levels: 7 MEDIUM-HIGH. Claims with a source opened directly: 0 of 7; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 103,
+      "estimated_seconds": 43.2,
+      "quality_gate": "PASS",
+      "quality_total": 90.0,
+      "validation_problems": []
+    }
+  }
+}
