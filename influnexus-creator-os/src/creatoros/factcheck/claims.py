@@ -2,10 +2,11 @@
 from __future__ import annotations
 
 STATUSES = ["CONFIRMED", "COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED", "UNVERIFIED", "RUMOR",
-            "SPECULATION", "REPORTED", "SPECULATIVE"]
+            "SPECULATION", "REPORTED", "SPECULATIVE", "CLAIMED"]
 # REPORTED = a claim made by credible reporting, said with attribution; SPECULATIVE is the creator's word for SPECULATION.
 # COMPANY CLAIM covers marketing claims; PREDICTION and OPINION must be attributed to the person who made them.
-NEEDS_ATTRIBUTION = {"COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED", "REPORTED"}
+# CLAIMED (v6) = asserted by a company or person and not independently confirmed; said as "X says...".
+NEEDS_ATTRIBUTION = {"COMPANY CLAIM", "THIRD-PARTY CLAIM", "PREDICTION", "OPINION", "DISPUTED", "REPORTED", "CLAIMED"}
 NOT_USABLE = {"UNVERIFIED", "RUMOR", "SPECULATION", "SPECULATIVE"}
 
 

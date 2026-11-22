@@ -20,6 +20,15 @@ script_v5:
   hard_max_seconds: 45
   target_words: [85, 105]
 
+# v6 (from 23 Nov 2026): same length targets, but duration is estimated at a natural moderate pace (140 wpm) with a
+# pause after every sentence, so a 105-word script usually does NOT fit; about 85-95 words does.
+script_v6:
+  target_seconds: [35, 45]
+  hard_max_seconds: 45
+  target_words: [85, 105]
+  words_per_minute: 140
+  pause_seconds_per_sentence: 0.35
+
 script_v3:
   target_seconds: [40, 45]
   hard_max_seconds: 45
@@ -66,9 +75,10 @@ export:
   min_seconds: 30
   max_seconds: 40
 
-# 60-day growth target (a goal, not a forecast). start_date is day 1; change it if the creator starts on another day.
+# Growth target (a goal, not a forecast). start_date is day 1. From 22 Nov 2026 the creator's plan is 150,000 Instagram
+# followers in four months (replacing 100,000 in 60 days from 2026-11-20).
 growth:
-  target_followers: 100000
-  days: 60
-  start_date: "2026-11-20"
+  target_followers: 150000
+  days: 120
+  start_date: "2026-11-22"
   platform: instagram        # the target counts Instagram followers only; other platforms are reported separately

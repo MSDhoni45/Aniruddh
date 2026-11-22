@@ -61,11 +61,19 @@ def word_count(text: str) -> int:
     return len(re.findall(r"[^\s]+", re.sub(r"\s[—–-]\s", " ", text)))
 
 
-def estimate_seconds(text: str) -> dict:
+def estimate_seconds(text: str, scheme: str | None = None) -> dict:
     wpm, basis = pace()
     words = word_count(text)
     sentences = len(script_sentences(text))
     pauses = min(0.2 * max(sentences - 1, 0), config.settings()["script"]["pause_allowance_seconds"] + 1)
+    v6 = config.settings().get("script_v6", {})
+    if scheme == "v6":
+        # v6: a moderate, natural speaking pace with a real pause after every sentence (no cramming). A measured
+        # calibration of the creator's voice still wins over the assumed pace; the pauses are always added.
+        if not config.path("analytics/pace.json").exists():
+            wpm = float(v6.get("words_per_minute", 140))
+            basis = f"natural moderate pace, {wpm:g} wpm plus a pause after each sentence (assumed; not yet calibrated)"
+        pauses = float(v6.get("pause_seconds_per_sentence", 0.35)) * max(sentences - 1, 0)
     return {"words": words, "sentences": sentences, "words_per_minute": wpm, "pace_basis": basis,
             "seconds": round(words / wpm * 60 + pauses, 1)}
 
@@ -74,14 +82,14 @@ def limits(scheme: str | None = None) -> dict:
     """Length limits: script_v3 for v3 packages, the original script limits otherwise."""
     st = config.settings()
     sc = dict(st["script"])
-    if scheme in ("v3", "v5") and f"script_{scheme}" in st:
+    if scheme in ("v3", "v5", "v6") and f"script_{scheme}" in st:
         sc.update(st[f"script_{scheme}"])
     return sc
 
 
 def check(text: str, language: str | None = None, scheme: str | None = None) -> dict:
     sc = limits(scheme)
-    est = estimate_seconds(text)
+    est = estimate_seconds(text, scheme)
     low = re.sub(r"\s+", " ", text.lower()).strip()
     sents = script_sentences(text)
     problems, warnings = [], []
@@ -111,8 +119,22 @@ def check(text: str, language: str | None = None, scheme: str | None = None) -> 
         warnings.append(f"{est['words']} words is outside the {wlo}-{whi} word target")
     if sents and word_count(sents[0]) > 16:
         warnings.append("first sentence is longer than 16 words: the hook should land within two seconds")
+    if scheme == "v6":
+        long = [i + 1 for i, x in enumerate(sents) if word_count(x) > MAX_SENTENCE_WORDS_V6]
+        if long:
+            problems.append(f"sentence(s) {long} longer than {MAX_SENTENCE_WORDS_V6} words: use short, spoken sentences")
+        for g in GENERIC_HOOK_PHRASES:
+            if low.startswith(g):
+                problems.append(f"generic opening: '{g}'")
     return {**est, "ok": not problems, "problems": problems, "warnings": warnings, "sentences_indexed": list(enumerate(sents))}
 
+
+MAX_SENTENCE_WORDS_V6 = 22
+# Openings the creator named as generic (v6). Also checked on every hook candidate.
+GENERIC_HOOK_PHRASES = ["big news in ai", "big news in tech", "big news today", "something crazy just happened",
+                        "something crazy", "something huge just happened", "something big just happened", "you won't believe",
+                        "you wont believe", "this is huge", "this is crazy", "this is insane", "ai just changed everything",
+                        "breaking:", "breaking news", "hold on", "wait for it", "stop scrolling"]
 
 HOOK_CRITERIA = ["accuracy", "clarity", "curiosity", "natural", "relevance", "comprehension"]
 HOOK_MECHANISMS = ["unexpected fact", "contradiction", "surprising demonstration", "important consequence", "curiosity gap",
@@ -220,3 +242,60 @@ def quality_v5(scores: dict, revisions: int = 0, limitation: str = "") -> dict:
         problems.append(f"quality score {total}/100 is below {CREATIVE_TARGET}: revise (attempt {revisions} of {MAX_REVISIONS}), "
                         "or after the third revision state quality_limitation")
     return {"total": total, "approved": not problems, "below_target": total < CREATIVE_TARGET, "problems": problems}
+
+
+# v6 (from 23 Nov 2026): five hooks for each of five finalists, one per approach; a creative quality gate; three variants.
+HOOK_APPROACHES = ["surprising fact", "unexpected consequence", "direct relevance", "contrarian question", "visual demonstration"]
+HOOKS_PER_FINALIST, FINALISTS_V6 = 5, 5
+MAX_HOOK_WORDS = 14            # a hook has to land in the first 1-2 seconds
+VARIANTS = {"A": "curiosity storytelling", "B": "practical usefulness", "C": "surprising consequences"}
+CREATIVE_GATE = {
+    "nontechnical_viewer_cares": "Would a nontechnical viewer care?",
+    "hook_compelling": "Is the hook genuinely compelling?",
+    "delivers_on_hook": "Does the story deliver on the hook?",
+    "takeaway": "Is there a surprising or useful takeaway?",
+    "natural_language": "Is the language natural?",
+    "visualizable": "Can the story be visualized?",
+    "claims_verified": "Are the claims verified?",
+    "memorable_ending": "Is the ending memorable?",
+    "sounds_like_creator": "Does the script sound like a real creator?",
+}
+
+
+def hook_text_problems(text: str) -> list[str]:
+    low = re.sub(r"\s+", " ", text.lower()).strip()
+    p = [f"generic hook: '{g}'" for g in GENERIC_HOOK_PHRASES if g in low]
+    p += [f"banned opening: '{b}'" for b in BANNED_OPENINGS if low.startswith(b)]
+    p += [f"hype word: '{h}'" for h in HYPE if h in low]
+    if word_count(text) > MAX_HOOK_WORDS:
+        p.append(f"{word_count(text)} words; a hook must land in 1-2 seconds (max {MAX_HOOK_WORDS})")
+    return p
+
+
+def check_finalist_hooks(hooks: list[dict], name: str) -> list[str]:
+    """Exactly five hooks, one per approach, each scored on the v5 hook criteria and free of generic openings."""
+    probs = []
+    if len(hooks) != HOOKS_PER_FINALIST:
+        probs.append(f"{name}: {len(hooks)} hooks; write exactly {HOOKS_PER_FINALIST} (one per approach)")
+    got = sorted(h.get("approach", "?") for h in hooks)
+    if sorted(got) != sorted(HOOK_APPROACHES):
+        probs.append(f"{name}: hooks must use each approach once {HOOK_APPROACHES}; got {got}")
+    for h in hooks:
+        t = h.get("text", "")
+        missing = [k for k in HOOK_CRITERIA_V5 if not isinstance(h.get(k), (int, float)) or not 0 <= h[k] <= 10]
+        if missing:
+            probs.append(f"{name}: hook '{t[:30]}' lacks 0-10 scores for {missing}")
+        probs += [f"{name}: hook '{t[:30]}': {x}" for x in hook_text_problems(t)]
+    return probs
+
+
+def creative_gate(gate: dict) -> list[str]:
+    """Every question answered yes, with a concrete reason. A 'no' means rewrite or choose another story."""
+    probs = []
+    for k, q in CREATIVE_GATE.items():
+        a = gate.get(k) if isinstance(gate, dict) else None
+        if not isinstance(a, dict) or not isinstance(a.get("pass"), bool) or len(str(a.get("why", "")).split()) < 4:
+            probs.append(f"creative gate '{q}' needs {{pass: true/false, why: a concrete reason}}")
+        elif not a["pass"]:
+            probs.append(f"creative gate failed: {q} ({a['why']}); rewrite or choose another story")
+    return probs

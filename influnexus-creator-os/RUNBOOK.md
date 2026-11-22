@@ -46,7 +46,7 @@ The 20 Nov run cost about $11, almost all of it the main session re-reading its 
 each of 28 requests; the research itself (12 searches) cost about $0.14. So the scheduled session stays thin:
 1. Main session: setup, `creatoros runlog start --trigger scheduled` (audits sources first), then hand steps 1-4 (research,
    verification, writing, `creatoros package`) to ONE subagent (Agent tool, fresh context) with a short brief: the run_id,
-   research window, budgets, and "follow influnexus-creator-os/RUNBOOK.md (v5, Verification policy) and write
+   research window, budgets, and "follow influnexus-creator-os/RUNBOOK.md (v6, Verification policy) and write
    daily/DATE/package.json; return the package status and topic". The subagent does all searches and file work.
 2. Main session again: `creatoros growth`, the push notification, `creatoros runlog end`, one commit and push, the reply.
    Aim for at most about 8 main-session requests, batch independent tool calls, and never paste large files into the main session.
@@ -84,7 +84,60 @@ excerpts of a primary page plus press coverage are not enough for them.
 script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
 not from verification.
 
-## v5: Master Prompt V5 (required from 2026-11-21; v3, v4 or v5 accepted on 2026-11-20)
+## v6: creator-led editorial quality (required from 2026-11-23; the creator's "Fix daily script quality" brief, 22 Nov 2026)
+Goal: content a broad audience shares, saves, comments on and follows for (150,000 Instagram followers in four months from
+22 Nov 2026: an ambitious target, not a guaranteed outcome). Not a news summary; do not optimise for merely finishing a script.
+Where this section differs from the v5, v4 and v3 text below, this section wins. Everything in "Verification policy",
+HOLD/fallback, the time budget, cost control and delivery stages still applies. `"scoring": "v6"`, `"language": "english"`.
+1. **Research 15-25 stories** from the 24-hour window (48-72 h only with `window_expansion_reason`): OpenAI, Google, DeepMind,
+   Anthropic, Meta, Apple, Microsoft, Amazon, NVIDIA, Tesla, SpaceX, xAI, robotics, startups, cybersecurity, consumer tech,
+   science, AI applications, emerging tech. Look for surprising developments, useful discoveries, controversies, major launches,
+   unexpected demos, important debates and tech that affects everyday life. Do not force an AI-model story when another
+   technology story is stronger. Public X discussion first where evidence is reachable; x.com is blocked here, so say so and keep
+   X metrics UNKNOWN. Fewer than 15 credible candidates only with `candidate_shortfall_reason` (never pad).
+2. **Verify before writing.** Each candidate has `claim_status`: CONFIRMED, REPORTED (credible reporting, said with attribution),
+   CLAIMED (a company's or person's assertion, said as "X says"), SPECULATIVE, UNVERIFIED. Only CONFIRMED or REPORTED stories
+   can be selected. Claim-table statuses add CLAIMED (needs `attribution` and `script_attribution`). Never turn a rumour into a
+   fact or invent a financial number.
+3. **v6 rubric** (each 0-10; editorial estimates, never view predictions): curiosity 12, surprise 12, broad_relevance 12,
+   shareability 12, save_potential 10, comment_potential 10, visual_storytelling 10, practical_usefulness 8,
+   long_term_relevance 6, factual_confidence 8. factual_confidence 8+ needs claim_status CONFIRMED; under 6 is ineligible.
+   Each candidate also needs `why_share` and `visual_note` (plus every v3 field).
+4. **Five finalists** = the five highest-scoring eligible candidates (`finalists`, or fewer with `finalist_shortfall_reason`).
+   The winner is the top eligible story (or the creator's own topic). Every losing finalist has `why_not`; the package's
+   `why_beats_alternatives` explains why the winner beats them.
+5. **25 hooks:** five per finalist, one per approach: surprising fact, unexpected consequence, direct relevance, contrarian
+   question, visual demonstration. Each at most 14 words (it must land in 1-2 seconds) and scored 0-10 on accuracy, curiosity,
+   clarity, credibility, emotional, natural. Accuracy under 7 disqualifies. Banned: "Big news in AI today", "Something crazy just
+   happened", "You won't believe this", "Breaking news", "Stop scrolling" and other generic or misleading clickbait. The chosen
+   `hook` is the winner's top-scoring accurate hook: the strongest truthful curiosity.
+6. **Three variants** for the winner in `variants`: `A` high-curiosity storytelling, `B` practical usefulness, `C` surprising
+   consequences, each `{"angle": ..., "script": ...}`: 85-105 words, 35-45 s at a natural pace, conversational English-first,
+   no news-anchor or press-release voice, no hype, no unnecessary jargon. Pick one (`selected_variant`, `variant_rationale`);
+   `script` is that variant word for word. Rejected drafts may go in `rejected_drafts` (internal).
+7. **Structure (adapt, never mechanical):** 0-2 s hook; 2-8 s why viewers should care; 8-25 s the most interesting facts;
+   25-35 s a useful takeaway or surprising implication; 35-45 s a memorable ending or a specific question.
+8. **Visual plan** (`visual_plan`): `opening_visual`, `broll`, `screen_recordings`, `demonstrations`, `motion_graphics`,
+   `on_screen_text`, `transitions`. Opening visual, on-screen text and transitions are required, plus at least two of broll,
+   screen recordings, demonstrations, motion graphics. Each demonstration or screen recording is `{"what": ..., "source": URL of
+   real footage | "creator-recorded"}`; never describe a demo that does not exist. Prefer stories that can be shown.
+9. **Natural pacing:** the validator estimates duration at 140 words per minute plus a 0.35 s pause after each sentence
+   (until the creator's voice is calibrated), so about 85-95 words fits; 105 words usually does not. No sentence over 22 words.
+10. **Creative quality gate** (`creative_gate`): each of `nontechnical_viewer_cares`, `hook_compelling`, `delivers_on_hook`,
+    `takeaway`, `natural_language`, `visualizable`, `claims_verified`, `memorable_ending`, `sounds_like_creator` is
+    `{"pass": true|false, "why": "a concrete reason"}`. Any false means rewrite (max 3 `revisions`) or choose another story.
+    `claims_verified` cannot pass unless the claim table is RECORDING READY. Keep `quality_v5` (six-part score); do not inflate it.
+11. **Performance learning:** run `creatoros learn` first. It reads only recorded numbers (analytics/performance.csv), compares
+    hooks, topics, pillars and formats with the account's own median, and says plainly when Instagram analytics are not
+    connected. Put its `learning_applied` line (or what the data changed today) in the package. Never invent performance data.
+12. **Delivery (`today.md`)** has only: 1 story, 2 why selected, 3 verified facts and sources, 4 the recording-ready script,
+    5 estimated duration, 6 opening visual, 7 a concise caption (60 words or fewer), 8 three to five hashtags. Finalists, the 25
+    hooks, the variants, the full visual plan and the gate go to `creative.md` and `research.json` (internal).
+13. **Production-equivalent test:** `creatoros package --file DIR/package.json --trial` validates and renders beside the file
+    without touching the content or memory databases.
+`thumbnail_text`, `pinned_comment` and `edit_beats` are optional in v6. `hooks` may be omitted (the winner's five are used).
+
+## v5: Master Prompt V5 (required 2026-11-21 to 2026-11-22; superseded by v6; v3, v4 or v5 accepted on 2026-11-20)
 Where this section differs from the v4 and v3 text below, this section wins. `"scoring": "v5"`, `"language": "english"`
 (creator's instruction, 21 Nov 2026: natural conversational English for a global audience; Hinglish only on request).
 - **Language:** natural conversational English for a global audience: short sentences, simple international words, technical
@@ -280,7 +333,7 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 ## 5. Deliver
 - Send one push notification with the topic (the only configured delivery channel besides the run's own reply). The tool reports
   "requested", not a receipt: record `--delivery requested --channel push`; if it errors, `--delivery failed`. Never claim it reached the phone.
-- `creatoros growth --date DATE` refreshes `reports/growth/DATE.md` (60-day target, trajectory, observed conversion, content mix;
+- `creatoros growth --date DATE` refreshes `reports/growth/DATE.md` (150K/120-day target, trajectory, observed conversion, content mix;
   UNKNOWN where no numbers exist).
 - `creatoros runlog end ...` (above), then commit `daily/DATE/`, `research/*.jsonl`, `reports/growth/` and `logs/` in ONE commit and push
   (pull `--rebase` first; retry the push up to 4 times with backoff). If the push fails, say PACKAGE READY — DELIVERY FAILED.
@@ -290,6 +343,8 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 - Do not publish anything anywhere.
 
 ## 6. Learning (when the creator supplies numbers)
+- `creatoros learn` turns recorded numbers into lessons (best hooks, topics, follower conversion, weakest categories) against
+  the account's own median; with no data it says so. Run it before scoring each day (v6 step 11).
 - No analytics connector (Instagram, YouTube, X, LinkedIn) is connected, so numbers come from the creator.
 - `creatoros metrics-add date=D video_id=D_SLUG platform=P checkpoint=24h|72h|7d views=.. reach=.. avg_view_duration_s=..
   completion_rate=.. shares=.. saves=.. comments=.. profile_visits=.. new_followers=.. pillar=.. format=.. hook_type=.. source=..`

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-11-22T08:13:23+00:00",
+  "platform": "instagram",
+  "connection": "Instagram analytics: NOT CONNECTED. This environment has no authorized Instagram Graph API access, so only numbers the creator enters with `creatoros metrics-add` are used.",
+  "reels_with_data": 0,
+  "baseline": {
+    "views": null,
+    "avg_retention": null,
+    "completion_rate": null,
+    "shares_per_1k_views": null,
+    "saves_per_1k_views": null,
+    "comments_per_1k_views": null,
+    "profile_visit_rate": null,
+    "follows_per_1k_views": null
+  },
+  "dimensions": {
+    "hook_type": [],
+    "topic": [],
+    "pillar": [],
+    "format": []
+  },
+  "lessons": [
+    "No reel performance recorded yet: keep the documented rubric unchanged and record the 24h and 7d numbers for each reel."
+  ],
+  "status": "NO DATA"
+}

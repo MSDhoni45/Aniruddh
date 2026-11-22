@@ -130,14 +130,17 @@ def test_v3_hook_scoring_uses_seven_criteria():
 
 def test_dashboard_is_unknown_without_data(tmp_path):
     d = growth.dashboard("2026-11-25", tmp_path / "f.csv", tmp_path / "p.csv", tmp_path / "db.jsonl")
-    assert d["day"] == 6 and d["phase"].startswith("Phase 1")
+    assert d["day"] == 4 and d["phase"].startswith("Phase 1")
     assert d["current_followers"] == "UNKNOWN" and d["daily_net_growth_required"] == "UNKNOWN"
     assert d["conversion"]["followers_per_1k_views"] == "UNKNOWN"
     assert "UNKNOWN" in growth.render(d)
 
 
-def test_growth_mathematics_and_trajectory(tmp_path):
-    """The target counts Instagram only; other platforms are reported separately, never added in."""
+def test_growth_mathematics_and_trajectory(tmp_path, monkeypatch):
+    """The target counts Instagram only; other platforms are reported separately, never added in.
+    Pinned to the original 100K/60-day plan so the arithmetic stays checkable."""
+    monkeypatch.setattr(growth, "settings", lambda: {"target_followers": 100000, "days": 60, "start_date": "2026-11-20",
+                                                     "platform": "instagram"})
     f, perf = tmp_path / "f.csv", tmp_path / "p.csv"
     growth.add_snapshot("2026-11-20", "instagram", 2000, "app", f)
     growth.add_snapshot("2026-11-20", "youtube", 1000, "studio", f)
@@ -150,7 +153,7 @@ def test_growth_mathematics_and_trajectory(tmp_path):
     assert d["current_followers"] == 6000 and d["followers_by_platform"]["youtube"] == 1000
     assert d["remaining_followers"] == 94000 and d["days_remaining"] == 49
     assert d["daily_net_growth_required"] == round(94000 / 49)
-    assert d["average_daily_required_over_60"] == round(98000 / 60)
+    assert d["average_daily_required_over_plan"] == round(98000 / 60)
     assert d["net_gained"] == 4000 and d["daily_growth"] == 400.0 and d["growth_7d"] == 4000 and d["growth_30d"] == "UNKNOWN"
     t = d["trajectory"]
     assert t["expected_today"] == round(2000 + 98000 * 10 / 59) and t["status"] == "BEHIND"

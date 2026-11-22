@@ -1,4 +1,4 @@
-"""60-day growth dashboard: follower snapshots, the target trajectory, observed conversion and the content mix.
+"""Growth dashboard (150K followers in 120 days from 22 Nov 2026; was 100K in 60 days): follower snapshots, the target trajectory, observed conversion and the content mix.
 
 Only numbers the creator recorded (or a connected analytics source returned) are used. Anything missing is UNKNOWN, and
 no projection is shown as a prediction. A target is not a guarantee.
@@ -19,8 +19,8 @@ PLATFORMS = ["instagram", "youtube", "x", "linkedin"]
 UNKNOWN = "UNKNOWN"
 PHASES = [(1, 7, "Phase 1: baseline", "Test hook structures, categories, story types, delivery and visual formats; record results."),
           (8, 21, "Phase 2: find what works", "Lean into topics with strong retention, shares, saves and follows per 1k views; cut consistently weak formats."),
-          (22, 40, "Phase 3: scale", "Scale proven patterns; try recurring series, follow-up explainers, audience questions, demonstrations."),
-          (41, 60, "Phase 4: concentrate", "Concentrate on the most effective formats; review often; keep repeatable audience value.")]
+          (22, 60, "Phase 3: scale", "Scale proven patterns; try recurring series, follow-up explainers, audience questions, demonstrations."),
+          (61, 120, "Phase 4: concentrate", "Concentrate on the most effective formats; review often; keep repeatable audience value.")]
 
 
 def settings() -> dict:
@@ -84,7 +84,8 @@ def phase(day: int) -> tuple[str, str]:
     for lo, hi, name, focus in PHASES:
         if lo <= day <= hi:
             return name, focus
-    return ("Before day 1", "The 60 days have not started.") if day < 1 else ("After day 60", "The 60-day window has ended.")
+    last = settings()["days"]
+    return ("Before day 1", "The plan has not started.") if day < 1 else (f"After day {last}", "The plan window has ended.")
 
 
 def conversion(perf_rows: list[dict]) -> dict:
@@ -130,7 +131,7 @@ def _growth_over(series: list[tuple], today: dt.date, days: int):
 
 
 def scenarios(series: list[tuple], days_left: int, target: int) -> dict:
-    """Day-60 projections from the account's own observed growth. Assumptions are stated; nothing is guaranteed.
+    """End-of-plan projections from the account's own observed growth. Assumptions are stated; nothing is guaranteed.
     baseline     = average daily net growth since the first snapshot, continued
     conservative = the slowest daily rate between consecutive snapshots in the last 14 days, continued
     optimistic   = the fastest daily rate between consecutive snapshots in the last 14 days, continued"""
@@ -150,7 +151,7 @@ def scenarios(series: list[tuple], days_left: int, target: int) -> dict:
                    note="conservative/optimistic need at least three snapshots in the last 14 days")
     out["on_track"] = out["baseline"] >= target
     if not out["on_track"]:
-        out["warning"] = (f"At the observed rate ({round(avg, 1)}/day) the account reaches about {out['baseline']:,} by day 60, "
+        out["warning"] = (f"At the observed rate ({round(avg, 1)}/day) the account reaches about {out['baseline']:,} by the last day, "
                           f"short of {target:,}. The current strategy is not enough on its own.")
     return out
 
@@ -176,7 +177,7 @@ def dashboard(date: str, followers_path: Path | None = None, perf_path: Path | N
            "platforms_without_data": [pl for pl in PLATFORMS if pl not in latest],
            "current_followers": current if current is not None else UNKNOWN}
     if current is None:
-        out.update(remaining_followers=UNKNOWN, daily_net_growth_required=UNKNOWN, average_daily_required_over_60=UNKNOWN,
+        out.update(remaining_followers=UNKNOWN, daily_net_growth_required=UNKNOWN, average_daily_required_over_plan=UNKNOWN,
                    trajectory=UNKNOWN, net_gained=UNKNOWN, daily_growth=UNKNOWN, growth_7d=UNKNOWN, growth_30d=UNKNOWN,
                    projection={"status": UNKNOWN, "note": f"no {target_pl} follower count recorded"})
     else:
@@ -184,7 +185,7 @@ def dashboard(date: str, followers_path: Path | None = None, perf_path: Path | N
         base_d, base = series[0]
         out["baseline"] = {"date": str(base_d), "followers": base}
         out["remaining_followers"] = remaining
-        out["average_daily_required_over_60"] = round(max(s["target_followers"] - base, 0) / s["days"])
+        out["average_daily_required_over_plan"] = round(max(s["target_followers"] - base, 0) / s["days"])
         out["daily_net_growth_required"] = round(remaining / days_left) if days_left else (0 if remaining == 0 else UNKNOWN)
         out["net_gained"] = current - base
         prev = series[-2] if len(series) >= 2 else None
@@ -237,7 +238,7 @@ def render(d: dict) -> str:
     def v(x):
         return f"{x:,}" if isinstance(x, int) else str(x)
     pl = d["target_platform"].capitalize()
-    L = [f"# 60-day growth dashboard: {d['date']} (day {d['day']} of {d['days_total']})", "",
+    L = [f"# Growth dashboard: {d['date']} (day {d['day']} of {d['days_total']})", "",
          f"Target: {v(d['target_followers'])} {pl} followers by {d['end_date']}. This is a goal, not a forecast.", "",
          f"**{d['phase']}.** {d['phase_focus']}", "",
          "| Measure | Value |", "|---|---|",
@@ -247,15 +248,15 @@ def render(d: dict) -> str:
          f"| 7-day growth | {v(d['growth_7d'])} |", f"| 30-day growth | {v(d['growth_30d'])} |",
          f"| Followers remaining | {v(d['remaining_followers'])} |", f"| Days remaining | {d['days_remaining']} |",
          f"| Net followers needed per day from now | {v(d['daily_net_growth_required'])} |",
-         f"| Average needed per day over 60 days (from baseline) | {v(d['average_daily_required_over_60'])} |"]
+         f"| Average needed per day over the plan (from baseline) | {v(d['average_daily_required_over_plan'])} |"]
     t = d["trajectory"]
     traj = t if isinstance(t, str) else f"{t['status']} by {abs(t['gap']):,} (expected {t['expected_today']:,} today)"
     L.append(f"| Actual vs target trajectory | {traj} |")
     pr = d["projection"]
     if pr.get("status") == UNKNOWN:
-        L.append(f"| Projected day-60 followers | UNKNOWN ({pr['note']}) |")
+        L.append(f"| Projected followers on the last day | UNKNOWN ({pr['note']}) |")
     else:
-        L.append(f"| Projected day-60 (conservative / baseline / optimistic) | {v(pr['conservative'])} / {v(pr['baseline'])} / {v(pr['optimistic'])} |")
+        L.append(f"| Projected on the last day (conservative / baseline / optimistic) | {v(pr['conservative'])} / {v(pr['baseline'])} / {v(pr['optimistic'])} |")
     c = d["conversion"]
     L += [f"| Observed followers per 1,000 views | {c['followers_per_1k_views']} ({c['videos']} reels) |",
           f"| Daily views needed at that rate | {v(d['daily_views_needed_at_observed_conversion'])} |",

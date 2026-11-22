@@ -21,6 +21,15 @@ WEIGHTS_V4 = {"social_traction": 20, "novelty": 15, "consequence": 15, "broad_ap
               "discussion": 10, "verified_significance": 10, "freshness": 5}
 REQUIRED_V4 = REQUIRED_V3 + ["latest_development_at", "confirmed_facts", "company_claims", "unverified_claims",
                              "why_share", "visual_note"]
+# v6 (from 23 Nov 2026; the creator's daily-quality brief): ten editorial criteria, each 0-10, weighted to 100. They estimate
+# how a broad audience might respond (curiosity, shares, saves, comments); they are not predictions of views.
+WEIGHTS_V6 = {"curiosity": 12, "surprise": 12, "broad_relevance": 12, "shareability": 12, "save_potential": 10,
+              "comment_potential": 10, "visual_storytelling": 10, "practical_usefulness": 8, "long_term_relevance": 6,
+              "factual_confidence": 8}
+# How far the story itself is established. Only CONFIRMED and REPORTED (said with attribution) stories can be selected.
+CLAIM_STATUS = ["CONFIRMED", "REPORTED", "CLAIMED", "SPECULATIVE", "UNVERIFIED"]
+SELECTABLE_STATUS = {"CONFIRMED", "REPORTED"}
+REQUIRED_V6 = REQUIRED_V3 + ["claim_status", "why_share", "visual_note"]
 X_METRICS = ["likes", "reposts", "replies", "quotes", "views"]
 REQUIRED = ["headline", "category", "topic_type", "announced_at", "original_source", "supporting_sources", "what_happened",
             "why_it_matters", "target_audience", "discussion_signals", "competing_coverage", "uncertainty", "novelty",
@@ -35,16 +44,20 @@ UNKNOWN = "UNKNOWN"
 
 def scheme(c: dict) -> str:
     sc = c.get("scores", {})
+    if "save_potential" in sc:
+        return "v6"
     if "social_traction" in sc:
         return "v4"
     return "v3" if "public_discussion" in sc else ("v2" if "curiosity" in sc else "v1")
 
 
 def weights(c: dict) -> dict:
-    return {"v4": WEIGHTS_V4, "v3": WEIGHTS_V3, "v2": WEIGHTS_V2}.get(scheme(c), WEIGHTS)
+    return {"v6": WEIGHTS_V6, "v4": WEIGHTS_V4, "v3": WEIGHTS_V3, "v2": WEIGHTS_V2}.get(scheme(c), WEIGHTS)
 
 
 def validate(c: dict) -> list[str]:
+    if scheme(c) == "v6":
+        return validate_v6(c)
     if scheme(c) == "v4":
         return validate_v4(c)
     if scheme(c) == "v3":
@@ -218,10 +231,29 @@ def validate_v4(c: dict) -> list[str]:
     return probs
 
 
+def validate_v6(c: dict) -> list[str]:
+    """v3 rules (window, X evidence, sources) with the v6 rubric and the story's claim status."""
+    probs = [p for p in validate_v3({**c, "scores": {k: 0 for k in WEIGHTS_V3}}) if not p.startswith("score ")]
+    probs += [f"missing field: {f}" for f in REQUIRED_V6 if f not in c and f not in REQUIRED_V3]
+    sc = c.get("scores", {})
+    for k in WEIGHTS_V6:
+        v = sc.get(k)
+        if v != UNKNOWN and not (isinstance(v, (int, float)) and 0 <= v <= 10):
+            probs.append(f"score {k} must be 0-10 or UNKNOWN")
+    if "claim_status" in c and c["claim_status"] not in CLAIM_STATUS:
+        probs.append(f"claim_status must be one of {CLAIM_STATUS}")
+    fc = sc.get("factual_confidence")
+    if isinstance(fc, (int, float)) and fc >= 8 and c.get("claim_status") != "CONFIRMED":
+        probs.append("factual_confidence 8 or more needs claim_status CONFIRMED")
+    if isinstance(fc, (int, float)) and fc > 5 and c.get("evidence_confidence") == "LOW":
+        probs.append("factual_confidence above 5 contradicts evidence_confidence LOW")
+    return probs
+
+
 def window_reason(c: dict, window: dict | None) -> str | None:
     """v3 freshness rule: published inside the 24-hour research window, or a dated new development inside it.
     A date without a time counts if that day overlaps the window (never invent a time to pass this check)."""
-    if not window or scheme(c) not in ("v3", "v4") or c.get("creator_request"):
+    if not window or scheme(c) not in ("v3", "v4", "v6") or c.get("creator_request"):
         return None                                      # a topic the creator asked for is exempt from the window rule
     start, end = _iso(window.get("start_utc")), _iso(window.get("end_utc"))
     pub = _span(c.get("published_at"))
@@ -263,6 +295,11 @@ def ineligible_reason(c: dict) -> str | None:
         return "evidence confidence LOW"
     if c.get("verification_status") in ("UNVERIFIED", "REJECTED"):
         return f"verification status {c['verification_status']}"
+    if scheme(c) == "v6" and c.get("claim_status") not in SELECTABLE_STATUS:
+        return f"claim status {c.get('claim_status')} (only CONFIRMED or REPORTED stories can be selected)"
+    fcv = c["scores"].get("factual_confidence")
+    if scheme(c) == "v6" and isinstance(fcv, (int, float)) and fcv < 6:
+        return "factual confidence below 6/10"
     cred = c["scores"].get("credibility")
     if isinstance(cred, (int, float)) and cred < 5:
         return "credibility below 5/10"

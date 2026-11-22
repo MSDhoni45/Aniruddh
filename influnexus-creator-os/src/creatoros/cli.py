@@ -34,6 +34,8 @@ def main(argv=None) -> int:
     p = sub.add_parser("brief", help="(legacy format) validate and render daily/DATE/brief.json"); p.add_argument("--date", required=True)
     p = sub.add_parser("package", help="validate daily/DATE/package.json, render the recording package, log it"); p.add_argument("--date", required=True)
     p.add_argument("--file", help="package.json elsewhere (outputs are written beside it)")
+    p.add_argument("--trial", action="store_true", help="production-equivalent test: render beside --file, record nothing")
+    p = sub.add_parser("learn", help="performance learning from the account's own reels -> analytics/learning.md")
     p = sub.add_parser("today", help="print today's deliverable (Script for today)"); p.add_argument("--date")
     p = sub.add_parser("topics", help="the strongest eligible topics from a day's research (Give me 5 topics)"); p.add_argument("--date")
     p.add_argument("-n", type=int, default=5)
@@ -52,7 +54,7 @@ def main(argv=None) -> int:
     p = sub.add_parser("followers-add", help="record a follower count you actually saw")
     p.add_argument("--date", required=True); p.add_argument("--platform", required=True); p.add_argument("--followers", required=True)
     p.add_argument("--source", required=True)
-    p = sub.add_parser("growth", help="60-day growth dashboard -> reports/growth/DATE.md"); p.add_argument("--date")
+    p = sub.add_parser("growth", help="growth dashboard (150K in 120 days) -> reports/growth/DATE.md"); p.add_argument("--date")
     p = sub.add_parser("content-search", help="search the content database"); p.add_argument("query", nargs="?", default="")
     p.add_argument("--status"); p.add_argument("--category")
     p = sub.add_parser("content-update", help="update a content entry: key=value ..."); p.add_argument("--date", required=True)
@@ -107,7 +109,7 @@ def main(argv=None) -> int:
     elif a.cmd == "package":
         from .scripts import package
         src = Path(a.file) if a.file else config.path("daily", a.date, "package.json")
-        r = package.save(read_json(src), src.parent)
+        r = package.save(read_json(src), src.parent, record=not a.trial)
         _print(r)
         return 0 if r["ok"] else 2
     elif a.cmd in ("today", "recording"):
@@ -202,6 +204,11 @@ def main(argv=None) -> int:
         except ValueError as e:
             print(str(e), file=sys.stderr)
             return 2
+    elif a.cmd == "learn":
+        from .analytics import learning
+        d = learning.save()
+        print(learning.render(d))
+        print(f"learning_applied: {learning.summary_line(d)}")
     elif a.cmd == "growth":
         from .analytics import growth
         d = a.date or ist_today()
