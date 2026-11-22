@@ -172,3 +172,47 @@ def test_learning_compares_groups_with_the_account_median_and_needs_three_reels(
 def test_growth_goal_is_150k_in_120_days():
     s = growth.settings()
     assert (s["target_followers"], s["days"], s["start_date"]) == (150000, 120, "2026-11-22")
+
+
+# --- the real production-equivalent trial (22 Nov 2026, fresh-context subagent, v6 rules) -----------------------------
+
+
+
+def trial():
+    from pathlib import Path
+    f = Path(__file__).parent / "fixtures" / "v6_trial_2026-11-22" / "package.json"
+    return json.loads(f.read_text(encoding="utf-8"))
+
+
+def test_trial_package_is_recording_ready_and_delivers_eight_items_only(tmp_path):
+    p = trial()
+    probs, info = package.validate(p)
+    assert probs == [] and info["ready"]["status"] == "RECORDING READY"
+    r = package.save(p, tmp_path, record=False)
+    assert r["ok"] and r["content_db"] == "not recorded (trial)"
+    today = (tmp_path / "today.md").read_text(encoding="utf-8")
+    for h in ["## 1. Today's story", "## 2. Why it was selected", "## 3. Verified facts and sources",
+              "## 4. Recording-ready script", "## 5. Estimated speaking duration", "## 6. Opening visual", "## 7. Caption",
+              "## 8. Hashtags"]:
+        assert h in today
+    assert "contrarian question" not in today and "Version B" not in today       # internal material stays internal
+    creative = (tmp_path / "creative.md").read_text(encoding="utf-8")
+    assert "(chosen)" in creative and "Version C" in creative and "Creative quality gate" in creative
+    rj = json.loads((tmp_path / "research.json").read_text(encoding="utf-8"))
+    assert sum(len(f["hooks"]) for f in rj["finalists"]) == 5 * len(p["finalists"]) and set(rj["variants"]) == {"A", "B", "C"}
+
+
+def test_trial_mutations_are_refused():
+    base = trial()
+    p = {**base, "script": base["variants"]["B"]["script"]}
+    assert any("selected variant" in x or "chosen hook" in x or "open with" in x for x in package.validate(p)[0])
+    vp = {**base["visual_plan"], "demonstrations": ["robot folds laundry"]}
+    assert any("never describe a demonstration" in x for x in package.validate({**base, "visual_plan": vp})[0])
+    fin = json.loads(json.dumps(base["finalists"]))
+    fin[0]["hooks"][0]["text"] = "Big news in AI today: math changed"
+    assert any("generic hook" in x for x in package.validate({**base, "finalists": fin})[0])
+    g = {**base["creative_gate"], "memorable_ending": {"pass": False, "why": "the ending only repeats the facts"}}
+    assert any("creative gate failed" in x for x in package.validate({**base, "creative_gate": g})[0])
+    v = json.loads(json.dumps(base["variants"]))
+    v["C"]["script"] = v["C"]["script"] + " " + " ".join(["And that is a very long extra sentence."] * 3)
+    assert any(x.startswith("variant C") for x in package.validate({**base, "variants": v})[0])

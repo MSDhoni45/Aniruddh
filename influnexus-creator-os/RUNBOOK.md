@@ -89,7 +89,9 @@ Goal: content a broad audience shares, saves, comments on and follows for (150,0
 22 Nov 2026: an ambitious target, not a guaranteed outcome). Not a news summary; do not optimise for merely finishing a script.
 Where this section differs from the v5, v4 and v3 text below, this section wins. Everything in "Verification policy",
 HOLD/fallback, the time budget, cost control and delivery stages still applies. `"scoring": "v6"`, `"language": "english"`.
-1. **Research 15-25 stories** from the 24-hour window (48-72 h only with `window_expansion_reason`): OpenAI, Google, DeepMind,
+1. **Research 15-25 stories** from the 24-hour window. Widen to 48 h (then 72 h) with `window_expansion_reason` when no strong
+   verified story exists OR fewer than five candidates are eligible (weekends: the 22 Nov trial found only two in 24 h, while
+   70-point stories from the day before were excluded); a widened story still needs a dated development inside the wider window: OpenAI, Google, DeepMind,
    Anthropic, Meta, Apple, Microsoft, Amazon, NVIDIA, Tesla, SpaceX, xAI, robotics, startups, cybersecurity, consumer tech,
    science, AI applications, emerging tech. Look for surprising developments, useful discoveries, controversies, major launches,
    unexpected demos, important debates and tech that affects everyday life. Do not force an AI-model story when another
