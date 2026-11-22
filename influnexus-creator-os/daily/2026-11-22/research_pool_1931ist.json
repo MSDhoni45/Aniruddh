@@ -1,0 +1,1066 @@
+{
+ "window": {
+  "start_utc": "2026-11-21T14:01Z",
+  "end_utc": "2026-11-22T14:01Z",
+  "start_ist": "2026-11-21 19:31",
+  "end_ist": "2026-11-22 19:31",
+  "hours": 24
+ },
+ "window_expansion_reason": null,
+ "window_note": "Not expanded: >=5 eligible in-window stories (OpenRouter, Tesla FSD v15, Amazon-Decart report, UN killer-robots outcome, Entra Connect Health, Waymo recalls, KEPCO, Kakao/Toss). Stories dated 17-20 Nov kept in pool as ineligible references.",
+ "candidates": [
+  {
+   "id": "openrouter-dragos-prompt-theft",
+   "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after Dragos canary study found prompt theft",
+   "category": "cybersecurity / AI tools",
+   "source_url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "published_utc": "2026-11-22 (time UNKNOWN). Original event: Dragos research published 2026-11-19 (per DEV Community/HN write-ups); study ran July-November 2026.",
+   "latest_development": "OpenRouter notice (22 Nov): off-boarded three providers (unnamed), removed 125 endpoints from ZDR eligibility (flagged ones plus precautionary), notified potentially affected customers; says no breach of OpenRouter itself; ZDR reportedly default for new accounts; links notices from Novita, Phala, Together AI without saying they are the three.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results. A Digg thread on the Dragos post appeared in search results (not opened).",
+   "why_it_matters": "Developers and apps that route prompts through AI routers assumed 'zero data retention' meant private; Dragos found attackers inside at least three inference providers and resellers able to read prompts. Shows the hidden supply chain behind 'which model answered you'.",
+   "audience_relevance": "Developers, founders, anyone building on cheap third-party model APIs; general users of AI apps built on routers.",
+   "practical_usefulness": "Actionable: check routing settings, turn on ZDR, choose first-party providers for sensitive data, avoid reseller marketplaces, rotate keys (Dragos recommendations per secondary coverage). Price: N/A.",
+   "visual_potential": "Good: diagram of prompt -> router -> provider -> leak; canary token concept; screenshot of notice (if creator can open it).",
+   "verification_status": "INDEPENDENTLY REPORTED (OpenRouter notice and Dragos post seen only via search index; multiple outlets: The Hacker News, Unite.AI, Brandefense, mlq.ai, DEV)",
+   "controversy": "Whether 'breach' vs 'logging/retention violation' - framing contested; providers not named; Chinese-lab exfiltration detail varies across outlets.",
+   "extraordinary": {
+    "flag": "security breach",
+    "who_claimed": "Dragos (research, HD Moore reportedly lead per World Today News headline) and OpenRouter (action)",
+    "demonstrated": "~2 million canary-seeded prompts; canary AWS keys reused by attackers; at least 3 providers compromised, none had detected it (secondary coverage)",
+    "independent_confirmation": "OpenRouter acted on findings; Together AI disclosed a separate related leak; no independent reproduction",
+    "uncertain": "Provider identities; exact numbers (routes traced, Chinese-lab share); whether OpenRouter's 3 = Dragos's 3",
+    "reproduced": false,
+    "preliminary": "Partly - figures from a single research firm"
+   },
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 8,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 8,
+    "discussion": 8,
+    "timeliness": 10,
+    "weighted": 69.5
+   }
+  },
+  {
+   "id": "tesla-fsd-v15",
+   "headline": "Tesla starts rolling out FSD (Supervised) v15 with 'Reality View' and a claimed 25x better handling of safety-critical cases",
+   "category": "autonomous vehicles",
+   "source_url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/",
+   "published_utc": "2026-11-21 (time UNKNOWN)",
+   "latest_development": "v15.0.1 in software 2026.38.6.11 to first wave of early-access owners, reportedly AI4/HW4 cars in US; Musk: wide release 'next month' (Holiday Update); HW3 not included so far.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results. X posts (e.g. @TeslaSI release notes) appeared in search index; metrics UNKNOWN.",
+   "why_it_matters": "Biggest FSD update in months; new visualization; but 25x is a company metric with no published baseline.",
+   "audience_relevance": "Tech fans, EV owners, autonomy watchers; global interest but product US-first.",
+   "practical_usefulness": "Only Tesla FSD (Supervised) customers with AI4 hardware in first wave; regions/price for v15 not stated in sources seen.",
+   "visual_potential": "High: Reality View is a third-person 'game-like' render (Yahoo Autos headline compares to GTA).",
+   "verification_status": "COMPANY-CLAIMED (25x) / INDEPENDENTLY REPORTED (rollout: Electrek, Digital Trends, Teslarati-type sites, paultan.org, Tesla North)",
+   "controversy": "25x figure undefined baseline; HW3 owners excluded; supervised, not autonomous.",
+   "extraordinary": {
+    "flag": "radical claim (25x safety)",
+    "who_claimed": "Tesla release notes/post",
+    "demonstrated": "Rollout logged by fleet trackers (Teslascope, TeslaFi) on AI4 Model Ys per coverage",
+    "independent_confirmation": "Rollout yes; 25x no",
+    "uncertain": "Definition and baseline of 'critical intervention rate'",
+    "reproduced": false,
+    "preliminary": true
+   },
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 9,
+    "consequence": 6,
+    "discussion": 8,
+    "timeliness": 10,
+    "weighted": 63.0
+   }
+  },
+  {
+   "id": "amazon-monai-ai-agents-zero-day",
+   "headline": "Amazon: China-linked actor's autonomous AI agents (Cairn framework) found and exploited a MONAI Label zero-day in ~11 minutes",
+   "category": "cybersecurity / AI agents",
+   "source_url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+   "published_utc": "2026-11-20 (AWS Security Blog post; time UNKNOWN) - OUTSIDE 24h window by hours; follow-up coverage 22 Nov (prsol.cc) but no new development",
+   "latest_development": "Coverage continued 21-22 Nov; MONAI Label GitHub advisory GHSA-qc22-rmgc-vg94 (Critical, path traversal) published 18 Nov 2026 (opened directly).",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "First widely reported case (per coverage) of AI agents autonomously discovering and exploiting a zero-day in the wild.",
+   "audience_relevance": "Developers, security, AI watchers; broad 'AI hacking on its own' angle.",
+   "practical_usefulness": "Patch MONAI Label; restrict network access. Niche software.",
+   "visual_potential": "Medium: timeline of 11 minutes, agent loop diagram.",
+   "verification_status": "INDEPENDENTLY REPORTED (The Register, SecurityWeek, BleepingComputer, CSA) of a company report; advisory CONFIRMED on GitHub",
+   "controversy": "Attribution moderate confidence; patch dates conflict (18 Nov vs 19 Oct).",
+   "extraordinary": {
+    "flag": "autonomous discovery",
+    "who_claimed": "Amazon Threat Intelligence",
+    "demonstrated": "Logs of agent activity per Amazon",
+    "independent_confirmation": "Maintainer advisory exists; no independent reproduction of the agent claim",
+    "uncertain": "Attribution, victims, degree of human oversight",
+    "reproduced": false,
+    "preliminary": true
+   },
+   "eligible": false,
+   "eligibility_note": "Only with 48h window expansion; 24h window has >=5 eligible stories, so not expanded.",
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 9,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 9,
+    "discussion": 8,
+    "timeliness": 4,
+    "weighted": 63.0
+   }
+  },
+  {
+   "id": "gemini-tasks-free",
+   "headline": "Google makes Gemini Tasks (agent) free in six countries incl. India, on Gemini 4 Hydrogen",
+   "category": "AI products",
+   "source_url": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+   "published_utc": "2026-11-17",
+   "latest_development": "None in window.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Free AI agent for millions.",
+   "audience_relevance": "High (India audience).",
+   "practical_usefulness": "18+ in US, Japan, South Korea, Canada, Australia, India; calls/checkout US-only (per coverage).",
+   "visual_potential": "High.",
+   "verification_status": "INDEPENDENTLY REPORTED",
+   "controversy": "Model names inconsistent across sources.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Older than 72h.",
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 6,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 1,
+    "weighted": 60.0
+   }
+  },
+  {
+   "id": "instagram-story-edit",
+   "headline": "Instagram lets users edit Stories within 15 minutes of posting (keeps views/replies, shows 'Edited' label)",
+   "category": "creator tech",
+   "source_url": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
+   "published_utc": "Rollout began 2026-11-18 (Mosseri); Technobaboy write-up 2026-11-22 (no new development)",
+   "latest_development": "None new in window.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Directly useful to creators.",
+   "audience_relevance": "Very high for creators.",
+   "practical_usefulness": "All Instagram users as rollout reaches them; free.",
+   "visual_potential": "High (screen recording).",
+   "verification_status": "CONFIRMED (Instagram/Mosseri via Fast Company; search-index only)",
+   "controversy": "None.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Original 18 Nov, beyond 72h; no dated new development.",
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 5,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 3,
+    "discussion": 6,
+    "timeliness": 2,
+    "weighted": 58.0
+   }
+  },
+  {
+   "id": "fbi-ncic-breach",
+   "headline": "FBI investigating suspected breach of its NCIC criminal-information database (CNN)",
+   "category": "cybersecurity / policy",
+   "source_url": "https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database",
+   "published_utc": "CNN 2026-11-20; CNBC 2026-11-21; ABC Australia 2026-11-22 (follow-ups, no major new fact found)",
+   "latest_development": "Trump reportedly downplayed it; FBI no public comment in coverage seen; second FBI system breach since September.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "NCIC holds 18M+ active records (FBI 2023 figure per coverage) used for warrants/background checks.",
+   "audience_relevance": "Broad but US-centric; not actionable.",
+   "practical_usefulness": "None for viewers.",
+   "visual_potential": "Low-medium.",
+   "verification_status": "INDEPENDENTLY REPORTED (CNN sources; unconfirmed officially)",
+   "controversy": "Political framing.",
+   "extraordinary": {
+    "flag": "security breach",
+    "who_claimed": "CNN citing two people briefed",
+    "demonstrated": "Nothing public",
+    "independent_confirmation": "None official",
+    "uncertain": "Scope, data taken, actor",
+    "reproduced": false,
+    "preliminary": true
+   },
+   "eligible": true,
+   "eligibility_note": "Original report 20 Nov is outside window; in-window items are follow-ups only - weak eligibility.",
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 7,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 8,
+    "discussion": 7,
+    "timeliness": 6,
+    "weighted": 55.5
+   }
+  },
+  {
+   "id": "waymo-recalls-freeway-pause",
+   "headline": "Waymo files two recalls and pauses freeway rides nationwide after California DMV 'imminent hazard' freeway ban",
+   "category": "autonomous vehicles",
+   "source_url": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
+   "published_utc": "Recall/pause coverage 2026-11-21 (thehypemagazine, wisevoter dated 21 Nov); DMV restriction effective 2026-11-11 (per Newsweek)",
+   "latest_development": "Two voluntary NHTSA recalls (closed freeway lanes; police hand signals); nationwide freeway pause; NHTSA school-bus recall query earlier.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Setback for the leading robotaxi on highways.",
+   "audience_relevance": "Tech fans, US mostly.",
+   "practical_usefulness": "Riders in Waymo cities: no freeway routes.",
+   "visual_potential": "High (footage of robotaxis, construction zones) but creator must use stock/own footage.",
+   "verification_status": "INDEPENDENTLY REPORTED (NBC, ABC, Newsweek)",
+   "controversy": "Exact recall filing date not confirmed; ban date conflicts (11 Nov vs week of 18 Nov).",
+   "extraordinary": null,
+   "eligible": true,
+   "eligibility_note": "Ban itself is 11 Nov; recall filing date needs confirmation to be inside window.",
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 7,
+    "weighted": 54.5
+   }
+  },
+  {
+   "id": "amazon-decart-7-5b",
+   "headline": "Amazon reportedly nears ~$7.5B deal to buy AI startup Decart (FT)",
+   "category": "industry / M&A",
+   "source_url": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+   "published_utc": "FT 2026-11-21 (Saturday; time UNKNOWN)",
+   "latest_development": "Advanced talks, deal could be announced as soon as next week; not signed; WSJ reported ~$7B talks in October; Decart valued ~$4B in May.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Amazon pushing workloads onto Trainium vs Nvidia; Decart also makes real-time video model Lucy and world model Oasis.",
+   "audience_relevance": "Founders, investors, AI watchers.",
+   "practical_usefulness": "None directly.",
+   "visual_potential": "Medium (Decart's real-time video demos exist publicly but creator must not invent demos).",
+   "verification_status": "INDEPENDENTLY REPORTED (single FT report relayed; no company statement) - effectively REPORTED/unsigned",
+   "controversy": "Deal may collapse; HQ described inconsistently.",
+   "extraordinary": {
+    "flag": "billion-dollar event",
+    "who_claimed": "FT citing people familiar",
+    "demonstrated": "Nothing",
+    "independent_confirmation": "WSJ earlier talks only",
+    "uncertain": "Price, earnouts, timing, whether it closes",
+    "reproduced": false,
+    "preliminary": true
+   },
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10,
+    "weighted": 54.0
+   }
+  },
+  {
+   "id": "ai-selloff-worst-week",
+   "headline": "AI trade has worst week since March 2020; Nasdaq erases 2026 gains",
+   "category": "markets",
+   "source_url": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+   "published_utc": "Market close 2026-11-20; reports 2026-11-21",
+   "latest_development": "Figures (Nasdaq ~-5.3% Friday, Nvidia ~-14%) only from digest relaying NPR/others - not verified.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "AI bubble fears.",
+   "audience_relevance": "Investors, founders.",
+   "practical_usefulness": "None; finance claims need HIGH.",
+   "visual_potential": "Charts.",
+   "verification_status": "INDEPENDENTLY REPORTED (numbers unverified)",
+   "controversy": "Financial claims extraordinary - need primary data.",
+   "extraordinary": {
+    "flag": "financial/market moves",
+    "who_claimed": "News outlets",
+    "demonstrated": "Market data (not opened)",
+    "independent_confirmation": "Multiple outlets in digest",
+    "uncertain": "Exact percentages",
+    "reproduced": null,
+    "preliminary": false
+   },
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 7,
+    "discussion": 7,
+    "timeliness": 7,
+    "weighted": 53.5
+   }
+  },
+  {
+   "id": "chatgpt-wallet",
+   "headline": "OpenAI launches ChatGPT Wallet letting 'dots' agents make purchases with tokenized cards",
+   "category": "AI products / fintech",
+   "source_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+   "published_utc": "2026-11-13 (some say 16 Nov)",
+   "latest_development": "None in window.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Agentic payments.",
+   "audience_relevance": "High.",
+   "practical_usefulness": "US Pro subscribers 18+, eligible US cards; OpenAI takes no cut initially (per coverage).",
+   "visual_potential": "Medium.",
+   "verification_status": "CONFIRMED (OpenAI post, CNBC; search-index only)",
+   "controversy": "None.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Older than 72h.",
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 6,
+    "timeliness": 1,
+    "weighted": 52.5
+   }
+  },
+  {
+   "id": "un-killer-robots",
+   "headline": "UN talks on AI 'killer robots' end with mandate to elaborate possible rules by 2028, no binding commitment",
+   "category": "policy / AI weapons",
+   "source_url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+   "published_utc": "2026-11-21",
+   "latest_development": "CCW consensus outcome; Stop Killer Robots calls it 'watered down'; Guterres wants a binding instrument.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Autonomous weapons regulation stalls.",
+   "audience_relevance": "Broad but abstract.",
+   "practical_usefulness": "None.",
+   "visual_potential": "Medium (stock).",
+   "verification_status": "CONFIRMED (AP via NPR/ABC, Al Jazeera, UN News)",
+   "controversy": "Russia/US positions.",
+   "extraordinary": null,
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 7,
+    "discussion": 7,
+    "timeliness": 10,
+    "weighted": 52.0
+   }
+  },
+  {
+   "id": "instagram-direct-app",
+   "headline": "Meta tests standalone 'Direct' messaging app for Instagram in Turkiye and Thailand",
+   "category": "creator tech / social",
+   "source_url": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
+   "published_utc": "2026-11-17",
+   "latest_development": "None in window.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "DMs split from Instagram (again).",
+   "audience_relevance": "High.",
+   "practical_usefulness": "Test in two countries only.",
+   "visual_potential": "High.",
+   "verification_status": "CONFIRMED (TechCrunch on Meta statement)",
+   "controversy": "None.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Older than 72h.",
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 4,
+    "discussion": 6,
+    "timeliness": 1,
+    "weighted": 51.0
+   }
+  },
+  {
+   "id": "optimus-suitcases-clip",
+   "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+   "category": "robotics",
+   "source_url": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
+   "published_utc": "2026-11-22",
+   "latest_development": "Authenticity not established; an X trending item describes a different AI-generated Musk/Optimus luggage video as fake.",
+   "public_discussion": "Outlet says 'widespread attention'; numbers UNKNOWN, not observed.",
+   "why_it_matters": "Would be striking if real.",
+   "audience_relevance": "Broad.",
+   "practical_usefulness": "None.",
+   "visual_potential": "High.",
+   "verification_status": "DISPUTED / UNVERIFIED",
+   "controversy": "Possible AI fake.",
+   "extraordinary": {
+    "flag": "radical robotics",
+    "who_claimed": "Viral social post; Sunday Guardian",
+    "demonstrated": "Clip not viewed",
+    "independent_confirmation": "None; Tesla no statement",
+    "uncertain": "Whether real, teleoperated or AI-generated",
+    "reproduced": false,
+    "preliminary": true
+   },
+   "eligible": false,
+   "eligibility_note": "Unverifiable; rejected.",
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 7,
+    "usefulness": 1,
+    "social_momentum": 2,
+    "visual": 9,
+    "consequence": 3,
+    "discussion": 7,
+    "timeliness": 9,
+    "weighted": 50.5
+   }
+  },
+  {
+   "id": "iphone-duo-ios273",
+   "headline": "iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock (MacRumors weekly roundup)",
+   "category": "phones",
+   "source_url": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
+   "published_utc": "2026-11-21 (roundup)",
+   "latest_development": "Unclear; search summary flagged one item as possibly an April Fools piece.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Apple's first foldable.",
+   "audience_relevance": "High.",
+   "practical_usefulness": "UNKNOWN.",
+   "visual_potential": "High.",
+   "verification_status": "PRELIMINARY / UNVERIFIED (search excerpts inconsistent)",
+   "controversy": "Possible misdated/joke content.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Could not verify details or dates.",
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 2,
+    "visual": 7,
+    "consequence": 4,
+    "discussion": 6,
+    "timeliness": 6,
+    "weighted": 49.0
+   }
+  },
+  {
+   "id": "entra-connect-health",
+   "headline": "Microsoft: attackers exploited Entra Connect Health API flaw to read tenant metadata (admin emails, tenant IDs)",
+   "category": "cybersecurity",
+   "source_url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "published_utc": "~2026-11-21 (security tracker shows 21 Nov 18:03 UTC); flaw introduced 23 Jul, detected 9 Nov, investigation concluded 20 Nov",
+   "latest_development": "Server-side fix; read-only PowerShell script for admins.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Admin emails exposed -> phishing risk.",
+   "audience_relevance": "IT admins; niche for general audience.",
+   "practical_usefulness": "Admins: run Microsoft's script, warn admins about phishing.",
+   "visual_potential": "Low.",
+   "verification_status": "INDEPENDENTLY REPORTED (BleepingComputer on Microsoft customer notice)",
+   "controversy": "Tenant count unknown.",
+   "extraordinary": {
+    "flag": "security breach",
+    "who_claimed": "Microsoft notice",
+    "demonstrated": "N/A",
+    "independent_confirmation": "Reported by press",
+    "uncertain": "Actor, number of tenants",
+    "reproduced": null,
+    "preliminary": false
+   },
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 5,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 6,
+    "discussion": 5,
+    "timeliness": 10,
+    "weighted": 48.5
+   }
+  },
+  {
+   "id": "nvidia-580k-china",
+   "headline": "Documents show US approved sale of ~580,000 Nvidia AI chips to China under revenue-share plan, incl. firms Pentagon lists as military-linked",
+   "category": "chips / policy",
+   "source_url": "https://politicalwire.com/2026/11/20/officials-approved-sale-of-580000-nvidia-chips-to-china/",
+   "published_utc": "Washington Post 2026-11-20 (outside 24h)",
+   "latest_development": "Nvidia says it has stopped H200 shipments to China (per coverage).",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Export control controversy.",
+   "audience_relevance": "Policy/investors.",
+   "practical_usefulness": "None.",
+   "visual_potential": "Low.",
+   "verification_status": "INDEPENDENTLY REPORTED (WaPo via House Foreign Affairs docs)",
+   "controversy": "High.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Outside 24h.",
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 7,
+    "timeliness": 4,
+    "weighted": 46.5
+   }
+  },
+  {
+   "id": "cert-in-payment-workflow",
+   "headline": "CERT-In critical advisory: attackers altering payee records to push fraudulent payments through normal approvals, beyond banks",
+   "category": "fintech / cybersecurity",
+   "source_url": "https://www.aninews.in/news/business/cert-in-flags-unauthorised-payments-beyond-financial-sector20261121153710/",
+   "published_utc": "Advisory CIAD-2026-0062 issued 2026-11-20; ANI report 2026-11-21",
+   "latest_development": "Victims include tech providers handling government-linked payments; report via 1930 / cybercrime portal.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Payments clear checks even when records are tampered.",
+   "audience_relevance": "Indian businesses, founders, finance teams.",
+   "practical_usefulness": "Verify payee-record changes; report via 1930.",
+   "visual_potential": "Low-medium.",
+   "verification_status": "INDEPENDENTLY REPORTED (ANI, Moneylife); advisory text not opened",
+   "controversy": "No victims named.",
+   "extraordinary": null,
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 5,
+    "usefulness": 6,
+    "social_momentum": 2,
+    "visual": 3,
+    "consequence": 6,
+    "discussion": 4,
+    "timeliness": 7,
+    "weighted": 46.0
+   }
+  },
+  {
+   "id": "inkling-2-mini",
+   "headline": "Thinking Machines Lab releases Inkling 2 Mini, Apache-2.0 open-weights looped MoE (26.4B total / 3.4B active) that runs on a 32GB Mac",
+   "category": "AI models / open source",
+   "source_url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "published_utc": "2026-11-20 (outside 24h)",
+   "latest_development": "Artificial Analysis Intelligence Index 20 (per coverage).",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Capable local model on a laptop.",
+   "audience_relevance": "Developers.",
+   "practical_usefulness": "Free weights on Hugging Face; Ollama on Macs >=32GB (per coverage).",
+   "visual_potential": "Medium.",
+   "verification_status": "COMPANY-CLAIMED benchmarks; release INDEPENDENTLY REPORTED",
+   "controversy": "Benchmarks self-reported.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Outside 24h.",
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 6,
+    "social_momentum": 2,
+    "visual": 4,
+    "consequence": 4,
+    "discussion": 5,
+    "timeliness": 4,
+    "weighted": 42.5
+   }
+  },
+  {
+   "id": "kakaopay-toss-id",
+   "headline": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
+   "category": "fintech",
+   "source_url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+   "published_utc": "2026-11-22",
+   "latest_development": "Service starts 23 Nov.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Digital ID in super-apps.",
+   "audience_relevance": "Regional.",
+   "practical_usefulness": "Korean users only.",
+   "visual_potential": "Medium.",
+   "verification_status": "INDEPENDENTLY REPORTED (SBS; search-index only)",
+   "controversy": "Privacy.",
+   "extraordinary": null,
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 4,
+    "usefulness": 5,
+    "social_momentum": 2,
+    "visual": 5,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 10,
+    "weighted": 40.5
+   }
+  },
+  {
+   "id": "ubisoft-motherbrain",
+   "headline": "Ubisoft launches Motherbrain subsidiary for AI NPCs with memory and AI game masters",
+   "category": "gaming / AI",
+   "source_url": "https://tech.yahoo.com/gaming/articles/ubisoft-dumps-money-gen-ai-225650356.html",
+   "published_utc": "2026-11-19 (H1 earnings)",
+   "latest_development": "None in window.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "AI in games; layoffs context.",
+   "audience_relevance": "Gamers. Release type: official announcement (no game).",
+   "practical_usefulness": "None yet.",
+   "visual_potential": "Low (no demo).",
+   "verification_status": "CONFIRMED (Ubisoft earnings release, via press)",
+   "controversy": "Layoffs same week.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Outside 72h.",
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 4,
+    "discussion": 6,
+    "timeliness": 2,
+    "weighted": 40.0
+   }
+  },
+  {
+   "id": "musk-optimus-mining",
+   "headline": "Musk says first Optimus deployments will be in mining and ore refining",
+   "category": "robotics",
+   "source_url": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
+   "published_utc": "2026-11-22 (newsletter; original statement source/date UNKNOWN)",
+   "latest_development": "Unknown.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Optimus roadmap.",
+   "audience_relevance": "Medium.",
+   "practical_usefulness": "None.",
+   "visual_potential": "Medium.",
+   "verification_status": "PRELIMINARY (single newsletter)",
+   "controversy": "Musk timelines.",
+   "extraordinary": null,
+   "eligible": false,
+   "eligibility_note": "Primary statement not found.",
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 5,
+    "usefulness": 1,
+    "social_momentum": 2,
+    "visual": 5,
+    "consequence": 4,
+    "discussion": 5,
+    "timeliness": 7,
+    "weighted": 39.5
+   }
+  },
+  {
+   "id": "kepco-leak",
+   "headline": "KEPCO says personal data of ~1.52M records leaked (customer platform + procurement system)",
+   "category": "cybersecurity",
+   "source_url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857930",
+   "published_utc": "2026-11-22",
+   "latest_development": "650,487 customer-platform users + 869,761 procurement users (per search summary).",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "Large utility breach in Korea.",
+   "audience_relevance": "Regional (Korea).",
+   "practical_usefulness": "Low for global audience.",
+   "visual_potential": "Low.",
+   "verification_status": "INDEPENDENTLY REPORTED (SBS, search-index only)",
+   "controversy": "None noted.",
+   "extraordinary": null,
+   "eligible": true,
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 4,
+    "usefulness": 3,
+    "social_momentum": 2,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 4,
+    "timeliness": 10,
+    "weighted": 36.5
+   }
+  },
+  {
+   "id": "cognition-75b",
+   "headline": "Cognition (Devin) in talks to raise $2B+ at $75B valuation (Bloomberg)",
+   "category": "industry / funding",
+   "source_url": "https://thenextweb.com/news/cognition-funding-75bn-valuation-bloomberg-devin",
+   "published_utc": "2026-11-20 (outside 24h)",
+   "latest_development": "Talks only.",
+   "public_discussion": "UNKNOWN - x.com/reddit/youtube/instagram not reachable; no engagement numbers observed. Only signal: multiple outlets covering it in search results.",
+   "why_it_matters": "AI coding valuations.",
+   "audience_relevance": "Founders/devs.",
+   "practical_usefulness": "None.",
+   "visual_potential": "Low.",
+   "verification_status": "INDEPENDENTLY REPORTED (talks)",
+   "controversy": "Valuation claims need HIGH.",
+   "extraordinary": {
+    "flag": "billion-dollar event",
+    "who_claimed": "Bloomberg sources",
+    "demonstrated": "None",
+    "independent_confirmation": "None",
+    "uncertain": "All terms",
+    "reproduced": null,
+    "preliminary": true
+   },
+   "eligible": false,
+   "eligibility_note": "Outside 24h.",
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 5,
+    "timeliness": 4,
+    "weighted": 36.5
+   }
+  }
+ ],
+ "top3_verification": [
+  {
+   "rank": 1,
+   "id": "openrouter-dragos-prompt-theft",
+   "verdict": "Passes MEDIUM-HIGH (time-sensitive security claim) on independent reporting + company notice seen in search index; NOT HIGH (primary pages could not be opened). Avoid naming providers or the Chinese lab; avoid exact Dragos figures other than '~2 million prompts' unless re-checked.",
+   "facts": [
+    {
+     "fact": "OpenRouter off-boarded three inference providers",
+     "evidence": [
+      {
+       "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+       "kind": "primary",
+       "access": "search-index (openrouter.ai DNS-blocked)",
+       "outlet": "OpenRouter",
+       "date": "2026-11-22",
+       "excerpt": "off-boarded three providers, removed 125 endpoints from ZDR eligibility, and notified potentially affected customers (search excerpt)"
+      },
+      {
+       "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+       "kind": "news",
+       "access": "search-index (DNS-blocked)",
+       "outlet": "The Hacker News",
+       "date": "2026-11",
+       "excerpt": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms (headline)"
+      },
+      {
+       "url": "https://www.unite.ai/openrouter-cuts-three-providers-after-ai-prompt-exposure-findings/",
+       "kind": "news",
+       "access": "search-index (DNS-blocked)",
+       "outlet": "Unite.AI",
+       "date": "2026-11-22",
+       "excerpt": "OpenRouter Cuts Three Providers After AI Prompt Exposure Findings (headline)"
+      }
+     ]
+    },
+    {
+     "fact": "125 endpoints removed from Zero Data Retention eligibility; includes precautionary removals, not 125 confirmed breaches",
+     "evidence": [
+      {
+       "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+       "kind": "primary",
+       "access": "search-index",
+       "outlet": "OpenRouter",
+       "date": "2026-11-22",
+       "excerpt": "the removals included providers flagged by researchers, plus additional endpoints removed as a precaution (search excerpt)"
+      },
+      {
+       "url": "https://que.com/your-ai-chats-may-not-have-been-private-openrouter-cuts-three-providers-after-researchers-catch-months-of-prompt-theft/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "QUE.com",
+       "date": "2026-11",
+       "excerpt": "the 125 removals do not represent 125 confirmed breaches"
+      }
+     ]
+    },
+    {
+     "fact": "OpenRouter says its own systems were not breached",
+     "evidence": [
+      {
+       "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+       "kind": "primary",
+       "access": "search-index",
+       "outlet": "OpenRouter",
+       "date": "2026-11-22",
+       "excerpt": "the findings did not show any breach or unauthorized access of OpenRouter"
+      }
+     ]
+    },
+    {
+     "fact": "Dragos sent ~2 million canary-seeded prompts July-November 2026 and found at least three inference providers compromised; providers unnamed and had not detected it",
+     "evidence": [
+      {
+       "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+       "kind": "primary",
+       "access": "search-index only via Digg reference (dragos.com DNS-blocked)",
+       "outlet": "Dragos",
+       "date": "2026-11-19 (per DEV Community write-up)",
+       "excerpt": "none"
+      },
+      {
+       "url": "https://mlq.ai/news/dragos-finds-attackers-inside-three-ai-inference-providers-and-resellers-reading-customer-prompts/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "mlq.ai",
+       "date": "2026-11",
+       "excerpt": "Dragos finds attackers inside three AI inference providers and resellers reading customer prompts (headline)"
+      },
+      {
+       "url": "https://www.rescana.com/post/dragos-canary-tokens-compromised-ai-inference-providers-what-ai-router-customers-should-do-now",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Rescana",
+       "date": "2026-11",
+       "excerpt": "none verbatim"
+      }
+     ]
+    },
+    {
+     "fact": "Some stolen requests were flagged Zero Data Retention",
+     "evidence": [
+      {
+       "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "The Hacker News",
+       "date": "2026-11",
+       "excerpt": "some of the stolen requests were flagged as Zero Data Retention"
+      }
+     ]
+    },
+    {
+     "fact": "Resellers on an inference marketplace could view and retain prompts with standard logging (no exploit)",
+     "evidence": [
+      {
+       "url": "https://i10x.ai/news/dragos-canary-study-attackers-stole-ai-prompts-credentials-three-providers",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "i10x.ai",
+       "date": "2026-11",
+       "excerpt": "Multiple resellers on an AI inference marketplace could view and retain customer prompts with standard logging, no exploit required (search excerpt attributed to Dragos)"
+      }
+     ]
+    }
+   ],
+   "uncertain": [
+    "Identity of the three providers",
+    "Whether OpenRouter's three = Dragos's three",
+    "Scale of Chinese-lab fetches (numbers vary)",
+    "Exact time of OpenRouter post"
+   ]
+  },
+  {
+   "rank": 2,
+   "id": "tesla-fsd-v15",
+   "verdict": "Rollout passes MEDIUM-HIGH (multiple independent outlets, dated 21 Nov). 25x must be attributed as Tesla's claim with no published baseline.",
+   "facts": [
+    {
+     "fact": "Tesla began rolling out FSD (Supervised) v15.0.1 in software 2026.38.6.11 on 21 Nov 2026 to a first wave",
+     "evidence": [
+      {
+       "url": "https://teslanorth.com/2026/11/21/tesla-software-update-2026-38-6-11-fsd-15-0-1/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Tesla North",
+       "date": "2026-11-21",
+       "excerpt": "Tesla software update 2026.38.6.11 brings FSD (Supervised) v15.0.1, Reality View, Speed Camera Slowdown and Bike Rack Mode to the first wave."
+      },
+      {
+       "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/",
+       "kind": "news",
+       "access": "search-index (DNS-blocked)",
+       "outlet": "Electrek",
+       "date": "2026-11-21",
+       "excerpt": "Tesla launches FSD v15, targets its biggest weaknesses, from signs to potholes (headline)"
+      },
+      {
+       "url": "https://paultan.org/2026/11/22/tesla-fsd-v15-rollout/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "paultan.org",
+       "date": "2026-11-22",
+       "excerpt": "Tesla FSD v15 starts rolling out in US (headline)"
+      }
+     ]
+    },
+    {
+     "fact": "Tesla claims '25x better handling of safety critical cases'; baseline not published",
+     "evidence": [
+      {
+       "url": "https://www.digitaltrends.com/cars/tesla-fsd-v15-rollout/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Digital Trends",
+       "date": "2026-11",
+       "excerpt": "FSD v15 is rolling out, and Tesla says it handles risky moments 25 times better (headline)"
+      },
+      {
+       "url": "https://driveteslacanada.ca/news/tesla-fsd-v15-rollout/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Drive Tesla Canada",
+       "date": "2026-11",
+       "excerpt": "25x better handling of safety critical cases (quoted Tesla wording, search excerpt)"
+      }
+     ]
+    },
+    {
+     "fact": "Reality View: a live end-to-end visualization of the drive",
+     "evidence": [
+      {
+       "url": "https://teslanorth.com/2026/11/21/tesla-fsd-v15-first-rollout-reality-view/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Tesla North",
+       "date": "2026-11-21",
+       "excerpt": "Tesla Starts Rolling Out FSD v15 With a New Reality View (headline)"
+      }
+     ]
+    },
+    {
+     "fact": "First wave observed on AI4/HW4 vehicles in US; HW3 not included; Musk: wide release next month",
+     "evidence": [
+      {
+       "url": "https://startupfortune.com/tesla-starts-fsd-v15-rollout-to-early-testers-and-leaves-hw3-cars-out/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Startup Fortune",
+       "date": "2026-11",
+       "excerpt": "Tesla starts FSD v15 rollout to early testers and leaves HW3 cars out (headline)"
+      },
+      {
+       "url": "https://www.teslaoracle.com/2026/11/21/tesla-fsd-v15-to-go-wide-release-with-the-2026-holiday-update-and-mind-bending-reality-renders-in-december-says-musk/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Tesla Oracle",
+       "date": "2026-11-21",
+       "excerpt": "FSD V15 goes to wide release next month (Musk, as quoted in coverage)"
+      }
+     ]
+    }
+   ],
+   "uncertain": [
+    "Number of recipients, regions",
+    "Definition/baseline of 25x",
+    "Tesla primary post on x.com not openable"
+   ]
+  },
+  {
+   "rank": 3,
+   "id": "amazon-decart-7-5b",
+   "verdict": "FAILS for a script: billion-dollar time-sensitive financial claim needs HIGH (primary document); only a relayed FT report exists, no company statement, deal unsigned. Usable only as 'reported, not confirmed' context. Next-best alternative for #3: Waymo recalls (needs recall filing date) or Amazon MONAI agents (needs 48h expansion; GitHub advisory opened).",
+   "facts": [
+    {
+     "fact": "FT reported 21 Nov that Amazon is in advanced talks to buy Decart for ~$7.5B; could be agreed as soon as next week; not signed",
+     "evidence": [
+      {
+       "url": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Seeking Alpha via TradingView",
+       "date": "2026-11-21",
+       "excerpt": "Amazon nearing $7.5B deal to buy AI start-up Decart: FT (headline)"
+      },
+      {
+       "url": "https://businessupturn.com/technology/amazon-in-advanced-talks-to-buy-ai-startup-decart-for-7-5-billion-report-says/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "Business Upturn",
+       "date": "2026-11",
+       "excerpt": "Amazon in advanced talks to buy AI startup Decart for $7.5 billion, report says (headline)"
+      }
+     ]
+    },
+    {
+     "fact": "Decart was an early adopter of Trainium3; valued ~$4B in May 2026",
+     "evidence": [
+      {
+       "url": "https://www.tipranks.com/news/amazon-amzn-eyes-7-5-billion-ai-startup-deal-as-nvidia-rivalry-heats-up",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "TipRanks",
+       "date": "2026-11",
+       "excerpt": "Decart was an early adopter of Amazon's Trainium3 chips (search excerpt)"
+      }
+     ]
+    }
+   ],
+   "uncertain": [
+    "Final price/earnouts",
+    "Whether deal happens",
+    "No Amazon/Decart statement"
+   ]
+  },
+  {
+   "rank": "supplementary",
+   "id": "amazon-monai-ai-agents-zero-day",
+   "verdict": "Only primary opened: GitHub advisory. Agent claim rests on Amazon's report (search-index). Outside 24h window.",
+   "facts": [
+    {
+     "fact": "MONAI Label critical path-traversal advisory published 18 Nov 2026",
+     "evidence": [
+      {
+       "url": "https://github.com/Project-MONAI/MONAILabel/security/advisories",
+       "kind": "primary",
+       "access": "opened",
+       "outlet": "GitHub / Project-MONAI",
+       "date": "2026-11-18",
+       "excerpt": "Path traversal in datastore upload endpoints allows arbitrary file write - GHSA-qc22-rmgc-vg94 - Critical - Published Nov 18, 2026"
+      }
+     ]
+    },
+    {
+     "fact": "Amazon says AI agents (Cairn) found and exploited it, ~11 min from API mapping to file writes",
+     "evidence": [
+      {
+       "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "The Register",
+       "date": "2026-11-20",
+       "excerpt": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server (headline)"
+      },
+      {
+       "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+       "kind": "news",
+       "access": "search-index",
+       "outlet": "BleepingComputer",
+       "date": "2026-11",
+       "excerpt": "released a security update to address it on November 18 (search excerpt)"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "access_notes": [
+  "OPENED directly: github.com/diclogic/ai-daily-digest/issues/221 (aggregator digest used only for leads); github.com/Project-MONAI/MONAILabel/security/advisories; www.anthropic.com/news (no new post in window; latest 20 Nov IPO closing).",
+  "DNS-BLOCKED (could not open): aienews.org, techmeme.com, unite.ai, dragos.com, openrouter.ai, thehackernews.com, dev.to, helix.ml, electrek.co. Stopped trying further news sites after repeated failures.",
+  "All other facts come from WebSearch result summaries/excerpts (SEARCH-INDEX), not opened pages; excerpts may be paraphrased by the search tool.",
+  "x.com, reddit, youtube, instagram not reachable: all social metrics UNKNOWN; social_momentum capped at 3 (2 where coverage thin).",
+  "Scores are editorial judgements, not view predictions. weighted = sum(weight*score)/10 on 0-100 scale."
+ ]
+}
