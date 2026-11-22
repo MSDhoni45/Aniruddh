@@ -68,8 +68,8 @@
   "80.0k GitHub stars (not relevant)."
  ],
  "context": "OBS Studio is free, open-source streaming and recording software. 33.0.1 (29 Oct) and 33.0.2 (20 Nov) were hotfix releases on the 33.0 line.",
- "script": "Did OBS crash on your Windows PC after updating this week? There's a fix.\n\nOn November 20, OBS Studio released version 33.0.2.\n\nThen the team flagged a known issue. On certain older processors, OBS could crash at startup.\n\nTheir advice? Install an older version, like 33.0.1, until a fix arrived.\n\nOn November 22, it did. Version 33.0.3 fixes that Windows crash.\n\nIf you stream or record on an older PC, update now.\n\nDid the crash hit you?",
- "hook": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
+ "script": "OBS stopped opening on some Windows PCs this week.\n\nIf yours did, there's a known reason, and now a fix.\n\nOn November 20, OBS Studio released version 33.0.2.\n\nThen the team flagged a known issue: on certain older processors, OBS could crash at startup.\n\nTheir advice was to go back to an older version, like 33.0.1.\n\nOn November 22, version 33.0.3 arrived with the fix for that Windows crash.\n\nSo if you rolled back, you can update again.\n\nDid the crash hit you?",
+ "hook": "OBS stopped opening on some Windows PCs this week.",
  "hooks": [
   {
    "text": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
@@ -130,9 +130,49 @@
    "specificity": 5,
    "emotional": 9,
    "comprehension": 8
+  },
+  {
+   "text": "OBS stopped opening on some Windows PCs this week.",
+   "approach": "important warning",
+   "accuracy": 9,
+   "clarity": 9,
+   "curiosity": 8,
+   "specificity": 8,
+   "emotional": 8,
+   "comprehension": 9
+  },
+  {
+   "text": "Your OBS crash this week probably wasn't your fault.",
+   "approach": "important warning",
+   "accuracy": 5,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 6,
+   "emotional": 8,
+   "comprehension": 8
+  },
+  {
+   "text": "Two OBS updates in three days, and the second one fixes the first.",
+   "approach": "contradiction",
+   "accuracy": 9,
+   "clarity": 7,
+   "curiosity": 7,
+   "specificity": 8,
+   "emotional": 5,
+   "comprehension": 7
+  },
+  {
+   "text": "Rolled back OBS this week? You can update again.",
+   "approach": "practical discovery",
+   "accuracy": 9,
+   "clarity": 8,
+   "curiosity": 6,
+   "specificity": 8,
+   "emotional": 5,
+   "comprehension": 8
   }
  ],
- "revisions": 1,
+ "revisions": 3,
  "practical_takeaway": {
   "who_can_use": "Anyone who streams or records with OBS Studio, especially on an older Windows PC",
   "what_it_does": "33.0.3 fixes the startup crash that 33.0.2 caused on certain older CPUs",
@@ -155,7 +195,7 @@
  "script_checks": {
   "hook_clarity": {
    "pass": true,
-   "why": "Names the app, the symptom and the promise of a fix in one line."
+   "why": "Nine-word first line states the problem viewers may have had."
   },
   "factual_accuracy": {
    "pass": true,
@@ -195,9 +235,9 @@
   }
  },
  "recording_guidance": {
-  "hook_emphasis": "Lean on 'crash' and 'There's a fix'.",
-  "important_pause": "A beat after 'until a fix arrived.' before 'On November 22, it did.'",
-  "final_tone": "Helpful and friendly, like a tip to a fellow creator."
+  "hook_emphasis": "Lean on 'stopped opening' and 'this week'.",
+  "important_pause": "A beat after 'and now a fix.'",
+  "final_tone": "Helpful, creator to creator; relieved on 'you can update again'."
  },
  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7 virality model unchanged.",
  "recording": {
@@ -269,7 +309,7 @@
  ],
  "instagram": {
   "cover_headline": "OBS crashing? Fixed",
-  "caption": "Did OBS crash on your Windows PC after updating? Version 33.0.2 could crash at startup on certain older processors. On 22 Nov the OBS team released 33.0.3 with the fix. Did the crash hit you?",
+  "caption": "OBS stopped opening on some Windows PCs this week? Version 33.0.2 had a known startup crash on certain older processors, and the team suggested rolling back. On 22 Nov they released 33.0.3 with the fix, so you can update again. Did the crash hit you?",
   "hashtags": [
    "#OBSStudio",
    "#Streaming",
@@ -1548,5 +1588,27 @@
   "News sites, openrouter.ai and npr.org could not be opened."
  ],
  "verification": "tiered",
- "fallback_reason": "Stronger stories were found (OpenRouter prompt theft 69.5, Tesla FSD v15 63.0) but every source for them (openrouter.ai, dragos.com, tesla.com, x.com, news sites) is blocked by this cloud environment's network policy, so no critical claim could be checked on an opened page. Widening the environment's Allowed domains would unblock them; OBS is a useful but niche creator tip chosen only because its GitHub release pages open."
+ "fallback_reason": "Stronger stories were found (OpenRouter prompt theft 69.5, Tesla FSD v15 63.0) but every source for them (openrouter.ai, dragos.com, tesla.com, x.com, news sites) is blocked by this cloud environment's network policy, so no critical claim could be checked on an opened page. Widening the environment's Allowed domains would unblock them; OBS is a useful but niche creator tip chosen only because its GitHub release pages open.",
+ "rejected_drafts": [
+  "Revision 1 (test run): opened with a question hook; clear but generic. Did OBS crash on your Windows PC after updating this week? There's a fix. On November 20, OBS Studio released version 33.0.2. Then the team flagged a known issue. On certain older processors, OBS could crash at startup. Their advice? Install an older version, like 33.0.1, until a fix arrived. On November 22, it did. Version 33.0.3 fixes that Windows crash. If you stream or record on an older PC, update now. Did the crash hit you?",
+  "Revision 2: 16-word hook, too long to land in two seconds. If OBS stopped opening on your Windows PC this week, it might not be your fault. On November 20, OBS Studio released version 33.0.2. Then the team flagged a known issue. On certain older processors, OBS could crash at startup. Their advice was to go back to an older version, like 33.0.1. On November 22, version 33.0.3 arrived with the fix for that Windows crash. So if you stream or record on an older PC, update now. Did the crash hit you?"
+ ],
+ "content_format": "H",
+ "quality_v8": {
+  "hook": 8,
+  "clarity": 9,
+  "storytelling": 7,
+  "audience_relevance": 5,
+  "information_value": 8,
+  "natural_delivery": 8,
+  "shareability": 6,
+  "ending": 6
+ },
+ "quality_limitation": "Three revisions tightened the hook and ending, but the story itself caps the score: an OBS hotfix matters to people who stream or record, not to a broad audience. It is a fallback because the stronger stories could not be verified.",
+ "visual_suggestions": [
+  "Your own screen recording: OBS Studio > Help > Check for Updates showing 33.0.3 (creator-recorded)",
+  "Screenshot of the 33.0.2 GitHub release 'Important' known-issue note (credit: OBS Project)",
+  "Screenshot of the 33.0.3 release page with 'Latest' and the hotfix line highlighted (credit: OBS Project)",
+  "Simple text card: '33.0.2 crash on older CPUs → 33.0.3 fix'"
+ ]
 }

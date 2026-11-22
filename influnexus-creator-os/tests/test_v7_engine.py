@@ -277,3 +277,29 @@ def test_a_much_weaker_ready_story_must_explain_the_fallback(monkeypatch, tmp_pa
     package.save(p, tmp_path, record=False)
     today = (tmp_path / "today.md").read_text(encoding="utf-8")
     assert "FALLBACK STORY" in today and "A. Best story discovered" in today and "C. Best story ready to record" in today
+
+
+# --- V8 layer (content format, 10 hooks, V8 quality score, visuals, alternatives) -----------------------------------
+
+def test_v8_layer_on_the_real_22_nov_package(tmp_path, monkeypatch):
+    p = json.loads((Path(__file__).parent.parent / "daily" / "2026-11-22" / "package.json").read_text(encoding="utf-8"))
+    assert package.is_v8(p)
+    probs, info = package.validate(p)
+    assert probs == [] and 30 <= info["lint"]["seconds"] <= 40
+    q = package.quality_v8(p)
+    assert q["total"] < 85 and p["revisions"] == 3 and p["quality_limitation"]       # honest score, stated limitation
+    package.save(p, tmp_path, record=False)
+    today = (tmp_path / "today.md").read_text(encoding="utf-8")
+    for h in ["## 1. Today's best story", "## 4. Word count and duration", "## 8. Visual suggestions",
+              "## 10. Alternative stories", "## 11. Verification status", "FALLBACK STORY"]:
+        assert h in today
+    alts = today.split("## 10. Alternative stories")[1].split("## 11")[0]
+    assert "Outside the 24-hour window" not in alts                                    # out-of-window stories are not alternatives
+    for bad in ({"content_format": "Z"}, {"hooks": p["hooks"][:5]}, {"visual_suggestions": ["one"]},
+                {"quality_limitation": "", "revisions": 2}):
+        assert package.validate({**p, **bad})[0]
+
+
+def test_v8_is_required_from_23_nov_on_v7_packages():
+    p = json.loads((Path(__file__).parent / "fixtures" / "v7_2026-11-22" / "package.json").read_text(encoding="utf-8"))
+    assert not package.is_v8(p) and package.is_v8({**p, "date": "2026-11-23"})

@@ -24,7 +24,7 @@ from 2026-11-20. Always pass the `run_id` from `creatoros runlog start` to `crea
 
 | They type | Do this |
 |---|---|
-| **TODAY'S REEL SCRIPT** | Same as "Script for today" below, delivered in the V7 format (`today.md`: story, why this story, script, caption, sources, fact-check notes, recording guidance). Do not ask the creator to pick a topic. |
+| **TODAY'S REEL SCRIPT** | Same as "Script for today" below, delivered in the V8 format (`today.md`: eleven items, script near the top, A/B/C tiers, alternatives, verification status). Do not ask the creator to pick a topic. |
 | **REEL SCRIPT: [TOPIC]** | Research that exact topic (why now, what happened, what people discuss, what is surprising, what viewers may misunderstand, why share), verify it to RUNBOOK step 2, `creatoros switch` if today already has a package, write a V7 package (`scoring: v7`; required from 2026-11-23), `creatoros package`, return `creatoros today`. Gaming: label the release type (original release, re-release, remaster, remake, mod, rumour, official announcement, launch). |
 | **IMPROVE THIS SCRIPT: [SCRIPT]** | Critique and rewrite the opening, pacing, clarity, storytelling, retention and ending; keep every fact; return one improved script with the six-part quality score. If it is today's package, re-run `creatoros package`. |
 | **Script for today** | First run `creatoros runlog status`; if `problem` is true, open the reply with one line saying the 08:41 scheduled run was MISSED/FAILED/LATE/HOLD. Then: if `daily/TODAY/today.md` exists and says RECORDING READY: re-check any time-sensitive claim (prices, "no confirmed attacks", "first", etc.), then return the contents of `creatoros today`. Otherwise run the full daily workflow in `RUNBOOK.md`, then return `creatoros today`. |
@@ -50,6 +50,10 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
   historic firsts, billion-dollar events, breaches, radical robotics) need the primary source and independent confirmation
   both opened, never a GitHub repo or a snippet; 30-40 s (40 hard), about 70-90 words at a natural pace; at least 5 hooks;
   ten script checks; story history with company and event date; a seven-section brief with no editing plan.
+- V8 (layered on V7 packages, required from 2026-11-23; RUNBOOK "V8"): everyday-life AI and tech positioning (no politics),
+  `content_format` A-J, 10+ hooks, `quality_v8` (target 85; 3 real revisions plus a stated limitation otherwise),
+  3-5 visual suggestions, and an eleven-item brief with three alternatives and verification status. The creator library grows
+  separately; nothing counts as studied unless actually inspected.
 - V7.1: discover on audience potential, never on which sites open; the brief reports A best discovered, B best verified,
   C best ready to record and each blocker; a ready story 10+ points below A needs `fallback_reason` and a FALLBACK banner.
 - v6 (accepted on 2026-11-22 only, superseded by V7): creator-led technology content, not a news summary. 15-25 candidates scored on the

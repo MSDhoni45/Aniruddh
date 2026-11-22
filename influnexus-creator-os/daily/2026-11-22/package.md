@@ -49,22 +49,24 @@ OBS Studio is free, open-source streaming and recording software. 33.0.1 (29 Oct
 ## C. Final recording script
 
 ```
-Did OBS crash on your Windows PC after updating this week? There's a fix.
+OBS stopped opening on some Windows PCs this week.
+
+If yours did, there's a known reason, and now a fix.
 
 On November 20, OBS Studio released version 33.0.2.
 
-Then the team flagged a known issue. On certain older processors, OBS could crash at startup.
+Then the team flagged a known issue: on certain older processors, OBS could crash at startup.
 
-Their advice? Install an older version, like 33.0.1, until a fix arrived.
+Their advice was to go back to an older version, like 33.0.1.
 
-On November 22, it did. Version 33.0.3 fixes that Windows crash.
+On November 22, version 33.0.3 arrived with the fix for that Windows crash.
 
-If you stream or record on an older PC, update now.
+So if you rolled back, you can update again.
 
 Did the crash hit you?
 ```
 
-77 words · about 36.5 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
+83 words · about 38.0 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
 
 ## Claim verification table
 
@@ -86,7 +88,7 @@ Delivery only. Keep your natural accent; no editing instructions.
 - **Emphasise:** crash, There's a fix, older processors, 33.0.3
 - **Pauses:** beat after the hook; beat after 'until a fix arrived.'
 - **Pronunciation:** OBS: oh-bee-ess; 33.0.3: thirty-three point oh point three
-- **Estimated duration:** 36.5 s
+- **Estimated duration:** 38.0 s
 
 ## E. Platform content
 
@@ -94,7 +96,7 @@ Delivery only. Keep your natural accent; no editing instructions.
 
 Cover headline: OBS crashing? Fixed
 
-Did OBS crash on your Windows PC after updating? Version 33.0.2 could crash at startup on certain older processors. On 22 Nov the OBS team released 33.0.3 with the fix. Did the crash hit you?
+OBS stopped opening on some Windows PCs this week? Version 33.0.2 had a known startup crash on certain older processors, and the team suggested rolling back. On 22 Nov they released 33.0.3 with the fix, so you can update again. Did the crash hit you?
 
 #OBSStudio #Streaming #CreatorTips #TechNews
 

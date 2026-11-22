@@ -84,6 +84,33 @@ excerpts of a primary page plus press coverage are not enough for them.
 script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
 not from verification.
 
+## V8: Creator Intelligence Engine (layered on V7 packages; required from 2026-11-23)
+Where this differs from V7.1 or V7 below, this wins. Verification, the A/B/C tiers, the fallback guard and cost control stay.
+- **Positioning:** AI and technology that changes everyday life: AI, consumer tech, robotics, transport and autonomous cars,
+  AI filmmaking and creative tools, marketing tech, fashion tech, smart homes, health, fintech, housing and construction,
+  education, space, science, startups, productivity, software, gaming tech, engineering, verifiable personal achievements and
+  real demonstrations. Exclude party politics, campaigning, partisan arguments, manufactured controversies, unverified scandals.
+- **Pool:** 15-25 credible candidates (no quota filler); 48-72 h only with the event date disclosed. For each: what happened,
+  when, who confirmed it, what it actually does, who can use it, cost if known, why it matters, what is surprising, what can be
+  shown, why someone would share it. Product stories: verify name, company, capability, real availability (waitlist/beta is not
+  "available"), platforms, limits, price only if stated, and that any demo is authentic.
+- **Package fields:** `content_format` A-J (A breaking development, B product discovery, C live demonstration, D before vs
+  after, E hidden technology, F personal achievement, G future consequence, H practical tutorial, I myth vs reality,
+  J technology explained); at least 10 scored hooks; `quality_v8` (hook 20, clarity 15, storytelling 15, audience relevance 15,
+  information value 10, natural delivery 10, shareability 10, ending 5; target 85, otherwise 3 real revisions in
+  `rejected_drafts` plus `quality_limitation`; never inflate); `visual_suggestions` (3-5, real or creator-recorded footage).
+  Endings may be a consequence, takeaway, observation, comparison or a genuine question; a question is not mandatory.
+- **Brief (today.md), eleven items:** best story with event date, why it won (with A/B/C), script, word count and duration,
+  caption, hashtags, sources (each OPENED DIRECTLY or search excerpt), visuals, recording direction, three alternatives with
+  their blockers, verification status.
+- **Creator intelligence library** (`research/creators_db.csv`, `research/creator_video_samples.csv`): grows over time toward
+  200-300 creators and 500 analysed videos, separately from the daily run; the daily script never waits for it. A creator or
+  video counts as studied only when material was actually inspected (record the URL, date and what was inspected);
+  otherwise label it NOT INSPECTED. YouTube, Instagram and TikTok cannot be opened from this environment, so transcripts
+  cannot be fetched; the YouTube Data API (www.googleapis.com, reachable) needs an API key stored as an environment secret
+  and gives metadata (titles, durations, public view counts), not third-party transcripts.
+- **Performance:** Metricool once Instagram is linked there; until then only creator-entered numbers (`creatoros learn`).
+
 ## V7.1: discovery before verification (22 Nov 2026, evening)
 Where this differs from the V7 section below, this wins.
 - **Discover on audience potential, not on what opens.** Build the pool from everything search and approved integrations

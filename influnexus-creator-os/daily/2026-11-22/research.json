@@ -909,6 +909,18 @@
   ],
   "hooks": [
     {
+      "text": "OBS stopped opening on some Windows PCs this week.",
+      "approach": "important warning",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 8,
+      "specificity": 8,
+      "emotional": 8,
+      "comprehension": 9,
+      "total": 51,
+      "eligible": true
+    },
+    {
       "text": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
       "approach": "practical discovery",
       "accuracy": 9,
@@ -930,6 +942,30 @@
       "emotional": 6,
       "comprehension": 9,
       "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "Rolled back OBS this week? You can update again.",
+      "approach": "practical discovery",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 6,
+      "specificity": 8,
+      "emotional": 5,
+      "comprehension": 8,
+      "total": 44,
+      "eligible": true
+    },
+    {
+      "text": "Two OBS updates in three days, and the second one fixes the first.",
+      "approach": "contradiction",
+      "accuracy": 9,
+      "clarity": 7,
+      "curiosity": 7,
+      "specificity": 8,
+      "emotional": 5,
+      "comprehension": 7,
+      "total": 43,
       "eligible": true
     },
     {
@@ -969,6 +1005,18 @@
       "eligible": true
     },
     {
+      "text": "Your OBS crash this week probably wasn't your fault.",
+      "approach": "important warning",
+      "accuracy": 5,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 6,
+      "emotional": 8,
+      "comprehension": 8,
+      "total": 43,
+      "eligible": false
+    },
+    {
       "text": "OBS broke millions of streams this week.",
       "approach": "unexpected consequence",
       "accuracy": 2,
@@ -989,7 +1037,7 @@
     "E2E TEST package: written to daily/2026-11-22/e2e_test/ only."
   ],
   "source_audit": {
-    "checked_at_utc": "2026-11-22T14:36:48+00:00",
+    "checked_at_utc": "2026-11-22T16:07:21+00:00",
     "groups": {
       "x": {
         "status": "BLOCKED",
@@ -1240,34 +1288,14 @@
         "blocker": "V7 rule 6b: every central claim needs one source opened directly; held earlier today (holds.json): x.com, tesla.com and all news sites cannot be opened from this environment; not re-tried in this run"
       },
       {
-        "headline": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six models",
-        "score": 55.5,
-        "blocker": "Outside the 24-hour window (and the release timing is before the run window); dated 19 Nov; nltimes.nl / autoriteitpersoonsgegevens.nl not opened"
-      },
-      {
         "headline": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
         "score": 52.0,
         "blocker": "V7 rule 6b: every central claim needs one source opened directly; nbcnews.com not opened (news group BLOCKED in today's source audit); only search excerpts"
       },
       {
-        "headline": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minutes",
-        "score": 52.0,
-        "blocker": "Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; zero-day/AI-agent claim is extraordinary; securityweek.com and Amazon's report not opened; a GitHub advisory does not prove the AI-agent claim"
-      },
-      {
-        "headline": "Google makes Gemini Tasks agent free in six countries including India",
-        "score": 52.0,
-        "blocker": "Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; androidpolice.com and blog.google not opened"
-      },
-      {
         "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
         "score": 51.0,
         "blocker": "Not eligible: DISPUTED (autonomy/teleoperation unknown); source not opened"
-      },
-      {
-        "headline": "Instagram lets users edit Stories within 15 minutes of posting",
-        "score": 50.0,
-        "blocker": "Outside the 24-hour window (and the release timing is before the run window); dated 18 Nov (covered earlier this week); fastcompany.com and about.instagram.com not opened"
       },
       {
         "headline": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
@@ -1280,7 +1308,7 @@
   "script_checks": {
     "hook_clarity": {
       "pass": true,
-      "why": "Names the app, the symptom and the promise of a fix in one line."
+      "why": "Nine-word first line states the problem viewers may have had."
     },
     "factual_accuracy": {
       "pass": true,

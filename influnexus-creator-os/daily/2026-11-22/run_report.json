@@ -202,6 +202,48 @@
       "quality_gate": "PASS",
       "quality_total": 100,
       "validation_problems": []
+    },
+    "2026-11-22-manual-213720": {
+      "run_id": "2026-11-22-manual-213720",
+      "trigger": "manual",
+      "start_ist": "2026-11-22T21:37:20+05:30",
+      "end_ist": "2026-11-22T21:37:21+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "dbb8fe5",
+      "research_window": {
+        "start_utc": "2026-11-21T14:22:00+00:00",
+        "end_utc": "2026-11-22T14:22:00+00:00",
+        "start_ist": "2026-11-21T19:52:00+05:30",
+        "end_ist": "2026-11-22T19:52:00+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "V8 upgrade of OBS fallback",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+      "candidates": 23,
+      "source_access": "Evidence levels: 3 HIGH. Claims with a source opened directly: 3 of 3.",
+      "fact_check": "PASS",
+      "word_count": 83,
+      "estimated_seconds": 38.0,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
     }
   }
 }

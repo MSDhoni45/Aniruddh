@@ -64,6 +64,15 @@ TAKEAWAY_KEYS = ["who_can_use", "what_it_does", "availability", "price", "differ
 SCRUTINY_KEYS = ["who_claimed", "what_demonstrated", "independent_confirmation", "uncertainty", "reproduced", "preliminary"]
 GUIDANCE_KEYS = ["hook_emphasis", "important_pause", "final_tone"]
 MAX_WHY_WORDS = 100
+# V8 (creator brief "Creator Intelligence Engine 8.0", 22 Nov 2026), layered on V7 packages: required from 2026-11-23,
+# optional before. Content format, 10+ hooks, the V8 script-quality score, visual suggestions, alternatives in the brief.
+V8_FROM = "2026-11-23"
+FORMATS_V8 = {"A": "Breaking development", "B": "Product discovery", "C": "Live demonstration", "D": "Before vs after",
+              "E": "Hidden technology", "F": "Personal achievement", "G": "Future consequence", "H": "Practical tutorial",
+              "I": "Myth vs reality", "J": "Technology explained"}
+QUALITY_V8 = {"hook": 20, "clarity": 15, "storytelling": 15, "audience_relevance": 15, "information_value": 10,
+              "natural_delivery": 10, "shareability": 10, "ending": 5}
+QUALITY_V8_TARGET, MIN_HOOKS_V8 = 85, 10
 MIN_CANDIDATES_V7 = 20             # 20-30 credible developments when the news supports it; never filler
 
 
@@ -215,14 +224,14 @@ def v6_problems(p: dict, ranked: list[dict], ready: dict) -> list[str]:
 
 
 FALLBACK_GAP = 10          # points: a ready story this far below the best discovered one is a fallback that must be explained
-_NOT_DISCOVERY = ("already covered", "published before", "published after", "outside the 24-hour window")
+_NOT_DISCOVERY = ("already covered", "published before", "published after", "outside the 24-hour window", "outside the window")
 
 
 def selection_tiers(p: dict, ranked: list[dict], ready_status: str) -> dict:
     """V7.1: A = best story discovered (verification aside), B = best story that passed the verification gate,
     C = best story ready to record (the package). Stories above C carry the verification blocker that kept them out."""
     pool = [c for c in ranked if not c.get("already_covered") and not str(c.get("rejected", "")).strip()
-            and not any(k in str(c.get("ineligible_reason") or "") for k in _NOT_DISCOVERY)]
+            and not any(k in str(c.get("ineligible_reason") or "").lower() for k in _NOT_DISCOVERY)]
     pool.sort(key=lambda c: c["trend_score"], reverse=True)
     a = pool[0] if pool else None
     b = next((c for c in ranked if c["eligible"]), None)
@@ -281,6 +290,34 @@ def v7_problems(p: dict, ready: dict, tiers: dict | None = None) -> list[str]:
         probs.append("learning_applied: say what the performance data changed today, or that none is connected")
     if len(str(p["instagram"].get("caption", "")).split()) > MAX_CAPTION_WORDS:
         probs.append(f"instagram caption: keep it concise ({MAX_CAPTION_WORDS} words or fewer)")
+    return probs
+
+
+def is_v8(p: dict) -> bool:
+    return is_v7(p) and (str(p.get("date", "")) >= V8_FROM or "content_format" in p)
+
+
+def quality_v8(p: dict) -> dict:
+    sc = p.get("quality_v8") if isinstance(p.get("quality_v8"), dict) else {}
+    bad = [k for k in QUALITY_V8 if not isinstance(sc.get(k), (int, float)) or not 0 <= sc[k] <= 10]
+    total = round(sum(w * float(sc.get(k, 0)) / 10 for k, w in QUALITY_V8.items()), 1)
+    probs = [f"quality_v8 scores missing or out of 0-10: {bad}"] if bad else []
+    if total < QUALITY_V8_TARGET and not (p.get("revisions") == lint.MAX_REVISIONS and str(p.get("quality_limitation", "")).strip()):
+        probs.append(f"V8 script quality {total}/100 is below {QUALITY_V8_TARGET}: rewrite (max {lint.MAX_REVISIONS} revisions), "
+                     "then state quality_limitation")
+    return {"total": total, "problems": probs}
+
+
+def v8_problems(p: dict) -> list[str]:
+    probs = []
+    if p.get("content_format") not in FORMATS_V8:
+        probs.append(f"content_format must be one of {FORMATS_V8}")
+    if len(p["hooks"]) < MIN_HOOKS_V8:
+        probs.append(f"V8: generate at least {MIN_HOOKS_V8} hooks ({len(p['hooks'])} given)")
+    vs = p.get("visual_suggestions")
+    if not isinstance(vs, list) or not 3 <= len([v for v in vs if str(v).strip()]) <= 5:
+        probs.append("visual_suggestions: three to five useful visuals (real footage or creator-recorded; never invented demos)")
+    probs += quality_v8(p)["problems"]
     return probs
 
 
@@ -548,6 +585,8 @@ def validate(p: dict) -> tuple[list[str], dict]:
     tiers = selection_tiers(p, ranked, ready["status"]) if is_v7(p) else None
     if is_v7(p):
         problems += v7_problems(p, ready, tiers)
+    if is_v8(p):
+        problems += v8_problems(p)
     if is_v6(p) or is_v7(p):
         if is_v6(p):
             problems += v6_problems(p, ranked, ready)
@@ -800,8 +839,53 @@ def render_today_v7(p: dict, info: dict) -> str:
     return "\n".join(L) + "\n"
 
 
+def render_today_v8(p: dict, info: dict) -> str:
+    """V8 daily deliverable: eleven items, the script near the top."""
+    chk, rd, ig, rg = info["lint"], info["ready"], p["instagram"], p["recording_guidance"]
+    claims = p["factcheck"]["claims"]
+    used = [c for c in claims if c.get("in_script")]
+    t = info.get("tiers") or {}
+    L = [f"# Today's reel: {p['date']}", "", f"**STATUS: {rd['status']}**" + ("  |  **FALLBACK STORY**" if t.get("fallback") else ""), ""]
+    if rd["reasons"]:
+        L += ["Do not record. Unresolved:"] + [f"- {x}" for x in rd["reasons"]] + [""]
+    L += ["## 1. Today's best story", "", f"**{p['topic']}**", "",
+          f"Event date: {p['event_date']} · Published: {p['announced_at']} · {p['category']} · "
+          f"Format {p['content_format']}: {FORMATS_V8[p['content_format']]} · Confidence: {p['confidence']}", "",
+          "## 2. Why this story won", "", p["why_this_story"], ""] + _tier_lines(p, info) + ["",
+          "## 3. Final script", "", "```", p["script"].strip(), "```", "",
+          "## 4. Word count and duration", "", f"{chk['words']} spoken words, about {chk['seconds']} seconds ({chk['pace_basis']}). "
+          f"Script quality {quality_v8(p)['total']}/100 (editorial judgement, not a forecast).", "",
+          "## 5. Caption", "", ig["caption"], "", "## 6. Hashtags", "", " ".join(ig["hashtags"]), "", "## 7. Sources", ""]
+    seen = set()
+    for c in used:
+        for it in c.get("evidence") or []:
+            if isinstance(it, dict) and it["url"] not in seen:
+                seen.add(it["url"])
+                L.append(f"- [{ev.outlet(it)}]({it['url']}) ({it.get('date') or 'date unknown'}, "
+                         + ("OPENED DIRECTLY" if it.get("access") == "opened" else "search excerpt only, not verified") + ")")
+    L += ["", "## 8. Visual suggestions", ""] + [f"- {v}" for v in p["visual_suggestions"]]
+    L += ["", "## 9. Recording direction", "", f"- **Emphasise:** {rg['hook_emphasis']}", f"- **Pause:** {rg['important_pause']}",
+          f"- **Tone:** {rg['final_tone']}", "", "## 10. Alternative stories", ""]
+    alts = [c for c in sorted(info["ranked"], key=lambda c: c["trend_score"], reverse=True)
+            if c["headline"] != p["topic"] and not c.get("already_covered")
+            and not any(k in str(c.get("ineligible_reason") or "").lower() for k in _NOT_DISCOVERY)][:3]
+    for c in alts:
+        why = "eligible" if c["eligible"] else (c.get("hold_reason") or c.get("ineligible_reason"))
+        L.append(f"- {c['headline']} ({c['trend_score']}/100): {why}")
+    L += ["", "## 11. Verification status", ""]
+    for c in used:
+        L.append(f"- {c['text']}: **{c['status']}**, {ev.level(c, strict=True)['level']}, "
+                 f"{len(ev.opened_sources(c))} source(s) opened directly")
+    if p.get("uncertainties"):
+        L += ["", "Uncertain:"] + [f"- {u}" for u in p["uncertainties"]]
+    L += ["", "---", "", f"RUN STATUS: {run_status_line(p['date'])}"]
+    return "\n".join(L) + "\n"
+
+
 def render_today(p: dict, info: dict) -> str:
     """The daily deliverable, in the order the creator asked for. Concise; full detail stays in package.md."""
+    if is_v8(p):
+        return render_today_v8(p, info)
     if is_v7(p):
         return render_today_v7(p, info)
     if is_v6(p):
