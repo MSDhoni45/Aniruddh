@@ -109,6 +109,10 @@ Where this differs from V7.1 or V7 below, this wins. Verification, the A/B/C tie
   otherwise label it NOT INSPECTED. YouTube, Instagram and TikTok cannot be opened from this environment, so transcripts
   cannot be fetched; the YouTube Data API (www.googleapis.com, reachable) needs an API key stored as an environment secret
   and gives metadata (titles, durations, public view counts), not third-party transcripts.
+- **Research connectors (interactive sessions):** PubMed, bioRxiv/medRxiv, ClinicalTrials.gov, Consensus, Elicit and Amass are
+  connected. A paper's full text or record retrieved through them counts as OPENED (record the PMC/PubMed URL). Use them to
+  verify health, science and AI-research stories; they do not make company or news claims verifiable. The scheduled task has
+  no connectors attached.
 - **Performance:** Metricool once Instagram is linked there; until then only creator-entered numbers (`creatoros learn`).
 
 ## V7.1: discovery before verification (22 Nov 2026, evening)
