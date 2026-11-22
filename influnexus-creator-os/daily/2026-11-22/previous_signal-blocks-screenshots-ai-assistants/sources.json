@@ -1,0 +1,41 @@
+{
+  "primary": [
+    {
+      "label": "Signal blog: Signal is Serious About Protecting Your Privacy (20 Nov 2026)",
+      "url": "https://signal.org/blog/protecting-your-privacy/"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "9to5Mac (20 Nov)",
+      "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/"
+    },
+    {
+      "label": "Android Authority (20 Nov)",
+      "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/"
+    },
+    {
+      "label": "Decrypt",
+      "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots"
+    },
+    {
+      "label": "Digital Trends",
+      "url": "https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/"
+    },
+    {
+      "label": "gHacks (21 Nov)",
+      "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/"
+    },
+    {
+      "label": "CyberInsider",
+      "url": "https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "signal.org and aitoolly.com cannot be opened from this environment (DNS blocked); Signal text read via search index.",
+    "News sites and x.com not opened; outlets read via search index.",
+    "No social engagement observed; UNKNOWN.",
+    "Time-boxed to the 09:20 IST hard stop."
+  ]
+}

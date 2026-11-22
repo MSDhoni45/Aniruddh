@@ -1,22 +1,24 @@
 # Recording: 2026-11-22 (RECORDING READY)
 
-Signal just started blocking screenshots. And the reason is AI.
+Seventeen million lines of code might just settle a 167-year-old math problem.
 
-Signal says the AI assistants built into your phone, like Siri and Gemini, can read what's on your screen. Including your private chats.
+It's the Riemann Hypothesis, the most famous open question about prime numbers.
 
-So on iPhones running iOS 27, screenshots inside Signal are now blocked by default. On some Android phones, Signal switches on a screen shield when it spots an AI assistant reading.
+On November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.
 
-You can turn it off. But Signal warns that exposes your contacts' messages too.
+But this proof isn't written for people. It's Lean code that a computer can check.
 
-Its president calls this kind of AI an existential threat. And Signal admits the fix isn't complete.
+A day later, Lean's own maintainers said they have full confidence it's correct.
 
-So, would you trade AI convenience for privacy?
+The strange part? Even they say the next job is for mathematicians to explain why it works.
 
-About 43.2 seconds.
+So we may have the answer before anyone understands it.
 
-- Tone: Curious and calm, a little surprised; privacy without fear-mongering.
-- Opening: Hold up a phone, mock a screenshot press, then look straight at the camera.
-- Pauses: beat after 'And the reason is AI'; beat after 'Including your private chats'; pause before the final question
-- Emphasise: blocking screenshots, the reason is AI, private chats, by default, contacts' messages too, existential threat, isn't complete, convenience for privacy
-- Pronunciation: Gemini: JEM-in-eye; iOS 27: eye-oh-ess twenty-seven; Whittaker is not named in the script
+About 42.7 seconds.
+
+- Tone: Curious and a little awed, careful not to overclaim.
+- Opening: Look at a laptop full of scrolling code, then turn to camera.
+- Pauses: beat after the hook; pause before 'The strange part?'; slow final line
+- Emphasise: Seventeen million, 167-year-old, said he and Claude, full confidence, explain why, before anyone understands it
+- Pronunciation: Riemann: REE-mahn; Alpöge: AL-puh-gay (unverified; check his own talks); Lean: as in 'lean'
 - Keep your natural accent.

@@ -2,91 +2,70 @@
 
 **STATUS: RECORDING READY**
 
-## A. TODAY'S SELECTED TOPIC
+## 1. Today's story
 
-**Story title:** Signal starts blocking screenshots so phone AI assistants like Siri and Gemini can't read your chats
-**Why selected:** The House chip-approval disclosure and the Dragos prompt-canary study were released on 19 Nov (before even the widened 48-hour window) and rely on secondary figures; the Claude Riemann Hypothesis proof claim is extraordinary, single-sourced and conflicts with the writer's disclosure; ChatGPT Wallet (13 Nov) and Walmart's Agent Gateway (21 Oct) are outside the window.
-**Verified development:** On 20 Nov 2026 Signal announced screenshot blocking on iOS 27 (default 'Block Siri AI' setting) and detection-based Screen security on some Android versions, to keep OS-level AI assistants out of chats (Signal blog indexed text plus 9to5Mac, Android Authority, Decrypt, Digital Trends, gHacks, CyberInsider).
-**Publication date:** 20 November 2026 (Signal blog post by Meredith Whittaker; coverage 20-21 Nov)
-**Confidence:** MEDIUM
+**Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis**
 
-## B. FINAL RECORDING SCRIPT
+On 21 Nov 2026 the Lean FRO and the Mathlib Initiative endorsed a joint statement (Lean community blog, indexed text) saying they have full confidence that Levent Alpöge's 17-million-line Lean proof of the Riemann Hypothesis, released on 20 Nov, is correct; reported by Scientific American, Unite.AI and OfficeChai.
+
+Published: 20 November 2026 (Alpöge's Lean proof); 21 November 2026 (Lean FRO and Mathlib Initiative joint statement) · Confidence: MEDIUM
+
+## 2. Why it was selected
+
+The only other eligible story, the Bridgetown UN AI safety summit preview, has no outcome yet and little to show or share. Stronger everyday stories (Waymo's freeway pause and recalls, Microsoft To Do's retirement, Trump's data-center tax threat, the Nvidia SEC report) were all published on 19-20 Nov, before the 24-hour window, with no dated development inside it; Signal's screenshot block is already today's v5 package.
+
+## 3. Verified facts and sources
+
+- In a joint statement on 21 November 2026, the Lean FRO and the Mathlib Initiative said they have full confidence that Levent Alpöge's Lean proof of the Riemann Hypothesis is correct — **THIRD-PARTY CLAIM** (MEDIUM-HIGH). [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [scientific american](https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/), [unite.ai](https://www.unite.ai/lean-and-mathlib-communities-certify-claude-assisted-riemann-proof/), [officechai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/)
+- On 20 November 2026 Levent Alpöge released a Lean formalization claiming a proof of the Riemann Hypothesis (and of GRH for Dirichlet L-functions) — **CONFIRMED** (HIGH). [leanprover-community (github)](https://github.com/leanprover-community/riemann-hypothesis), [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/), [npr](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
+- Levent Alpöge, a mathematician at Anthropic, says he found the proof working with Claude — **CLAIMED** (MEDIUM). [npr](https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai), [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/), [phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html), [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
+- The Lean proof is about 17 million lines of code — **CONFIRMED** (MEDIUM-HIGH). [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
+- The Riemann Hypothesis was first posed in 1859, 167 years ago — **CONFIRMED** (MEDIUM). [phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html), [techcrunch](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/), [scientific american](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/)
+- The Riemann Hypothesis is described as the most famous open problem in mathematics and is a prediction about prime numbers — **CONFIRMED** (MEDIUM). [scientific american](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked), [science](https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer)
+- The proof is written as Lean code, which a computer checks — **CONFIRMED** (HIGH). [leanprover-community (github)](https://github.com/leanprover-community/riemann-hypothesis), [heise online](https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html)
+- The Lean statement says Lean verification confirms the proof is correct but does not explain why it works, and looks to mathematicians to explain it — **THIRD-PARTY CLAIM** (MEDIUM-HIGH). [lean community blog (lean fro, mathlib initiative)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/), [officechai](https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/), [al jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)
+
+Not in the script / uncertain: No written human-readable paper; outside mathematicians are still reviewing the argument.; Reports differ on whether the certified statement covers the generalized hypothesis (the Lean statement certifies Mathlib's RH).; The Lean blog and the Lean X post could not be opened (blocked); read via search index.; Exact publication days of Scientific American, Unite.AI and OfficeChai coverage are not observed; the search index places them on 21-22 Nov.
+
+## 4. Recording-ready script
 
 ```
-Signal just started blocking screenshots. And the reason is AI.
+Seventeen million lines of code might just settle a 167-year-old math problem.
 
-Signal says the AI assistants built into your phone, like Siri and Gemini, can read what's on your screen. Including your private chats.
+It's the Riemann Hypothesis, the most famous open question about prime numbers.
 
-So on iPhones running iOS 27, screenshots inside Signal are now blocked by default. On some Android phones, Signal switches on a screen shield when it spots an AI assistant reading.
+On November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.
 
-You can turn it off. But Signal warns that exposes your contacts' messages too.
+But this proof isn't written for people. It's Lean code that a computer can check.
 
-Its president calls this kind of AI an existential threat. And Signal admits the fix isn't complete.
+A day later, Lean's own maintainers said they have full confidence it's correct.
 
-So, would you trade AI convenience for privacy?
+The strange part? Even they say the next job is for mathematicians to explain why it works.
+
+So we may have the answer before anyone understands it.
 ```
 
-About 43.2 seconds (103 words, assumed default; not yet calibrated on the creator's voice).
+## 5. Estimated speaking duration
 
-## C. RECORDING DIRECTIONS
+About 42.7 seconds (93 words; natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)).
+Delivery: Curious and a little awed, careful not to overclaim. Pauses: beat after the hook; pause before 'The strange part?'; slow final line.
 
-- **Tone:** Curious and calm, a little surprised; privacy without fear-mongering.
-- **Pacing:** Hold up a phone, mock a screenshot press, then look straight at the camera.
-- **Emphasis:** blocking screenshots, the reason is AI, private chats, by default, contacts' messages too, existential threat, isn't complete, convenience for privacy
-- **Pauses:** beat after 'And the reason is AI'; beat after 'Including your private chats'; pause before the final question
-- **Pronunciation:** Gemini: JEM-in-eye; iOS 27: eye-oh-ess twenty-seven; Whittaker is not named in the script
-- Keep your natural accent.
+## 6. Opening visual
 
-## D. EDITING DIRECTIONS
+Fast scroll through the real Lean source in the public GitHub repository leanprover-community/riemann-hypothesis, with a counter ticking up to 17,000,000 lines.
 
-- **0-3 s:** Phone screenshot attempt, flash, 'BLOCKED' text; word 'AI' pops
-- **3-10 s:** Signal blog headline screenshot with '20 Nov 2026'; 'Siri' and 'Gemini' text cards over a chat bubble
-- **10-25 s:** Split card: iOS 27 'blocked by default' / Android 'shield on when AI detected'; toggle-off graphic with 'your contacts too'
-- **25-45 s:** Quote card 'existential threat' (Signal's president); 'Mac: not fully protected'; end question card
-- Use only footage you are licensed to use; label illustrations as illustrations.
+## 7. Caption
 
-## E. POSTING PACKAGE
+An Anthropic mathematician says he and Claude proved the Riemann Hypothesis, posed in 1859. The proof is about 17 million lines of Lean code. On 21 Nov, Lean's maintainers said they have full confidence it is correct, but humans still have to explain why it works. Would you trust it?
 
-**Instagram caption:** Signal now blocks screenshots by default on iOS 27, and switches on screen protection on some Android phones when it detects an AI assistant reading the screen. Signal says OS-level AI like Siri and Gemini can read your chats, and calls it an existential threat. It admits the fix isn't complete. Source: Signal blog, 20 Nov 2026. Would you trade AI convenience for privacy?
+## 8. Hashtags
 
-**YouTube Shorts title:** Signal Is Blocking Screenshots to Stop Siri and Gemini Reading Your Chats
+#RiemannHypothesis #AI #Math #Lean
 
-**Hashtags:** #Signal #Privacy #AI #iOS27 #TechNews
+---
 
-**Thumbnail text:** Signal vs your phone's AI
+Backups (DIFFERENT TOPIC): UN Bridgetown AI safety summit: 32 states and the European Commission back a call to control frontier AI
 
-**Pinned comment:** Honest answer: would you turn off your phone's AI assistant to keep your chats private?
+RUN STATUS: 2026-11-22-manual-135744: READY, delivery not attempted via session reply
 
-## F. FACT-CHECK
-
-*Evidence levels: 7 MEDIUM-HIGH. Claims with a source opened directly: 0 of 7; the rest rely on search-index excerpts and independent reports.*
-- On 20 November 2026 Signal announced it is blocking screenshots in its app to stop AI assistants built into phone operating systems, such as Apple's Siri AI and Google's Gemini, from reading chats: **MEDIUM-HIGH** (high-risk: refers to a recent date (2026-11-20); official indexed text plus 3 independent sources: 9to5mac, android authority, ghacks). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [9to5mac](https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/), [android authority](https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/), [ghacks](https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/)
-- Signal says AI assistants built into the operating system can read what is on your screen, including private chats: **MEDIUM-HIGH** (high-risk: refers to a recent date (2026-11-20); official indexed text plus 2 independent sources: decrypt, digital trends). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [decrypt](https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots), [digital trends](https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/)
-- On iPhones running iOS 27, a 'Block Siri AI' setting is on by default and blocks screenshots inside Signal: **MEDIUM-HIGH** (high-risk: refers to a recent date (2026-11-20); official indexed text plus 3 independent sources: 9to5mac, android authority, cyberinsider). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [9to5mac](https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/), [android authority](https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/), [cyberinsider](https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/)
-- On some Android versions Signal switches on its Screen security setting when it detects an AI assistant reading the screen: **MEDIUM-HIGH** (high-risk: refers to a recent date (2026-11-20); official indexed text plus 2 independent sources: android authority, ghacks). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [android authority](https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/), [ghacks](https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/)
-- Users can turn the protection off, but Signal warns that doing so can expose their own and their contacts' messages to AI agents: **MEDIUM-HIGH** (high-risk: refers to a recent date (2026-11-20); official indexed text plus 2 independent sources: android authority, digital trends). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [android authority](https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/), [digital trends](https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/)
-- Signal president Meredith Whittaker calls AI agents built into operating systems an existential threat: **MEDIUM-HIGH** (high-risk: refers to a recent date (2026-11-20); official indexed text plus 2 independent sources: android authority, decrypt). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [decrypt](https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots), [android authority](https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/)
-- Signal admits the fix is incomplete: it cannot reliably block screenshots on macOS, and agents could still reach data stored on the device: **MEDIUM-HIGH** (high-risk: present or future time context; official indexed text plus 2 independent sources: android authority, ghacks). CONFIRMED. Sources: [signal](https://signal.org/blog/protecting-your-privacy/), [android authority](https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/), [ghacks](https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/)
-
-**Uncertain or left out:**
-- No public response from Apple or Google found.
-- Android detection does not work on every Android version.
-- Exact app version numbers differ across reports and are left out of the script.
-- signal.org could not be opened; Signal's text read via search index.
-- Written by Claude, an Anthropic model (disclosed).
-
-## G. INTERNAL QUALITY SCORE
-
-- Hook: 9/10
-- Clarity: 9/10
-- Storytelling: 9/10
-- Retention: 9/10
-- Shareability: 9/10
-- Factual confidence: 9/10
-- **Total: 90.0/100** after 2 revision(s). An editorial assessment, not a prediction of virality.
-
-**Backups (DIFFERENT TOPIC):** 
-
-**RUN STATUS:** 2026-11-22-scheduled-084152: READY, delivery requested via push
-
-Full research, candidates and the claim table: `package.md` and `research.json`.
+Internal: `creative.md` (finalists, 25 hooks, 3 variants, visual plan, quality gate), `package.md`, `research.json`.

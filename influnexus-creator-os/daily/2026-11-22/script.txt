@@ -1,11 +1,13 @@
-Signal just started blocking screenshots. And the reason is AI.
+Seventeen million lines of code might just settle a 167-year-old math problem.
 
-Signal says the AI assistants built into your phone, like Siri and Gemini, can read what's on your screen. Including your private chats.
+It's the Riemann Hypothesis, the most famous open question about prime numbers.
 
-So on iPhones running iOS 27, screenshots inside Signal are now blocked by default. On some Android phones, Signal switches on a screen shield when it spots an AI assistant reading.
+On November 20, Anthropic mathematician Levent Alpöge said he and Claude had proved it.
 
-You can turn it off. But Signal warns that exposes your contacts' messages too.
+But this proof isn't written for people. It's Lean code that a computer can check.
 
-Its president calls this kind of AI an existential threat. And Signal admits the fix isn't complete.
+A day later, Lean's own maintainers said they have full confidence it's correct.
 
-So, would you trade AI convenience for privacy?
+The strange part? Even they say the next job is for mathematicians to explain why it works.
+
+So we may have the answer before anyone understands it.

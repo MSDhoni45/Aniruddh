@@ -1,41 +1,56 @@
 {
   "primary": [
     {
-      "label": "Signal blog: Signal is Serious About Protecting Your Privacy (20 Nov 2026)",
-      "url": "https://signal.org/blog/protecting-your-privacy/"
+      "label": "Lean community blog: Lean verification of the Riemann Hypothesis (21 Nov 2026, indexed text)",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+    },
+    {
+      "label": "leanprover-community/riemann-hypothesis on GitHub (opened)",
+      "url": "https://github.com/leanprover-community/riemann-hypothesis"
     }
   ],
   "supporting": [
     {
-      "label": "9to5Mac (20 Nov)",
-      "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/"
+      "label": "NPR (21 Nov)",
+      "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai"
     },
     {
-      "label": "Android Authority (20 Nov)",
-      "url": "https://www.androidauthority.com/signal-blocks-gemini-siri-ai-private-messages-3737647/"
+      "label": "Al Jazeera (21 Nov)",
+      "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked"
     },
     {
-      "label": "Decrypt",
-      "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots"
+      "label": "TechCrunch (20 Nov)",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
     },
     {
-      "label": "Digital Trends",
-      "url": "https://www.digitaltrends.com/phones/signal-adds-screenshot-protections-to-stop-ai-agents-reading-chats/"
+      "label": "Scientific American",
+      "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/"
     },
     {
-      "label": "gHacks (21 Nov)",
-      "url": "https://www.ghacks.net/2026/11/21/signal-blocks-siri-gemini-and-other-ai-agents-from-reading-your-messages/"
+      "label": "Science",
+      "url": "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer"
     },
     {
-      "label": "CyberInsider",
-      "url": "https://cyberinsider.com/signal-blocks-screenshots-ios-27-android-ai-assistants/"
+      "label": "Unite.AI",
+      "url": "https://www.unite.ai/lean-and-mathlib-communities-certify-claude-assisted-riemann-proof/"
+    },
+    {
+      "label": "OfficeChai",
+      "url": "https://officechai.com/ai/lean-community-certifies-levent-alpoges-claude-assisted-proof-of-the-riemann-hypothesis-as-correct/"
+    },
+    {
+      "label": "heise online",
+      "url": "https://www.heise.de/en/news/Riemann-hypothesis-Anthropic-mathematician-says-he-found-an-AI-assisted-proof-11533489.html"
+    },
+    {
+      "label": "Phys.org",
+      "url": "https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html"
     }
   ],
   "x_signals": [],
   "access_limits": [
-    "signal.org and aitoolly.com cannot be opened from this environment (DNS blocked); Signal text read via search index.",
-    "News sites and x.com not opened; outlets read via search index.",
-    "No social engagement observed; UNKNOWN.",
-    "Time-boxed to the 09:20 IST hard stop."
+    "x.com, reddit, youtube, instagram, linkedin and most news sites blocked; outlets read via search index.",
+    "leanprover-community.github.io, claymath.org, npr.org, techmeme.com and daily-digest sites failed DNS; GitHub repository page opened via WebFetch.",
+    "No social engagement observed; UNKNOWN."
   ]
 }

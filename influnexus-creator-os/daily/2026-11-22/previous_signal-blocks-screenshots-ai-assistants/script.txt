@@ -1,0 +1,11 @@
+Signal just started blocking screenshots. And the reason is AI.
+
+Signal says the AI assistants built into your phone, like Siri and Gemini, can read what's on your screen. Including your private chats.
+
+So on iPhones running iOS 27, screenshots inside Signal are now blocked by default. On some Android phones, Signal switches on a screen shield when it spots an AI assistant reading.
+
+You can turn it off. But Signal warns that exposes your contacts' messages too.
+
+Its president calls this kind of AI an existential threat. And Signal admits the fix isn't complete.
+
+So, would you trade AI convenience for privacy?

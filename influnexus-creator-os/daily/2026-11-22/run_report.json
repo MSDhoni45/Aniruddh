@@ -44,6 +44,48 @@
       "quality_gate": "PASS",
       "quality_total": 90.0,
       "validation_problems": []
+    },
+    "2026-11-22-manual-135744": {
+      "run_id": "2026-11-22-manual-135744",
+      "trigger": "manual",
+      "start_ist": "2026-11-22T13:57:44+05:30",
+      "end_ist": "2026-11-22T13:57:51+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "fb0a617",
+      "research_window": {
+        "start_utc": "2026-11-21T08:12:33+00:00",
+        "end_utc": "2026-11-22T08:12:33+00:00",
+        "start_ist": "2026-11-21T13:42:33+05:30",
+        "end_ist": "2026-11-22T13:42:33+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "v6 package (Riemann Hypothesis Lean certification) replaces the v5 Signal package at the creator's request",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Lean's maintainers certify an Anthropic mathematician's Claude-assisted proof of the Riemann Hypothesis",
+      "candidates": 21,
+      "source_access": "Evidence levels: 2 HIGH, 3 MEDIUM-HIGH, 3 MEDIUM. Claims with a source opened directly: 2 of 8; the rest rely on search-index excerpts and independent reports.",
+      "fact_check": "PASS",
+      "word_count": 93,
+      "estimated_seconds": 42.7,
+      "quality_gate": "PASS",
+      "quality_total": 88.5,
+      "validation_problems": []
     }
   }
 }
