@@ -1,4 +1,4 @@
-# Daily runbook: research → viral topic → recording package (English)
+# Daily runbook: research → viral topic → recording package (English; V7 from 23 Nov 2026)
 
 Run by the scheduled task "Influnexus daily brief" at 08:41 Asia/Kolkata so the package is ready by 09:30 IST, and whenever the
 creator types "Script for today" (see the command table in the repository's `CLAUDE.md`).
@@ -46,7 +46,7 @@ The 20 Nov run cost about $11, almost all of it the main session re-reading its 
 each of 28 requests; the research itself (12 searches) cost about $0.14. So the scheduled session stays thin:
 1. Main session: setup, `creatoros runlog start --trigger scheduled` (audits sources first), then hand steps 1-4 (research,
    verification, writing, `creatoros package`) to ONE subagent (Agent tool, fresh context) with a short brief: the run_id,
-   research window, budgets, and "follow influnexus-creator-os/RUNBOOK.md (v6, Verification policy) and write
+   research window, budgets, and "follow influnexus-creator-os/RUNBOOK.md (V7, Verification policy) and write
    daily/DATE/package.json; return the package status and topic". The subagent does all searches and file work.
 2. Main session again: `creatoros growth`, the push notification, `creatoros runlog end`, one commit and push, the reply.
    Aim for at most about 8 main-session requests, batch independent tool calls, and never paste large files into the main session.
@@ -84,7 +84,78 @@ excerpts of a primary page plus press coverage are not enough for them.
 script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
 not from verification.
 
-## v6: creator-led editorial quality (required from 2026-11-23; the creator's "Fix daily script quality" brief, 22 Nov 2026)
+## V7: Viral AI & Technology Creator Engine (accepted from 2026-11-22, required from 2026-11-23)
+The creator's V7 brief. Where it differs from v6, v5, v4 or v3 below, this section wins. Unchanged and still required:
+"Verification policy", HOLD/fallback, time budget, cost control (ONE fresh subagent), delivery stages, the duplicate guard.
+`"scoring": "v7"`, `"language": "english"`. Goal: 100,000 followers within 60 days from 2026-11-22 (a stretch goal, never promised).
+Optimise for qualified growth: shares, saves, watch time, completion, replays, comments, profile visits, follows per 1,000 views.
+1. **Discovery window:** the previous 24 hours from the run's own start (UTC and IST are printed by `runlog start`). An older
+   event qualifies only with a genuinely new, dated development; record the original event date (`event_date`) separately
+   from the publication date (`announced_at`). Widening to 48-72 h stays allowed with `window_expansion_reason` when the 24 h
+   pool is too thin. Never fabricate recency.
+2. **Sweep broadly:** AI labs (OpenAI, Anthropic, Google DeepMind, Meta, xAI, Mistral, DeepSeek, NVIDIA, Microsoft, Amazon,
+   Apple, new labs); AI products and tools (agents, video, image, coding, browsers, assistants, automation); creator tech
+   (Instagram/YouTube features, editing, AI filmmaking, avatars, voice, monetization, algorithms); business and marketing tech;
+   robotics and hardware; science and health; fintech and cybersecurity; industry (acquisitions, launches, policy,
+   controversies, demos). Sources: X, official blogs, papers, GitHub releases, launch pages, credible publications, developer
+   communities, YouTube and LinkedIn announcements. Original sources first. X metrics only when observed (x.com is blocked
+   here: say the social signal is unverified).
+3. **Pool of 20-30 credible developments** when the news supports it (fewer only with `candidate_shortfall_reason`, never
+   filler). Remove duplicates, recycled news, rumours, misleading demos, unverifiable claims, pure promotion. Each candidate:
+   every v3 field plus `claim_status`, `latest_development`, `audience_relevance`, `practical_usefulness`,
+   `visual_potential`, `potential_controversy`.
+4. **Virality model (each 0-10, weights):** broad_relevance 20, surprise 15, usefulness 15, social_momentum 15, visual 10,
+   consequence 10, discussion 10, timeliness 5. social_momentum above 3 needs observed discussion, above 6 observed numbers.
+   **Verification is a gate:** only CONFIRMED or INDEPENDENTLY REPORTED stories are eligible (COMPANY-CLAIMED, PRELIMINARY,
+   SPECULATIVE, DISPUTED are not). Editorial judgements, not view predictions.
+5. **Stories people can use:** a tool millions can use, or a striking robotics demo, beats an obscure breakthrough. Answer
+   `audience_check` (one sentence each): why_care_today, affects_life_or_work, can_they_use_it, surprising, demonstrable,
+   clear_consequence, would_share, right_audience. Never choose a story only because it is technically impressive; if the top
+   story is too technical, compare it with accessible alternatives and say why it still wins (`why_beats_alternatives`).
+6. **Fact-checking:** source priority primary docs > official announcements > original research > direct statements >
+   credible independent reporting > commentary. Claim labels add COMPANY-CLAIMED, INDEPENDENTLY REPORTED and PRELIMINARY (all
+   said with attribution) to CONFIRMED, SPECULATIVE and DISPUTED. A GitHub repository is not proof of correctness, a company
+   benchmark is not independent validation, a demo is not general capability, a press release is not commercial success, a
+   proof checker does not validate every assumption. Do not rely on snippets for critical claims; say when a source could not
+   be opened.
+7. **Extraordinary claims** (famous problems solved, AGI, major medical breakthroughs, autonomous discoveries, historic firsts,
+   billion-dollar events, security breaches, radical robotics) are detected automatically (`evidence.is_extraordinary`, or
+   `extraordinary: true`). In the script they need the primary source OPENED and independent confirmation OPENED (credible
+   reporting or a named expert's own statement, kind `expert`; never GitHub, never a snippet), plus `scrutiny`: who_claimed,
+   what_demonstrated, independent_confirmation, uncertainty, reproduced, preliminary. If uncertainty is substantial, make it
+   central to the story. Never imply universal acceptance from a limited endorsement.
+8. **One story, one idea:** one central idea, one reason to care, one visual angle, one takeaway. No roundups. If nothing
+   credible meets the bar, say so and deliver no script.
+9. **Script:** 30-40 seconds (40 hard), about 70-90 words, estimated at 140 wpm plus a 0.35 s pause per sentence (about 75-85
+   words fits). Hook 0-2 s, context 2-10, development 10-25, takeaway 25-34, ending 34-40 (flexible). Conversational, global,
+   confident and curious; not a news anchor, spokesperson, AI explainer or clickbait account. Short sentences, one narrative,
+   no headline repetition, no unnecessary statistics, no sentence over 22 words.
+10. **Hooks:** at least 5, each scored 0-10 on accuracy, clarity, curiosity, specificity, emotional, comprehension, with an
+    approach (surprising capability, unexpected consequence, major product reveal, practical discovery, contradiction,
+    unusual demonstration, important warning; at least 3 different). Accuracy under 7 disqualifies; the top accurate hook
+    opens the script. Banned: "You won't believe this", "This changes everything", "AI is getting crazy", "The future is
+    here", "Nobody is talking about this" and other generic openings.
+11. **Practical takeaway** (`practical_takeaway`): who_can_use, what_it_does, availability, price, difference, limitations,
+    why_it_matters. Write UNKNOWN or "not applicable" rather than inventing availability or price. For research, the real
+    significance without invented applications.
+12. **Script checks** (`script_checks`, each `{pass, why}`): hook_clarity, factual_accuracy, natural_delivery,
+    narrative_coherence, audience_relevance, practical_takeaway, ending_quality, no_redundancy, no_jargon,
+    no_unsupported_implications. Any false: revise (max 3 `revisions`). factual_accuracy cannot pass unless the claim table is
+    RECORDING READY.
+13. **Story history:** `story_id`, `company`, `event_date` (plus the date selected) go into `research/content_db.jsonl` with
+    the script and sources. Repeats need `material_update_of` explaining what changed.
+14. **Performance:** `creatoros learn` compares topics, hooks, categories, script lengths (length bands) and posting times
+    with the account median (3 reels minimum per group); it reports that Instagram analytics are not connected. Copy its line
+    into `learning_applied`. `creatoros growth` shows weekly checkpoints toward 100,000 (UNKNOWN until the creator gives a
+    starting follower count).
+15. **Delivery (`today.md`), seven sections only:** 1 story (headline, date, category, confidence); 2 why this story
+    (`why_this_story`, 100 words or fewer, including the observable X signal and why it beat alternatives); 3 the script;
+    4 caption (strong opening, key fact, natural question; 60 words or fewer) with 3-5 hashtags; 5 sources (with dates and
+    whether each was opened); 6 fact-check notes (confirmed, uncertainties, excluded claims: `excluded_claims`); 7 recording
+    guidance (`recording_guidance`: hook_emphasis, important_pause, final_tone). No editing plan. v6 fields (finalists,
+    variants, visual plan, creative gate) are not required in V7; `thumbnail_text`, `pinned_comment` and `edit_beats` are optional.
+
+## v6: creator-led editorial quality (accepted 2026-11-22 only; superseded by V7 before it became mandatory; the creator's "Fix daily script quality" brief, 22 Nov 2026)
 Goal: content a broad audience shares, saves, comments on and follows for (150,000 Instagram followers in four months from
 22 Nov 2026: an ambitious target, not a guaranteed outcome). Not a news summary; do not optimise for merely finishing a script.
 Where this section differs from the v5, v4 and v3 text below, this section wins. Everything in "Verification policy",
@@ -335,7 +406,7 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 ## 5. Deliver
 - Send one push notification with the topic (the only configured delivery channel besides the run's own reply). The tool reports
   "requested", not a receipt: record `--delivery requested --channel push`; if it errors, `--delivery failed`. Never claim it reached the phone.
-- `creatoros growth --date DATE` refreshes `reports/growth/DATE.md` (150K/120-day target, trajectory, observed conversion, content mix;
+- `creatoros growth --date DATE` refreshes `reports/growth/DATE.md` (100K/60-day target from 22 Nov, weekly checkpoints, trajectory, observed conversion, content mix;
   UNKNOWN where no numbers exist).
 - `creatoros runlog end ...` (above), then commit `daily/DATE/`, `research/*.jsonl`, `reports/growth/` and `logs/` in ONE commit and push
   (pull `--rebase` first; retry the push up to 4 times with backoff). If the push fails, say PACKAGE READY — DELIVERY FAILED.
@@ -346,7 +417,7 @@ automatically. It refuses to render if any rule fails, prints `RECORDING READY` 
 
 ## 6. Learning (when the creator supplies numbers)
 - `creatoros learn` turns recorded numbers into lessons (best hooks, topics, follower conversion, weakest categories) against
-  the account's own median; with no data it says so. Run it before scoring each day (v6 step 11).
+  the account's own median; with no data it says so. Run it before scoring each day (V7 step 14).
 - No analytics connector (Instagram, YouTube, X, LinkedIn) is connected, so numbers come from the creator.
 - `creatoros metrics-add date=D video_id=D_SLUG platform=P checkpoint=24h|72h|7d views=.. reach=.. avg_view_duration_s=..
   completion_rate=.. shares=.. saves=.. comments=.. profile_visits=.. new_followers=.. pillar=.. format=.. hook_type=.. source=..`

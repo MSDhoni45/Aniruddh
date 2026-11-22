@@ -1,4 +1,4 @@
-"""Growth dashboard (150K followers in 120 days from 22 Nov 2026; was 100K in 60 days): follower snapshots, the target trajectory, observed conversion and the content mix.
+"""Growth dashboard (V7: 100K followers in 60 days from 22 Nov 2026): follower snapshots, the target trajectory, observed conversion and the content mix.
 
 Only numbers the creator recorded (or a connected analytics source returned) are used. Anything missing is UNKNOWN, and
 no projection is shown as a prediction. A target is not a guarantee.
@@ -19,8 +19,8 @@ PLATFORMS = ["instagram", "youtube", "x", "linkedin"]
 UNKNOWN = "UNKNOWN"
 PHASES = [(1, 7, "Phase 1: baseline", "Test hook structures, categories, story types, delivery and visual formats; record results."),
           (8, 21, "Phase 2: find what works", "Lean into topics with strong retention, shares, saves and follows per 1k views; cut consistently weak formats."),
-          (22, 60, "Phase 3: scale", "Scale proven patterns; try recurring series, follow-up explainers, audience questions, demonstrations."),
-          (61, 120, "Phase 4: concentrate", "Concentrate on the most effective formats; review often; keep repeatable audience value.")]
+          (22, 40, "Phase 3: scale", "Scale proven patterns; try recurring series, follow-up explainers, audience questions, demonstrations."),
+          (41, 60, "Phase 4: concentrate", "Concentrate on the most effective formats; review often; keep repeatable audience value.")]
 
 
 def settings() -> dict:
@@ -214,7 +214,29 @@ def dashboard(date: str, followers_path: Path | None = None, perf_path: Path | N
     out["pillar_mix"] = mix(window, "pillar", PILLARS)
     out["format_mix"] = mix(window, "format")
     out["reels"] = reel_table([r for r in store.load(perf_path) if r.get("platform") == target_pl])
+    out["weekly_checkpoints"] = weekly_checkpoints(s, out.get("baseline"), series)
     return out
+
+
+def weekly_checkpoints(s: dict, baseline: dict | None, series: list[tuple]) -> list[dict]:
+    """End-of-week targets on a straight line from the baseline to the target, with the actual count where recorded.
+    Without a baseline the targets are UNKNOWN (the starting follower count has to come from the creator)."""
+    start = dt.date.fromisoformat(s["start_date"])
+    end = start + dt.timedelta(days=s["days"] - 1)
+    out, week = [], 1
+    while True:
+        d = min(start + dt.timedelta(days=7 * week - 1), end)
+        if baseline:
+            b_d, b = dt.date.fromisoformat(baseline["date"]), baseline["followers"]
+            span = max((end - b_d).days, 1)
+            tgt = round(b + (s["target_followers"] - b) * max((d - b_d).days, 0) / span)
+        else:
+            tgt = UNKNOWN
+        actual = [n for sd, n in series if sd <= d and (d - sd).days < 7]
+        out.append({"week": week, "date": str(d), "target": tgt, "actual": actual[-1] if actual else UNKNOWN})
+        if d >= end:
+            return out
+        week += 1
 
 
 def reel_table(rows: list[dict]) -> list[dict]:
@@ -250,8 +272,11 @@ def render(d: dict) -> str:
          f"| Net followers needed per day from now | {v(d['daily_net_growth_required'])} |",
          f"| Average needed per day over the plan (from baseline) | {v(d['average_daily_required_over_plan'])} |"]
     t = d["trajectory"]
+    wk = d.get("weekly_checkpoints") or []
+    traj_rows = [f"| Week {w['week']} ({w['date']}) target / actual | {v(w['target'])} / {v(w['actual'])} |" for w in wk]
     traj = t if isinstance(t, str) else f"{t['status']} by {abs(t['gap']):,} (expected {t['expected_today']:,} today)"
     L.append(f"| Actual vs target trajectory | {traj} |")
+    L += traj_rows
     pr = d["projection"]
     if pr.get("status") == UNKNOWN:
         L.append(f"| Projected followers on the last day | UNKNOWN ({pr['note']}) |")

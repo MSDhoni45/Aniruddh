@@ -19,7 +19,7 @@ MIN_N = 3
 CHECKPOINT_PREFERENCE = ["7d", "72h", "48h", "24h", "2h"]
 METRICS = ["views", "avg_retention", "completion_rate", "shares_per_1k_views", "saves_per_1k_views",
            "comments_per_1k_views", "profile_visit_rate", "follows_per_1k_views"]
-DIMENSIONS = ["hook_type", "topic", "pillar", "format"]
+DIMENSIONS = ["hook_type", "topic", "pillar", "format", "length_band", "posting_hour_ist"]
 CONNECTION_NOTE = ("Instagram analytics: NOT CONNECTED. This environment has no authorized Instagram Graph API access, so "
                    "only numbers the creator enters with `creatoros metrics-add` are used.")
 
@@ -36,6 +36,27 @@ def _latest_per_reel(rows: list[dict], platform: str) -> list[dict]:
     return list(best.values())
 
 
+def _band(v) -> str | None:
+    try:
+        x = float(v)
+    except (TypeError, ValueError):
+        return None
+    for lo, hi in ((0, 30), (30, 35), (35, 40), (40, 45)):
+        if lo <= x < hi:
+            return f"{lo}-{hi}s"
+    return "45s+"
+
+
+def _hour(v) -> str | None:
+    try:
+        t = dt.datetime.fromisoformat(str(v).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if t.tzinfo:
+        t = t.astimezone(dt.timezone(dt.timedelta(hours=5, minutes=30)))
+    return f"{t.hour:02d}:00 IST"
+
+
 def _median(vals):
     vals = [v for v in vals if v is not None]
     return round(median(vals), 3) if vals else None
@@ -43,7 +64,8 @@ def _median(vals):
 
 def learn(perf_path: Path | None = None, platform: str = "instagram", connected: bool = False) -> dict:
     reels = _latest_per_reel(store.load(perf_path), platform)
-    derived = [{**store.derive(r), **{d: r.get(d) for d in DIMENSIONS}} for r in reels]
+    derived = [{**store.derive(r), **{d: r.get(d) for d in DIMENSIONS}, "length_band": _band(r.get("duration_s")),
+                "posting_hour_ist": _hour(r.get("posted_at"))} for r in reels]
     out = {"generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "platform": platform,
            "connection": "connected" if connected else CONNECTION_NOTE, "reels_with_data": len(derived),
            "baseline": {m: _median(d[m] for d in derived) for m in METRICS}, "dimensions": {}, "lessons": [],

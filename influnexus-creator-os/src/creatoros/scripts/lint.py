@@ -67,8 +67,8 @@ def estimate_seconds(text: str, scheme: str | None = None) -> dict:
     sentences = len(script_sentences(text))
     pauses = min(0.2 * max(sentences - 1, 0), config.settings()["script"]["pause_allowance_seconds"] + 1)
     v6 = config.settings().get("script_v6", {})
-    if scheme == "v6":
-        # v6: a moderate, natural speaking pace with a real pause after every sentence (no cramming). A measured
+    if scheme in ("v6", "v7"):
+        # v6/v7: a moderate, natural speaking pace with a real pause after every sentence (no cramming). A measured
         # calibration of the creator's voice still wins over the assumed pace; the pauses are always added.
         if not config.path("analytics/pace.json").exists():
             wpm = float(v6.get("words_per_minute", 140))
@@ -82,7 +82,7 @@ def limits(scheme: str | None = None) -> dict:
     """Length limits: script_v3 for v3 packages, the original script limits otherwise."""
     st = config.settings()
     sc = dict(st["script"])
-    if scheme in ("v3", "v5", "v6") and f"script_{scheme}" in st:
+    if scheme in ("v3", "v5", "v6", "v7") and f"script_{scheme}" in st:
         sc.update(st[f"script_{scheme}"])
     return sc
 
@@ -119,7 +119,7 @@ def check(text: str, language: str | None = None, scheme: str | None = None) -> 
         warnings.append(f"{est['words']} words is outside the {wlo}-{whi} word target")
     if sents and word_count(sents[0]) > 16:
         warnings.append("first sentence is longer than 16 words: the hook should land within two seconds")
-    if scheme == "v6":
+    if scheme in ("v6", "v7"):
         long = [i + 1 for i, x in enumerate(sents) if word_count(x) > MAX_SENTENCE_WORDS_V6]
         if long:
             problems.append(f"sentence(s) {long} longer than {MAX_SENTENCE_WORDS_V6} words: use short, spoken sentences")
@@ -134,7 +134,9 @@ MAX_SENTENCE_WORDS_V6 = 22
 GENERIC_HOOK_PHRASES = ["big news in ai", "big news in tech", "big news today", "something crazy just happened",
                         "something crazy", "something huge just happened", "something big just happened", "you won't believe",
                         "you wont believe", "this is huge", "this is crazy", "this is insane", "ai just changed everything",
-                        "breaking:", "breaking news", "hold on", "wait for it", "stop scrolling"]
+                        "breaking:", "breaking news", "hold on", "wait for it", "stop scrolling", "ai is getting crazy",
+                        "the future is here", "nobody is talking about this", "no one is talking about this",
+                        "this changes everything"]
 
 HOOK_CRITERIA = ["accuracy", "clarity", "curiosity", "natural", "relevance", "comprehension"]
 HOOK_MECHANISMS = ["unexpected fact", "contradiction", "surprising demonstration", "important consequence", "curiosity gap",
@@ -299,3 +301,63 @@ def creative_gate(gate: dict) -> list[str]:
         elif not a["pass"]:
             probs.append(f"creative gate failed: {q} ({a['why']}); rewrite or choose another story")
     return probs
+
+
+# V7 (from 22 Nov 2026): at least five hooks, scored on the creator's six criteria; at least three structural approaches.
+HOOK_CRITERIA_V7 = ["accuracy", "clarity", "curiosity", "specificity", "emotional", "comprehension"]
+HOOK_APPROACHES_V7 = ["surprising capability", "unexpected consequence", "major product reveal", "practical discovery",
+                      "contradiction", "unusual demonstration", "important warning"]
+MIN_HOOKS_V7, MIN_APPROACHES_V7 = 5, 3
+SCRIPT_CHECKS_V7 = {
+    "hook_clarity": "Is the hook clear in the first two seconds?",
+    "factual_accuracy": "Does every sentence match a verified claim?",
+    "natural_delivery": "Does it sound natural spoken aloud?",
+    "narrative_coherence": "Is there one central narrative?",
+    "audience_relevance": "Will a broad audience care today?",
+    "practical_takeaway": "Is there a practical takeaway (or real significance, without invented applications)?",
+    "ending_quality": "Is the ending memorable or a natural question?",
+    "no_redundancy": "Does every sentence contribute (no repetition of the headline)?",
+    "no_jargon": "Is it free of unnecessary jargon?",
+    "no_unsupported_implications": "Does it avoid implying more than the evidence shows?",
+}
+AUDIENCE_CHECK_V7 = ["why_care_today", "affects_life_or_work", "can_they_use_it", "surprising", "demonstrable",
+                     "clear_consequence", "would_share", "right_audience"]
+
+
+def check_hooks_v7(hooks: list[dict], chosen: str) -> list[str]:
+    probs = []
+    if len(hooks) < MIN_HOOKS_V7:
+        probs.append(f"only {len(hooks)} hooks; generate at least {MIN_HOOKS_V7}")
+    for h in hooks:
+        t = h.get("text", "")
+        miss = [k for k in HOOK_CRITERIA_V7 if not isinstance(h.get(k), (int, float)) or not 0 <= h[k] <= 10]
+        if miss:
+            probs.append(f"hook '{t[:30]}' lacks 0-10 scores for {miss}")
+        if h.get("approach") not in HOOK_APPROACHES_V7:
+            probs.append(f"hook '{t[:30]}' needs an approach from {HOOK_APPROACHES_V7}")
+        probs += [f"hook '{t[:30]}': {x}" for x in hook_text_problems(t)]
+    if len({h.get("approach") for h in hooks}) < MIN_APPROACHES_V7:
+        probs.append(f"explore at least {MIN_APPROACHES_V7} different hook approaches")
+    if probs:
+        return probs
+    best = score_hooks(hooks, HOOK_CRITERIA_V7)[0]
+    if not best["eligible"]:
+        return ["no hook scored 7 or more on accuracy"]
+    if best["text"].strip() != chosen.strip():
+        probs.append(f"the chosen hook is not the top-scoring accurate hook ('{best['text']}')")
+    return probs
+
+
+def script_checks_v7(checks: dict) -> dict:
+    """Ten spoken-script checks, each {pass, why}. Any failure means revise (max 3), never ship."""
+    probs = []
+    for k, q in SCRIPT_CHECKS_V7.items():
+        a = checks.get(k) if isinstance(checks, dict) else None
+        if not isinstance(a, dict) or not isinstance(a.get("pass"), bool) or len(str(a.get("why", "")).split()) < 4:
+            probs.append(f"script check '{q}' needs {{pass: true/false, why: a concrete reason}}")
+        elif not a["pass"]:
+            probs.append(f"script check failed: {q} ({a['why']}); revise the script")
+    passed = sum(1 for k in SCRIPT_CHECKS_V7 if isinstance(checks, dict) and isinstance(checks.get(k), dict)
+                 and checks[k].get("pass") is True)
+    return {"total": passed * 10, "scores": {k: (checks.get(k) or {}).get("pass") for k in SCRIPT_CHECKS_V7}
+            if isinstance(checks, dict) else {}, "problems": probs, "approved": not probs}

@@ -30,6 +30,13 @@ WEIGHTS_V6 = {"curiosity": 12, "surprise": 12, "broad_relevance": 12, "shareabil
 CLAIM_STATUS = ["CONFIRMED", "REPORTED", "CLAIMED", "SPECULATIVE", "UNVERIFIED"]
 SELECTABLE_STATUS = {"CONFIRMED", "REPORTED"}
 REQUIRED_V6 = REQUIRED_V3 + ["claim_status", "why_share", "visual_note"]
+# V7 (from 22 Nov 2026): virality model out of 100. Verification is an eligibility gate, never a score.
+WEIGHTS_V7 = {"broad_relevance": 20, "surprise": 15, "usefulness": 15, "social_momentum": 15, "visual": 10,
+              "consequence": 10, "discussion": 10, "timeliness": 5}
+CLAIM_STATUS_V7 = ["CONFIRMED", "COMPANY-CLAIMED", "INDEPENDENTLY REPORTED", "PRELIMINARY", "SPECULATIVE", "DISPUTED"]
+SELECTABLE_V7 = {"CONFIRMED", "INDEPENDENTLY REPORTED"}
+REQUIRED_V7 = REQUIRED_V3 + ["claim_status", "latest_development", "audience_relevance", "practical_usefulness",
+                             "visual_potential", "potential_controversy"]
 X_METRICS = ["likes", "reposts", "replies", "quotes", "views"]
 REQUIRED = ["headline", "category", "topic_type", "announced_at", "original_source", "supporting_sources", "what_happened",
             "why_it_matters", "target_audience", "discussion_signals", "competing_coverage", "uncertainty", "novelty",
@@ -44,6 +51,8 @@ UNKNOWN = "UNKNOWN"
 
 def scheme(c: dict) -> str:
     sc = c.get("scores", {})
+    if "social_momentum" in sc:
+        return "v7"
     if "save_potential" in sc:
         return "v6"
     if "social_traction" in sc:
@@ -52,10 +61,12 @@ def scheme(c: dict) -> str:
 
 
 def weights(c: dict) -> dict:
-    return {"v6": WEIGHTS_V6, "v4": WEIGHTS_V4, "v3": WEIGHTS_V3, "v2": WEIGHTS_V2}.get(scheme(c), WEIGHTS)
+    return {"v7": WEIGHTS_V7, "v6": WEIGHTS_V6, "v4": WEIGHTS_V4, "v3": WEIGHTS_V3, "v2": WEIGHTS_V2}.get(scheme(c), WEIGHTS)
 
 
 def validate(c: dict) -> list[str]:
+    if scheme(c) == "v7":
+        return validate_v7(c)
     if scheme(c) == "v6":
         return validate_v6(c)
     if scheme(c) == "v4":
@@ -250,10 +261,31 @@ def validate_v6(c: dict) -> list[str]:
     return probs
 
 
+def validate_v7(c: dict) -> list[str]:
+    """v3 rules (window, X evidence, sources) with the V7 virality model and the story's verification status."""
+    probs = [p for p in validate_v3({**c, "scores": {k: 0 for k in WEIGHTS_V3}}) if not p.startswith("score ")]
+    probs += [f"missing field: {f}" for f in REQUIRED_V7 if f not in c and f not in REQUIRED_V3]
+    sc = c.get("scores", {})
+    for k in WEIGHTS_V7:
+        v = sc.get(k)
+        if v != UNKNOWN and not (isinstance(v, (int, float)) and 0 <= v <= 10):
+            probs.append(f"score {k} must be 0-10 or UNKNOWN")
+    if "claim_status" in c and c["claim_status"] not in CLAIM_STATUS_V7:
+        probs.append(f"claim_status must be one of {CLAIM_STATUS_V7}")
+    sm = sc.get("social_momentum")
+    evidence = (c.get("x_signal") or {}).get("discussion_evidence") if isinstance(c.get("x_signal"), dict) else None
+    if isinstance(sm, (int, float)):
+        if sm > 3 and not (evidence or c.get("signals")):
+            probs.append("social_momentum above 3 needs observed discussion (signals or discussion_evidence)")
+        if sm > 6 and not traction_measured(c):
+            probs.append("social_momentum above 6 needs observed engagement numbers; otherwise 6 or less")
+    return probs
+
+
 def window_reason(c: dict, window: dict | None) -> str | None:
     """v3 freshness rule: published inside the 24-hour research window, or a dated new development inside it.
     A date without a time counts if that day overlaps the window (never invent a time to pass this check)."""
-    if not window or scheme(c) not in ("v3", "v4", "v6") or c.get("creator_request"):
+    if not window or scheme(c) not in ("v3", "v4", "v6", "v7") or c.get("creator_request"):
         return None                                      # a topic the creator asked for is exempt from the window rule
     start, end = _iso(window.get("start_utc")), _iso(window.get("end_utc"))
     pub = _span(c.get("published_at"))
@@ -295,6 +327,8 @@ def ineligible_reason(c: dict) -> str | None:
         return "evidence confidence LOW"
     if c.get("verification_status") in ("UNVERIFIED", "REJECTED"):
         return f"verification status {c['verification_status']}"
+    if scheme(c) == "v7" and c.get("claim_status") not in SELECTABLE_V7:
+        return f"verification gate: {c.get('claim_status')} (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected)"
     if scheme(c) == "v6" and c.get("claim_status") not in SELECTABLE_STATUS:
         return f"claim status {c.get('claim_status')} (only CONFIRMED or REPORTED stories can be selected)"
     fcv = c["scores"].get("factual_confidence")

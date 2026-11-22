@@ -21,9 +21,9 @@ from urllib.parse import urlparse
 
 LEVELS = ["UNVERIFIED", "LOW", "MEDIUM", "MEDIUM-HIGH", "HIGH"]
 RISKS = ["high", "low"]
-KINDS = ["primary", "news", "reference", "blog", "forum", "user-edited"]
+KINDS = ["primary", "news", "reference", "expert", "blog", "forum", "user-edited"]
 ACCESS = ["opened", "search-index", "secondary"]
-REPUTABLE = {"primary", "news", "reference"}       # blogs, forums and user-edited wikis never count as reputable
+REPUTABLE = {"primary", "news", "reference", "expert"}   # expert = a named independent expert's own statement       # blogs, forums and user-edited wikis never count as reputable
 UNUSABLE_STATUS = {"RUMOR", "UNVERIFIED", "SPECULATION", "SPECULATIVE", "DISPUTED"}
 REQUIRED_LEVEL = {"high": "MEDIUM-HIGH", "low": "MEDIUM"}
 CURRENT_DAYS = 7
@@ -212,7 +212,49 @@ def is_extraordinary_financial(text: str) -> bool:
     return any(_re.search(p, t) for p in _FINANCIAL)
 
 
-def gate(claim: dict, package_date: str) -> list[str]:
+# V7 (from 22 Nov 2026): extraordinary claims get heightened scrutiny whatever their tense. Famous problems solved, AGI,
+# major medical breakthroughs, autonomous discoveries, historic firsts, billion-dollar events, security breaches and
+# radical robotics capabilities.
+_EXTRAORDINARY = [
+    r"\b(prov(ed|es|en|ing)|proof|solv(ed|es|ing)|cracked|settle[sd]?)\b.{0,60}\b(hypothesis|conjecture|millennium prize|"
+    r"famous (math|maths|mathematical)? ?problem|open problem)",
+    r"\b(hypothesis|conjecture)\b.{0,40}\b(prov(ed|en)|solved|cracked|settled)\b",
+    r"\bartificial general intelligence\b", r"\bagi\b", r"\bsuperintelligen",
+    r"\bcure[sd]?\b", r"\breverse[sd]? (ag(e|ing)|alzheimer|paralysis|blindness)", r"\bmedical breakthrough",
+    r"\b(discover(ed|s|y)|invent(ed|s))\b.{0,40}\b(on its own|by itself|autonomously|without humans)",
+    r"\bautonomous(ly)? (scientific )?discover",
+    r"\b(world'?s first|first[- ]ever|historic first|for the first time (ever|in history))\b",
+    r"\bbillions?\b", r"\$\s?\d+(\.\d+)?\s?(bn|b)\b",
+    r"\b(data )?breach(ed|es)?\b", r"\bhack(ed|ers?)\b", r"\bransomware\b", r"\bzero[- ]day\b",
+    r"\bactively exploited\b", r"\b(millions|billions) of (records|accounts|users'? data)",
+    r"\bhumanoid\b.{0,60}\b(fully autonomous|without (any )?teleoperation|any task|household chores)",
+]
+
+
+def is_extraordinary(text: str) -> bool:
+    import re as _re
+    t = text.lower()
+    return any(_re.search(p, t) for p in _EXTRAORDINARY)
+
+
+def extraordinary_problems(claim: dict) -> list[str]:
+    """V7: an extraordinary claim needs the primary source opened AND independent confirmation opened directly (a news
+    report or an independent expert's statement, never the claimant's own repository or a search snippet). A GitHub
+    repository or a proof checker shows that code exists or compiles, not that the claim is true."""
+    items = claim.get("evidence") or []
+    cid = claim.get("id", "?")
+    p = []
+    if not any(_kind(it) == "primary" and (it.get("access") == "opened" or it.get("authenticated")) for it in items):
+        p.append(f"{cid} is an extraordinary claim: open the primary source directly (search snippets are not enough)")
+    indep = [it for it in items if _kind(it) in ("news", "reference", "expert") and it.get("access") == "opened"
+             and "github.com" not in str(it.get("url", "")) and it.get("date")]
+    if not indep:
+        p.append(f"{cid} is an extraordinary claim: it needs independent confirmation opened directly (independent "
+                 "experts or credible reporting), not only the claimant's material or search excerpts")
+    return p
+
+
+def gate(claim: dict, package_date: str, extraordinary_rule: bool = False) -> list[str]:
     """Reasons this script claim blocks recording (empty = it passes)."""
     cid = claim.get("id", "?")
     if claim.get("risk") not in RISKS + [None]:
@@ -227,4 +269,6 @@ def gate(claim: dict, package_date: str) -> list[str]:
         reasons.append(f"{cid} ({risk}-risk) is {lv['level']} ({lv['why']}); needs {need}: {claim.get('text', '')}")
     if risk == "high" and at_least(lv["level"], need) and lv["level"] != "HIGH" and not _current(claim.get("evidence") or [], package_date):
         reasons.append(f"{cid} is time-sensitive but no corroborating report is dated within {CURRENT_DAYS} days of {package_date}")
+    if extraordinary_rule and (claim.get("extraordinary") or is_extraordinary(claim.get("text", ""))):
+        reasons += extraordinary_problems(claim)
     return reasons

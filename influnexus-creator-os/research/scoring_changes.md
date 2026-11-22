@@ -27,3 +27,16 @@ comments and follows. Goal changed to 150,000 Instagram followers in four months
 - Delivery trimmed to eight items; finalists, hooks, variants and the gate go to creative.md and research.json.
 - `creatoros learn`: account-median comparisons by hook type, topic, pillar and format, three reels minimum per group;
   reports that Instagram analytics are not connected. No data yet, so the rubric weights are unchanged by data.
+
+## 2026-11-22 (evening): V7 (accepted from 2026-11-22, required from 2026-11-23; v6 never became mandatory)
+Why: the creator's V7 brief. The v6 trial chose a Claude-assisted Riemann Hypothesis proof: technically impressive, but not
+a story most viewers can use, and its key endorsement was read only through search snippets.
+- Virality model: broad relevance 20, surprise 15, usefulness 15, social momentum 15 (observed evidence only), visual 10,
+  consequence 10, discussion 10, timeliness 5. Verification is an eligibility gate: only CONFIRMED or INDEPENDENTLY REPORTED.
+- Extraordinary claims (famous problems, AGI, medical breakthroughs, autonomous discoveries, historic firsts, billions,
+  breaches, radical robotics): primary source and independent confirmation both opened; GitHub and snippets never count;
+  a scrutiny record is required. Applied to V7 packages only (historical packages keep their rule).
+- 30-40 s (40 hard), 70-90 words at 140 wpm plus pauses; at least 5 hooks on six criteria, 3+ approaches; ten script checks;
+  practical takeaway (UNKNOWN rather than invented); audience check; story history (story_id, company, event_date).
+- Delivery: seven sections. Goal: 100,000 followers in 60 days from 2026-11-22, weekly checkpoints. Learning adds script
+  length bands and posting hour.

@@ -24,8 +24,8 @@ from 2026-11-20. Always pass the `run_id` from `creatoros runlog start` to `crea
 
 | They type | Do this |
 |---|---|
-| **TODAY'S REEL SCRIPT** | Same as "Script for today" below, delivered in the v6 format (`today.md`: story, why selected, verified facts and sources, script, duration, opening visual, caption, hashtags). Do not ask the creator to pick a topic. |
-| **REEL SCRIPT: [TOPIC]** | Research that exact topic (why now, what happened, what people discuss, what is surprising, what viewers may misunderstand, why share), verify it to RUNBOOK step 2, `creatoros switch` if today already has a package, write a v6 package (from 2026-11-23; v5 before), `creatoros package`, return `creatoros today`. Gaming: label the release type (original release, re-release, remaster, remake, mod, rumour, official announcement, launch). |
+| **TODAY'S REEL SCRIPT** | Same as "Script for today" below, delivered in the V7 format (`today.md`: story, why this story, script, caption, sources, fact-check notes, recording guidance). Do not ask the creator to pick a topic. |
+| **REEL SCRIPT: [TOPIC]** | Research that exact topic (why now, what happened, what people discuss, what is surprising, what viewers may misunderstand, why share), verify it to RUNBOOK step 2, `creatoros switch` if today already has a package, write a V7 package (`scoring: v7`; required from 2026-11-23), `creatoros package`, return `creatoros today`. Gaming: label the release type (original release, re-release, remaster, remake, mod, rumour, official announcement, launch). |
 | **IMPROVE THIS SCRIPT: [SCRIPT]** | Critique and rewrite the opening, pacing, clarity, storytelling, retention and ending; keep every fact; return one improved script with the six-part quality score. If it is today's package, re-run `creatoros package`. |
 | **Script for today** | First run `creatoros runlog status`; if `problem` is true, open the reply with one line saying the 08:41 scheduled run was MISSED/FAILED/LATE/HOLD. Then: if `daily/TODAY/today.md` exists and says RECORDING READY: re-check any time-sensitive claim (prices, "no confirmed attacks", "first", etc.), then return the contents of `creatoros today`. Otherwise run the full daily workflow in `RUNBOOK.md`, then return `creatoros today`. |
 | **Give me 5 topics** | `creatoros topics -n 5` for today. If today has no research yet, run RUNBOOK steps 1-2 first. Show only verified (eligible) topics. |
@@ -43,8 +43,14 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
 ## Non-negotiables
 - LANGUAGE (creator's instruction, repeated 21 Nov 2026): every script and all platform copy are in 100% natural conversational
   English for a global audience (`config/settings.yaml` `language: english`). Hinglish only when the creator asks for it for a
-  specific script. The creator keeps their natural Indian accent. The v6 rules below otherwise apply.
-- v6 (from 2026-11-23; RUNBOOK "v6"): creator-led technology content, not a news summary. 15-25 candidates scored on the
+  specific script. The creator keeps their natural Indian accent. The V7 rules below otherwise apply.
+- V7 (accepted from 2026-11-22, required from 2026-11-23; RUNBOOK "V7"): one story a day, the strongest verified one
+  people can use or share; a 20-30 story pool scored on the V7 virality model (verification is an eligibility gate: only
+  CONFIRMED or INDEPENDENTLY REPORTED stories); extraordinary claims (famous problems solved, AGI, medical breakthroughs,
+  historic firsts, billion-dollar events, breaches, radical robotics) need the primary source and independent confirmation
+  both opened, never a GitHub repo or a snippet; 30-40 s (40 hard), about 70-90 words at a natural pace; at least 5 hooks;
+  ten script checks; story history with company and event date; a seven-section brief with no editing plan.
+- v6 (accepted on 2026-11-22 only, superseded by V7): creator-led technology content, not a news summary. 15-25 candidates scored on the
   ten-part v6 rubric with a claim status (CONFIRMED, REPORTED, CLAIMED, SPECULATIVE, UNVERIFIED; only CONFIRMED or REPORTED
   stories win); five finalists with five hooks each (one per approach, no generic openings); three script variants
   (curiosity, practical, consequences), one chosen; a visual plan with no invented demos; duration estimated at a natural
@@ -65,9 +71,9 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
 - Never invent quotes, benchmarks, specs, prices, dates, URLs, engagement numbers, creator rankings or analytics. Unobserved = UNKNOWN.
 - If a source or platform cannot be opened, say so; never claim to have watched a video or opened a blocked page.
 - Viral potential scores are editorial judgements, not view predictions. Never promise growth.
-- Goal (from 22 Nov 2026): 150,000 Instagram followers in four months (120 days from 2026-11-22), one reel a day; an ambitious
-  target, not a guarantee (it replaced 100,000 in 60 days). Instagram analytics are not connected: performance comes only from
-  numbers the creator gives (`creatoros metrics-add`), and `creatoros learn` says so. Packages use the RUNBOOK's v6 rules from 2026-11-23. Never fabricate engagement, follower counts or analytics; label evidence
+- Goal (V7, 22 Nov 2026): 100,000 followers within 60 days from 2026-11-22, one reel a day; a stretch goal, never promised
+  (it replaced the same day's 150,000-in-four-months plan). `creatoros growth` shows weekly checkpoints. Instagram analytics are not connected: performance comes only from
+  numbers the creator gives (`creatoros metrics-add`), and `creatoros learn` says so. Packages use the RUNBOOK's V7 rules from 2026-11-23. Never fabricate engagement, follower counts or analytics; label evidence
   DIRECTLY OBSERVED, SEARCH-INDEX, SECONDARY or NOT VERIFIED. Delivery is reported in stages (`creatoros runlog stages`):
   generated, saved, pushed, notification requested, accepted by the provider, received by the creator; accepted and received
   need evidence. Scheduled runs keep the main session thin and hand research to one fresh subagent (RUNBOOK "Cost control").

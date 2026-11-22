@@ -129,14 +129,18 @@ def test_claimed_statements_need_attribution_in_the_script():
 
 # --- package-level rules ---------------------------------------------------------------------------------------------
 
-def test_packages_from_23_nov_must_be_v6():
-    p = json.loads(config.path("daily", "2026-11-22", "package.json").read_text(encoding="utf-8"))
+def test_packages_from_23_nov_must_be_v7():
+    p = json.loads(config.path("daily", "2026-11-22", "previous_signal-blocks-screenshots-ai-assistants",
+                               "package.json").read_text(encoding="utf-8"))
     probs, _ = package.validate({**p, "date": "2026-11-23"})
-    assert probs and '"v6"' in probs[0]
+    assert probs and '"v7"' in probs[0]
+    probs, _ = package.validate({**trial(), "date": "2026-11-23"})
+    assert probs and '"v7"' in probs[0]
 
 
 def test_22_nov_v5_package_still_validates():
-    p = json.loads(config.path("daily", "2026-11-22", "package.json").read_text(encoding="utf-8"))
+    p = json.loads(config.path("daily", "2026-11-22", "previous_signal-blocks-screenshots-ai-assistants",
+                               "package.json").read_text(encoding="utf-8"))
     probs, info = package.validate(p)
     assert probs == [] and info["ready"]["status"] == "RECORDING READY"
 
@@ -169,9 +173,9 @@ def test_learning_compares_groups_with_the_account_median_and_needs_three_reels(
                for x in d["lessons"])
 
 
-def test_growth_goal_is_150k_in_120_days():
+def test_growth_goal_is_100k_in_60_days_from_22_nov():
     s = growth.settings()
-    assert (s["target_followers"], s["days"], s["start_date"]) == (150000, 120, "2026-11-22")
+    assert (s["target_followers"], s["days"], s["start_date"]) == (100000, 60, "2026-11-22")
 
 
 # --- the real production-equivalent trial (22 Nov 2026, fresh-context subagent, v6 rules) -----------------------------

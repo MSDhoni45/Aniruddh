@@ -66,7 +66,8 @@ def check_claim_v5(c: dict) -> list[str]:
     return p
 
 
-def readiness_v5(claims: list[dict], script: str, unresolved: list[str], package_date: str) -> dict:
+def readiness_v5(claims: list[dict], script: str, unresolved: list[str], package_date: str,
+                 extraordinary_rule: bool = False) -> dict:
     from . import evidence as ev
     problems = [x for c in claims for x in check_claim_v5(c)]
     if problems:
@@ -80,7 +81,7 @@ def readiness_v5(claims: list[dict], script: str, unresolved: list[str], package
             continue
         if c["status"] in NOT_USABLE:
             reasons.append(f"{c['id']} is {c['status']} but used in the script")
-        reasons += ev.gate(c, package_date)
+        reasons += ev.gate(c, package_date, extraordinary_rule)
         if c["status"] in NEEDS_ATTRIBUTION:
             phrase = c.get("script_attribution")
             if not phrase or phrase.lower() not in low:
