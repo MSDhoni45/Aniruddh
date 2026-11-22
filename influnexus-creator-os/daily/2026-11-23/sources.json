@@ -1,0 +1,22 @@
+{
+  "primary": [
+    {
+      "label": "Nature Communications full text (PubMed Central), 20 Nov 2026",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13788206/"
+    },
+    {
+      "label": "DOI 10.1038/s41467-026-79176-3",
+      "url": "https://doi.org/10.1038/s41467-026-79176-3"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "Anthropic model page listing newer models (9 Nov 2026)",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "Paper opened via the PubMed connector (full text); news and social sites blocked."
+  ]
+}
