@@ -1,0 +1,1284 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T14:40:00+00:00",
+  "research_window": {
+    "start_utc": "2026-11-21T14:22:00+00:00",
+    "end_utc": "2026-11-22T14:22:00+00:00",
+    "start_ist": "2026-11-21T19:52:00+05:30",
+    "end_ist": "2026-11-22T19:52:00+05:30",
+    "hours": 24
+  },
+  "candidates": [
+    {
+      "headline": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on certain older CPUs",
+      "published_at": "2026-11-22",
+      "original_source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+      "trend_score": 45.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 3,
+        "usefulness": 8,
+        "social_momentum": 1,
+        "visual": 4,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+          "title": "OBS Studio ships 33.0.3, fixing the Windows startup crash that 33.0.2 caused on ",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zero Data Retention after a Dragos study of prompt theft",
+      "published_at": "2026-11-22",
+      "original_source": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "trend_score": 69.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; openrouter.ai failed to open (WebFetch: getaddrinfo ENOTFOUND openrouter.ai) and the Dragos study was not opened; a security-breach claim is extraordinary and needs primary plus independent confirmation opened",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 8,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 8,
+        "discussion": 8,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+          "title": "OpenRouter off-boards three inference providers and pulls 125 endpoints from Zer",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
+      "published_at": "2026-11-21T19:24:32+00:00",
+      "original_source": "https://x.com/Tesla/status/2124222447855743019",
+      "trend_score": 63.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; held earlier today (holds.json): x.com, tesla.com and all news sites cannot be opened from this environment; not re-tried in this run",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 6,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 9,
+        "consequence": 6,
+        "discussion": 8,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://x.com/Tesla/status/2124222447855743019",
+          "title": "Tesla starts rolling out FSD (Supervised) v15 with Reality View",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Dutch data protection authority advises consumers not to buy AI camera glasses after testing six models",
+      "published_at": "2026-11-19",
+      "original_source": "https://nltimes.nl/node/93265",
+      "trend_score": 55.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); dated 19 Nov; nltimes.nl / autoriteitpersoonsgegevens.nl not opened",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 7,
+        "usefulness": 6,
+        "social_momentum": 1,
+        "visual": 6,
+        "consequence": 6,
+        "discussion": 8,
+        "timeliness": 1
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://nltimes.nl/node/93265",
+          "title": "Dutch data protection authority advises consumers not to buy AI camera glasses a",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Waymo files two recalls and pauses freeway rides after California DMV freeway action",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
+      "trend_score": 52.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; nbcnews.com not opened (news group BLOCKED in today's source audit); only search excerpts",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 6,
+        "usefulness": 3,
+        "social_momentum": 1,
+        "visual": 6,
+        "consequence": 7,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.nbcnews.com/news/us-news/waymo-robotaxis-banned-california-freeways-rcna609917",
+          "title": "Waymo files two recalls and pauses freeway rides after California DMV freeway ac",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-day in about 11 minutes",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+      "trend_score": 52.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; zero-day/AI-agent claim is extraordinary; securityweek.com and Amazon's report not opened; a GitHub advisory does not prove the AI-agent claim",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 9,
+        "usefulness": 4,
+        "social_momentum": 1,
+        "visual": 3,
+        "consequence": 8,
+        "discussion": 7,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+          "title": "Amazon: China-linked actor's AI agents found and exploited a MONAI Label zero-da",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Google makes Gemini Tasks agent free in six countries including India",
+      "published_at": "2026-11-17",
+      "original_source": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+      "trend_score": 52.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; androidpolice.com and blog.google not opened",
+      "scores": {
+        "broad_relevance": 8,
+        "surprise": 5,
+        "usefulness": 8,
+        "social_momentum": 1,
+        "visual": 5,
+        "consequence": 5,
+        "discussion": 5,
+        "timeliness": 0
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+          "title": "Google makes Gemini Tasks agent free in six countries including India",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+      "published_at": "2026-11-22",
+      "original_source": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
+      "trend_score": 51.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Not eligible: DISPUTED (autonomy/teleoperation unknown); source not opened",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 6,
+        "usefulness": 1,
+        "social_momentum": 3,
+        "visual": 9,
+        "consequence": 3,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622",
+          "title": "Viral clip shows Tesla Optimus carrying Musk's suitcases off a private jet",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "DISPUTED"
+    },
+    {
+      "headline": "Instagram lets users edit Stories within 15 minutes of posting",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
+      "trend_score": 50.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); dated 18 Nov (covered earlier this week); fastcompany.com and about.instagram.com not opened",
+      "scores": {
+        "broad_relevance": 8,
+        "surprise": 4,
+        "usefulness": 8,
+        "social_momentum": 1,
+        "visual": 6,
+        "consequence": 3,
+        "discussion": 5,
+        "timeliness": 1
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.fastcompany.com/91645660/instagram-edit-stories-feature-how-to-use-it",
+          "title": "Instagram lets users edit Stories within 15 minutes of posting",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+      "trend_score": 45.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; FT/TradingView not opened; a billion-dollar deal report is extraordinary financial and needs the primary opened (no primary exists: unsigned)",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 2,
+        "social_momentum": 1,
+        "visual": 6,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.tradingview.com/news/seekingalpha:71b3d28ff094b:0-amazon-nearing-7-5b-deal-to-buy-ai-start-up-decart-ft/",
+          "title": "Amazon reportedly nears a ~$7.5B deal to buy AI startup Decart (FT)",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by 2028, no binding commitment",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+      "trend_score": 44.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; www.npr.org failed to open (WebFetch: getaddrinfo ENOTFOUND www.npr.org)",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 4,
+        "usefulness": 2,
+        "social_momentum": 1,
+        "visual": 3,
+        "consequence": 7,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+          "title": "UN talks on AI 'killer robots' end with a mandate to elaborate possible rules by",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera face unlock",
+      "published_at": "2026-11-21",
+      "original_source": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
+      "trend_score": 44.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Not eligible: PRELIMINARY (user complaints, beta); macrumors.com not opened",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 5,
+        "usefulness": 3,
+        "social_momentum": 1,
+        "visual": 5,
+        "consequence": 3,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://macrumors.com/2026/11/21/top-stories-iphone-duo-face-unlock",
+          "title": "MacRumors roundup: iPhone Duo seam-crack complaints and iOS 27.3 beta camera fac",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "PRELIMINARY"
+    },
+    {
+      "headline": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant metadata",
+      "published_at": "2026-11-21",
+      "original_source": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "trend_score": 42.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; bleepingcomputer.com and Microsoft's advisory not opened (news BLOCKED); an actively exploited flaw is an extraordinary claim needing independent confirmation opened",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 5,
+        "social_momentum": 1,
+        "visual": 2,
+        "consequence": 6,
+        "discussion": 5,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+          "title": "Microsoft: attackers exploited an Entra Connect Health API flaw to read tenant m",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a robot gripper from a text description (Formnext)",
+      "published_at": "2026-11-21",
+      "original_source": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
+      "trend_score": 40.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Not eligible: COMPANY-CLAIMED trade-show demo seen only in aggregator excerpts; no source opened",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 6,
+        "usefulness": 2,
+        "social_momentum": 1,
+        "visual": 6,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
+          "title": "Siemens, AGIBOT, EOS and AM Solutions show an agentic AI workflow that designs a",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Replit launches Missions: agent swarms that work toward a goal within a budget",
+      "published_at": "2026-11-17",
+      "original_source": "https://replit.com/blog/introducing-replit-missions",
+      "trend_score": 36.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); dated 17 Nov; replit.com not opened",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 5,
+        "social_momentum": 1,
+        "visual": 4,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 0
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://replit.com/blog/introducing-replit-missions",
+          "title": "Replit launches Missions: agent swarms that work toward a goal within a budget",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "KEPCO says about 1.52M records of personal data leaked",
+      "published_at": "2026-11-22",
+      "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+      "trend_score": 34.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; news.sbs.co.kr not opened (news BLOCKED); breach is an extraordinary claim",
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 4,
+        "usefulness": 3,
+        "social_momentum": 1,
+        "visual": 2,
+        "consequence": 5,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+          "title": "KEPCO says about 1.52M records of personal data leaked",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Anthropic announces the close of its IPO and a concurrent private placement",
+      "published_at": "2026-11-20",
+      "original_source": "https://www.anthropic.com/news",
+      "trend_score": 33.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); dated 20 Nov; billion-dollar event needs independent confirmation opened (news BLOCKED); Anthropic conflict of interest",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 4,
+        "usefulness": 1,
+        "social_momentum": 1,
+        "visual": 2,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.anthropic.com/news",
+          "title": "Anthropic announces the close of its IPO and a concurrent private placement",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Musk says first Optimus deployments will be in mining and ore refining",
+      "published_at": "2026-11-22",
+      "original_source": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
+      "trend_score": 32.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Not eligible: a prediction seen only in a newsletter excerpt",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 4,
+        "usefulness": 1,
+        "social_momentum": 1,
+        "visual": 3,
+        "consequence": 3,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://hervecuviliez.substack.com/p/market-news-sunday-22-november-2026",
+          "title": "Musk says first Optimus deployments will be in mining and ore refining",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as default",
+      "published_at": "2026-11-20",
+      "original_source": "https://github.com/openai/codex/releases",
+      "trend_score": 30.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); published 20 Nov; the GPT-6.2 model launch itself (week of 15-21 Nov) could not be opened on openai.com",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 3,
+        "usefulness": 5,
+        "social_momentum": 1,
+        "visual": 2,
+        "consequence": 3,
+        "discussion": 3,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://github.com/openai/codex/releases",
+          "title": "OpenAI Codex CLI 0.171.0 adds GPT-6.2 Sol and Astra to its model catalog, Sol as",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "South Korea gives Kakao Pay and Toss access to resident registration card verification from 23 Nov",
+      "published_at": "2026-11-22",
+      "original_source": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+      "trend_score": 30.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7 rule 6b: every central claim needs one source opened directly; news.sbs.co.kr not opened (news BLOCKED)",
+      "scores": {
+        "broad_relevance": 2,
+        "surprise": 3,
+        "usefulness": 4,
+        "social_momentum": 1,
+        "visual": 2,
+        "consequence": 4,
+        "discussion": 3,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008857683",
+          "title": "South Korea gives Kakao Pay and Toss access to resident registration card verifi",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "US BIS interim rule: licences for advanced AI chips to five countries and for remote access by China-headquartered firms",
+      "published_at": "2026-11-16",
+      "original_source": "https://www.gtlaw.com/de/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+      "trend_score": 30.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); dated 16 Nov; bis.gov / federalregister.gov not opened",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 4,
+        "usefulness": 1,
+        "social_momentum": 1,
+        "visual": 2,
+        "consequence": 6,
+        "discussion": 5,
+        "timeliness": 0
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://www.gtlaw.com/de/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+          "title": "US BIS interim rule: licences for advanced AI chips to five countries and for re",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterprise Admin Console sign-in",
+      "published_at": "2026-11-20",
+      "original_source": "https://github.com/anthropics/claude-code/releases",
+      "trend_score": 27.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Outside the 24-hour window (and the release timing is before the run window); published 20 Nov, before 2026-11-21T14:22Z; also developer-only and an Anthropic product (disclosure conflict)",
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 3,
+        "usefulness": 5,
+        "social_momentum": 1,
+        "visual": 3,
+        "consequence": 2,
+        "discussion": 2,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://github.com/anthropics/claude-code/releases",
+          "title": "Claude Code v2.1.330 adds 'easel', a built-in mod that draws charts, and Enterpr",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "South Korea's FSS deploys an AI reading system for illegal private loan contract applications",
+      "published_at": "2026-11-22",
+      "original_source": "https://aienews.org/digest/2026-11-22/",
+      "trend_score": 25.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: Not eligible: digest excerpt only; no primary or independent source opened",
+      "scores": {
+        "broad_relevance": 2,
+        "surprise": 3,
+        "usefulness": 3,
+        "social_momentum": 1,
+        "visual": 1,
+        "consequence": 3,
+        "discussion": 2,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": []
+      },
+      "signals": [
+        {
+          "platform": "news",
+          "url": "https://aienews.org/digest/2026-11-22/",
+          "title": "South Korea's FSS deploys an AI reading system for illegal private loan contract",
+          "retrieved_at": "2026-11-22T14:40:00+00:00",
+          "access": "SEARCH-INDEX",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    }
+  ],
+  "hooks": [
+    {
+      "text": "Did OBS crash on your Windows PC after updating this week? There's a fix.",
+      "approach": "practical discovery",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 7,
+      "specificity": 8,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 49,
+      "eligible": true
+    },
+    {
+      "text": "An OBS update was crashing some older PCs. Here's the fix.",
+      "approach": "important warning",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 6,
+      "specificity": 7,
+      "emotional": 6,
+      "comprehension": 9,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "If you stream on an older PC, check your OBS version today.",
+      "approach": "important warning",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 6,
+      "specificity": 6,
+      "emotional": 5,
+      "comprehension": 8,
+      "total": 41,
+      "eligible": true
+    },
+    {
+      "text": "OBS fixed one problem and created another. Then fixed that too.",
+      "approach": "contradiction",
+      "accuracy": 8,
+      "clarity": 7,
+      "curiosity": 8,
+      "specificity": 5,
+      "emotional": 6,
+      "comprehension": 7,
+      "total": 41,
+      "eligible": true
+    },
+    {
+      "text": "OBS just shipped two updates in three days.",
+      "approach": "major product reveal",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 5,
+      "specificity": 7,
+      "emotional": 3,
+      "comprehension": 8,
+      "total": 40,
+      "eligible": true
+    },
+    {
+      "text": "OBS broke millions of streams this week.",
+      "approach": "unexpected consequence",
+      "accuracy": 2,
+      "clarity": 8,
+      "curiosity": 9,
+      "specificity": 5,
+      "emotional": 9,
+      "comprehension": 8,
+      "total": 41,
+      "eligible": false
+    }
+  ],
+  "backups": [],
+  "limitations": [
+    "Source audit: x, reddit, youtube, instagram, linkedin, google_trends and news BLOCKED; primary PARTIAL (anthropic.com and github.com open).",
+    "openrouter.ai and www.npr.org failed in WebFetch with getaddrinfo ENOTFOUND.",
+    "All social engagement UNKNOWN.",
+    "E2E TEST package: written to daily/2026-11-22/e2e_test/ only."
+  ],
+  "source_audit": {
+    "checked_at_utc": "2026-11-22T14:22:07+00:00",
+    "groups": {
+      "x": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "needs_credentials": []
+      },
+      "reddit": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "needs_credentials": []
+      },
+      "youtube": {
+        "status": "BLOCKED",
+        "reachable": [
+          "www.googleapis.com"
+        ],
+        "blocked": [
+          "www.youtube.com"
+        ],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "needs_credentials": []
+      },
+      "linkedin": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.linkedin.com"
+        ],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "trends.google.com"
+        ],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "PARTIAL",
+        "reachable": [
+          "www.anthropic.com",
+          "github.com"
+        ],
+        "blocked": [
+          "openai.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co"
+        ],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "BLOCKED",
+        "reachable": [],
+        "blocked": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": false,
+        "error": "URLError: Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)"
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  },
+  "script_checks": {
+    "hook_clarity": {
+      "pass": true,
+      "why": "Names the app, the symptom and the promise of a fix in one line."
+    },
+    "factual_accuracy": {
+      "pass": true,
+      "why": "Every sentence maps to c1-c3, each backed by an opened OBS release page."
+    },
+    "natural_delivery": {
+      "pass": true,
+      "why": "Short spoken sentences; version numbers read naturally."
+    },
+    "narrative_coherence": {
+      "pass": true,
+      "why": "One thread: update, crash, workaround, fix, action."
+    },
+    "audience_relevance": {
+      "pass": true,
+      "why": "Streamers and creators use OBS; the fix is actionable."
+    },
+    "practical_takeaway": {
+      "pass": true,
+      "why": "Clear action: update to 33.0.3 if you stream or record on an older PC."
+    },
+    "ending_quality": {
+      "pass": true,
+      "why": "A short question that invites people to share whether they were hit."
+    },
+    "no_redundancy": {
+      "pass": true,
+      "why": "Each line adds a new step of the story."
+    },
+    "no_jargon": {
+      "pass": true,
+      "why": "Only 'CPU' and 'processor', both familiar to creators."
+    },
+    "no_unsupported_implications": {
+      "pass": true,
+      "why": "Says 'certain older processors' and 'could crash', never that everyone was affected."
+    }
+  },
+  "audience_check": {
+    "why_care_today": "The fix shipped today, two days after a buggy update.",
+    "affects_life_or_work": "Creators who stream or record with OBS depend on it opening.",
+    "can_they_use_it": "Yes: update to 33.0.3 for free.",
+    "surprising": "Mildly: a hotfix needed its own hotfix.",
+    "demonstrable": "The release page and version number can be shown on screen.",
+    "clear_consequence": "Update and the startup crash on older CPUs should be gone.",
+    "would_share": "Creators may send it to a friend who streams on an old PC.",
+    "right_audience": "Yes: creator-tech is a core audience for this account."
+  },
+  "practical_takeaway": {
+    "who_can_use": "Anyone who streams or records with OBS Studio, especially on an older Windows PC",
+    "what_it_does": "33.0.3 fixes the startup crash that 33.0.2 caused on certain older CPUs",
+    "availability": "Released 22 Nov 2026 on the OBS Project's GitHub releases page (Windows, macOS, Ubuntu builds)",
+    "price": "Free (OBS Studio is free and open-source software, GPL-2.0)",
+    "difference": "33.0.2 users on affected CPUs no longer need to roll back to 33.0.1 or 32.2.2",
+    "limitations": "Which CPUs are affected is not specified; the fix note names Windows",
+    "why_it_matters": "A crash at startup can cost a creator a stream or a recording session"
+  },
+  "scrutiny": null,
+  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7 virality model unchanged.",
+  "story": {
+    "story_id": "2026-11-22-obs-33-0-3-older-cpu-crash-fix",
+    "company": "OBS Project",
+    "event_date": "2026-11-22",
+    "announced_at": "22 November 2026 (GitHub release 33.0.3; 33.0.2 on 20 Nov)"
+  }
+}

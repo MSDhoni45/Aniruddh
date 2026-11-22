@@ -1,0 +1,23 @@
+{
+  "primary": [
+    {
+      "label": "OBS Studio 33.0.3 release (GitHub, 22 Nov 2026, opened)",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3"
+    },
+    {
+      "label": "OBS Studio 33.0.2 release (GitHub, 20 Nov 2026, opened)",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "obsproject/obs-studio repository (opened)",
+      "url": "https://github.com/obsproject/obs-studio"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "x.com blocked: no social signal observed; engagement UNKNOWN.",
+    "News sites, openrouter.ai and npr.org could not be opened."
+  ]
+}
