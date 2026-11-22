@@ -736,11 +736,13 @@ def render_today_v7(p: dict, info: dict) -> str:
             if isinstance(it, dict) and it["url"] not in seen:
                 seen.add(it["url"])
                 L.append(f"- [{ev.outlet(it)}]({it['url']}) ({it.get('kind', 'source')}, {it.get('date') or 'date unknown'}, "
-                         f"{'opened' if it.get('access') == 'opened' else 'not opened: ' + str(it.get('access'))})")
+                         + ("OPENED DIRECTLY" if it.get("access") == "opened" else
+                            "search excerpt only: not opened, not independent verification") + ")")
     L += ["", "## 6. Fact-check notes", "", "**In the script (status, evidence level):**"]
     for c in used:
-        lv = ev.level(c)["level"] if ver.is_tiered(used) else c.get("confidence", "")
-        L.append(f"- {c['text']} ({c['status']}, {lv})")
+        lv = ev.level(c, strict=True)["level"] if ver.is_tiered(used) else c.get("confidence", "")
+        n = len(ev.opened_sources(c))
+        L.append(f"- {c['text']} ({c['status']}, {lv}; {n} source(s) opened directly; search excerpts are leads only)")
     if p.get("uncertainties"):
         L += ["", "**Important uncertainties:**"] + [f"- {u}" for u in p["uncertainties"]]
     left = [c for c in claims if not c.get("in_script")] + [{"text": x} for x in p.get("excluded_claims", [])]

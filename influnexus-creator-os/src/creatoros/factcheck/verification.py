@@ -74,7 +74,7 @@ def readiness_v5(claims: list[dict], script: str, unresolved: list[str], package
         return {"status": HOLD, "problems": problems, "reasons": ["claim table incomplete"]}
     low, reasons = script.lower(), []
     for c in claims:
-        c["level"] = ev.level(c)["level"]
+        c["level"] = ev.level(c, strict=extraordinary_rule)["level"]
         rk = ev.effective_risk(c, package_date)
         c["risk_effective"], c["risk_why"] = rk["risk"], rk["why"]
         if not c["in_script"]:

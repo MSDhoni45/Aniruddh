@@ -118,6 +118,12 @@ Optimise for qualified growth: shares, saves, watch time, completion, replays, c
    benchmark is not independent validation, a demo is not general capability, a press release is not commercial success, a
    proof checker does not validate every assumption. Do not rely on snippets for critical claims; say when a source could not
    be opened.
+6b. **Search excerpts are leads, never verification (22 Nov, V7 final):** in V7 packages a source seen only in search
+   results (`access: search-index` or `secondary`) never counts as independent corroboration, and every central claim in
+   the script needs at least one source OPENED directly. The brief labels each source OPENED DIRECTLY or "search excerpt
+   only". From this cloud environment only anthropic.com and github.com (via WebFetch) open, so most stories will be held
+   until the creator widens the environment's network access (see `docs/V7_MIGRATION.md`, "Blockers"). If nothing passes,
+   deliver no script and say so; never relabel an excerpt as opened.
 7. **Extraordinary claims** (famous problems solved, AGI, major medical breakthroughs, autonomous discoveries, historic firsts,
    billion-dollar events, security breaches, radical robotics) are detected automatically (`evidence.is_extraordinary`, or
    `extraordinary: true`). In the script they need the primary source OPENED and independent confirmation OPENED (credible

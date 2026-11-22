@@ -145,7 +145,7 @@ def main(argv=None) -> int:
         old = read_json(f)
         dst = d / f"previous_{old['slug']}"
         dst.mkdir(exist_ok=True)
-        for name in ("package.json", "package.md", "today.md", "recording.md", "script.txt", "captions.txt", "claims.md", "sources.json"):
+        for name in ("package.json", "package.md", "today.md", "recording.md", "script.txt", "captions.txt", "claims.md", "sources.json", "creative.md", "research.json"):
             if (d / name).exists():
                 shutil.move(str(d / name), str(dst / name))
         try:

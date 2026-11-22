@@ -59,10 +59,13 @@ def item_problems(item: dict, i: int) -> list[str]:
     return p
 
 
-def independent_reputable(items: list[dict], exclude_primary: bool = True) -> list[str]:
-    """Distinct reputable outlets. A copy of another report (syndicated_from) counts as its original, once."""
+def independent_reputable(items: list[dict], exclude_primary: bool = True, opened_only: bool = False) -> list[str]:
+    """Distinct reputable outlets. A copy of another report (syndicated_from) counts as its original, once.
+    opened_only (V7): a report seen only as a search excerpt is a lead, never independent verification."""
     seen = set()
     for it in items:
+        if opened_only and it.get("access") != "opened":
+            continue
         k = _kind(it)
         if k not in REPUTABLE or (exclude_primary and k == "primary"):
             continue
@@ -74,8 +77,9 @@ def independent_reputable(items: list[dict], exclude_primary: bool = True) -> li
     return sorted(seen)
 
 
-def level(claim: dict) -> dict:
-    """Compute the evidence level and say why."""
+def level(claim: dict, strict: bool = False) -> dict:
+    """Compute the evidence level and say why. strict (V7): only sources opened directly count as independent
+    corroboration; search excerpts are recorded as leads and never raise a level."""
     items = claim.get("evidence") or []
     if claim.get("status") in UNUSABLE_STATUS:
         return {"level": "UNVERIFIED", "why": f"status {claim['status']}"}
@@ -84,7 +88,7 @@ def level(claim: dict) -> dict:
     if not items:
         return {"level": "UNVERIFIED", "why": "no traceable evidence"}
     prim = [it for it in items if _kind(it) == "primary"]
-    indep = independent_reputable(items)
+    indep = independent_reputable(items, opened_only=strict)
     if any(it.get("access") == "opened" or it.get("authenticated") for it in prim):
         return {"level": "HIGH", "why": "primary source opened directly", "independent": indep}
     if any(it.get("access") == "search-index" and it.get("date") for it in prim) and len(indep) >= 2:
@@ -254,13 +258,19 @@ def extraordinary_problems(claim: dict) -> list[str]:
     return p
 
 
+def opened_sources(claim: dict) -> list[str]:
+    return [it["url"] for it in claim.get("evidence") or [] if it.get("access") == "opened" or it.get("authenticated")]
+
+
 def gate(claim: dict, package_date: str, extraordinary_rule: bool = False) -> list[str]:
-    """Reasons this script claim blocks recording (empty = it passes)."""
+    """Reasons this script claim blocks recording (empty = it passes). extraordinary_rule = the V7 rules: extraordinary
+    claims need opened primary and independent confirmation; every central claim needs at least one source opened
+    directly; search excerpts never count as independent verification."""
     cid = claim.get("id", "?")
     if claim.get("risk") not in RISKS + [None]:
         return [f"{cid}: risk, if declared, must be 'high' (time-sensitive) or 'low' (historical)"]
     risk = effective_risk(claim, package_date)["risk"]
-    lv = level(claim)
+    lv = level(claim, strict=extraordinary_rule)
     reasons = []
     need = REQUIRED_LEVEL[risk]
     if risk == "high" and (claim.get("financial") or is_extraordinary_financial(claim.get("text", ""))):
@@ -269,6 +279,9 @@ def gate(claim: dict, package_date: str, extraordinary_rule: bool = False) -> li
         reasons.append(f"{cid} ({risk}-risk) is {lv['level']} ({lv['why']}); needs {need}: {claim.get('text', '')}")
     if risk == "high" and at_least(lv["level"], need) and lv["level"] != "HIGH" and not _current(claim.get("evidence") or [], package_date):
         reasons.append(f"{cid} is time-sensitive but no corroborating report is dated within {CURRENT_DAYS} days of {package_date}")
+    if extraordinary_rule and claim.get("central", True) and not opened_sources(claim):
+        reasons.append(f"{cid} is a critical claim supported only by search excerpts; open at least one source "
+                       "directly (V7: never rely on snippets for critical claims): " + claim.get("text", ""))
     if extraordinary_rule and (claim.get("extraordinary") or is_extraordinary(claim.get("text", ""))):
         reasons += extraordinary_problems(claim)
     return reasons

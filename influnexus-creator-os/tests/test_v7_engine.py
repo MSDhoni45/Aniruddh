@@ -197,8 +197,30 @@ def v7pkg():
     return json.loads((Path(__file__).parent / "fixtures" / "v7_2026-11-22" / "package.json").read_text(encoding="utf-8"))
 
 
-def test_v7_package_is_ready_and_renders_seven_sections(tmp_path):
-    p = v7pkg()
+def test_the_tesla_package_is_held_because_every_source_was_a_search_excerpt(monkeypatch):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])
+    probs, info = package.validate(v7pkg())
+    assert info["ready"]["status"] != "RECORDING READY"
+    assert sum("supported only by search excerpts" in r for r in info["ready"]["reasons"]) == 4
+
+
+def opened_copy():
+    """Synthetic: the same package as if every source had been opened (tests rendering only, not a real record)."""
+    p = json.loads(json.dumps(v7pkg()))
+    for c in p["factcheck"]["claims"]:
+        for it in c["evidence"]:
+            it["access"] = "opened"
+    return p
+
+
+def test_search_excerpts_never_raise_a_v7_level():
+    c = v7pkg()["factcheck"]["claims"][0]
+    assert ev.level(c)["level"] == "MEDIUM-HIGH" and ev.level(c, strict=True)["level"] == "LOW"
+
+
+def test_v7_package_is_ready_and_renders_seven_sections(tmp_path, monkeypatch):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])   # independent of today's real holds
+    p = opened_copy()
     probs, info = package.validate(p)
     assert probs == [] and info["ready"]["status"] == "RECORDING READY"
     assert 30 <= info["lint"]["seconds"] <= 40 and 70 <= info["lint"]["words"] <= 90
@@ -213,8 +235,9 @@ def test_v7_package_is_ready_and_renders_seven_sections(tmp_path):
     assert rj["story"]["company"] == "Tesla" and len(rj["hooks"]) >= 5
 
 
-def test_v7_package_rules_refuse_bad_changes():
-    base = v7pkg()
+def test_v7_package_rules_refuse_bad_changes(monkeypatch):
+    monkeypatch.setattr(package, "holds_for", lambda date: [])
+    base = opened_copy()
     long = base["script"].replace("Would seeing", "Honestly, after all of that, and thinking about it carefully, would seeing")
     assert any("hard maximum" in x for x in package.validate({**base, "script": long})[0])
     assert any("why_this_story" in x for x in package.validate({**base, "why_this_story": "word " * 120})[0])

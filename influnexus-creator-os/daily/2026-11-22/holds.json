@@ -5,5 +5,12 @@
     "reason": "V7 extraordinary-claims rule: a famous mathematical problem solved needs the primary source and independent confirmation both opened; only the claimant's GitHub repository was opened (a repository or proof checker is not proof every assumption is valid) and the Lean maintainers' endorsement was read only through search excerpts; also not a story most viewers can use",
     "archived": "held_riemann-hypothesis-lean-certified",
     "at_utc": "2026-11-22T14:09:45+00:00"
+  },
+  {
+    "topic": "Tesla starts rolling out FSD (Supervised) v15, whose driving AI now draws what it plans to do (Reality View)",
+    "slug": "tesla-fsd-v15-reality-view",
+    "reason": "V7: every critical claim (rollout, Reality View, arrows, 25x) is supported only by search excerpts; tesla.com, x.com and all news sites cannot be opened from this environment, so nothing could be verified directly",
+    "archived": "held_tesla-fsd-v15-reality-view",
+    "at_utc": "2026-11-22T14:20:52+00:00"
   }
 ]
