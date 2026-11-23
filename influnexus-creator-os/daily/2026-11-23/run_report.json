@@ -42,6 +42,50 @@
       "quality_gate": "PASS",
       "quality_total": 100,
       "validation_problems": []
+    },
+    "2026-11-23-scheduled-084156": {
+      "run_id": "2026-11-23-scheduled-084156",
+      "trigger": "scheduled",
+      "start_ist": "2026-11-23T08:41:56+05:30",
+      "end_ist": "2026-11-23T08:43:39+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3PP3XJnXqwcV8hAYH8",
+        "CLAUDE_CODE_CONTAINER_ID": "container_01TwuzHFrXeRSSJiMMp6zv78",
+        "cloud": true
+      },
+      "git_commit": "3894a51",
+      "research_window": {
+        "start_utc": "2026-11-19T19:00:04+00:00",
+        "end_utc": "2026-11-22T19:00:04+00:00",
+        "start_ist": "2026-11-20T00:30:04+05:30",
+        "end_ist": "2026-11-23T00:30:04+05:30",
+        "hours": 72
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "requested",
+        "channel": "push",
+        "receipt": "none available",
+        "at_ist": "2026-11-23T08:43:39+05:30"
+      },
+      "errors": [],
+      "warnings": [
+        "competitor database not refreshed: social profile pages blocked"
+      ],
+      "note": "Delivered the existing V8 package (manual run 00:30 IST); time-sensitive claims re-checked; weekly review + recommendations",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Study: popular AI chatbots often help with illegal requests, and help more for some users than others",
+      "candidates": 17,
+      "source_access": "Evidence levels: 4 HIGH. Claims with a source opened directly: 4 of 4.",
+      "fact_check": "PASS",
+      "word_count": 84,
+      "estimated_seconds": 38.1,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
     }
   }
 }
