@@ -1,0 +1,1139 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-23T20:05:00+00:00",
+  "research_window": {
+    "start_utc": "2026-11-22T20:01:32+00:00",
+    "end_utc": "2026-11-23T20:01:32+00:00",
+    "start_ist": "2026-11-23T01:31:32+05:30",
+    "end_ist": "2026-11-24T01:31:32+05:30",
+    "hours": 24
+  },
+  "candidates": [
+    {
+      "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+      "published_at": "2026-11-23T08:01:00+00:00",
+      "original_source": "https://www.producthunt.com/posts/motionflare",
+      "trend_score": 57.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 7,
+        "social_momentum": 4,
+        "visual": 9,
+        "consequence": 3,
+        "discussion": 5,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.producthunt.com/posts/motionflare"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://www.producthunt.com/posts/motionflare",
+          "title": "Product Hunt launch (connector)",
+          "retrieved_at": "2026-11-23T20:05:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "observed",
+            "points": 208
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chips",
+      "published_at": "2026-11-23",
+      "original_source": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+      "trend_score": 51.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 7,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov)",
+      "published_at": "2026-11-23",
+      "original_source": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/",
+      "trend_score": 50.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 7,
+        "discussion": 6,
+        "timeliness": 4
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects",
+      "published_at": "2026-11-23",
+      "original_source": "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/",
+      "trend_score": 49.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 7,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "OpenAI chief scientist Jakub Pachocki proposes industry-wide capability thresholds until safety monitoring catches up; Altman endorses",
+      "published_at": "2026-11-22",
+      "original_source": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
+      "trend_score": 49.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 8,
+        "discussion": 8,
+        "timeliness": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "CrowdStrike to acquire Zscaler in ~$43.9B all-stock deal",
+      "published_at": "2026-11-23",
+      "original_source": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+      "trend_score": 48.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 7,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "GTA VI patch 1.002.002 rolls out in phases on 23 Nov fixing crashes, weather and autosave bugs",
+      "published_at": "2026-11-23",
+      "original_source": "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/",
+      "trend_score": 46.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 3,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 2,
+        "discussion": 5,
+        "timeliness": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M",
+      "published_at": "2026-11-23",
+      "original_source": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "trend_score": 42.5,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 5,
+        "discussion": 5,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov",
+      "published_at": "2026-11-23",
+      "original_source": "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch",
+      "trend_score": 41.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 4,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 4,
+        "discussion": 3,
+        "timeliness": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
+      "published_at": "2026-11-23",
+      "original_source": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+      "trend_score": 70.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta",
+      "scores": {
+        "broad_relevance": 8,
+        "surprise": 7,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 8,
+        "consequence": 7,
+        "discussion": 8,
+        "timeliness": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+      "published_at": "2026-11-23",
+      "original_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+      "trend_score": 64.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 9,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 8,
+        "discussion": 9,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam",
+      "published_at": "2026-11-22",
+      "original_source": "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/",
+      "trend_score": 62.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: politics (ministerial resignation) excluded by V8 positioning",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 8,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 6,
+        "discussion": 9,
+        "timeliness": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI",
+      "published_at": "2026-11-23",
+      "original_source": "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk",
+      "trend_score": 57.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); superintelligence claim is extraordinary (primary and independent confirmation must be opened); x.com blocked",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 7,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 8,
+        "discussion": 9,
+        "timeliness": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tides",
+      "published_at": "2026-11-23",
+      "original_source": "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/",
+      "trend_score": 56.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); the Sunday announcement could not be found again and is easily confused with the 18 Nov pause",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 6,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sales",
+      "published_at": "2026-11-23",
+      "original_source": "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever",
+      "trend_score": 56.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: announcement date unknown",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 6,
+        "usefulness": 6,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "PRELIMINARY"
+    },
+    {
+      "headline": "Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home replaces Assistant on speakers",
+      "published_at": "2026-11-23",
+      "original_source": "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/",
+      "trend_score": 54.5,
+      "eligible": false,
+      "ineligible_reason": "rejected: announcement date unknown",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 5,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls",
+      "published_at": "2026-11-23",
+      "original_source": "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today",
+      "trend_score": 54.0,
+      "eligible": false,
+      "ineligible_reason": "verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected)",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 5,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform text styling",
+      "published_at": "2026-11-23",
+      "original_source": "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/",
+      "trend_score": 54.0,
+      "eligible": false,
+      "ineligible_reason": "evidence confidence LOW",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 4,
+        "usefulness": 7,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 3,
+        "discussion": 5,
+        "timeliness": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "PRELIMINARY"
+    },
+    {
+      "headline": "OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterprise",
+      "published_at": "2026-11-23",
+      "original_source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "trend_score": 53.0,
+      "eligible": false,
+      "ineligible_reason": "verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected)",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 4,
+        "usefulness": 6,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in simulation",
+      "published_at": "2026-11-18",
+      "original_source": "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html",
+      "trend_score": 47.5,
+      "eligible": false,
+      "ineligible_reason": "verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected)",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 8,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 6,
+        "discussion": 6,
+        "timeliness": 2
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid research platform",
+      "published_at": "2026-11-22",
+      "original_source": "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/",
+      "trend_score": 42.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: announcement date unknown",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 8,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in payments",
+      "published_at": "2026-11-23",
+      "original_source": "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/",
+      "trend_score": 37.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: announcement date unknown",
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 5,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 5,
+        "discussion": 4,
+        "timeliness": 5
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    }
+  ],
+  "hooks": [
+    {
+      "text": "Paste your website link, and this AI makes the launch video for you.",
+      "approach": "practical discovery",
+      "accuracy": 8,
+      "clarity": 9,
+      "curiosity": 9,
+      "specificity": 8,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 50,
+      "eligible": true
+    },
+    {
+      "text": "This AI turns any website into a launch video.",
+      "approach": "surprising capability",
+      "accuracy": 7,
+      "clarity": 9,
+      "curiosity": 8,
+      "specificity": 7,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 47,
+      "eligible": true
+    },
+    {
+      "text": "Need a product video but no editor?",
+      "approach": "practical discovery",
+      "accuracy": 8,
+      "clarity": 9,
+      "curiosity": 7,
+      "specificity": 6,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "One link in, one branded video out.",
+      "approach": "unusual demonstration",
+      "accuracy": 7,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 7,
+      "emotional": 6,
+      "comprehension": 8,
+      "total": 44,
+      "eligible": true
+    },
+    {
+      "text": "Your website already has everything for a video ad.",
+      "approach": "contradiction",
+      "accuracy": 7,
+      "clarity": 7,
+      "curiosity": 8,
+      "specificity": 6,
+      "emotional": 6,
+      "comprehension": 8,
+      "total": 42,
+      "eligible": true
+    },
+    {
+      "text": "Monday's number-three launch on Product Hunt makes videos from links.",
+      "approach": "major product reveal",
+      "accuracy": 9,
+      "clarity": 7,
+      "curiosity": 6,
+      "specificity": 8,
+      "emotional": 4,
+      "comprehension": 7,
+      "total": 41,
+      "eligible": true
+    },
+    {
+      "text": "Before you hire an editor, try this.",
+      "approach": "important warning",
+      "accuracy": 7,
+      "clarity": 8,
+      "curiosity": 7,
+      "specificity": 3,
+      "emotional": 6,
+      "comprehension": 9,
+      "total": 40,
+      "eligible": true
+    },
+    {
+      "text": "I found an AI that reads your website and directs your ad.",
+      "approach": "surprising capability",
+      "accuracy": 6,
+      "clarity": 7,
+      "curiosity": 8,
+      "specificity": 6,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 42,
+      "eligible": false
+    },
+    {
+      "text": "Small brands might not need a video editor for launches anymore.",
+      "approach": "unexpected consequence",
+      "accuracy": 5,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 5,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 41,
+      "eligible": false
+    },
+    {
+      "text": "This AI replaces video editors.",
+      "approach": "unexpected consequence",
+      "accuracy": 2,
+      "clarity": 9,
+      "curiosity": 8,
+      "specificity": 3,
+      "emotional": 8,
+      "comprehension": 9,
+      "total": 39,
+      "eligible": false
+    }
+  ],
+  "backups": [],
+  "limitations": [
+    "News, company and social sites blocked; Product Hunt read through its connector; anthropic.com and github.com reachable.",
+    "Tool not tested by me."
+  ],
+  "source_audit": {
+    "checked_at_utc": "2026-11-23T20:01:33+00:00",
+    "groups": {
+      "x": {
+        "status": "WORKING",
+        "reachable": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "api.twitter.com: needs X API bearer token"
+        ]
+      },
+      "reddit": {
+        "status": "WORKING",
+        "reachable": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "oauth.reddit.com: needs Reddit API app credentials"
+        ]
+      },
+      "youtube": {
+        "status": "WORKING",
+        "reachable": [
+          "www.youtube.com",
+          "www.googleapis.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "WORKING",
+        "reachable": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "graph.instagram.com: needs Instagram Graph API token"
+        ]
+      },
+      "linkedin": {
+        "status": "WORKING",
+        "reachable": [
+          "www.linkedin.com"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "WORKING",
+        "reachable": [
+          "trends.google.com"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "WORKING",
+        "reachable": [
+          "openai.com",
+          "www.anthropic.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co",
+          "github.com"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "WORKING",
+        "reachable": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": true,
+        "http": 404
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": true,
+        "http": 403
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": true,
+        "http": 200
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": true,
+        "http": 200
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": true,
+        "http": 200
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": true,
+        "http": 400
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": true,
+        "http": 200
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": true,
+        "http": 200
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": true,
+        "http": 403
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": true,
+        "http": 200
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": true,
+        "http": 200
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": true,
+        "http": 200
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": true,
+        "http": 429
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": true,
+        "http": 401
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": true,
+        "http": 200
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": true,
+        "http": 200
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  },
+  "selection_tiers": {
+    "best_discovered": {
+      "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
+      "score": 70.5,
+      "broad_relevance": 8
+    },
+    "best_verified": {
+      "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+      "score": 57.5,
+      "broad_relevance": 5
+    },
+    "best_ready": {
+      "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+      "score": 57.5,
+      "broad_relevance": 5
+    },
+    "blockers": [
+      {
+        "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
+        "score": 70.5,
+        "blocker": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta"
+      },
+      {
+        "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+        "score": 64.5,
+        "blocker": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal"
+      }
+    ],
+    "fallback": true
+  },
+  "script_checks": {
+    "hook_clarity": {
+      "pass": true,
+      "why": "Thirteen words that state exactly what the tool does."
+    },
+    "factual_accuracy": {
+      "pass": true,
+      "why": "Every claim maps to c1-c4 read directly from Product Hunt, attributed to the makers."
+    },
+    "natural_delivery": {
+      "pass": true,
+      "why": "Short spoken sentences, read aloud at a normal pace."
+    },
+    "narrative_coherence": {
+      "pass": true,
+      "why": "One idea: link in, video out."
+    },
+    "audience_relevance": {
+      "pass": true,
+      "why": "Creators and small brands need launch videos."
+    },
+    "practical_takeaway": {
+      "pass": true,
+      "why": "Try it on your own site before paying an editor."
+    },
+    "ending_quality": {
+      "pass": true,
+      "why": "Ends on a useful action, not a forced question."
+    },
+    "no_redundancy": {
+      "pass": true,
+      "why": "Each line adds a feature or a fact."
+    },
+    "no_jargon": {
+      "pass": true,
+      "why": "No technical terms beyond 4K."
+    },
+    "no_unsupported_implications": {
+      "pass": true,
+      "why": "Features are attributed to the makers; no claim it beats editors."
+    }
+  },
+  "audience_check": {
+    "why_care_today": "It launched on Monday and is free to try.",
+    "affects_life_or_work": "Anyone selling online needs videos.",
+    "can_they_use_it": "Yes, there's a free option on its website.",
+    "surprising": "It builds the video from your own site's content.",
+    "demonstrable": "You can record a real test on your own site.",
+    "clear_consequence": "Fewer barriers to making launch videos.",
+    "would_share": "Creators will send it to friends launching products.",
+    "right_audience": "Creators, marketers and founders we want to reach."
+  },
+  "practical_takeaway": {
+    "who_can_use": "Creators, marketers, founders, small businesses with a website",
+    "what_it_does": "Turns a website URL into a branded video (makers' description)",
+    "availability": "Live on its website since the 23 Nov launch",
+    "price": "Free option listed; paid pricing UNKNOWN",
+    "difference": "Uses the site's own screenshots, logo, colors and copy instead of templates (makers' claim)",
+    "limitations": "Untested quality; claims are the makers'",
+    "why_it_matters": "A launch video without an editor could save small brands time and money"
+  },
+  "scrutiny": null,
+  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7/V8 model unchanged.",
+  "story": {
+    "story_id": "2026-11-24-motionflare-website-to-launch-video",
+    "company": "Motionflare (small bootstrapped team)",
+    "event_date": "2026-11-23",
+    "announced_at": "23 November 2026 (Product Hunt launch, 00:01 PT)"
+  }
+}

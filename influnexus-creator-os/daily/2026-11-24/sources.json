@@ -1,0 +1,17 @@
+{
+  "primary": [
+    {
+      "label": "Product Hunt launch (23 Nov 2026)",
+      "url": "https://www.producthunt.com/posts/motionflare"
+    },
+    {
+      "label": "Product Hunt product profile",
+      "url": "https://www.producthunt.com/products/motionflare"
+    }
+  ],
+  "supporting": [],
+  "x_signals": [],
+  "access_limits": [
+    "Product Hunt read through its connector; news and social sites blocked."
+  ]
+}

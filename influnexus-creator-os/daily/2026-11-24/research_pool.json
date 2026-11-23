@@ -1,0 +1,1115 @@
+{
+ "window": {
+  "start_utc": "2026-11-22T19:55Z",
+  "end_utc": "2026-11-23T19:55Z",
+  "ist": "23 Nov 01:25 - 24 Nov 01:25"
+ },
+ "method": "WebSearch (extended+standard, ~35 queries); WebFetch attempted on 21 URLs - all failed; gh search for GitHub primaries. All evidence is SEARCH-INDEX unless stated. Scores are editorial judgements; social_momentum capped at 3 (no engagement observed).",
+ "excluded_already_covered": [
+  "Signal screenshot blocking",
+  "Riemann/Lean proof",
+  "Anthropic IPO",
+  "GAO chatbot tests",
+  "OBS 33.0.3",
+  "Nature Communications chatbot study"
+ ],
+ "candidates": [
+  {
+   "id": "walmart-muse",
+   "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
+   "category": "AI shopping / agentic commerce",
+   "source_url": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+   "published_utc": "2026-11-23 (The Verge original reportedly 11:00 UTC per search excerpt)",
+   "event_date": "2026-11-23 (Agent Gateway first unveiled 2026-10-21)",
+   "what_happened": "Muse can search Walmart deals, build a basket and complete checkout inside the conversation; first add-to-cart sends the shopper to Walmart to sign in and set up an Agent Profile with a spending limit.",
+   "who_confirmed": "The Verge (via search excerpts), Unite.AI, mlq.ai, Analytics Insight, Mezha, TechBuzz, Crypto Briefing - all SEARCH-INDEX; no Walmart/Meta primary located",
+   "what_it_does": "Agent-to-retailer checkout via Walmart's MCP-based Agent Gateway; card saved in Walmart account; Walmart prices and return policy",
+   "who_can_use": "US Walmart shoppers using Meta's Muse app (scope Walmart.com vs Sam's Club differs by outlet)",
+   "cost": "Not stated (Walmart.com prices)",
+   "why_it_matters": "First time a major retailer lets a third-party AI agent actually pay for you, timed to Black Friday week",
+   "surprising": "Your AI can now spend your money - with a spending cap you set",
+   "what_can_be_shown": "Muse chat building a cart; Agent Profile spending-limit screen (only if real screenshots exist; do not invent)",
+   "verification_status": "INDEPENDENTLY REPORTED",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 7,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 7,
+    "discussion": 8,
+    "timeliness": 9
+   },
+   "weighted": 70.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Timing nuance: The Verge reportedly first said a delay to Nov 24, then Walmart said it rolls out Nov 23. 'Invitation-only beta' wording in one report."
+  },
+  {
+   "id": "nvidia-huang",
+   "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+   "category": "Chips / business",
+   "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23 (resigned 2026-11-12)",
+   "what_happened": "Board voted unanimously to reinstate Huang as President, CEO and director effective immediately; Colette Kress returns to CFO only.",
+   "who_confirmed": "Nvidia press release + SEC 8-K (search excerpts only), CNBC, Axios, PBS, Al Jazeera, TechCrunch, Variety",
+   "what_it_does": "n/a (corporate governance)",
+   "who_can_use": "n/a",
+   "cost": "n/a",
+   "why_it_matters": "Leader of the world's most important AI chip company is back; affects AI supply chain sentiment",
+   "surprising": "Board said days earlier it would not bring him back; stock reportedly +33% (CNBC excerpt)",
+   "what_can_be_shown": "Headlines timeline; no invented charts",
+   "verification_status": "CONFIRMED (company statement, primary not opened) / INDEPENDENTLY REPORTED",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 9,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 8,
+    "discussion": 9,
+    "timeliness": 10
+   },
+   "weighted": 64.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Strong POLITICS tie (Trump reportedly dialled into board meeting; national-security framing) and personal-scandal background (affairs) - conflicts with no-politics positioning. Stock move is a time-sensitive extraordinary financial claim needing HIGH (primary opened) - not achievable here."
+  },
+  {
+   "id": "korea-exam-ai-cheating",
+   "headline": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam",
+   "category": "AI & education",
+   "source_url": "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/",
+   "published_utc": "2026-11-22/23",
+   "event_date": "2026-11-22 (Japan Times dated Nov 22)",
+   "what_happened": "Minister Choi Kyo-jin resigned; disaster alert system used for first time to catch exam cheaters; trigger was a tax-accountant exam top scorer admitting AI use.",
+   "who_confirmed": "Time, Japan Times, The Star, Yahoo, University Herald (SEARCH-INDEX)",
+   "what_it_does": "n/a",
+   "who_can_use": "n/a",
+   "cost": "n/a",
+   "why_it_matters": "AI cheating reaching national exams",
+   "surprising": "Emergency alert system used against cheaters",
+   "what_can_be_shown": "None",
+   "verification_status": "INDEPENDENTLY REPORTED",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 8,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 6,
+    "discussion": 9,
+    "timeliness": 6
+   },
+   "weighted": 62.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "INELIGIBLE for selection: politics (ministerial resignation) and event likely before window start (Nov 22 KST)."
+  },
+  {
+   "id": "wang-superintelligence",
+   "headline": "Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI",
+   "category": "AI / industry",
+   "source_url": "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk",
+   "published_utc": "2026-11-23 (coverage)",
+   "event_date": "2026-11-22 22:50 UTC (X post, per search excerpt) - inside window",
+   "what_happened": "Long essay on X arguing superintelligence is close, citing the Riemann/Lean proof with Claude, and calling for urgent safety work.",
+   "who_confirmed": "The Next Web, Daily Star, Calcalist, mlq.ai, FourWeekMBA (SEARCH-INDEX); X post not opened (x.com blocked)",
+   "what_it_does": "Opinion essay; no product",
+   "who_can_use": "n/a",
+   "cost": "free to read on X",
+   "why_it_matters": "Head of AI at Meta saying control may be at risk is a big shift in tone",
+   "surprising": "He cites the Riemann proof as the trigger",
+   "what_can_be_shown": "Quote cards only from verified text (not obtained)",
+   "verification_status": "INDEPENDENTLY REPORTED (that the essay exists); its claims are SPECULATIVE opinion",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 7,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 8,
+    "discussion": 9,
+    "timeliness": 9
+   },
+   "weighted": 57.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Ties to already-covered Riemann/Lean story; AGI-type extraordinary framing; exact quotes not verified."
+  },
+  {
+   "id": "waymo-storm-pause",
+   "headline": "Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tides",
+   "category": "Autonomous cars",
+   "source_url": "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23 (announced by SF Mayor Lurie Sunday 2026-11-22)",
+   "what_happened": "Service paused across the Bay Area early Monday; follows last week's flooding that stranded robotaxis; no end date given; freeway rides remain suspended nationally after CA DMV action; two NHTSA recalls filed recently.",
+   "who_confirmed": "SFist, NBC Bay Area, Yahoo/SF Chronicle syndication, ABC7, AOL - SEARCH-INDEX; a follow-up search could not find the Sunday announcement, so details rest on first search only",
+   "what_it_does": "n/a",
+   "who_can_use": "Bay Area Waymo riders",
+   "cost": "n/a",
+   "why_it_matters": "Robotaxis still can't handle severe weather - a real limitation for everyday users",
+   "surprising": "A driverless car fleet pausing for rain, again",
+   "what_can_be_shown": "Rain + robotaxi B-roll only if licensed; maps",
+   "verification_status": "INDEPENDENTLY REPORTED (thin; one search)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "weighted": 56.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "NEW DATED DEVELOPMENT on previously blocked Waymo topic. Second search returned only older pauses (Nov 18, a Thursday pause) - corroboration weak. No Waymo primary opened."
+  },
+  {
+   "id": "salesforce-bf-agents",
+   "headline": "Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sales",
+   "category": "AI shopping",
+   "source_url": "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever",
+   "published_utc": "UNKNOWN",
+   "event_date": "UNKNOWN",
+   "what_happened": "Forecast of $357B global online sales, ~6% YoY.",
+   "who_confirmed": "TechRadar (SEARCH-INDEX)",
+   "what_it_does": "Forecast",
+   "who_can_use": "n/a",
+   "cost": "n/a",
+   "why_it_matters": "Context for Walmart story",
+   "surprising": "Scale",
+   "what_can_be_shown": "Charts only from real data",
+   "verification_status": "PRELIMINARY (forecast; date unknown)",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 7
+   },
+   "weighted": 56.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Use only as context; billion-dollar forecast."
+  },
+  {
+   "id": "google-nest-app",
+   "headline": "Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home replaces Assistant on speakers",
+   "category": "Smart home",
+   "source_url": "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/",
+   "published_utc": "UNKNOWN (one page dated 2026-11-23 with inconsistent stamps)",
+   "event_date": "announcement date UNKNOWN",
+   "what_happened": "Nest app retires; custom clips must be downloaded manually; Nest Aware 1st Gen moves to Google Home Premium.",
+   "who_confirmed": "Engadget, Digital Trends, GSMArena, Yahoo (SEARCH-INDEX)",
+   "what_it_does": "Migration",
+   "who_can_use": "Nest owners",
+   "cost": "Google Home Premium from $10/month (reported)",
+   "why_it_matters": "Practical action for millions of homes",
+   "surprising": "Your clips won't migrate",
+   "what_can_be_shown": "App screens",
+   "verification_status": "INDEPENDENTLY REPORTED (date unverified)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 5
+   },
+   "weighted": 54.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Announcement may be outside window; must establish date before use."
+  },
+  {
+   "id": "tesla-fsd15-stock",
+   "headline": "Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls",
+   "category": "Cars / autonomy",
+   "source_url": "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today",
+   "published_utc": "2026-11-23",
+   "event_date": "FSD v15.0.1 rollout began 2026-11-21 (before window); stock move 2026-11-23",
+   "what_happened": "FSD v15 (2026.38.6.11) to Early Access owners; not on HW3; wide release 'next month' per Musk; stock +12-13% (reported).",
+   "who_confirmed": "Invezz, Investing.com DE, Tesla Oracle, Teslarati (SEARCH-INDEX)",
+   "what_it_does": "Reality View, speed-camera slowdown, Bike Rack Mode",
+   "who_can_use": "Early Access owners on HW4",
+   "cost": "FSD subscription (not restated)",
+   "why_it_matters": "Previously blocked; only new dated development is a share-price move (needs HIGH)",
+   "surprising": "'25x safety' is a Tesla claim, unverified",
+   "what_can_be_shown": "Owner screen recordings exist but not inspected",
+   "verification_status": "COMPANY-CLAIMED (features) / REPORTED (stock)",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 8
+   },
+   "weighted": 54.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Rollout predates window; stock move is extraordinary financial claim."
+  },
+  {
+   "id": "ios-27-3",
+   "headline": "iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform text styling",
+   "category": "Consumer tech",
+   "source_url": "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23 (beta; release 'coming soon')",
+   "what_happened": "Feature roundup of upcoming update.",
+   "who_confirmed": "9to5Mac only (SEARCH-INDEX)",
+   "what_it_does": "Small app updates",
+   "who_can_use": "iPhone users after release",
+   "cost": "free",
+   "why_it_matters": "Useful but incremental",
+   "surprising": "Low",
+   "what_can_be_shown": "Screen recordings of beta (not inspected)",
+   "verification_status": "PRELIMINARY (beta, single outlet)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 4,
+    "usefulness": 7,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 3,
+    "discussion": 5,
+    "timeliness": 8
+   },
+   "weighted": 54.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": ""
+  },
+  {
+   "id": "gpt62-chat",
+   "headline": "OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterprise",
+   "category": "AI assistants",
+   "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23",
+   "what_happened": "Chat-tab model update.",
+   "who_confirmed": "OpenAI release notes via search excerpt only; no independent coverage found",
+   "what_it_does": "Model update in Chat",
+   "who_can_use": "Paid ChatGPT tiers",
+   "cost": "Plan pricing",
+   "why_it_matters": "Most-used AI app gets new default model",
+   "surprising": "Low",
+   "what_can_be_shown": "None",
+   "verification_status": "COMPANY-CLAIMED (single source, not opened)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 4,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 9
+   },
+   "weighted": 53.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": ""
+  },
+  {
+   "id": "amazon-decart",
+   "headline": "Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chips",
+   "category": "AI chips / startups",
+   "source_url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23",
+   "what_happened": "Amazon (via Annapurna Labs) to acquire the Decart Optimization Stack plus the three cofounders and engineers; not Decart's models (per Bloomberg source); subject to regulatory approval.",
+   "who_confirmed": "Amazon blog post (per CNBC/Globes excerpts, not opened), CNBC, TechCrunch, GeekWire, Globes, PYMNTS; price from Bloomberg only",
+   "what_it_does": "Software that lets developers move AI models across chips, to run workloads on Trainium/Inferentia",
+   "who_can_use": "Developers/AWS customers eventually",
+   "cost": "Price undisclosed by Amazon; ~$7.5B reported (Bloomberg), >$7.5B (Globes)",
+   "why_it_matters": "Amazon pushing its own chips as Nvidia alternatives",
+   "surprising": "NEW DATED DEVELOPMENT on a previously blocked story (Decart)",
+   "what_can_be_shown": "Logos/diagram of model -> chips; nothing invented",
+   "verification_status": "INDEPENDENTLY REPORTED (deal) / REPORTED (price)",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "weighted": 51.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Billion-dollar figure is reported not confirmed; script must say 'reportedly' or omit. Low everyday relevance."
+  },
+  {
+   "id": "dragos-followup",
+   "headline": "Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov)",
+   "category": "AI security",
+   "source_url": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/",
+   "published_utc": "2026-11-23 (briefing)",
+   "event_date": "Research published 2026-11-19 - before window",
+   "what_happened": "No new dated development found inside window; coverage is recap.",
+   "who_confirmed": "CSA, SecurityWeek, Neowin (SEARCH-INDEX)",
+   "what_it_does": "n/a",
+   "who_can_use": "AI API users",
+   "cost": "n/a",
+   "why_it_matters": "Prompts may not be private",
+   "surprising": "Canaries caught thieves",
+   "what_can_be_shown": "None",
+   "verification_status": "INDEPENDENTLY REPORTED",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 4
+   },
+   "weighted": 50.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Previously blocked; NO new dated development in window -> not selectable."
+  },
+  {
+   "id": "ue6-blueprints",
+   "headline": "Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects",
+   "category": "Gaming tech",
+   "source_url": "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/",
+   "published_utc": "2026-11-23 (coverage)",
+   "event_date": "2026-11-20 (Epic developer update by Marcus Wassmer) - before window",
+   "what_happened": "Gameplay moves to Verse + Scene Graph; Fortnite prototype ported 20,000+ Blueprints to ~3M lines of Verse.",
+   "who_confirmed": "gHacks, KitGuru, Mixed, GameWorldObserver (SEARCH-INDEX)",
+   "what_it_does": "Engine change",
+   "who_can_use": "Game developers",
+   "cost": "n/a",
+   "why_it_matters": "AI rewriting how games are built",
+   "surprising": "Removing a beloved visual-scripting tool",
+   "what_can_be_shown": "None",
+   "verification_status": "INDEPENDENTLY REPORTED (official announcement; release type: official announcement)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 7,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 5
+   },
+   "weighted": 49.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Event before window."
+  },
+  {
+   "id": "pachocki-limits",
+   "headline": "OpenAI chief scientist Jakub Pachocki proposes industry-wide capability thresholds until safety monitoring catches up; Altman endorses",
+   "category": "AI safety",
+   "source_url": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
+   "published_utc": "2026-11-22 (Bloomberg) / 2026-11-23 (Business Standard)",
+   "event_date": "2026-11-22 (post 'published Sunday')",
+   "what_happened": "Proposes labs agree thresholds (perplexity-based) and shared tests, warns AI could speed training advances from 2027.",
+   "who_confirmed": "Bloomberg, Bloomberg Law, The Next Web, Business Standard, The Sun MY (SEARCH-INDEX); OpenAI post not located (search found only 'An Alien Mind', Sep 2026)",
+   "what_it_does": "n/a",
+   "who_can_use": "n/a",
+   "cost": "n/a",
+   "why_it_matters": "Leading lab asks for self-limits",
+   "surprising": "OpenAI asking the industry to slow down",
+   "what_can_be_shown": "None",
+   "verification_status": "INDEPENDENTLY REPORTED",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 8,
+    "discussion": 8,
+    "timeliness": 7
+   },
+   "weighted": 49.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Publication time vs window start (19:55Z Nov 22) unknown - may be before window. Title 'Perplexity and Intelligence' not confirmed."
+  },
+  {
+   "id": "crowdstrike-zscaler",
+   "headline": "CrowdStrike to acquire Zscaler in ~$43.9B all-stock deal",
+   "category": "Cybersecurity / business",
+   "source_url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23",
+   "what_happened": "1.135 CRWD shares per ZS share; expected to close in ~a year pending regulators; CRWD -10%, ZS +15% (reported).",
+   "who_confirmed": "CrowdStrike 8-K exhibit on sec.gov (search excerpt; sec.gov blocked), CNBC, TechCrunch, WTVR",
+   "what_it_does": "n/a",
+   "who_can_use": "Enterprises",
+   "cost": "n/a",
+   "why_it_matters": "Largest security consolidation tied to AI-driven attacks",
+   "surprising": "Size",
+   "what_can_be_shown": "None",
+   "verification_status": "CONFIRMED (company filing, not opened) / INDEPENDENTLY REPORTED",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "weighted": 48.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Enterprise story; billion figures need HIGH."
+  },
+  {
+   "id": "frostbite-cpu",
+   "headline": "Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in simulation",
+   "category": "Chips / AI research",
+   "source_url": "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html",
+   "published_utc": "2026-11-18 onward",
+   "event_date": "2026-11-18 - outside window",
+   "what_happened": "Pre-silicon simulated results vs undisclosed baseline.",
+   "who_confirmed": "Notebookcheck, Hardware Busters, i10x (SEARCH-INDEX)",
+   "what_it_does": "n/a",
+   "who_can_use": "n/a",
+   "cost": "n/a",
+   "why_it_matters": "AI designing chips",
+   "surprising": "AI-designed CPU",
+   "what_can_be_shown": "None",
+   "verification_status": "COMPANY-CLAIMED",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 8,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 6,
+    "timeliness": 2
+   },
+   "weighted": 47.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Outside window; extraordinary."
+  },
+  {
+   "id": "gta6-patch",
+   "headline": "GTA VI patch 1.002.002 rolls out in phases on 23 Nov fixing crashes, weather and autosave bugs",
+   "category": "Gaming",
+   "source_url": "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23",
+   "what_happened": "Patch rollout (release type: official update).",
+   "who_confirmed": "Insider Gaming (SEARCH-INDEX)",
+   "what_it_does": "Bug fixes",
+   "who_can_use": "GTA VI players",
+   "cost": "free",
+   "why_it_matters": "Huge audience",
+   "surprising": "Low",
+   "what_can_be_shown": "Gameplay (rights issue)",
+   "verification_status": "INDEPENDENTLY REPORTED (single)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 3,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 2,
+    "discussion": 5,
+    "timeliness": 9
+   },
+   "weighted": 46.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Not AI/tech-changes-life; weak fit."
+  },
+  {
+   "id": "sierra-series-f",
+   "headline": "Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M",
+   "category": "AI startups",
+   "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-23",
+   "what_happened": "Greenoaks and Lightspeed led; valuation doubled in six months; outcome-based pricing.",
+   "who_confirmed": "Sierra blog (sierra.ai/blog/series-f-30b, not opened), TechCrunch, CMSWire, IBTimes",
+   "what_it_does": "AI customer-service agents",
+   "who_can_use": "Enterprises",
+   "cost": "n/a",
+   "why_it_matters": "AI agents answering customer service calls",
+   "surprising": "Doubling in 6 months",
+   "what_can_be_shown": "None",
+   "verification_status": "CONFIRMED (company) / INDEPENDENTLY REPORTED",
+   "extraordinary": true,
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 5,
+    "timeliness": 10
+   },
+   "weighted": 42.5,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": ""
+  },
+  {
+   "id": "nvidia-isaac-agile",
+   "headline": "Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid research platform",
+   "category": "Robotics",
+   "source_url": "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/",
+   "published_utc": "2026-11-22 (time UNKNOWN)",
+   "event_date": "2026-11-22",
+   "what_happened": "Developer tools + research humanoid.",
+   "who_confirmed": "Robotics & Automation News (SEARCH-INDEX)",
+   "what_it_does": "Research platform",
+   "who_can_use": "Researchers",
+   "cost": "UNKNOWN",
+   "why_it_matters": "Humanoid tooling",
+   "surprising": "Low",
+   "what_can_be_shown": "Official robot footage",
+   "verification_status": "INDEPENDENTLY REPORTED (single)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 6
+   },
+   "weighted": 42.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Possibly before window."
+  },
+  {
+   "id": "ariane6-amazon-leo",
+   "headline": "Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov",
+   "category": "Space",
+   "source_url": "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch",
+   "published_utc": "2026-11-23",
+   "event_date": "2026-11-24 05:45 ET (planned)",
+   "what_happened": "Launch delay.",
+   "who_confirmed": "Space.com (SEARCH-INDEX)",
+   "what_it_does": "n/a",
+   "who_can_use": "n/a",
+   "cost": "n/a",
+   "why_it_matters": "Satellite internet competition",
+   "surprising": "Low",
+   "what_can_be_shown": "Launch footage (official)",
+   "verification_status": "INDEPENDENTLY REPORTED (single)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 4,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 4,
+    "discussion": 3,
+    "timeliness": 8
+   },
+   "weighted": 41.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": ""
+  },
+  {
+   "id": "singapore-agentic-sandbox",
+   "headline": "MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in payments",
+   "category": "Fintech",
+   "source_url": "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/",
+   "published_utc": "UNKNOWN (dates conflict)",
+   "event_date": "UNKNOWN",
+   "what_happened": "Sandbox + missions on financial crime, SME financing, safe agentic transactions.",
+   "who_confirmed": "Kopi Notes, Fintech Singapore (SEARCH-INDEX)",
+   "what_it_does": "Regulatory sandbox",
+   "who_can_use": "Banks",
+   "cost": "n/a",
+   "why_it_matters": "AI agents moving money",
+   "surprising": "Low",
+   "what_can_be_shown": "None",
+   "verification_status": "INDEPENDENTLY REPORTED (date unclear)",
+   "extraordinary": false,
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 4,
+    "timeliness": 5
+   },
+   "weighted": 37.0,
+   "social_momentum_note": "no engagement observed (x.com blocked); capped at 3",
+   "notes": "Date conflict; regulator item."
+  }
+ ],
+ "top5": [
+  {
+   "id": "walmart-muse",
+   "rank": 1,
+   "weighted": 70.5,
+   "claims": [
+    {
+     "claim": "Walmart's Agent Gateway went live on 23 Nov 2026 with Meta's Muse as the first agent that can buy for shoppers",
+     "risk": "time-sensitive (launch/availability)",
+     "evidence": [
+      {
+       "url": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.unite.ai); search excerpt only",
+       "outlet": "Unite.AI (citing The Verge)",
+       "date": "2026-11-23",
+       "excerpt": "Walmart Enables Muse Shopping Through Its Agent Gateway"
+      },
+      {
+       "url": "https://mlq.ai/news/walmart-opens-its-agent-gateway-with-metas-muse-as-the-first-ai-agent-able-to-buy-for-shoppers/",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND mlq.ai); search excerpt only",
+       "outlet": "mlq.ai",
+       "date": "2026-11-23",
+       "excerpt": "Walmart opens its Agent Gateway with Meta's Muse as the first AI agent able to buy for shoppers"
+      },
+      {
+       "url": "https://www.techbuzz.ai/articles/meta-muse-gets-walmart-checkout-access-for-black-friday-deals",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.techbuzz.ai); search excerpt only",
+       "outlet": "TechBuzz",
+       "date": "2026-11-23",
+       "excerpt": "Meta Muse Gets Walmart Checkout Access for Black Friday Deals"
+      },
+      {
+       "url": "https://www.analyticsinsight.net/news/meta-muse-ai-agent-can-do-your-black-friday-shopping-at-walmart",
+       "kind": "independent report",
+       "access": "not fetched; search excerpt only",
+       "outlet": "Analytics Insight",
+       "date": "2026-11-23",
+       "excerpt": "Meta Muse AI Agent Can do Your Black Friday Shopping at Walmart"
+      }
+     ]
+    },
+    {
+     "claim": "First add-to-cart sends shopper to Walmart to sign in and set up an Agent Profile with a spending limit; purchase completed in the Muse conversation with a card saved in the Walmart account",
+     "risk": "time-sensitive (product behaviour)",
+     "evidence": [
+      {
+       "url": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "Unite.AI / The Verge via search summary",
+       "date": "2026-11-23",
+       "excerpt": "When customers add an item to their cart for the first time, Muse takes them to Walmart to sign in and set up an Agent Profile, including a spending limit (search-tool summary)"
+      }
+     ]
+    },
+    {
+     "claim": "Agent Gateway was first unveiled 21 Oct 2026",
+     "risk": "historical",
+     "evidence": [
+      {
+       "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "TechCrunch",
+       "date": "2026-10-21",
+       "excerpt": "while amazon blocks ai agents walmart rolls out the welcome mat"
+      },
+      {
+       "url": "https://theaiinsider.tech/2026/10/23/walmart-opens-its-doors-to-ai-shopping-agents-with-new-agent-gateway/",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "The AI Insider",
+       "date": "2026-10-23",
+       "excerpt": "Walmart opens its doors to AI shopping agents with new Agent Gateway"
+      }
+     ]
+    }
+   ],
+   "blocker": "No primary (Walmart corporate / Meta newsroom) located or opened; corporate.walmart.com ENOTFOUND; theverge.com unable to fetch; all independent reports ENOTFOUND. Every claim is SEARCH-INDEX -> at best MEDIUM by independent-report count, not MEDIUM-HIGH 'current report opened'. Scope (Walmart.com vs Sam's Club) and 'beta' wording differ between outlets."
+  },
+  {
+   "id": "nvidia-huang",
+   "rank": 2,
+   "weighted": 64.5,
+   "claims": [
+    {
+     "claim": "Nvidia's board unanimously reinstated Jensen Huang as President, CEO and director effective immediately on 23 Nov 2026",
+     "risk": "time-sensitive (breaking corporate news)",
+     "evidence": [
+      {
+       "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+       "kind": "primary (company press release)",
+       "access": "FAILED (ENOTFOUND investor.nvidia.com); search excerpt only",
+       "outlet": "NVIDIA",
+       "date": "2026-11-23",
+       "excerpt": "NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President and Chief Executive Officer, and as a member of the Board. The Board of Directors voted unanimously to reinstate Mr. Huang."
+      },
+      {
+       "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm",
+       "kind": "primary (SEC 8-K exhibit)",
+       "access": "FAILED (ENOTFOUND www.sec.gov)",
+       "outlet": "SEC EDGAR",
+       "date": "2026-11-23",
+       "excerpt": "(not read)"
+      },
+      {
+       "url": "https://www.pbs.org/newshour/nation/nvidia-board-unanimously-reinstates-jensen-huang-as-ceo-and-chairman",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.pbs.org)",
+       "outlet": "PBS NewsHour",
+       "date": "2026-11-23",
+       "excerpt": "Nvidia board unanimously reinstates Jensen Huang as CEO and chairman"
+      },
+      {
+       "url": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.aljazeera.com)",
+       "outlet": "Al Jazeera",
+       "date": "2026-11-23",
+       "excerpt": "Nvidia board reinstates Jensen Huang as CEO"
+      },
+      {
+       "url": "https://www.axios.com/2026/11/23/nvidia-board-jensen-huang-as-ceo",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.axios.com)",
+       "outlet": "Axios",
+       "date": "2026-11-23",
+       "excerpt": "Nvidia board reinstates Jensen Huang as CEO"
+      }
+     ]
+    },
+    {
+     "claim": "Stock jumped about 33% on the news",
+     "risk": "time-sensitive extraordinary financial (needs HIGH)",
+     "evidence": [
+      {
+       "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.cnbc.com)",
+       "outlet": "CNBC",
+       "date": "2026-11-23",
+       "excerpt": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 33%"
+      }
+     ]
+    }
+   ],
+   "blocker": "Primary (Nvidia IR, SEC 8-K) both ENOTFOUND; all independent reports ENOTFOUND. Share-price move cannot reach HIGH. Editorial blocker: story is entangled with politics (Trump reportedly dialled into the board meeting; national-security framing) and a personal scandal (affairs) - conflicts with 'no politics' positioning and everyday-life focus."
+  },
+  {
+   "id": "wang-superintelligence",
+   "rank": 3,
+   "weighted": 57.0,
+   "claims": [
+    {
+     "claim": "Meta chief AI officer Alexandr Wang posted an essay titled 'Superintelligence is Arriving' on X on 22 Nov 2026 (~22:50 UTC)",
+     "risk": "time-sensitive (breaking)",
+     "evidence": [
+      {
+       "url": "https://x.com/AGTPinsights/status/2124740896818143743",
+       "kind": "third-party X post",
+       "access": "not fetched (x.com ENOTFOUND for x.com/alexandr_wang)",
+       "outlet": "AGTP on X",
+       "date": "2026-11-22",
+       "excerpt": "Meta's Chief AI Officer Alexandr Wang just posted a long essay today titled \"Superintelligence is Arriving.\""
+      },
+      {
+       "url": "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "The Next Web",
+       "date": "2026-11-23",
+       "excerpt": "Meta's AI chief says superintelligence is arriving and control is at risk"
+      },
+      {
+       "url": "https://www.calcalistech.com/ctechnews/article/hked2tbjqx",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "Calcalist",
+       "date": "2026-11-23",
+       "excerpt": "Meta AI chief warns humanity may lose control of superintelligent machines"
+      },
+      {
+       "url": "https://www.thedailystar.net/news/technology/news/superintelligence-the-way-says-meta-ai-chief-4331071",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "The Daily Star",
+       "date": "2026-11-23",
+       "excerpt": "Superintelligence is on the way, says Meta AI chief"
+      }
+     ]
+    },
+    {
+     "claim": "Essay says society should not accept a 'handover' to AI and calls for urgent safety/alignment work",
+     "risk": "MEDIUM (attributed opinion)",
+     "evidence": [
+      {
+       "url": "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "The Next Web",
+       "date": "2026-11-23",
+       "excerpt": "search summary only; exact wording unverified"
+      }
+     ]
+    }
+   ],
+   "blocker": "Primary (Wang's X post) not openable - x.com ENOTFOUND; no independent report opened. Exact quotes unverified. AGI/superintelligence is an extraordinary-claim category (requires primary + independent opened) and leans on the already-covered Riemann/Lean story."
+  },
+  {
+   "id": "waymo-storm-pause",
+   "rank": 4,
+   "weighted": 56.5,
+   "claims": [
+    {
+     "claim": "Waymo paused robotaxi service across the Bay Area from early Monday 23 Nov ahead of Thanksgiving-week storms and king tides",
+     "risk": "time-sensitive (availability)",
+     "evidence": [
+      {
+       "url": "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND sfist.com)",
+       "outlet": "SFist",
+       "date": "2026-11-23",
+       "excerpt": "Monday Morning Headlines: Waymo on Pause for Storms"
+      },
+      {
+       "url": "https://www.yahoo.com/news/weather-news/articles/lurie-says-waymo-shut-down-050304494.html",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "Yahoo News (syndicated)",
+       "date": "2026-11-22/23",
+       "excerpt": "Waymo is pausing Bay Area robotaxi service again as Thanksgiving storm approaches"
+      },
+      {
+       "url": "https://www.nbcbayarea.com/video/news/local/waymo-pause-service-san-francisco/4180546/",
+       "kind": "independent report (video)",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "NBC Bay Area",
+       "date": "UNKNOWN",
+       "excerpt": "Waymo to pause service in San Francisco due to storms, high tides"
+      },
+      {
+       "url": "https://waymo.com/blog/",
+       "kind": "primary",
+       "access": "FAILED (ENOTFOUND waymo.com)",
+       "outlet": "Waymo",
+       "date": "n/a",
+       "excerpt": "(not read)"
+      }
+     ]
+    },
+    {
+     "claim": "Pause was announced by SF Mayor Daniel Lurie on Sunday and begins 4 a.m.; no end date given",
+     "risk": "time-sensitive",
+     "evidence": [
+      {
+       "url": "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "ABC7 SF",
+       "date": "2026-11-23",
+       "excerpt": "Lurie did not say when the pause would be lifted (search summary)"
+      }
+     ]
+    }
+   ],
+   "blocker": "No page opened; Waymo primary ENOTFOUND. A second targeted search could not re-find the Sunday/4 a.m./Lurie details (only older Nov 18 and other pauses) - corroboration thin and easily confused with earlier pauses. Previously blocked topic: this is a new dated development but still a negative-reliability story repeated weekly."
+  },
+  {
+   "id": "amazon-decart",
+   "rank": 5,
+   "weighted": 51.0,
+   "claims": [
+    {
+     "claim": "Amazon agreed on 23 Nov 2026 to acquire Decart's optimization stack and its cofounders/engineers, via Annapurna Labs, subject to regulatory approval",
+     "risk": "time-sensitive (deal)",
+     "evidence": [
+      {
+       "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+       "kind": "independent report",
+       "access": "not fetched (cnbc.com ENOTFOUND on a sibling URL)",
+       "outlet": "CNBC",
+       "date": "2026-11-23",
+       "excerpt": "Amazon to acquire AI startup Decart's chip software, hire founders"
+      },
+      {
+       "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND techcrunch.com)",
+       "outlet": "TechCrunch",
+       "date": "2026-11-23",
+       "excerpt": "Amazon snaps up Decart's AI optimization tech for $7.5B as it prepares to sell Trainium chips"
+      },
+      {
+       "url": "https://www.geekwire.com/2026/amazon-is-buying-decarts-ai-chip-software-for-a-reported-7-5b-and-bringing-its-founders-aboard/",
+       "kind": "independent report",
+       "access": "FAILED (ENOTFOUND www.geekwire.com)",
+       "outlet": "GeekWire",
+       "date": "2026-11-23",
+       "excerpt": "Amazon is buying Decart's AI chip software for a reported $7.5B"
+      },
+      {
+       "url": "https://en.globes.co.il/en/article-amazon-confirms-decart-acquisition-1001564520",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "Globes",
+       "date": "2026-11-23",
+       "excerpt": "Amazon confirms Decart acquisition"
+      },
+      {
+       "url": "https://www.aboutamazon.com/news/company-news/amazon-decart",
+       "kind": "primary (guessed URL - not from search; do not cite)",
+       "access": "FAILED (ENOTFOUND www.aboutamazon.com)",
+       "outlet": "Amazon",
+       "date": "n/a",
+       "excerpt": "(not read)"
+      }
+     ]
+    },
+    {
+     "claim": "Deal reportedly worth about $7.5 billion",
+     "risk": "time-sensitive extraordinary financial (needs HIGH)",
+     "evidence": [
+      {
+       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-nears-7-5-billion-purchase-of-ai-startup-decart/",
+       "kind": "independent report",
+       "access": "SEARCH-INDEX only; WebFetch not attempted or failed",
+       "outlet": "PYMNTS (citing Bloomberg)",
+       "date": "2026-11-23",
+       "excerpt": "Amazon declined to comment on the terms; Bloomberg reported ~$7.5B"
+      }
+     ]
+    },
+    {
+     "claim": "Decart's public GitHub org is active (context only, does not confirm the deal)",
+     "risk": "LOW",
+     "evidence": [
+      {
+       "url": "https://github.com/DecartAI",
+       "kind": "github org listing via gh search",
+       "access": "OPENED (gh search repos returned DecartAI/tryon-examples, decart-python, decart-android, sdk, Decart-XR with Nov 2026 update times)",
+       "outlet": "GitHub",
+       "date": "2026-11-23",
+       "excerpt": "repos updated 2026-11-23 (decart-android 13:20Z)"
+      }
+     ]
+    }
+   ],
+   "blocker": "Amazon blog primary not located/opened (aboutamazon.com ENOTFOUND); all independent reports ENOTFOUND. Price is Bloomberg-sourced and undisclosed by Amazon -> cannot be stated as fact. Low everyday relevance. GitHub org opens but says nothing about the acquisition."
+  }
+ ],
+ "opened_pages": [
+  {
+   "url": "gh search repos (GitHub API) owner DecartAI / 'agent gateway walmart'",
+   "result": "Returned 5 DecartAI repos (no acquisition info); no Walmart Agent Gateway repo found"
+  }
+ ],
+ "failed_opens": [
+  {
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-23-2026/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://killtheai.com/news/top-10-ai-news-today-november-23-2026/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.aiimpacthub.com/ai-news/2026-11-23",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://mlq.ai/news/walmart-opens-its-agent-gateway-with-metas-muse-as-the-first-ai-agent-able-to-buy-for-shoppers/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.techbuzz.ai/articles/meta-muse-gets-walmart-checkout-access-for-black-friday-deals",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.aboutamazon.com/news/company-news/amazon-decart",
+   "result": "ENOTFOUND (guessed URL)"
+  },
+  {
+   "url": "https://corporate.walmart.com/news",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.theverge.com/",
+   "result": "'Claude Code is unable to fetch from www.theverge.com'"
+  },
+  {
+   "url": "https://www.pbs.org/newshour/nation/nvidia-board-unanimously-reinstates-jensen-huang-as-ceo-and-chairman",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.geekwire.com/2026/amazon-is-buying-decarts-ai-chip-software-for-a-reported-7-5b-and-bringing-its-founders-aboard/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://waymo.com/blog/",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://x.com/alexandr_wang",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.axios.com/2026/11/23/nvidia-board-jensen-huang-as-ceo",
+   "result": "ENOTFOUND"
+  },
+  {
+   "url": "https://www.digitaltrends.com/home/if-you-still-use-the-nest-app-you-have-until-january-25/",
+   "result": "ENOTFOUND"
+  }
+ ]
+}

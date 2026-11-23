@@ -1,0 +1,228 @@
+{
+  "checked_at_utc": "2026-11-23T20:01:33+00:00",
+  "groups": {
+    "x": {
+      "status": "WORKING",
+      "reachable": [
+        "x.com",
+        "api.twitter.com"
+      ],
+      "blocked": [],
+      "needs_credentials": [
+        "api.twitter.com: needs X API bearer token"
+      ]
+    },
+    "reddit": {
+      "status": "WORKING",
+      "reachable": [
+        "www.reddit.com",
+        "oauth.reddit.com"
+      ],
+      "blocked": [],
+      "needs_credentials": [
+        "oauth.reddit.com: needs Reddit API app credentials"
+      ]
+    },
+    "youtube": {
+      "status": "WORKING",
+      "reachable": [
+        "www.youtube.com",
+        "www.googleapis.com"
+      ],
+      "blocked": [],
+      "needs_credentials": [
+        "www.googleapis.com: needs YouTube Data API key"
+      ]
+    },
+    "instagram": {
+      "status": "WORKING",
+      "reachable": [
+        "www.instagram.com",
+        "graph.instagram.com"
+      ],
+      "blocked": [],
+      "needs_credentials": [
+        "graph.instagram.com: needs Instagram Graph API token"
+      ]
+    },
+    "linkedin": {
+      "status": "WORKING",
+      "reachable": [
+        "www.linkedin.com"
+      ],
+      "blocked": [],
+      "needs_credentials": []
+    },
+    "google_trends": {
+      "status": "WORKING",
+      "reachable": [
+        "trends.google.com"
+      ],
+      "blocked": [],
+      "needs_credentials": []
+    },
+    "primary": {
+      "status": "WORKING",
+      "reachable": [
+        "openai.com",
+        "www.anthropic.com",
+        "blog.google",
+        "nvidianews.nvidia.com",
+        "arxiv.org",
+        "www.nature.com",
+        "huggingface.co",
+        "github.com"
+      ],
+      "blocked": [],
+      "needs_credentials": []
+    },
+    "news": {
+      "status": "WORKING",
+      "reachable": [
+        "www.reuters.com",
+        "apnews.com",
+        "www.theverge.com",
+        "techcrunch.com",
+        "arstechnica.com",
+        "www.wired.com",
+        "www.technologyreview.com",
+        "spectrum.ieee.org"
+      ],
+      "blocked": [],
+      "needs_credentials": []
+    }
+  },
+  "hosts": {
+    "api.twitter.com": {
+      "host": "api.twitter.com",
+      "reachable": true,
+      "http": 404
+    },
+    "apnews.com": {
+      "host": "apnews.com",
+      "reachable": true,
+      "http": 403
+    },
+    "arstechnica.com": {
+      "host": "arstechnica.com",
+      "reachable": true,
+      "http": 200
+    },
+    "arxiv.org": {
+      "host": "arxiv.org",
+      "reachable": true,
+      "http": 200
+    },
+    "blog.google": {
+      "host": "blog.google",
+      "reachable": true,
+      "http": 200
+    },
+    "github.com": {
+      "host": "github.com",
+      "reachable": true,
+      "http": 400
+    },
+    "graph.instagram.com": {
+      "host": "graph.instagram.com",
+      "reachable": true,
+      "http": 400
+    },
+    "huggingface.co": {
+      "host": "huggingface.co",
+      "reachable": true,
+      "http": 200
+    },
+    "nvidianews.nvidia.com": {
+      "host": "nvidianews.nvidia.com",
+      "reachable": true,
+      "http": 200
+    },
+    "oauth.reddit.com": {
+      "host": "oauth.reddit.com",
+      "reachable": true,
+      "http": 403
+    },
+    "openai.com": {
+      "host": "openai.com",
+      "reachable": true,
+      "http": 200
+    },
+    "spectrum.ieee.org": {
+      "host": "spectrum.ieee.org",
+      "reachable": true,
+      "http": 200
+    },
+    "techcrunch.com": {
+      "host": "techcrunch.com",
+      "reachable": true,
+      "http": 200
+    },
+    "trends.google.com": {
+      "host": "trends.google.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.anthropic.com": {
+      "host": "www.anthropic.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.googleapis.com": {
+      "host": "www.googleapis.com",
+      "reachable": true,
+      "http": 404
+    },
+    "www.instagram.com": {
+      "host": "www.instagram.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.linkedin.com": {
+      "host": "www.linkedin.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.nature.com": {
+      "host": "www.nature.com",
+      "reachable": true,
+      "http": 429
+    },
+    "www.reddit.com": {
+      "host": "www.reddit.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.reuters.com": {
+      "host": "www.reuters.com",
+      "reachable": true,
+      "http": 401
+    },
+    "www.technologyreview.com": {
+      "host": "www.technologyreview.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.theverge.com": {
+      "host": "www.theverge.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.wired.com": {
+      "host": "www.wired.com",
+      "reachable": true,
+      "http": 200
+    },
+    "www.youtube.com": {
+      "host": "www.youtube.com",
+      "reachable": true,
+      "http": 200
+    },
+    "x.com": {
+      "host": "x.com",
+      "reachable": true,
+      "http": 200
+    }
+  },
+  "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+}

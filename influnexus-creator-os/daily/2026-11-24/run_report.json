@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-24",
+  "runs": {
+    "2026-11-24-manual-013132": {
+      "run_id": "2026-11-24-manual-013132",
+      "trigger": "manual",
+      "start_ist": "2026-11-24T01:31:32+05:30",
+      "end_ist": "2026-11-24T01:33:10+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "a87bbe3",
+      "research_window": {
+        "start_utc": "2026-11-22T20:01:32+00:00",
+        "end_utc": "2026-11-23T20:01:32+00:00",
+        "start_ist": "2026-11-23T01:31:32+05:30",
+        "end_ist": "2026-11-24T01:31:32+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "V8 fallback: Motionflare (Product Hunt, read via connector); Walmart x Muse blocked",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+      "candidates": 22,
+      "source_access": "Evidence levels: 4 HIGH. Claims with a source opened directly: 4 of 4.",
+      "fact_check": "PASS",
+      "word_count": 79,
+      "estimated_seconds": 36.0,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
+    }
+  }
+}
