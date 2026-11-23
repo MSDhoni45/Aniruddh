@@ -62,7 +62,7 @@
   "US government input (in the release; left out for length and to avoid politics)."
  ],
  "context": "Harvey Jones stays as Board chair; Kress returns to CFO.",
- "script": "Nvidia's CEO quit. Eleven days later, he's back.\n\nOn November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.\n\nHis CFO, Colette Kress, stepped in as interim CEO.\n\nThen on November 23, the board voted unanimously to bring him back, effective immediately.\n\nHuang said he can't wait to get back to work.\n\nBut it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.\n\nHe's back, with a lot more oversight.",
+ "script": "Nvidia's CEO quit. Eleven days later, he's back.\n\nOn November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.\n\nHis CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.\n\nThen on November 23, the board voted unanimously to bring him back, effective immediately.\n\nHuang said he can't wait to get back to work.\n\nBut it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.\n\nHe's back, with a lot more oversight.",
  "hook": "Nvidia's CEO quit. Eleven days later, he's back.",
  "hooks": [
   {
@@ -166,7 +166,7 @@
    "comprehension": 9
   }
  ],
- "revisions": 2,
+ "revisions": 3,
  "practical_takeaway": {
   "who_can_use": "not applicable (company news)",
   "what_it_does": "Leadership change at the world's leading AI chip company",
@@ -193,7 +193,7 @@
   },
   "factual_accuracy": {
    "pass": true,
-   "why": "Every sentence maps to c1-c7 on Nvidia's two opened releases."
+   "why": "Every sentence maps to c1-c8 on Nvidia's two opened releases."
   },
   "natural_delivery": {
    "pass": true,
@@ -241,7 +241,9 @@
    "quit",
    "eleven days",
    "unanimously",
-   "not over"
+   "effective immediately",
+   "not over",
+   "more oversight"
   ],
   "pauses": [
    "after 'quit.'",
@@ -1361,6 +1363,34 @@
     "access": "opened",
     "quote": false,
     "wording_verified": true
+   },
+   {
+    "id": "c8",
+    "text": "The board appointed Harvey C. Jones as Chair of the Board",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-12",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     }
+    ],
+    "supporting_evidence": "'The Board of Directors appointed Harvey C. Jones as its first-ever Chair of the Board.' (12 Nov)",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_title": "NVIDIA Newsroom: NVIDIA Announces CEO Transition",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_date": "2026-11-12",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true
    }
   ]
  },
@@ -1387,6 +1417,203 @@
  ],
  "rejected_drafts": [
   "Draft 1 mentioned the stock jump (unverified on an opened source) and was cut.",
-  "Draft 2 called him the founder of the AI boom (unsupported) and was cut."
- ]
+  "Draft 2 called him the founder of the AI boom (unsupported) and was cut.",
+  "Draft 3 (85 words, 39 s) was under the V9 40-45 s / 90-105 word standard; added the first-ever board chair fact from the 12 Nov release. 'First-ever' was then dropped: it reads as an extraordinary 'first' that could not be independently confirmed."
+ ],
+ "storyboard": [
+  {
+   "line": "Nvidia's CEO quit.",
+   "start_s": 0.0,
+   "end_s": 1.6,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, tight medium shot",
+   "on_screen_text": "NVIDIA'S CEO QUIT",
+   "motion_graphics": "Hard cut-in punch zoom 106%",
+   "transition": "Cut",
+   "sfx": "Low impact hit",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "Eleven days later, he's back.",
+   "start_s": 1.6,
+   "end_s": 4.1,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, smile/raised eyebrows",
+   "on_screen_text": "11 DAYS LATER... HE'S BACK",
+   "motion_graphics": "Counter animates 1→11 days",
+   "transition": "Whip pan",
+   "sfx": "Riser into whoosh",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.",
+   "start_s": 4.1,
+   "end_s": 11.3,
+   "treatment": "screen",
+   "footage": "Screenshot of NVIDIA newsroom release 'NVIDIA Announces CEO Transition' (12 Nov 2026) with date highlighted",
+   "on_screen_text": "12 NOV · RESIGNED",
+   "motion_graphics": "Highlight box on 'has resigned'; slow push-in",
+   "transition": "Slide left",
+   "sfx": "Paper/click",
+   "source_licensing": "NVIDIA newsroom screenshot, editorial use, credit NVIDIA"
+  },
+  {
+   "line": "His CFO, Colette Kress, stepped in as interim CEO.",
+   "start_s": 11.3,
+   "end_s": 15.5,
+   "treatment": "split",
+   "footage": "Left: NVIDIA press image of Colette Kress if available in NVIDIA media assets; right: release text naming her interim CEO",
+   "on_screen_text": "INTERIM CEO: COLETTE KRESS",
+   "motion_graphics": "Name lower-third",
+   "transition": "Cross-dissolve",
+   "sfx": "Soft tick",
+   "source_licensing": "NVIDIA newsroom media assets (editorial use; confirm terms) / screenshot"
+  },
+  {
+   "line": "And Harvey Jones became chair of the board.",
+   "start_s": 15.5,
+   "end_s": 19.3,
+   "treatment": "screen",
+   "footage": "12 Nov release line naming Harvey C. Jones first-ever Chair",
+   "on_screen_text": "NEW BOARD CHAIR: HARVEY JONES",
+   "motion_graphics": "Lower-third with title",
+   "transition": "Cut",
+   "sfx": "Soft tick",
+   "source_licensing": "NVIDIA newsroom screenshot, credit NVIDIA"
+  },
+  {
+   "line": "Then on November 23, the board voted unanimously to bring him back, effective immediately.",
+   "start_s": 19.3,
+   "end_s": 25.7,
+   "treatment": "b-roll",
+   "footage": "Screenshot of 23 Nov release 'NVIDIA Board Reinstates Jensen Huang...' plus NVIDIA press photo of Jensen Huang from NVIDIA media assets",
+   "on_screen_text": "23 NOV · VOTE: UNANIMOUS",
+   "motion_graphics": "Timeline bar fills from 12 to 23 Nov",
+   "transition": "Zoom-through",
+   "sfx": "Whoosh + bass drop",
+   "source_licensing": "NVIDIA newsroom screenshot and media assets (editorial use; confirm terms)"
+  },
+  {
+   "line": "Huang said he can't wait to get back to work.",
+   "start_s": 25.7,
+   "end_s": 30.3,
+   "treatment": "split",
+   "footage": "Release quote line highlighted; creator reacts",
+   "on_screen_text": "\"I can't wait to get back to work.\" — Jensen Huang",
+   "motion_graphics": "Quote card",
+   "transition": "Cut",
+   "sfx": "None (let line breathe)",
+   "source_licensing": "NVIDIA release quote, credit NVIDIA"
+  },
+  {
+   "line": "But it's not over.",
+   "start_s": 30.3,
+   "end_s": 32.4,
+   "treatment": "talking-head",
+   "footage": "Creator, slower, lean in",
+   "on_screen_text": "BUT IT'S NOT OVER",
+   "motion_graphics": "Music dips; slight vignette",
+   "transition": "Hard cut",
+   "sfx": "Music drop to near-silence",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.",
+   "start_s": 32.4,
+   "end_s": 40.0,
+   "treatment": "screen",
+   "footage": "23 Nov release paragraph on the independent committee investigation, highlighted",
+   "on_screen_text": "INVESTIGATION CONTINUES",
+   "motion_graphics": "Highlight sweep across the sentence",
+   "transition": "Slide up",
+   "sfx": "Low drone swell",
+   "source_licensing": "NVIDIA newsroom screenshot, credit NVIDIA"
+  },
+  {
+   "line": "He's back, with a lot more oversight.",
+   "start_s": 40.0,
+   "end_s": 43.0,
+   "treatment": "graphic",
+   "footage": "Text over NVIDIA GPU/chip product imagery from NVIDIA media assets (no invented demo)",
+   "on_screen_text": "BACK · WITH MORE OVERSIGHT",
+   "motion_graphics": "Checklist: new national-security committee ✓ new Chief Compliance Officer search ✓",
+   "transition": "Fade to end card",
+   "sfx": "Final hit, music resolves",
+   "source_licensing": "NVIDIA media assets (editorial use; confirm terms) + own graphics"
+  }
+ ],
+ "recording_v9": {
+  "opening_expression": "Straight face on 'quit', then a beat and raised eyebrows on 'he's back'.",
+  "emphasis": [
+   "quit",
+   "eleven days",
+   "unanimously",
+   "effective immediately",
+   "not over",
+   "more oversight"
+  ],
+  "pauses": [
+   "after 'quit.'",
+   "before 'Then on November 23'",
+   "before 'But it's not over.'",
+   "before the last line"
+  ],
+  "pronunciation": [
+   "Jensen Huang: JEN-sun HWAHNG",
+   "Colette Kress: koh-LET KRESS",
+   "Nvidia: en-VID-ee-uh"
+  ],
+  "framing": "Vertical 9:16, chest-up medium close-up, eyes on the upper third; leave headroom for on-screen text; plain background.",
+  "pace": "Brisk but clear (about 140 words per minute); slow down slightly on the investigation line.",
+  "gestures": "Hand flick on 'quit'; two fingers tapping on 'eleven days'; open palm on 'he's back'; small lean-in on 'not over'."
+ },
+ "music": {
+  "style": "Tense cinematic corporate pulse, minor key, about 90-100 BPM, light percussion; no lyrics",
+  "track_suggestion": "Search your licensed library for 'cinematic tension corporate pulse' (for example YouTube Audio Library, free; or Epidemic Sound / Artlist if you hold a subscription). No specific track is claimed as licensed.",
+  "licensing": "Use only a track your account is licensed to use on Instagram; keep the licence record",
+  "opening_cue": "Start silent on 'quit', hit the first beat on 'Eleven days later'",
+  "beat_changes": [
+   "Build from 'Then on November 23'",
+   "Near-silence dip on 'But it's not over'",
+   "Resolve on the last line"
+  ],
+  "sfx": [
+   "Low impact on the hook",
+   "Whoosh into the timeline",
+   "Soft ticks on names",
+   "Drone swell under the investigation line"
+  ],
+  "dialogue_music_balance": "Dialogue normalised to about -14 LUFS; music bed around -27 dB under speech, up to about -20 dB in gaps",
+  "ending_cue": "Clean resolve on 'more oversight', 1 s tail"
+ },
+ "distribution": {
+  "cover_headline": "NVIDIA's CEO quit. Then came back.",
+  "thumbnail_concept": "NVIDIA press photo of Jensen Huang (NVIDIA media assets) on one side, bold '11 DAYS' on the other, small dates '12 NOV → 23 NOV'",
+  "posting_angle": "A clear, factual explainer of the 11-day CEO reversal, sourced to Nvidia's own releases; no gossip, no politics",
+  "engagement_question": "Would you have brought him back?"
+ },
+ "production_handoff": {
+  "pipeline": [
+   "GitHub editing tools",
+   "saved references",
+   "creative analysis",
+   "transcript-based storyboard",
+   "editing",
+   "audio restoration",
+   "music",
+   "color grading",
+   "4K rendering",
+   "QC"
+  ],
+  "output_resolution": "2160x3840",
+  "audio": "Denoise and de-reverb dialogue, gentle compression, normalise to -14 LUFS with -1.5 dB true peak; tighten pauses over 0.45 s without clipping words",
+  "captions": "Word-level burned-in captions from captions.txt, 2-5 words per line; highlight emphasis words; keep clear of the bottom UI area",
+  "broll_list": [
+   "NVIDIA newsroom: 12 Nov release 'NVIDIA Announces CEO Transition' (screenshot)",
+   "NVIDIA newsroom: 23 Nov reinstatement release (screenshot)",
+   "NVIDIA media assets: Jensen Huang press photo; Colette Kress photo if available; GPU/chip product images (editorial use, confirm terms)",
+   "Own graphics: timeline 12→23 Nov, quote card, oversight checklist"
+  ],
+  "notes": "Do not use unrelated stock footage or invent product demos; credit NVIDIA on screen for screenshots."
+ }
 }

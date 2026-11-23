@@ -67,8 +67,8 @@ def estimate_seconds(text: str, scheme: str | None = None) -> dict:
     sentences = len(script_sentences(text))
     pauses = min(0.2 * max(sentences - 1, 0), config.settings()["script"]["pause_allowance_seconds"] + 1)
     v6 = config.settings().get("script_v6", {})
-    if scheme in ("v6", "v7"):
-        # v6/v7: a moderate, natural speaking pace with a real pause after every sentence (no cramming). A measured
+    if scheme in ("v6", "v7", "v9"):
+        # v6/v7/v9: a moderate, natural speaking pace with a real pause after every sentence (no cramming). A measured
         # calibration of the creator's voice still wins over the assumed pace; the pauses are always added.
         if not config.path("analytics/pace.json").exists():
             wpm = float(v6.get("words_per_minute", 140))
@@ -82,7 +82,7 @@ def limits(scheme: str | None = None) -> dict:
     """Length limits: script_v3 for v3 packages, the original script limits otherwise."""
     st = config.settings()
     sc = dict(st["script"])
-    if scheme in ("v3", "v5", "v6", "v7") and f"script_{scheme}" in st:
+    if scheme in ("v3", "v5", "v6", "v7", "v9") and f"script_{scheme}" in st:
         sc.update(st[f"script_{scheme}"])
     return sc
 
@@ -119,7 +119,7 @@ def check(text: str, language: str | None = None, scheme: str | None = None) -> 
         warnings.append(f"{est['words']} words is outside the {wlo}-{whi} word target")
     if sents and word_count(sents[0]) > 16:
         warnings.append("first sentence is longer than 16 words: the hook should land within two seconds")
-    if scheme in ("v6", "v7"):
+    if scheme in ("v6", "v7", "v9"):
         long = [i + 1 for i, x in enumerate(sents) if word_count(x) > MAX_SENTENCE_WORDS_V6]
         if long:
             problems.append(f"sentence(s) {long} longer than {MAX_SENTENCE_WORDS_V6} words: use short, spoken sentences")

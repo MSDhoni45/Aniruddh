@@ -84,6 +84,48 @@
       "quality_gate": "PASS",
       "quality_total": 100,
       "validation_problems": []
+    },
+    "2026-11-24-manual-030439": {
+      "run_id": "2026-11-24-manual-030439",
+      "trigger": "manual",
+      "start_ist": "2026-11-24T03:04:39+05:30",
+      "end_ist": "2026-11-24T03:04:41+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "be8cc0d",
+      "research_window": {
+        "start_utc": "2026-11-22T20:01:32+00:00",
+        "end_utc": "2026-11-23T20:01:32+00:00",
+        "start_ist": "2026-11-23T01:31:32+05:30",
+        "end_ist": "2026-11-24T01:31:32+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "V9 package: Nvidia (storyboard, music, distribution, handoff)",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+      "candidates": 21,
+      "source_access": "Evidence levels: 8 HIGH. Claims with a source opened directly: 8 of 8.",
+      "fact_check": "PASS",
+      "word_count": 93,
+      "estimated_seconds": 43.0,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
     }
   }
 }

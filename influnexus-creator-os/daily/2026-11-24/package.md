@@ -50,7 +50,7 @@ Nvidia's CEO quit. Eleven days later, he's back.
 
 On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.
 
-His CFO, Colette Kress, stepped in as interim CEO.
+His CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.
 
 Then on November 23, the board voted unanimously to bring him back, effective immediately.
 
@@ -61,7 +61,7 @@ But it's not over. The board says its investigation, after reports he was target
 He's back, with a lot more oversight.
 ```
 
-85 words · about 39.2 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
+93 words · about 43.0 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
 
 ## Claim verification table
 
@@ -76,6 +76,7 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 | c5 | Huang said: 'I can't wait to get back to work' | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
 | c6 | The board says its independent investigation, formed after reports that Huang was the target of a foreign intelligence effort, will proceed to conclusion | high (present or future time context) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
 | c7 | Nvidia has formed a National Security and Export Control Committee and is searching for a new Chief Compliance Officer | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
+| c8 | The board appointed Harvey C. Jones as Chair of the Board | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
 
 ## D. Recording direction
 
@@ -83,10 +84,10 @@ Delivery only. Keep your natural accent; no editing instructions.
 
 - **Tone:** Calm, factual.
 - **Opening expression:** Raised eyebrows on 'he's back'.
-- **Emphasise:** quit, eleven days, unanimously, not over
+- **Emphasise:** quit, eleven days, unanimously, effective immediately, not over, more oversight
 - **Pauses:** after 'quit.'; before 'But it's not over.'
 - **Pronunciation:** Jensen Huang: JEN-sun HWAHNG; Colette Kress: koh-LET KRESS
-- **Estimated duration:** 39.2 s
+- **Estimated duration:** 43.0 s
 
 ## E. Platform content
 

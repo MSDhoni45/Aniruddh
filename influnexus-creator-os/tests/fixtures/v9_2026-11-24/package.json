@@ -1,0 +1,1619 @@
+{
+ "date": "2026-11-24",
+ "language": "english",
+ "scoring": "v7",
+ "slug": "nvidia-reinstates-jensen-huang",
+ "keys": [
+  "nvidia-ceo-jensen-huang-reinstated",
+  "nvidia-ceo-transition"
+ ],
+ "topic": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+ "category": "TECH COMPANIES",
+ "topic_type": "BREAKING",
+ "announced_at": "23 November 2026 (NVIDIA press release)",
+ "event_date": "2026-11-23",
+ "story_id": "2026-11-24-nvidia-reinstates-jensen-huang",
+ "company": "NVIDIA",
+ "generated_at": "2026-11-23T20:05:00+00:00",
+ "research_window": {
+  "start_utc": "2026-11-22T20:01:32+00:00",
+  "end_utc": "2026-11-23T20:01:32+00:00",
+  "start_ist": "2026-11-23T01:31:32+05:30",
+  "end_ist": "2026-11-24T01:31:32+05:30",
+  "hours": 24
+ },
+ "window_expansion_reason": null,
+ "creator_request": true,
+ "why_selected": "Creator request; the most-discussed tech story of the day, verified on Nvidia's own press releases.",
+ "why_short": "Nvidia's CEO quit, then came back 11 days later.",
+ "why_beats_alternatives": "Walmart's AI checkout (70.5) remains blocked (no opened source). Nvidia's reversal is the most-discussed story of the day and both Nvidia press releases opened directly. The stock move, personal allegations and political angles are excluded.",
+ "why_this_story": "The world's most watched AI chip company lost its founder-CEO on 12 Nov and brought him back on 23 Nov: a fast, surprising reversal everyone in tech is discussing (trending per your note and wide search coverage; X engagement not observable here). Both of Nvidia's own press releases opened directly. Walmart's AI checkout story scored higher on discovery but none of its sources open.",
+ "evidence_confidence": "HIGH",
+ "confidence": "HIGH",
+ "verified_development": "NVIDIA (23 Nov 2026): the board unanimously reinstated Jensen Huang as President, CEO and director, effective immediately, after he resigned on 12 Nov (Colette Kress interim CEO). The independent investigation into reported foreign-intelligence targeting continues; new national-security committee and Chief Compliance Officer search.",
+ "disclosure": "Disclosure: written by Claude, an Anthropic model. Nvidia supplies chips across the AI industry; no other conflict known. Personal allegations, politics and the stock move are deliberately left out.",
+ "research_summary": "Huang's resignation and reinstatement were confirmed on Nvidia's own newsroom, which opens from this environment: the 12 Nov release 'NVIDIA Announces CEO Transition' (Huang resigned effective immediately; CFO Colette Kress interim CEO; Harvey Jones first-ever Chair) and the 23 Nov release reinstating him by a unanimous board vote. The board says its independent committee investigation, formed after reports that Huang was targeted by a foreign intelligence effort, will proceed to conclusion, and it has formed a National Security and Export Control Committee and begun a search for a Chief Compliance Officer. Reported stock moves, personal allegations and political statements are not in the script: the stock figure needs an opened primary, and politics and personal matters are excluded.",
+ "primary_sources": [
+  {
+   "label": "NVIDIA: Board Reinstates Jensen Huang (23 Nov 2026)",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+  },
+  {
+   "label": "NVIDIA: CEO Transition (12 Nov 2026)",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+  }
+ ],
+ "supporting_sources": [],
+ "key_facts": [
+  "12 Nov: Huang resigned; Kress interim CEO.",
+  "23 Nov: unanimous board vote reinstates him, effective immediately.",
+  "Investigation continues; new compliance roles."
+ ],
+ "uncertainties": [
+  "Why the board changed course is given only in its own words ('candor and ability to lead').",
+  "Reported stock moves are not verified on an opened source and are left out.",
+  "Personal allegations and political statements reported elsewhere are deliberately excluded.",
+  "Social engagement is not observable here (x.com blocked)."
+ ],
+ "excluded_claims": [
+  "Stock price moves (no opened primary).",
+  "Personal allegations behind the resignation.",
+  "Political figures' statements.",
+  "US government input (in the release; left out for length and to avoid politics)."
+ ],
+ "context": "Harvey Jones stays as Board chair; Kress returns to CFO.",
+ "script": "Nvidia's CEO quit. Eleven days later, he's back.\n\nOn November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.\n\nHis CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.\n\nThen on November 23, the board voted unanimously to bring him back, effective immediately.\n\nHuang said he can't wait to get back to work.\n\nBut it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.\n\nHe's back, with a lot more oversight.",
+ "hook": "Nvidia's CEO quit. Eleven days later, he's back.",
+ "hooks": [
+  {
+   "text": "Nvidia's CEO quit. Eleven days later, he's back.",
+   "approach": "contradiction",
+   "accuracy": 9,
+   "clarity": 9,
+   "curiosity": 9,
+   "specificity": 9,
+   "emotional": 8,
+   "comprehension": 9
+  },
+  {
+   "text": "The world's most important chip company just rehired its CEO.",
+   "approach": "major product reveal",
+   "accuracy": 7,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 6,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "Jensen Huang is back at Nvidia, 11 days after quitting.",
+   "approach": "major product reveal",
+   "accuracy": 9,
+   "clarity": 9,
+   "curiosity": 7,
+   "specificity": 9,
+   "emotional": 6,
+   "comprehension": 9
+  },
+  {
+   "text": "Nvidia's board changed its mind in under two weeks.",
+   "approach": "contradiction",
+   "accuracy": 9,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 7,
+   "emotional": 6,
+   "comprehension": 8
+  },
+  {
+   "text": "The man behind the AI chip boom is back.",
+   "approach": "surprising capability",
+   "accuracy": 6,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 4,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "Nvidia had a different CEO for 11 days.",
+   "approach": "unexpected consequence",
+   "accuracy": 8,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 8,
+   "emotional": 6,
+   "comprehension": 8
+  },
+  {
+   "text": "Why did Nvidia bring back the CEO who quit?",
+   "approach": "contradiction",
+   "accuracy": 8,
+   "clarity": 8,
+   "curiosity": 9,
+   "specificity": 6,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "Nvidia's boss is back, but the investigation isn't over.",
+   "approach": "important warning",
+   "accuracy": 9,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 7,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "Eleven days. That's how long Nvidia went without Jensen Huang.",
+   "approach": "unexpected consequence",
+   "accuracy": 9,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 9,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "Jensen Huang was fired and rehired.",
+   "approach": "contradiction",
+   "accuracy": 2,
+   "clarity": 9,
+   "curiosity": 9,
+   "specificity": 5,
+   "emotional": 8,
+   "comprehension": 9
+  }
+ ],
+ "revisions": 3,
+ "practical_takeaway": {
+  "who_can_use": "not applicable (company news)",
+  "what_it_does": "Leadership change at the world's leading AI chip company",
+  "availability": "not applicable",
+  "price": "not applicable",
+  "difference": "A resignation reversed in 11 days",
+  "limitations": "Investigation still open",
+  "why_it_matters": "Nvidia's chips sit behind much of today's AI; its leadership affects the whole industry"
+ },
+ "audience_check": {
+  "why_care_today": "It is the tech story everyone is discussing right now.",
+  "affects_life_or_work": "Nvidia's chips power AI tools many people use daily.",
+  "can_they_use_it": "No product; it is industry news people want explained.",
+  "surprising": "A CEO resignation reversed in just eleven days.",
+  "demonstrable": "Both press releases and dates make a clean timeline.",
+  "clear_consequence": "He returns with more oversight and an open investigation.",
+  "would_share": "People share fast-moving tech drama with friends.",
+  "right_audience": "Tech, AI and business followers."
+ },
+ "script_checks": {
+  "hook_clarity": {
+   "pass": true,
+   "why": "Nine words that tell the whole twist instantly."
+  },
+  "factual_accuracy": {
+   "pass": true,
+   "why": "Every sentence maps to c1-c8 on Nvidia's two opened releases."
+  },
+  "natural_delivery": {
+   "pass": true,
+   "why": "Short spoken sentences with a clear turn."
+  },
+  "narrative_coherence": {
+   "pass": true,
+   "why": "One timeline: quit, interim, return, oversight."
+  },
+  "audience_relevance": {
+   "pass": true,
+   "why": "The most-discussed tech story of the day."
+  },
+  "practical_takeaway": {
+   "pass": true,
+   "why": "Explains what changed and what is still open."
+  },
+  "ending_quality": {
+   "pass": true,
+   "why": "Ends on a memorable line about oversight, not a forced question."
+  },
+  "no_redundancy": {
+   "pass": true,
+   "why": "Each line moves the timeline forward."
+  },
+  "no_jargon": {
+   "pass": true,
+   "why": "No financial or legal jargon."
+  },
+  "no_unsupported_implications": {
+   "pass": true,
+   "why": "No stock figures, allegations or politics; investigation wording attributed to the board."
+  }
+ },
+ "recording_guidance": {
+  "hook_emphasis": "Pause between 'quit.' and 'Eleven days later'; lean on 'he's back'.",
+  "important_pause": "A beat before 'But it's not over.'",
+  "final_tone": "Calm, factual; no gossip tone."
+ },
+ "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7/V8 model unchanged.",
+ "recording": {
+  "tone": "Calm, factual.",
+  "opening_expression": "Raised eyebrows on 'he's back'.",
+  "emphasis": [
+   "quit",
+   "eleven days",
+   "unanimously",
+   "effective immediately",
+   "not over",
+   "more oversight"
+  ],
+  "pauses": [
+   "after 'quit.'",
+   "before 'But it's not over.'"
+  ],
+  "pronunciation": [
+   "Jensen Huang: JEN-sun HWAHNG",
+   "Colette Kress: koh-LET KRESS"
+  ]
+ },
+ "visuals": [
+  "Both press release headlines with dates",
+  "Timeline card"
+ ],
+ "pillar": "big_tech_leaders",
+ "format": "A",
+ "backups": [],
+ "backup_shortfall_reason": "Other strong stories are blocked from verification.",
+ "audience": {
+  "stop_scroll": "A CEO quitting and returning in 11 days stops the scroll.",
+  "watch_to_end": "Viewers want the twist at the end.",
+  "share": "Tech drama travels.",
+  "save": "Low.",
+  "comment": "People will debate the decision.",
+  "follow": "Fast, careful explainers of big tech news."
+ },
+ "editing": {
+  "opening_visual": "Two press release headlines, 11 days apart",
+  "key_moments": [
+   "33.0.2 warning",
+   "33.0.3 fix"
+  ],
+  "broll": [
+   "screen recording of the release pages"
+  ],
+  "on_screen_text": [
+   "33.0.2: startup crash on some older CPUs",
+   "33.0.3: fixed (22 Nov)"
+  ],
+  "demonstrations": [
+   "none"
+  ],
+  "stats": [
+   "none: version numbers only"
+  ],
+  "rhythm": "Quick, one step per shot",
+  "caption_emphasis": [
+   "crash",
+   "fix",
+   "33.0.3"
+  ],
+  "sound": "Light bed"
+ },
+ "limitations": [
+  "nvidianews.nvidia.com opens; investor.nvidia.com, sec.gov and news sites blocked.",
+  "Social engagement UNKNOWN."
+ ],
+ "instagram": {
+  "cover_headline": "Nvidia's CEO quit. Then came back.",
+  "caption": "Jensen Huang resigned as Nvidia's CEO on 12 November. On 23 November the board voted unanimously to bring him back, effective immediately. The board says its independent investigation will continue, and it's adding new oversight. Source: Nvidia's own press releases. Would you have brought him back?",
+  "hashtags": [
+   "#Nvidia",
+   "#JensenHuang",
+   "#AI",
+   "#TechNews"
+  ]
+ },
+ "linkedin": {
+  "caption": "Nvidia reinstated Jensen Huang as CEO on 23 Nov by unanimous board vote, 11 days after his resignation; investigation and new compliance oversight continue.",
+  "business_relevance": "Governance at the center of the AI supply chain.",
+  "discussion_prompt": "What should boards weigh in a reversal like this?"
+ },
+ "x": {
+  "post": "Nvidia's board unanimously reinstated Jensen Huang as CEO on 23 Nov, 11 days after he resigned. The board says its independent investigation continues, with new compliance oversight. (Nvidia press releases)"
+ },
+ "youtube": {
+  "title": "Nvidia's CEO Quit. 11 Days Later, He's Back",
+  "description": "Sources: NVIDIA press releases of 12 and 23 Nov 2026.",
+  "keywords": [
+   "Nvidia",
+   "Jensen Huang",
+   "AI chips"
+  ]
+ },
+ "growth": {
+  "watch": "Clear before/after.",
+  "share": "Useful tool.",
+  "follow": "Practical AI tools.",
+  "segment": "Creators, marketers.",
+  "underperform": "Tool stories can feel like ads."
+ },
+ "x_signals": [],
+ "candidates": [
+  {
+   "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+   "main_claim": "Muse can search Walmart deals, build a basket and complete checkout inside the conversation; first add-to-cart sends the shopper to Walmart to sign in and set up an Agent Profile with a spending limit.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "First time a major retailer lets a third-party AI agent actually pay for you, timed to Black Friday week",
+   "potential_hook": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shop",
+   "target_audience": "US Walmart shoppers using Meta's Muse app (scope Walmart.com vs Sam's Club differs by outlet)",
+   "uncertainty": "Timing nuance: The Verge reportedly first said a delay to Nov 24, then Walmart said it rolls out Nov 23. 'Invitation-only beta' wording in one report.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Muse can search Walmart deals, build a basket and complete checkout inside the conversation; first add-to-cart sends the shopper to Walmart to sign in and set up an Agent Profile with a spending limit.",
+   "audience_relevance": "US Walmart shoppers using Meta's Muse app (scope Walmart.com vs Sam's Club differs by outlet)",
+   "practical_usefulness": "Agent-to-retailer checkout via Walmart's MCP-based Agent Gateway; card saved in Walmart account; Walmart prices and return policy",
+   "visual_potential": "Muse chat building a cart; Agent Profile spending-limit screen (only if real screenshots exist; do not invent)",
+   "potential_controversy": "Timing nuance: The Verge reportedly first said a delay to Nov 24, then Walmart said it rolls out Nov 23. 'Invitation-only beta' wording in one report.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 7,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 7,
+    "discussion": 8,
+    "timeliness": 9
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta"
+  },
+  {
+   "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+   "main_claim": "Board voted unanimously to reinstate Huang as President, CEO and director effective immediately; Colette Kress returns to CFO only.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Leader of the world's most important AI chip company is back; affects AI supply chain sentiment",
+   "potential_hook": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+   "target_audience": "n/a",
+   "uncertainty": "Strong POLITICS tie (Trump reportedly dialled into board meeting; national-security framing) and personal-scandal background (affairs) - conflicts with no-politics positioning. Stock move is a time-sensitive extraordinary financial claim needing HIGH (primary opened) - not achievable here.",
+   "evidence_confidence": "HIGH",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Board voted unanimously to reinstate Huang as President, CEO and director effective immediately; Colette Kress returns to CFO only.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a (corporate governance)",
+   "visual_potential": "Headlines timeline; no invented charts",
+   "potential_controversy": "Strong POLITICS tie (Trump reportedly dialled into board meeting; national-security framing) and personal-scandal background (affairs) - conflicts with no-politics positioning. Stock move is a time-sensitive extraordinary financial claim needing HIGH (primary opened) - not achievable here.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 9,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 8,
+    "discussion": 9,
+    "timeliness": 10
+   },
+   "creator_request": true,
+   "signals": [
+    {
+     "platform": "primary",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+     "title": "NVIDIA press release (opened)",
+     "retrieved_at": "2026-11-23T20:15:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ]
+  },
+  {
+   "headline": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/",
+   "main_claim": "Minister Choi Kyo-jin resigned; disaster alert system used for first time to catch exam cheaters; trigger was a tax-accountant exam top scorer admitting AI use.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI cheating reaching national exams",
+   "potential_hook": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneu",
+   "target_audience": "n/a",
+   "uncertainty": "INELIGIBLE for selection: politics (ministerial resignation) and event likely before window start (Nov 22 KST).",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Minister Choi Kyo-jin resigned; disaster alert system used for first time to catch exam cheaters; trigger was a tax-accountant exam top scorer admitting AI use.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "INELIGIBLE for selection: politics (ministerial resignation) and event likely before window start (Nov 22 KST).",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 8,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 6,
+    "discussion": 9,
+    "timeliness": 6
+   },
+   "rejected": "politics (ministerial resignation) excluded by V8 positioning"
+  },
+  {
+   "headline": "Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk",
+   "main_claim": "Long essay on X arguing superintelligence is close, citing the Riemann/Lean proof with Claude, and calling for urgent safety work.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Head of AI at Meta saying control may be at risk is a big shift in tone",
+   "potential_hook": "Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning societ",
+   "target_audience": "n/a",
+   "uncertainty": "Ties to already-covered Riemann/Lean story; AGI-type extraordinary framing; exact quotes not verified.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Long essay on X arguing superintelligence is close, citing the Riemann/Lean proof with Claude, and calling for urgent safety work.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "Opinion essay; no product",
+   "visual_potential": "Quote cards only from verified text (not obtained)",
+   "potential_controversy": "Ties to already-covered Riemann/Lean story; AGI-type extraordinary framing; exact quotes not verified.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 7,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 8,
+    "discussion": 9,
+    "timeliness": 9
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); superintelligence claim is extraordinary (primary and independent confirmation must be opened); x.com blocked"
+  },
+  {
+   "headline": "Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tides",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/",
+   "main_claim": "Service paused across the Bay Area early Monday; follows last week's flooding that stranded robotaxis; no end date given; freeway rides remain suspended nationally after CA DMV action; two NHTSA recalls filed recently.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Robotaxis still can't handle severe weather - a real limitation for everyday users",
+   "potential_hook": "Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tide",
+   "target_audience": "Bay Area Waymo riders",
+   "uncertainty": "NEW DATED DEVELOPMENT on previously blocked Waymo topic. Second search returned only older pauses (Nov 18, a Thursday pause) - corroboration weak. No Waymo primary opened.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Service paused across the Bay Area early Monday; follows last week's flooding that stranded robotaxis; no end date given; freeway rides remain suspended nationally after CA DMV action; two NHTSA recalls filed recently.",
+   "audience_relevance": "Bay Area Waymo riders",
+   "practical_usefulness": "n/a",
+   "visual_potential": "Rain + robotaxi B-roll only if licensed; maps",
+   "potential_controversy": "NEW DATED DEVELOPMENT on previously blocked Waymo topic. Second search returned only older pauses (Nov 18, a Thursday pause) - corroboration weak. No Waymo primary opened.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); the Sunday announcement could not be found again and is easily confused with the 18 Nov pause"
+  },
+  {
+   "headline": "Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sales",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever",
+   "main_claim": "Forecast of $357B global online sales, ~6% YoY.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Context for Walmart story",
+   "potential_hook": "Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sale",
+   "target_audience": "n/a",
+   "uncertainty": "Use only as context; billion-dollar forecast.",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Forecast of $357B global online sales, ~6% YoY.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "Forecast",
+   "visual_potential": "Charts only from real data",
+   "potential_controversy": "Use only as context; billion-dollar forecast.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 7
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home replaces Assistant on speakers",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/",
+   "main_claim": "Nest app retires; custom clips must be downloaded manually; Nest Aware 1st Gen moves to Google Home Premium.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Practical action for millions of homes",
+   "potential_hook": "Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home re",
+   "target_audience": "Nest owners",
+   "uncertainty": "Announcement may be outside window; must establish date before use.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Nest app retires; custom clips must be downloaded manually; Nest Aware 1st Gen moves to Google Home Premium.",
+   "audience_relevance": "Nest owners",
+   "practical_usefulness": "Migration",
+   "visual_potential": "App screens",
+   "potential_controversy": "Announcement may be outside window; must establish date before use.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 5
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today",
+   "main_claim": "FSD v15 (2026.38.6.11) to Early Access owners; not on HW3; wide release 'next month' per Musk; stock +12-13% (reported).",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Previously blocked; only new dated development is a share-price move (needs HIGH)",
+   "potential_hook": "Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls",
+   "target_audience": "Early Access owners on HW4",
+   "uncertainty": "Rollout predates window; stock move is extraordinary financial claim.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "FSD v15 (2026.38.6.11) to Early Access owners; not on HW3; wide release 'next month' per Musk; stock +12-13% (reported).",
+   "audience_relevance": "Early Access owners on HW4",
+   "practical_usefulness": "Reality View, speed-camera slowdown, Bike Rack Mode",
+   "visual_potential": "Owner screen recordings exist but not inspected",
+   "potential_controversy": "Rollout predates window; stock move is extraordinary financial claim.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 8
+   }
+  },
+  {
+   "headline": "iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform text styling",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/",
+   "main_claim": "Feature roundup of upcoming update.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Useful but incremental",
+   "potential_hook": "iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform tex",
+   "target_audience": "iPhone users after release",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Feature roundup of upcoming update.",
+   "audience_relevance": "iPhone users after release",
+   "practical_usefulness": "Small app updates",
+   "visual_potential": "Screen recordings of beta (not inspected)",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 4,
+    "usefulness": 7,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 3,
+    "discussion": 5,
+    "timeliness": 8
+   }
+  },
+  {
+   "headline": "OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterprise",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "main_claim": "Chat-tab model update.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Most-used AI app gets new default model",
+   "potential_hook": "OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterp",
+   "target_audience": "Paid ChatGPT tiers",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Chat-tab model update.",
+   "audience_relevance": "Paid ChatGPT tiers",
+   "practical_usefulness": "Model update in Chat",
+   "visual_potential": "None",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 4,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 9
+   }
+  },
+  {
+   "headline": "Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chips",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "main_claim": "Amazon (via Annapurna Labs) to acquire the Decart Optimization Stack plus the three cofounders and engineers; not Decart's models (per Bloomberg source); subject to regulatory approval.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Amazon pushing its own chips as Nvidia alternatives",
+   "potential_hook": "Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chi",
+   "target_audience": "Developers/AWS customers eventually",
+   "uncertainty": "Billion-dollar figure is reported not confirmed; script must say 'reportedly' or omit. Low everyday relevance.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Amazon (via Annapurna Labs) to acquire the Decart Optimization Stack plus the three cofounders and engineers; not Decart's models (per Bloomberg source); subject to regulatory approval.",
+   "audience_relevance": "Developers/AWS customers eventually",
+   "practical_usefulness": "Software that lets developers move AI models across chips, to run workloads on Trainium/Inferentia",
+   "visual_potential": "Logos/diagram of model -> chips; nothing invented",
+   "potential_controversy": "Billion-dollar figure is reported not confirmed; script must say 'reportedly' or omit. Low everyday relevance.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10
+   }
+  },
+  {
+   "headline": "Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov)",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/",
+   "main_claim": "No new dated development found inside window; coverage is recap.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Prompts may not be private",
+   "potential_hook": "Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov)",
+   "target_audience": "AI API users",
+   "uncertainty": "Previously blocked; NO new dated development in window -> not selectable.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "No new dated development found inside window; coverage is recap.",
+   "audience_relevance": "AI API users",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Previously blocked; NO new dated development in window -> not selectable.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 4
+   }
+  },
+  {
+   "headline": "Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/",
+   "main_claim": "Gameplay moves to Verse + Scene Graph; Fortnite prototype ported 20,000+ Blueprints to ~3M lines of Verse.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI rewriting how games are built",
+   "potential_hook": "Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects",
+   "target_audience": "Game developers",
+   "uncertainty": "Event before window.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Gameplay moves to Verse + Scene Graph; Fortnite prototype ported 20,000+ Blueprints to ~3M lines of Verse.",
+   "audience_relevance": "Game developers",
+   "practical_usefulness": "Engine change",
+   "visual_potential": "None",
+   "potential_controversy": "Event before window.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 7,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 5
+   }
+  },
+  {
+   "headline": "OpenAI chief scientist Jakub Pachocki proposes industry-wide capability thresholds until safety monitoring catches up; Altman endorses",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
+   "main_claim": "Proposes labs agree thresholds (perplexity-based) and shared tests, warns AI could speed training advances from 2027.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Leading lab asks for self-limits",
+   "potential_hook": "OpenAI chief scientist Jakub Pachocki proposes industry-wide capability thresholds until safety moni",
+   "target_audience": "n/a",
+   "uncertainty": "Publication time vs window start (19:55Z Nov 22) unknown - may be before window. Title 'Perplexity and Intelligence' not confirmed.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Proposes labs agree thresholds (perplexity-based) and shared tests, warns AI could speed training advances from 2027.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Publication time vs window start (19:55Z Nov 22) unknown - may be before window. Title 'Perplexity and Intelligence' not confirmed.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 8,
+    "discussion": 8,
+    "timeliness": 7
+   }
+  },
+  {
+   "headline": "CrowdStrike to acquire Zscaler in ~$43.9B all-stock deal",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+   "main_claim": "1.135 CRWD shares per ZS share; expected to close in ~a year pending regulators; CRWD -10%, ZS +15% (reported).",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Largest security consolidation tied to AI-driven attacks",
+   "potential_hook": "CrowdStrike to acquire Zscaler in ~$43.9B all-stock deal",
+   "target_audience": "Enterprises",
+   "uncertainty": "Enterprise story; billion figures need HIGH.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "1.135 CRWD shares per ZS share; expected to close in ~a year pending regulators; CRWD -10%, ZS +15% (reported).",
+   "audience_relevance": "Enterprises",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Enterprise story; billion figures need HIGH.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10
+   }
+  },
+  {
+   "headline": "Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in simulation",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-18",
+   "original_source": "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html",
+   "main_claim": "Pre-silicon simulated results vs undisclosed baseline.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI designing chips",
+   "potential_hook": "Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in sim",
+   "target_audience": "n/a",
+   "uncertainty": "Outside window; extraordinary.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Pre-silicon simulated results vs undisclosed baseline.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Outside window; extraordinary.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 8,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 6,
+    "timeliness": 2
+   }
+  },
+  {
+   "headline": "GTA VI patch 1.002.002 rolls out in phases on 23 Nov fixing crashes, weather and autosave bugs",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/",
+   "main_claim": "Patch rollout (release type: official update).",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Huge audience",
+   "potential_hook": "GTA VI patch 1.002.002 rolls out in phases on 23 Nov fixing crashes, weather and autosave bugs",
+   "target_audience": "GTA VI players",
+   "uncertainty": "Not AI/tech-changes-life; weak fit.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Patch rollout (release type: official update).",
+   "audience_relevance": "GTA VI players",
+   "practical_usefulness": "Bug fixes",
+   "visual_potential": "Gameplay (rights issue)",
+   "potential_controversy": "Not AI/tech-changes-life; weak fit.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 3,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 2,
+    "discussion": 5,
+    "timeliness": 9
+   }
+  },
+  {
+   "headline": "Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+   "main_claim": "Greenoaks and Lightspeed led; valuation doubled in six months; outcome-based pricing.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "AI agents answering customer service calls",
+   "potential_hook": "Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M",
+   "target_audience": "Enterprises",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Greenoaks and Lightspeed led; valuation doubled in six months; outcome-based pricing.",
+   "audience_relevance": "Enterprises",
+   "practical_usefulness": "AI customer-service agents",
+   "visual_potential": "None",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 5,
+    "timeliness": 10
+   }
+  },
+  {
+   "headline": "Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid research platform",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/",
+   "main_claim": "Developer tools + research humanoid.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Humanoid tooling",
+   "potential_hook": "Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid",
+   "target_audience": "Researchers",
+   "uncertainty": "Possibly before window.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Developer tools + research humanoid.",
+   "audience_relevance": "Researchers",
+   "practical_usefulness": "Research platform",
+   "visual_potential": "Official robot footage",
+   "potential_controversy": "Possibly before window.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 6
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch",
+   "main_claim": "Launch delay.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Satellite internet competition",
+   "potential_hook": "Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov",
+   "target_audience": "n/a",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Launch delay.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "Launch footage (official)",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 4,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 4,
+    "discussion": 3,
+    "timeliness": 8
+   }
+  },
+  {
+   "headline": "MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in payments",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/",
+   "main_claim": "Sandbox + missions on financial crime, SME financing, safe agentic transactions.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI agents moving money",
+   "potential_hook": "MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in paym",
+   "target_audience": "Banks",
+   "uncertainty": "Date conflict; regulator item.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Sandbox + missions on financial crime, SME financing, safe agentic transactions.",
+   "audience_relevance": "Banks",
+   "practical_usefulness": "Regulatory sandbox",
+   "visual_potential": "None",
+   "potential_controversy": "Date conflict; regulator item.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 4,
+    "timeliness": 5
+   },
+   "rejected": "announcement date unknown"
+  }
+ ],
+ "candidate_shortfall_reason": "22 credible candidates found in the 24-hour window; several have unknown dates and are rejected rather than counted.",
+ "factcheck": {
+  "story": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+  "date": "2026-11-24",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "On 12 November 2026 Jensen Huang resigned as Nvidia's President and CEO, effective immediately",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-12",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     }
+    ],
+    "supporting_evidence": "'Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.' (12 Nov)",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_title": "NVIDIA Newsroom: NVIDIA Announces CEO Transition",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_date": "2026-11-12",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true
+   },
+   {
+    "id": "c2",
+    "text": "Nvidia credits Huang with the foundation built over the last 33 years",
+    "status": "COMPANY-CLAIMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-12",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     }
+    ],
+    "supporting_evidence": "Kress: 'the extraordinary foundation Jensen created over the last 33 years'",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_title": "NVIDIA Newsroom: NVIDIA Announces CEO Transition",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_date": "2026-11-12",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "Nvidia (Colette Kress, 12 Nov release)",
+    "script_attribution": "Nvidia",
+    "quote": false,
+    "wording_verified": true
+   },
+   {
+    "id": "c3",
+    "text": "CFO Colette Kress was appointed interim CEO",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-12",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     }
+    ],
+    "supporting_evidence": "'Colette Kress ... has agreed to serve as Interim Chief Executive Officer.'",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_title": "NVIDIA Newsroom: NVIDIA Announces CEO Transition",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_date": "2026-11-12",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true
+   },
+   {
+    "id": "c4",
+    "text": "On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO, effective immediately",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     }
+    ],
+    "supporting_evidence": "'effective immediately, Jensen Huang has been reinstated ... The Board of Directors voted unanimously to reinstate Mr. Huang' (23 Nov)",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_title": "NVIDIA Newsroom: Board Reinstates Jensen Huang",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true
+   },
+   {
+    "id": "c5",
+    "text": "Huang said: 'I can't wait to get back to work'",
+    "status": "COMPANY-CLAIMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     }
+    ],
+    "supporting_evidence": "Huang: 'I can't wait to get back to work.'",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_title": "NVIDIA Newsroom: Board Reinstates Jensen Huang",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "Jensen Huang (Nvidia release)",
+    "script_attribution": "Huang said",
+    "quote": true,
+    "wording_verified": true
+   },
+   {
+    "id": "c6",
+    "text": "The board says its independent investigation, formed after reports that Huang was the target of a foreign intelligence effort, will proceed to conclusion",
+    "status": "COMPANY-CLAIMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     }
+    ],
+    "supporting_evidence": "'in light of recent reporting that Mr. Huang has been the target of a foreign intelligence effort, the Board formed a committee ... The Board reiterated that the committee's investigation will proceed to conclusion.'",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_title": "NVIDIA Newsroom: Board Reinstates Jensen Huang",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "Nvidia board",
+    "script_attribution": "The board says",
+    "quote": false,
+    "wording_verified": true
+   },
+   {
+    "id": "c7",
+    "text": "Nvidia has formed a National Security and Export Control Committee and is searching for a new Chief Compliance Officer",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     }
+    ],
+    "supporting_evidence": "'The Board also recently formed a National Security and Export Control Committee ... NVIDIA is commencing a search to fill a new position, Chief Compliance Officer'",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_title": "NVIDIA Newsroom: Board Reinstates Jensen Huang",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true
+   },
+   {
+    "id": "c8",
+    "text": "The board appointed Harvey C. Jones as Chair of the Board",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:15:00+00:00",
+    "event_date": "2026-11-12",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     }
+    ],
+    "supporting_evidence": "'The Board of Directors appointed Harvey C. Jones as its first-ever Chair of the Board.' (12 Nov)",
+    "primary_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_title": "NVIDIA Newsroom: NVIDIA Announces CEO Transition",
+    "supporting_source": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "source_date": "2026-11-12",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true
+   }
+  ]
+ },
+ "access_limits": [
+  "Nvidia newsroom opened directly; other hosts blocked."
+ ],
+ "verification": "tiered",
+ "content_format": "A",
+ "quality_v8": {
+  "hook": 10,
+  "clarity": 9,
+  "storytelling": 9,
+  "audience_relevance": 9,
+  "information_value": 8,
+  "natural_delivery": 9,
+  "shareability": 9,
+  "ending": 8
+ },
+ "visual_suggestions": [
+  "Screenshot of Nvidia's 12 Nov press release headline 'NVIDIA Announces CEO Transition' (credit NVIDIA)",
+  "Screenshot of the 23 Nov release headline (credit NVIDIA)",
+  "Timeline card: 12 Nov resigned → Kress interim → 23 Nov reinstated",
+  "Text card: 'Investigation continues · new Chief Compliance Officer'"
+ ],
+ "rejected_drafts": [
+  "Draft 1 mentioned the stock jump (unverified on an opened source) and was cut.",
+  "Draft 2 called him the founder of the AI boom (unsupported) and was cut.",
+  "Draft 3 (85 words, 39 s) was under the V9 40-45 s / 90-105 word standard; added the first-ever board chair fact from the 12 Nov release. 'First-ever' was then dropped: it reads as an extraordinary 'first' that could not be independently confirmed."
+ ],
+ "storyboard": [
+  {
+   "line": "Nvidia's CEO quit.",
+   "start_s": 0.0,
+   "end_s": 1.6,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, tight medium shot",
+   "on_screen_text": "NVIDIA'S CEO QUIT",
+   "motion_graphics": "Hard cut-in punch zoom 106%",
+   "transition": "Cut",
+   "sfx": "Low impact hit",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "Eleven days later, he's back.",
+   "start_s": 1.6,
+   "end_s": 4.1,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, smile/raised eyebrows",
+   "on_screen_text": "11 DAYS LATER... HE'S BACK",
+   "motion_graphics": "Counter animates 1→11 days",
+   "transition": "Whip pan",
+   "sfx": "Riser into whoosh",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.",
+   "start_s": 4.1,
+   "end_s": 11.3,
+   "treatment": "screen",
+   "footage": "Screenshot of NVIDIA newsroom release 'NVIDIA Announces CEO Transition' (12 Nov 2026) with date highlighted",
+   "on_screen_text": "12 NOV · RESIGNED",
+   "motion_graphics": "Highlight box on 'has resigned'; slow push-in",
+   "transition": "Slide left",
+   "sfx": "Paper/click",
+   "source_licensing": "NVIDIA newsroom screenshot, editorial use, credit NVIDIA"
+  },
+  {
+   "line": "His CFO, Colette Kress, stepped in as interim CEO.",
+   "start_s": 11.3,
+   "end_s": 15.5,
+   "treatment": "split",
+   "footage": "Left: NVIDIA press image of Colette Kress if available in NVIDIA media assets; right: release text naming her interim CEO",
+   "on_screen_text": "INTERIM CEO: COLETTE KRESS",
+   "motion_graphics": "Name lower-third",
+   "transition": "Cross-dissolve",
+   "sfx": "Soft tick",
+   "source_licensing": "NVIDIA newsroom media assets (editorial use; confirm terms) / screenshot"
+  },
+  {
+   "line": "And Harvey Jones became chair of the board.",
+   "start_s": 15.5,
+   "end_s": 19.3,
+   "treatment": "screen",
+   "footage": "12 Nov release line naming Harvey C. Jones first-ever Chair",
+   "on_screen_text": "NEW BOARD CHAIR: HARVEY JONES",
+   "motion_graphics": "Lower-third with title",
+   "transition": "Cut",
+   "sfx": "Soft tick",
+   "source_licensing": "NVIDIA newsroom screenshot, credit NVIDIA"
+  },
+  {
+   "line": "Then on November 23, the board voted unanimously to bring him back, effective immediately.",
+   "start_s": 19.3,
+   "end_s": 25.7,
+   "treatment": "b-roll",
+   "footage": "Screenshot of 23 Nov release 'NVIDIA Board Reinstates Jensen Huang...' plus NVIDIA press photo of Jensen Huang from NVIDIA media assets",
+   "on_screen_text": "23 NOV · VOTE: UNANIMOUS",
+   "motion_graphics": "Timeline bar fills from 12 to 23 Nov",
+   "transition": "Zoom-through",
+   "sfx": "Whoosh + bass drop",
+   "source_licensing": "NVIDIA newsroom screenshot and media assets (editorial use; confirm terms)"
+  },
+  {
+   "line": "Huang said he can't wait to get back to work.",
+   "start_s": 25.7,
+   "end_s": 30.3,
+   "treatment": "split",
+   "footage": "Release quote line highlighted; creator reacts",
+   "on_screen_text": "\"I can't wait to get back to work.\" — Jensen Huang",
+   "motion_graphics": "Quote card",
+   "transition": "Cut",
+   "sfx": "None (let line breathe)",
+   "source_licensing": "NVIDIA release quote, credit NVIDIA"
+  },
+  {
+   "line": "But it's not over.",
+   "start_s": 30.3,
+   "end_s": 32.4,
+   "treatment": "talking-head",
+   "footage": "Creator, slower, lean in",
+   "on_screen_text": "BUT IT'S NOT OVER",
+   "motion_graphics": "Music dips; slight vignette",
+   "transition": "Hard cut",
+   "sfx": "Music drop to near-silence",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.",
+   "start_s": 32.4,
+   "end_s": 40.0,
+   "treatment": "screen",
+   "footage": "23 Nov release paragraph on the independent committee investigation, highlighted",
+   "on_screen_text": "INVESTIGATION CONTINUES",
+   "motion_graphics": "Highlight sweep across the sentence",
+   "transition": "Slide up",
+   "sfx": "Low drone swell",
+   "source_licensing": "NVIDIA newsroom screenshot, credit NVIDIA"
+  },
+  {
+   "line": "He's back, with a lot more oversight.",
+   "start_s": 40.0,
+   "end_s": 43.0,
+   "treatment": "graphic",
+   "footage": "Text over NVIDIA GPU/chip product imagery from NVIDIA media assets (no invented demo)",
+   "on_screen_text": "BACK · WITH MORE OVERSIGHT",
+   "motion_graphics": "Checklist: new national-security committee ✓ new Chief Compliance Officer search ✓",
+   "transition": "Fade to end card",
+   "sfx": "Final hit, music resolves",
+   "source_licensing": "NVIDIA media assets (editorial use; confirm terms) + own graphics"
+  }
+ ],
+ "recording_v9": {
+  "opening_expression": "Straight face on 'quit', then a beat and raised eyebrows on 'he's back'.",
+  "emphasis": [
+   "quit",
+   "eleven days",
+   "unanimously",
+   "effective immediately",
+   "not over",
+   "more oversight"
+  ],
+  "pauses": [
+   "after 'quit.'",
+   "before 'Then on November 23'",
+   "before 'But it's not over.'",
+   "before the last line"
+  ],
+  "pronunciation": [
+   "Jensen Huang: JEN-sun HWAHNG",
+   "Colette Kress: koh-LET KRESS",
+   "Nvidia: en-VID-ee-uh"
+  ],
+  "framing": "Vertical 9:16, chest-up medium close-up, eyes on the upper third; leave headroom for on-screen text; plain background.",
+  "pace": "Brisk but clear (about 140 words per minute); slow down slightly on the investigation line.",
+  "gestures": "Hand flick on 'quit'; two fingers tapping on 'eleven days'; open palm on 'he's back'; small lean-in on 'not over'."
+ },
+ "music": {
+  "style": "Tense cinematic corporate pulse, minor key, about 90-100 BPM, light percussion; no lyrics",
+  "track_suggestion": "Search your licensed library for 'cinematic tension corporate pulse' (for example YouTube Audio Library, free; or Epidemic Sound / Artlist if you hold a subscription). No specific track is claimed as licensed.",
+  "licensing": "Use only a track your account is licensed to use on Instagram; keep the licence record",
+  "opening_cue": "Start silent on 'quit', hit the first beat on 'Eleven days later'",
+  "beat_changes": [
+   "Build from 'Then on November 23'",
+   "Near-silence dip on 'But it's not over'",
+   "Resolve on the last line"
+  ],
+  "sfx": [
+   "Low impact on the hook",
+   "Whoosh into the timeline",
+   "Soft ticks on names",
+   "Drone swell under the investigation line"
+  ],
+  "dialogue_music_balance": "Dialogue normalised to about -14 LUFS; music bed around -27 dB under speech, up to about -20 dB in gaps",
+  "ending_cue": "Clean resolve on 'more oversight', 1 s tail"
+ },
+ "distribution": {
+  "cover_headline": "NVIDIA's CEO quit. Then came back.",
+  "thumbnail_concept": "NVIDIA press photo of Jensen Huang (NVIDIA media assets) on one side, bold '11 DAYS' on the other, small dates '12 NOV → 23 NOV'",
+  "posting_angle": "A clear, factual explainer of the 11-day CEO reversal, sourced to Nvidia's own releases; no gossip, no politics",
+  "engagement_question": "Would you have brought him back?"
+ },
+ "production_handoff": {
+  "pipeline": [
+   "GitHub editing tools",
+   "saved references",
+   "creative analysis",
+   "transcript-based storyboard",
+   "editing",
+   "audio restoration",
+   "music",
+   "color grading",
+   "4K rendering",
+   "QC"
+  ],
+  "output_resolution": "2160x3840",
+  "audio": "Denoise and de-reverb dialogue, gentle compression, normalise to -14 LUFS with -1.5 dB true peak; tighten pauses over 0.45 s without clipping words",
+  "captions": "Word-level burned-in captions from captions.txt, 2-5 words per line; highlight emphasis words; keep clear of the bottom UI area",
+  "broll_list": [
+   "NVIDIA newsroom: 12 Nov release 'NVIDIA Announces CEO Transition' (screenshot)",
+   "NVIDIA newsroom: 23 Nov reinstatement release (screenshot)",
+   "NVIDIA media assets: Jensen Huang press photo; Colette Kress photo if available; GPU/chip product images (editorial use, confirm terms)",
+   "Own graphics: timeline 12→23 Nov, quote card, oversight checklist"
+  ],
+  "notes": "Do not use unrelated stock footage or invent product demos; credit NVIDIA on screen for screenshots."
+ }
+}

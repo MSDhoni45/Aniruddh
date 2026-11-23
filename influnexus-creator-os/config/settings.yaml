@@ -37,6 +37,14 @@ script_v7:
   words_per_minute: 140
   pause_seconds_per_sentence: 0.35
 
+# V9 (creator's permanent standard, 24 Nov 2026): 40-45 seconds (45 hard), about 90-105 spoken words, natural pace as in v6.
+script_v9:
+  target_seconds: [40, 45]
+  hard_max_seconds: 45
+  target_words: [90, 105]
+  words_per_minute: 140
+  pause_seconds_per_sentence: 0.35
+
 script_v3:
   target_seconds: [40, 45]
   hard_max_seconds: 45

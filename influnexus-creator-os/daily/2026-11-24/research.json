@@ -779,7 +779,7 @@
     "Social engagement UNKNOWN."
   ],
   "source_audit": {
-    "checked_at_utc": "2026-11-23T20:09:54+00:00",
+    "checked_at_utc": "2026-11-23T21:34:41+00:00",
     "groups": {
       "x": {
         "status": "WORKING",
@@ -1038,7 +1038,7 @@
     },
     "factual_accuracy": {
       "pass": true,
-      "why": "Every sentence maps to c1-c7 on Nvidia's two opened releases."
+      "why": "Every sentence maps to c1-c8 on Nvidia's two opened releases."
     },
     "natural_delivery": {
       "pass": true,

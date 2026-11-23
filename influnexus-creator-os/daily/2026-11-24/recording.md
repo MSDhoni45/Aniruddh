@@ -4,7 +4,7 @@ Nvidia's CEO quit. Eleven days later, he's back.
 
 On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.
 
-His CFO, Colette Kress, stepped in as interim CEO.
+His CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.
 
 Then on November 23, the board voted unanimously to bring him back, effective immediately.
 
@@ -14,11 +14,11 @@ But it's not over. The board says its investigation, after reports he was target
 
 He's back, with a lot more oversight.
 
-About 39.2 seconds.
+About 43.0 seconds.
 
 - Tone: Calm, factual.
 - Opening: Raised eyebrows on 'he's back'.
 - Pauses: after 'quit.'; before 'But it's not over.'
-- Emphasise: quit, eleven days, unanimously, not over
+- Emphasise: quit, eleven days, unanimously, effective immediately, not over, more oversight
 - Pronunciation: Jensen Huang: JEN-sun HWAHNG; Colette Kress: koh-LET KRESS
 - Keep your natural accent.

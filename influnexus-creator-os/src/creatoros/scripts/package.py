@@ -73,6 +73,18 @@ FORMATS_V8 = {"A": "Breaking development", "B": "Product discovery", "C": "Live 
 QUALITY_V8 = {"hook": 20, "clarity": 15, "storytelling": 15, "audience_relevance": 15, "information_value": 10,
               "natural_delivery": 10, "shareability": 10, "ending": 5}
 QUALITY_V8_TARGET, MIN_HOOKS_V8 = 85, 10
+# V9 (creator's permanent production standard, 24 Nov 2026), layered on V8: 40-45 s / 90-105 words, full recording
+# directions, a sentence-by-sentence storyboard, a music and sound plan, a distribution package and a production handoff.
+V9_FROM = "2026-11-24"
+TREATMENTS = ["talking-head", "b-roll", "split", "screen", "graphic"]
+STORYBOARD_KEYS = ["line", "start_s", "end_s", "treatment", "footage", "on_screen_text", "motion_graphics", "transition", "sfx",
+                   "source_licensing"]
+RECORDING_V9_KEYS = ["opening_expression", "emphasis", "pauses", "pronunciation", "framing", "pace", "gestures"]
+MUSIC_KEYS = ["style", "track_suggestion", "licensing", "opening_cue", "beat_changes", "sfx", "dialogue_music_balance", "ending_cue"]
+DISTRIBUTION_KEYS = ["cover_headline", "thumbnail_concept", "posting_angle", "engagement_question"]
+PRODUCTION_ORDER = ["GitHub editing tools", "saved references", "creative analysis", "transcript-based storyboard", "editing",
+                    "audio restoration", "music", "color grading", "4K rendering", "QC"]
+OUTPUT_RESOLUTION = "2160x3840"
 MIN_CANDIDATES_V7 = 20             # 20-30 credible developments when the news supports it; never filler
 
 
@@ -297,6 +309,64 @@ def is_v8(p: dict) -> bool:
     return is_v7(p) and (str(p.get("date", "")) >= V8_FROM or "content_format" in p)
 
 
+def is_v9(p: dict) -> bool:
+    return is_v7(p) and (str(p.get("date", "")) >= V9_FROM or "storyboard" in p)
+
+
+def _norm(t: str) -> str:
+    import re as _re
+    return _re.sub(r"[^a-z0-9]+", " ", str(t).lower()).strip()
+
+
+def v9_problems(p: dict, chk: dict) -> list[str]:
+    """Recording directions, storyboard (one row per spoken sentence, in order), music, distribution, production handoff."""
+    from ..editing.align import script_sentences
+    probs = []
+    rec = p.get("recording_v9") if isinstance(p.get("recording_v9"), dict) else {}
+    miss = [k for k in RECORDING_V9_KEYS if not rec.get(k)]
+    if miss:
+        probs.append(f"recording_v9: fill {miss}")
+    sents = script_sentences(p["script"])
+    sb = p.get("storyboard") if isinstance(p.get("storyboard"), list) else []
+    if len(sb) != len(sents):
+        probs.append(f"storyboard: {len(sb)} rows for {len(sents)} spoken sentences; one row per sentence")
+    last = 0.0
+    for i, (row, sent) in enumerate(zip(sb, sents), 1):
+        miss = [k for k in STORYBOARD_KEYS if row.get(k) in (None, "", [])]
+        if miss:
+            probs.append(f"storyboard row {i}: fill {miss}")
+        if _norm(row.get("line")) != _norm(sent):
+            probs.append(f"storyboard row {i}: line must be the exact spoken sentence ('{sent[:40]}')")
+        if row.get("treatment") not in TREATMENTS:
+            probs.append(f"storyboard row {i}: treatment must be one of {TREATMENTS}")
+        try:
+            a, b = float(row["start_s"]), float(row["end_s"])
+            if a < last - 0.01 or b <= a:
+                probs.append(f"storyboard row {i}: timestamps must run forward without overlap")
+            last = b
+        except (KeyError, TypeError, ValueError):
+            probs.append(f"storyboard row {i}: start_s and end_s must be numbers")
+    if sb and abs(last - chk["seconds"]) > 3:
+        probs.append(f"storyboard ends at {last}s but the script runs about {chk['seconds']}s")
+    mu = p.get("music") if isinstance(p.get("music"), dict) else {}
+    miss = [k for k in MUSIC_KEYS if not mu.get(k)]
+    if miss:
+        probs.append(f"music: fill {miss} (licensed tracks only; name the library or licence)")
+    di = p.get("distribution") if isinstance(p.get("distribution"), dict) else {}
+    miss = [k for k in DISTRIBUTION_KEYS if not str(di.get(k, "")).strip()]
+    if miss:
+        probs.append(f"distribution: fill {miss}")
+    ph = p.get("production_handoff") if isinstance(p.get("production_handoff"), dict) else {}
+    if ph.get("pipeline") != PRODUCTION_ORDER:
+        probs.append(f"production_handoff.pipeline must be the established order {PRODUCTION_ORDER}")
+    if ph.get("output_resolution") != OUTPUT_RESOLUTION:
+        probs.append(f"production_handoff.output_resolution must be {OUTPUT_RESOLUTION} (vertical 4K)")
+    for k in ("audio", "captions", "broll_list"):
+        if not ph.get(k):
+            probs.append(f"production_handoff.{k} is empty")
+    return probs
+
+
 def quality_v8(p: dict) -> dict:
     sc = p.get("quality_v8") if isinstance(p.get("quality_v8"), dict) else {}
     bad = [k for k in QUALITY_V8 if not isinstance(sc.get(k), (int, float)) or not 0 <= sc[k] <= 10]
@@ -473,7 +543,7 @@ def validate(p: dict) -> tuple[list[str], dict]:
     problems = [f"missing: {k}" for k in base + extra if k not in p]
     if problems:
         return problems, {}
-    scheme = "v7" if is_v7(p) else "v6" if is_v6(p) else "v5" if is_v5(p) else ("v3" if is_v3(p) else None)   # length: v5 85-105 words / 35-45 s; v3 and v4 90-105 / 40-45
+    scheme = "v9" if is_v9(p) else "v7" if is_v7(p) else "v6" if is_v6(p) else "v5" if is_v5(p) else ("v3" if is_v3(p) else None)   # length: v5 85-105 words / 35-45 s; v3 and v4 90-105 / 40-45
     window = p.get("research_window") if is_v3(p) else None
     if is_v3(p):
         problems += window_problems(window, (24, 48, 72) if is_v5(p) else (WINDOW_HOURS,))
@@ -587,6 +657,8 @@ def validate(p: dict) -> tuple[list[str], dict]:
         problems += v7_problems(p, ready, tiers)
     if is_v8(p):
         problems += v8_problems(p)
+    if is_v9(p):
+        problems += v9_problems(p, chk)
     if is_v6(p) or is_v7(p):
         if is_v6(p):
             problems += v6_problems(p, ranked, ready)
@@ -882,8 +954,56 @@ def render_today_v8(p: dict, info: dict) -> str:
     return "\n".join(L) + "\n"
 
 
+def render_today_v9(p: dict, info: dict) -> str:
+    """V9 mandatory daily output: nine sections, ready to shoot, edit and post."""
+    chk, rd, ig = info["lint"], info["ready"], p["instagram"]
+    t = info.get("tiers") or {}
+    rec, mu, di, ph = p["recording_v9"], p["music"], p["distribution"], p["production_handoff"]
+    used = [c for c in p["factcheck"]["claims"] if c.get("in_script")]
+    L = [f"# Today's reel: {p['date']}", "", f"**STATUS: {rd['status']}**" + ("  |  **FALLBACK STORY**" if t.get("fallback") else ""), ""]
+    if rd["reasons"]:
+        L += ["Do not record. Unresolved:"] + [f"- {x}" for x in rd["reasons"]] + [""]
+    L += [f"**{p['topic']}** · event {p['event_date']} · announced {p['announced_at']} · confidence {p['confidence']}", "",
+          "## 1. Why this story", "", p["why_this_story"], ""] + _tier_lines(p, info) + ["",
+          "## 2. Final script", "", "```", p["script"].strip(), "```", "",
+          f"{chk['words']} spoken words, about {chk['seconds']} s ({chk['pace_basis']}). Quality {quality_v8(p)['total']}/100 (editorial, not a forecast).", "",
+          "## 3. Recording directions", "",
+          f"- **Opening:** {rec['opening_expression']}", f"- **Emphasis:** {', '.join(rec['emphasis'])}", f"- **Pauses:** {'; '.join(rec['pauses'])}",
+          f"- **Pronunciation:** {'; '.join(rec['pronunciation'])}", f"- **Framing:** {rec['framing']}", f"- **Pace:** {rec['pace']}",
+          f"- **Gestures:** {rec['gestures']}", f"- **Estimated duration:** about {chk['seconds']} s (record two takes; keep the natural one)", "",
+          "## 4. Visual storyboard", "", "| Time | Line | Treatment | Footage / screenshot | On-screen text | Motion graphics | Transition | SFX | Source / licence |",
+          "|---|---|---|---|---|---|---|---|---|"]
+    for r in p["storyboard"]:
+        cell = lambda v: str(v).replace("|", "/")
+        L.append(f"| {r['start_s']}-{r['end_s']} s | {cell(r['line'])} | {r['treatment']} | {cell(r['footage'])} | {cell(r['on_screen_text'])} | "
+                 f"{cell(r['motion_graphics'])} | {cell(r['transition'])} | {cell(r['sfx'])} | {cell(r['source_licensing'])} |")
+    L += ["", "## 5. Music and sound", "", f"- **Style:** {mu['style']}", f"- **Track:** {mu['track_suggestion']} ({mu['licensing']})",
+          f"- **Opening cue:** {mu['opening_cue']}", f"- **Beat changes:** {'; '.join(mu['beat_changes'])}", f"- **Sound effects:** {'; '.join(mu['sfx'])}",
+          f"- **Dialogue/music balance:** {mu['dialogue_music_balance']}", f"- **Ending cue:** {mu['ending_cue']}", "",
+          "## 6. Caption and hashtags", "", ig["caption"], "", " ".join(ig["hashtags"]), "",
+          f"Posting angle: {di['posting_angle']}", f"Engagement question: {di['engagement_question']}", "",
+          "## 7. Cover headline", "", f"**{di['cover_headline']}**", "", f"Thumbnail: {di['thumbnail_concept']}", "",
+          "## 8. Verified sources", ""]
+    seen = set()
+    for c in used:
+        for it in c.get("evidence") or []:
+            if isinstance(it, dict) and it["url"] not in seen:
+                seen.add(it["url"])
+                L.append(f"- [{ev.outlet(it)}]({it['url']}) ({it.get('date') or 'date unknown'}, "
+                         + ("OPENED DIRECTLY" if it.get("access") == "opened" else "search excerpt only, not verified") + ")")
+    if p.get("uncertainties"):
+        L += ["", "Not verified / left out:"] + [f"- {u}" for u in p["uncertainties"]]
+    L += ["", "## 9. Production handoff", "", f"Pipeline: {' → '.join(ph['pipeline'])}", f"Output: {ph['output_resolution']} vertical",
+          f"Audio: {ph['audio']}", f"Captions: {ph['captions']}", "B-roll to gather:"] + [f"- {b}" for b in ph["broll_list"]]
+    L += ["", "Machine-readable handoff: `production_handoff.json` (this project does not edit or render; the separate video-production skill does).",
+          "", "---", "", f"RUN STATUS: {run_status_line(p['date'])}"]
+    return "\n".join(L) + "\n"
+
+
 def render_today(p: dict, info: dict) -> str:
     """The daily deliverable, in the order the creator asked for. Concise; full detail stays in package.md."""
+    if is_v9(p):
+        return render_today_v9(p, info)
     if is_v8(p):
         return render_today_v8(p, info)
     if is_v7(p):
@@ -1091,6 +1211,13 @@ def save(p: dict, out: Path | None = None, record: bool = True) -> dict:
     (out / "factcheck.md").unlink(missing_ok=True)
     if is_v6(p):
         (out / "creative.md").write_text(render_creative(p, info), encoding="utf-8")
+    if is_v9(p):
+        write_json(out / "production_handoff.json", {
+            "date": p["date"], "slug": p["slug"], "topic": p["topic"], "script": p["script"].strip(),
+            "estimated_seconds": info["lint"]["seconds"], "words": info["lint"]["words"], "recording": p["recording_v9"],
+            "storyboard": p["storyboard"], "music": p["music"], "captions_file": "captions.txt", **p["production_handoff"],
+            "sources": [it["url"] for c in p["factcheck"]["claims"] if c.get("in_script") for it in c.get("evidence") or []
+                        if isinstance(it, dict)]})
     write_json(out / "sources.json", {"primary": p["primary_sources"], "supporting": p["supporting_sources"],
                                       "x_signals": p["x_signals"], "access_limits": p["access_limits"]})
     if not record:

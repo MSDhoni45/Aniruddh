@@ -84,6 +84,32 @@ excerpts of a primary page plus press coverage are not enough for them.
 script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
 not from verification.
 
+## V9: permanent production standard (from 2026-11-24; layered on V8 and V7)
+Where this differs from V8, V7.1 or V7 below, this wins (verification, A/B/C tiers, the fallback guard and cost control stay).
+- **Research:** previous 24 hours across X, official announcements, credible reporting and other public sources; five
+  strongest stories ranked by verified significance, audience relevance, novelty, visual potential and public engagement;
+  ONE winner. Never pick an easy but uninteresting fallback when a stronger verified story exists: try every reachable
+  primary host before falling back (company newsrooms such as nvidianews.nvidia.com, blogs.nvidia.com and anthropic.com
+  open even when investor-relations and news sites are blocked). Leadership changes: official announcements and
+  regulatory filings (sec.gov is blocked here; say so). Separate event date from announcement date. No trending claims
+  without evidence.
+- **Script:** 40-45 seconds (45 hard), about 90-105 spoken words at the natural pace (about 90-95 words fits), hook within
+  two seconds, one takeaway, memorable ending, no anchor voice, jargon or speculation.
+- **Package fields (validated):** `recording_v9` (opening_expression, emphasis, pauses, pronunciation, framing, pace,
+  gestures); `storyboard` with exactly one row per spoken sentence, in order (line, start_s, end_s, treatment
+  talking-head/b-roll/split/screen/graphic, footage, on_screen_text, motion_graphics, transition, sfx, source_licensing),
+  timestamps running forward and ending near the estimated duration; every key concept gets a relevant visual (NVIDIA story:
+  NVIDIA imagery, chips or announcement graphics; gaming: gaming visuals; cinema: filmmaking visuals), never unrelated
+  stock or invented demos; `music` (style, track_suggestion, licensing, opening_cue, beat_changes, sfx,
+  dialogue_music_balance, ending_cue; licensed tracks only, never claim a licence you have not seen); `distribution`
+  (cover_headline, thumbnail_concept, posting_angle, engagement_question); `production_handoff` (pipeline exactly: GitHub
+  editing tools, saved references, creative analysis, transcript-based storyboard, editing, audio restoration, music,
+  color grading, 4K rendering, QC; output_resolution 2160x3840; audio; captions; broll_list).
+- **Output:** today.md carries the nine mandatory sections (why this story, script, recording directions, storyboard,
+  music and sound, caption and hashtags, cover headline, verified sources, production handoff) and
+  `production_handoff.json` is written for the separate video-production skill. This project still never edits, renders
+  or publishes video.
+
 ## V8: Creator Intelligence Engine (layered on V7 packages; required from 2026-11-23)
 Where this differs from V7.1 or V7 below, this wins. Verification, the A/B/C tiers, the fallback guard and cost control stay.
 - **Positioning:** AI and technology that changes everyday life: AI, consumer tech, robotics, transport and autonomous cars,
