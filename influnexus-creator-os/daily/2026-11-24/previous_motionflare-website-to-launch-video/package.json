@@ -1,0 +1,1337 @@
+{
+ "date": "2026-11-24",
+ "language": "english",
+ "scoring": "v7",
+ "slug": "motionflare-website-to-launch-video",
+ "keys": [
+  "motionflare",
+  "ai-launch-video"
+ ],
+ "topic": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+ "category": "CREATOR TECH",
+ "topic_type": "BREAKING",
+ "announced_at": "23 November 2026 (Product Hunt launch, 00:01 PT)",
+ "event_date": "2026-11-23",
+ "story_id": "2026-11-24-motionflare-website-to-launch-video",
+ "company": "Motionflare (small bootstrapped team)",
+ "generated_at": "2026-11-23T20:05:00+00:00",
+ "research_window": {
+  "start_utc": "2026-11-22T20:01:32+00:00",
+  "end_utc": "2026-11-23T20:01:32+00:00",
+  "start_ist": "2026-11-23T01:31:32+05:30",
+  "end_ist": "2026-11-24T01:31:32+05:30",
+  "hours": 24
+ },
+ "window_expansion_reason": null,
+ "creator_request": false,
+ "why_selected": "The strongest story whose central claims could be checked on directly opened data, useful to creators and marketers.",
+ "why_short": "Paste a link, get a launch video.",
+ "why_beats_alternatives": "Walmart's AI-agent checkout with Meta's Muse (70.5), Nvidia's CEO reinstatement (64.5) and Alexandr Wang's superintelligence essay (57.0) rank higher on discovery but none could be checked on an opened page (and Nvidia's story is tied to politics). Motionflare's launch data and the makers' description were read directly through the Product Hunt connector.",
+ "why_this_story": "A practical tool for creators and small brands: paste a site link and its makers say it builds a branded launch video. It was one of Product Hunt's top three launches on Monday (208 upvotes observed directly, the only social signal I could measure; X is blocked). It is a FALLBACK: Walmart's AI checkout story is stronger but none of its sources could be opened.",
+ "evidence_confidence": "MEDIUM",
+ "confidence": "MEDIUM",
+ "verified_development": "On 23 Nov 2026 Motionflare launched on Product Hunt and ranked #3 with 208 upvotes when checked. Its makers describe a tool that turns a website URL into branded motion graphics with music and optional narration, a Film mode for live-action commercials, chat edits and 4K export, with a free option.",
+ "disclosure": "Disclosure: written by Claude, an Anthropic model. Motionflare is unrelated to Anthropic. Not sponsored.",
+ "research_summary": "A research pass covered 22 candidates from 23 Nov across AI, commerce, robotics, chips, gaming and creator tools. News, company and social sites are blocked in this environment, so the strongest stories (Walmart's AI-agent checkout with Meta's Muse, Nvidia's CEO reinstatement, Alexandr Wang's essay, a Waymo storm pause) could not be checked on opened pages and were held; a Korean exam story was excluded as political. The Product Hunt connector showed Monday's launches directly: Motionflare ranked #3 with 208 upvotes. Its makers say it turns a website URL into a branded video using the site's own screenshots, logo, colors and copy, with music, optional narration, a Film mode, chat edits and 4K export, and a free option. These are the makers' claims; the tool was not tested.",
+ "primary_sources": [
+  {
+   "label": "Product Hunt launch (23 Nov 2026)",
+   "url": "https://www.producthunt.com/posts/motionflare"
+  },
+  {
+   "label": "Product Hunt product profile",
+   "url": "https://www.producthunt.com/products/motionflare"
+  }
+ ],
+ "supporting_sources": [],
+ "key_facts": [
+  "Launched 23 Nov 2026; #3 with 208 upvotes when checked.",
+  "Makers' description: URL to branded video with screenshots, logo, colors, copy, music, narration.",
+  "Film mode, chat edits, 4K export (makers' claims).",
+  "Free option listed."
+ ],
+ "uncertainties": [
+  "Output quality is untested; every feature is the makers' own description.",
+  "Upvotes were still changing on launch day.",
+  "Paid pricing and limits of the free option are not stated in the listing.",
+  "No independent review or coverage could be opened."
+ ],
+ "excluded_claims": [
+  "Team size and funding details.",
+  "Any comparison with other video tools."
+ ],
+ "context": "Product Hunt is a daily launch site where tech users upvote new products; a top-three finish is a signal of early interest, not proof of quality.",
+ "script": "Paste your website link, and this AI makes the launch video for you.\n\nIt's called Motionflare, one of Product Hunt's top three launches on Monday.\n\nIts makers say it pulls your real screenshots, logo, colors and copy from your site.\n\nThen it adds motion graphics, music and optional narration.\n\nYou edit it by chatting, and export in up to 4K.\n\nIts listing even shows a free option.\n\nSo before you pay an editor, try it on your own site.",
+ "hook": "Paste your website link, and this AI makes the launch video for you.",
+ "hooks": [
+  {
+   "text": "Paste your website link, and this AI makes the launch video for you.",
+   "approach": "practical discovery",
+   "accuracy": 8,
+   "clarity": 9,
+   "curiosity": 9,
+   "specificity": 8,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "This AI turns any website into a launch video.",
+   "approach": "surprising capability",
+   "accuracy": 7,
+   "clarity": 9,
+   "curiosity": 8,
+   "specificity": 7,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "Need a product video but no editor?",
+   "approach": "practical discovery",
+   "accuracy": 8,
+   "clarity": 9,
+   "curiosity": 7,
+   "specificity": 6,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "Your website already has everything for a video ad.",
+   "approach": "contradiction",
+   "accuracy": 7,
+   "clarity": 7,
+   "curiosity": 8,
+   "specificity": 6,
+   "emotional": 6,
+   "comprehension": 8
+  },
+  {
+   "text": "One link in, one branded video out.",
+   "approach": "unusual demonstration",
+   "accuracy": 7,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 7,
+   "emotional": 6,
+   "comprehension": 8
+  },
+  {
+   "text": "Monday's number-three launch on Product Hunt makes videos from links.",
+   "approach": "major product reveal",
+   "accuracy": 9,
+   "clarity": 7,
+   "curiosity": 6,
+   "specificity": 8,
+   "emotional": 4,
+   "comprehension": 7
+  },
+  {
+   "text": "Small brands might not need a video editor for launches anymore.",
+   "approach": "unexpected consequence",
+   "accuracy": 5,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 5,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "I found an AI that reads your website and directs your ad.",
+   "approach": "surprising capability",
+   "accuracy": 6,
+   "clarity": 7,
+   "curiosity": 8,
+   "specificity": 6,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "Before you hire an editor, try this.",
+   "approach": "important warning",
+   "accuracy": 7,
+   "clarity": 8,
+   "curiosity": 7,
+   "specificity": 3,
+   "emotional": 6,
+   "comprehension": 9
+  },
+  {
+   "text": "This AI replaces video editors.",
+   "approach": "unexpected consequence",
+   "accuracy": 2,
+   "clarity": 9,
+   "curiosity": 8,
+   "specificity": 3,
+   "emotional": 8,
+   "comprehension": 9
+  }
+ ],
+ "revisions": 3,
+ "practical_takeaway": {
+  "who_can_use": "Creators, marketers, founders, small businesses with a website",
+  "what_it_does": "Turns a website URL into a branded video (makers' description)",
+  "availability": "Live on its website since the 23 Nov launch",
+  "price": "Free option listed; paid pricing UNKNOWN",
+  "difference": "Uses the site's own screenshots, logo, colors and copy instead of templates (makers' claim)",
+  "limitations": "Untested quality; claims are the makers'",
+  "why_it_matters": "A launch video without an editor could save small brands time and money"
+ },
+ "audience_check": {
+  "why_care_today": "It launched on Monday and is free to try.",
+  "affects_life_or_work": "Anyone selling online needs videos.",
+  "can_they_use_it": "Yes, there's a free option on its website.",
+  "surprising": "It builds the video from your own site's content.",
+  "demonstrable": "You can record a real test on your own site.",
+  "clear_consequence": "Fewer barriers to making launch videos.",
+  "would_share": "Creators will send it to friends launching products.",
+  "right_audience": "Creators, marketers and founders we want to reach."
+ },
+ "script_checks": {
+  "hook_clarity": {
+   "pass": true,
+   "why": "Thirteen words that state exactly what the tool does."
+  },
+  "factual_accuracy": {
+   "pass": true,
+   "why": "Every claim maps to c1-c4 read directly from Product Hunt, attributed to the makers."
+  },
+  "natural_delivery": {
+   "pass": true,
+   "why": "Short spoken sentences, read aloud at a normal pace."
+  },
+  "narrative_coherence": {
+   "pass": true,
+   "why": "One idea: link in, video out."
+  },
+  "audience_relevance": {
+   "pass": true,
+   "why": "Creators and small brands need launch videos."
+  },
+  "practical_takeaway": {
+   "pass": true,
+   "why": "Try it on your own site before paying an editor."
+  },
+  "ending_quality": {
+   "pass": true,
+   "why": "Ends on a useful action, not a forced question."
+  },
+  "no_redundancy": {
+   "pass": true,
+   "why": "Each line adds a feature or a fact."
+  },
+  "no_jargon": {
+   "pass": true,
+   "why": "No technical terms beyond 4K."
+  },
+  "no_unsupported_implications": {
+   "pass": true,
+   "why": "Features are attributed to the makers; no claim it beats editors."
+  }
+ },
+ "recording_guidance": {
+  "hook_emphasis": "Lean on 'website link' and 'launch video'.",
+  "important_pause": "A beat after 'top three launches.'",
+  "final_tone": "Practical and friendly; a tip, not an ad."
+ },
+ "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7/V8 model unchanged.",
+ "recording": {
+  "tone": "Practical, curious.",
+  "opening_expression": "Hold up your phone showing your website.",
+  "emphasis": [
+   "website link",
+   "your real screenshots",
+   "free option"
+  ],
+  "pauses": [
+   "after 'top three launches'"
+  ],
+  "pronunciation": [
+   "Motionflare: MO-shun-flair"
+  ]
+ },
+ "visuals": [
+  "Screen recording of your own Motionflare test",
+  "Product Hunt leaderboard screenshot"
+ ],
+ "pillar": "useful_ai_tools",
+ "format": "B",
+ "backups": [],
+ "backup_shortfall_reason": "Stronger stories are blocked from verification; Gauth's study agent (#2) has fewer verifiable details.",
+ "audience": {
+  "stop_scroll": "A link turning into a video is instantly clear.",
+  "watch_to_end": "Viewers wait to hear if it's free.",
+  "share": "Creators share tools with friends launching products.",
+  "save": "Useful tool, likely saved.",
+  "comment": "People will ask for results.",
+  "follow": "Practical AI tools for creators."
+ },
+ "editing": {
+  "opening_visual": "Your website, then the generated video",
+  "key_moments": [
+   "33.0.2 warning",
+   "33.0.3 fix"
+  ],
+  "broll": [
+   "screen recording of the release pages"
+  ],
+  "on_screen_text": [
+   "33.0.2: startup crash on some older CPUs",
+   "33.0.3: fixed (22 Nov)"
+  ],
+  "demonstrations": [
+   "creator-recorded test only"
+  ],
+  "stats": [
+   "none: version numbers only"
+  ],
+  "rhythm": "Quick, one step per shot",
+  "caption_emphasis": [
+   "crash",
+   "fix",
+   "33.0.3"
+  ],
+  "sound": "Light bed"
+ },
+ "limitations": [
+  "News, company and social sites blocked; Product Hunt read through its connector; anthropic.com and github.com reachable.",
+  "Tool not tested by me."
+ ],
+ "instagram": {
+  "cover_headline": "Website link to launch video",
+  "caption": "Paste a website link, get a launch video. Motionflare was one of Product Hunt's top three launches on Monday. Its makers say it uses your site's real screenshots, logo, colors and copy, adds music and optional narration, and exports in up to 4K. There's a free option. Would you use it?",
+  "hashtags": [
+   "#AItools",
+   "#ContentCreation",
+   "#Marketing",
+   "#ProductHunt"
+  ]
+ },
+ "linkedin": {
+  "caption": "Motionflare (Product Hunt #3 on 23 Nov) says it turns a website URL into a branded launch video using the site's own assets.",
+  "business_relevance": "Launch videos without an editor for small teams.",
+  "discussion_prompt": "Would you ship a launch video made this way?"
+ },
+ "x": {
+  "post": "Motionflare was one of Product Hunt's top three launches on Monday: paste a website URL and, its makers say, it builds a branded launch video from your site's own screenshots, logo and copy. Free option listed."
+ },
+ "youtube": {
+  "title": "This AI Turns Your Website Into a Launch Video",
+  "description": "Motionflare, Product Hunt #3 on 23 Nov 2026. Features are the makers' claims.",
+  "keywords": [
+   "AI video",
+   "Motionflare",
+   "marketing"
+  ]
+ },
+ "growth": {
+  "watch": "Clear before/after.",
+  "share": "Useful tool.",
+  "follow": "Practical AI tools.",
+  "segment": "Creators, marketers.",
+  "underperform": "Tool stories can feel like ads."
+ },
+ "x_signals": [],
+ "candidates": [
+  {
+   "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/",
+   "main_claim": "Muse can search Walmart deals, build a basket and complete checkout inside the conversation; first add-to-cart sends the shopper to Walmart to sign in and set up an Agent Profile with a spending limit.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "First time a major retailer lets a third-party AI agent actually pay for you, timed to Black Friday week",
+   "potential_hook": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shop",
+   "target_audience": "US Walmart shoppers using Meta's Muse app (scope Walmart.com vs Sam's Club differs by outlet)",
+   "uncertainty": "Timing nuance: The Verge reportedly first said a delay to Nov 24, then Walmart said it rolls out Nov 23. 'Invitation-only beta' wording in one report.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Muse can search Walmart deals, build a basket and complete checkout inside the conversation; first add-to-cart sends the shopper to Walmart to sign in and set up an Agent Profile with a spending limit.",
+   "audience_relevance": "US Walmart shoppers using Meta's Muse app (scope Walmart.com vs Sam's Club differs by outlet)",
+   "practical_usefulness": "Agent-to-retailer checkout via Walmart's MCP-based Agent Gateway; card saved in Walmart account; Walmart prices and return policy",
+   "visual_potential": "Muse chat building a cart; Agent Profile spending-limit screen (only if real screenshots exist; do not invent)",
+   "potential_controversy": "Timing nuance: The Verge reportedly first said a delay to Nov 24, then Walmart said it rolls out Nov 23. 'Invitation-only beta' wording in one report.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 7,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 7,
+    "discussion": 8,
+    "timeliness": 9
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta"
+  },
+  {
+   "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+   "main_claim": "Board voted unanimously to reinstate Huang as President, CEO and director effective immediately; Colette Kress returns to CFO only.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Leader of the world's most important AI chip company is back; affects AI supply chain sentiment",
+   "potential_hook": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+   "target_audience": "n/a",
+   "uncertainty": "Strong POLITICS tie (Trump reportedly dialled into board meeting; national-security framing) and personal-scandal background (affairs) - conflicts with no-politics positioning. Stock move is a time-sensitive extraordinary financial claim needing HIGH (primary opened) - not achievable here.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Board voted unanimously to reinstate Huang as President, CEO and director effective immediately; Colette Kress returns to CFO only.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a (corporate governance)",
+   "visual_potential": "Headlines timeline; no invented charts",
+   "potential_controversy": "Strong POLITICS tie (Trump reportedly dialled into board meeting; national-security framing) and personal-scandal background (affairs) - conflicts with no-politics positioning. Stock move is a time-sensitive extraordinary financial claim needing HIGH (primary opened) - not achievable here.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 9,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 8,
+    "discussion": 9,
+    "timeliness": 10
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal"
+  },
+  {
+   "headline": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/",
+   "main_claim": "Minister Choi Kyo-jin resigned; disaster alert system used for first time to catch exam cheaters; trigger was a tax-accountant exam top scorer admitting AI use.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI cheating reaching national exams",
+   "potential_hook": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneu",
+   "target_audience": "n/a",
+   "uncertainty": "INELIGIBLE for selection: politics (ministerial resignation) and event likely before window start (Nov 22 KST).",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Minister Choi Kyo-jin resigned; disaster alert system used for first time to catch exam cheaters; trigger was a tax-accountant exam top scorer admitting AI use.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "INELIGIBLE for selection: politics (ministerial resignation) and event likely before window start (Nov 22 KST).",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://time.com/article/2026/11/23/south-korea-education-minister-resigns-college-exam-suneung-ai-cheating/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 8,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 6,
+    "discussion": 9,
+    "timeliness": 6
+   },
+   "rejected": "politics (ministerial resignation) excluded by V8 positioning"
+  },
+  {
+   "headline": "Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk",
+   "main_claim": "Long essay on X arguing superintelligence is close, citing the Riemann/Lean proof with Claude, and calling for urgent safety work.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Head of AI at Meta saying control may be at risk is a big shift in tone",
+   "potential_hook": "Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning societ",
+   "target_audience": "n/a",
+   "uncertainty": "Ties to already-covered Riemann/Lean story; AGI-type extraordinary framing; exact quotes not verified.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Long essay on X arguing superintelligence is close, citing the Riemann/Lean proof with Claude, and calling for urgent safety work.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "Opinion essay; no product",
+   "visual_potential": "Quote cards only from verified text (not obtained)",
+   "potential_controversy": "Ties to already-covered Riemann/Lean story; AGI-type extraordinary framing; exact quotes not verified.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 7,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 8,
+    "discussion": 9,
+    "timeliness": 9
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); superintelligence claim is extraordinary (primary and independent confirmation must be opened); x.com blocked"
+  },
+  {
+   "headline": "Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tides",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/",
+   "main_claim": "Service paused across the Bay Area early Monday; follows last week's flooding that stranded robotaxis; no end date given; freeway rides remain suspended nationally after CA DMV action; two NHTSA recalls filed recently.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Robotaxis still can't handle severe weather - a real limitation for everyday users",
+   "potential_hook": "Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tide",
+   "target_audience": "Bay Area Waymo riders",
+   "uncertainty": "NEW DATED DEVELOPMENT on previously blocked Waymo topic. Second search returned only older pauses (Nov 18, a Thursday pause) - corroboration weak. No Waymo primary opened.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Service paused across the Bay Area early Monday; follows last week's flooding that stranded robotaxis; no end date given; freeway rides remain suspended nationally after CA DMV action; two NHTSA recalls filed recently.",
+   "audience_relevance": "Bay Area Waymo riders",
+   "practical_usefulness": "n/a",
+   "visual_potential": "Rain + robotaxi B-roll only if licensed; maps",
+   "potential_controversy": "NEW DATED DEVELOPMENT on previously blocked Waymo topic. Second search returned only older pauses (Nov 18, a Thursday pause) - corroboration weak. No Waymo primary opened.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://sfist.com/2026/11/23/waymo-on-pause-for-storms/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "hold_reason": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); the Sunday announcement could not be found again and is easily confused with the 18 Nov pause"
+  },
+  {
+   "headline": "Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sales",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever",
+   "main_claim": "Forecast of $357B global online sales, ~6% YoY.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Context for Walmart story",
+   "potential_hook": "Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sale",
+   "target_audience": "n/a",
+   "uncertainty": "Use only as context; billion-dollar forecast.",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Forecast of $357B global online sales, ~6% YoY.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "Forecast",
+   "visual_potential": "Charts only from real data",
+   "potential_controversy": "Use only as context; billion-dollar forecast.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 7
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home replaces Assistant on speakers",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/",
+   "main_claim": "Nest app retires; custom clips must be downloaded manually; Nest Aware 1st Gen moves to Google Home Premium.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Practical action for millions of homes",
+   "potential_hook": "Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home re",
+   "target_audience": "Nest owners",
+   "uncertainty": "Announcement may be outside window; must establish date before use.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Nest app retires; custom clips must be downloaded manually; Nest Aware 1st Gen moves to Google Home Premium.",
+   "audience_relevance": "Nest owners",
+   "practical_usefulness": "Migration",
+   "visual_potential": "App screens",
+   "potential_controversy": "Announcement may be outside window; must establish date before use.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 5
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today",
+   "main_claim": "FSD v15 (2026.38.6.11) to Early Access owners; not on HW3; wide release 'next month' per Musk; stock +12-13% (reported).",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Previously blocked; only new dated development is a share-price move (needs HIGH)",
+   "potential_hook": "Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls",
+   "target_audience": "Early Access owners on HW4",
+   "uncertainty": "Rollout predates window; stock move is extraordinary financial claim.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "FSD v15 (2026.38.6.11) to Early Access owners; not on HW3; wide release 'next month' per Musk; stock +12-13% (reported).",
+   "audience_relevance": "Early Access owners on HW4",
+   "practical_usefulness": "Reality View, speed-camera slowdown, Bike Rack Mode",
+   "visual_potential": "Owner screen recordings exist but not inspected",
+   "potential_controversy": "Rollout predates window; stock move is extraordinary financial claim.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://invezz.com/news/2026/11/23/why-is-tesla-stock-gaining-12-today"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 5,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 8
+   }
+  },
+  {
+   "headline": "iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform text styling",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/",
+   "main_claim": "Feature roundup of upcoming update.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Useful but incremental",
+   "potential_hook": "iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform tex",
+   "target_audience": "iPhone users after release",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Feature roundup of upcoming update.",
+   "audience_relevance": "iPhone users after release",
+   "practical_usefulness": "Small app updates",
+   "visual_potential": "Screen recordings of beta (not inspected)",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/23/ios-27-3-adds-new-features-in-six-iphone-apps-details-here/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 4,
+    "usefulness": 7,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 3,
+    "discussion": 5,
+    "timeliness": 8
+   }
+  },
+  {
+   "headline": "OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterprise",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "main_claim": "Chat-tab model update.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Most-used AI app gets new default model",
+   "potential_hook": "OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterp",
+   "target_audience": "Paid ChatGPT tiers",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Chat-tab model update.",
+   "audience_relevance": "Paid ChatGPT tiers",
+   "practical_usefulness": "Model update in Chat",
+   "visual_potential": "None",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 4,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 9
+   }
+  },
+  {
+   "headline": "Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chips",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "main_claim": "Amazon (via Annapurna Labs) to acquire the Decart Optimization Stack plus the three cofounders and engineers; not Decart's models (per Bloomberg source); subject to regulatory approval.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Amazon pushing its own chips as Nvidia alternatives",
+   "potential_hook": "Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chi",
+   "target_audience": "Developers/AWS customers eventually",
+   "uncertainty": "Billion-dollar figure is reported not confirmed; script must say 'reportedly' or omit. Low everyday relevance.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Amazon (via Annapurna Labs) to acquire the Decart Optimization Stack plus the three cofounders and engineers; not Decart's models (per Bloomberg source); subject to regulatory approval.",
+   "audience_relevance": "Developers/AWS customers eventually",
+   "practical_usefulness": "Software that lets developers move AI models across chips, to run workloads on Trainium/Inferentia",
+   "visual_potential": "Logos/diagram of model -> chips; nothing invented",
+   "potential_controversy": "Billion-dollar figure is reported not confirmed; script must say 'reportedly' or omit. Low everyday relevance.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10
+   }
+  },
+  {
+   "headline": "Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov)",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/",
+   "main_claim": "No new dated development found inside window; coverage is recap.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Prompts may not be private",
+   "potential_hook": "Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov)",
+   "target_audience": "AI API users",
+   "uncertainty": "Previously blocked; NO new dated development in window -> not selectable.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "No new dated development found inside window; coverage is recap.",
+   "audience_relevance": "AI API users",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Previously blocked; NO new dated development in window -> not selectable.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261123/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 4
+   }
+  },
+  {
+   "headline": "Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/",
+   "main_claim": "Gameplay moves to Verse + Scene Graph; Fortnite prototype ported 20,000+ Blueprints to ~3M lines of Verse.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI rewriting how games are built",
+   "potential_hook": "Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects",
+   "target_audience": "Game developers",
+   "uncertainty": "Event before window.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Gameplay moves to Verse + Scene Graph; Fortnite prototype ported 20,000+ Blueprints to ~3M lines of Verse.",
+   "audience_relevance": "Game developers",
+   "practical_usefulness": "Engine change",
+   "visual_potential": "None",
+   "potential_controversy": "Event before window.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.ghacks.net/2026/11/23/unreal-engine-6-drops-blueprints-as-epic-bets-on-ai-to-convert-projects/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 7,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 5
+   }
+  },
+  {
+   "headline": "OpenAI chief scientist Jakub Pachocki proposes industry-wide capability thresholds until safety monitoring catches up; Altman endorses",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development",
+   "main_claim": "Proposes labs agree thresholds (perplexity-based) and shared tests, warns AI could speed training advances from 2027.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Leading lab asks for self-limits",
+   "potential_hook": "OpenAI chief scientist Jakub Pachocki proposes industry-wide capability thresholds until safety moni",
+   "target_audience": "n/a",
+   "uncertainty": "Publication time vs window start (19:55Z Nov 22) unknown - may be before window. Title 'Perplexity and Intelligence' not confirmed.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Proposes labs agree thresholds (perplexity-based) and shared tests, warns AI could speed training advances from 2027.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Publication time vs window start (19:55Z Nov 22) unknown - may be before window. Title 'Perplexity and Intelligence' not confirmed.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.bloomberg.com/news/articles/2026-11-22/openai-chief-scientist-urges-industry-limits-on-ai-development"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 8,
+    "discussion": 8,
+    "timeliness": 7
+   }
+  },
+  {
+   "headline": "CrowdStrike to acquire Zscaler in ~$43.9B all-stock deal",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+   "main_claim": "1.135 CRWD shares per ZS share; expected to close in ~a year pending regulators; CRWD -10%, ZS +15% (reported).",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Largest security consolidation tied to AI-driven attacks",
+   "potential_hook": "CrowdStrike to acquire Zscaler in ~$43.9B all-stock deal",
+   "target_audience": "Enterprises",
+   "uncertainty": "Enterprise story; billion figures need HIGH.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "1.135 CRWD shares per ZS share; expected to close in ~a year pending regulators; CRWD -10%, ZS +15% (reported).",
+   "audience_relevance": "Enterprises",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Enterprise story; billion figures need HIGH.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 7,
+    "discussion": 6,
+    "timeliness": 10
+   }
+  },
+  {
+   "headline": "Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in simulation",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-18",
+   "original_source": "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html",
+   "main_claim": "Pre-silicon simulated results vs undisclosed baseline.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI designing chips",
+   "potential_hook": "Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in sim",
+   "target_audience": "n/a",
+   "uncertainty": "Outside window; extraordinary.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Pre-silicon simulated results vs undisclosed baseline.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "None",
+   "potential_controversy": "Outside window; extraordinary.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.notebookcheck.net/AMD-and-Intel-move-over-AI-designed-an-all-new-CPU-and-claims-it-is-4-6x-more-efficient.1455225.0.html"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 8,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 6,
+    "timeliness": 2
+   }
+  },
+  {
+   "headline": "GTA VI patch 1.002.002 rolls out in phases on 23 Nov fixing crashes, weather and autosave bugs",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/",
+   "main_claim": "Patch rollout (release type: official update).",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Huge audience",
+   "potential_hook": "GTA VI patch 1.002.002 rolls out in phases on 23 Nov fixing crashes, weather and autosave bugs",
+   "target_audience": "GTA VI players",
+   "uncertainty": "Not AI/tech-changes-life; weak fit.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Patch rollout (release type: official update).",
+   "audience_relevance": "GTA VI players",
+   "practical_usefulness": "Bug fixes",
+   "visual_potential": "Gameplay (rights issue)",
+   "potential_controversy": "Not AI/tech-changes-life; weak fit.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://insider-gaming.com/gta-6-new-update-releasing-in-phases-size-revealed/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 3,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 2,
+    "discussion": 5,
+    "timeliness": 9
+   }
+  },
+  {
+   "headline": "Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+   "main_claim": "Greenoaks and Lightspeed led; valuation doubled in six months; outcome-based pricing.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "AI agents answering customer service calls",
+   "potential_hook": "Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M",
+   "target_audience": "Enterprises",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Greenoaks and Lightspeed led; valuation doubled in six months; outcome-based pricing.",
+   "audience_relevance": "Enterprises",
+   "practical_usefulness": "AI customer-service agents",
+   "visual_potential": "None",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 5,
+    "timeliness": 10
+   }
+  },
+  {
+   "headline": "Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid research platform",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-22",
+   "original_source": "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/",
+   "main_claim": "Developer tools + research humanoid.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Humanoid tooling",
+   "potential_hook": "Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid",
+   "target_audience": "Researchers",
+   "uncertainty": "Possibly before window.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Developer tools + research humanoid.",
+   "audience_relevance": "Researchers",
+   "practical_usefulness": "Research platform",
+   "visual_potential": "Official robot footage",
+   "potential_controversy": "Possibly before window.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 6
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch",
+   "main_claim": "Launch delay.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Satellite internet competition",
+   "potential_hook": "Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov",
+   "target_audience": "n/a",
+   "uncertainty": "see research.json",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Launch delay.",
+   "audience_relevance": "n/a",
+   "practical_usefulness": "n/a",
+   "visual_potential": "Launch footage (official)",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 4,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 4,
+    "discussion": 3,
+    "timeliness": 8
+   }
+  },
+  {
+   "headline": "MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in payments",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23",
+   "original_source": "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/",
+   "main_claim": "Sandbox + missions on financial crime, SME financing, safe agentic transactions.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "AI agents moving money",
+   "potential_hook": "MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in paym",
+   "target_audience": "Banks",
+   "uncertainty": "Date conflict; regulator item.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Sandbox + missions on financial crime, SME financing, safe agentic transactions.",
+   "audience_relevance": "Banks",
+   "practical_usefulness": "Regulatory sandbox",
+   "visual_potential": "None",
+   "potential_controversy": "Date conflict; regulator item.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://thekopinotes.com/articles/news/singapore-fintech-festival-2026-national-ai-missions/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 4,
+    "timeliness": 5
+   },
+   "rejected": "announcement date unknown"
+  },
+  {
+   "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+   "category": "CREATOR TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-23T08:01:00+00:00",
+   "original_source": "https://www.producthunt.com/posts/motionflare",
+   "main_claim": "Launched on Product Hunt 23 Nov; #3 of the day with 208 upvotes when checked; makers say it turns a URL into a branded video.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Creators and small businesses need launch videos and rarely have editors.",
+   "potential_hook": "Paste your website link and this AI makes the launch video.",
+   "target_audience": "Creators, marketers, founders.",
+   "uncertainty": "Features are the makers' claims; not tested; pricing beyond 'free option' unknown.",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "Product Hunt launch, 23 Nov 2026.",
+   "audience_relevance": "Creators, marketers, founders, small businesses.",
+   "practical_usefulness": "Make a branded product video from a URL; free option listed.",
+   "visual_potential": "The creator can record a real test on their own site.",
+   "potential_controversy": "Unverified output quality.",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.producthunt.com/posts/motionflare"
+    ]
+   },
+   "signals": [
+    {
+     "platform": "primary",
+     "url": "https://www.producthunt.com/posts/motionflare",
+     "title": "Product Hunt launch (connector)",
+     "retrieved_at": "2026-11-23T20:05:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "observed",
+      "points": 208
+     }
+    }
+   ],
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 7,
+    "social_momentum": 4,
+    "visual": 9,
+    "consequence": 3,
+    "discussion": 5,
+    "timeliness": 10
+   }
+  }
+ ],
+ "candidate_shortfall_reason": "22 credible candidates found in the 24-hour window; several have unknown dates and are rejected rather than counted.",
+ "factcheck": {
+  "story": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
+  "date": "2026-11-24",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "Motionflare launched on Product Hunt on Monday 23 November 2026 and was among the day's top three launches (ranked #3 with 208 upvotes when checked)",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:05:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.producthunt.com/posts/motionflare",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "Product Hunt leaderboard (connector)"
+     }
+    ],
+    "supporting_evidence": "Leaderboard 2026-11-23: Motionflare, launched 2026-11-23T00:01 PT, points 208, daily_rank 3.",
+    "primary_source": "https://www.producthunt.com/posts/motionflare",
+    "source_title": "Product Hunt leaderboard (connector)",
+    "supporting_source": "https://www.producthunt.com/posts/motionflare",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened"
+   },
+   {
+    "id": "c2",
+    "text": "Motionflare's makers say you paste a website URL and it uses your real product screenshots, logo, colors and copy to create branded motion graphics with music and optional narration",
+    "status": "COMPANY-CLAIMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:05:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.producthunt.com/products/motionflare",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "Product Hunt product profile (connector, makers' description)"
+     }
+    ],
+    "supporting_evidence": "Profile: 'Paste a URL and it uses your real product screenshots, logo, colors, and copy to create branded motion graphics with music and optional narration.'",
+    "primary_source": "https://www.producthunt.com/products/motionflare",
+    "source_title": "Product Hunt product profile (connector, makers' description)",
+    "supporting_source": "https://www.producthunt.com/products/motionflare",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "Motionflare's makers (Product Hunt listing)",
+    "script_attribution": "Its makers say"
+   },
+   {
+    "id": "c3",
+    "text": "The makers say results can be refined by chat and videos export in up to 4K (they also describe a Film mode for live-action commercials)",
+    "status": "COMPANY-CLAIMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:05:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.producthunt.com/products/motionflare",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "Product Hunt product profile (connector, makers' description)"
+     }
+    ],
+    "supporting_evidence": "Profile: 'Or switch to Film mode to generate a live-action commercial. Refine the result by chat and export in up to 4K.'",
+    "primary_source": "https://www.producthunt.com/products/motionflare",
+    "source_title": "Product Hunt product profile (connector, makers' description)",
+    "supporting_source": "https://www.producthunt.com/products/motionflare",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "Motionflare's makers (Product Hunt listing)",
+    "script_attribution": "Its makers say"
+   },
+   {
+    "id": "c4",
+    "text": "Motionflare's Product Hunt listing shows a free option (pricing: free options)",
+    "status": "COMPANY-CLAIMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-23T20:05:00+00:00",
+    "event_date": "2026-11-23",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.producthunt.com/products/motionflare",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "Product Hunt product profile (connector, makers' description)"
+     }
+    ],
+    "supporting_evidence": "Profile pricing_type: free_options.",
+    "primary_source": "https://www.producthunt.com/products/motionflare",
+    "source_title": "Product Hunt product profile (connector, makers' description)",
+    "supporting_source": "https://www.producthunt.com/products/motionflare",
+    "source_date": "2026-11-23",
+    "confidence": "HIGH",
+    "access": "opened",
+    "attribution": "Product Hunt listing",
+    "script_attribution": "its listing even shows"
+   }
+  ]
+ },
+ "access_limits": [
+  "Product Hunt read through its connector; news and social sites blocked."
+ ],
+ "verification": "tiered",
+ "content_format": "B",
+ "quality_v8": {
+  "hook": 9,
+  "clarity": 9,
+  "storytelling": 7,
+  "audience_relevance": 7,
+  "information_value": 8,
+  "natural_delivery": 9,
+  "shareability": 8,
+  "ending": 8
+ },
+ "visual_suggestions": [
+  "Your own screen recording: paste your website URL into Motionflare and show the video it makes (creator-recorded; test before posting)",
+  "Screenshot of Monday's Product Hunt leaderboard with Motionflare at #3 (credit Product Hunt)",
+  "Side-by-side: your website on the left, the generated video on the right",
+  "Text card: 'Makers' claims: music, narration, Film mode, 4K'"
+ ],
+ "fallback_reason": "Walmart's Agent Gateway with Meta's Muse (70.5) is the best story discovered, but corporate.walmart.com, Meta and every news outlet (The Verge, Unite.AI, mlq.ai, TechBuzz) are blocked by this environment's network policy, so none of its claims could be checked on an opened page; outlets also disagree on scope. Allowing those domains, or a Walmart/Meta post on a reachable host, would unblock it.",
+ "quality_limitation": "Three drafts tightened length and attribution, but a single-tool launch with only the makers' claims caps storytelling and broad relevance; it is a fallback because the stronger Walmart story could not be verified.",
+ "rejected_drafts": [
+  "Draft 1 (91 words, about 41 s): included the Film mode line; over the 40-second limit.",
+  "Draft 2: ended 'Would you use it?' (a generic question, replaced with a practical action)."
+ ]
+}

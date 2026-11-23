@@ -1,24 +1,24 @@
 # Recording: 2026-11-24 (RECORDING READY)
 
-Paste your website link, and this AI makes the launch video for you.
+Nvidia's CEO quit. Eleven days later, he's back.
 
-It's called Motionflare, one of Product Hunt's top three launches on Monday.
+On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.
 
-Its makers say it pulls your real screenshots, logo, colors and copy from your site.
+His CFO, Colette Kress, stepped in as interim CEO.
 
-Then it adds motion graphics, music and optional narration.
+Then on November 23, the board voted unanimously to bring him back, effective immediately.
 
-You edit it by chatting, and export in up to 4K.
+Huang said he can't wait to get back to work.
 
-Its listing even shows a free option.
+But it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.
 
-So before you pay an editor, try it on your own site.
+He's back, with a lot more oversight.
 
-About 36.0 seconds.
+About 39.2 seconds.
 
-- Tone: Practical, curious.
-- Opening: Hold up your phone showing your website.
-- Pauses: after 'top three launches'
-- Emphasise: website link, your real screenshots, free option
-- Pronunciation: Motionflare: MO-shun-flair
+- Tone: Calm, factual.
+- Opening: Raised eyebrows on 'he's back'.
+- Pauses: after 'quit.'; before 'But it's not over.'
+- Emphasise: quit, eleven days, unanimously, not over
+- Pronunciation: Jensen Huang: JEN-sun HWAHNG; Colette Kress: koh-LET KRESS
 - Keep your natural accent.

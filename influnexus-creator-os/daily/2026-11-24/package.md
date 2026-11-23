@@ -2,44 +2,43 @@
 
 ## STATUS: RECORDING READY
 
-> Disclosure: written by Claude, an Anthropic model. Motionflare is unrelated to Anthropic. Not sponsored.
+> Disclosure: written by Claude, an Anthropic model. Nvidia supplies chips across the AI industry; no other conflict known. Personal allegations, politics and the stock move are deliberately left out.
 
 ## A. Today's winning topic
 
-- **Topic:** Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)
+- **Topic:** Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation
 - **Language:** English
-- **Category:** CREATOR TECH (BREAKING)
-- **Original announcement date:** 23 November 2026 (Product Hunt launch, 00:01 PT)
-- **Viral potential score:** 57.5/100
-- **Evidence confidence:** MEDIUM
-- **Why selected:** The strongest story whose central claims could be checked on directly opened data, useful to creators and marketers.
+- **Category:** TECH COMPANIES (BREAKING)
+- **Original announcement date:** 23 November 2026 (NVIDIA press release)
+- **Viral potential score:** 64.5/100
+- **Evidence confidence:** HIGH
+- **Why selected:** Creator request; the most-discussed tech story of the day, verified on Nvidia's own press releases.
 
 ## B. Verified research
 
-A research pass covered 22 candidates from 23 Nov across AI, commerce, robotics, chips, gaming and creator tools. News, company and social sites are blocked in this environment, so the strongest stories (Walmart's AI-agent checkout with Meta's Muse, Nvidia's CEO reinstatement, Alexandr Wang's essay, a Waymo storm pause) could not be checked on opened pages and were held; a Korean exam story was excluded as political. The Product Hunt connector showed Monday's launches directly: Motionflare ranked #3 with 208 upvotes. Its makers say it turns a website URL into a branded video using the site's own screenshots, logo, colors and copy, with music, optional narration, a Film mode, chat edits and 4K export, and a free option. These are the makers' claims; the tool was not tested.
+Huang's resignation and reinstatement were confirmed on Nvidia's own newsroom, which opens from this environment: the 12 Nov release 'NVIDIA Announces CEO Transition' (Huang resigned effective immediately; CFO Colette Kress interim CEO; Harvey Jones first-ever Chair) and the 23 Nov release reinstating him by a unanimous board vote. The board says its independent committee investigation, formed after reports that Huang was targeted by a foreign intelligence effort, will proceed to conclusion, and it has formed a National Security and Export Control Committee and begun a search for a Chief Compliance Officer. Reported stock moves, personal allegations and political statements are not in the script: the stock figure needs an opened primary, and politics and personal matters are excluded.
 
 **Key verified facts**
 
-- Launched 23 Nov 2026; #3 with 208 upvotes when checked.
-- Makers' description: URL to branded video with screenshots, logo, colors, copy, music, narration.
-- Film mode, chat edits, 4K export (makers' claims).
-- Free option listed.
+- 12 Nov: Huang resigned; Kress interim CEO.
+- 23 Nov: unanimous board vote reinstates him, effective immediately.
+- Investigation continues; new compliance roles.
 
 **Uncertainties**
 
-- Output quality is untested; every feature is the makers' own description.
-- Upvotes were still changing on launch day.
-- Paid pricing and limits of the free option are not stated in the listing.
-- No independent review or coverage could be opened.
+- Why the board changed course is given only in its own words ('candor and ability to lead').
+- Reported stock moves are not verified on an opened source and are left out.
+- Personal allegations and political statements reported elsewhere are deliberately excluded.
+- Social engagement is not observable here (x.com blocked).
 
 **Context**
 
-Product Hunt is a daily launch site where tech users upvote new products; a top-three finish is a signal of early interest, not proof of quality.
+Harvey Jones stays as Board chair; Kress returns to CFO.
 
 **Primary sources**
 
-- [Product Hunt launch (23 Nov 2026)](https://www.producthunt.com/posts/motionflare)
-- [Product Hunt product profile](https://www.producthunt.com/products/motionflare)
+- [NVIDIA: Board Reinstates Jensen Huang (23 Nov 2026)](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director)
+- [NVIDIA: CEO Transition (12 Nov 2026)](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition)
 
 **Supporting sources**
 
@@ -47,22 +46,22 @@ Product Hunt is a daily launch site where tech users upvote new products; a top-
 ## C. Final recording script
 
 ```
-Paste your website link, and this AI makes the launch video for you.
+Nvidia's CEO quit. Eleven days later, he's back.
 
-It's called Motionflare, one of Product Hunt's top three launches on Monday.
+On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.
 
-Its makers say it pulls your real screenshots, logo, colors and copy from your site.
+His CFO, Colette Kress, stepped in as interim CEO.
 
-Then it adds motion graphics, music and optional narration.
+Then on November 23, the board voted unanimously to bring him back, effective immediately.
 
-You edit it by chatting, and export in up to 4K.
+Huang said he can't wait to get back to work.
 
-Its listing even shows a free option.
+But it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.
 
-So before you pay an editor, try it on your own site.
+He's back, with a lot more oversight.
 ```
 
-79 words · about 36.0 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
+85 words · about 39.2 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
 
 ## Claim verification table
 
@@ -70,51 +69,54 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 
 | # | Claim | Risk | Evidence level | Why | Sources (kind, access, date) | In script |
 |---|---|---|---|---|---|---|
-| c1 | Motionflare launched on Product Hunt on Monday 23 November 2026 and was among the day's top three launches (ranked #3 with 208 upvotes when checked) | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [product hunt leaderboard (connector)](https://www.producthunt.com/posts/motionflare) (primary, opened, 2026-11-23) | yes |
-| c2 | Motionflare's makers say you paste a website URL and it uses your real product screenshots, logo, colors and copy to create branded motion graphics with music and optional narration | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [product hunt product profile (connector, makers' description)](https://www.producthunt.com/products/motionflare) (primary, opened, 2026-11-23) | yes |
-| c3 | The makers say results can be refined by chat and videos export in up to 4K (they also describe a Film mode for live-action commercials) | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [product hunt product profile (connector, makers' description)](https://www.producthunt.com/products/motionflare) (primary, opened, 2026-11-23) | yes |
-| c4 | Motionflare's Product Hunt listing shows a free option (pricing: free options) | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [product hunt product profile (connector, makers' description)](https://www.producthunt.com/products/motionflare) (primary, opened, 2026-11-23) | yes |
+| c1 | On 12 November 2026 Jensen Huang resigned as Nvidia's President and CEO, effective immediately | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
+| c2 | Nvidia credits Huang with the foundation built over the last 33 years | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
+| c3 | CFO Colette Kress was appointed interim CEO | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
+| c4 | On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO, effective immediately | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
+| c5 | Huang said: 'I can't wait to get back to work' | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
+| c6 | The board says its independent investigation, formed after reports that Huang was the target of a foreign intelligence effort, will proceed to conclusion | high (present or future time context) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
+| c7 | Nvidia has formed a National Security and Export Control Committee and is searching for a new Chief Compliance Officer | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
 
 ## D. Recording direction
 
 Delivery only. Keep your natural accent; no editing instructions.
 
-- **Tone:** Practical, curious.
-- **Opening expression:** Hold up your phone showing your website.
-- **Emphasise:** website link, your real screenshots, free option
-- **Pauses:** after 'top three launches'
-- **Pronunciation:** Motionflare: MO-shun-flair
-- **Estimated duration:** 36.0 s
+- **Tone:** Calm, factual.
+- **Opening expression:** Raised eyebrows on 'he's back'.
+- **Emphasise:** quit, eleven days, unanimously, not over
+- **Pauses:** after 'quit.'; before 'But it's not over.'
+- **Pronunciation:** Jensen Huang: JEN-sun HWAHNG; Colette Kress: koh-LET KRESS
+- **Estimated duration:** 39.2 s
 
 ## E. Platform content
 
 **Instagram**
 
-Cover headline: Website link to launch video
+Cover headline: Nvidia's CEO quit. Then came back.
 
-Paste a website link, get a launch video. Motionflare was one of Product Hunt's top three launches on Monday. Its makers say it uses your site's real screenshots, logo, colors and copy, adds music and optional narration, and exports in up to 4K. There's a free option. Would you use it?
+Jensen Huang resigned as Nvidia's CEO on 12 November. On 23 November the board voted unanimously to bring him back, effective immediately. The board says its independent investigation will continue, and it's adding new oversight. Source: Nvidia's own press releases. Would you have brought him back?
 
-#AItools #ContentCreation #Marketing #ProductHunt
+#Nvidia #JensenHuang #AI #TechNews
 
 **LinkedIn**
 
-Motionflare (Product Hunt #3 on 23 Nov) says it turns a website URL into a branded launch video using the site's own assets.
+Nvidia reinstated Jensen Huang as CEO on 23 Nov by unanimous board vote, 11 days after his resignation; investigation and new compliance oversight continue.
 
-Business relevance: Launch videos without an editor for small teams.
+Business relevance: Governance at the center of the AI supply chain.
 
-Discussion prompt: Would you ship a launch video made this way?
+Discussion prompt: What should boards weigh in a reversal like this?
 
 **X**
 
-Motionflare was one of Product Hunt's top three launches on Monday: paste a website URL and, its makers say, it builds a branded launch video from your site's own screenshots, logo and copy. Free option listed.
+Nvidia's board unanimously reinstated Jensen Huang as CEO on 23 Nov, 11 days after he resigned. The board says its independent investigation continues, with new compliance oversight. (Nvidia press releases)
 
 **YouTube Shorts**
 
-Title: This AI Turns Your Website Into a Launch Video
+Title: Nvidia's CEO Quit. 11 Days Later, He's Back
 
-Motionflare, Product Hunt #3 on 23 Nov 2026. Features are the makers' claims.
+Sources: NVIDIA press releases of 12 and 23 Nov 2026.
 
-Keywords: AI video, Motionflare, marketing
+Keywords: Nvidia, Jensen Huang, AI chips
 
 ## F. Growth reasoning
 
@@ -139,7 +141,7 @@ Engagement counts appear only where they were actually observed.
 
 | # | Topic | Type | Score | Confidence | Status |
 |---|---|---|---|---|---|
-| 1 | Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov) | BREAKING | 57.5 | MEDIUM | eligible |
+| 1 | Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation | BREAKING | 64.5 | HIGH | eligible |
 | 2 | Amazon agrees to buy Decart's AI optimization stack and team (reported ~$7.5B) to power Trainium chips | BREAKING | 51.0 | MEDIUM | eligible |
 | 3 | Dragos prompt-theft study: follow-up coverage (CSA CISO briefing 23 Nov) | BREAKING | 50.0 | MEDIUM | eligible |
 | 4 | Epic confirms Unreal Engine 6 will ship without Blueprints; bets on AI to convert UE5 projects | BREAKING | 49.5 | MEDIUM | eligible |
@@ -149,18 +151,17 @@ Engagement counts appear only where they were actually observed.
 | 8 | Sierra raises $1.75B Series F at $30B valuation, ARR passes $400M | BREAKING | 42.5 | MEDIUM | eligible |
 | 9 | Ariane 6 launch of 36 Amazon Leo internet satellites slips from 23 Nov to 24 Nov | BREAKING | 41.0 | MEDIUM | eligible |
 | 10 | Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday) | BREAKING | 70.5 | MEDIUM | on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta |
-| 11 | Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation | BREAKING | 64.5 | MEDIUM | on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal |
-| 12 | South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam | BREAKING | 62.0 | MEDIUM | rejected: politics (ministerial resignation) excluded by V8 positioning |
-| 13 | Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI | BREAKING | 57.0 | MEDIUM | on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); superintelligence claim is extraordinary (primary and independent confirmation must be opened); x.com blocked |
-| 14 | Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tides | BREAKING | 56.5 | MEDIUM | on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); the Sunday announcement could not be found again and is easily confused with the 18 Nov pause |
-| 15 | Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sales | BREAKING | 56.0 | LOW | rejected: announcement date unknown |
-| 16 | Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home replaces Assistant on speakers | BREAKING | 54.5 | MEDIUM | rejected: announcement date unknown |
-| 17 | Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls | BREAKING | 54.0 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
-| 18 | iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform text styling | BREAKING | 54.0 | LOW | evidence confidence LOW |
-| 19 | OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterprise | BREAKING | 53.0 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
-| 20 | Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in simulation | BREAKING | 47.5 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
-| 21 | Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid research platform | BREAKING | 42.0 | MEDIUM | rejected: announcement date unknown |
-| 22 | MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in payments | BREAKING | 37.0 | MEDIUM | rejected: announcement date unknown |
+| 11 | South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam | BREAKING | 62.0 | MEDIUM | rejected: politics (ministerial resignation) excluded by V8 positioning |
+| 12 | Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI | BREAKING | 57.0 | MEDIUM | on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); superintelligence claim is extraordinary (primary and independent confirmation must be opened); x.com blocked |
+| 13 | Waymo pauses Bay Area robotaxi service from Monday 4 a.m. ahead of Thanksgiving storms and king tides | BREAKING | 56.5 | MEDIUM | on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); the Sunday announcement could not be found again and is easily confused with the 18 Nov pause |
+| 14 | Salesforce forecasts AI agents will drive ~$75.8B (about one-fifth) of Black Friday-week online sales | BREAKING | 56.0 | LOW | rejected: announcement date unknown |
+| 15 | Google will shut down the Nest app on 25 Jan 2027, moving devices to Google Home; Gemini for Home replaces Assistant on speakers | BREAKING | 54.5 | MEDIUM | rejected: announcement date unknown |
+| 16 | Tesla shares jump ~12% on Monday as FSD v15 reaches first owners and SpaceX-deal speculation swirls | BREAKING | 54.0 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
+| 17 | iOS 27.3 (in beta) adds features across six iPhone apps incl. Fitness+ Gym Strength and Freeform text styling | BREAKING | 54.0 | LOW | evidence confidence LOW |
+| 18 | OpenAI release notes: GPT-6.2 version tuned for the Chat tab rolling out to Plus/Pro/Business/Enterprise | BREAKING | 53.0 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
+| 19 | Architect Labs' Frostbite: a CPU it says AI agents designed end to end, claiming 4.59x perf/W in simulation | BREAKING | 47.5 | MEDIUM | verification gate: COMPANY-CLAIMED (only CONFIRMED or INDEPENDENTLY REPORTED stories can be selected) |
+| 20 | Nvidia expands Isaac robotics platform at GTC Berlin incl. Agile Robots' 1.4 m Agile ONE SN humanoid research platform | BREAKING | 42.0 | MEDIUM | rejected: announcement date unknown |
+| 21 | MAS and FFI launch National AI Missions incl. an Agentic Money Sandbox for testing AI agents in payments | BREAKING | 37.0 | MEDIUM | rejected: announcement date unknown |
 
 ## Appendix 3: Hook candidates
 
@@ -173,4 +174,4 @@ Scored internally; only the winning hook is delivered. All candidates are in `re
 
 ## Appendix 5: Research access limits
 
-- Product Hunt read through its connector; news and social sites blocked.
+- Nvidia newsroom opened directly; other hosts blocked.

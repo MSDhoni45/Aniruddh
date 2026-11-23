@@ -10,44 +10,43 @@
   },
   "candidates": [
     {
-      "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
-      "published_at": "2026-11-23T08:01:00+00:00",
-      "original_source": "https://www.producthunt.com/posts/motionflare",
-      "trend_score": 57.5,
+      "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+      "published_at": "2026-11-23",
+      "original_source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "trend_score": 64.5,
       "eligible": true,
       "ineligible_reason": null,
       "scores": {
-        "broad_relevance": 5,
-        "surprise": 6,
-        "usefulness": 7,
-        "social_momentum": 4,
-        "visual": 9,
-        "consequence": 3,
-        "discussion": 5,
+        "broad_relevance": 7,
+        "surprise": 9,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 8,
+        "discussion": 9,
         "timeliness": 10
       },
       "x_signal": {
         "status": "NOT VERIFIED",
         "posts": [],
         "discussion_evidence": [
-          "https://www.producthunt.com/posts/motionflare"
+          "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
         ]
       },
       "signals": [
         {
           "platform": "primary",
-          "url": "https://www.producthunt.com/posts/motionflare",
-          "title": "Product Hunt launch (connector)",
-          "retrieved_at": "2026-11-23T20:05:00+00:00",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "title": "NVIDIA press release (opened)",
+          "retrieved_at": "2026-11-23T20:15:00+00:00",
           "access": "DIRECTLY OBSERVED",
           "engagement": {
-            "basis": "observed",
-            "points": 208
+            "basis": "unknown"
           }
         }
       ],
       "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
+      "evidence_confidence": "HIGH",
       "new_development": null,
       "claim_status": "CONFIRMED"
     },
@@ -320,36 +319,6 @@
       "evidence_confidence": "MEDIUM",
       "new_development": null,
       "claim_status": "INDEPENDENTLY REPORTED"
-    },
-    {
-      "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
-      "published_at": "2026-11-23",
-      "original_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
-      "trend_score": 64.5,
-      "eligible": false,
-      "ineligible_reason": "on hold: V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal",
-      "scores": {
-        "broad_relevance": 7,
-        "surprise": 9,
-        "usefulness": 3,
-        "social_momentum": 3,
-        "visual": 6,
-        "consequence": 8,
-        "discussion": 9,
-        "timeliness": 10
-      },
-      "x_signal": {
-        "status": "NOT VERIFIED",
-        "posts": [],
-        "discussion_evidence": [
-          "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx"
-        ]
-      },
-      "signals": null,
-      "verification_status": "VERIFIED",
-      "evidence_confidence": "MEDIUM",
-      "new_development": null,
-      "claim_status": "CONFIRMED"
     },
     {
       "headline": "South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam",
@@ -684,133 +653,133 @@
   ],
   "hooks": [
     {
-      "text": "Paste your website link, and this AI makes the launch video for you.",
-      "approach": "practical discovery",
-      "accuracy": 8,
+      "text": "Nvidia's CEO quit. Eleven days later, he's back.",
+      "approach": "contradiction",
+      "accuracy": 9,
       "clarity": 9,
       "curiosity": 9,
-      "specificity": 8,
-      "emotional": 7,
+      "specificity": 9,
+      "emotional": 8,
       "comprehension": 9,
-      "total": 50,
+      "total": 53,
       "eligible": true
     },
     {
-      "text": "This AI turns any website into a launch video.",
-      "approach": "surprising capability",
-      "accuracy": 7,
+      "text": "Jensen Huang is back at Nvidia, 11 days after quitting.",
+      "approach": "major product reveal",
+      "accuracy": 9,
       "clarity": 9,
+      "curiosity": 7,
+      "specificity": 9,
+      "emotional": 6,
+      "comprehension": 9,
+      "total": 49,
+      "eligible": true
+    },
+    {
+      "text": "Eleven days. That's how long Nvidia went without Jensen Huang.",
+      "approach": "unexpected consequence",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 9,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 49,
+      "eligible": true
+    },
+    {
+      "text": "Nvidia's boss is back, but the investigation isn't over.",
+      "approach": "important warning",
+      "accuracy": 9,
+      "clarity": 8,
       "curiosity": 8,
       "specificity": 7,
       "emotional": 7,
-      "comprehension": 9,
+      "comprehension": 8,
       "total": 47,
       "eligible": true
     },
     {
-      "text": "Need a product video but no editor?",
-      "approach": "practical discovery",
-      "accuracy": 8,
-      "clarity": 9,
-      "curiosity": 7,
-      "specificity": 6,
-      "emotional": 7,
-      "comprehension": 9,
-      "total": 46,
-      "eligible": true
-    },
-    {
-      "text": "One link in, one branded video out.",
-      "approach": "unusual demonstration",
-      "accuracy": 7,
+      "text": "Nvidia's board changed its mind in under two weeks.",
+      "approach": "contradiction",
+      "accuracy": 9,
       "clarity": 8,
       "curiosity": 8,
       "specificity": 7,
       "emotional": 6,
+      "comprehension": 8,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "Nvidia had a different CEO for 11 days.",
+      "approach": "unexpected consequence",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 8,
+      "emotional": 6,
+      "comprehension": 8,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "Why did Nvidia bring back the CEO who quit?",
+      "approach": "contradiction",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 9,
+      "specificity": 6,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "The world's most important chip company just rehired its CEO.",
+      "approach": "major product reveal",
+      "accuracy": 7,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 6,
+      "emotional": 7,
       "comprehension": 8,
       "total": 44,
       "eligible": true
     },
     {
-      "text": "Your website already has everything for a video ad.",
+      "text": "Jensen Huang was fired and rehired.",
       "approach": "contradiction",
-      "accuracy": 7,
-      "clarity": 7,
-      "curiosity": 8,
-      "specificity": 6,
-      "emotional": 6,
-      "comprehension": 8,
-      "total": 42,
-      "eligible": true
-    },
-    {
-      "text": "Monday's number-three launch on Product Hunt makes videos from links.",
-      "approach": "major product reveal",
-      "accuracy": 9,
-      "clarity": 7,
-      "curiosity": 6,
-      "specificity": 8,
-      "emotional": 4,
-      "comprehension": 7,
-      "total": 41,
-      "eligible": true
-    },
-    {
-      "text": "Before you hire an editor, try this.",
-      "approach": "important warning",
-      "accuracy": 7,
-      "clarity": 8,
-      "curiosity": 7,
-      "specificity": 3,
-      "emotional": 6,
-      "comprehension": 9,
-      "total": 40,
-      "eligible": true
-    },
-    {
-      "text": "I found an AI that reads your website and directs your ad.",
-      "approach": "surprising capability",
-      "accuracy": 6,
-      "clarity": 7,
-      "curiosity": 8,
-      "specificity": 6,
-      "emotional": 7,
-      "comprehension": 8,
-      "total": 42,
-      "eligible": false
-    },
-    {
-      "text": "Small brands might not need a video editor for launches anymore.",
-      "approach": "unexpected consequence",
-      "accuracy": 5,
-      "clarity": 8,
-      "curiosity": 8,
-      "specificity": 5,
-      "emotional": 7,
-      "comprehension": 8,
-      "total": 41,
-      "eligible": false
-    },
-    {
-      "text": "This AI replaces video editors.",
-      "approach": "unexpected consequence",
       "accuracy": 2,
       "clarity": 9,
-      "curiosity": 8,
-      "specificity": 3,
+      "curiosity": 9,
+      "specificity": 5,
       "emotional": 8,
       "comprehension": 9,
-      "total": 39,
+      "total": 42,
+      "eligible": false
+    },
+    {
+      "text": "The man behind the AI chip boom is back.",
+      "approach": "surprising capability",
+      "accuracy": 6,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 4,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 41,
       "eligible": false
     }
   ],
   "backups": [],
   "limitations": [
-    "News, company and social sites blocked; Product Hunt read through its connector; anthropic.com and github.com reachable.",
-    "Tool not tested by me."
+    "nvidianews.nvidia.com opens; investor.nvidia.com, sec.gov and news sites blocked.",
+    "Social engagement UNKNOWN."
   ],
   "source_audit": {
-    "checked_at_utc": "2026-11-23T20:01:33+00:00",
+    "checked_at_utc": "2026-11-23T20:09:54+00:00",
     "groups": {
       "x": {
         "status": "WORKING",
@@ -997,7 +966,7 @@
       "www.nature.com": {
         "host": "www.nature.com",
         "reachable": true,
-        "http": 429
+        "http": 200
       },
       "www.reddit.com": {
         "host": "www.reddit.com",
@@ -1044,96 +1013,91 @@
       "broad_relevance": 8
     },
     "best_verified": {
-      "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
-      "score": 57.5,
-      "broad_relevance": 5
+      "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+      "score": 64.5,
+      "broad_relevance": 7
     },
     "best_ready": {
-      "headline": "Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)",
-      "score": 57.5,
-      "broad_relevance": 5
+      "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+      "score": 64.5,
+      "broad_relevance": 7
     },
     "blockers": [
       {
         "headline": "Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday)",
         "score": 70.5,
         "blocker": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta"
-      },
-      {
-        "headline": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
-        "score": 64.5,
-        "blocker": "V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal"
       }
     ],
-    "fallback": true
+    "fallback": false
   },
   "script_checks": {
     "hook_clarity": {
       "pass": true,
-      "why": "Thirteen words that state exactly what the tool does."
+      "why": "Nine words that tell the whole twist instantly."
     },
     "factual_accuracy": {
       "pass": true,
-      "why": "Every claim maps to c1-c4 read directly from Product Hunt, attributed to the makers."
+      "why": "Every sentence maps to c1-c7 on Nvidia's two opened releases."
     },
     "natural_delivery": {
       "pass": true,
-      "why": "Short spoken sentences, read aloud at a normal pace."
+      "why": "Short spoken sentences with a clear turn."
     },
     "narrative_coherence": {
       "pass": true,
-      "why": "One idea: link in, video out."
+      "why": "One timeline: quit, interim, return, oversight."
     },
     "audience_relevance": {
       "pass": true,
-      "why": "Creators and small brands need launch videos."
+      "why": "The most-discussed tech story of the day."
     },
     "practical_takeaway": {
       "pass": true,
-      "why": "Try it on your own site before paying an editor."
+      "why": "Explains what changed and what is still open."
     },
     "ending_quality": {
       "pass": true,
-      "why": "Ends on a useful action, not a forced question."
+      "why": "Ends on a memorable line about oversight, not a forced question."
     },
     "no_redundancy": {
       "pass": true,
-      "why": "Each line adds a feature or a fact."
+      "why": "Each line moves the timeline forward."
     },
     "no_jargon": {
       "pass": true,
-      "why": "No technical terms beyond 4K."
+      "why": "No financial or legal jargon."
     },
     "no_unsupported_implications": {
       "pass": true,
-      "why": "Features are attributed to the makers; no claim it beats editors."
+      "why": "No stock figures, allegations or politics; investigation wording attributed to the board."
     }
   },
   "audience_check": {
-    "why_care_today": "It launched on Monday and is free to try.",
-    "affects_life_or_work": "Anyone selling online needs videos.",
-    "can_they_use_it": "Yes, there's a free option on its website.",
-    "surprising": "It builds the video from your own site's content.",
-    "demonstrable": "You can record a real test on your own site.",
-    "clear_consequence": "Fewer barriers to making launch videos.",
-    "would_share": "Creators will send it to friends launching products.",
-    "right_audience": "Creators, marketers and founders we want to reach."
+    "why_care_today": "It is the tech story everyone is discussing right now.",
+    "affects_life_or_work": "Nvidia's chips power AI tools many people use daily.",
+    "can_they_use_it": "No product; it is industry news people want explained.",
+    "surprising": "A CEO resignation reversed in just eleven days.",
+    "demonstrable": "Both press releases and dates make a clean timeline.",
+    "clear_consequence": "He returns with more oversight and an open investigation.",
+    "would_share": "People share fast-moving tech drama with friends.",
+    "right_audience": "Tech, AI and business followers."
   },
   "practical_takeaway": {
-    "who_can_use": "Creators, marketers, founders, small businesses with a website",
-    "what_it_does": "Turns a website URL into a branded video (makers' description)",
-    "availability": "Live on its website since the 23 Nov launch",
-    "price": "Free option listed; paid pricing UNKNOWN",
-    "difference": "Uses the site's own screenshots, logo, colors and copy instead of templates (makers' claim)",
-    "limitations": "Untested quality; claims are the makers'",
-    "why_it_matters": "A launch video without an editor could save small brands time and money"
+    "who_can_use": "not applicable (company news)",
+    "what_it_does": "Leadership change at the world's leading AI chip company",
+    "availability": "not applicable",
+    "price": "not applicable",
+    "difference": "A resignation reversed in 11 days",
+    "limitations": "Investigation still open",
+    "why_it_matters": "Nvidia's chips sit behind much of today's AI; its leadership affects the whole industry"
   },
   "scrutiny": null,
   "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7/V8 model unchanged.",
   "story": {
-    "story_id": "2026-11-24-motionflare-website-to-launch-video",
-    "company": "Motionflare (small bootstrapped team)",
+    "story_id": "2026-11-24-nvidia-reinstates-jensen-huang",
+    "company": "NVIDIA",
     "event_date": "2026-11-23",
-    "announced_at": "23 November 2026 (Product Hunt launch, 00:01 PT)"
+    "announced_at": "23 November 2026 (NVIDIA press release)"
   }
 }

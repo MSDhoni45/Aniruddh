@@ -42,6 +42,48 @@
       "quality_gate": "PASS",
       "quality_total": 100,
       "validation_problems": []
+    },
+    "2026-11-24-manual-013952": {
+      "run_id": "2026-11-24-manual-013952",
+      "trigger": "manual",
+      "start_ist": "2026-11-24T01:39:52+05:30",
+      "end_ist": "2026-11-24T01:40:02+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3MxNBrZpiCGSeFtC5d",
+        "CLAUDE_CODE_CONTAINER_ID": "container_013GtHnUXEpkWEbg6bnk8xbQ",
+        "cloud": true
+      },
+      "git_commit": "a86b992",
+      "research_window": {
+        "start_utc": "2026-11-22T20:01:32+00:00",
+        "end_utc": "2026-11-23T20:01:32+00:00",
+        "start_ist": "2026-11-23T01:31:32+05:30",
+        "end_ist": "2026-11-24T01:31:32+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "session reply",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [],
+      "note": "REEL SCRIPT: Nvidia reinstates Jensen Huang (both Nvidia press releases opened)",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation",
+      "candidates": 21,
+      "source_access": "Evidence levels: 7 HIGH. Claims with a source opened directly: 7 of 7.",
+      "fact_check": "PASS",
+      "word_count": 85,
+      "estimated_seconds": 39.2,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
     }
   }
 }

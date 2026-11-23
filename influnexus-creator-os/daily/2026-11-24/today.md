@@ -1,92 +1,92 @@
 # Today's reel: 2026-11-24
 
-**STATUS: RECORDING READY**  |  **FALLBACK STORY**
+**STATUS: RECORDING READY**
 
 ## 1. Today's best story
 
-**Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov)**
+**Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation**
 
-Event date: 2026-11-23 · Published: 23 November 2026 (Product Hunt launch, 00:01 PT) · CREATOR TECH · Format B: Product discovery · Confidence: MEDIUM
+Event date: 2026-11-23 · Published: 23 November 2026 (NVIDIA press release) · TECH COMPANIES · Format A: Breaking development · Confidence: HIGH
 
 ## 2. Why this story won
 
-A practical tool for creators and small brands: paste a site link and its makers say it builds a branded launch video. It was one of Product Hunt's top three launches on Monday (208 upvotes observed directly, the only social signal I could measure; X is blocked). It is a FALLBACK: Walmart's AI checkout story is stronger but none of its sources could be opened.
-
-> **FALLBACK STORY.** A stronger story was discovered but could not be verified from this environment. Walmart's Agent Gateway with Meta's Muse (70.5) is the best story discovered, but corporate.walmart.com, Meta and every news outlet (The Verge, Unite.AI, mlq.ai, TechBuzz) are blocked by this environment's network policy, so none of its claims could be checked on an opened page; outlets also disagree on scope. Allowing those domains, or a Walmart/Meta post on a reachable host, would unblock it.
+The world's most watched AI chip company lost its founder-CEO on 12 Nov and brought him back on 23 Nov: a fast, surprising reversal everyone in tech is discussing (trending per your note and wide search coverage; X engagement not observable here). Both of Nvidia's own press releases opened directly. Walmart's AI checkout story scored higher on discovery but none of its sources open.
 
 - **A. Best story discovered:** Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday) (70.5/100)
-- **B. Best story verified:** Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov) (57.5/100)
-- **C. Best story ready to record:** Motionflare: an AI tool that turns a website link into a branded launch video (Product Hunt, 23 Nov) (57.5/100)
+- **B. Best story verified:** Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation (64.5/100)
+- **C. Best story ready to record:** Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation (64.5/100)
   - Blocked: Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday) (70.5): V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta
-  - Blocked: Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation (64.5): V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal
 
 ## 3. Final script
 
 ```
-Paste your website link, and this AI makes the launch video for you.
+Nvidia's CEO quit. Eleven days later, he's back.
 
-It's called Motionflare, one of Product Hunt's top three launches on Monday.
+On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.
 
-Its makers say it pulls your real screenshots, logo, colors and copy from your site.
+His CFO, Colette Kress, stepped in as interim CEO.
 
-Then it adds motion graphics, music and optional narration.
+Then on November 23, the board voted unanimously to bring him back, effective immediately.
 
-You edit it by chatting, and export in up to 4K.
+Huang said he can't wait to get back to work.
 
-Its listing even shows a free option.
+But it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.
 
-So before you pay an editor, try it on your own site.
+He's back, with a lot more oversight.
 ```
 
 ## 4. Word count and duration
 
-79 spoken words, about 36.0 seconds (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)). Script quality 81.5/100 (editorial judgement, not a forecast).
+85 spoken words, about 39.2 seconds (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)). Script quality 90.5/100 (editorial judgement, not a forecast).
 
 ## 5. Caption
 
-Paste a website link, get a launch video. Motionflare was one of Product Hunt's top three launches on Monday. Its makers say it uses your site's real screenshots, logo, colors and copy, adds music and optional narration, and exports in up to 4K. There's a free option. Would you use it?
+Jensen Huang resigned as Nvidia's CEO on 12 November. On 23 November the board voted unanimously to bring him back, effective immediately. The board says its independent investigation will continue, and it's adding new oversight. Source: Nvidia's own press releases. Would you have brought him back?
 
 ## 6. Hashtags
 
-#AItools #ContentCreation #Marketing #ProductHunt
+#Nvidia #JensenHuang #AI #TechNews
 
 ## 7. Sources
 
-- [product hunt leaderboard (connector)](https://www.producthunt.com/posts/motionflare) (2026-11-23, OPENED DIRECTLY)
-- [product hunt product profile (connector, makers' description)](https://www.producthunt.com/products/motionflare) (2026-11-23, OPENED DIRECTLY)
+- [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (2026-11-12, OPENED DIRECTLY)
+- [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (2026-11-23, OPENED DIRECTLY)
 
 ## 8. Visual suggestions
 
-- Your own screen recording: paste your website URL into Motionflare and show the video it makes (creator-recorded; test before posting)
-- Screenshot of Monday's Product Hunt leaderboard with Motionflare at #3 (credit Product Hunt)
-- Side-by-side: your website on the left, the generated video on the right
-- Text card: 'Makers' claims: music, narration, Film mode, 4K'
+- Screenshot of Nvidia's 12 Nov press release headline 'NVIDIA Announces CEO Transition' (credit NVIDIA)
+- Screenshot of the 23 Nov release headline (credit NVIDIA)
+- Timeline card: 12 Nov resigned → Kress interim → 23 Nov reinstated
+- Text card: 'Investigation continues · new Chief Compliance Officer'
 
 ## 9. Recording direction
 
-- **Emphasise:** Lean on 'website link' and 'launch video'.
-- **Pause:** A beat after 'top three launches.'
-- **Tone:** Practical and friendly; a tip, not an ad.
+- **Emphasise:** Pause between 'quit.' and 'Eleven days later'; lean on 'he's back'.
+- **Pause:** A beat before 'But it's not over.'
+- **Tone:** Calm, factual; no gossip tone.
 
 ## 10. Alternative stories
 
 - Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday) (70.5/100): V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); no Walmart or Meta primary found; outlets disagree on scope and on live vs beta
-- Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation (64.5/100): V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); Nvidia release and SEC 8-K not opened; the 33% stock move needs HIGH; tied to politics and a personal scandal
 - South Korea's education minister resigns after backlash over anti-AI-cheating measures for the Suneung exam (62.0/100): rejected: politics (ministerial resignation) excluded by V8 positioning
+- Meta's chief AI officer Alexandr Wang publishes 'Superintelligence is Arriving' essay warning society against a 'handover' to AI (57.0/100): V7/V8 rule 6b: no critical claim could be checked on a page opened directly; its primary and news hosts are blocked by the environment's network policy (search excerpts only); superintelligence claim is extraordinary (primary and independent confirmation must be opened); x.com blocked
 
 ## 11. Verification status
 
-- Motionflare launched on Product Hunt on Monday 23 November 2026 and was among the day's top three launches (ranked #3 with 208 upvotes when checked): **CONFIRMED**, HIGH, 1 source(s) opened directly
-- Motionflare's makers say you paste a website URL and it uses your real product screenshots, logo, colors and copy to create branded motion graphics with music and optional narration: **COMPANY-CLAIMED**, HIGH, 1 source(s) opened directly
-- The makers say results can be refined by chat and videos export in up to 4K (they also describe a Film mode for live-action commercials): **COMPANY-CLAIMED**, HIGH, 1 source(s) opened directly
-- Motionflare's Product Hunt listing shows a free option (pricing: free options): **COMPANY-CLAIMED**, HIGH, 1 source(s) opened directly
+- On 12 November 2026 Jensen Huang resigned as Nvidia's President and CEO, effective immediately: **CONFIRMED**, HIGH, 1 source(s) opened directly
+- Nvidia credits Huang with the foundation built over the last 33 years: **COMPANY-CLAIMED**, HIGH, 1 source(s) opened directly
+- CFO Colette Kress was appointed interim CEO: **CONFIRMED**, HIGH, 1 source(s) opened directly
+- On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO, effective immediately: **CONFIRMED**, HIGH, 1 source(s) opened directly
+- Huang said: 'I can't wait to get back to work': **COMPANY-CLAIMED**, HIGH, 1 source(s) opened directly
+- The board says its independent investigation, formed after reports that Huang was the target of a foreign intelligence effort, will proceed to conclusion: **COMPANY-CLAIMED**, HIGH, 1 source(s) opened directly
+- Nvidia has formed a National Security and Export Control Committee and is searching for a new Chief Compliance Officer: **CONFIRMED**, HIGH, 1 source(s) opened directly
 
 Uncertain:
-- Output quality is untested; every feature is the makers' own description.
-- Upvotes were still changing on launch day.
-- Paid pricing and limits of the free option are not stated in the listing.
-- No independent review or coverage could be opened.
+- Why the board changed course is given only in its own words ('candor and ability to lead').
+- Reported stock moves are not verified on an opened source and are left out.
+- Personal allegations and political statements reported elsewhere are deliberately excluded.
+- Social engagement is not observable here (x.com blocked).
 
 ---
 
-RUN STATUS: 2026-11-24-manual-013132: READY, delivery not attempted via session reply
+RUN STATUS: 2026-11-24-manual-013952: READY, delivery not attempted via session reply

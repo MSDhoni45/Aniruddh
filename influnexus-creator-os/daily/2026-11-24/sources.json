@@ -1,17 +1,17 @@
 {
   "primary": [
     {
-      "label": "Product Hunt launch (23 Nov 2026)",
-      "url": "https://www.producthunt.com/posts/motionflare"
+      "label": "NVIDIA: Board Reinstates Jensen Huang (23 Nov 2026)",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
     },
     {
-      "label": "Product Hunt product profile",
-      "url": "https://www.producthunt.com/products/motionflare"
+      "label": "NVIDIA: CEO Transition (12 Nov 2026)",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
     }
   ],
   "supporting": [],
   "x_signals": [],
   "access_limits": [
-    "Product Hunt read through its connector; news and social sites blocked."
+    "Nvidia newsroom opened directly; other hosts blocked."
   ]
 }
