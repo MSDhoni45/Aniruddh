@@ -6,7 +6,7 @@
 
 ## 1. Why this story
 
-The world's most watched AI chip company lost its founder-CEO on 12 Nov and brought him back on 23 Nov: a fast, surprising reversal everyone in tech is discussing (trending per your note and wide search coverage; X engagement not observable here). Both of Nvidia's own press releases opened directly. Walmart's AI checkout story scored higher on discovery but none of its sources open.
+The world's most watched AI chip company lost its longtime CEO on 12 Nov and brought him back on 23 Nov: a fast, surprising reversal everyone in tech is discussing (trending per your note and wide search coverage; X engagement not observable here). Both of Nvidia's own press releases opened directly. Walmart's AI checkout story scored higher on discovery but none of its sources open.
 
 - **A. Best story discovered:** Walmart's Agent Gateway goes live with Meta's Muse as the first AI agent that can check out for shoppers (Black Friday) (70.5/100)
 - **B. Best story verified:** Nvidia board unanimously reinstates Jensen Huang as CEO 11 days after his resignation (64.5/100)
