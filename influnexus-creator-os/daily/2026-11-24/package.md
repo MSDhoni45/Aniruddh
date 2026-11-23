@@ -20,7 +20,7 @@ Huang's resignation and reinstatement were confirmed on Nvidia's own newsroom, w
 
 **Key verified facts**
 
-- 12 Nov: Huang resigned; Kress interim CEO.
+- 11 Nov (8-K event date), announced 12 Nov: Huang resigned; Kress interim CEO; Jones chair.
 - 23 Nov: unanimous board vote reinstates him, effective immediately.
 - Investigation continues; new compliance roles.
 
@@ -39,20 +39,23 @@ Harvey Jones stays as Board chair; Kress returns to CFO.
 
 - [NVIDIA: Board Reinstates Jensen Huang (23 Nov 2026)](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director)
 - [NVIDIA: CEO Transition (12 Nov 2026)](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition)
+- [SEC 8-K (event 11 Nov 2026)](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm)
+- [SEC 8-K Ex.99.1 (23 Nov 2026)](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm)
 
 **Supporting sources**
 
+- [CNN (12 Nov 2026)](https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns)
 
 ## C. Final recording script
 
 ```
-Nvidia's CEO quit. Eleven days later, he's back.
+Nvidia's CEO quit. Less than two weeks later, he's back.
 
-On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.
+On November 12, Nvidia announced that Jensen Huang had resigned as CEO.
 
 His CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.
 
-Then on November 23, the board voted unanimously to bring him back, effective immediately.
+Then on November 23, the board voted unanimously to bring him back.
 
 Huang said he can't wait to get back to work.
 
@@ -61,7 +64,7 @@ But it's not over. The board says its investigation, after reports he was target
 He's back, with a lot more oversight.
 ```
 
-93 words · about 43.0 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
+89 words · about 41.3 s at 140 words per minute (natural moderate pace, 140 wpm plus a pause after each sentence (assumed; not yet calibrated)) · script quality 100/100
 
 ## Claim verification table
 
@@ -69,14 +72,14 @@ Access: *opened* = page read directly; *search-index* = the primary site's own t
 
 | # | Claim | Risk | Evidence level | Why | Sources (kind, access, date) | In script |
 |---|---|---|---|---|---|---|
-| c1 | On 12 November 2026 Jensen Huang resigned as Nvidia's President and CEO, effective immediately | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
-| c2 | Nvidia credits Huang with the foundation built over the last 33 years | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
-| c3 | CFO Colette Kress was appointed interim CEO | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
-| c4 | On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO, effective immediately | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
-| c5 | Huang said: 'I can't wait to get back to work' | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
-| c6 | The board says its independent investigation, formed after reports that Huang was the target of a foreign intelligence effort, will proceed to conclusion | high (present or future time context) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
+| c1 | On 12 November 2026 Nvidia announced that Jensen Huang had resigned as President and CEO; the 8-K gives the event date as 11 November | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12); [sec edgar 8-k (event 2026-11-11)](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm) (primary, opened, 2026-11-12); [cnn](https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns) (news, opened, 2026-11-12) | yes |
+| c2 | Nvidia credits Huang with the foundation built over the last 33 years | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | no |
+| c3 | CFO Colette Kress was appointed interim CEO | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12); [sec edgar 8-k](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm) (primary, opened, 2026-11-12); [cnn](https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns) (news, opened, 2026-11-12) | yes |
+| c4 | On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23); [sec edgar 8-k ex.99.1](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm) (primary, opened, 2026-11-23) | yes |
+| c5 | Huang said: 'I can't wait to get back to work' | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23); [sec edgar 8-k ex.99.1](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm) (primary, opened, 2026-11-23) | yes |
+| c6 | The board says its independent investigation, formed after reports that Huang was the target of a foreign intelligence effort, will proceed to conclusion | high (present or future time context) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23); [sec edgar 8-k ex.99.1](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm) (primary, opened, 2026-11-23); [cnn](https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns) (news, opened, 2026-11-12) | yes |
 | c7 | Nvidia has formed a National Security and Export Control Committee and is searching for a new Chief Compliance Officer | high (refers to a recent date (2026-11-23)) | HIGH | primary source opened directly | [nvidia newsroom: board reinstates jensen huang](https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director) (primary, opened, 2026-11-23) | yes |
-| c8 | The board appointed Harvey C. Jones as Chair of the Board | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12) | yes |
+| c8 | The board appointed Harvey C. Jones as Chair of the Board | high (refers to a recent date (2026-11-12)) | HIGH | primary source opened directly | [nvidia newsroom: nvidia announces ceo transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) (primary, opened, 2026-11-12); [sec edgar 8-k](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm) (primary, opened, 2026-11-12); [cnn](https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns) (news, opened, 2026-11-12) | yes |
 
 ## D. Recording direction
 
@@ -84,10 +87,10 @@ Delivery only. Keep your natural accent; no editing instructions.
 
 - **Tone:** Calm, factual.
 - **Opening expression:** Raised eyebrows on 'he's back'.
-- **Emphasise:** quit, eleven days, unanimously, effective immediately, not over, more oversight
+- **Emphasise:** quit, less than two weeks, unanimously, not over, more oversight
 - **Pauses:** after 'quit.'; before 'But it's not over.'
 - **Pronunciation:** Jensen Huang: JEN-sun HWAHNG; Colette Kress: koh-LET KRESS
-- **Estimated duration:** 43.0 s
+- **Estimated duration:** 41.3 s
 
 ## E. Platform content
 
@@ -95,7 +98,7 @@ Delivery only. Keep your natural accent; no editing instructions.
 
 Cover headline: Nvidia's CEO quit. Then came back.
 
-Jensen Huang resigned as Nvidia's CEO on 12 November. On 23 November the board voted unanimously to bring him back, effective immediately. The board says its independent investigation will continue, and it's adding new oversight. Source: Nvidia's own press releases. Would you have brought him back?
+Nvidia announced on 12 November that Jensen Huang had resigned as CEO. On 23 November the board voted unanimously to bring him back. The board says its independent investigation will continue, and it's adding new oversight. Sources: Nvidia's releases and SEC filings. Would you have brought him back?
 
 #Nvidia #JensenHuang #AI #TechNews
 

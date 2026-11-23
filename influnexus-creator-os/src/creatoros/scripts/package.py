@@ -76,6 +76,7 @@ QUALITY_V8_TARGET, MIN_HOOKS_V8 = 85, 10
 # V9 (creator's permanent production standard, 24 Nov 2026), layered on V8: 40-45 s / 90-105 words, full recording
 # directions, a sentence-by-sentence storyboard, a music and sound plan, a distribution package and a production handoff.
 V9_FROM = "2026-11-24"
+V10_FROM = "2026-11-24"           # V10 (24 Nov 2026): a verification report per package, schema-checked handoff, QC report
 TREATMENTS = ["talking-head", "b-roll", "split", "screen", "graphic"]
 STORYBOARD_KEYS = ["line", "start_s", "end_s", "treatment", "footage", "on_screen_text", "motion_graphics", "transition", "sfx",
                    "source_licensing"]
@@ -659,6 +660,11 @@ def validate(p: dict) -> tuple[list[str], dict]:
         problems += v8_problems(p)
     if is_v9(p):
         problems += v9_problems(p, chk)
+        if str(p.get("date", "")) >= V10_FROM:
+            vr = config.path("daily", p["date"], "verification_report.json")
+            if not vr.exists() and not p.get("verification_report_inline"):
+                problems.append("V10: write daily/DATE/verification_report.json (claim, evidence, source URL, dates, status, "
+                                "confidence, contradictions, final decision) before packaging")
     if is_v6(p) or is_v7(p):
         if is_v6(p):
             problems += v6_problems(p, ranked, ready)
@@ -1212,12 +1218,13 @@ def save(p: dict, out: Path | None = None, record: bool = True) -> dict:
     if is_v6(p):
         (out / "creative.md").write_text(render_creative(p, info), encoding="utf-8")
     if is_v9(p):
-        write_json(out / "production_handoff.json", {
-            "date": p["date"], "slug": p["slug"], "topic": p["topic"], "script": p["script"].strip(),
-            "estimated_seconds": info["lint"]["seconds"], "words": info["lint"]["words"], "recording": p["recording_v9"],
-            "storyboard": p["storyboard"], "music": p["music"], "captions_file": "captions.txt", **p["production_handoff"],
-            "sources": [it["url"] for c in p["factcheck"]["claims"] if c.get("in_script") for it in c.get("evidence") or []
-                        if isinstance(it, dict)]})
+        from ..production import handoff as hmod
+        import json as _json
+        vf = out / "verification_report.json"
+        verification = _json.loads(vf.read_text(encoding="utf-8")) if vf.exists() else None
+        h = hmod.build(p, info, verification)
+        write_json(out / "production_handoff.json", h)
+        write_json(out / "qc_report.json", hmod.qc(p, info, h, verification))
     write_json(out / "sources.json", {"primary": p["primary_sources"], "supporting": p["supporting_sources"],
                                       "x_signals": p["x_signals"], "access_limits": p["access_limits"]})
     if not record:

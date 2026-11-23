@@ -653,7 +653,7 @@
   ],
   "hooks": [
     {
-      "text": "Nvidia's CEO quit. Eleven days later, he's back.",
+      "text": "Nvidia's CEO quit. Less than two weeks later, he's back.",
       "approach": "contradiction",
       "accuracy": 9,
       "clarity": 9,
@@ -662,30 +662,6 @@
       "emotional": 8,
       "comprehension": 9,
       "total": 53,
-      "eligible": true
-    },
-    {
-      "text": "Jensen Huang is back at Nvidia, 11 days after quitting.",
-      "approach": "major product reveal",
-      "accuracy": 9,
-      "clarity": 9,
-      "curiosity": 7,
-      "specificity": 9,
-      "emotional": 6,
-      "comprehension": 9,
-      "total": 49,
-      "eligible": true
-    },
-    {
-      "text": "Eleven days. That's how long Nvidia went without Jensen Huang.",
-      "approach": "unexpected consequence",
-      "accuracy": 9,
-      "clarity": 8,
-      "curiosity": 8,
-      "specificity": 9,
-      "emotional": 7,
-      "comprehension": 8,
-      "total": 49,
       "eligible": true
     },
     {
@@ -707,18 +683,6 @@
       "clarity": 8,
       "curiosity": 8,
       "specificity": 7,
-      "emotional": 6,
-      "comprehension": 8,
-      "total": 46,
-      "eligible": true
-    },
-    {
-      "text": "Nvidia had a different CEO for 11 days.",
-      "approach": "unexpected consequence",
-      "accuracy": 8,
-      "clarity": 8,
-      "curiosity": 8,
-      "specificity": 8,
       "emotional": 6,
       "comprehension": 8,
       "total": 46,
@@ -749,6 +713,42 @@
       "eligible": true
     },
     {
+      "text": "Jensen Huang is back at Nvidia, 11 days after quitting.",
+      "approach": "major product reveal",
+      "accuracy": 6,
+      "clarity": 9,
+      "curiosity": 7,
+      "specificity": 9,
+      "emotional": 6,
+      "comprehension": 9,
+      "total": 46,
+      "eligible": false
+    },
+    {
+      "text": "Eleven days. That's how long Nvidia went without Jensen Huang.",
+      "approach": "unexpected consequence",
+      "accuracy": 6,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 9,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 46,
+      "eligible": false
+    },
+    {
+      "text": "Nvidia had a different CEO for 11 days.",
+      "approach": "unexpected consequence",
+      "accuracy": 6,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 8,
+      "emotional": 6,
+      "comprehension": 8,
+      "total": 44,
+      "eligible": false
+    },
+    {
       "text": "Jensen Huang was fired and rehired.",
       "approach": "contradiction",
       "accuracy": 2,
@@ -775,11 +775,11 @@
   ],
   "backups": [],
   "limitations": [
-    "nvidianews.nvidia.com opens; investor.nvidia.com, sec.gov and news sites blocked.",
+    "investor.nvidia.com blocked; nvidianews.nvidia.com, sec.gov EDGAR archives and cnn.com opened.",
     "Social engagement UNKNOWN."
   ],
   "source_audit": {
-    "checked_at_utc": "2026-11-23T21:34:41+00:00",
+    "checked_at_utc": "2026-11-23T21:48:30+00:00",
     "groups": {
       "x": {
         "status": "WORKING",
@@ -1038,7 +1038,7 @@
     },
     "factual_accuracy": {
       "pass": true,
-      "why": "Every sentence maps to c1-c8 on Nvidia's two opened releases."
+      "why": "Every sentence maps to claims verified on NVIDIA's newsroom, SEC 8-Ks and CNN (see verification_report.json)."
     },
     "natural_delivery": {
       "pass": true,

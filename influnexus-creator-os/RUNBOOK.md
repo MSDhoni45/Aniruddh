@@ -84,6 +84,29 @@ excerpts of a primary page plus press coverage are not enough for them.
 script and say why. A creator-requested topic (`creator_request`, REEL SCRIPT: [TOPIC]) is exempt from the window and the top-score rule,
 not from verification.
 
+## V10: research-to-video production standard (from 2026-11-24; supersedes V9 where they differ)
+Everything in V9, V8, V7.1 and V7 still applies unless changed here.
+- **Script length:** 35-45 seconds (45 hard), about 85-105 spoken words at the natural pace.
+- **Verification report (required):** before `creatoros package`, write `daily/DATE/verification_report.json` with, per
+  material claim: claim, evidence (exact quoted text), source URLs, event date and announcement date (separately),
+  status, confidence, contradictions and decision; plus `final_decision` ("VERIFIED — SAFE TO PUBLISH" or
+  "BLOCKED — NOT SAFE TO PUBLISH"). Leadership, legal and financial stories: the company newsroom AND the regulatory filing
+  (SEC EDGAR archive pages open with `curl -L` and a descriptive User-Agent) AND independent reporting where reachable.
+  Check for corrections or withdrawals (newsroom page and RSS). A BLOCKED core story is never published; take the next one.
+- **Source fallback order** when a host is blocked: official newsroom → alternate official press pages / RSS → regulatory
+  filings → official docs → reputable independent reporting. Never drop a major story because one endpoint is blocked.
+- **Handoff:** `creatoros package` writes `production_handoff.json` (schema `schemas/production_handoff.schema.json`,
+  version v10: approved script, transcript with timings, storyboard with a rights class per row, source URLs, visual
+  asset requirements, music, sound design, caption timing, thumbnail, output settings 2160x3840 30 fps Rec.709, editing
+  hierarchy, recording directions, verification status, recording status) and `qc_report.json` (research, script,
+  storyboard and handoff checks; audio, video and delivery stay PENDING until a real recording exists).
+- **Gate for the editing side:** `creatoros handoff-check --date DATE` exits 2 if the schema fails, the claims are not
+  VERIFIED, or any storyboard asset has no established rights (own, public-record, editorial-press, licensed-library,
+  own-graphics). The video-production skill must run it before editing.
+- **Recording dependency:** never invent a recording. Until the creator's footage exists the handoff says
+  `recording_status: AWAITING ORIGINAL RECORDING`. This project never edits, renders or publishes video; the separate
+  video-production skill (not installed in this cloud environment) does, using its own environment.
+
 ## V9: permanent production standard (from 2026-11-24; layered on V8 and V7)
 Where this differs from V8, V7.1 or V7 below, this wins (verification, A/B/C tiers, the fallback guard and cost control stay).
 - **Research:** previous 24 hours across X, official announcements, credible reporting and other public sources; five

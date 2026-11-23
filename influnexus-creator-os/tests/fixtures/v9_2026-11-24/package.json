@@ -27,10 +27,10 @@
  "why_selected": "Creator request; the most-discussed tech story of the day, verified on Nvidia's own press releases.",
  "why_short": "Nvidia's CEO quit, then came back 11 days later.",
  "why_beats_alternatives": "Walmart's AI checkout (70.5) remains blocked (no opened source). Nvidia's reversal is the most-discussed story of the day and both Nvidia press releases opened directly. The stock move, personal allegations and political angles are excluded.",
- "why_this_story": "The world's most watched AI chip company lost its longtime CEO on 12 Nov and brought him back on 23 Nov: a fast, surprising reversal everyone in tech is discussing (trending per your note and wide search coverage; X engagement not observable here). Both of Nvidia's own press releases opened directly. Walmart's AI checkout story scored higher on discovery but none of its sources open.",
+ "why_this_story": "The world's most watched AI chip company lost its longtime CEO (announced 12 Nov) and brought him back on 23 Nov: a fast, surprising reversal everyone in tech is discussing (trending per your note and wide search coverage; X engagement not observable here). Both of Nvidia's own press releases opened directly. Walmart's AI checkout story scored higher on discovery but none of its sources open.",
  "evidence_confidence": "HIGH",
  "confidence": "HIGH",
- "verified_development": "NVIDIA (23 Nov 2026): the board unanimously reinstated Jensen Huang as President, CEO and director, effective immediately, after he resigned on 12 Nov (Colette Kress interim CEO). The independent investigation into reported foreign-intelligence targeting continues; new national-security committee and Chief Compliance Officer search.",
+ "verified_development": "NVIDIA (23 Nov 2026): the board unanimously reinstated Jensen Huang as President, CEO and director, effective immediately, after his resignation (event 11 Nov per the 8-K, announced 12 Nov) (Colette Kress interim CEO). The independent investigation into reported foreign-intelligence targeting continues; new national-security committee and Chief Compliance Officer search.",
  "disclosure": "Disclosure: written by Claude, an Anthropic model. Nvidia supplies chips across the AI industry; no other conflict known. Personal allegations, politics and the stock move are deliberately left out.",
  "research_summary": "Huang's resignation and reinstatement were confirmed on Nvidia's own newsroom, which opens from this environment: the 12 Nov release 'NVIDIA Announces CEO Transition' (Huang resigned effective immediately; CFO Colette Kress interim CEO; Harvey Jones first-ever Chair) and the 23 Nov release reinstating him by a unanimous board vote. The board says its independent committee investigation, formed after reports that Huang was targeted by a foreign intelligence effort, will proceed to conclusion, and it has formed a National Security and Export Control Committee and begun a search for a Chief Compliance Officer. Reported stock moves, personal allegations and political statements are not in the script: the stock figure needs an opened primary, and politics and personal matters are excluded.",
  "primary_sources": [
@@ -41,11 +41,24 @@
   {
    "label": "NVIDIA: CEO Transition (12 Nov 2026)",
    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+  },
+  {
+   "label": "SEC 8-K (event 11 Nov 2026)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "label": "SEC 8-K Ex.99.1 (23 Nov 2026)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm"
   }
  ],
- "supporting_sources": [],
+ "supporting_sources": [
+  {
+   "label": "CNN (12 Nov 2026)",
+   "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+  }
+ ],
  "key_facts": [
-  "12 Nov: Huang resigned; Kress interim CEO.",
+  "11 Nov (8-K event date), announced 12 Nov: Huang resigned; Kress interim CEO; Jones chair.",
   "23 Nov: unanimous board vote reinstates him, effective immediately.",
   "Investigation continues; new compliance roles."
  ],
@@ -59,14 +72,15 @@
   "Stock price moves (no opened primary).",
   "Personal allegations behind the resignation.",
   "Political figures' statements.",
-  "US government input (in the release; left out for length and to avoid politics)."
+  "US government input (in the release; left out for length and to avoid politics).",
+  "'33 years' (true per Nvidia, cut for length)."
  ],
  "context": "Harvey Jones stays as Board chair; Kress returns to CFO.",
- "script": "Nvidia's CEO quit. Eleven days later, he's back.\n\nOn November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.\n\nHis CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.\n\nThen on November 23, the board voted unanimously to bring him back, effective immediately.\n\nHuang said he can't wait to get back to work.\n\nBut it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.\n\nHe's back, with a lot more oversight.",
- "hook": "Nvidia's CEO quit. Eleven days later, he's back.",
+ "script": "Nvidia's CEO quit. Less than two weeks later, he's back.\n\nOn November 12, Nvidia announced that Jensen Huang had resigned as CEO.\n\nHis CFO, Colette Kress, stepped in as interim CEO. And Harvey Jones became chair of the board.\n\nThen on November 23, the board voted unanimously to bring him back.\n\nHuang said he can't wait to get back to work.\n\nBut it's not over. The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.\n\nHe's back, with a lot more oversight.",
+ "hook": "Nvidia's CEO quit. Less than two weeks later, he's back.",
  "hooks": [
   {
-   "text": "Nvidia's CEO quit. Eleven days later, he's back.",
+   "text": "Nvidia's CEO quit. Less than two weeks later, he's back.",
    "approach": "contradiction",
    "accuracy": 9,
    "clarity": 9,
@@ -88,7 +102,7 @@
   {
    "text": "Jensen Huang is back at Nvidia, 11 days after quitting.",
    "approach": "major product reveal",
-   "accuracy": 9,
+   "accuracy": 6,
    "clarity": 9,
    "curiosity": 7,
    "specificity": 9,
@@ -118,7 +132,7 @@
   {
    "text": "Nvidia had a different CEO for 11 days.",
    "approach": "unexpected consequence",
-   "accuracy": 8,
+   "accuracy": 6,
    "clarity": 8,
    "curiosity": 8,
    "specificity": 8,
@@ -148,7 +162,7 @@
   {
    "text": "Eleven days. That's how long Nvidia went without Jensen Huang.",
    "approach": "unexpected consequence",
-   "accuracy": 9,
+   "accuracy": 6,
    "clarity": 8,
    "curiosity": 8,
    "specificity": 9,
@@ -193,7 +207,7 @@
   },
   "factual_accuracy": {
    "pass": true,
-   "why": "Every sentence maps to c1-c8 on Nvidia's two opened releases."
+   "why": "Every sentence maps to claims verified on NVIDIA's newsroom, SEC 8-Ks and CNN (see verification_report.json)."
   },
   "natural_delivery": {
    "pass": true,
@@ -239,9 +253,8 @@
   "opening_expression": "Raised eyebrows on 'he's back'.",
   "emphasis": [
    "quit",
-   "eleven days",
+   "less than two weeks",
    "unanimously",
-   "effective immediately",
    "not over",
    "more oversight"
   ],
@@ -298,12 +311,12 @@
   "sound": "Light bed"
  },
  "limitations": [
-  "nvidianews.nvidia.com opens; investor.nvidia.com, sec.gov and news sites blocked.",
+  "investor.nvidia.com blocked; nvidianews.nvidia.com, sec.gov EDGAR archives and cnn.com opened.",
   "Social engagement UNKNOWN."
  ],
  "instagram": {
   "cover_headline": "Nvidia's CEO quit. Then came back.",
-  "caption": "Jensen Huang resigned as Nvidia's CEO on 12 November. On 23 November the board voted unanimously to bring him back, effective immediately. The board says its independent investigation will continue, and it's adding new oversight. Source: Nvidia's own press releases. Would you have brought him back?",
+  "caption": "Nvidia announced on 12 November that Jensen Huang had resigned as CEO. On 23 November the board voted unanimously to bring him back. The board says its independent investigation will continue, and it's adding new oversight. Sources: Nvidia's releases and SEC filings. Would you have brought him back?",
   "hashtags": [
    "#Nvidia",
    "#JensenHuang",
@@ -1164,12 +1177,12 @@
   "claims": [
    {
     "id": "c1",
-    "text": "On 12 November 2026 Jensen Huang resigned as Nvidia's President and CEO, effective immediately",
+    "text": "On 12 November 2026 Nvidia announced that Jensen Huang had resigned as President and CEO; the 8-K gives the event date as 11 November",
     "status": "CONFIRMED",
     "in_script": true,
     "central": true,
     "retrieved_at": "2026-11-23T20:15:00+00:00",
-    "event_date": "2026-11-12",
+    "event_date": "2026-11-11",
     "risk": "high",
     "evidence": [
      {
@@ -1178,6 +1191,20 @@
       "access": "opened",
       "date": "2026-11-12",
       "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     },
+     {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "SEC EDGAR 8-K (event 2026-11-11)"
+     },
+     {
+      "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+      "kind": "news",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "CNN"
      }
     ],
     "supporting_evidence": "'Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.' (12 Nov)",
@@ -1194,7 +1221,7 @@
     "id": "c2",
     "text": "Nvidia credits Huang with the foundation built over the last 33 years",
     "status": "COMPANY-CLAIMED",
-    "in_script": true,
+    "in_script": false,
     "central": true,
     "retrieved_at": "2026-11-23T20:15:00+00:00",
     "event_date": "2026-11-12",
@@ -1236,6 +1263,20 @@
       "access": "opened",
       "date": "2026-11-12",
       "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     },
+     {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "SEC EDGAR 8-K"
+     },
+     {
+      "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+      "kind": "news",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "CNN"
      }
     ],
     "supporting_evidence": "'Colette Kress ... has agreed to serve as Interim Chief Executive Officer.'",
@@ -1250,7 +1291,7 @@
    },
    {
     "id": "c4",
-    "text": "On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO, effective immediately",
+    "text": "On 23 November 2026 Nvidia's board voted unanimously to reinstate Huang as President and CEO",
     "status": "CONFIRMED",
     "in_script": true,
     "central": true,
@@ -1264,6 +1305,13 @@
       "access": "opened",
       "date": "2026-11-23",
       "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     },
+     {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "SEC EDGAR 8-K Ex.99.1"
      }
     ],
     "supporting_evidence": "'effective immediately, Jensen Huang has been reinstated ... The Board of Directors voted unanimously to reinstate Mr. Huang' (23 Nov)",
@@ -1292,6 +1340,13 @@
       "access": "opened",
       "date": "2026-11-23",
       "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     },
+     {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "SEC EDGAR 8-K Ex.99.1"
      }
     ],
     "supporting_evidence": "Huang: 'I can't wait to get back to work.'",
@@ -1322,6 +1377,20 @@
       "access": "opened",
       "date": "2026-11-23",
       "outlet": "NVIDIA Newsroom: Board Reinstates Jensen Huang"
+     },
+     {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-23",
+      "outlet": "SEC EDGAR 8-K Ex.99.1"
+     },
+     {
+      "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+      "kind": "news",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "CNN"
      }
     ],
     "supporting_evidence": "'in light of recent reporting that Mr. Huang has been the target of a foreign intelligence effort, the Board formed a committee ... The Board reiterated that the committee's investigation will proceed to conclusion.'",
@@ -1380,6 +1449,20 @@
       "access": "opened",
       "date": "2026-11-12",
       "outlet": "NVIDIA Newsroom: NVIDIA Announces CEO Transition"
+     },
+     {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "SEC EDGAR 8-K"
+     },
+     {
+      "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+      "kind": "news",
+      "access": "opened",
+      "date": "2026-11-12",
+      "outlet": "CNN"
      }
     ],
     "supporting_evidence": "'The Board of Directors appointed Harvey C. Jones as its first-ever Chair of the Board.' (12 Nov)",
@@ -1418,7 +1501,8 @@
  "rejected_drafts": [
   "Draft 1 mentioned the stock jump (unverified on an opened source) and was cut.",
   "Draft 2 called him the founder of the AI boom (unsupported) and was cut.",
-  "Draft 3 (85 words, 39 s) was under the V9 40-45 s / 90-105 word standard; added the first-ever board chair fact from the 12 Nov release. 'First-ever' was then dropped: it reads as an extraordinary 'first' that could not be independently confirmed."
+  "Draft 3 (85 words, 39 s) was under the V9 40-45 s / 90-105 word standard; added the first-ever board chair fact from the 12 Nov release. 'First-ever' was then dropped: it reads as an extraordinary 'first' that could not be independently confirmed.",
+  "Draft 4 said 'On November 12, Jensen Huang resigned' and 'eleven days later'; the 8-K gives 11 Nov as the event date, so the script now says Nvidia announced it on 12 Nov and uses 'less than two weeks'."
  ],
  "storyboard": [
   {
@@ -1434,33 +1518,33 @@
    "source_licensing": "Creator footage (own)"
   },
   {
-   "line": "Eleven days later, he's back.",
+   "line": "Less than two weeks later, he's back.",
    "start_s": 1.6,
-   "end_s": 4.1,
+   "end_s": 5.0,
    "treatment": "talking-head",
    "footage": "Creator to camera, smile/raised eyebrows",
-   "on_screen_text": "11 DAYS LATER... HE'S BACK",
-   "motion_graphics": "Counter animates 1→11 days",
+   "on_screen_text": "LESS THAN 2 WEEKS LATER... HE'S BACK",
+   "motion_graphics": "Calendar flips 12 NOV → 23 NOV",
    "transition": "Whip pan",
    "sfx": "Riser into whoosh",
    "source_licensing": "Creator footage (own)"
   },
   {
-   "line": "On November 12, Jensen Huang resigned from the company Nvidia says he spent 33 years building.",
-   "start_s": 4.1,
-   "end_s": 11.3,
+   "line": "On November 12, Nvidia announced that Jensen Huang had resigned as CEO.",
+   "start_s": 5.0,
+   "end_s": 10.5,
    "treatment": "screen",
-   "footage": "Screenshot of NVIDIA newsroom release 'NVIDIA Announces CEO Transition' (12 Nov 2026) with date highlighted",
-   "on_screen_text": "12 NOV · RESIGNED",
+   "footage": "Screenshot of NVIDIA newsroom release 'NVIDIA Announces CEO Transition' (12 Nov 2026) and the SEC 8-K cover ('Date of earliest event: November 11, 2026')",
+   "on_screen_text": "ANNOUNCED 12 NOV · RESIGNED",
    "motion_graphics": "Highlight box on 'has resigned'; slow push-in",
    "transition": "Slide left",
    "sfx": "Paper/click",
-   "source_licensing": "NVIDIA newsroom screenshot, editorial use, credit NVIDIA"
+   "source_licensing": "NVIDIA newsroom and SEC EDGAR screenshots (public filings), credit on screen"
   },
   {
    "line": "His CFO, Colette Kress, stepped in as interim CEO.",
-   "start_s": 11.3,
-   "end_s": 15.5,
+   "start_s": 10.5,
+   "end_s": 14.7,
    "treatment": "split",
    "footage": "Left: NVIDIA press image of Colette Kress if available in NVIDIA media assets; right: release text naming her interim CEO",
    "on_screen_text": "INTERIM CEO: COLETTE KRESS",
@@ -1471,8 +1555,8 @@
   },
   {
    "line": "And Harvey Jones became chair of the board.",
-   "start_s": 15.5,
-   "end_s": 19.3,
+   "start_s": 14.7,
+   "end_s": 18.5,
    "treatment": "screen",
    "footage": "12 Nov release line naming Harvey C. Jones first-ever Chair",
    "on_screen_text": "NEW BOARD CHAIR: HARVEY JONES",
@@ -1482,12 +1566,12 @@
    "source_licensing": "NVIDIA newsroom screenshot, credit NVIDIA"
   },
   {
-   "line": "Then on November 23, the board voted unanimously to bring him back, effective immediately.",
-   "start_s": 19.3,
-   "end_s": 25.7,
+   "line": "Then on November 23, the board voted unanimously to bring him back.",
+   "start_s": 18.5,
+   "end_s": 24.0,
    "treatment": "b-roll",
    "footage": "Screenshot of 23 Nov release 'NVIDIA Board Reinstates Jensen Huang...' plus NVIDIA press photo of Jensen Huang from NVIDIA media assets",
-   "on_screen_text": "23 NOV · VOTE: UNANIMOUS",
+   "on_screen_text": "23 NOV · BOARD VOTE: UNANIMOUS",
    "motion_graphics": "Timeline bar fills from 12 to 23 Nov",
    "transition": "Zoom-through",
    "sfx": "Whoosh + bass drop",
@@ -1495,8 +1579,8 @@
   },
   {
    "line": "Huang said he can't wait to get back to work.",
-   "start_s": 25.7,
-   "end_s": 30.3,
+   "start_s": 24.0,
+   "end_s": 28.6,
    "treatment": "split",
    "footage": "Release quote line highlighted; creator reacts",
    "on_screen_text": "\"I can't wait to get back to work.\" — Jensen Huang",
@@ -1507,8 +1591,8 @@
   },
   {
    "line": "But it's not over.",
-   "start_s": 30.3,
-   "end_s": 32.4,
+   "start_s": 28.6,
+   "end_s": 30.7,
    "treatment": "talking-head",
    "footage": "Creator, slower, lean in",
    "on_screen_text": "BUT IT'S NOT OVER",
@@ -1519,8 +1603,8 @@
   },
   {
    "line": "The board says its investigation, after reports he was targeted by a foreign intelligence effort, will continue.",
-   "start_s": 32.4,
-   "end_s": 40.0,
+   "start_s": 30.7,
+   "end_s": 38.3,
    "treatment": "screen",
    "footage": "23 Nov release paragraph on the independent committee investigation, highlighted",
    "on_screen_text": "INVESTIGATION CONTINUES",
@@ -1531,8 +1615,8 @@
   },
   {
    "line": "He's back, with a lot more oversight.",
-   "start_s": 40.0,
-   "end_s": 43.0,
+   "start_s": 38.3,
+   "end_s": 41.3,
    "treatment": "graphic",
    "footage": "Text over NVIDIA GPU/chip product imagery from NVIDIA media assets (no invented demo)",
    "on_screen_text": "BACK · WITH MORE OVERSIGHT",
@@ -1546,9 +1630,8 @@
   "opening_expression": "Straight face on 'quit', then a beat and raised eyebrows on 'he's back'.",
   "emphasis": [
    "quit",
-   "eleven days",
+   "less than two weeks",
    "unanimously",
-   "effective immediately",
    "not over",
    "more oversight"
   ],
@@ -1565,7 +1648,7 @@
   ],
   "framing": "Vertical 9:16, chest-up medium close-up, eyes on the upper third; leave headroom for on-screen text; plain background.",
   "pace": "Brisk but clear (about 140 words per minute); slow down slightly on the investigation line.",
-  "gestures": "Hand flick on 'quit'; two fingers tapping on 'eleven days'; open palm on 'he's back'; small lean-in on 'not over'."
+  "gestures": "Hand flick on 'quit'; two fingers tapping on 'two weeks'; open palm on 'he's back'; small lean-in on 'not over'."
  },
  "music": {
   "style": "Tense cinematic corporate pulse, minor key, about 90-100 BPM, light percussion; no lyrics",
@@ -1588,7 +1671,7 @@
  },
  "distribution": {
   "cover_headline": "NVIDIA's CEO quit. Then came back.",
-  "thumbnail_concept": "NVIDIA press photo of Jensen Huang (NVIDIA media assets) on one side, bold '11 DAYS' on the other, small dates '12 NOV → 23 NOV'",
+  "thumbnail_concept": "NVIDIA press photo of Jensen Huang (NVIDIA media assets) with bold 'QUIT → BACK' and small dates '12 NOV → 23 NOV'",
   "posting_angle": "A clear, factual explainer of the 11-day CEO reversal, sourced to Nvidia's own releases; no gossip, no politics",
   "engagement_question": "Would you have brought him back?"
  },
@@ -1615,5 +1698,6 @@
    "Own graphics: timeline 12→23 Nov, quote card, oversight checklist"
   ],
   "notes": "Do not use unrelated stock footage or invent product demos; credit NVIDIA on screen for screenshots."
- }
+ },
+ "verification_report": "daily/2026-11-24/verification_report.json"
 }

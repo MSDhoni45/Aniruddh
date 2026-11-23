@@ -11,7 +11,7 @@ import json
 import shutil
 from pathlib import Path
 
-FILES = ("package.json", "package.md", "today.md", "recording.md", "script.txt", "captions.txt", "claims.md", "sources.json", "creative.md", "production_handoff.json",
+FILES = ("package.json", "package.md", "today.md", "recording.md", "script.txt", "captions.txt", "claims.md", "sources.json", "creative.md", "production_handoff.json", "qc_report.json", "verification_report.json",
          "research.json")
 
 

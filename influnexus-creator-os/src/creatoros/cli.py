@@ -35,6 +35,8 @@ def main(argv=None) -> int:
     p = sub.add_parser("package", help="validate daily/DATE/package.json, render the recording package, log it"); p.add_argument("--date", required=True)
     p.add_argument("--file", help="package.json elsewhere (outputs are written beside it)")
     p.add_argument("--trial", action="store_true", help="production-equivalent test: render beside --file, record nothing")
+    p = sub.add_parser("handoff-check", help="V10 gate for the video-production side: schema, verification and asset rights")
+    p.add_argument("--date", required=True)
     p = sub.add_parser("learn", help="performance learning from the account's own reels -> analytics/learning.md")
     p = sub.add_parser("today", help="print today's deliverable (Script for today)"); p.add_argument("--date")
     p = sub.add_parser("topics", help="the strongest eligible topics from a day's research (Give me 5 topics)"); p.add_argument("--date")
@@ -145,7 +147,7 @@ def main(argv=None) -> int:
         old = read_json(f)
         dst = d / f"previous_{old['slug']}"
         dst.mkdir(exist_ok=True)
-        for name in ("package.json", "package.md", "today.md", "recording.md", "script.txt", "captions.txt", "claims.md", "sources.json", "creative.md", "research.json", "production_handoff.json"):
+        for name in ("package.json", "package.md", "today.md", "recording.md", "script.txt", "captions.txt", "claims.md", "sources.json", "creative.md", "research.json", "production_handoff.json", "qc_report.json", "verification_report.json"):
             if (d / name).exists():
                 shutil.move(str(d / name), str(dst / name))
         try:
@@ -204,6 +206,15 @@ def main(argv=None) -> int:
         except ValueError as e:
             print(str(e), file=sys.stderr)
             return 2
+    elif a.cmd == "handoff-check":
+        from .production import handoff as hmod
+        f = config.path("daily", a.date, "production_handoff.json")
+        if not f.exists():
+            print(f"No production_handoff.json for {a.date}")
+            return 3
+        probs = hmod.validate(read_json(f))
+        _print({"ok": not probs, "problems": probs})
+        return 0 if not probs else 2
     elif a.cmd == "learn":
         from .analytics import learning
         d = learning.save()

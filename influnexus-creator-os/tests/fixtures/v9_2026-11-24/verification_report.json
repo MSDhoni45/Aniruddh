@@ -1,0 +1,240 @@
+{
+ "date": "2026-11-24",
+ "story": "NVIDIA reinstates Jensen Huang as CEO",
+ "verified_at_utc": "2026-11-23T21:50:00+00:00",
+ "method": "Independent re-check: pages fetched again from this environment, canonical URLs and NVIDIA RSS checked, SEC EDGAR 8-Ks opened, independent report (CNN) opened, quotes matched character by character; no correction, withdrawal or superseding notice found on the newsroom pages or RSS.",
+ "sources": {
+  "nvidia_newsroom_12nov": {
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+   "host_owner": "NVIDIA (nvidianews.nvidia.com, canonical URL matches)",
+   "opened": true,
+   "http": 200,
+   "sha256": "fa26aeaa5cc9c22ab2e9289ddaaf765f5adc9680b4b93cfee4e6f96aece9b9bc",
+   "publication_date": "2026-11-12"
+  },
+  "nvidia_newsroom_23nov": {
+   "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+   "host_owner": "NVIDIA (nvidianews.nvidia.com, canonical URL matches; in NVIDIA RSS feed, pubDate Mon 23 Nov 2026 13:55 GMT)",
+   "opened": true,
+   "http": 200,
+   "sha256": "101109e6615b98c061b9e39801e926acd5fc99186dec62e6d3a473e79f41a855",
+   "publication_date": "2026-11-23"
+  },
+  "sec_8k_resignation": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+   "host_owner": "US SEC EDGAR, NVIDIA CORP (CIK 1045810)",
+   "opened": true,
+   "http": 200,
+   "sha256": "cc47e53bc04a630286e2ba67da18c8c58a3a861a10af15d3d367ee24448553e3",
+   "publication_date": "2026-11-12 (Date of Report / earliest event: 2026-11-11)"
+  },
+  "sec_8k_ex99_reinstatement": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+   "host_owner": "US SEC EDGAR, NVIDIA CORP (CIK 1045810), Exhibit 99.1",
+   "opened": true,
+   "http": 200,
+   "sha256": "73fc5e6460fbb35d3bc327313c217dedeabfb9e874ce0aa9ad13981e52327918",
+   "publication_date": "2026-11-23"
+  },
+  "cnn_independent": {
+   "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+   "host_owner": "CNN Business (independent)",
+   "opened": true,
+   "http": 200,
+   "sha256": "e1de397ac9b1d6d3b5bd90dbb89453dca9236a1548bb0467112da544dac62cb4",
+   "publication_date": "2026-11-12 (page also links reinstatement coverage)"
+  },
+  "nvidia_rss": {
+   "url": "https://nvidianews.nvidia.com/releases.xml",
+   "opened": true,
+   "http": 200
+  },
+  "nvidia_investor_relations": {
+   "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx",
+   "opened": false,
+   "http": 403,
+   "note": "blocked by the environment's network policy"
+  }
+ },
+ "claims": [
+  {
+   "claim": "Jensen Huang resigned as NVIDIA's President, CEO and director",
+   "evidence": [
+    "SEC 8-K: 'On November 11, 2026, the Board ... accepted the resignation of Jen-Hsun Huang, as NVIDIA's President, Chief Executive Officer and member of the Board, effective immediately.'",
+    "Newsroom 12 Nov: 'Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.'",
+    "CNN 12 Nov independent report"
+   ],
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+   ],
+   "event_date": "2026-11-11",
+   "announcement_date": "2026-11-12",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "Previous script said he resigned on 12 November; the 8-K gives the event date as 11 November and the announcement was 12 November. Corrected.",
+   "decision": "USE (announcement date 12 Nov, event 11 Nov)"
+  },
+  {
+   "claim": "Colette Kress became interim CEO",
+   "evidence": [
+    "SEC 8-K: 'the Board appointed ... Colette M. Kress, age 59, to serve as interim Chief Executive Officer'",
+    "Newsroom 12 Nov"
+   ],
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+   ],
+   "event_date": "2026-11-11",
+   "announcement_date": "2026-11-12",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE"
+  },
+  {
+   "claim": "Harvey C. Jones became Chair of the Board",
+   "evidence": [
+    "SEC 8-K: 'On November 11, 2026, the Board appointed Harvey C. Jones, age 73, as Chair of the Board.'",
+    "Newsroom 12 Nov: 'first-ever Chair of the Board'",
+    "CNN: 'named Nvidia's first-ever board chair'"
+   ],
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+    "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+   ],
+   "event_date": "2026-11-11",
+   "announcement_date": "2026-11-12",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE"
+  },
+  {
+   "claim": "NVIDIA reinstated Huang as President, CEO and director, effective immediately",
+   "evidence": [
+    "Newsroom 23 Nov and SEC 8-K Exhibit 99.1 (dated 23 Nov): 'effective immediately, Jensen Huang has been reinstated as President and Chief Executive Officer, and as a member of the Board.'",
+    "CNN page links 'Nvidia board reinstates Jensen Huang as CEO'"
+   ],
+   "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+    "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+   ],
+   "event_date": "2026-11-23",
+   "announcement_date": "2026-11-23",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE"
+  },
+  {
+   "claim": "The board voted unanimously",
+   "evidence": [
+    "Newsroom 23 Nov and SEC Ex.99.1: 'The Board of Directors voted unanimously to reinstate Mr. Huang'"
+   ],
+   "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm"
+   ],
+   "event_date": "2026-11-23",
+   "announcement_date": "2026-11-23",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE"
+  },
+  {
+   "claim": "Quote: 'I can’t wait to get back to work.' (Jensen Huang)",
+   "evidence": [
+    "Exact wording present in Newsroom 23 Nov and SEC Ex.99.1"
+   ],
+   "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm"
+   ],
+   "event_date": "2026-11-23",
+   "announcement_date": "2026-11-23",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE (paraphrased in script, attributed)"
+  },
+  {
+   "claim": "An independent board committee's investigation, formed after reports he was the target of a foreign intelligence effort, will proceed to conclusion",
+   "evidence": [
+    "Newsroom 23 Nov and SEC Ex.99.1: 'in light of recent reporting that Mr. Huang has been the target of a foreign intelligence effort, the Board formed a committee ... will proceed to conclusion.'",
+    "CNN describes the board's investigation"
+   ],
+   "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nov23pressrelease.htm",
+    "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+   ],
+   "event_date": "2026-11 (committee formed before 23 Nov)",
+   "announcement_date": "2026-11-23",
+   "status": "VERIFIED (as NVIDIA's statement)",
+   "confidence": "HIGH",
+   "contradictions": "none; the underlying allegations are not verified and are not stated",
+   "decision": "USE, attributed to the board"
+  },
+  {
+   "claim": "New oversight: National Security and Export Control Committee; search for a Chief Compliance Officer",
+   "evidence": [
+    "Newsroom 23 Nov: both measures; RSS shows a 17 Nov release establishing the committee"
+   ],
+   "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://nvidianews.nvidia.com/releases.xml"
+   ],
+   "event_date": "2026-11-17 (committee) / 2026-11-23 (CCO search)",
+   "announcement_date": "2026-11-23",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE"
+  },
+  {
+   "claim": "Nvidia says he spent 33 years building the company",
+   "evidence": [
+    "Newsroom 12 Nov, Kress: 'the extraordinary foundation Jensen created over the last 33 years'"
+   ],
+   "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+   ],
+   "event_date": "n/a",
+   "announcement_date": "2026-11-12",
+   "status": "VERIFIED (as NVIDIA's statement)",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE, attributed"
+  },
+  {
+   "claim": "Shares rose about 30% after the reinstatement",
+   "evidence": [
+    "Only headlines (CNN page links; search excerpts)"
+   ],
+   "sources": [
+    "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns"
+   ],
+   "event_date": "2026-11-23",
+   "announcement_date": "2026-11-23",
+   "status": "NOT VERIFIED to HIGH (no primary market data opened)",
+   "confidence": "LOW",
+   "contradictions": "n/a",
+   "decision": "EXCLUDE"
+  }
+ ],
+ "corrections": [
+  "Resignation event date is 11 Nov 2026 (8-K); the announcement was 12 Nov. The script now says Nvidia announced it on 12 Nov, and the hook says 'less than two weeks' instead of 'eleven days'."
+ ],
+ "excluded": [
+  "Stock move (not verified to HIGH)",
+  "Personal allegations",
+  "Political statements"
+ ],
+ "final_decision": "VERIFIED — SAFE TO PUBLISH (with the corrections above)"
+}

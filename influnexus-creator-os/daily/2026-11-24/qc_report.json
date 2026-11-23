@@ -1,0 +1,30 @@
+{
+  "research": {
+    "primary_sources_accessible": true,
+    "claims_verified": true,
+    "verification_report": true,
+    "dates_checked": true,
+    "quotes_exact": true,
+    "unsupported_statements": []
+  },
+  "script": {
+    "seconds": 41.3,
+    "words": 89,
+    "within_target": true,
+    "strong_opening": true,
+    "natural_language": true
+  },
+  "storyboard": {
+    "every_sentence_covered": true,
+    "assets_with_rights": true,
+    "attribution_present": true
+  },
+  "handoff": {
+    "schema_and_gate_problems": []
+  },
+  "audio": "PENDING — AWAITING ORIGINAL RECORDING",
+  "video": "PENDING — AWAITING ORIGINAL RECORDING",
+  "delivery": "PENDING — AWAITING ORIGINAL RECORDING",
+  "note": "Technical QC only; it is not creative approval.",
+  "pass_pre_recording": true
+}

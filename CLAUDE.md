@@ -24,7 +24,7 @@ from 2026-11-20. Always pass the `run_id` from `creatoros runlog start` to `crea
 
 | They type | Do this |
 |---|---|
-| **TODAY'S REEL SCRIPT** | Same as "Script for today" below, delivered in the V9 format (`today.md`: nine sections, the full production package and `production_handoff.json`). Do not ask the creator to pick a topic. |
+| **TODAY'S REEL SCRIPT** | Same as "Script for today" below, delivered in the V10 format (`today.md`: nine sections, plus `verification_report.json`, `production_handoff.json` and `qc_report.json`). Do not ask the creator to pick a topic. |
 | **REEL SCRIPT: [TOPIC]** | Research that exact topic (why now, what happened, what people discuss, what is surprising, what viewers may misunderstand, why share), verify it to RUNBOOK step 2, `creatoros switch` if today already has a package, write a V7 package (`scoring: v7`; required from 2026-11-23), `creatoros package`, return `creatoros today`. Gaming: label the release type (original release, re-release, remaster, remake, mod, rumour, official announcement, launch). |
 | **IMPROVE THIS SCRIPT: [SCRIPT]** | Critique and rewrite the opening, pacing, clarity, storytelling, retention and ending; keep every fact; return one improved script with the six-part quality score. If it is today's package, re-run `creatoros package`. |
 | **Script for today** | First run `creatoros runlog status`; if `problem` is true, open the reply with one line saying the 08:41 scheduled run was MISSED/FAILED/LATE/HOLD. Then: if `daily/TODAY/today.md` exists and says RECORDING READY: re-check any time-sensitive claim (prices, "no confirmed attacks", "first", etc.), then return the contents of `creatoros today`. Otherwise run the full daily workflow in `RUNBOOK.md`, then return `creatoros today`. |
@@ -50,6 +50,10 @@ After any change, commit `daily/DATE/`, the `research/*.jsonl` databases and `lo
   historic firsts, billion-dollar events, breaches, radical robotics) need the primary source and independent confirmation
   both opened, never a GitHub repo or a snippet; 30-40 s (40 hard), about 70-90 words at a natural pace (superseded by V9: 40-45 s, 90-105 words); at least 5 hooks;
   ten script checks; story history with company and event date; a seven-section brief with no editing plan.
+- V10 (from 2026-11-24; RUNBOOK "V10"): 35-45 s, about 85-105 words; `verification_report.json` before packaging
+  (newsroom + regulatory filing + independent report for leadership/financial stories); `production_handoff.json` (schema v10)
+  and `qc_report.json` written by `creatoros package`; `creatoros handoff-check` gates the editing side; video stays
+  AWAITING ORIGINAL RECORDING until the creator's footage exists; this project never edits or renders.
 - V9 (permanent standard from 2026-11-24; RUNBOOK "V9"): 40-45 s, about 90-105 words; full recording directions;
   a sentence-by-sentence storyboard; a licensed music and sound plan; caption, hashtags, cover headline, thumbnail,
   posting angle and engagement question; and `production_handoff.json` (GitHub editing tools → … → 4K rendering → QC,
