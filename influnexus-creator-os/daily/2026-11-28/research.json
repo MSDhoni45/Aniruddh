@@ -1,0 +1,1306 @@
+{
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T10:02:00+00:00",
+  "research_window": {
+    "start_utc": "2026-11-27T09:57:58+00:00",
+    "end_utc": "2026-11-28T09:57:58+00:00",
+    "start_ist": "2026-11-27T15:27:58+05:30",
+    "end_ist": "2026-11-28T15:27:58+05:30",
+    "hours": 24
+  },
+  "candidates": [
+    {
+      "headline": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+      "published_at": "2026-11-27T10:00:00+00:00",
+      "original_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+      "trend_score": 67.0,
+      "eligible": true,
+      "ineligible_reason": null,
+      "scores": {
+        "broad_relevance": 8,
+        "surprise": 7,
+        "usefulness": 7,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 7,
+        "discussion": 8,
+        "timeliness": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techmeme.com/feed.xml"
+        ]
+      },
+      "signals": [
+        {
+          "platform": "primary",
+          "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+          "title": "ECB Blog: AI, jobs and prices: what euro area consumers expect",
+          "retrieved_at": "2026-11-28T10:02:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "unknown"
+          }
+        },
+        {
+          "platform": "news",
+          "url": "https://www.techmeme.com/feed.xml",
+          "title": "Techmeme headline (27 Nov 2026 13:15 EST) linking Bloomberg's report of the ECB survey",
+          "retrieved_at": "2026-11-28T10:02:00+00:00",
+          "access": "DIRECTLY OBSERVED",
+          "engagement": {
+            "basis": "unknown"
+          }
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "WhatsApp announces in-app travel data eSIMs with Jio, Verizon and others, rolling out in select countries soon",
+      "published_at": "2026-11-26",
+      "original_source": "https://blog.whatsapp.com/stay-connected-on-whatsapp-when-you-travel",
+      "trend_score": 68.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: announced 26 Nov 2026, before the 24-hour window (starts 27 Nov 09:58 UTC) with no new dated development inside it; widening the window is not justified because a verified in-window story (ECB) exists; also not available yet (no date, no prices)",
+      "scores": {
+        "broad_relevance": 9,
+        "surprise": 7,
+        "usefulness": 8,
+        "social_momentum": 3,
+        "visual": 7,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 6
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://blog.whatsapp.com/stay-connected-on-whatsapp-when-you-travel"
+        ]
+      },
+      "signals": null,
+      "verification_status": "VERIFIED",
+      "evidence_confidence": "HIGH",
+      "new_development": null,
+      "claim_status": "CONFIRMED"
+    },
+    {
+      "headline": "Samsung is reportedly giving its camera app an AI mode",
+      "published_at": "2026-11-27T20:06:00+00:00",
+      "original_source": "https://www.engadget.com/2329765/samsung-is-reportedly-giving-its-camera-app-an-ai-mode/",
+      "trend_score": 58.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: a report of an unannounced feature (SPECULATIVE); no Samsung confirmation",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 5,
+        "usefulness": 6,
+        "social_momentum": 3,
+        "visual": 8,
+        "consequence": 4,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.engadget.com/2329765/samsung-is-reportedly-giving-its-camera-app-an-ai-mode/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "iOS 27.3 beta adds usage limits for advanced features, including Siri AI",
+      "published_at": "2026-11-27T14:50:00+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/ios-27-3-adds-limits-for-these-advanced-features-details-here/",
+      "trend_score": 57.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: beta software (PRELIMINARY); limits may change before release",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 6,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 5,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/ios-27-3-adds-limits-for-these-advanced-features-details-here/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "PRELIMINARY"
+    },
+    {
+      "headline": "OpenAI countersues Apple, alleging trade-secret theft and pressure on shared suppliers; Apple responds",
+      "published_at": "2026-11-27T13:57:00+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/",
+      "trend_score": 56.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: legal story: RUNBOOK needs the filing itself (case number, counterclaim) and each party's own statement opened; the court filing was not located in this run and web search found no record of the counterclaim",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 7,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 6,
+        "discussion": 8,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "LA school district blocks Google's AI search features",
+      "published_at": "2026-11-27T22:00:00+00:00",
+      "original_source": "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/",
+      "trend_score": 54.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); local US policy story",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 6,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 5,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Anthropic says Claude does not silently sabotage work; some user reports reflect 'overcaution' on long tasks",
+      "published_at": "2026-11-27T22:35:00+00:00",
+      "original_source": "https://www.techmeme.com/",
+      "trend_score": 54.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: company's own denial (COMPANY-CLAIMED, ineligible under V7); the underlying user reports are anecdotal; conflict of interest (this assistant is built by Anthropic)",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 7,
+        "usefulness": 4,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 5,
+        "discussion": 8,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techmeme.com/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "WhatsApp tests view-once text messages on iOS beta",
+      "published_at": "2026-11-27T22:30:00+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/whatsapp-announces-travel-esims-tests-view-once-texts-and-a-cleaner-interface/",
+      "trend_score": 53.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: TestFlight beta test (PRELIMINARY); may not ship",
+      "scores": {
+        "broad_relevance": 7,
+        "surprise": 5,
+        "usefulness": 5,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 3,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/whatsapp-announces-travel-esims-tests-view-once-texts-and-a-cleaner-interface/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "PRELIMINARY"
+    },
+    {
+      "headline": "Google Docs can now compare and work with Microsoft Word files without converting them",
+      "published_at": "2026-11-27T15:55:00+00:00",
+      "original_source": "https://9to5google.com/2026/11/27/google-docs-microsoft-word-compare-documents/",
+      "trend_score": 46.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read)",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 3,
+        "usefulness": 7,
+        "social_momentum": 2,
+        "visual": 5,
+        "consequence": 3,
+        "discussion": 3,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5google.com/2026/11/27/google-docs-microsoft-word-compare-documents/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Embo emerges from stealth with a $110M seed led by a16z to build robot world models trained on internet video",
+      "published_at": "2026-11-28T00:50:00+00:00",
+      "original_source": "https://embo.ai/",
+      "trend_score": 45.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: company announcement only (COMPANY-CLAIMED); funding amount is a financial claim needing HIGH; no product people can use",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 6,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 6,
+        "consequence": 5,
+        "discussion": 5,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://embo.ai/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Purple Chinese electric minivan claims up to 559 miles on a charge",
+      "published_at": "2026-11-28T00:25:48+00:00",
+      "original_source": "https://www.theverge.com/transportation/1044706/this-purple-electric-chinese-minivan-can-go-up-to-559-miles-on-a-charge",
+      "trend_score": 45.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: range is the maker's claim (COMPANY-CLAIMED); test cycle not stated",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 6,
+        "usefulness": 3,
+        "social_momentum": 2,
+        "visual": 7,
+        "consequence": 3,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.theverge.com/transportation/1044706/this-purple-electric-chinese-minivan-can-go-up-to-559-miles-on-a-charge"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Restricted Nvidia chips were installed at a Chinese data center linked to Alice Huang",
+      "published_at": "2026-11-27T19:45:00+00:00",
+      "original_source": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/",
+      "trend_score": 44.0,
+      "eligible": false,
+      "ineligible_reason": "rejected: geopolitics/export-control politics and a personal allegation (excluded by V8 positioning)",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 6,
+        "usefulness": 1,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 6,
+        "discussion": 7,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "Google Pixel prepares a 'Priority Notifications' feature",
+      "published_at": "2026-11-27T16:30:00+00:00",
+      "original_source": "https://9to5google.com/2026/11/27/google-pixel-prepares-new-priority-notifications-feature-heres-what-it-will-do/",
+      "trend_score": 44.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: unreleased feature found in code (PRELIMINARY)",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 5,
+        "usefulness": 5,
+        "social_momentum": 2,
+        "visual": 4,
+        "consequence": 3,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5google.com/2026/11/27/google-pixel-prepares-new-priority-notifications-feature-heres-what-it-will-do/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "PRELIMINARY"
+    },
+    {
+      "headline": "Cutting-edge prosthetics help researchers probe the human mind",
+      "published_at": "2026-11-27T10:00:00+00:00",
+      "original_source": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
+      "trend_score": 44.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); feature on research, no single dated development",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 7,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 7,
+        "consequence": 4,
+        "discussion": 5,
+        "timeliness": 7
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Android app developers will have to publicly post an address and phone number in 2027",
+      "published_at": "2026-11-27T15:35:00+00:00",
+      "original_source": "https://9to5google.com/2026/11/27/android-app-developers-will-have-to-publicly-post-address-phone-number-in-2027/",
+      "trend_score": 43.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); niche (developers)",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 5,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5google.com/2026/11/27/android-app-developers-will-have-to-publicly-post-address-phone-number-in-2027/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "MacWhisper now remembers speakers' voices across recordings",
+      "published_at": "2026-11-27T21:08:00+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/macwhisper-now-remembers-speakers-voices-across-recordings/",
+      "trend_score": 43.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: developer's own description (COMPANY-CLAIMED); niche",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 6,
+        "social_momentum": 2,
+        "visual": 5,
+        "consequence": 3,
+        "discussion": 3,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/macwhisper-now-remembers-speakers-voices-across-recordings/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Three new iPhones are expected early next year",
+      "published_at": "2026-11-27T17:57:23+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/three-new-iphones-will-launch-early-next-year-heres-whats-coming/",
+      "trend_score": 43.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: rumour (SPECULATIVE)",
+      "scores": {
+        "broad_relevance": 6,
+        "surprise": 3,
+        "usefulness": 3,
+        "social_momentum": 3,
+        "visual": 4,
+        "consequence": 3,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/three-new-iphones-will-launch-early-next-year-heres-whats-coming/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "Hackers reportedly infiltrated the US Air Force's cloud systems",
+      "published_at": "2026-11-27T16:55:00+00:00",
+      "original_source": "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/",
+      "trend_score": 43.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: a report without official confirmation; military/government security story",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 6,
+        "usefulness": 1,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 6,
+        "discussion": 6,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "SAP confirms a cybersecurity incident; report says hackers obtained staff tokens and touched source code on GitHub",
+      "published_at": "2026-11-27T11:35:00+00:00",
+      "original_source": "https://www.techmeme.com/",
+      "trend_score": 42.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); security claims need SAP's advisory opened",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 2,
+        "social_momentum": 3,
+        "visual": 3,
+        "consequence": 6,
+        "discussion": 5,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techmeme.com/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "An ER doctor became a hospital's first clinical AI engineer",
+      "published_at": "2026-11-27T14:00:01+00:00",
+      "original_source": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+      "trend_score": 39.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); profile feature, not a development",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 5,
+        "usefulness": 3,
+        "social_momentum": 2,
+        "visual": 4,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Google says it fixed Gemini's RAM usage error in Chrome",
+      "published_at": "2026-11-27T14:35:00+00:00",
+      "original_source": "https://9to5google.com/2026/11/27/google-gemini-chrome-ram-usage-error/",
+      "trend_score": 38.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read)",
+      "scores": {
+        "broad_relevance": 5,
+        "surprise": 3,
+        "usefulness": 4,
+        "social_momentum": 2,
+        "visual": 3,
+        "consequence": 3,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5google.com/2026/11/27/google-gemini-chrome-ram-usage-error/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Apple faces a potential $80 million fine and App Store changes in Chile",
+      "published_at": "2026-11-27T20:31:00+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/apple-faces-potential-80-million-fine-and-app-store-overhaul-in-chile/",
+      "trend_score": 37.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); regulatory/legal, a proposed fine",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 4,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 3,
+        "consequence": 4,
+        "discussion": 5,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/apple-faces-potential-80-million-fine-and-app-store-overhaul-in-chile/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "A Product(RED) HomePod mini 2 seemingly surfaces ahead of a rumored announcement",
+      "published_at": "2026-11-28T03:07:04+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/productred-homepod-mini-2-seemingly-surfaces-ahead-of-rumored-announcement/",
+      "trend_score": 34.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: rumour (SPECULATIVE)",
+      "scores": {
+        "broad_relevance": 4,
+        "surprise": 3,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 5,
+        "consequence": 2,
+        "discussion": 4,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/productred-homepod-mini-2-seemingly-surfaces-ahead-of-rumored-announcement/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "Meross presence sensor splits a room into three zones for Apple Home",
+      "published_at": "2026-11-27T19:30:00+00:00",
+      "original_source": "https://9to5mac.com/2026/11/27/meross-ms605/",
+      "trend_score": 34.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: product claims (COMPANY-CLAIMED); niche",
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 4,
+        "usefulness": 4,
+        "social_momentum": 2,
+        "visual": 5,
+        "consequence": 2,
+        "discussion": 2,
+        "timeliness": 9
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://9to5mac.com/2026/11/27/meross-ms605/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "COMPANY-CLAIMED"
+    },
+    {
+      "headline": "Allstate has suffered a multiday website and app outage since 23 November",
+      "published_at": "2026-11-27T18:30:00+00:00",
+      "original_source": "https://www.techmeme.com/",
+      "trend_score": 32.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); cause unknown",
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 4,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 2,
+        "consequence": 4,
+        "discussion": 4,
+        "timeliness": 8
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techmeme.com/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    },
+    {
+      "headline": "Verizon reportedly in talks to buy fiber broadband operator Fidium for about $6B",
+      "published_at": "2026-11-27T13:50:00+00:00",
+      "original_source": "https://www.techmeme.com/",
+      "trend_score": 30.5,
+      "eligible": false,
+      "ineligible_reason": "on hold: anonymous-source deal talks (SPECULATIVE); billion-dollar figure needs HIGH",
+      "scores": {
+        "broad_relevance": 3,
+        "surprise": 3,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 2,
+        "consequence": 4,
+        "discussion": 3,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techmeme.com/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "UNVERIFIED",
+      "evidence_confidence": "LOW",
+      "new_development": null,
+      "claim_status": "SPECULATIVE"
+    },
+    {
+      "headline": "Trustly raises $60M from Nordic Capital and others",
+      "published_at": "2026-11-28T01:45:00+00:00",
+      "original_source": "https://www.techmeme.com/",
+      "trend_score": 25.0,
+      "eligible": false,
+      "ineligible_reason": "on hold: not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); low audience interest",
+      "scores": {
+        "broad_relevance": 2,
+        "surprise": 2,
+        "usefulness": 2,
+        "social_momentum": 2,
+        "visual": 2,
+        "consequence": 3,
+        "discussion": 2,
+        "timeliness": 10
+      },
+      "x_signal": {
+        "status": "NOT VERIFIED",
+        "posts": [],
+        "discussion_evidence": [
+          "https://www.techmeme.com/"
+        ]
+      },
+      "signals": null,
+      "verification_status": "PARTLY VERIFIED",
+      "evidence_confidence": "MEDIUM",
+      "new_development": null,
+      "claim_status": "INDEPENDENTLY REPORTED"
+    }
+  ],
+  "hooks": [
+    {
+      "text": "Nearly half of workers in the eurozone now use AI every week.",
+      "approach": "surprising capability",
+      "accuracy": 9,
+      "clarity": 9,
+      "curiosity": 8,
+      "specificity": 8,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 50,
+      "eligible": true
+    },
+    {
+      "text": "The biggest thing slowing down AI at work? Checking its answers.",
+      "approach": "contradiction",
+      "accuracy": 8,
+      "clarity": 9,
+      "curiosity": 9,
+      "specificity": 7,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 49,
+      "eligible": true
+    },
+    {
+      "text": "Almost half of European workers use AI weekly. Many still aren't faster.",
+      "approach": "unexpected consequence",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 8,
+      "emotional": 6,
+      "comprehension": 8,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "If AI isn't saving you time, you're not alone.",
+      "approach": "practical discovery",
+      "accuracy": 7,
+      "clarity": 9,
+      "curiosity": 8,
+      "specificity": 5,
+      "emotional": 8,
+      "comprehension": 9,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "Using AI at work? Watch how much time you spend fixing it.",
+      "approach": "important warning",
+      "accuracy": 8,
+      "clarity": 9,
+      "curiosity": 7,
+      "specificity": 6,
+      "emotional": 7,
+      "comprehension": 9,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "One in five eurozone workers now uses AI every single day.",
+      "approach": "surprising capability",
+      "accuracy": 7,
+      "clarity": 9,
+      "curiosity": 7,
+      "specificity": 8,
+      "emotional": 6,
+      "comprehension": 9,
+      "total": 46,
+      "eligible": true
+    },
+    {
+      "text": "AI was supposed to save time. For many workers, checking it costs time.",
+      "approach": "unexpected consequence",
+      "accuracy": 8,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 6,
+      "emotional": 7,
+      "comprehension": 8,
+      "total": 45,
+      "eligible": true
+    },
+    {
+      "text": "Europe's central bank just asked workers how AI is going.",
+      "approach": "major product reveal",
+      "accuracy": 9,
+      "clarity": 8,
+      "curiosity": 7,
+      "specificity": 6,
+      "emotional": 5,
+      "comprehension": 8,
+      "total": 43,
+      "eligible": true
+    },
+    {
+      "text": "Here's why AI isn't making everyone more productive.",
+      "approach": "important warning",
+      "accuracy": 7,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 4,
+      "emotional": 6,
+      "comprehension": 9,
+      "total": 42,
+      "eligible": true
+    },
+    {
+      "text": "More people in the eurozone use AI daily than in the US.",
+      "approach": "contradiction",
+      "accuracy": 6,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 7,
+      "emotional": 6,
+      "comprehension": 8,
+      "total": 43,
+      "eligible": false
+    },
+    {
+      "text": "AI is replacing hard work for half of Europe.",
+      "approach": "unexpected consequence",
+      "accuracy": 3,
+      "clarity": 8,
+      "curiosity": 8,
+      "specificity": 4,
+      "emotional": 8,
+      "comprehension": 8,
+      "total": 39,
+      "eligible": false
+    }
+  ],
+  "backups": [],
+  "limitations": [
+    "Source audit: all source groups reachable today; x.com opens but post metrics were not read, so the X signal is NOT VERIFIED.",
+    "Only the leader was verified to RUNBOOK step 2; other candidates are from feed headlines.",
+    "Bloomberg's report (27 Nov) returned HTTP 403 (paywall); its headline was read via Techmeme's feed and several AI-news aggregators repeat the figures (search excerpts only)."
+  ],
+  "source_audit": {
+    "checked_at_utc": "2026-11-28T09:58:00+00:00",
+    "groups": {
+      "x": {
+        "status": "WORKING",
+        "reachable": [
+          "x.com",
+          "api.twitter.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "api.twitter.com: needs X API bearer token"
+        ]
+      },
+      "reddit": {
+        "status": "WORKING",
+        "reachable": [
+          "www.reddit.com",
+          "oauth.reddit.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "oauth.reddit.com: needs Reddit API app credentials"
+        ]
+      },
+      "youtube": {
+        "status": "WORKING",
+        "reachable": [
+          "www.youtube.com",
+          "www.googleapis.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "www.googleapis.com: needs YouTube Data API key"
+        ]
+      },
+      "instagram": {
+        "status": "WORKING",
+        "reachable": [
+          "www.instagram.com",
+          "graph.instagram.com"
+        ],
+        "blocked": [],
+        "needs_credentials": [
+          "graph.instagram.com: needs Instagram Graph API token"
+        ]
+      },
+      "linkedin": {
+        "status": "WORKING",
+        "reachable": [
+          "www.linkedin.com"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      },
+      "google_trends": {
+        "status": "WORKING",
+        "reachable": [
+          "trends.google.com"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      },
+      "primary": {
+        "status": "WORKING",
+        "reachable": [
+          "openai.com",
+          "www.anthropic.com",
+          "blog.google",
+          "nvidianews.nvidia.com",
+          "arxiv.org",
+          "www.nature.com",
+          "huggingface.co",
+          "github.com"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      },
+      "news": {
+        "status": "WORKING",
+        "reachable": [
+          "www.reuters.com",
+          "apnews.com",
+          "www.theverge.com",
+          "techcrunch.com",
+          "arstechnica.com",
+          "www.wired.com",
+          "www.technologyreview.com",
+          "spectrum.ieee.org"
+        ],
+        "blocked": [],
+        "needs_credentials": []
+      }
+    },
+    "hosts": {
+      "api.twitter.com": {
+        "host": "api.twitter.com",
+        "reachable": true,
+        "http": 404
+      },
+      "apnews.com": {
+        "host": "apnews.com",
+        "reachable": true,
+        "http": 403
+      },
+      "arstechnica.com": {
+        "host": "arstechnica.com",
+        "reachable": true,
+        "http": 200
+      },
+      "arxiv.org": {
+        "host": "arxiv.org",
+        "reachable": true,
+        "http": 200
+      },
+      "blog.google": {
+        "host": "blog.google",
+        "reachable": true,
+        "http": 200
+      },
+      "github.com": {
+        "host": "github.com",
+        "reachable": true,
+        "http": 400
+      },
+      "graph.instagram.com": {
+        "host": "graph.instagram.com",
+        "reachable": true,
+        "http": 400
+      },
+      "huggingface.co": {
+        "host": "huggingface.co",
+        "reachable": true,
+        "http": 200
+      },
+      "nvidianews.nvidia.com": {
+        "host": "nvidianews.nvidia.com",
+        "reachable": true,
+        "http": 200
+      },
+      "oauth.reddit.com": {
+        "host": "oauth.reddit.com",
+        "reachable": true,
+        "http": 403
+      },
+      "openai.com": {
+        "host": "openai.com",
+        "reachable": true,
+        "http": 200
+      },
+      "spectrum.ieee.org": {
+        "host": "spectrum.ieee.org",
+        "reachable": true,
+        "http": 200
+      },
+      "techcrunch.com": {
+        "host": "techcrunch.com",
+        "reachable": true,
+        "http": 200
+      },
+      "trends.google.com": {
+        "host": "trends.google.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.anthropic.com": {
+        "host": "www.anthropic.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.googleapis.com": {
+        "host": "www.googleapis.com",
+        "reachable": true,
+        "http": 404
+      },
+      "www.instagram.com": {
+        "host": "www.instagram.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.linkedin.com": {
+        "host": "www.linkedin.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.nature.com": {
+        "host": "www.nature.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.reddit.com": {
+        "host": "www.reddit.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.reuters.com": {
+        "host": "www.reuters.com",
+        "reachable": true,
+        "http": 401
+      },
+      "www.technologyreview.com": {
+        "host": "www.technologyreview.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.theverge.com": {
+        "host": "www.theverge.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.wired.com": {
+        "host": "www.wired.com",
+        "reachable": true,
+        "http": 200
+      },
+      "www.youtube.com": {
+        "host": "www.youtube.com",
+        "reachable": true,
+        "http": 200
+      },
+      "x.com": {
+        "host": "x.com",
+        "reachable": true,
+        "http": 200
+      }
+    },
+    "note": "Reachability from this cloud environment. BLOCKED groups can only be researched through web-search excerpts (SEARCH-INDEX) or secondary reporting; their engagement numbers are UNKNOWN."
+  },
+  "selection_tiers": {
+    "best_discovered": {
+      "headline": "WhatsApp announces in-app travel data eSIMs with Jio, Verizon and others, rolling out in select countries soon",
+      "score": 68.0,
+      "broad_relevance": 9
+    },
+    "best_verified": {
+      "headline": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+      "score": 67.0,
+      "broad_relevance": 8
+    },
+    "best_ready": {
+      "headline": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+      "score": 67.0,
+      "broad_relevance": 8
+    },
+    "blockers": [
+      {
+        "headline": "WhatsApp announces in-app travel data eSIMs with Jio, Verizon and others, rolling out in select countries soon",
+        "score": 68.0,
+        "blocker": "announced 26 Nov 2026, before the 24-hour window (starts 27 Nov 09:58 UTC) with no new dated development inside it; widening the window is not justified because a verified in-window story (ECB) exists; also not available yet (no date, no prices)"
+      }
+    ],
+    "fallback": false
+  },
+  "script_checks": {
+    "hook_clarity": {
+      "pass": true,
+      "why": "One clear stat-led line a viewer understands instantly."
+    },
+    "factual_accuracy": {
+      "pass": true,
+      "why": "Every number maps to c1-c4, read directly on the ECB Blog."
+    },
+    "natural_delivery": {
+      "pass": true,
+      "why": "Short spoken sentences; numbers said as words a person would say."
+    },
+    "narrative_coherence": {
+      "pass": true,
+      "why": "One idea: lots of AI use, and checking is the hidden cost."
+    },
+    "audience_relevance": {
+      "pass": true,
+      "why": "Anyone with a job meets AI at work."
+    },
+    "practical_takeaway": {
+      "pass": true,
+      "why": "Know when to trust AI output and when it costs you time."
+    },
+    "ending_quality": {
+      "pass": true,
+      "why": "Ends on a memorable takeaway, not a forced question."
+    },
+    "no_redundancy": {
+      "pass": true,
+      "why": "Each sentence adds a new fact or the turn."
+    },
+    "no_jargon": {
+      "pass": true,
+      "why": "No technical terms; 'eurozone' is explained by context."
+    },
+    "no_unsupported_implications": {
+      "pass": true,
+      "why": "Does not claim AI slows workers overall; only the reason given by those with no gain."
+    }
+  },
+  "audience_check": {
+    "why_care_today": "The data was published on Friday and most viewers use AI at work.",
+    "affects_life_or_work": "It is about how AI changes everyday work for ordinary employees.",
+    "can_they_use_it": "Yes, they can audit how much time they spend checking AI output.",
+    "surprising": "The top reason for no gain is the time spent fixing AI's work.",
+    "demonstrable": "Simple charts from the ECB post and the creator's own example can show it.",
+    "clear_consequence": "Saving time with AI depends on how much checking a task needs.",
+    "would_share": "People will send it to colleagues who complain about fixing AI output.",
+    "right_audience": "Working professionals and students who use AI tools daily."
+  },
+  "practical_takeaway": {
+    "who_can_use": "Anyone who uses AI tools at work",
+    "what_it_does": "Shows how often eurozone workers use AI and why some see no productivity gain",
+    "availability": "not applicable (survey data)",
+    "price": "not applicable",
+    "difference": "Official, large survey data rather than a vendor's claim",
+    "limitations": "Self-reported, euro area only; perceived gains, not measured output",
+    "why_it_matters": "Checking and fixing AI output is the hidden cost that decides whether AI actually saves you time"
+  },
+  "scrutiny": null,
+  "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7/V8 model unchanged.",
+  "story": {
+    "story_id": "2026-11-28-ecb-ai-at-work-checking-time",
+    "company": "European Central Bank (ECB)",
+    "event_date": "2026-11-27",
+    "announced_at": "27 November 2026, 11:00 CET (ECB Blog)"
+  }
+}

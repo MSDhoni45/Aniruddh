@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-28",
+  "runs": {
+    "2026-11-28-manual-152758": {
+      "run_id": "2026-11-28-manual-152758",
+      "trigger": "manual",
+      "start_ist": "2026-11-28T15:27:58+05:30",
+      "end_ist": "2026-11-28T15:35:06+05:30",
+      "environment": {
+        "CLAUDE_CODE_REMOTE": "true",
+        "CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE": "cloud_default",
+        "CLAUDE_CODE_REMOTE_SESSION_ID": "cse_01D5do3PP3XJnXqwcV8hAYH8",
+        "CLAUDE_CODE_CONTAINER_ID": "container_01TwuzHFrXeRSSJiMMp6zv78",
+        "cloud": true
+      },
+      "git_commit": "1b17191",
+      "research_window": {
+        "start_utc": "2026-11-27T09:57:58+00:00",
+        "end_utc": "2026-11-28T09:57:58+00:00",
+        "start_ist": "2026-11-27T15:27:58+05:30",
+        "end_ist": "2026-11-28T15:27:58+05:30",
+        "hours": 24
+      },
+      "status": "READY",
+      "delivery": {
+        "status": "not attempted",
+        "channel": "",
+        "receipt": "none available",
+        "at_ist": null
+      },
+      "errors": [],
+      "warnings": [
+        "08:41 scheduled run missed: scheduled task disabled since 24 Nov"
+      ],
+      "note": "ECB Blog: AI use at work in the euro area",
+      "package_status": "VALID",
+      "readiness": "RECORDING READY",
+      "selected_story": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+      "candidates": 27,
+      "source_access": "Evidence levels: 4 HIGH. Claims with a source opened directly: 4 of 4.",
+      "fact_check": "PASS",
+      "word_count": 96,
+      "estimated_seconds": 43.9,
+      "quality_gate": "PASS",
+      "quality_total": 100,
+      "validation_problems": []
+    }
+  }
+}

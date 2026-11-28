@@ -1,0 +1,26 @@
+{
+  "primary": [
+    {
+      "label": "ECB Blog: AI, jobs and prices: what euro area consumers expect (27 Nov 2026)",
+      "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html"
+    },
+    {
+      "label": "ECB Blog RSS feed (publication time)",
+      "url": "https://www.ecb.europa.eu/rss/blog.html"
+    }
+  ],
+  "supporting": [
+    {
+      "label": "Bloomberg (Alexander Weber), 27 Nov 2026: European workers' AI use on par with US peers, ECB says (paywalled, HTTP 403 here; headline seen via Techmeme)",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says"
+    },
+    {
+      "label": "Techmeme feed item linking the Bloomberg report (27 Nov 2026)",
+      "url": "https://www.techmeme.com/feed.xml"
+    }
+  ],
+  "x_signals": [],
+  "access_limits": [
+    "ECB Blog and RSS opened directly; x.com metrics not read."
+  ]
+}

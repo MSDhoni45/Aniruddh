@@ -1,0 +1,120 @@
+{
+ "date": "2026-11-28",
+ "story": "ECB data on AI use at work in the euro area (ECB Blog, 27 Nov 2026)",
+ "verified_at_utc": "2026-11-28T10:04:00+00:00",
+ "method": "Primary page fetched twice from this environment (09:59 and 10:04 UTC); canonical URL matches; publication time checked in the ECB Blog RSS feed; every script figure matched word for word to the post's text; Bloomberg's independent report returned HTTP 403 (paywall) and is recorded as secondary (headline via Techmeme feed); no correction, update or withdrawal notice on the page or in the RSS feed.",
+ "sources": {
+  "ecb_blog": {
+   "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+   "host_owner": "European Central Bank (ecb.europa.eu), canonical URL matches",
+   "opened": true,
+   "http": 200,
+   "sha256": "2643bc0a70bf7331d75c807fcdb6db4aa51b2a6e57d6514a42072d0435b083af",
+   "publication_date": "2026-11-27 (RSS pubDate Fri, 27 Nov 2026 11:00 CET)",
+   "authors": "Dimitris Georgarakos, Geoff Kenny, Justus Meyer (ECB Research)",
+   "note": "ECB Blog disclaimer: views are the authors' and not necessarily those of the ECB/Eurosystem; data from the ECB Consumer Expectations Survey"
+  },
+  "ecb_blog_rss": {
+   "url": "https://www.ecb.europa.eu/rss/blog.html",
+   "opened": true,
+   "http": 200
+  },
+  "bloomberg": {
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says",
+   "host_owner": "Bloomberg (independent)",
+   "opened": false,
+   "http": 403,
+   "note": "paywalled/blocked; headline read via Techmeme feed (https://www.techmeme.com/feed.xml, item 27 Nov 2026 13:15 EST)"
+  }
+ },
+ "claims": [
+  {
+   "claim": "The European Central Bank published new data on AI use at work on Friday 27 November 2026",
+   "evidence": [
+    "ECB Blog post 'AI, jobs and prices: what euro area consumers expect': 'New evidence from the ECB's Consumer Expectations Survey sheds light on consumers' views on jobs, prices and AI regulation.'",
+    "RSS pubDate: Fri, 27 Nov 2026 11:00 CET"
+   ],
+   "sources": [
+    "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "https://www.ecb.europa.eu/rss/blog.html"
+   ],
+   "event_date": "2026-11-27",
+   "announcement_date": "2026-11-27",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "It is a blog post by ECB economists (views not necessarily the ECB's); the script says 'new data from the European Central Bank', which is accurate: the data is the ECB's own survey.",
+   "decision": "USE"
+  },
+  {
+   "claim": "In August 2026, 44% of employed euro area consumers used AI at least weekly at work; around 18% daily",
+   "evidence": [
+    "'In August 2026, 44% of employed euro area consumers reported using AI at least weekly at work, and around 18% used it daily.'"
+   ],
+   "sources": [
+    "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says"
+   ],
+   "event_date": "2026-08 (survey wave)",
+   "announcement_date": "2026-11-27",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "One aggregator (emergent.sh, search excerpt) says 40%; the primary says 44%, and Bloomberg's headline says 44%. Primary wins.",
+   "decision": "USE ('nearly half', '44 percent', 'about 18 percent'; scope: working people in the euro area)"
+  },
+  {
+   "claim": "Around 56% of workplace AI users say AI increases the amount of work they complete",
+   "evidence": [
+    "'Around 56% say that AI increases the amount of work they complete, while 47% report producing higher-quality output.'"
+   ],
+   "sources": [
+    "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html"
+   ],
+   "event_date": "2026-06 (survey wave)",
+   "announcement_date": "2026-11-27",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "This figure is from the June 2026 wave (chart notes), not August; the script does not date it.",
+   "decision": "USE"
+  },
+  {
+   "claim": "Among users with no increase in output, the most cited reason is the time needed to check or correct AI-generated results",
+   "evidence": [
+    "'Among users who reported no increase in output, the most commonly cited reason is the time needed to check or correct AI-generated results (Chart 2, panel b).'"
+   ],
+   "sources": [
+    "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html"
+   ],
+   "event_date": "2026 (survey)",
+   "announcement_date": "2026-11-27",
+   "status": "VERIFIED",
+   "confidence": "HIGH",
+   "contradictions": "none",
+   "decision": "USE (script: 'the top reason was the time spent checking and fixing the AI's work')"
+  },
+  {
+   "claim": "Euro area workers use AI daily more than US workers",
+   "evidence": [
+    "'a larger share of consumers in the euro area report using AI daily' but notes say CES and Gallup use different questions and samples, so comparisons are indicative"
+   ],
+   "sources": [
+    "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says"
+   ],
+   "event_date": "2026-08",
+   "announcement_date": "2026-11-27",
+   "status": "NOT HARMONISED (indicative only)",
+   "confidence": "MEDIUM",
+   "contradictions": "Different surveys",
+   "decision": "EXCLUDE"
+  }
+ ],
+ "corrections": [
+  "Draft said 'workers in Europe'; corrected to 'eurozone' / 'euro area' (11 countries covered by the survey)."
+ ],
+ "excluded": [
+  "EU vs US comparison (surveys not harmonised)",
+  "Investment-gap figures",
+  "Job-loss expectations"
+ ],
+ "final_decision": "VERIFIED — SAFE TO PUBLISH"
+}

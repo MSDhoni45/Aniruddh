@@ -1,0 +1,1787 @@
+{
+ "date": "2026-11-28",
+ "language": "english",
+ "scoring": "v7",
+ "slug": "ecb-ai-at-work-checking-time",
+ "keys": [
+  "ecb-ai-at-work-survey",
+  "ai-productivity-checking-output"
+ ],
+ "topic": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+ "category": "AI",
+ "topic_type": "BREAKING",
+ "announced_at": "27 November 2026, 11:00 CET (ECB Blog)",
+ "event_date": "2026-11-27",
+ "story_id": "2026-11-28-ecb-ai-at-work-checking-time",
+ "company": "European Central Bank (ECB)",
+ "generated_at": "2026-11-28T10:02:00+00:00",
+ "research_window": {
+  "start_utc": "2026-11-27T09:57:58+00:00",
+  "end_utc": "2026-11-28T09:57:58+00:00",
+  "start_ist": "2026-11-27T15:27:58+05:30",
+  "end_ist": "2026-11-28T15:27:58+05:30",
+  "hours": 24
+ },
+ "window_expansion_reason": null,
+ "why_selected": "The strongest verified in-window story: new official survey data on AI at work that almost every viewer with a job can relate to, read directly on the ECB's own site.",
+ "why_short": "Half of eurozone workers use AI weekly; checking its output is why some see no gain.",
+ "why_beats_alternatives": "WhatsApp's travel eSIM (68.0) scores slightly higher but was announced on 26 Nov, outside the 24-hour window, and is not available yet. OpenAI's countersuit against Apple (56.0) needs the court filing, which was not found. Samsung's camera AI mode and iOS 27.3 Siri limits are reports or betas. The ECB data (67.0) is in the window, official, opened directly and useful to anyone who uses AI at work.",
+ "why_this_story": "Most viewers use AI at work or will soon. New ECB data says 44% of eurozone workers use it weekly, and the top reason some see no gain is the time spent checking and fixing its output, a useful, relatable takeaway. Social signal: X metrics not verified; a Techmeme headline was the only discussion observed. It beat WhatsApp's eSIM news, which fell outside the window.",
+ "evidence_confidence": "HIGH",
+ "confidence": "HIGH",
+ "verified_development": "On 27 Nov 2026 an ECB Blog post by ECB economists, based on the ECB Consumer Expectations Survey, reported that in August 2026 44% of employed euro area consumers used AI at least weekly at work and around 18% daily; around 56% of workplace AI users said AI increases the work they complete; and among users with no increase in output the most cited reason was the time needed to check or correct AI-generated results.",
+ "disclosure": "Disclosure: written by Claude, an Anthropic model. The story is about AI tools in general; no specific company's product is named. Not sponsored.",
+ "research_summary": "A sweep of the 24-hour window (27-28 Nov) read RSS feeds and pages from TechCrunch, The Verge, Ars Technica, Engadget, 9to5Google, 9to5Mac, Wired, MIT Technology Review, IEEE Spectrum, Techmeme, Google, OpenAI and the ECB, and found 27 candidates; Black Friday deals dominated. The leader, an ECB Blog post of 27 Nov on its Consumer Expectations Survey, was opened directly: 44% of employed euro area consumers used AI at least weekly at work in August 2026, about 18% daily; around 56% of users say it raises the work they complete; for users with no gain, checking or correcting AI output is the most cited reason. WhatsApp's travel eSIM was announced on 26 Nov, outside the window, and held.",
+ "primary_sources": [
+  {
+   "label": "ECB Blog: AI, jobs and prices: what euro area consumers expect (27 Nov 2026)",
+   "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html"
+  },
+  {
+   "label": "ECB Blog RSS feed (publication time)",
+   "url": "https://www.ecb.europa.eu/rss/blog.html"
+  }
+ ],
+ "supporting_sources": [
+  {
+   "label": "Bloomberg (Alexander Weber), 27 Nov 2026: European workers' AI use on par with US peers, ECB says (paywalled, HTTP 403 here; headline seen via Techmeme)",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says"
+  },
+  {
+   "label": "Techmeme feed item linking the Bloomberg report (27 Nov 2026)",
+   "url": "https://www.techmeme.com/feed.xml"
+  }
+ ],
+ "key_facts": [
+  "Published 27 Nov 2026 on the ECB Blog (authors: Georgarakos, Kenny, Meyer), based on the ECB Consumer Expectations Survey.",
+  "August 2026: 44% of employed euro area consumers used AI at least weekly at work; around 18% daily.",
+  "About 56% of workplace AI users say AI increases the amount of work they complete; 47% say quality improved.",
+  "Among users with no output gain, the most cited reason is time needed to check or correct AI-generated results."
+ ],
+ "uncertainties": [
+  "Survey answers are self-reported perceptions, not measured productivity.",
+  "The 56% figure comes from the June 2026 survey wave; weekly/daily use from August 2026.",
+  "ECB blog views are the authors', not necessarily the ECB's.",
+  "Eurozone and US figures come from different surveys (CES vs Gallup), so the comparison is left out."
+ ],
+ "excluded_claims": [
+  "Euro area daily AI use is higher than in the US (surveys not harmonised; the blog itself says comparisons are indicative).",
+  "Investment gap figures (40% vs 12%) and job-loss expectations (not needed for the one idea).",
+  "Any claim that AI makes workers slower overall (not what the data says)."
+ ],
+ "context": "The ECB's Consumer Expectations Survey asks about 20,000 people in 11 euro area countries each month (background; not in the script).",
+ "script": "Nearly half of workers in the eurozone now use AI every week. But not all of them are getting more done.\n\nThat's new data from the European Central Bank, released Friday.\n\nIn August, 44 percent of working people there said they used AI at work weekly. About 18 percent used it daily.\n\nAround 56 percent of users said it helps them get more done.\n\nBut for those who saw no gain, the top reason was the time spent checking and fixing the AI's work.\n\nThe real skill isn't using AI. It's knowing when to trust it.",
+ "hook": "Nearly half of workers in the eurozone now use AI every week.",
+ "hooks": [
+  {
+   "text": "Nearly half of workers in the eurozone now use AI every week.",
+   "approach": "surprising capability",
+   "accuracy": 9,
+   "clarity": 9,
+   "curiosity": 8,
+   "specificity": 8,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "The biggest thing slowing down AI at work? Checking its answers.",
+   "approach": "contradiction",
+   "accuracy": 8,
+   "clarity": 9,
+   "curiosity": 9,
+   "specificity": 7,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "Almost half of European workers use AI weekly. Many still aren't faster.",
+   "approach": "unexpected consequence",
+   "accuracy": 8,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 8,
+   "emotional": 6,
+   "comprehension": 8
+  },
+  {
+   "text": "If AI isn't saving you time, you're not alone.",
+   "approach": "practical discovery",
+   "accuracy": 7,
+   "clarity": 9,
+   "curiosity": 8,
+   "specificity": 5,
+   "emotional": 8,
+   "comprehension": 9
+  },
+  {
+   "text": "Europe's central bank just asked workers how AI is going.",
+   "approach": "major product reveal",
+   "accuracy": 9,
+   "clarity": 8,
+   "curiosity": 7,
+   "specificity": 6,
+   "emotional": 5,
+   "comprehension": 8
+  },
+  {
+   "text": "More people in the eurozone use AI daily than in the US.",
+   "approach": "contradiction",
+   "accuracy": 6,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 7,
+   "emotional": 6,
+   "comprehension": 8
+  },
+  {
+   "text": "Here's why AI isn't making everyone more productive.",
+   "approach": "important warning",
+   "accuracy": 7,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 4,
+   "emotional": 6,
+   "comprehension": 9
+  },
+  {
+   "text": "Using AI at work? Watch how much time you spend fixing it.",
+   "approach": "important warning",
+   "accuracy": 8,
+   "clarity": 9,
+   "curiosity": 7,
+   "specificity": 6,
+   "emotional": 7,
+   "comprehension": 9
+  },
+  {
+   "text": "One in five eurozone workers now uses AI every single day.",
+   "approach": "surprising capability",
+   "accuracy": 7,
+   "clarity": 9,
+   "curiosity": 7,
+   "specificity": 8,
+   "emotional": 6,
+   "comprehension": 9
+  },
+  {
+   "text": "AI was supposed to save time. For many workers, checking it costs time.",
+   "approach": "unexpected consequence",
+   "accuracy": 8,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 6,
+   "emotional": 7,
+   "comprehension": 8
+  },
+  {
+   "text": "AI is replacing hard work for half of Europe.",
+   "approach": "unexpected consequence",
+   "accuracy": 3,
+   "clarity": 8,
+   "curiosity": 8,
+   "specificity": 4,
+   "emotional": 8,
+   "comprehension": 8
+  }
+ ],
+ "revisions": 3,
+ "practical_takeaway": {
+  "who_can_use": "Anyone who uses AI tools at work",
+  "what_it_does": "Shows how often eurozone workers use AI and why some see no productivity gain",
+  "availability": "not applicable (survey data)",
+  "price": "not applicable",
+  "difference": "Official, large survey data rather than a vendor's claim",
+  "limitations": "Self-reported, euro area only; perceived gains, not measured output",
+  "why_it_matters": "Checking and fixing AI output is the hidden cost that decides whether AI actually saves you time"
+ },
+ "audience_check": {
+  "why_care_today": "The data was published on Friday and most viewers use AI at work.",
+  "affects_life_or_work": "It is about how AI changes everyday work for ordinary employees.",
+  "can_they_use_it": "Yes, they can audit how much time they spend checking AI output.",
+  "surprising": "The top reason for no gain is the time spent fixing AI's work.",
+  "demonstrable": "Simple charts from the ECB post and the creator's own example can show it.",
+  "clear_consequence": "Saving time with AI depends on how much checking a task needs.",
+  "would_share": "People will send it to colleagues who complain about fixing AI output.",
+  "right_audience": "Working professionals and students who use AI tools daily."
+ },
+ "script_checks": {
+  "hook_clarity": {
+   "pass": true,
+   "why": "One clear stat-led line a viewer understands instantly."
+  },
+  "factual_accuracy": {
+   "pass": true,
+   "why": "Every number maps to c1-c4, read directly on the ECB Blog."
+  },
+  "natural_delivery": {
+   "pass": true,
+   "why": "Short spoken sentences; numbers said as words a person would say."
+  },
+  "narrative_coherence": {
+   "pass": true,
+   "why": "One idea: lots of AI use, and checking is the hidden cost."
+  },
+  "audience_relevance": {
+   "pass": true,
+   "why": "Anyone with a job meets AI at work."
+  },
+  "practical_takeaway": {
+   "pass": true,
+   "why": "Know when to trust AI output and when it costs you time."
+  },
+  "ending_quality": {
+   "pass": true,
+   "why": "Ends on a memorable takeaway, not a forced question."
+  },
+  "no_redundancy": {
+   "pass": true,
+   "why": "Each sentence adds a new fact or the turn."
+  },
+  "no_jargon": {
+   "pass": true,
+   "why": "No technical terms; 'eurozone' is explained by context."
+  },
+  "no_unsupported_implications": {
+   "pass": true,
+   "why": "Does not claim AI slows workers overall; only the reason given by those with no gain."
+  }
+ },
+ "recording_guidance": {
+  "hook_emphasis": "Lean on 'nearly half' and 'every week'.",
+  "important_pause": "A beat after 'the most common reason was simple.'",
+  "final_tone": "Calm and knowing; a practical tip, not a warning."
+ },
+ "learning_applied": "No Instagram performance data is connected or recorded yet, so today's choice uses the documented V7/V8 model unchanged.",
+ "recording": {
+  "tone": "Curious, conversational, practical.",
+  "opening_expression": "Slight nod on 'every week', then a knowing look on 'not all of them'.",
+  "emphasis": [
+   "nearly half",
+   "44 percent",
+   "every day",
+   "checking and fixing",
+   "when to trust it"
+  ],
+  "pauses": [
+   "after 'getting more done.'",
+   "after 'was simple.'"
+  ],
+  "pronunciation": [
+   "eurozone: YOOR-oh-zone",
+   "European Central Bank: say it in full, no acronym"
+  ]
+ },
+ "visuals": [
+  "ECB Blog headline and Chart 2 (credited)",
+  "Simple bar graphic: 44% weekly, 18% daily, 56% more work"
+ ],
+ "pillar": "ai_breakthroughs",
+ "format": "E",
+ "backups": [],
+ "backup_shortfall_reason": "No other in-window candidate was verified to the same standard; WhatsApp's eSIM is outside the window.",
+ "audience": {
+  "stop_scroll": "'Nearly half of workers' plus a twist makes people stop.",
+  "watch_to_end": "Viewers want to hear why AI isn't helping some people.",
+  "share": "People will send it to coworkers who fix AI drafts all day.",
+  "save": "The trust-versus-check tip is worth keeping.",
+  "comment": "People will share whether AI actually saves them time.",
+  "follow": "Clear, sourced takes on AI in everyday work."
+ },
+ "editing": {
+  "opening_visual": "Creator to camera, '44%' graphic pops in",
+  "key_moments": [
+   "44% weekly / 18% daily",
+   "checking and fixing"
+  ],
+  "broll": [
+   "ECB Blog screenshots",
+   "creator's own screen correcting an AI draft"
+  ],
+  "on_screen_text": [
+   "44% USE AI WEEKLY",
+   "18% DAILY",
+   "TOP REASON: CHECKING & FIXING"
+  ],
+  "demonstrations": [
+   "creator-recorded own example only"
+  ],
+  "stats": [
+   "44%",
+   "18%",
+   "56%"
+  ],
+  "rhythm": "One fact per shot, pause on the turn",
+  "caption_emphasis": [
+   "nearly half",
+   "checking and fixing",
+   "trust"
+  ],
+  "sound": "Light curious bed"
+ },
+ "limitations": [
+  "Source audit: all source groups reachable today; x.com opens but post metrics were not read, so the X signal is NOT VERIFIED.",
+  "Only the leader was verified to RUNBOOK step 2; other candidates are from feed headlines.",
+  "Bloomberg's report (27 Nov) returned HTTP 403 (paywall); its headline was read via Techmeme's feed and several AI-news aggregators repeat the figures (search excerpts only)."
+ ],
+ "instagram": {
+  "cover_headline": "Why AI isn't saving everyone time",
+  "caption": "Nearly half of workers in the eurozone now use AI every week, says new data from the European Central Bank. About 18% use it daily. But for people who saw no gain, the top reason was the time spent checking and fixing AI output. Does AI actually save you time?",
+  "hashtags": [
+   "#AI",
+   "#FutureOfWork",
+   "#Productivity",
+   "#AItools"
+  ]
+ },
+ "linkedin": {
+  "caption": "ECB data (27 Nov): 44% of employed euro area consumers used AI at least weekly at work in August 2026, about 18% daily. For users with no output gain, the most cited reason was time spent checking or correcting AI output.",
+  "business_relevance": "Productivity gains depend on how much verification a task needs.",
+  "discussion_prompt": "Where does checking AI output eat your time?"
+ },
+ "x": {
+  "post": "New ECB data: 44% of eurozone workers used AI at least weekly at work in August, ~18% daily. For those who saw no gain, the top reason was time spent checking and fixing AI output."
+ },
+ "youtube": {
+  "title": "Why AI Isn't Saving Everyone Time",
+  "description": "Source: ECB Blog, 27 Nov 2026, based on the ECB Consumer Expectations Survey.",
+  "keywords": [
+   "AI at work",
+   "productivity",
+   "ECB survey"
+  ]
+ },
+ "growth": {
+  "watch": "A stat then a twist.",
+  "share": "Relatable to anyone using AI at work.",
+  "follow": "Sourced AI-at-work takes.",
+  "segment": "Working professionals, students.",
+  "underperform": "Survey stories can feel dry without a personal example."
+ },
+ "x_signals": [],
+ "candidates": [
+  {
+   "headline": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T10:00:00+00:00",
+   "original_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+   "main_claim": "ECB blog (27 Nov) on its Consumer Expectations Survey: 44% of employed euro area consumers used AI at least weekly at work in August 2026, ~18% daily; ~56% of users say AI raises the work they complete; for users with no gain, time to check or correct AI output is the top reason.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Almost everyone with a job meets AI at work; the 'checking it eats the time' finding is relatable and useful.",
+   "potential_hook": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checki",
+   "target_audience": "Almost everyone with a job meets AI at work; the 'checking it eats the time' finding is relatable and useful.",
+   "uncertainty": "Self-reported survey answers; figures are perceptions, not measured productivity",
+   "evidence_confidence": "HIGH",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "ECB blog (27 Nov) on its Consumer Expectations Survey: 44% of employed euro area consumers used AI at least weekly at work in August 2026, ~18% daily; ~56% of users say AI raises the work they complete; for users with no gain, time to check or correct AI output is the top reason.",
+   "audience_relevance": "Almost everyone with a job meets AI at work; the 'checking it eats the time' finding is relatable and useful.",
+   "practical_usefulness": "ECB blog (27 Nov) on its Consumer Expectations Survey: 44% of employed euro area consumers used AI at least weekly at work in August 2026, ~18% daily; ~56% of users say AI raises the work they complete; for users with no gain, time to check or correct AI output is the top reason.",
+   "visual_potential": "ECB chart screenshots (credited), creator to camera, simple bar graphics of 44% / 18% / 56%",
+   "potential_controversy": "Europe-only data; CES and US (Gallup) surveys are not harmonised, so cross-country comparisons are indicative only",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techmeme.com/feed.xml"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 8,
+    "surprise": 7,
+    "usefulness": 7,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 7,
+    "discussion": 8,
+    "timeliness": 9
+   },
+   "signals": [
+    {
+     "platform": "primary",
+     "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+     "title": "ECB Blog: AI, jobs and prices: what euro area consumers expect",
+     "retrieved_at": "2026-11-28T10:02:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "unknown"
+     }
+    },
+    {
+     "platform": "news",
+     "url": "https://www.techmeme.com/feed.xml",
+     "title": "Techmeme headline (27 Nov 2026 13:15 EST) linking Bloomberg's report of the ECB survey",
+     "retrieved_at": "2026-11-28T10:02:00+00:00",
+     "access": "DIRECTLY OBSERVED",
+     "engagement": {
+      "basis": "unknown"
+     }
+    }
+   ]
+  },
+  {
+   "headline": "WhatsApp announces in-app travel data eSIMs with Jio, Verizon and others, rolling out in select countries soon",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-26",
+   "original_source": "https://blog.whatsapp.com/stay-connected-on-whatsapp-when-you-travel",
+   "main_claim": "WhatsApp blog (26 Nov): buy and install a travel data eSIM inside the app; partners include Jio, Smart Axiata, Smart Communications, Verizon; select countries 'soon'.",
+   "verification_status": "VERIFIED",
+   "why_it_matters": "Billions of WhatsApp users travel; avoids roaming charges.",
+   "potential_hook": "WhatsApp announces in-app travel data eSIMs with Jio, Verizon and others, rolling out in select coun",
+   "target_audience": "Billions of WhatsApp users travel; avoids roaming charges.",
+   "uncertainty": "announced 26 Nov 2026, before the 24-hour window (starts 27 Nov 09:58 UTC) with no new dated development inside it; widening the window is not justified because a verified in-window story (ECB) exists; also not available yet (no date, no prices)",
+   "evidence_confidence": "HIGH",
+   "already_covered": false,
+   "claim_status": "CONFIRMED",
+   "latest_development": "WhatsApp blog (26 Nov): buy and install a travel data eSIM inside the app; partners include Jio, Smart Axiata, Smart Communications, Verizon; select countries 'soon'.",
+   "audience_relevance": "Billions of WhatsApp users travel; avoids roaming charges.",
+   "practical_usefulness": "WhatsApp blog (26 Nov): buy and install a travel data eSIM inside the app; partners include Jio, Smart Axiata, Smart Communications, Verizon; select countries 'soon'.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://blog.whatsapp.com/stay-connected-on-whatsapp-when-you-travel"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 9,
+    "surprise": 7,
+    "usefulness": 8,
+    "social_momentum": 3,
+    "visual": 7,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 6
+   },
+   "hold_reason": "announced 26 Nov 2026, before the 24-hour window (starts 27 Nov 09:58 UTC) with no new dated development inside it; widening the window is not justified because a verified in-window story (ECB) exists; also not available yet (no date, no prices)"
+  },
+  {
+   "headline": "OpenAI countersues Apple, alleging trade-secret theft and pressure on shared suppliers; Apple responds",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T13:57:00+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/",
+   "main_claim": "FT/9to5Mac report an OpenAI counterclaim in Apple's trade-secret case.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Two of the biggest consumer-AI players in court.",
+   "potential_hook": "OpenAI countersues Apple, alleging trade-secret theft and pressure on shared suppliers; Apple respon",
+   "target_audience": "Two of the biggest consumer-AI players in court.",
+   "uncertainty": "legal story: RUNBOOK needs the filing itself (case number, counterclaim) and each party's own statement opened; the court filing was not located in this run and web search found no record of the counterclaim",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "FT/9to5Mac report an OpenAI counterclaim in Apple's trade-secret case.",
+   "audience_relevance": "Two of the biggest consumer-AI players in court.",
+   "practical_usefulness": "FT/9to5Mac report an OpenAI counterclaim in Apple's trade-secret case.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 7,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 8,
+    "timeliness": 10
+   },
+   "hold_reason": "legal story: RUNBOOK needs the filing itself (case number, counterclaim) and each party's own statement opened; the court filing was not located in this run and web search found no record of the counterclaim"
+  },
+  {
+   "headline": "Anthropic says Claude does not silently sabotage work; some user reports reflect 'overcaution' on long tasks",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T22:35:00+00:00",
+   "original_source": "https://www.techmeme.com/",
+   "main_claim": "Anthropic response to developer complaints about Claude on long tasks.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Developers rely on AI coding agents.",
+   "potential_hook": "Anthropic says Claude does not silently sabotage work; some user reports reflect 'overcaution' on lo",
+   "target_audience": "Developers rely on AI coding agents.",
+   "uncertainty": "company's own denial (COMPANY-CLAIMED, ineligible under V7); the underlying user reports are anecdotal; conflict of interest (this assistant is built by Anthropic)",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Anthropic response to developer complaints about Claude on long tasks.",
+   "audience_relevance": "Developers rely on AI coding agents.",
+   "practical_usefulness": "Anthropic response to developer complaints about Claude on long tasks.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techmeme.com/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 7,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 8,
+    "timeliness": 10
+   },
+   "hold_reason": "company's own denial (COMPANY-CLAIMED, ineligible under V7); the underlying user reports are anecdotal; conflict of interest (this assistant is built by Anthropic)"
+  },
+  {
+   "headline": "Embo emerges from stealth with a $110M seed led by a16z to build robot world models trained on internet video",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-28T00:50:00+00:00",
+   "original_source": "https://embo.ai/",
+   "main_claim": "Startup funding announcement for robotics world models.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Robotics foundation models are a hot field.",
+   "potential_hook": "Embo emerges from stealth with a $110M seed led by a16z to build robot world models trained on inter",
+   "target_audience": "Robotics foundation models are a hot field.",
+   "uncertainty": "company announcement only (COMPANY-CLAIMED); funding amount is a financial claim needing HIGH; no product people can use",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Startup funding announcement for robotics world models.",
+   "audience_relevance": "Robotics foundation models are a hot field.",
+   "practical_usefulness": "Startup funding announcement for robotics world models.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://embo.ai/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 6,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 5,
+    "discussion": 5,
+    "timeliness": 10
+   },
+   "hold_reason": "company announcement only (COMPANY-CLAIMED); funding amount is a financial claim needing HIGH; no product people can use"
+  },
+  {
+   "headline": "Samsung is reportedly giving its camera app an AI mode",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T20:06:00+00:00",
+   "original_source": "https://www.engadget.com/2329765/samsung-is-reportedly-giving-its-camera-app-an-ai-mode/",
+   "main_claim": "Report of an unannounced Samsung camera feature.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Galaxy owners worldwide.",
+   "potential_hook": "Samsung is reportedly giving its camera app an AI mode",
+   "target_audience": "Galaxy owners worldwide.",
+   "uncertainty": "a report of an unannounced feature (SPECULATIVE); no Samsung confirmation",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Report of an unannounced Samsung camera feature.",
+   "audience_relevance": "Galaxy owners worldwide.",
+   "practical_usefulness": "Report of an unannounced Samsung camera feature.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.engadget.com/2329765/samsung-is-reportedly-giving-its-camera-app-an-ai-mode/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 5,
+    "usefulness": 6,
+    "social_momentum": 3,
+    "visual": 8,
+    "consequence": 4,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "hold_reason": "a report of an unannounced feature (SPECULATIVE); no Samsung confirmation"
+  },
+  {
+   "headline": "LA school district blocks Google's AI search features",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T22:00:00+00:00",
+   "original_source": "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/",
+   "main_claim": "Los Angeles Unified restricts Google AI search features on school accounts.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Parents and students.",
+   "potential_hook": "LA school district blocks Google's AI search features",
+   "target_audience": "Parents and students.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); local US policy story",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Los Angeles Unified restricts Google AI search features on school accounts.",
+   "audience_relevance": "Parents and students.",
+   "practical_usefulness": "Los Angeles Unified restricts Google AI search features on school accounts.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 6,
+    "usefulness": 4,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); local US policy story"
+  },
+  {
+   "headline": "Google Docs can now compare and work with Microsoft Word files without converting them",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T15:55:00+00:00",
+   "original_source": "https://9to5google.com/2026/11/27/google-docs-microsoft-word-compare-documents/",
+   "main_claim": "Workspace update for .docx files.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Office workers.",
+   "potential_hook": "Google Docs can now compare and work with Microsoft Word files without converting them",
+   "target_audience": "Office workers.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read)",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Workspace update for .docx files.",
+   "audience_relevance": "Office workers.",
+   "practical_usefulness": "Workspace update for .docx files.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5google.com/2026/11/27/google-docs-microsoft-word-compare-documents/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 3,
+    "usefulness": 7,
+    "social_momentum": 2,
+    "visual": 5,
+    "consequence": 3,
+    "discussion": 3,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read)"
+  },
+  {
+   "headline": "Google says it fixed Gemini's RAM usage error in Chrome",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T14:35:00+00:00",
+   "original_source": "https://9to5google.com/2026/11/27/google-gemini-chrome-ram-usage-error/",
+   "main_claim": "Bug fix.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Chrome users.",
+   "potential_hook": "Google says it fixed Gemini's RAM usage error in Chrome",
+   "target_audience": "Chrome users.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read)",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Bug fix.",
+   "audience_relevance": "Chrome users.",
+   "practical_usefulness": "Bug fix.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5google.com/2026/11/27/google-gemini-chrome-ram-usage-error/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 3,
+    "usefulness": 4,
+    "social_momentum": 2,
+    "visual": 3,
+    "consequence": 3,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read)"
+  },
+  {
+   "headline": "Android app developers will have to publicly post an address and phone number in 2027",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T15:35:00+00:00",
+   "original_source": "https://9to5google.com/2026/11/27/android-app-developers-will-have-to-publicly-post-address-phone-number-in-2027/",
+   "main_claim": "Google Play verification policy.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "App developers.",
+   "potential_hook": "Android app developers will have to publicly post an address and phone number in 2027",
+   "target_audience": "App developers.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); niche (developers)",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Google Play verification policy.",
+   "audience_relevance": "App developers.",
+   "practical_usefulness": "Google Play verification policy.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5google.com/2026/11/27/android-app-developers-will-have-to-publicly-post-address-phone-number-in-2027/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 5,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); niche (developers)"
+  },
+  {
+   "headline": "MacWhisper now remembers speakers' voices across recordings",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T21:08:00+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/macwhisper-now-remembers-speakers-voices-across-recordings/",
+   "main_claim": "App update.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Mac users who transcribe.",
+   "potential_hook": "MacWhisper now remembers speakers' voices across recordings",
+   "target_audience": "Mac users who transcribe.",
+   "uncertainty": "developer's own description (COMPANY-CLAIMED); niche",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "App update.",
+   "audience_relevance": "Mac users who transcribe.",
+   "practical_usefulness": "App update.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/macwhisper-now-remembers-speakers-voices-across-recordings/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 6,
+    "social_momentum": 2,
+    "visual": 5,
+    "consequence": 3,
+    "discussion": 3,
+    "timeliness": 10
+   },
+   "hold_reason": "developer's own description (COMPANY-CLAIMED); niche"
+  },
+  {
+   "headline": "iOS 27.3 beta adds usage limits for advanced features, including Siri AI",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T14:50:00+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/ios-27-3-adds-limits-for-these-advanced-features-details-here/",
+   "main_claim": "Beta code/feature limits.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "iPhone users.",
+   "potential_hook": "iOS 27.3 beta adds usage limits for advanced features, including Siri AI",
+   "target_audience": "iPhone users.",
+   "uncertainty": "beta software (PRELIMINARY); limits may change before release",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Beta code/feature limits.",
+   "audience_relevance": "iPhone users.",
+   "practical_usefulness": "Beta code/feature limits.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/ios-27-3-adds-limits-for-these-advanced-features-details-here/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 6,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 5,
+    "consequence": 5,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "hold_reason": "beta software (PRELIMINARY); limits may change before release"
+  },
+  {
+   "headline": "Purple Chinese electric minivan claims up to 559 miles on a charge",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-28T00:25:48+00:00",
+   "original_source": "https://www.theverge.com/transportation/1044706/this-purple-electric-chinese-minivan-can-go-up-to-559-miles-on-a-charge",
+   "main_claim": "Range figure is the maker's (test cycle unknown).",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "EV buyers.",
+   "potential_hook": "Purple Chinese electric minivan claims up to 559 miles on a charge",
+   "target_audience": "EV buyers.",
+   "uncertainty": "range is the maker's claim (COMPANY-CLAIMED); test cycle not stated",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Range figure is the maker's (test cycle unknown).",
+   "audience_relevance": "EV buyers.",
+   "practical_usefulness": "Range figure is the maker's (test cycle unknown).",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.theverge.com/transportation/1044706/this-purple-electric-chinese-minivan-can-go-up-to-559-miles-on-a-charge"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 6,
+    "usefulness": 3,
+    "social_momentum": 2,
+    "visual": 7,
+    "consequence": 3,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "hold_reason": "range is the maker's claim (COMPANY-CLAIMED); test cycle not stated"
+  },
+  {
+   "headline": "Hackers reportedly infiltrated the US Air Force's cloud systems",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T16:55:00+00:00",
+   "original_source": "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/",
+   "main_claim": "Security report.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "General.",
+   "potential_hook": "Hackers reportedly infiltrated the US Air Force's cloud systems",
+   "target_audience": "General.",
+   "uncertainty": "a report without official confirmation; military/government security story",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Security report.",
+   "audience_relevance": "General.",
+   "practical_usefulness": "Security report.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 6,
+    "usefulness": 1,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 6,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "hold_reason": "a report without official confirmation; military/government security story"
+  },
+  {
+   "headline": "Restricted Nvidia chips were installed at a Chinese data center linked to Alice Huang",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T19:45:00+00:00",
+   "original_source": "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/",
+   "main_claim": "Export-control report.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "General.",
+   "potential_hook": "Restricted Nvidia chips were installed at a Chinese data center linked to Alice Huang",
+   "target_audience": "General.",
+   "uncertainty": "geopolitics/export-control politics and a personal allegation (excluded by V8 positioning)",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Export-control report.",
+   "audience_relevance": "General.",
+   "practical_usefulness": "Export-control report.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.engadget.com/2329748/restricted-nvidia-chips-were-installed-at-a-chinese-data-center-linked-to-alice-huang/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 6,
+    "usefulness": 1,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 6,
+    "discussion": 7,
+    "timeliness": 10
+   },
+   "rejected": "geopolitics/export-control politics and a personal allegation (excluded by V8 positioning)"
+  },
+  {
+   "headline": "Apple faces a potential $80 million fine and App Store changes in Chile",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T20:31:00+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/apple-faces-potential-80-million-fine-and-app-store-overhaul-in-chile/",
+   "main_claim": "Regulatory proposal.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Chilean iPhone users.",
+   "potential_hook": "Apple faces a potential $80 million fine and App Store changes in Chile",
+   "target_audience": "Chilean iPhone users.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); regulatory/legal, a proposed fine",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Regulatory proposal.",
+   "audience_relevance": "Chilean iPhone users.",
+   "practical_usefulness": "Regulatory proposal.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/apple-faces-potential-80-million-fine-and-app-store-overhaul-in-chile/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 4,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 3,
+    "consequence": 4,
+    "discussion": 5,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); regulatory/legal, a proposed fine"
+  },
+  {
+   "headline": "SAP confirms a cybersecurity incident; report says hackers obtained staff tokens and touched source code on GitHub",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T11:35:00+00:00",
+   "original_source": "https://www.techmeme.com/",
+   "main_claim": "Enterprise security incident.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Businesses.",
+   "potential_hook": "SAP confirms a cybersecurity incident; report says hackers obtained staff tokens and touched source ",
+   "target_audience": "Businesses.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); security claims need SAP's advisory opened",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Enterprise security incident.",
+   "audience_relevance": "Businesses.",
+   "practical_usefulness": "Enterprise security incident.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techmeme.com/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 2,
+    "social_momentum": 3,
+    "visual": 3,
+    "consequence": 6,
+    "discussion": 5,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); security claims need SAP's advisory opened"
+  },
+  {
+   "headline": "Verizon reportedly in talks to buy fiber broadband operator Fidium for about $6B",
+   "category": "TECH COMPANIES",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T13:50:00+00:00",
+   "original_source": "https://www.techmeme.com/",
+   "main_claim": "Unconfirmed deal talks.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "US broadband users.",
+   "potential_hook": "Verizon reportedly in talks to buy fiber broadband operator Fidium for about $6B",
+   "target_audience": "US broadband users.",
+   "uncertainty": "anonymous-source deal talks (SPECULATIVE); billion-dollar figure needs HIGH",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Unconfirmed deal talks.",
+   "audience_relevance": "US broadband users.",
+   "practical_usefulness": "Unconfirmed deal talks.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techmeme.com/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 3,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 2,
+    "consequence": 4,
+    "discussion": 3,
+    "timeliness": 10
+   },
+   "hold_reason": "anonymous-source deal talks (SPECULATIVE); billion-dollar figure needs HIGH"
+  },
+  {
+   "headline": "Trustly raises $60M from Nordic Capital and others",
+   "category": "AI BUSINESS & STARTUPS",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-28T01:45:00+00:00",
+   "original_source": "https://www.techmeme.com/",
+   "main_claim": "Fintech funding.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Payments industry.",
+   "potential_hook": "Trustly raises $60M from Nordic Capital and others",
+   "target_audience": "Payments industry.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); low audience interest",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Fintech funding.",
+   "audience_relevance": "Payments industry.",
+   "practical_usefulness": "Fintech funding.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techmeme.com/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 2,
+    "surprise": 2,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 2,
+    "consequence": 3,
+    "discussion": 2,
+    "timeliness": 10
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); low audience interest"
+  },
+  {
+   "headline": "Google Pixel prepares a 'Priority Notifications' feature",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T16:30:00+00:00",
+   "original_source": "https://9to5google.com/2026/11/27/google-pixel-prepares-new-priority-notifications-feature-heres-what-it-will-do/",
+   "main_claim": "Found in code; unreleased.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Pixel owners.",
+   "potential_hook": "Google Pixel prepares a 'Priority Notifications' feature",
+   "target_audience": "Pixel owners.",
+   "uncertainty": "unreleased feature found in code (PRELIMINARY)",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Found in code; unreleased.",
+   "audience_relevance": "Pixel owners.",
+   "practical_usefulness": "Found in code; unreleased.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5google.com/2026/11/27/google-pixel-prepares-new-priority-notifications-feature-heres-what-it-will-do/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 5,
+    "surprise": 5,
+    "usefulness": 5,
+    "social_momentum": 2,
+    "visual": 4,
+    "consequence": 3,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "hold_reason": "unreleased feature found in code (PRELIMINARY)"
+  },
+  {
+   "headline": "WhatsApp tests view-once text messages on iOS beta",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T22:30:00+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/whatsapp-announces-travel-esims-tests-view-once-texts-and-a-cleaner-interface/",
+   "main_claim": "Beta test reported by WABetaInfo.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "WhatsApp users.",
+   "potential_hook": "WhatsApp tests view-once text messages on iOS beta",
+   "target_audience": "WhatsApp users.",
+   "uncertainty": "TestFlight beta test (PRELIMINARY); may not ship",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "PRELIMINARY",
+   "latest_development": "Beta test reported by WABetaInfo.",
+   "audience_relevance": "WhatsApp users.",
+   "practical_usefulness": "Beta test reported by WABetaInfo.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/whatsapp-announces-travel-esims-tests-view-once-texts-and-a-cleaner-interface/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 7,
+    "surprise": 5,
+    "usefulness": 5,
+    "social_momentum": 3,
+    "visual": 6,
+    "consequence": 3,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "hold_reason": "TestFlight beta test (PRELIMINARY); may not ship"
+  },
+  {
+   "headline": "A Product(RED) HomePod mini 2 seemingly surfaces ahead of a rumored announcement",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-28T03:07:04+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/productred-homepod-mini-2-seemingly-surfaces-ahead-of-rumored-announcement/",
+   "main_claim": "Rumour.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "Apple fans.",
+   "potential_hook": "A Product(RED) HomePod mini 2 seemingly surfaces ahead of a rumored announcement",
+   "target_audience": "Apple fans.",
+   "uncertainty": "rumour (SPECULATIVE)",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Rumour.",
+   "audience_relevance": "Apple fans.",
+   "practical_usefulness": "Rumour.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/productred-homepod-mini-2-seemingly-surfaces-ahead-of-rumored-announcement/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 3,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 5,
+    "consequence": 2,
+    "discussion": 4,
+    "timeliness": 10
+   },
+   "hold_reason": "rumour (SPECULATIVE)"
+  },
+  {
+   "headline": "Three new iPhones are expected early next year",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T17:57:23+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/three-new-iphones-will-launch-early-next-year-heres-whats-coming/",
+   "main_claim": "Rumour roundup.",
+   "verification_status": "UNVERIFIED",
+   "why_it_matters": "iPhone buyers.",
+   "potential_hook": "Three new iPhones are expected early next year",
+   "target_audience": "iPhone buyers.",
+   "uncertainty": "rumour (SPECULATIVE)",
+   "evidence_confidence": "LOW",
+   "already_covered": false,
+   "claim_status": "SPECULATIVE",
+   "latest_development": "Rumour roundup.",
+   "audience_relevance": "iPhone buyers.",
+   "practical_usefulness": "Rumour roundup.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/three-new-iphones-will-launch-early-next-year-heres-whats-coming/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 6,
+    "surprise": 3,
+    "usefulness": 3,
+    "social_momentum": 3,
+    "visual": 4,
+    "consequence": 3,
+    "discussion": 6,
+    "timeliness": 10
+   },
+   "hold_reason": "rumour (SPECULATIVE)"
+  },
+  {
+   "headline": "An ER doctor became a hospital's first clinical AI engineer",
+   "category": "AI",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T14:00:01+00:00",
+   "original_source": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+   "main_claim": "IEEE Spectrum profile.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Healthcare workers.",
+   "potential_hook": "An ER doctor became a hospital's first clinical AI engineer",
+   "target_audience": "Healthcare workers.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); profile feature, not a development",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "IEEE Spectrum profile.",
+   "audience_relevance": "Healthcare workers.",
+   "practical_usefulness": "IEEE Spectrum profile.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 5,
+    "usefulness": 3,
+    "social_momentum": 2,
+    "visual": 4,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 8
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); profile feature, not a development"
+  },
+  {
+   "headline": "Cutting-edge prosthetics help researchers probe the human mind",
+   "category": "FUTURE TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T10:00:00+00:00",
+   "original_source": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
+   "main_claim": "MIT Technology Review feature.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Science-curious viewers.",
+   "potential_hook": "Cutting-edge prosthetics help researchers probe the human mind",
+   "target_audience": "Science-curious viewers.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); feature on research, no single dated development",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "MIT Technology Review feature.",
+   "audience_relevance": "Science-curious viewers.",
+   "practical_usefulness": "MIT Technology Review feature.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 4,
+    "surprise": 7,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 7,
+    "consequence": 4,
+    "discussion": 5,
+    "timeliness": 7
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); feature on research, no single dated development"
+  },
+  {
+   "headline": "Meross presence sensor splits a room into three zones for Apple Home",
+   "category": "CONSUMER TECH",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T19:30:00+00:00",
+   "original_source": "https://9to5mac.com/2026/11/27/meross-ms605/",
+   "main_claim": "Smart-home product.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "HomeKit users.",
+   "potential_hook": "Meross presence sensor splits a room into three zones for Apple Home",
+   "target_audience": "HomeKit users.",
+   "uncertainty": "product claims (COMPANY-CLAIMED); niche",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "COMPANY-CLAIMED",
+   "latest_development": "Smart-home product.",
+   "audience_relevance": "HomeKit users.",
+   "practical_usefulness": "Smart-home product.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://9to5mac.com/2026/11/27/meross-ms605/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 4,
+    "usefulness": 4,
+    "social_momentum": 2,
+    "visual": 5,
+    "consequence": 2,
+    "discussion": 2,
+    "timeliness": 9
+   },
+   "hold_reason": "product claims (COMPANY-CLAIMED); niche"
+  },
+  {
+   "headline": "Allstate has suffered a multiday website and app outage since 23 November",
+   "category": "CONTROVERSY",
+   "topic_type": "BREAKING",
+   "published_at": "2026-11-27T18:30:00+00:00",
+   "original_source": "https://www.techmeme.com/",
+   "main_claim": "Outage; cause not disclosed.",
+   "verification_status": "PARTLY VERIFIED",
+   "why_it_matters": "Allstate customers.",
+   "potential_hook": "Allstate has suffered a multiday website and app outage since 23 November",
+   "target_audience": "Allstate customers.",
+   "uncertainty": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); cause unknown",
+   "evidence_confidence": "MEDIUM",
+   "already_covered": false,
+   "claim_status": "INDEPENDENTLY REPORTED",
+   "latest_development": "Outage; cause not disclosed.",
+   "audience_relevance": "Allstate customers.",
+   "practical_usefulness": "Outage; cause not disclosed.",
+   "visual_potential": "headline/screenshot graphics",
+   "potential_controversy": "none noted",
+   "x_signal": {
+    "status": "NOT VERIFIED",
+    "posts": [],
+    "discussion_evidence": [
+     "https://www.techmeme.com/"
+    ]
+   },
+   "scores": {
+    "broad_relevance": 3,
+    "surprise": 4,
+    "usefulness": 2,
+    "social_momentum": 2,
+    "visual": 2,
+    "consequence": 4,
+    "discussion": 4,
+    "timeliness": 8
+   },
+   "hold_reason": "not verified to RUNBOOK step 2 in this run (ranked below the verified leader; only headlines/feeds read); cause unknown"
+  }
+ ],
+ "candidate_shortfall_reason": "27 candidates found in the 24-hour window; Black Friday deal posts were excluded as non-news, and most others are reports, betas or rumours.",
+ "factcheck": {
+  "story": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+  "date": "2026-11-28",
+  "claims": [
+   {
+    "id": "c1",
+    "text": "On Friday 27 November 2026 the European Central Bank published new data from its Consumer Expectations Survey on AI use at work (ECB Blog)",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-28T10:02:00+00:00",
+    "event_date": "2026-11-27",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-27",
+      "outlet": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)"
+     },
+     {
+      "url": "https://www.ecb.europa.eu/rss/blog.html",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-27",
+      "outlet": "ECB Blog RSS (pubDate Fri 27 Nov 2026 11:00 CET)"
+     }
+    ],
+    "supporting_evidence": "ECB Blog 'AI, jobs and prices: what euro area consumers expect', RSS pubDate Fri, 27 Nov 2026 11:00 CET; 'New evidence from the ECB's Consumer Expectations Survey sheds light on consumers' views on jobs, prices and AI regulation.'",
+    "primary_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "source_title": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)",
+    "supporting_source": "https://www.ecb.europa.eu/rss/blog.html",
+    "source_date": "2026-11-27",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true,
+    "attribution": "ECB economists' blog on the ECB Consumer Expectations Survey",
+    "script_attribution": "new data from the European Central Bank"
+   },
+   {
+    "id": "c2",
+    "text": "In August 2026, 44% of employed euro area consumers reported using AI at least weekly at work, and around 18% used it daily",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-28T10:02:00+00:00",
+    "event_date": "2026-11-27",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-27",
+      "outlet": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)"
+     },
+     {
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says",
+      "kind": "news",
+      "access": "secondary",
+      "date": "2026-11-27",
+      "outlet": "Bloomberg (headline via Techmeme; page 403)"
+     }
+    ],
+    "supporting_evidence": "'In August 2026, 44% of employed euro area consumers reported using AI at least weekly at work, and around 18% used it daily.'",
+    "primary_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "source_title": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)",
+    "supporting_source": "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says",
+    "source_date": "2026-11-27",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true,
+    "attribution": "ECB economists' blog on the ECB Consumer Expectations Survey",
+    "script_attribution": "said they used"
+   },
+   {
+    "id": "c3",
+    "text": "Around 56% of workplace AI users say AI increases the amount of work they complete",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-28T10:02:00+00:00",
+    "event_date": "2026-11-27",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-27",
+      "outlet": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)"
+     }
+    ],
+    "supporting_evidence": "'Around 56% say that AI increases the amount of work they complete, while 47% report producing higher-quality output.'",
+    "primary_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "source_title": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)",
+    "supporting_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "source_date": "2026-11-27",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true,
+    "attribution": "ECB economists' blog on the ECB Consumer Expectations Survey",
+    "script_attribution": "said"
+   },
+   {
+    "id": "c4",
+    "text": "Among AI users who reported no increase in output, the most commonly cited reason was the time needed to check or correct AI-generated results",
+    "status": "CONFIRMED",
+    "in_script": true,
+    "central": true,
+    "retrieved_at": "2026-11-28T10:02:00+00:00",
+    "event_date": "2026-11-27",
+    "risk": "high",
+    "evidence": [
+     {
+      "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+      "kind": "primary",
+      "access": "opened",
+      "date": "2026-11-27",
+      "outlet": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)"
+     }
+    ],
+    "supporting_evidence": "'Among users who reported no increase in output, the most commonly cited reason is the time needed to check or correct AI-generated results (Chart 2, panel b).'",
+    "primary_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "source_title": "ECB Blog: AI, jobs and prices: what euro area consumers expect (Georgarakos, Kenny, Meyer)",
+    "supporting_source": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "source_date": "2026-11-27",
+    "confidence": "HIGH",
+    "access": "opened",
+    "quote": false,
+    "wording_verified": true,
+    "attribution": "ECB economists' blog on the ECB Consumer Expectations Survey",
+    "script_attribution": "the most common reason"
+   }
+  ]
+ },
+ "access_limits": [
+  "ECB Blog and RSS opened directly; x.com metrics not read."
+ ],
+ "verification": "tiered",
+ "content_format": "I",
+ "quality_v8": {
+  "hook": 9,
+  "clarity": 9,
+  "storytelling": 8,
+  "audience_relevance": 9,
+  "information_value": 9,
+  "natural_delivery": 9,
+  "shareability": 9,
+  "ending": 8
+ },
+ "visual_suggestions": [
+  "Screenshot of the ECB Blog post headline 'AI, jobs and prices: what euro area consumers expect' dated 27 Nov 2026 (credit ECB)",
+  "Own animated bar graphic: 44% weekly, 18% daily (August 2026, ECB survey)",
+  "Screenshot of ECB Chart 2 panel b (reasons for no gain) with 'check or correct' highlighted (credit ECB)",
+  "Creator-recorded screen: you re-reading and correcting an AI draft on your own laptop (clearly your own example)"
+ ],
+ "storyboard": [
+  {
+   "line": "Nearly half of workers in the eurozone now use AI every week.",
+   "start_s": 0.0,
+   "end_s": 5.4,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, chest-up, confident",
+   "on_screen_text": "NEARLY HALF USE AI EVERY WEEK",
+   "motion_graphics": "'44%' counter pops beside the creator",
+   "transition": "Cut",
+   "sfx": "Soft pop",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "But not all of them are getting more done.",
+   "start_s": 5.4,
+   "end_s": 9.6,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, small head tilt",
+   "on_screen_text": "BUT NOT ALL ARE GETTING MORE DONE",
+   "motion_graphics": "Text strike-through on 'more done'",
+   "transition": "Punch-in 106%",
+   "sfx": "Record-scratch light",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "That's new data from the European Central Bank, released Friday.",
+   "start_s": 9.6,
+   "end_s": 14.2,
+   "treatment": "screen",
+   "footage": "Screenshot of the ECB Blog post headline 'AI, jobs and prices: what euro area consumers expect' with the 27 Nov 2026 date",
+   "on_screen_text": "EUROPEAN CENTRAL BANK · 27 NOV",
+   "motion_graphics": "Slow push-in; highlight the date",
+   "transition": "Slide left",
+   "sfx": "Paper/click",
+   "source_licensing": "ECB website screenshot, credit 'Source: ECB Blog' on screen (confirm ECB reuse terms)"
+  },
+  {
+   "line": "In August, 44 percent of working people there said they used AI at work weekly.",
+   "start_s": 14.2,
+   "end_s": 21.0,
+   "treatment": "graphic",
+   "footage": "Own animated bar: 44% weekly (August 2026, ECB Consumer Expectations Survey)",
+   "on_screen_text": "44% USE AI AT WORK WEEKLY",
+   "motion_graphics": "Bar grows to 44%",
+   "transition": "Cut",
+   "sfx": "Tick",
+   "source_licensing": "Own graphics (data: ECB)"
+  },
+  {
+   "line": "About 18 percent used it daily.",
+   "start_s": 21.0,
+   "end_s": 23.8,
+   "treatment": "graphic",
+   "footage": "Same graphic, second bar: about 18% daily",
+   "on_screen_text": "~18% EVERY DAY",
+   "motion_graphics": "Second bar grows to 18%",
+   "transition": "Cut",
+   "sfx": "Tick",
+   "source_licensing": "Own graphics (data: ECB)"
+  },
+  {
+   "line": "Around 56 percent of users said it helps them get more done.",
+   "start_s": 23.8,
+   "end_s": 29.2,
+   "treatment": "split",
+   "footage": "Left: creator; right: own graphic '56% get more done'",
+   "on_screen_text": "56% SAY: MORE WORK DONE",
+   "motion_graphics": "Check-mark animation",
+   "transition": "Cross-dissolve",
+   "sfx": "Soft chime",
+   "source_licensing": "Creator footage (own) + own graphics (data: ECB)"
+  },
+  {
+   "line": "But for those who saw no gain, the top reason was the time spent checking and fixing the AI's work.",
+   "start_s": 29.2,
+   "end_s": 38.4,
+   "treatment": "b-roll",
+   "footage": "Creator-recorded screen: your own laptop, re-reading and correcting an AI-written draft (your own example, labelled as such); then ECB Chart 2 panel b with 'check or correct' highlighted",
+   "on_screen_text": "TOP REASON: CHECKING & FIXING AI'S WORK",
+   "motion_graphics": "Highlight box on the chart bar",
+   "transition": "Zoom-through",
+   "sfx": "Typing + delete sounds",
+   "source_licensing": "Own screen recording; ECB chart screenshot, credit ECB"
+  },
+  {
+   "line": "The real skill isn't using AI.",
+   "start_s": 38.4,
+   "end_s": 41.2,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, slower, lean in",
+   "on_screen_text": "THE REAL SKILL ISN'T USING AI",
+   "motion_graphics": "Music dips",
+   "transition": "Cut",
+   "sfx": "None (let it breathe)",
+   "source_licensing": "Creator footage (own)"
+  },
+  {
+   "line": "It's knowing when to trust it.",
+   "start_s": 41.2,
+   "end_s": 44.0,
+   "treatment": "talking-head",
+   "footage": "Creator to camera, small smile",
+   "on_screen_text": "IT'S KNOWING WHEN TO TRUST IT",
+   "motion_graphics": "Title card hold 1 s",
+   "transition": "Cut to end card",
+   "sfx": "Soft resolve",
+   "source_licensing": "Creator footage (own)"
+  }
+ ],
+ "recording_v9": {
+  "opening_expression": "Open with a slight nod and raised eyebrows on 'every week', then a knowing half-smile on 'not all of them'.",
+  "emphasis": [
+   "nearly half",
+   "every week",
+   "44 percent",
+   "daily",
+   "checking and fixing",
+   "when to trust it"
+  ],
+  "pauses": [
+   "after 'getting more done.'",
+   "before 'But for those who saw no gain'",
+   "before the last line"
+  ],
+  "pronunciation": [
+   "eurozone: YOOR-oh-zone",
+   "European Central Bank: say it in full",
+   "44 percent: forty-four percent"
+  ],
+  "framing": "Vertical 9:16, chest-up medium close-up, eyes on the upper third; leave headroom for on-screen numbers; plain background.",
+  "pace": "Natural and clear (about 140 words per minute); slow slightly on the 'checking and fixing' line.",
+  "gestures": "Open palm on 'nearly half'; small shrug on 'not all of them'; tap the desk or mime typing on 'checking and fixing'; point to camera on 'when to trust it'."
+ },
+ "music": {
+  "style": "Light, curious lo-fi/electronic bed, about 95-105 BPM, no lyrics",
+  "track_suggestion": "Search your licensed library for 'curious minimal tech lo-fi' (for example YouTube Audio Library, free; or Epidemic Sound / Artlist if you hold a subscription). No specific track is claimed as licensed.",
+  "licensing": "Use only a track your account is licensed to use on Instagram; keep the licence record",
+  "opening_cue": "Bed starts under the first word, low",
+  "beat_changes": [
+   "Small lift on the numbers (44%, 18%, 56%)",
+   "Dip before 'But for those who saw no gain'",
+   "Near-silence on 'The real skill'"
+  ],
+  "sfx": [
+   "Soft pop on the hook number",
+   "Ticks as bars grow",
+   "Typing/delete on the checking line",
+   "Soft resolve at the end"
+  ],
+  "dialogue_music_balance": "Dialogue normalised to about -14 LUFS; music bed around -27 dB under speech, up to about -20 dB in gaps",
+  "ending_cue": "Clean resolve on 'trust it', 1 s tail"
+ },
+ "distribution": {
+  "cover_headline": "Why AI isn't saving everyone time",
+  "thumbnail_concept": "Creator looking at a laptop with a raised eyebrow; bold '44% USE AI WEEKLY' and small 'but...'",
+  "posting_angle": "A relatable, sourced take on AI at work: lots of people use it, and checking its output is the hidden cost",
+  "engagement_question": "Does AI actually save you time, or do you spend it fixing the output?"
+ },
+ "production_handoff": {
+  "pipeline": [
+   "GitHub editing tools",
+   "saved references",
+   "creative analysis",
+   "transcript-based storyboard",
+   "editing",
+   "audio restoration",
+   "music",
+   "color grading",
+   "4K rendering",
+   "QC"
+  ],
+  "output_resolution": "2160x3840",
+  "audio": "Denoise and de-reverb dialogue, gentle compression, normalise to -14 LUFS with -1.5 dB true peak; tighten pauses over 0.45 s without clipping words",
+  "captions": "Word-level burned-in captions from captions.txt, 2-5 words per line; highlight the numbers and 'checking and fixing'; keep clear of the bottom UI area",
+  "broll_list": [
+   "ECB Blog post headline and date (screenshot, credit ECB)",
+   "ECB Chart 2 panel b: reasons for no gain (screenshot, credit ECB)",
+   "Own graphics: 44% weekly, 18% daily, 56% more work bars (data: ECB)",
+   "Creator's own screen recording correcting an AI draft (own example)"
+  ],
+  "notes": "Do not use unrelated stock footage or invent product demos; credit the ECB on screen for screenshots and data."
+ },
+ "rejected_drafts": [
+  "Draft 1 said 'workers in Europe' (the data covers the euro area only) and was corrected to 'eurozone'.",
+  "Draft 2 claimed eurozone workers use AI daily more than Americans; cut because the surveys are not harmonised.",
+  "Draft 3 ended 'Does AI save you time?' (generic); replaced with the trust takeaway."
+ ]
+}

@@ -1,0 +1,419 @@
+{
+  "schema_version": "v10",
+  "date": "2026-11-28",
+  "slug": "ecb-ai-at-work-checking-time",
+  "topic": "ECB data: 44% of eurozone workers use AI weekly at work; for users with no productivity gain, checking and fixing AI output is the top reason",
+  "verification_status": "VERIFIED",
+  "verification_report": null,
+  "recording_status": "AWAITING ORIGINAL RECORDING",
+  "approved_script": "Nearly half of workers in the eurozone now use AI every week. But not all of them are getting more done.\n\nThat's new data from the European Central Bank, released Friday.\n\nIn August, 44 percent of working people there said they used AI at work weekly. About 18 percent used it daily.\n\nAround 56 percent of users said it helps them get more done.\n\nBut for those who saw no gain, the top reason was the time spent checking and fixing the AI's work.\n\nThe real skill isn't using AI. It's knowing when to trust it.",
+  "transcript": [
+    {
+      "line": "Nearly half of workers in the eurozone now use AI every week.",
+      "start_s": 0.0,
+      "end_s": 5.4
+    },
+    {
+      "line": "But not all of them are getting more done.",
+      "start_s": 5.4,
+      "end_s": 9.6
+    },
+    {
+      "line": "That's new data from the European Central Bank, released Friday.",
+      "start_s": 9.6,
+      "end_s": 14.2
+    },
+    {
+      "line": "In August, 44 percent of working people there said they used AI at work weekly.",
+      "start_s": 14.2,
+      "end_s": 21.0
+    },
+    {
+      "line": "About 18 percent used it daily.",
+      "start_s": 21.0,
+      "end_s": 23.8
+    },
+    {
+      "line": "Around 56 percent of users said it helps them get more done.",
+      "start_s": 23.8,
+      "end_s": 29.2
+    },
+    {
+      "line": "But for those who saw no gain, the top reason was the time spent checking and fixing the AI's work.",
+      "start_s": 29.2,
+      "end_s": 38.4
+    },
+    {
+      "line": "The real skill isn't using AI.",
+      "start_s": 38.4,
+      "end_s": 41.2
+    },
+    {
+      "line": "It's knowing when to trust it.",
+      "start_s": 41.2,
+      "end_s": 44.0
+    }
+  ],
+  "storyboard": [
+    {
+      "line": "Nearly half of workers in the eurozone now use AI every week.",
+      "start_s": 0.0,
+      "end_s": 5.4,
+      "treatment": "talking-head",
+      "footage": "Creator to camera, chest-up, confident",
+      "on_screen_text": "NEARLY HALF USE AI EVERY WEEK",
+      "motion_graphics": "'44%' counter pops beside the creator",
+      "transition": "Cut",
+      "sfx": "Soft pop",
+      "source_licensing": "Creator footage (own)",
+      "rights": "own"
+    },
+    {
+      "line": "But not all of them are getting more done.",
+      "start_s": 5.4,
+      "end_s": 9.6,
+      "treatment": "talking-head",
+      "footage": "Creator to camera, small head tilt",
+      "on_screen_text": "BUT NOT ALL ARE GETTING MORE DONE",
+      "motion_graphics": "Text strike-through on 'more done'",
+      "transition": "Punch-in 106%",
+      "sfx": "Record-scratch light",
+      "source_licensing": "Creator footage (own)",
+      "rights": "own"
+    },
+    {
+      "line": "That's new data from the European Central Bank, released Friday.",
+      "start_s": 9.6,
+      "end_s": 14.2,
+      "treatment": "screen",
+      "footage": "Screenshot of the ECB Blog post headline 'AI, jobs and prices: what euro area consumers expect' with the 27 Nov 2026 date",
+      "on_screen_text": "EUROPEAN CENTRAL BANK · 27 NOV",
+      "motion_graphics": "Slow push-in; highlight the date",
+      "transition": "Slide left",
+      "sfx": "Paper/click",
+      "source_licensing": "ECB website screenshot, credit 'Source: ECB Blog' on screen (confirm ECB reuse terms)",
+      "rights": "editorial-press"
+    },
+    {
+      "line": "In August, 44 percent of working people there said they used AI at work weekly.",
+      "start_s": 14.2,
+      "end_s": 21.0,
+      "treatment": "graphic",
+      "footage": "Own animated bar: 44% weekly (August 2026, ECB Consumer Expectations Survey)",
+      "on_screen_text": "44% USE AI AT WORK WEEKLY",
+      "motion_graphics": "Bar grows to 44%",
+      "transition": "Cut",
+      "sfx": "Tick",
+      "source_licensing": "Own graphics (data: ECB)",
+      "rights": "own-graphics"
+    },
+    {
+      "line": "About 18 percent used it daily.",
+      "start_s": 21.0,
+      "end_s": 23.8,
+      "treatment": "graphic",
+      "footage": "Same graphic, second bar: about 18% daily",
+      "on_screen_text": "~18% EVERY DAY",
+      "motion_graphics": "Second bar grows to 18%",
+      "transition": "Cut",
+      "sfx": "Tick",
+      "source_licensing": "Own graphics (data: ECB)",
+      "rights": "own-graphics"
+    },
+    {
+      "line": "Around 56 percent of users said it helps them get more done.",
+      "start_s": 23.8,
+      "end_s": 29.2,
+      "treatment": "split",
+      "footage": "Left: creator; right: own graphic '56% get more done'",
+      "on_screen_text": "56% SAY: MORE WORK DONE",
+      "motion_graphics": "Check-mark animation",
+      "transition": "Cross-dissolve",
+      "sfx": "Soft chime",
+      "source_licensing": "Creator footage (own) + own graphics (data: ECB)",
+      "rights": "own"
+    },
+    {
+      "line": "But for those who saw no gain, the top reason was the time spent checking and fixing the AI's work.",
+      "start_s": 29.2,
+      "end_s": 38.4,
+      "treatment": "b-roll",
+      "footage": "Creator-recorded screen: your own laptop, re-reading and correcting an AI-written draft (your own example, labelled as such); then ECB Chart 2 panel b with 'check or correct' highlighted",
+      "on_screen_text": "TOP REASON: CHECKING & FIXING AI'S WORK",
+      "motion_graphics": "Highlight box on the chart bar",
+      "transition": "Zoom-through",
+      "sfx": "Typing + delete sounds",
+      "source_licensing": "Own screen recording; ECB chart screenshot, credit ECB",
+      "rights": "editorial-press"
+    },
+    {
+      "line": "The real skill isn't using AI.",
+      "start_s": 38.4,
+      "end_s": 41.2,
+      "treatment": "talking-head",
+      "footage": "Creator to camera, slower, lean in",
+      "on_screen_text": "THE REAL SKILL ISN'T USING AI",
+      "motion_graphics": "Music dips",
+      "transition": "Cut",
+      "sfx": "None (let it breathe)",
+      "source_licensing": "Creator footage (own)",
+      "rights": "own"
+    },
+    {
+      "line": "It's knowing when to trust it.",
+      "start_s": 41.2,
+      "end_s": 44.0,
+      "treatment": "talking-head",
+      "footage": "Creator to camera, small smile",
+      "on_screen_text": "IT'S KNOWING WHEN TO TRUST IT",
+      "motion_graphics": "Title card hold 1 s",
+      "transition": "Cut to end card",
+      "sfx": "Soft resolve",
+      "source_licensing": "Creator footage (own)",
+      "rights": "own"
+    }
+  ],
+  "source_urls": [
+    "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20261127~81118f8ec0.en.html",
+    "https://www.ecb.europa.eu/rss/blog.html",
+    "https://www.bloomberg.com/news/articles/2026-11-27/european-workers-ai-use-on-par-with-that-of-us-peers-ecb-says"
+  ],
+  "visual_asset_requirements": [
+    {
+      "asset": "Screenshot of the ECB Blog post headline 'AI, jobs and prices: what euro area consumers expect' with the 27 Nov 2026 date",
+      "rights": "editorial-press",
+      "status": "to-capture",
+      "licensing_note": "ECB website screenshot, credit 'Source: ECB Blog' on screen (confirm ECB reuse terms)"
+    },
+    {
+      "asset": "Own animated bar: 44% weekly (August 2026, ECB Consumer Expectations Survey)",
+      "rights": "own-graphics",
+      "status": "to-create",
+      "licensing_note": "Own graphics (data: ECB)"
+    },
+    {
+      "asset": "Same graphic, second bar: about 18% daily",
+      "rights": "own-graphics",
+      "status": "to-create",
+      "licensing_note": "Own graphics (data: ECB)"
+    },
+    {
+      "asset": "Creator-recorded screen: your own laptop, re-reading and correcting an AI-written draft (your own example, labelled as such); then ECB Chart 2 panel b with 'check or correct' highlighted",
+      "rights": "editorial-press",
+      "status": "to-capture",
+      "licensing_note": "Own screen recording; ECB chart screenshot, credit ECB"
+    }
+  ],
+  "music": {
+    "style": "Light, curious lo-fi/electronic bed, about 95-105 BPM, no lyrics",
+    "track_suggestion": "Search your licensed library for 'curious minimal tech lo-fi' (for example YouTube Audio Library, free; or Epidemic Sound / Artlist if you hold a subscription). No specific track is claimed as licensed.",
+    "licensing": "Use only a track your account is licensed to use on Instagram; keep the licence record",
+    "opening_cue": "Bed starts under the first word, low",
+    "ending_cue": "Clean resolve on 'trust it', 1 s tail",
+    "dialogue_music_balance": "Dialogue normalised to about -14 LUFS; music bed around -27 dB under speech, up to about -20 dB in gaps",
+    "beat_changes": [
+      "Small lift on the numbers (44%, 18%, 56%)",
+      "Dip before 'But for those who saw no gain'",
+      "Near-silence on 'The real skill'"
+    ]
+  },
+  "sound_design": [
+    "Soft pop on the hook number",
+    "Ticks as bars grow",
+    "Typing/delete on the checking line",
+    "Soft resolve at the end"
+  ],
+  "caption_timing": [
+    {
+      "text": "Nearly half of workers",
+      "start_s": 0.0,
+      "end_s": 1.8
+    },
+    {
+      "text": "in the eurozone now",
+      "start_s": 1.8,
+      "end_s": 3.6
+    },
+    {
+      "text": "use AI every week.",
+      "start_s": 3.6,
+      "end_s": 5.4
+    },
+    {
+      "text": "But not all of",
+      "start_s": 5.4,
+      "end_s": 6.8
+    },
+    {
+      "text": "them are getting more",
+      "start_s": 6.8,
+      "end_s": 8.2
+    },
+    {
+      "text": "done.",
+      "start_s": 8.2,
+      "end_s": 9.6
+    },
+    {
+      "text": "That's new data from",
+      "start_s": 9.6,
+      "end_s": 11.13
+    },
+    {
+      "text": "the European Central Bank,",
+      "start_s": 11.13,
+      "end_s": 12.67
+    },
+    {
+      "text": "released Friday.",
+      "start_s": 12.67,
+      "end_s": 14.2
+    },
+    {
+      "text": "In August, 44 percent",
+      "start_s": 14.2,
+      "end_s": 15.9
+    },
+    {
+      "text": "of working people there",
+      "start_s": 15.9,
+      "end_s": 17.6
+    },
+    {
+      "text": "said they used AI",
+      "start_s": 17.6,
+      "end_s": 19.3
+    },
+    {
+      "text": "at work weekly.",
+      "start_s": 19.3,
+      "end_s": 21.0
+    },
+    {
+      "text": "About 18 percent used",
+      "start_s": 21.0,
+      "end_s": 22.4
+    },
+    {
+      "text": "it daily.",
+      "start_s": 22.4,
+      "end_s": 23.8
+    },
+    {
+      "text": "Around 56 percent of",
+      "start_s": 23.8,
+      "end_s": 25.6
+    },
+    {
+      "text": "users said it helps",
+      "start_s": 25.6,
+      "end_s": 27.4
+    },
+    {
+      "text": "them get more done.",
+      "start_s": 27.4,
+      "end_s": 29.2
+    },
+    {
+      "text": "But for those who",
+      "start_s": 29.2,
+      "end_s": 31.04
+    },
+    {
+      "text": "saw no gain, the",
+      "start_s": 31.04,
+      "end_s": 32.88
+    },
+    {
+      "text": "top reason was the",
+      "start_s": 32.88,
+      "end_s": 34.72
+    },
+    {
+      "text": "time spent checking and",
+      "start_s": 34.72,
+      "end_s": 36.56
+    },
+    {
+      "text": "fixing the AI's work.",
+      "start_s": 36.56,
+      "end_s": 38.4
+    },
+    {
+      "text": "The real skill isn't",
+      "start_s": 38.4,
+      "end_s": 39.8
+    },
+    {
+      "text": "using AI.",
+      "start_s": 39.8,
+      "end_s": 41.2
+    },
+    {
+      "text": "It's knowing when to",
+      "start_s": 41.2,
+      "end_s": 42.6
+    },
+    {
+      "text": "trust it.",
+      "start_s": 42.6,
+      "end_s": 44.0
+    }
+  ],
+  "thumbnail": {
+    "cover_headline": "Why AI isn't saving everyone time",
+    "concept": "Creator looking at a laptop with a raised eyebrow; bold '44% USE AI WEEKLY' and small 'but...'"
+  },
+  "output_settings": {
+    "resolution": "2160x3840",
+    "fps": 30,
+    "color": "Rec.709 SDR, full-range flagged correctly",
+    "codec": "H.264 High or HEVC Main, 4:2:0",
+    "loudness_lufs": -14,
+    "true_peak_db": -1.5
+  },
+  "editing_hierarchy": [
+    "GitHub editing tools",
+    "saved references",
+    "creative analysis",
+    "transcript-based storyboard",
+    "editing",
+    "audio restoration",
+    "music",
+    "color grading",
+    "4K rendering",
+    "QC"
+  ],
+  "recording_directions": {
+    "opening_expression": "Open with a slight nod and raised eyebrows on 'every week', then a knowing half-smile on 'not all of them'.",
+    "emphasis": [
+      "nearly half",
+      "every week",
+      "44 percent",
+      "daily",
+      "checking and fixing",
+      "when to trust it"
+    ],
+    "pauses": [
+      "after 'getting more done.'",
+      "before 'But for those who saw no gain'",
+      "before the last line"
+    ],
+    "pronunciation": [
+      "eurozone: YOOR-oh-zone",
+      "European Central Bank: say it in full",
+      "44 percent: forty-four percent"
+    ],
+    "framing": "Vertical 9:16, chest-up medium close-up, eyes on the upper third; leave headroom for on-screen numbers; plain background.",
+    "pace": "Natural and clear (about 140 words per minute); slow slightly on the 'checking and fixing' line.",
+    "gestures": "Open palm on 'nearly half'; small shrug on 'not all of them'; tap the desk or mime typing on 'checking and fixing'; point to camera on 'when to trust it'."
+  },
+  "audio": "Denoise and de-reverb dialogue, gentle compression, normalise to -14 LUFS with -1.5 dB true peak; tighten pauses over 0.45 s without clipping words",
+  "captions_style": "Word-level burned-in captions from captions.txt, 2-5 words per line; highlight the numbers and 'checking and fixing'; keep clear of the bottom UI area",
+  "notes": "Do not use unrelated stock footage or invent product demos; credit the ECB on screen for screenshots and data.",
+  "editing_environment": {
+    "influnexus_video_production_skill": "NOT INSTALLED in this environment",
+    "ffmpeg": "available",
+    "davinci_resolve": "NOT AVAILABLE (no authorized integration)"
+  }
+}
